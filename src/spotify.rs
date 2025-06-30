@@ -93,9 +93,11 @@ impl SpotifyClient {
             println!("⚠️  Token may not have sufficient permissions: {}", test_response.status());
         }
 
-        // Load caches
+        // Load track cache only - we'll always refresh playlist cache from Spotify
         let track_cache = Self::load_track_cache(&cache_dir);
-        let playlist_cache = Self::load_playlist_cache(&cache_dir);
+        let playlist_cache = PlaylistCache {
+            playlists: std::collections::HashMap::new(),
+        };
 
         Ok(Self {
             client,
@@ -157,17 +159,6 @@ impl SpotifyClient {
         }
     }
 
-    fn load_playlist_cache(cache_dir: &str) -> PlaylistCache {
-        let cache_path = format!("{}/playlist_cache.json", cache_dir);
-        if let Ok(content) = fs::read_to_string(&cache_path) {
-            if let Ok(cache) = serde_json::from_str(&content) {
-                return cache;
-            }
-        }
-        PlaylistCache {
-            playlists: HashMap::new(),
-        }
-    }
 
     fn save_track_cache(&self) -> Result<()> {
         let cache_path = format!("{}/track_cache.json", self.cache_dir);
@@ -176,12 +167,6 @@ impl SpotifyClient {
         Ok(())
     }
 
-    fn save_playlist_cache(&self) -> Result<()> {
-        let cache_path = format!("{}/playlist_cache.json", self.cache_dir);
-        let content = serde_json::to_string_pretty(&self.playlist_cache)?;
-        fs::write(cache_path, content)?;
-        Ok(())
-    }
 
     pub async fn search_track(&mut self, track: &Track) -> Result<Option<SpotifyTrack>> {
         let search_key = format!("{} - {}", track.artist, track.song);
@@ -381,9 +366,8 @@ impl SpotifyClient {
             println!("No tracks found on Spotify to add to playlist");
         }
 
-        // Cache the playlist
+        // Cache the playlist in memory
         self.playlist_cache.playlists.insert(spinitron_id_str, playlist.clone());
-        self.save_playlist_cache()?;
 
         println!("Created playlist: {} with {} tracks", playlist_name, track_uris.len());
         if let Some(url) = &playlist.external_url {
@@ -402,8 +386,14 @@ impl SpotifyClient {
         println!("  Episodes: {}", show_group.episodes.len());
         println!("  Latest Spinitron ID: {}", latest_id);
         
-        // Check if playlist already exists using the latest ID
-        let existing_playlist = self.playlist_cache.playlists.get(&latest_id.to_string()).cloned();
+        // Always refresh playlist cache from Spotify to avoid duplicates
+        println!("  Refreshing playlist cache from Spotify...");
+        self.refresh_playlist_cache().await?;
+        
+        // Check if playlist already exists by name (more reliable than ID lookup)
+        let existing_playlist = self.playlist_cache.playlists.values()
+            .find(|p| p.name == playlist_name)
+            .cloned();
         
         let playlist = if let Some(existing) = existing_playlist {
             println!("Found existing playlist: {}", existing.name);
@@ -425,9 +415,8 @@ impl SpotifyClient {
             // Replace tracks with current week's tracks
             self.replace_playlist_tracks(&existing.id, &show_group.all_tracks()).await?;
             
-            // Update cache with latest ID
+            // Update in-memory cache
             self.playlist_cache.playlists.insert(latest_id.to_string(), existing.clone());
-            self.save_playlist_cache()?;
             
             existing
         } else {
@@ -549,9 +538,8 @@ impl SpotifyClient {
             let all_tracks = show_group.all_tracks();
             self.add_tracks_to_playlist(&playlist.id, &all_tracks).await?;
             
-            // Cache the playlist with latest ID
+            // Cache the playlist in memory
             self.playlist_cache.playlists.insert(latest_id.to_string(), playlist.clone());
-            self.save_playlist_cache()?;
             
             playlist
         };
@@ -760,7 +748,6 @@ impl SpotifyClient {
             self.playlist_cache.playlists.insert(spinitron_id, playlist);
         }
 
-        self.save_playlist_cache()?;
         println!("Refreshed cache with {} playlists", self.playlist_cache.playlists.len());
         
         Ok(())
