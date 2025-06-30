@@ -144,3 +144,38 @@ The app uses several caching mechanisms:
 - **HTML Cache**: `cache/` - Stores scraped HTML to avoid re-downloading
 - **Spotify Track Cache**: `spotify_cache/track_cache.json` - Caches track search results
 - **Spotify Playlist Cache**: `spotify_cache/playlist_cache.json` - Caches existing playlists by Spinitron ID
+
+## Automation
+
+### GitHub Actions (Recommended)
+
+The repository includes GitHub Actions workflows for automated daily playlist updates:
+
+**Setup:**
+1. Fork this repository to your GitHub account
+2. Go to Settings → Secrets and variables → Actions
+3. Add the following repository secrets:
+   - `SPOTIFY_CLIENT_ID` - Your Spotify app client ID
+   - `SPOTIFY_CLIENT_SECRET` - Your Spotify app client secret  
+   - `SPOTIFY_REFRESH_TOKEN` - Your refresh token (from `get_spotify_token.py`)
+
+**Available Workflows:**
+- **Daily Update** (`.github/workflows/daily-playlist-update.yml`)
+  - Runs once daily at 6 AM UTC
+  - Updates playlists and commits markdown list
+
+### Other Automation Options
+
+**Cron Job (Linux/macOS):**
+```bash
+# Add to crontab (crontab -e)
+0 6 * * * cd /path/to/kalx && ./target/release/spinitron-scraper --spotify
+```
+
+**Windows Task Scheduler:**
+- Create a daily task to run the executable
+- Set environment variables in the task properties
+
+**Docker + Cron:**
+- Build a Docker image with the app
+- Run in a container with cron scheduler
