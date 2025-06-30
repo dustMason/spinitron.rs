@@ -48,22 +48,7 @@ jobs:
         # Run for yesterday's date (default behavior)
         ./target/release/spinitron-scraper --spotify
         
-    - name: Generate playlist markdown
-      env:
-        SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
-        SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
-        SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+    - name: Report completion
       run: |
-        ./target/release/spinitron-scraper --list-playlists --spotify > kalx-playlists.md
-        
-    - name: Commit and push updated playlist list
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add kalx-playlists.md
-        if ! git diff --cached --quiet; then
-          git commit -m "Update playlist list - $(date '+%Y-%m-%d')"
-          git push
-        else
-          echo "No changes to commit"
-        fi
+        echo "✅ Playlist update completed successfully"
+        echo "📅 Run date: $(date)"
