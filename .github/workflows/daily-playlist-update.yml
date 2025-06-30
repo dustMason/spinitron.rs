@@ -26,6 +26,16 @@ jobs:
           target
         key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
         
+    - name: Cache application data
+      uses: actions/cache@v3
+      with:
+        path: |
+          cache
+          spotify_cache
+        key: ${{ runner.os }}-app-cache-v1
+        restore-keys: |
+          ${{ runner.os }}-app-cache-
+        
     - name: Build application
       run: cargo build --release
       
