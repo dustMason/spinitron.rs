@@ -1,0 +1,8 @@
+/target
+
+# Cache directories
+cache/
+spotify_cache/
+
+# IDE files
+.idea/
