@@ -43,7 +43,7 @@ Weekly aggregations of KALX radio shows, updated daily at 6 AM UTC.
 
 ---
 
-*Last updated: 2025-07-01 01:56 UTC*  
+*Last updated: 2025-07-01 02:08 UTC*  
 *Total playlists: 33*
 
 <br>
