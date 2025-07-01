@@ -16,7 +16,7 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 | [KALX - Chill Wednesday with le Monsieur Francais](https://open.spotify.com/playlist/5QcUHag9ZUjfMQi8qh2iBx) | 30 |
 | [KALX - Discourse on the 8th & 9th](https://open.spotify.com/playlist/2bHAdejkJey6wrPcEBf1Yg) | 8 |
 | [KALX - FREEFOAM](https://open.spotify.com/playlist/5pFYRs0wUkTlmzL2l19ap3) | 25 |
-| [KALX - FREEFORM](https://open.spotify.com/playlist/16T1YmORwIamzbaF7LY50C) | 1215 |
+| [KALX - FREEFORM](https://open.spotify.com/playlist/16T1YmORwIamzbaF7LY50C) | 1225 |
 | [KALX - Fiat Lux Redux](https://open.spotify.com/playlist/48rFa6JCD3gUUtPWj3paUu) | 1 |
 | [KALX - Grasp The Incantation](https://open.spotify.com/playlist/6mcF1edfVVu1mFh4jRTSEZ) | 20 |
 | [KALX - Hi Fi Way](https://open.spotify.com/playlist/1vzetwxtvazukbkJem2MyO) | 17 |
@@ -27,7 +27,7 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 | [KALX - KALX LIVE!](https://open.spotify.com/playlist/4ZHZmhQgO7CKRqPbOPHphF) | 9 |
 | [KALX - Midnight Express](https://open.spotify.com/playlist/2ZC5OhMRlTulvgQwQg1O4x) | 5 |
 | [KALX - Power Greater](https://open.spotify.com/playlist/6BnE9xFTcK7RBWXPnXgXpD) | 11 |
-| [KALX - Radio Dunya](https://open.spotify.com/playlist/7cfXQuYhzZxSSQoKxXX5db) | 0 |
+| [KALX - Radio Dunya](https://open.spotify.com/playlist/7cfXQuYhzZxSSQoKxXX5db) | 9 |
 | [KALX - Round Midnight w/ Carney, Slusser, Romus](https://open.spotify.com/playlist/2kNxmJvqzxjx8AyBq77y42) | 4 |
 | [KALX - Shortwave](https://open.spotify.com/playlist/0T5LZZWu98u8tdF381lIih) | 9 |
 | [KALX - Sonic Sounds](https://open.spotify.com/playlist/6L9A7xZGfs8zS0nPxBIQtL) | 24 |
@@ -63,7 +63,7 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 | [KPOO - GHETTO GUMBO](https://open.spotify.com/playlist/2UyeNMPqkq7nlfdk18NN7n) | 48 |
 | [KPOO - Gramophoney Baloney](https://open.spotify.com/playlist/2GEz7KcTSAKw48oovMAgf8) | 63 |
 | [KPOO - Grinders Grooveyard](https://open.spotify.com/playlist/7c7bTSQRaKdX1aDzD7Tuke) | 63 |
-| [KPOO - Grown Folks Music](https://open.spotify.com/playlist/30AJdUhqPqdZHAEJ7GoFNo) | 72 |
+| [KPOO - Grown Folks Music](https://open.spotify.com/playlist/30AJdUhqPqdZHAEJ7GoFNo) | 82 |
 | [KPOO - Hip Hop For The People](https://open.spotify.com/playlist/40VMNDPOoD0tJPS9wRU6tB) | 34 |
 | [KPOO - JIVIN' AROUND](https://open.spotify.com/playlist/5UKu8BpfEchW4y8MoLKU9J) | 10 |
 | [KPOO - JJ's Vintage Soul Sounds The 60's](https://open.spotify.com/playlist/7icSJKxL0rVFVGMJ3WJZI2) | 7 |
@@ -100,7 +100,7 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 | [KPOO - The Report](https://open.spotify.com/playlist/4Cs5a4XioGAG0q3GkZIbHe) | 11 |
 | [KPOO - Thursday-Friday Night Sounds](https://open.spotify.com/playlist/70NiJdnYtYRMVj7jA4Aiv8) | 69 |
 | [KPOO - Tia  Carroll's Awesome Radio Show](https://open.spotify.com/playlist/3YdnGTNaFD05VTNdqiETKg) | 33 |
-| [KPOO - Uplift Show](https://open.spotify.com/playlist/4bFofnzTJJaO68HTLBFTyG) | 19 |
+| [KPOO - Uplift Show](https://open.spotify.com/playlist/4bFofnzTJJaO68HTLBFTyG) | 20 |
 | [KPOO - Voices of the Native Nations](https://open.spotify.com/playlist/0mHeWw4djjNSTHiW9wynWV) | 8 |
 | [KPOO - Wake The Town](https://open.spotify.com/playlist/47FwDBkleGFRzvsNcTzlxI) | 15 |
 | [KPOO - Wake Up Everybody](https://open.spotify.com/playlist/0ZHn8FgoU9tqv582NzGYl2) | 11 |
@@ -124,7 +124,7 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 | [Psyched - Freaky Folk from the West Coast and Beyond](https://open.spotify.com/playlist/3Jq0zzf0mzhRd7619NC7Zn) | 25 |
 | [Psyched - Garage Guru](https://open.spotify.com/playlist/5SENuUYF5GhUK0fykOFXeI) | 21 |
 | [Psyched - Habibi Radio](https://open.spotify.com/playlist/3KwEtAOJQ1G1js6aH4BGkY) | 34 |
-| [Psyched - Hard Shiny Plastic](https://open.spotify.com/playlist/7oOcfqvzaOB0jjwtCAbydk) | 0 |
+| [Psyched - Hard Shiny Plastic](https://open.spotify.com/playlist/7oOcfqvzaOB0jjwtCAbydk) | 15 |
 | [Psyched - Hermosa y Extraa - Msica para modificar tus celulas](https://open.spotify.com/playlist/3oV6I9Oul38kJtQ3Hlq0HW) | 13 |
 | [Psyched - Hodge Podge Radio](https://open.spotify.com/playlist/6cAR0njZxgCCQBif1daeZC) | 36 |
 | [Psyched - Howler Hour](https://open.spotify.com/playlist/7vs8djniQDEAIEn27tAxLv) | 46 |
@@ -135,10 +135,10 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 | [Psyched - Mornings on Mission](https://open.spotify.com/playlist/1dcJYPso2i6tV7buEDLq4W) | 31 |
 | [Psyched - Nocturnal](https://open.spotify.com/playlist/6HHxFjdr8ZKRM0fRgyUNVV) | 664 |
 | [Psyched - Panorama](https://open.spotify.com/playlist/7tqXM5sl9pSKdktvm0Dtpz) | 37 |
-| [Psyched - Permanent Midnight](https://open.spotify.com/playlist/4zfrUG5wbtlu7frjD15TwP) | 34 |
+| [Psyched - Permanent Midnight](https://open.spotify.com/playlist/4zfrUG5wbtlu7frjD15TwP) | 45 |
 | [Psyched - Psyched! Radio University](https://open.spotify.com/playlist/19ujdPA3gbMDAMoRY7ipps) | 33 |
 | [Psyched - Rage Bait Radio](https://open.spotify.com/playlist/3UlYEzxn1oPim9YhhCnGAb) | 40 |
-| [Psyched - Ratz in Cages](https://open.spotify.com/playlist/2jBWJR02rvbXKZoQ3leJbW) | 29 |
+| [Psyched - Ratz in Cages](https://open.spotify.com/playlist/2jBWJR02rvbXKZoQ3leJbW) | 32 |
 | [Psyched - Signs and Symbols](https://open.spotify.com/playlist/6uNHeFjdvDUF1zIo82uCoe) | 21 |
 | [Psyched - Solarpunk Gardeners](https://open.spotify.com/playlist/08GIL1Ox7Gq3liEaV5QXYa) | 27 |
 | [Psyched - Sonic Artifact](https://open.spotify.com/playlist/2AofAVgz7EsFthS7wQgVB8) | 14 |
@@ -156,7 +156,7 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 
 ---
 
-*Last updated: 2025-07-01 18:22 UTC*  
+*Last updated: 2025-07-01 19:43 UTC*  
 *Total playlists: 134*
 
 <br>
