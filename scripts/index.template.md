@@ -3,10 +3,10 @@ title: KALX Spotify Playlists
 description: Weekly aggregations of KALX radio shows from Spinitron
 ---
 
-# KALX Spotify Playlists
-
 Weekly aggregations of KALX radio shows, updated daily at 6 AM UTC.
 
+| Show | Tracks |
+|------|--------|
 {{PLAYLISTS}}
 
 ---

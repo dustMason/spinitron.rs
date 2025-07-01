@@ -29,6 +29,7 @@ pub struct SpotifyPlaylist {
     pub description: Option<String>,
     pub uri: String,
     pub external_url: Option<String>,
+    pub track_count: u32,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -280,12 +281,14 @@ impl SpotifyClient {
             self.update_playlist_description(&existing.id, &updated_description)
                 .await?;
 
+            let updated_existing = existing.clone();
+
             // Update in-memory cache
             self.playlist_cache
                 .playlists
-                .insert(latest_id.to_string(), existing.clone());
+                .insert(latest_id.to_string(), updated_existing.clone());
 
-            existing
+            updated_existing
         } else {
             println!("Creating new playlist");
 
@@ -432,6 +435,7 @@ impl SpotifyClient {
                 external_url: playlist_json["external_urls"]["spotify"]
                     .as_str()
                     .map(|s| s.to_string()),
+                track_count: 0, // Will be updated after tracks are added
             };
 
             // Add tracks to the new playlist
@@ -439,12 +443,15 @@ impl SpotifyClient {
             self.add_tracks_to_playlist(&playlist.id, &all_tracks)
                 .await?;
 
+            let mut updated_playlist = playlist.clone();
+            updated_playlist.track_count = all_tracks.len() as u32;
+
             // Cache the playlist in memory
             self.playlist_cache
                 .playlists
-                .insert(latest_id.to_string(), playlist.clone());
+                .insert(latest_id.to_string(), updated_playlist.clone());
 
-            playlist
+            updated_playlist
         };
 
         println!(
@@ -721,6 +728,9 @@ impl SpotifyClient {
                                     hasher.finish().to_string()
                                 };
 
+                            // Get track count from the response (already included!)
+                            let track_count = item["tracks"]["total"].as_u64().unwrap_or(0) as u32;
+
                             let playlist = SpotifyPlaylist {
                                 id: item["id"].as_str().unwrap_or("").to_string(),
                                 name: item["name"].as_str().unwrap_or("").to_string(),
@@ -729,6 +739,7 @@ impl SpotifyClient {
                                 external_url: item["external_urls"]["spotify"]
                                     .as_str()
                                     .map(|s| s.to_string()),
+                                track_count,
                             };
                             all_playlists.push((spinitron_id, playlist));
                         }
@@ -761,4 +772,5 @@ impl SpotifyClient {
     pub fn get_cached_playlists(&self) -> &std::collections::HashMap<String, SpotifyPlaylist> {
         &self.playlist_cache.playlists
     }
+
 }

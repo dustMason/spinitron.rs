@@ -209,7 +209,7 @@ async fn output_playlist_markdown(spotify_client: &mut SpotifyClient) -> Result<
 
     for (_id, playlist) in playlists {
         let url = playlist.external_url.as_deref().unwrap_or("No URL");
-        println!("- [{}]({})", playlist.name, url);
+        println!("- [{}]({}) | {}", playlist.name, url, playlist.track_count);
     }
 
     println!("\n---");

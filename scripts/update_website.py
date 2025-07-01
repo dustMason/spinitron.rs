@@ -20,6 +20,7 @@ def run_command(cmd):
         print(f"   {e.stderr}")
         sys.exit(1)
 
+
 def main():
     print("🌐 Updating website with latest playlists...")
     
@@ -30,26 +31,35 @@ def main():
         sys.exit(1)
     
     # Check if template exists
-    if not os.path.exists("docs/index.template.md"):
-        print("❌ Error: docs/index.template.md not found")
+    if not os.path.exists("scripts/index.template.md"):
+        print("❌ Error: scripts/index.template.md not found")
         sys.exit(1)
     
     # Generate fresh playlist data
     print("📊 Generating fresh playlist data...")
     playlist_output = run_command("./target/release/spinitron-scraper --list-playlists --spotify")
     
-    # Extract playlist lines (lines that start with "- [KALX -")
-    playlist_lines = []
+    # Extract playlist info (name, URL, and track count)
+    table_rows = []
+    playlist_count = 0
+    
     for line in playlist_output.split('\n'):
         if line.strip().startswith('- [KALX -'):
-            playlist_lines.append(line.strip())
+            # Parse the new format: - [name](url) | count
+            match = re.match(r'- \[(.*?)\]\((.*?)\) \| (\d+)', line.strip())
+            if match:
+                name = match.group(1)
+                url = match.group(2)
+                track_count = match.group(3)
+                table_rows.append(f"| [{name}]({url}) | {track_count} |")
+                playlist_count += 1
     
-    if not playlist_lines:
+    if not table_rows:
         print("❌ Error: No playlists found in output")
         sys.exit(1)
     
     # Read template
-    with open("docs/index.template.md", "r") as f:
+    with open("scripts/index.template.md", "r") as f:
         template = f.read()
     
     # Generate timestamp
@@ -57,16 +67,16 @@ def main():
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     
     # Replace template variables
-    content = template.replace("{{PLAYLISTS}}", "\n".join(playlist_lines))
+    content = template.replace("{{PLAYLISTS}}", "\n".join(table_rows))
     content = content.replace("{{TIMESTAMP}}", timestamp)
-    content = content.replace("{{COUNT}}", str(len(playlist_lines)))
+    content = content.replace("{{COUNT}}", str(playlist_count))
     
     # Write the final file
     with open("docs/index.md", "w") as f:
         f.write(content)
     
     print("✅ Website update complete!")
-    print(f"📊 Updated with {len(playlist_lines)} playlists")
+    print(f"📊 Updated with {playlist_count} playlists")
     print("📄 Generated: docs/index.md")
 
 if __name__ == "__main__":
