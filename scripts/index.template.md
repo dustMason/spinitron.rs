@@ -1,12 +1,10 @@
 ---
-title: KALX Spotify Playlists
-description: Weekly aggregations of KALX radio shows from Spinitron
+title: Radio Station Spotify Playlists
+description: Weekly aggregations of radio shows from Spinitron
 ---
 
-Weekly aggregations of KALX radio shows, updated daily at 6 AM UTC.
+Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 
-| Show | Tracks |
-|------|--------|
 {{PLAYLISTS}}
 
 ---
@@ -16,4 +14,4 @@ Weekly aggregations of KALX radio shows, updated daily at 6 AM UTC.
 
 <br>
 
-*Generated from [Spinitron](https://spinitron.com/KALX) • [Source Code](https://github.com/dustmason/spinitron.rs)*
+*Generated from [Spinitron](https://spinitron.com/) • [Source Code](https://github.com/dustmason/spinitron.rs)*

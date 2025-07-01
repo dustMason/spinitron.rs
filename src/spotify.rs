@@ -264,10 +264,6 @@ impl SpotifyClient {
         let latest_id = show_group.latest_spinitron_id();
         let all_tracks = show_group.all_tracks();
 
-        println!("Processing show playlist: '{}'", playlist_name);
-        println!("  Episodes: {}", show_group.episodes.len());
-        println!("  Total tracks: {}", all_tracks.len());
-        println!("  Latest Spinitron ID: {}", latest_id);
 
         // Skip creating playlist if no tracks
         if all_tracks.is_empty() {
@@ -276,7 +272,6 @@ impl SpotifyClient {
         }
 
         // Always refresh playlist cache from Spotify to avoid duplicates
-        println!("  Refreshing playlist cache from Spotify...");
         self.refresh_playlist_cache().await?;
 
         // Check if playlist already exists by name (more reliable than ID lookup)
@@ -288,20 +283,12 @@ impl SpotifyClient {
             .cloned();
 
         let playlist = if let Some(existing) = existing_playlist {
-            println!("Found existing playlist: {}", existing.name);
-            println!("  Updating playlist with latest 7-day collection");
-
-            // Replace all tracks with the latest 7-day collection
-            let new_tracks = show_group.all_tracks();
-            println!(
-                "  Replacing playlist with {} tracks from last 7 days",
-                new_tracks.len()
-            );
 
             // First, clear the existing playlist
             self.clear_playlist_tracks(&existing.id).await?;
 
             // Then add all the new tracks
+            let new_tracks = show_group.all_tracks();
             self.add_tracks_to_playlist(&existing.id, &new_tracks)
                 .await?;
 
@@ -319,16 +306,6 @@ impl SpotifyClient {
 
             Some(updated_existing)
         } else {
-            println!("Creating new playlist");
-
-            // Debug: Check playlist name and description lengths and content
-            println!(
-                "  Playlist name: '{}' (length: {})",
-                playlist_name,
-                playlist_name.len()
-            );
-            println!("  Description length: {}", description.len());
-            println!("  User ID: '{}'", self.user_id);
 
             // Validate playlist name (Spotify requirements)
             if playlist_name.is_empty() {
@@ -351,7 +328,6 @@ impl SpotifyClient {
                 "https://api.spotify.com/v1/users/{}/playlists",
                 self.user_id
             );
-            println!("  Request URL: {}", url);
 
             // Create new playlist
             let playlist_data = serde_json::json!({
@@ -360,10 +336,6 @@ impl SpotifyClient {
                 "public": true
             });
 
-            println!(
-                "  Playlist data: {}",
-                serde_json::to_string_pretty(&playlist_data)?
-            );
 
             // Test token validity and permissions
             let test_response = self
@@ -397,7 +369,6 @@ impl SpotifyClient {
 
             // Convert to JSON string manually to ensure proper encoding
             let json_payload = serde_json::to_string(&playlist_data)?;
-            println!("  JSON payload: {}", json_payload);
 
             let response = self
                 .client
@@ -411,13 +382,9 @@ impl SpotifyClient {
             let status = response.status();
             let mut response_text = response.text().await?;
 
-            println!("  Response status: {}", status);
-            println!("  Response body: {}", response_text);
-
             if !status.is_success() {
                 // If it's an auth error, try refreshing the token
                 if status == 401 {
-                    println!("  Token may have expired, attempting to refresh...");
                     self.access_token = Self::get_access_token(
                         &self.client,
                         &std::env::var("SPOTIFY_CLIENT_ID").unwrap_or_default(),
@@ -483,18 +450,6 @@ impl SpotifyClient {
             Some(updated_playlist)
         };
 
-        match &playlist {
-            Some(p) => {
-                println!(
-                    "✅ Processed playlist: {} ({} total tracks)",
-                    p.name,
-                    all_tracks.len()
-                );
-            }
-            None => {
-                println!("⚠️  No playlist created - no tracks available");
-            }
-        }
         Ok(playlist)
     }
 
@@ -539,20 +494,12 @@ impl SpotifyClient {
 
         // For very large playlists, limit to first 5000 tracks to avoid timeouts
         let tracks_to_process = if tracks.len() > 5000 {
-            println!("  Large playlist detected, limiting to first 5000 tracks");
             &tracks[..5000]
         } else {
             tracks
         };
 
         for (i, track) in tracks_to_process.iter().enumerate() {
-            if i % 50 == 0 {
-                println!(
-                    "  Progress: {}/{} tracks processed",
-                    i,
-                    tracks_to_process.len()
-                );
-            }
 
             match self.search_track(track).await {
                 Ok(Some(spotify_track)) => {
@@ -579,7 +526,6 @@ impl SpotifyClient {
         );
 
         if !track_uris.is_empty() {
-            println!("Adding {} tracks to playlist...", track_uris.len());
 
             for (i, chunk) in track_uris.chunks(100).enumerate() {
                 let add_tracks_data = serde_json::json!({
@@ -606,9 +552,8 @@ impl SpotifyClient {
                         error_text
                     ));
                 }
-
-                println!("  Added batch {} ({} tracks)", i + 1, chunk.len());
             }
+            println!("Added {} tracks to playlist", track_uris.len());
         }
 
         Ok(())
@@ -653,17 +598,14 @@ impl SpotifyClient {
     }
 
     async fn clear_playlist_tracks(&self, playlist_id: &str) -> Result<()> {
-        println!("    Clearing existing tracks from playlist...");
-
         // Get all current track URIs
         let track_uris = self.get_playlist_tracks(playlist_id).await?;
 
         if track_uris.is_empty() {
-            println!("    Playlist is already empty");
             return Ok(());
         }
 
-        println!("    Removing {} existing tracks", track_uris.len());
+        println!("Removed {} existing tracks", track_uris.len());
 
         // Remove tracks in batches of 100 (Spotify limit)
         for (i, chunk) in track_uris.chunks(100).enumerate() {
@@ -696,15 +638,12 @@ impl SpotifyClient {
                     error_text
                 ));
             }
-
-            println!("    Removed batch {} ({} tracks)", i + 1, chunk.len());
         }
 
         Ok(())
     }
 
     pub async fn refresh_playlist_cache(&mut self) -> Result<()> {
-        println!("Refreshing playlist cache from Spotify...");
 
         let mut offset = 0;
         let limit = 50;
@@ -780,11 +719,6 @@ impl SpotifyClient {
         for (spinitron_id, playlist) in all_playlists {
             self.playlist_cache.playlists.insert(spinitron_id, playlist);
         }
-
-        println!(
-            "Refreshed cache with {} playlists",
-            self.playlist_cache.playlists.len()
-        );
 
         Ok(())
     }

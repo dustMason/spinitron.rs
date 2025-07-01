@@ -154,15 +154,6 @@ async fn main() -> Result<()> {
                 all_tracks.len()
             );
 
-            // Output sample tracks to stdout
-            println!("Sample tracks:");
-            for track in all_tracks.iter().take(5) {
-                println!("  {} - {} ({})", track.artist, track.song, track.album);
-            }
-            if all_tracks.len() > 5 {
-                println!("  ... and {} more tracks", all_tracks.len() - 5);
-            }
-
             // Create/update Spotify playlist if requested
             if let Some(ref mut spotify) = spotify_client {
                 match spotify.create_or_update_show_playlist(&show_group).await {
@@ -197,8 +188,17 @@ async fn output_playlist_jsonl(spotify_client: &mut SpotifyClient) -> Result<()>
     spotify_client.refresh_playlist_cache().await?;
     let mut playlists: Vec<_> = spotify_client.get_cached_playlists().iter().collect();
     playlists.sort_by(|a, b| a.1.name.cmp(&b.1.name));
+    
     for (_id, playlist) in playlists {
+        // Extract station from playlist name (format: "STATION - Show Name")
+        let station = if let Some(dash_pos) = playlist.name.find(" - ") {
+            &playlist.name[..dash_pos]
+        } else {
+            "Unknown"
+        };
+        
         let playlist_json = serde_json::json!({
+            "station": station,
             "name": playlist.name,
             "url": playlist.external_url.as_deref().unwrap_or(""),
             "track_count": playlist.track_count

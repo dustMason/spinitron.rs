@@ -56,6 +56,13 @@ cargo run -- --spotify --date 2025-06-29
 ```bash
 # List all playlists as JSONL (requires Spotify auth)
 cargo run -- --list-playlists
+
+# Save JSONL output to a file
+cargo run -- --list-playlists > playlists.jsonl
+
+# Example JSONL output:
+# {"station":"KALX","name":"KALX - Show Name","url":"https://open.spotify.com/playlist/abc123","track_count":25}
+# {"station":"KPOO","name":"KPOO - Another Show","url":"https://open.spotify.com/playlist/def456","track_count":42}
 ```
 
 ### Testing

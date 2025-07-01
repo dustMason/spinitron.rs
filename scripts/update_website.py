@@ -39,26 +39,50 @@ def main():
     print("📊 Generating fresh playlist data...")
     playlist_output = run_command("./target/release/spinitron-scraper --list-playlists")
     
-    # Parse JSONL output
-    table_rows = []
-    playlist_count = 0
+    # Parse JSONL output and group by station
+    stations = {}
+    total_playlist_count = 0
     
     for line in playlist_output.strip().split('\n'):
         if line.strip():
             try:
                 playlist = json.loads(line)
+                station = playlist['station']
                 name = playlist['name']
                 url = playlist['url']
                 track_count = playlist['track_count']
-                table_rows.append(f"| [{name}]({url}) | {track_count} |")
-                playlist_count += 1
+                
+                if station not in stations:
+                    stations[station] = []
+                
+                stations[station].append({
+                    'name': name,
+                    'url': url,
+                    'track_count': track_count
+                })
+                total_playlist_count += 1
             except (json.JSONDecodeError, KeyError) as e:
                 print(f"⚠️  Warning: Failed to parse line: {line}")
                 print(f"   Error: {e}")
     
-    if not table_rows:
+    if not stations:
         print("❌ Error: No playlists found in output")
         sys.exit(1)
+    
+    # Generate markdown sections for each station
+    sections = []
+    for station in sorted(stations.keys()):
+        playlists = stations[station]
+        section_lines = [f"## {station}\n"]
+        section_lines.append("| Show | Tracks |")
+        section_lines.append("|------|--------|")
+        
+        for playlist in playlists:
+            section_lines.append(f"| [{playlist['name']}]({playlist['url']}) | {playlist['track_count']} |")
+        
+        sections.append("\n".join(section_lines))
+    
+    playlist_sections = "\n\n".join(sections)
     
     # Read template
     with open("scripts/index.template.md", "r") as f:
@@ -69,16 +93,16 @@ def main():
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     
     # Replace template variables
-    content = template.replace("{{PLAYLISTS}}", "\n".join(table_rows))
+    content = template.replace("{{PLAYLISTS}}", playlist_sections)
     content = content.replace("{{TIMESTAMP}}", timestamp)
-    content = content.replace("{{COUNT}}", str(playlist_count))
+    content = content.replace("{{COUNT}}", str(total_playlist_count))
     
     # Write the final file
     with open("docs/index.md", "w") as f:
         f.write(content)
     
     print("✅ Website update complete!")
-    print(f"📊 Updated with {playlist_count} playlists")
+    print(f"📊 Updated with {total_playlist_count} playlists across {len(stations)} stations")
     print("📄 Generated: docs/index.md")
 
 if __name__ == "__main__":
