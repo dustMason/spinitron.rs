@@ -1,9 +1,11 @@
 [stations.KALX]
-# If shows list is empty, scrape all shows for the day
 shows = []
 
 # Example of specific shows to scrape:
 # shows = ["Round Midnight", "Another Flippin' Sunday"]
 
-#[stations.KPFA]
-#shows = []
+[stations.KPOO]
+shows = []
+
+[stations.Psyched]
+shows = []
