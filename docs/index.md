@@ -18,7 +18,7 @@ Weekly aggregations of KALX radio shows, updated daily at 6 AM UTC.
 | [KALX - Fiat Lux Redux](https://open.spotify.com/playlist/48rFa6JCD3gUUtPWj3paUu) | 1 |
 | [KALX - Grasp The Incantation](https://open.spotify.com/playlist/6mcF1edfVVu1mFh4jRTSEZ) | 20 |
 | [KALX - Hi Fi Way](https://open.spotify.com/playlist/1vzetwxtvazukbkJem2MyO) | 17 |
-| [KALX - Hot Lasagna](https://open.spotify.com/playlist/6P3wXPM8bwEaSozC5Xu52K) | 11 |
+| [KALX - Hot Lasagna](https://open.spotify.com/playlist/6P3wXPM8bwEaSozC5Xu52K) | 26 |
 | [KALX - IN THE GARDEN](https://open.spotify.com/playlist/4mSIcJncXI40CpDwbGD8Of) | 28 |
 | [KALX - Infinity](https://open.spotify.com/playlist/1gQhtXQTKy2NoSl7AKIsqF) | 22 |
 | [KALX - Information Overload](https://open.spotify.com/playlist/22HdpDQhxCyS1UPkKrGV6O) | 3 |
@@ -35,13 +35,13 @@ Weekly aggregations of KALX radio shows, updated daily at 6 AM UTC.
 | [KALX - Waiting for the Bus](https://open.spotify.com/playlist/6ZSLI5kFF4txb5jj2dQE8g) | 19 |
 | [KALX - Why Baby Why](https://open.spotify.com/playlist/1TybmoMyd4oEkmdDQFiTi0) | 12 |
 | [KALX - Yo! KALX Raps](https://open.spotify.com/playlist/0thQHacX0eWTbbLcuXBYvg) | 12 |
-| [KALX - live laugh love radio](https://open.spotify.com/playlist/0nqVXr4XE1TwcH8Vn8hcbb) | 0 |
+| [KALX - live laugh love radio](https://open.spotify.com/playlist/0nqVXr4XE1TwcH8Vn8hcbb) | 29 |
 | [KALX - please save my earth radio](https://open.spotify.com/playlist/5Ba3bQgoyLCulzh9w4hwBW) | 73 |
 | [KALX - queen of the cowbell.](https://open.spotify.com/playlist/4yADNW78a5gNOxLoBZxnzx) | 38 |
 
 ---
 
-*Last updated: 2025-07-01 04:34 UTC*  
+*Last updated: 2025-07-01 04:40 UTC*  
 *Total playlists: 31*
 
 <br>
