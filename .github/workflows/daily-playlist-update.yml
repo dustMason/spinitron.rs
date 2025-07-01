@@ -66,9 +66,3 @@ jobs:
           git commit -m "Update website with latest playlists"
           git push
         fi
-        
-    - name: Report completion
-      run: |
-        echo "✅ Playlist update completed successfully"
-        echo "🌐 Website updated with latest playlists"
-        echo "📅 Run date: $(date)"
