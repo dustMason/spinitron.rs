@@ -288,17 +288,13 @@ impl SpotifyClient {
         let latest_id = show_group.latest_spinitron_id();
         let all_tracks = show_group.all_tracks();
 
-
         // Skip creating playlist if no tracks
         if all_tracks.is_empty() {
             println!("  ⚠️  Skipping playlist creation - no tracks found");
             return Ok(None);
         }
 
-        // Always refresh playlist cache from Spotify to avoid duplicates
-        self.refresh_playlist_cache().await?;
-
-        // Check if playlist already exists by name (more reliable than ID lookup)
+        // Check if playlist already exists by name
         let existing_playlist = self
             .playlist_cache
             .playlists
@@ -307,7 +303,6 @@ impl SpotifyClient {
             .cloned();
 
         let playlist = if let Some(existing) = existing_playlist {
-
             // First, clear the existing playlist
             self.clear_playlist_tracks(&existing.id).await?;
 
@@ -330,7 +325,6 @@ impl SpotifyClient {
 
             Some(updated_existing)
         } else {
-
             if playlist_name.is_empty() {
                 return Err(anyhow!("Playlist name cannot be empty"));
             }
@@ -369,48 +363,7 @@ impl SpotifyClient {
                 .send()
                 .await?;
 
-            let status = response.status();
-            let mut response_text = response.text().await?;
-
-            if !status.is_success() {
-                // If it's an auth error, try refreshing the token
-                if status == 401 {
-                    self.access_token = Self::get_access_token(
-                        &self.client,
-                        &std::env::var("SPOTIFY_CLIENT_ID").unwrap_or_default(),
-                        &std::env::var("SPOTIFY_CLIENT_SECRET").unwrap_or_default(),
-                        &std::env::var("SPOTIFY_REFRESH_TOKEN").unwrap_or_default(),
-                    )
-                    .await?;
-
-                    // Retry the request with new token
-                    let json_payload = serde_json::to_string(&playlist_data)?;
-                    let retry_response = self
-                        .client
-                        .post(&url)
-                        .header("Authorization", format!("Bearer {}", self.access_token))
-                        .header("Content-Type", "application/json")
-                        .body(json_payload)
-                        .send()
-                        .await?;
-
-                    let retry_status = retry_response.status();
-                    let retry_response_text = retry_response.text().await?;
-
-                    if !retry_status.is_success() {
-                        return Err(anyhow!("Failed to create playlist after token refresh. Status: {}, Response: {}", retry_status, retry_response_text));
-                    }
-
-                    response_text = retry_response_text;
-                } else {
-                    return Err(anyhow!(
-                        "Failed to create playlist. Status: {}, Response: {}",
-                        status,
-                        response_text
-                    ));
-                }
-            }
-
+            let response_text = response.text().await?;
             let playlist_json: Value = serde_json::from_str(&response_text)?;
 
             let playlist = SpotifyPlaylist {
@@ -424,11 +377,9 @@ impl SpotifyClient {
                 track_count: 0, // Will be updated after tracks are added
             };
 
-            // Add tracks to the new playlist
             let all_tracks = show_group.all_tracks();
             self.add_tracks_to_playlist(&playlist.id, &all_tracks)
                 .await?;
-
             let mut updated_playlist = playlist.clone();
             updated_playlist.track_count = all_tracks.len() as u32;
 
@@ -593,7 +544,6 @@ impl SpotifyClient {
     }
 
     async fn clear_playlist_tracks(&self, playlist_id: &str) -> Result<()> {
-        // Get all current track URIs
         let track_uris = self.get_playlist_tracks(playlist_id).await?;
 
         if track_uris.is_empty() {

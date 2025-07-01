@@ -127,6 +127,11 @@ async fn main() -> Result<()> {
             current_date = current_date + chrono::Duration::days(1);
         }
     }
+    
+    // Always refresh playlist cache from Spotify to avoid duplicates
+    if let Some(ref mut spotify) = spotify_client {
+        spotify.refresh_playlist_cache().await?;
+    }
 
     // Create ShowGroups and process playlists
     println!("\n=== Creating Spotify playlists ===");
