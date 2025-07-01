@@ -172,7 +172,7 @@ async fn main() -> Result<()> {
             // Create/update Spotify playlist if requested
             if let Some(ref mut spotify) = spotify_client {
                 match spotify.create_or_update_show_playlist(&show_group).await {
-                    Ok(playlist) => {
+                    Ok(Some(playlist)) => {
                         println!(
                             "✅ Successfully created/updated Spotify playlist: {}",
                             playlist.name
@@ -180,6 +180,9 @@ async fn main() -> Result<()> {
                         if let Some(url) = playlist.external_url {
                             println!("  🔗 Share: {}", url);
                         }
+                    }
+                    Ok(None) => {
+                        println!("⚠️  Skipped playlist for '{}' - no tracks found", show_group.playlist_name());
                     }
                     Err(e) => {
                         eprintln!(

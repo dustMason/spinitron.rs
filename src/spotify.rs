@@ -237,14 +237,22 @@ impl SpotifyClient {
     pub async fn create_or_update_show_playlist(
         &mut self,
         show_group: &ShowGroup,
-    ) -> Result<SpotifyPlaylist> {
+    ) -> Result<Option<SpotifyPlaylist>> {
         let playlist_name = show_group.playlist_name();
         let description = show_group.description();
         let latest_id = show_group.latest_spinitron_id();
+        let all_tracks = show_group.all_tracks();
 
         println!("Processing show playlist: '{}'", playlist_name);
         println!("  Episodes: {}", show_group.episodes.len());
+        println!("  Total tracks: {}", all_tracks.len());
         println!("  Latest Spinitron ID: {}", latest_id);
+
+        // Skip creating playlist if no tracks
+        if all_tracks.is_empty() {
+            println!("  ⚠️  Skipping playlist creation - no tracks found");
+            return Ok(None);
+        }
 
         // Always refresh playlist cache from Spotify to avoid duplicates
         println!("  Refreshing playlist cache from Spotify...");
@@ -288,7 +296,7 @@ impl SpotifyClient {
                 .playlists
                 .insert(latest_id.to_string(), updated_existing.clone());
 
-            updated_existing
+            Some(updated_existing)
         } else {
             println!("Creating new playlist");
 
@@ -451,14 +459,21 @@ impl SpotifyClient {
                 .playlists
                 .insert(latest_id.to_string(), updated_playlist.clone());
 
-            updated_playlist
+            Some(updated_playlist)
         };
 
-        println!(
-            "✅ Processed playlist: {} ({} total tracks)",
-            playlist.name,
-            show_group.all_tracks().len()
-        );
+        match &playlist {
+            Some(p) => {
+                println!(
+                    "✅ Processed playlist: {} ({} total tracks)",
+                    p.name,
+                    all_tracks.len()
+                );
+            }
+            None => {
+                println!("⚠️  No playlist created - no tracks available");
+            }
+        }
         Ok(playlist)
     }
 
