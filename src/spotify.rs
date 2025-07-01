@@ -194,12 +194,12 @@ impl SpotifyClient {
             .as_secs()
     }
 
-    pub async fn search_track(&mut self, track: &Track) -> Result<Option<SpotifyTrack>> {
+    async fn search_track_with_cache_info(&mut self, track: &Track) -> Result<(Option<SpotifyTrack>, bool)> {
         let search_key = format!("{} - {}", track.artist, track.song);
 
         // Check cache first
         if let Some(cached_entry) = self.track_cache.entries.get(&search_key) {
-            return Ok(cached_entry.track.clone());
+            return Ok((cached_entry.track.clone(), false)); // false = no API call made
         }
 
         // Search Spotify
@@ -252,8 +252,9 @@ impl SpotifyClient {
         self.track_cache.entries.insert(search_key, cache_entry);
         self.save_track_cache()?;
 
-        Ok(spotify_track)
+        Ok((spotify_track, true)) // true = API call was made
     }
+
 
     pub async fn create_or_update_show_playlist(
         &mut self,
@@ -489,6 +490,8 @@ impl SpotifyClient {
         let mut track_uris = Vec::new();
         let mut found_tracks = 0;
         let mut not_found_tracks = 0;
+        let mut api_calls_made = 0;
+        let mut cache_hits = 0;
 
         println!("Searching for {} tracks on Spotify...", tracks.len());
 
@@ -499,30 +502,33 @@ impl SpotifyClient {
             tracks
         };
 
-        for (i, track) in tracks_to_process.iter().enumerate() {
-
-            match self.search_track(track).await {
-                Ok(Some(spotify_track)) => {
+        for track in tracks_to_process.iter() {
+            let (result, made_api_call) = self.search_track_with_cache_info(track).await?;
+            
+            match result {
+                Some(spotify_track) => {
                     track_uris.push(spotify_track.uri);
                     found_tracks += 1;
                 }
-                Ok(None) => {
-                    not_found_tracks += 1;
-                }
-                Err(_) => {
+                None => {
                     not_found_tracks += 1;
                 }
             }
 
-            // Add delay every 10 tracks to avoid rate limiting
-            if i % 10 == 0 && i > 0 {
-                tokio::time::sleep(tokio::time::Duration::from_millis(100)).await;
+            // Track cache hits vs API calls
+            if made_api_call {
+                api_calls_made += 1;
+                if api_calls_made % 10 == 0 {
+                    tokio::time::sleep(tokio::time::Duration::from_millis(100)).await;
+                }
+            } else {
+                cache_hits += 1;
             }
         }
 
         println!(
-            "Track search complete: {} found, {} not found",
-            found_tracks, not_found_tracks
+            "Track search complete: {} found, {} not found ({} cache hits, {} API calls)",
+            found_tracks, not_found_tracks, cache_hits, api_calls_made
         );
 
         if !track_uris.is_empty() {
