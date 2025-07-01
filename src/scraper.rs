@@ -8,12 +8,12 @@ use std::path::Path;
 
 use crate::models::{Show, Track};
 
-pub struct SpinitroneClient {
+pub struct SpinitronClient {
     client: Client,
     cache_dir: String,
 }
 
-impl SpinitroneClient {
+impl SpinitronClient {
     pub fn new() -> Self {
         Self {
             client: Client::new(),
@@ -33,19 +33,19 @@ impl SpinitroneClient {
         format!("{}/{}.html", self.cache_dir, sanitized)
     }
 
-    async fn fetch_with_cache(&self, url: &str) -> Result<String> {
+    async fn fetch_with_cache(&self, url: &str, name: &str) -> Result<String> {
         self.ensure_cache_dir().await?;
 
         let cache_path = self.get_cache_path(url);
 
         // Try to read from cache first
         if let Ok(cached_content) = fs::read_to_string(&cache_path) {
-            println!("Using cached content for: {}", url);
+            println!("✅ Using cached content for: {}", name);
             return Ok(cached_content);
         }
 
         // Fetch from network
-        println!("Fetching from network: {}", url);
+        println!("⬇️ Fetching from network: {} ({})", name, url);
         let response = self.client.get(url).send().await?;
         let content = response.text().await?;
 
@@ -59,7 +59,7 @@ impl SpinitroneClient {
 }
 
 pub async fn fetch_shows_for_date(station: &str, date: NaiveDate) -> Result<Vec<Show>> {
-    let client = SpinitroneClient::new();
+    let client = SpinitronClient::new();
 
     // Format the date for the API call
     let start_date = format!("{}T00:00:00", date.format("%Y-%m-%d"));
@@ -74,7 +74,7 @@ pub async fn fetch_shows_for_date(station: &str, date: NaiveDate) -> Result<Vec<
         chrono::Utc::now().timestamp_millis()
     );
 
-    let content = client.fetch_with_cache(&url).await?;
+    let content = client.fetch_with_cache(&url, &format!("{} shows for {}", station, date)).await?;
     let json: Value = serde_json::from_str(&content)?;
 
     let mut shows = Vec::new();
@@ -106,8 +106,10 @@ pub async fn fetch_shows_for_date(station: &str, date: NaiveDate) -> Result<Vec<
 }
 
 pub async fn fetch_playlist(url: &str) -> Result<Vec<Track>> {
-    let client = SpinitroneClient::new();
-    let html_content = client.fetch_with_cache(url).await?;
+    let client = SpinitronClient::new();
+    // Extract show name from URL for better logging
+    let show_name = url.split('/').last().unwrap_or("playlist");
+    let html_content = client.fetch_with_cache(url, &format!("playlist for {}", show_name)).await?;
 
     parse_playlist_html(&html_content)
 }

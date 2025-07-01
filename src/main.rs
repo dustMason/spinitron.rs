@@ -96,9 +96,6 @@ async fn main() -> Result<()> {
 
                     // Process each show
                     for show in shows_to_process {
-                        println!("    Processing: {}", show.title);
-
-                        // Fetch and parse playlist
                         match scraper::fetch_playlist(&show.url).await {
                             Ok(tracks) => {
                                 let episode = ShowEpisode {
@@ -159,7 +156,7 @@ async fn main() -> Result<()> {
                 match spotify.create_or_update_show_playlist(&show_group).await {
                     Ok(Some(playlist)) => {
                         println!(
-                            "✅ Successfully created/updated Spotify playlist: {}",
+                            "✅ Successfully created/updated Spotify playlist: {}\n",
                             playlist.name
                         );
                         if let Some(url) = playlist.external_url {
@@ -179,6 +176,20 @@ async fn main() -> Result<()> {
                 }
             }
         }
+    }
+
+    if let Some(ref mut spotify) = spotify_client {
+        let (cache_hits, api_calls) = spotify.get_cache_stats();
+        let total_requests = cache_hits + api_calls;
+        if total_requests > 0 {
+            let cache_hit_rate = (cache_hits as f64 / total_requests as f64) * 100.0;
+            println!("\n📊 Cache Statistics:");
+            println!("  Total track searches: {}", total_requests);
+            println!("  Cache hits: {} ({:.1}%)", cache_hits, cache_hit_rate);
+            println!("  API calls: {} ({:.1}%)", api_calls, 100.0 - cache_hit_rate);
+        }
+        
+        spotify.purge_expired_cache_entries()?;
     }
 
     Ok(())

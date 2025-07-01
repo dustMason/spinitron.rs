@@ -61,6 +61,8 @@ pub struct SpotifyClient {
     track_cache: TrackSearchCache,
     playlist_cache: PlaylistCache,
     cache_dir: String,
+    total_cache_hits: u32,
+    total_api_calls: u32,
 }
 
 impl SpotifyClient {
@@ -101,7 +103,6 @@ impl SpotifyClient {
             );
         }
 
-        // Load track cache only - we'll always refresh playlist cache from Spotify
         let track_cache = Self::load_track_cache(&cache_dir);
         let playlist_cache = PlaylistCache {
             playlists: std::collections::HashMap::new(),
@@ -114,6 +115,8 @@ impl SpotifyClient {
             track_cache,
             playlist_cache,
             cache_dir,
+            total_cache_hits: 0,
+            total_api_calls: 0,
         })
     }
 
@@ -174,13 +177,23 @@ impl SpotifyClient {
     }
 
     fn save_track_cache(&mut self) -> Result<()> {
-        // Clean up expired entries before saving
-        let current_time = Self::current_timestamp();
-        self.track_cache.entries.retain(|_, entry| entry.expires_at > current_time);
-        
         let cache_path = format!("{}/track_cache.json", self.cache_dir);
-        let content = serde_json::to_string_pretty(&self.track_cache)?;
+        let content = serde_json::to_string(&self.track_cache)?;
         fs::write(cache_path, content)?;
+        Ok(())
+    }
+
+    pub fn purge_expired_cache_entries(&mut self) -> Result<()> {
+        let current_time = Self::current_timestamp();
+        let initial_count = self.track_cache.entries.len();
+        self.track_cache.entries.retain(|_, entry| entry.expires_at > current_time);
+        let expired_count = initial_count - self.track_cache.entries.len();
+        
+        if expired_count > 0 {
+            println!("🗑️  Removed {} expired cache entries", expired_count);
+            self.save_track_cache()?;
+        }
+        
         Ok(())
     }
 
@@ -196,6 +209,7 @@ impl SpotifyClient {
 
         // Check cache first
         if let Some(cached_entry) = self.track_cache.entries.get(&search_key) {
+            self.total_cache_hits += 1;
             return Ok((cached_entry.track.clone(), false)); // false = no API call made
         }
 
@@ -259,8 +273,8 @@ impl SpotifyClient {
             expires_at,
         };
         self.track_cache.entries.insert(search_key, cache_entry);
-        self.save_track_cache()?;
-
+        
+        self.total_api_calls += 1;
         Ok((spotify_track, true)) // true = API call was made
     }
 
@@ -317,7 +331,6 @@ impl SpotifyClient {
             Some(updated_existing)
         } else {
 
-            // Validate playlist name (Spotify requirements)
             if playlist_name.is_empty() {
                 return Err(anyhow!("Playlist name cannot be empty"));
             }
@@ -345,39 +358,6 @@ impl SpotifyClient {
                 "description": description,
                 "public": true
             });
-
-
-            // Test token validity and permissions
-            let test_response = self
-                .client
-                .get("https://api.spotify.com/v1/me")
-                .header("Authorization", format!("Bearer {}", self.access_token))
-                .send()
-                .await?;
-
-            if !test_response.status().is_success() {
-                return Err(anyhow!(
-                    "Token appears invalid. Status: {}",
-                    test_response.status()
-                ));
-            }
-
-            // Test playlist creation permissions by getting existing playlists
-            let playlist_test_response = self
-                .client
-                .get("https://api.spotify.com/v1/me/playlists?limit=1")
-                .header("Authorization", format!("Bearer {}", self.access_token))
-                .send()
-                .await?;
-
-            if !playlist_test_response.status().is_success() {
-                return Err(anyhow!(
-                    "Token lacks playlist permissions. Status: {}",
-                    playlist_test_response.status()
-                ));
-            }
-
-            // Convert to JSON string manually to ensure proper encoding
             let json_payload = serde_json::to_string(&playlist_data)?;
 
             let response = self
@@ -502,8 +482,6 @@ impl SpotifyClient {
         let mut api_calls_made = 0;
         let mut cache_hits = 0;
 
-        println!("Searching for {} tracks on Spotify...", tracks.len());
-
         // For very large playlists, limit to first 5000 tracks to avoid timeouts
         let tracks_to_process = if tracks.len() > 5000 {
             &tracks[..5000]
@@ -535,13 +513,16 @@ impl SpotifyClient {
             }
         }
 
+        if api_calls_made > 0 {
+            self.save_track_cache()?;
+        }
+
         println!(
             "Track search complete: {} found, {} not found ({} cache hits, {} API calls)",
             found_tracks, not_found_tracks, cache_hits, api_calls_made
         );
 
         if !track_uris.is_empty() {
-
             for (i, chunk) in track_uris.chunks(100).enumerate() {
                 let add_tracks_data = serde_json::json!({
                     "uris": chunk
@@ -568,7 +549,6 @@ impl SpotifyClient {
                     ));
                 }
             }
-            println!("Added {} tracks to playlist", track_uris.len());
         }
 
         Ok(())
@@ -620,8 +600,6 @@ impl SpotifyClient {
             return Ok(());
         }
 
-        println!("Removed {} existing tracks", track_uris.len());
-
         // Remove tracks in batches of 100 (Spotify limit)
         for (i, chunk) in track_uris.chunks(100).enumerate() {
             let tracks_to_remove: Vec<serde_json::Value> = chunk
@@ -659,7 +637,6 @@ impl SpotifyClient {
     }
 
     pub async fn refresh_playlist_cache(&mut self) -> Result<()> {
-
         let mut offset = 0;
         let limit = 50;
         let mut all_playlists = Vec::new();
@@ -752,6 +729,10 @@ impl SpotifyClient {
 
     pub fn get_cached_playlists(&self) -> &std::collections::HashMap<String, SpotifyPlaylist> {
         &self.playlist_cache.playlists
+    }
+
+    pub fn get_cache_stats(&self) -> (u32, u32) {
+        (self.total_cache_hits, self.total_api_calls)
     }
 
 }
