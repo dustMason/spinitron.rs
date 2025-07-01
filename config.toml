@@ -1,11 +1,12 @@
 [stations.KALX]
-shows = []
-
-# Example of specific shows to scrape:
-# shows = ["Round Midnight", "Another Flippin' Sunday"]
+ignores = ["Arts In Review"]
 
 [stations.KPOO]
-shows = []
+ignores = [
+    "KPOO San Francisco .*",
+    "KPOO Community News",
+    "Keep The Praise Gospel Show",
+    ".*Emmit Powell Gospel Caravan.*"
+]
 
 [stations.Psyched]
-shows = []

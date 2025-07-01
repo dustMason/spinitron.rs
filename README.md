@@ -74,17 +74,22 @@ cargo test
 
 ## Configuration
 
-Edit `config.toml` to specify which stations and shows to scrape:
+Edit `config.toml` to specify which stations to scrape and which shows to ignore:
 
 ```toml
 [stations.KALX]
-# Empty shows list means scrape all shows for the day
-shows = []
+# Example: ignore FREEFORM shows and test shows
+# ignores = ["FREEFORM", "Test Show \\d+"]
+
+[stations.KPOO]
+# Ignore those generic KPOO San Francisco shows
+ignores = ["KPOO San Francisco .*"]
 
 [stations.KPFA]
-# Or specify particular shows
-shows = ["Morning Mix", "The Afternoon Show"]
+# No ignores - scrape all shows
 ```
+
+The `ignores` field accepts regex patterns to filter out unwanted shows. Shows matching any ignore pattern will be skipped during scraping.
 
 ## Spotify Setup
 

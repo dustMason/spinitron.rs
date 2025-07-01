@@ -175,14 +175,16 @@ impl SpotifyClient {
     pub fn purge_expired_cache_entries(&mut self) -> Result<()> {
         let current_time = Self::current_timestamp();
         let initial_count = self.track_cache.entries.len();
-        self.track_cache.entries.retain(|_, entry| entry.expires_at > current_time);
+        self.track_cache
+            .entries
+            .retain(|_, entry| entry.expires_at > current_time);
         let expired_count = initial_count - self.track_cache.entries.len();
-        
+
         if expired_count > 0 {
             println!("🗑️  Removed {} expired cache entries", expired_count);
             self.save_track_cache()?;
         }
-        
+
         Ok(())
     }
 
@@ -193,7 +195,10 @@ impl SpotifyClient {
             .as_secs()
     }
 
-    async fn search_track_with_cache_info(&mut self, track: &Track) -> Result<(Option<SpotifyTrack>, bool)> {
+    async fn search_track_with_cache_info(
+        &mut self,
+        track: &Track,
+    ) -> Result<(Option<SpotifyTrack>, bool)> {
         let search_key = track.cache_key();
 
         // Check cache first
@@ -229,8 +234,13 @@ impl SpotifyClient {
         }
 
         let response_text = response.text().await?;
-        let json: Value = serde_json::from_str(&response_text)
-            .map_err(|e| anyhow!("Failed to parse search JSON response: {}. Response body: {}", e, response_text))?;
+        let json: Value = serde_json::from_str(&response_text).map_err(|e| {
+            anyhow!(
+                "Failed to parse search JSON response: {}. Response body: {}",
+                e,
+                response_text
+            )
+        })?;
 
         let spotify_track = if let Some(tracks) = json["tracks"]["items"].as_array() {
             if let Some(track_data) = tracks.first() {
@@ -262,11 +272,10 @@ impl SpotifyClient {
             expires_at,
         };
         self.track_cache.entries.insert(search_key, cache_entry);
-        
+
         self.total_api_calls += 1;
         Ok((spotify_track, true)) // true = API call was made
     }
-
 
     pub async fn create_or_update_show_playlist(
         &mut self,
@@ -431,7 +440,7 @@ impl SpotifyClient {
 
         for track in tracks_to_process.iter() {
             let (result, made_api_call) = self.search_track_with_cache_info(track).await?;
-            
+
             match result {
                 Some(spotify_track) => {
                     track_uris.push(spotify_track.uri);
@@ -596,16 +605,17 @@ impl SpotifyClient {
             let status = response.status();
             if !status.is_success() {
                 let error_text = response.text().await?;
-                return Err(anyhow!(
-                    "Spotify API error ({}): {}",
-                    status,
-                    error_text
-                ));
+                return Err(anyhow!("Spotify API error ({}): {}", status, error_text));
             }
 
             let response_text = response.text().await?;
-            let json: Value = serde_json::from_str(&response_text)
-                .map_err(|e| anyhow!("Failed to parse JSON response: {}. Response body: {}", e, response_text))?;
+            let json: Value = serde_json::from_str(&response_text).map_err(|e| {
+                anyhow!(
+                    "Failed to parse JSON response: {}. Response body: {}",
+                    e,
+                    response_text
+                )
+            })?;
 
             if let Some(items) = json["items"].as_array() {
                 for item in items {
@@ -613,23 +623,25 @@ impl SpotifyClient {
                     let Some(playlist_name) = item["name"].as_str() else {
                         continue;
                     };
-                    
+
                     if let Some(description) = item["description"].as_str() {
-                        let has_generated = description.contains("Generated from Spinitron playlists");
+                        let has_generated =
+                            description.contains("Generated from Spinitron playlists");
                         let has_latest_id = description.contains("Latest ID:");
 
                         if has_generated || has_latest_id {
                             // Extract ID from "Latest ID: " format
-                            let spinitron_id = if let Some(id_str) = description.split("Latest ID: ").nth(1) {
-                                id_str.split_whitespace().next().unwrap_or("0").to_string()
-                            } else {
-                                // Fallback: use a hash of the playlist name for unique identification
-                                use std::collections::hash_map::DefaultHasher;
-                                use std::hash::{Hash, Hasher};
-                                let mut hasher = DefaultHasher::new();
-                                playlist_name.hash(&mut hasher);
-                                hasher.finish().to_string()
-                            };
+                            let spinitron_id =
+                                if let Some(id_str) = description.split("Latest ID: ").nth(1) {
+                                    id_str.split_whitespace().next().unwrap_or("0").to_string()
+                                } else {
+                                    // Fallback: use a hash of the playlist name for unique identification
+                                    use std::collections::hash_map::DefaultHasher;
+                                    use std::hash::{Hash, Hasher};
+                                    let mut hasher = DefaultHasher::new();
+                                    playlist_name.hash(&mut hasher);
+                                    hasher.finish().to_string()
+                                };
 
                             let track_count = item["tracks"]["total"].as_u64().unwrap_or(0) as u32;
 
@@ -673,5 +685,4 @@ impl SpotifyClient {
     pub fn get_cache_stats(&self) -> (u32, u32) {
         (self.total_cache_hits, self.total_api_calls)
     }
-
 }

@@ -74,7 +74,9 @@ pub async fn fetch_shows_for_date(station: &str, date: NaiveDate) -> Result<Vec<
         chrono::Utc::now().timestamp_millis()
     );
 
-    let content = client.fetch_with_cache(&url, &format!("{} shows for {}", station, date)).await?;
+    let content = client
+        .fetch_with_cache(&url, &format!("{} shows for {}", station, date))
+        .await?;
     let json: Value = serde_json::from_str(&content)?;
 
     let mut shows = Vec::new();
@@ -109,7 +111,9 @@ pub async fn fetch_playlist(url: &str) -> Result<Vec<Track>> {
     let client = SpinitronClient::new();
     // Extract show name from URL for better logging
     let show_name = url.split('/').last().unwrap_or("playlist");
-    let html_content = client.fetch_with_cache(url, &format!("playlist for {}", show_name)).await?;
+    let html_content = client
+        .fetch_with_cache(url, &format!("playlist for {}", show_name))
+        .await?;
 
     parse_playlist_html(&html_content)
 }

@@ -83,15 +83,7 @@ async fn main() -> Result<()> {
 
             match scraper::fetch_shows_for_date(station_name, current_date).await {
                 Ok(shows) => {
-                    // Filter shows if specific shows are configured
-                    let shows_to_process = if station_config.shows.is_empty() {
-                        shows
-                    } else {
-                        shows
-                            .into_iter()
-                            .filter(|show| station_config.shows.contains(&show.title))
-                            .collect()
-                    };
+                    let shows_to_process = station_config.filter_shows(shows);
 
                     // Process each show
                     for show in shows_to_process {
@@ -168,7 +160,10 @@ async fn main() -> Result<()> {
                         }
                     }
                     Ok(None) => {
-                        println!("⚠️  Skipped playlist for '{}' - no tracks found", show_group.playlist_name());
+                        println!(
+                            "⚠️  Skipped playlist for '{}' - no tracks found",
+                            show_group.playlist_name()
+                        );
                     }
                     Err(e) => {
                         eprintln!(
@@ -190,9 +185,13 @@ async fn main() -> Result<()> {
             println!("\n📊 Cache Statistics:");
             println!("  Total track searches: {}", total_requests);
             println!("  Cache hits: {} ({:.1}%)", cache_hits, cache_hit_rate);
-            println!("  API calls: {} ({:.1}%)", api_calls, 100.0 - cache_hit_rate);
+            println!(
+                "  API calls: {} ({:.1}%)",
+                api_calls,
+                100.0 - cache_hit_rate
+            );
         }
-        
+
         spotify.purge_expired_cache_entries()?;
     }
 
@@ -203,7 +202,7 @@ async fn output_playlist_jsonl(spotify_client: &mut SpotifyClient) -> Result<()>
     spotify_client.refresh_playlist_cache().await?;
     let mut playlists: Vec<_> = spotify_client.get_cached_playlists().iter().collect();
     playlists.sort_by(|a, b| a.1.name.cmp(&b.1.name));
-    
+
     for (_id, playlist) in playlists {
         // Extract station from playlist name (format: "STATION - Show Name")
         let station = if let Some(dash_pos) = playlist.name.find(" - ") {
@@ -211,7 +210,7 @@ async fn output_playlist_jsonl(spotify_client: &mut SpotifyClient) -> Result<()>
         } else {
             "Unknown"
         };
-        
+
         let playlist_json = serde_json::json!({
             "station": station,
             "name": playlist.name,
