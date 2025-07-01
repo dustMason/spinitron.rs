@@ -54,14 +54,8 @@ cargo run -- --spotify --date 2025-06-29
 ### Listing Playlists
 
 ```bash
-# List all cached playlists as markdown (fast)
+# List all playlists as JSONL (requires Spotify auth)
 cargo run -- --list-playlists
-
-# List playlists by refreshing from Spotify (slower, requires auth)
-cargo run -- --list-playlists --spotify
-
-# Save to a markdown file
-cargo run -- --list-playlists > kalx-playlists.md
 ```
 
 ### Testing
@@ -113,7 +107,7 @@ shows = ["Morning Mix", "The Afternoon Show"]
 
 The app uses two caches:
 - **HTML Cache**: `cache/` - Stores scraped HTML to avoid re-downloading
-- **Spotify Track Cache**: `spotify_cache/track_cache.json` - Caches track search results
+- **Spotify Track Cache**: `spotify_cache/track_cache.json` - Caches track search results with 14-day expiration
 
 ## Automation
 

@@ -7,8 +7,8 @@ Used by GitHub Actions and can be run locally for testing
 import subprocess
 import sys
 import os
+import json
 from datetime import datetime
-import re
 
 def run_command(cmd):
     """Run shell command and return output"""
@@ -37,22 +37,24 @@ def main():
     
     # Generate fresh playlist data
     print("📊 Generating fresh playlist data...")
-    playlist_output = run_command("./target/release/spinitron-scraper --list-playlists --spotify")
+    playlist_output = run_command("./target/release/spinitron-scraper --list-playlists")
     
-    # Extract playlist info (name, URL, and track count)
+    # Parse JSONL output
     table_rows = []
     playlist_count = 0
     
-    for line in playlist_output.split('\n'):
-        if line.strip().startswith('- [KALX -'):
-            # Parse the new format: - [name](url) | count
-            match = re.match(r'- \[(.*?)\]\((.*?)\) \| (\d+)', line.strip())
-            if match:
-                name = match.group(1)
-                url = match.group(2)
-                track_count = match.group(3)
+    for line in playlist_output.strip().split('\n'):
+        if line.strip():
+            try:
+                playlist = json.loads(line)
+                name = playlist['name']
+                url = playlist['url']
+                track_count = playlist['track_count']
                 table_rows.append(f"| [{name}]({url}) | {track_count} |")
                 playlist_count += 1
+            except (json.JSONDecodeError, KeyError) as e:
+                print(f"⚠️  Warning: Failed to parse line: {line}")
+                print(f"   Error: {e}")
     
     if not table_rows:
         print("❌ Error: No playlists found in output")

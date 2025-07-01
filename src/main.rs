@@ -39,16 +39,11 @@ async fn main() -> Result<()> {
 
     // Handle list playlists command first
     if args.list_playlists {
-        if args.spotify {
-            let mut spotify_client = SpotifyClient::new().await?;
-            output_playlist_markdown(&mut spotify_client).await?;
-        } else {
-            output_cached_playlist_markdown()?;
-        }
+        let mut spotify_client = SpotifyClient::new().await?;
+        output_playlist_jsonl(&mut spotify_client).await?;
         return Ok(());
     }
 
-    // Load configuration
     let config = AppConfig::load(&args.config)?;
 
     // Determine the end date (default to yesterday)
@@ -67,7 +62,6 @@ async fn main() -> Result<()> {
         start_date, end_date
     );
 
-    // Initialize Spotify client if needed
     let mut spotify_client = if args.spotify {
         println!("Initializing Spotify client...");
         let client = SpotifyClient::new().await?;
@@ -199,77 +193,17 @@ async fn main() -> Result<()> {
     Ok(())
 }
 
-async fn output_playlist_markdown(spotify_client: &mut SpotifyClient) -> Result<()> {
-    println!("# KALX Spotify Playlists\n");
-    println!("Generated from Spinitron radio playlists - weekly aggregations of show episodes.\n");
-
-    // Refresh cache to get latest playlists
+async fn output_playlist_jsonl(spotify_client: &mut SpotifyClient) -> Result<()> {
     spotify_client.refresh_playlist_cache().await?;
-
-    // Get all playlists and sort by name
     let mut playlists: Vec<_> = spotify_client.get_cached_playlists().iter().collect();
     playlists.sort_by(|a, b| a.1.name.cmp(&b.1.name));
-
     for (_id, playlist) in playlists {
-        let url = playlist.external_url.as_deref().unwrap_or("No URL");
-        println!("- [{}]({}) | {}", playlist.name, url, playlist.track_count);
-    }
-
-    println!("\n---");
-    println!(
-        "*Last updated: {}*",
-        chrono::Utc::now().format("%Y-%m-%d %H:%M UTC")
-    );
-    println!(
-        "*Total playlists: {}*",
-        spotify_client.get_cached_playlists().len()
-    );
-
-    Ok(())
-}
-
-fn output_cached_playlist_markdown() -> Result<()> {
-    use serde_json::Value;
-    use std::fs;
-
-    let cache_path = "spotify_cache/playlist_cache.json";
-
-    if !std::path::Path::new(cache_path).exists() {
-        println!("No playlist cache found. Run with --spotify first to create playlists.");
-        return Ok(());
-    }
-
-    let cache_content = fs::read_to_string(cache_path)?;
-    let cache: Value = serde_json::from_str(&cache_content)?;
-
-    println!("# KALX Spotify Playlists\n");
-    println!("Generated from Spinitron radio playlists - weekly aggregations of show episodes.\n");
-
-    if let Some(playlists) = cache["playlists"].as_object() {
-        let mut playlist_list: Vec<_> = playlists.values().collect();
-        playlist_list.sort_by(|a, b| {
-            let name_a = a["name"].as_str().unwrap_or("");
-            let name_b = b["name"].as_str().unwrap_or("");
-            name_a.cmp(name_b)
+        let playlist_json = serde_json::json!({
+            "name": playlist.name,
+            "url": playlist.external_url.as_deref().unwrap_or(""),
+            "track_count": playlist.track_count
         });
-
-        let playlist_count = playlist_list.len();
-
-        for playlist in &playlist_list {
-            let name = playlist["name"].as_str().unwrap_or("Unknown");
-            let url = playlist["external_url"].as_str().unwrap_or("No URL");
-            println!("- [{}]({})", name, url);
-        }
-
-        println!("\n---");
-        println!(
-            "*Last updated: {}*",
-            chrono::Utc::now().format("%Y-%m-%d %H:%M UTC")
-        );
-        println!("*Total playlists: {}*", playlist_count);
-    } else {
-        println!("No playlists found in cache.");
+        println!("{}", playlist_json);
     }
-
     Ok(())
 }

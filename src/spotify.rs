@@ -727,49 +727,33 @@ impl SpotifyClient {
 
             if let Some(items) = json["items"].as_array() {
                 for item in items {
-                    let playlist_name = item["name"].as_str().unwrap_or("Unknown");
+                    // Skip playlists without proper names to avoid hash collisions
+                    let Some(playlist_name) = item["name"].as_str() else {
+                        continue;
+                    };
+                    
                     if let Some(description) = item["description"].as_str() {
-                        // Look for either old format "Spinítron ID:" or new format "Latest ID:"
-                        let has_generated =
-                            description.contains("Generated from Spinitron playlists");
-                        let has_old_format = description.contains("Spinítron ID:");
-                        let has_new_format = description.contains("Latest ID:");
-                        let is_kalx = playlist_name.starts_with("KALX -");
+                        let has_generated = description.contains("Generated from Spinitron playlists");
+                        let has_latest_id = description.contains("Latest ID:");
 
-                        // Be more flexible - match if it's a KALX playlist OR has our description
-                        let is_spinitron_playlist =
-                            has_generated || (is_kalx && (has_old_format || has_new_format));
+                        if has_generated || has_latest_id {
+                            // Extract ID from "Latest ID: " format
+                            let spinitron_id = if let Some(id_str) = description.split("Latest ID: ").nth(1) {
+                                id_str.split_whitespace().next().unwrap_or("0").to_string()
+                            } else {
+                                // Fallback: use a hash of the playlist name for unique identification
+                                use std::collections::hash_map::DefaultHasher;
+                                use std::hash::{Hash, Hasher};
+                                let mut hasher = DefaultHasher::new();
+                                playlist_name.hash(&mut hasher);
+                                hasher.finish().to_string()
+                            };
 
-                        if is_spinitron_playlist {
-                            // Try to extract ID from either format, fallback to playlist name hash
-                            let spinitron_id =
-                                if let Some(id_str) = description.split("Latest ID: ").nth(1) {
-                                    id_str.split_whitespace().next().unwrap_or("0").to_string()
-                                } else if let Some(spinitron_line) = description
-                                    .lines()
-                                    .find(|line| line.contains("Spinítron ID:"))
-                                {
-                                    if let Some(id_str) = spinitron_line.split(':').nth(1) {
-                                        let cleaned = id_str.trim().replace(['[', ']'], "");
-                                        cleaned.split(',').next().unwrap_or("0").trim().to_string()
-                                    } else {
-                                        "0".to_string()
-                                    }
-                                } else {
-                                    // Fallback: use a hash of the playlist name for unique identification
-                                    use std::collections::hash_map::DefaultHasher;
-                                    use std::hash::{Hash, Hasher};
-                                    let mut hasher = DefaultHasher::new();
-                                    playlist_name.hash(&mut hasher);
-                                    hasher.finish().to_string()
-                                };
-
-                            // Get track count from the response (already included!)
                             let track_count = item["tracks"]["total"].as_u64().unwrap_or(0) as u32;
 
                             let playlist = SpotifyPlaylist {
                                 id: item["id"].as_str().unwrap_or("").to_string(),
-                                name: item["name"].as_str().unwrap_or("").to_string(),
+                                name: playlist_name.to_string(),
                                 description: Some(description.to_string()),
                                 uri: item["uri"].as_str().unwrap_or("").to_string(),
                                 external_url: item["external_urls"]["spotify"]
