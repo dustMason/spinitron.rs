@@ -37,7 +37,7 @@ export SPOTIFY_CLIENT_ID="your_client_id"
 export SPOTIFY_CLIENT_SECRET="your_client_secret"
 
 # Run the Python script to get a refresh token
-python3 get_spotify_token.py
+python scripts/get_spotify_token.py
 ```
 
 **Step 2: Use the App**
@@ -97,7 +97,7 @@ shows = ["Morning Mix", "The Afternoon Show"]
 
 2. **Get a Refresh Token:**
    - Set your client credentials as environment variables
-   - Run the included Python script: `python3 get_spotify_token.py`
+   - Run the included Python script: `python scripts/get_spotify_token.py`
    - The script will open your browser and guide you through authorization
    - Copy the refresh token it provides
 
@@ -120,7 +120,7 @@ The app uses two caches:
 
 ### GitHub Actions 
 
-The repository includes GitHub Actions workflows for automated daily playlist updates:
+The repository includes a GitHub Actions workflow for automated daily playlist updates:
 
 **Setup:**
 1. Fork this repository to your GitHub account
@@ -128,9 +128,7 @@ The repository includes GitHub Actions workflows for automated daily playlist up
 3. Add the following repository secrets:
    - `SPOTIFY_CLIENT_ID` - Your Spotify app client ID
    - `SPOTIFY_CLIENT_SECRET` - Your Spotify app client secret  
-   - `SPOTIFY_REFRESH_TOKEN` - Your refresh token (from `get_spotify_token.py`)
+   - `SPOTIFY_REFRESH_TOKEN` - Your refresh token (from `scripts/get_spotify_token.py`)
 
-**Available Workflows:**
-- **Daily Update** (`.github/workflows/daily-playlist-update.yml`)
-  - Runs once daily at 6 AM UTC
-  - Updates playlists and commits markdown list
+**Workflow:**
+The **Daily Update** workflow (`.github/workflows/daily-playlist-update.yml`) runs once daily at 6 AM UTC to update playlists and commit the markdown list.
