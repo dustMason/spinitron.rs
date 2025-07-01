@@ -63,7 +63,6 @@ async fn main() -> Result<()> {
     );
 
     let mut spotify_client = if args.spotify {
-        println!("Initializing Spotify client...");
         let client = SpotifyClient::new().await?;
         Some(client)
     } else {
@@ -127,7 +126,7 @@ async fn main() -> Result<()> {
             current_date = current_date + chrono::Duration::days(1);
         }
     }
-    
+
     // Always refresh playlist cache from Spotify to avoid duplicates
     if let Some(ref mut spotify) = spotify_client {
         spotify.refresh_playlist_cache().await?;

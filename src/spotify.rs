@@ -9,6 +9,9 @@ use std::path::Path;
 
 use crate::models::{ShowGroup, Track};
 
+const CACHE_DIR: &str = "spotify_cache";
+const TRACK_CACHE_FILE: &str = "track_cache.json";
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct SpotifyTrack {
     pub id: String,
@@ -75,7 +78,7 @@ impl SpotifyClient {
             .map_err(|_| anyhow!("SPOTIFY_REFRESH_TOKEN environment variable not set. Run get_spotify_token.py to get one."))?;
 
         let client = Client::new();
-        let cache_dir = "spotify_cache".to_string();
+        let cache_dir = CACHE_DIR.to_string();
 
         // Ensure cache directory exists
         if !Path::new(&cache_dir).exists() {
@@ -88,20 +91,6 @@ impl SpotifyClient {
 
         // Get user ID and verify permissions
         let user_id = Self::get_user_id(&client, &access_token).await?;
-
-        // Test if we can read user's playlists (to verify token permissions)
-        let test_response = client
-            .get("https://api.spotify.com/v1/me/playlists?limit=1")
-            .header("Authorization", format!("Bearer {}", access_token))
-            .send()
-            .await?;
-
-        if !test_response.status().is_success() {
-            println!(
-                "⚠️  Token may not have sufficient permissions: {}",
-                test_response.status()
-            );
-        }
 
         let track_cache = Self::load_track_cache(&cache_dir);
         let playlist_cache = PlaylistCache {
@@ -165,7 +154,7 @@ impl SpotifyClient {
     }
 
     fn load_track_cache(cache_dir: &str) -> TrackSearchCache {
-        let cache_path = format!("{}/track_cache.json", cache_dir);
+        let cache_path = format!("{}/{}", cache_dir, TRACK_CACHE_FILE);
         if let Ok(content) = fs::read_to_string(&cache_path) {
             if let Ok(cache) = serde_json::from_str(&content) {
                 return cache;
@@ -177,7 +166,7 @@ impl SpotifyClient {
     }
 
     fn save_track_cache(&mut self) -> Result<()> {
-        let cache_path = format!("{}/track_cache.json", self.cache_dir);
+        let cache_path = format!("{}/{}", self.cache_dir, TRACK_CACHE_FILE);
         let content = serde_json::to_string(&self.track_cache)?;
         fs::write(cache_path, content)?;
         Ok(())
