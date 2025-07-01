@@ -14,7 +14,7 @@ Weekly aggregations of KALX radio shows, updated daily at 6 AM UTC.
 | [KALX - Chill Wednesday with le Monsieur Francais](https://open.spotify.com/playlist/5QcUHag9ZUjfMQi8qh2iBx) | 30 |
 | [KALX - Discourse on the 8th & 9th](https://open.spotify.com/playlist/2bHAdejkJey6wrPcEBf1Yg) | 8 |
 | [KALX - FREEFOAM](https://open.spotify.com/playlist/5pFYRs0wUkTlmzL2l19ap3) | 25 |
-| [KALX - FREEFORM](https://open.spotify.com/playlist/16T1YmORwIamzbaF7LY50C) | 1143 |
+| [KALX - FREEFORM](https://open.spotify.com/playlist/16T1YmORwIamzbaF7LY50C) | 1147 |
 | [KALX - Fiat Lux Redux](https://open.spotify.com/playlist/48rFa6JCD3gUUtPWj3paUu) | 1 |
 | [KALX - Grasp The Incantation](https://open.spotify.com/playlist/6mcF1edfVVu1mFh4jRTSEZ) | 20 |
 | [KALX - Hi Fi Way](https://open.spotify.com/playlist/1vzetwxtvazukbkJem2MyO) | 17 |
@@ -41,7 +41,7 @@ Weekly aggregations of KALX radio shows, updated daily at 6 AM UTC.
 
 ---
 
-*Last updated: 2025-07-01 04:40 UTC*  
+*Last updated: 2025-07-01 05:14 UTC*  
 *Total playlists: 31*
 
 <br>
