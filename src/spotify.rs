@@ -39,8 +39,14 @@ pub struct SpotifyFolder {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+struct CachedTrackEntry {
+    track: Option<SpotifyTrack>,
+    expires_at: u64, // Unix timestamp
+}
+
+#[derive(Debug, Serialize, Deserialize)]
 struct TrackSearchCache {
-    tracks: HashMap<String, Option<SpotifyTrack>>,
+    entries: HashMap<String, CachedTrackEntry>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -166,23 +172,34 @@ impl SpotifyClient {
             }
         }
         TrackSearchCache {
-            tracks: HashMap::new(),
+            entries: HashMap::new(),
         }
     }
 
-    fn save_track_cache(&self) -> Result<()> {
+    fn save_track_cache(&mut self) -> Result<()> {
+        // Clean up expired entries before saving
+        let current_time = Self::current_timestamp();
+        self.track_cache.entries.retain(|_, entry| entry.expires_at > current_time);
+        
         let cache_path = format!("{}/track_cache.json", self.cache_dir);
         let content = serde_json::to_string_pretty(&self.track_cache)?;
         fs::write(cache_path, content)?;
         Ok(())
     }
 
+    fn current_timestamp() -> u64 {
+        std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)
+            .unwrap_or_default()
+            .as_secs()
+    }
+
     pub async fn search_track(&mut self, track: &Track) -> Result<Option<SpotifyTrack>> {
         let search_key = format!("{} - {}", track.artist, track.song);
 
         // Check cache first
-        if let Some(cached_result) = self.track_cache.tracks.get(&search_key) {
-            return Ok(cached_result.clone());
+        if let Some(cached_entry) = self.track_cache.entries.get(&search_key) {
+            return Ok(cached_entry.track.clone());
         }
 
         // Search Spotify
@@ -225,10 +242,14 @@ impl SpotifyClient {
             None
         };
 
-        // Cache the result
-        self.track_cache
-            .tracks
-            .insert(search_key, spotify_track.clone());
+        // Cache the result with 14-day expiration
+        let current_time = Self::current_timestamp();
+        let expires_at = current_time + (14 * 24 * 60 * 60); // 14 days in seconds
+        let cache_entry = CachedTrackEntry {
+            track: spotify_track.clone(),
+            expires_at,
+        };
+        self.track_cache.entries.insert(search_key, cache_entry);
         self.save_track_cache()?;
 
         Ok(spotify_track)
