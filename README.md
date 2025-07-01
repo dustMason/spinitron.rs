@@ -2,17 +2,9 @@
 
 A Rust application that scrapes radio station playlists from Spinitron and creates Spotify playlists from them.
 
-## Features
+I made it because I love listening to KALX and wanted an easy way to pull music that i hear on the air into my Spotify library. I discovered that Spinitron powers their radio playlists feature, so I'm using that as the source of data to power this app.
 
-- Scrapes show listings from Spinitron calendar API
-- Parses playlist HTML to extract track information (artist, song, album, label)
-- Configurable via TOML to specify stations and shows
-- Caches scraped HTML content to avoid excessive requests
-- Creates **public** Spotify playlists
-- Outputs shareable URLs for each created playlist
-- Caches Spotify track searches and playlist metadata for deduplication
-- Includes Spinitron ID in playlist descriptions to prevent duplicates
-- Outputs playlist data to stdout
+Claude Code wrote nearly all of this!
 
 ## Usage
 
@@ -140,10 +132,9 @@ Each playlist includes the latest Spinitron ID for that show in its description 
 
 ## Caching
 
-The app uses several caching mechanisms:
+The app uses two caches:
 - **HTML Cache**: `cache/` - Stores scraped HTML to avoid re-downloading
 - **Spotify Track Cache**: `spotify_cache/track_cache.json` - Caches track search results
-- **Spotify Playlist Cache**: `spotify_cache/playlist_cache.json` - Caches existing playlists by Spinitron ID
 
 ## Automation
 

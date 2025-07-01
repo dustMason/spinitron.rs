@@ -408,12 +408,19 @@ impl SpotifyClient {
             
             println!("  Updating playlist with newer episodes (existing: {}, current: {})", existing_latest_id, latest_id);
             
+            // Replace all tracks with the latest 7-day collection
+            let new_tracks = show_group.all_tracks();
+            println!("  Replacing playlist with {} tracks from last 7 days", new_tracks.len());
+            
+            // First, clear the existing playlist
+            self.clear_playlist_tracks(&existing.id).await?;
+            
+            // Then add all the new tracks
+            self.add_tracks_to_playlist(&existing.id, &new_tracks).await?;
+            
             // Update the playlist description with new latest ID
             let updated_description = show_group.description();
             self.update_playlist_description(&existing.id, &updated_description).await?;
-            
-            // Replace tracks with current week's tracks
-            self.replace_playlist_tracks(&existing.id, &show_group.all_tracks()).await?;
             
             // Update in-memory cache
             self.playlist_cache.playlists.insert(latest_id.to_string(), existing.clone());
@@ -648,24 +655,82 @@ impl SpotifyClient {
         0
     }
     
-    async fn replace_playlist_tracks(&mut self, playlist_id: &str, tracks: &[Track]) -> Result<()> {
-        // First, clear all existing tracks
-        let response = self.client
-            .put(&format!("https://api.spotify.com/v1/playlists/{}/tracks", playlist_id))
-            .header("Authorization", format!("Bearer {}", self.access_token))
-            .header("Content-Type", "application/json")
-            .json(&serde_json::json!({"uris": []}))
-            .send()
-            .await?;
-
-        if !response.status().is_success() {
-            let error_text = response.text().await?;
-            return Err(anyhow!("Failed to clear playlist tracks: {}", error_text));
+    async fn get_playlist_tracks(&self, playlist_id: &str) -> Result<Vec<String>> {
+        let mut all_track_uris = Vec::new();
+        let mut url = Some(format!("https://api.spotify.com/v1/playlists/{}/tracks?limit=100", playlist_id));
+        
+        while let Some(current_url) = url {
+            let response = self.client
+                .get(&current_url)
+                .header("Authorization", format!("Bearer {}", self.access_token))
+                .send()
+                .await?;
+            
+            if !response.status().is_success() {
+                let error_text = response.text().await?;
+                return Err(anyhow!("Failed to get playlist tracks: {}", error_text));
+            }
+            
+            let json: serde_json::Value = response.json().await?;
+            
+            if let Some(items) = json["items"].as_array() {
+                for item in items {
+                    if let Some(track) = item["track"].as_object() {
+                        if let Some(uri) = track["uri"].as_str() {
+                            all_track_uris.push(uri.to_string());
+                        }
+                    }
+                }
+            }
+            
+            url = json["next"].as_str().map(|s| s.to_string());
         }
         
-        // Then add the new tracks
-        self.add_tracks_to_playlist(playlist_id, tracks).await
+        Ok(all_track_uris)
     }
+
+    async fn clear_playlist_tracks(&self, playlist_id: &str) -> Result<()> {
+        println!("    Clearing existing tracks from playlist...");
+        
+        // Get all current track URIs
+        let track_uris = self.get_playlist_tracks(playlist_id).await?;
+        
+        if track_uris.is_empty() {
+            println!("    Playlist is already empty");
+            return Ok(());
+        }
+        
+        println!("    Removing {} existing tracks", track_uris.len());
+        
+        // Remove tracks in batches of 100 (Spotify limit)
+        for (i, chunk) in track_uris.chunks(100).enumerate() {
+            let tracks_to_remove: Vec<serde_json::Value> = chunk.iter()
+                .map(|uri| serde_json::json!({"uri": uri}))
+                .collect();
+            
+            let remove_tracks_data = serde_json::json!({
+                "tracks": tracks_to_remove
+            });
+
+            let response = self.client
+                .delete(&format!("https://api.spotify.com/v1/playlists/{}/tracks", playlist_id))
+                .header("Authorization", format!("Bearer {}", self.access_token))
+                .header("Content-Type", "application/json")
+                .json(&remove_tracks_data)
+                .send()
+                .await?;
+            
+            if !response.status().is_success() {
+                let error_text = response.text().await?;
+                return Err(anyhow!("Failed to remove tracks batch {}: {}", i + 1, error_text));
+            }
+            
+            println!("    Removed batch {} ({} tracks)", i + 1, chunk.len());
+        }
+        
+        Ok(())
+    }
+
 
     pub async fn refresh_playlist_cache(&mut self) -> Result<()> {
         println!("Refreshing playlist cache from Spotify...");
