@@ -194,7 +194,7 @@ impl SpotifyClient {
     }
 
     async fn search_track_with_cache_info(&mut self, track: &Track) -> Result<(Option<SpotifyTrack>, bool)> {
-        let search_key = format!("{} - {}", track.artist, track.song);
+        let search_key = track.cache_key();
 
         // Check cache first
         if let Some(cached_entry) = self.track_cache.entries.get(&search_key) {

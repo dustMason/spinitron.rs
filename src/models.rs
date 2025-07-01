@@ -19,6 +19,12 @@ pub struct Track {
     pub time: Option<String>,
 }
 
+impl Track {
+    pub fn cache_key(&self) -> String {
+        format!("{} - {}", self.artist, self.song)
+    }
+}
+
 #[derive(Debug, Clone)]
 pub struct ShowGroup {
     pub station: String,
@@ -60,11 +66,7 @@ impl ShowGroup {
         for episode in &self.episodes {
             for track in &episode.tracks {
                 // Create a unique key for deduplication (artist + song)
-                let track_key = format!(
-                    "{} - {}",
-                    track.artist.trim().to_lowercase(),
-                    track.song.trim().to_lowercase()
-                );
+                let track_key = track.cache_key();
 
                 if !seen_tracks.contains(&track_key) {
                     seen_tracks.insert(track_key);

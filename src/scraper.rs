@@ -131,30 +131,32 @@ pub fn parse_playlist_html(html: &str) -> Result<Vec<Track>> {
         let artist = spin_element
             .select(&artist_selector)
             .next()
-            .map(|el| el.inner_html())
+            .map(|el| el.text().collect::<String>().trim().to_string())
             .unwrap_or_default();
 
         let song = spin_element
             .select(&song_selector)
             .next()
-            .map(|el| el.inner_html())
+            .map(|el| el.text().collect::<String>().trim().to_string())
             .unwrap_or_default();
 
         let album = spin_element
             .select(&release_selector)
             .next()
-            .map(|el| el.inner_html())
+            .map(|el| el.text().collect::<String>().trim().to_string())
             .unwrap_or_default();
 
         let label = spin_element
             .select(&label_selector)
             .next()
-            .map(|el| el.inner_html());
+            .map(|el| el.text().collect::<String>().trim().to_string())
+            .filter(|s| !s.is_empty());
 
         let time = spin_element
             .select(&time_selector)
             .next()
-            .map(|el| el.inner_html());
+            .map(|el| el.text().collect::<String>().trim().to_string())
+            .filter(|s| !s.is_empty());
 
         // Only add tracks that have at least artist and song
         if !artist.is_empty() && !song.is_empty() {
