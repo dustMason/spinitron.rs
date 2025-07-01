@@ -28,10 +28,6 @@ struct Args {
     #[arg(short = 's', long)]
     spotify: bool,
     
-    /// Refresh Spotify playlist cache before processing
-    #[arg(long)]
-    refresh_spotify_cache: bool,
-    
     /// Output markdown list of all cached playlists
     #[arg(long)]
     list_playlists: bool,
@@ -71,12 +67,7 @@ async fn main() -> Result<()> {
     // Initialize Spotify client if needed
     let mut spotify_client = if args.spotify {
         println!("Initializing Spotify client...");
-        let mut client = SpotifyClient::new().await?;
-        
-        if args.refresh_spotify_cache {
-            client.refresh_playlist_cache().await?;
-        }
-        
+        let client = SpotifyClient::new().await?;
         Some(client)
     } else {
         None

@@ -420,10 +420,10 @@ impl SpotifyClient {
         
         println!("Searching for {} tracks on Spotify...", tracks.len());
         
-        // For very large playlists, limit to first 500 tracks to avoid timeouts
-        let tracks_to_process = if tracks.len() > 500 {
-            println!("  Large playlist detected, limiting to first 500 tracks");
-            &tracks[..500]
+        // For very large playlists, limit to first 5000 tracks to avoid timeouts
+        let tracks_to_process = if tracks.len() > 5000 {
+            println!("  Large playlist detected, limiting to first 5000 tracks");
+            &tracks[..5000]
         } else {
             tracks
         };
