@@ -1,0 +1,20 @@
+title: "Public Radio Playlists"
+description: "Weekly aggregations of radio shows from Spinitron, updated daily"
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+markdown: kramdown
+highlighter: rouge
+
+url: "https://dustmason.github.io"
+baseurl: "/spinitron.rs"
+
+author:
+  name: "Jordan Sitkin"
+  
+social_links:
+  - { platform: github, user_url: "https://github.com/dustmason" }
+  - { platform: spotify, user_url: "https://open.spotify.com/user/dustmason" }

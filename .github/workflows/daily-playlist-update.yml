@@ -48,7 +48,27 @@ jobs:
         # Run for yesterday's date (default behavior)
         ./target/release/spinitron-scraper --spotify
         
+    - name: Update website with latest playlists
+      env:
+        SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+        SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+      run: python scripts/update_website.py
+        
+    - name: Commit and push website updates
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add docs/index.md
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update website with latest playlists"
+          git push
+        fi
+        
     - name: Report completion
       run: |
         echo "✅ Playlist update completed successfully"
+        echo "🌐 Website updated with latest playlists"
         echo "📅 Run date: $(date)"
