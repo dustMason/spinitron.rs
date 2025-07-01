@@ -86,7 +86,6 @@ impl SpotifyClient {
 
         // Get user ID and verify permissions
         let user_id = Self::get_user_id(&client, &access_token).await?;
-        println!("✅ Spotify client initialized for user: {}", user_id);
 
         // Test if we can read user's playlists (to verify token permissions)
         let test_response = client
@@ -95,9 +94,7 @@ impl SpotifyClient {
             .send()
             .await?;
 
-        if test_response.status().is_success() {
-            println!("✅ Token has playlist permissions");
-        } else {
+        if !test_response.status().is_success() {
             println!(
                 "⚠️  Token may not have sufficient permissions: {}",
                 test_response.status()
@@ -218,7 +215,19 @@ impl SpotifyClient {
             .send()
             .await?;
 
-        let json: Value = response.json().await?;
+        let status = response.status();
+        if !status.is_success() {
+            let error_text = response.text().await?;
+            return Err(anyhow!(
+                "Spotify search API error ({}): {}",
+                status,
+                error_text
+            ));
+        }
+
+        let response_text = response.text().await?;
+        let json: Value = serde_json::from_str(&response_text)
+            .map_err(|e| anyhow!("Failed to parse search JSON response: {}. Response body: {}", e, response_text))?;
 
         let spotify_track = if let Some(tracks) = json["tracks"]["items"].as_array() {
             if let Some(track_data) = tracks.first() {
@@ -668,7 +677,19 @@ impl SpotifyClient {
                 .send()
                 .await?;
 
-            let json: Value = response.json().await?;
+            let status = response.status();
+            if !status.is_success() {
+                let error_text = response.text().await?;
+                return Err(anyhow!(
+                    "Spotify API error ({}): {}",
+                    status,
+                    error_text
+                ));
+            }
+
+            let response_text = response.text().await?;
+            let json: Value = serde_json::from_str(&response_text)
+                .map_err(|e| anyhow!("Failed to parse JSON response: {}. Response body: {}", e, response_text))?;
 
             if let Some(items) = json["items"].as_array() {
                 for item in items {
