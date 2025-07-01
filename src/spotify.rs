@@ -243,16 +243,7 @@ impl SpotifyClient {
         
         let playlist = if let Some(existing) = existing_playlist {
             println!("Found existing playlist: {}", existing.name);
-            
-            // Parse existing latest ID from description
-            let existing_latest_id = self.parse_latest_id_from_description(existing.description.as_ref().unwrap_or(&String::new()));
-            
-            if existing_latest_id >= latest_id {
-                println!("  Playlist is up to date (existing: {}, current: {})", existing_latest_id, latest_id);
-                return Ok(existing);
-            }
-            
-            println!("  Updating playlist with newer episodes (existing: {}, current: {})", existing_latest_id, latest_id);
+            println!("  Updating playlist with latest 7-day collection");
             
             // Replace all tracks with the latest 7-day collection
             let new_tracks = show_group.all_tracks();
@@ -491,15 +482,6 @@ impl SpotifyClient {
         Ok(())
     }
 
-    fn parse_latest_id_from_description(&self, description: &str) -> u64 {
-        // Look for pattern like "Latest ID: 123"
-        if let Some(id_str) = description.split("Latest ID: ").nth(1) {
-            if let Some(id_part) = id_str.split_whitespace().next() {
-                return id_part.parse::<u64>().unwrap_or(0);
-            }
-        }
-        0
-    }
     
     async fn get_playlist_tracks(&self, playlist_id: &str) -> Result<Vec<String>> {
         let mut all_track_uris = Vec::new();

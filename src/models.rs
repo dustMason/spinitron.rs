@@ -51,10 +51,23 @@ impl ShowGroup {
     }
     
     pub fn all_tracks(&self) -> Vec<Track> {
+        use std::collections::HashSet;
+        
         let mut all_tracks = Vec::new();
+        let mut seen_tracks = HashSet::new();
+        
         for episode in &self.episodes {
-            all_tracks.extend(episode.tracks.clone());
+            for track in &episode.tracks {
+                // Create a unique key for deduplication (artist + song)
+                let track_key = format!("{} - {}", track.artist.trim().to_lowercase(), track.song.trim().to_lowercase());
+                
+                if !seen_tracks.contains(&track_key) {
+                    seen_tracks.insert(track_key);
+                    all_tracks.push(track.clone());
+                }
+            }
         }
+        
         all_tracks
     }
     
