@@ -14,7 +14,7 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 | [KALX - All Bangers ;-)](https://open.spotify.com/playlist/0oNBCzkPM8e9p1MGuCMMIX) | 27 |
 | [KALX - All Cats Are Beautiful](https://open.spotify.com/playlist/5JudR7lO9Ylj413TMlDt5e) | 25 |
 | [KALX - All Out of Bubblegum](https://open.spotify.com/playlist/18GYrjg0nzdn5vh473l7IU) | 26 |
-| [KALX - Another Flippin' Sunday](https://open.spotify.com/playlist/3L5eL1oeftdfIisQH4PLHS) | 35 |
+| [KALX - Another Flippin' Sunday](https://open.spotify.com/playlist/3L5eL1oeftdfIisQH4PLHS) | 36 |
 | [KALX - At War With Heaven with Last Will: Heaven vs. Hell in Molten Metal](https://open.spotify.com/playlist/542ADYaR55f2ONAnRGzM3r) | 11 |
 | [KALX - Bad Day To Be A Strawberry Around Here](https://open.spotify.com/playlist/458vVYfDNyjZvfPU7beHcL) | 29 |
 | [KALX - C U This Tuesday! :)](https://open.spotify.com/playlist/1dhwO16FWGoKnRFYb4b00p) | 17 |
@@ -26,7 +26,7 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 | [KALX - Discourse on the 8th & 9th](https://open.spotify.com/playlist/2bHAdejkJey6wrPcEBf1Yg) | 10 |
 | [KALX - FREEDOM](https://open.spotify.com/playlist/1Cd8qODIgbsXVX6AobvsVU) | 28 |
 | [KALX - FREEFOAM](https://open.spotify.com/playlist/5pFYRs0wUkTlmzL2l19ap3) | 25 |
-| [KALX - FREEFORM](https://open.spotify.com/playlist/16T1YmORwIamzbaF7LY50C) | 1342 |
+| [KALX - FREEFORM](https://open.spotify.com/playlist/16T1YmORwIamzbaF7LY50C) | 1268 |
 | [KALX - Fiat Lux Redux](https://open.spotify.com/playlist/48rFa6JCD3gUUtPWj3paUu) | 1 |
 | [KALX - Figureskater in the Afternoon](https://open.spotify.com/playlist/7IbYPhFzyyk0Ux8qcLppZT) | 35 |
 | [KALX - Film Close Ups](https://open.spotify.com/playlist/3U7fWkYodFnrcHMn1e9Kjf) | 7 |
@@ -45,11 +45,12 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 | [KALX - Midnight Express](https://open.spotify.com/playlist/2ZC5OhMRlTulvgQwQg1O4x) | 8 |
 | [KALX - Morning Misery Hour](https://open.spotify.com/playlist/3FRKz48WtzZvNkHJb556cW) | 13 |
 | [KALX - North Gate Radio Special](https://open.spotify.com/playlist/1jYdMTOn9RSivjA8OVeCyG) | 1 |
+| [KALX - Off the Dome](https://open.spotify.com/playlist/1nPHs1TGRTotf9OuZs6wDn) | 26 |
 | [KALX - Pick Up All That Sh*t!](https://open.spotify.com/playlist/2RjnlmmOTgtou6PxysBMzM) | 19 |
-| [KALX - Power Greater](https://open.spotify.com/playlist/6BnE9xFTcK7RBWXPnXgXpD) | 11 |
+| [KALX - Power Greater](https://open.spotify.com/playlist/6BnE9xFTcK7RBWXPnXgXpD) | 26 |
 | [KALX - Radio Dunya](https://open.spotify.com/playlist/7cfXQuYhzZxSSQoKxXX5db) | 9 |
 | [KALX - Radio Jail](https://open.spotify.com/playlist/6jTOV2StHfGWiEGwjUoLgN) | 29 |
-| [KALX - Round Midnight](https://open.spotify.com/playlist/22RAdxsQRT9hjDHm0Q89b1) | 20 |
+| [KALX - Round Midnight](https://open.spotify.com/playlist/22RAdxsQRT9hjDHm0Q89b1) | 15 |
 | [KALX - Round Midnight w/ Carney, Slusser, Romus](https://open.spotify.com/playlist/2kNxmJvqzxjx8AyBq77y42) | 4 |
 | [KALX - Shortwave](https://open.spotify.com/playlist/0T5LZZWu98u8tdF381lIih) | 9 |
 | [KALX - Sonic Sounds](https://open.spotify.com/playlist/6L9A7xZGfs8zS0nPxBIQtL) | 25 |
@@ -58,13 +59,14 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 | [KALX - The Garden of Kalx](https://open.spotify.com/playlist/3ZpcuMhNAQTd9jTp2L1wOu) | 17 |
 | [KALX - The Turndown Service](https://open.spotify.com/playlist/1X5TARGGk6HtnMH7PH0S5Q) | 26 |
 | [KALX - WHUHS](https://open.spotify.com/playlist/77CMkkLZt9BLawaME7lOl9) | 5 |
-| [KALX - Waiting for the Bus](https://open.spotify.com/playlist/6ZSLI5kFF4txb5jj2dQE8g) | 23 |
+| [KALX - Waiting for the Bus](https://open.spotify.com/playlist/6ZSLI5kFF4txb5jj2dQE8g) | 26 |
 | [KALX - Why Baby Why](https://open.spotify.com/playlist/1TybmoMyd4oEkmdDQFiTi0) | 11 |
 | [KALX - Wives in the avocados](https://open.spotify.com/playlist/5z8vIWVC369qPrSd0wDEmE) | 21 |
 | [KALX - Women Hold Up Most My Show](https://open.spotify.com/playlist/26BVfR99wbk2jeh8JCn51m) | 23 |
 | [KALX - Yo! KALX Raps](https://open.spotify.com/playlist/0thQHacX0eWTbbLcuXBYvg) | 17 |
 | [KALX - live laugh love radio](https://open.spotify.com/playlist/0nqVXr4XE1TwcH8Vn8hcbb) | 30 |
 | [KALX - please save my earth radio](https://open.spotify.com/playlist/5Ba3bQgoyLCulzh9w4hwBW) | 42 |
+| [KALX - please save my earth radio featuring curling](https://open.spotify.com/playlist/1OgVoYYbiLkoxPXwQGmCLV) | 33 |
 | [KALX - queen of the cowbell.](https://open.spotify.com/playlist/4yADNW78a5gNOxLoBZxnzx) | 40 |
 | [KALX - the english language evades me today](https://open.spotify.com/playlist/4TxPCU6UfnZJzXQMWtrgIU) | 33 |
 
@@ -72,26 +74,26 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 
 | Show | Tracks |
 |------|--------|
-| [KPOO - #SaturdayAfternoonReggaeShow](https://open.spotify.com/playlist/4zIZ96LZXB5Rybo29w4vkt) | 57 |
+| [KPOO - #SaturdayAfternoonReggaeShow](https://open.spotify.com/playlist/4zIZ96LZXB5Rybo29w4vkt) | 38 |
 | [KPOO - 70's and 60's Soul for Breakfast](https://open.spotify.com/playlist/6xhB1Yj1nxvintViv56xhe) | 7 |
-| [KPOO - All Night  After Hours Show](https://open.spotify.com/playlist/22EQugLFwLWFf5h8WmsJb2) | 91 |
-| [KPOO - Andanzas](https://open.spotify.com/playlist/2U9xrRFuXlKJxvFsJFfLE4) | 22 |
-| [KPOO - BLUES TIL SUNRISE](https://open.spotify.com/playlist/6LOWrMa7ppDQQQ1Ku0o7Ry) | 32 |
+| [KPOO - All Night  After Hours Show](https://open.spotify.com/playlist/22EQugLFwLWFf5h8WmsJb2) | 66 |
+| [KPOO - Andanzas](https://open.spotify.com/playlist/2U9xrRFuXlKJxvFsJFfLE4) | 13 |
+| [KPOO - BLUES TIL SUNRISE](https://open.spotify.com/playlist/6LOWrMa7ppDQQQ1Ku0o7Ry) | 49 |
 | [KPOO - Blues and Oldies](https://open.spotify.com/playlist/3bDqoorcfsZCZnTk7LwQ21) | 22 |
-| [KPOO - Bomb Bay Mixx](https://open.spotify.com/playlist/4CgsgZe6mH5l0lUmf54cRS) | 31 |
-| [KPOO - Cruising Through the 70's](https://open.spotify.com/playlist/50qnNsbbokcQE3YngY1KhR) | 8 |
+| [KPOO - Bomb Bay Mixx](https://open.spotify.com/playlist/4CgsgZe6mH5l0lUmf54cRS) | 55 |
+| [KPOO - Cruising Through the 70's](https://open.spotify.com/playlist/50qnNsbbokcQE3YngY1KhR) | 19 |
 | [KPOO - Cuba Canta](https://open.spotify.com/playlist/3kexYA44t9LvJtkiQ3HORY) | 29 |
 | [KPOO - Da Madd Houze](https://open.spotify.com/playlist/4j9nEmIHVJ1IsbsVmDB70v) | 12 |
-| [KPOO - En Clave](https://open.spotify.com/playlist/2mVHh5mgmS1CC1kIFORtRB) | 70 |
+| [KPOO - En Clave](https://open.spotify.com/playlist/2mVHh5mgmS1CC1kIFORtRB) | 38 |
 | [KPOO - Fingersnaps Salon...Music & Conversation](https://open.spotify.com/playlist/2I5KctcpkQR9aI8h1uRbGF) | 34 |
-| [KPOO - From The Vaults- Autumn King or Grinders Groovy yard](https://open.spotify.com/playlist/19GywlGnXa4iuPJNkj2lZf) | 75 |
-| [KPOO - GHETTO GUMBO](https://open.spotify.com/playlist/2UyeNMPqkq7nlfdk18NN7n) | 49 |
+| [KPOO - From The Vaults- Autumn King or Grinders Groovy yard](https://open.spotify.com/playlist/19GywlGnXa4iuPJNkj2lZf) | 94 |
+| [KPOO - GHETTO GUMBO](https://open.spotify.com/playlist/2UyeNMPqkq7nlfdk18NN7n) | 42 |
 | [KPOO - Gramophoney Baloney](https://open.spotify.com/playlist/2GEz7KcTSAKw48oovMAgf8) | 25 |
 | [KPOO - Grinders Grooveyard](https://open.spotify.com/playlist/7c7bTSQRaKdX1aDzD7Tuke) | 28 |
 | [KPOO - Grown Folks Music](https://open.spotify.com/playlist/30AJdUhqPqdZHAEJ7GoFNo) | 39 |
-| [KPOO - Hip Hop For The People](https://open.spotify.com/playlist/40VMNDPOoD0tJPS9wRU6tB) | 41 |
+| [KPOO - Hip Hop For The People](https://open.spotify.com/playlist/40VMNDPOoD0tJPS9wRU6tB) | 73 |
 | [KPOO - JIVIN' AROUND](https://open.spotify.com/playlist/5UKu8BpfEchW4y8MoLKU9J) | 16 |
-| [KPOO - JJ's Vintage Soul Sounds The 60's](https://open.spotify.com/playlist/7icSJKxL0rVFVGMJ3WJZI2) | 10 |
+| [KPOO - JJ's Vintage Soul Sounds The 60's](https://open.spotify.com/playlist/7icSJKxL0rVFVGMJ3WJZI2) | 15 |
 | [KPOO - KPOO  Community News](https://open.spotify.com/playlist/6D0qNZif2J5wYsccGBEzQq) | 8 |
 | [KPOO - KPOO Public Affairs Programming](https://open.spotify.com/playlist/43pBAPzKLKOFM4rmUMdETc) | 8 |
 | [KPOO - LBD](https://open.spotify.com/playlist/1GnG74GP9JeE1Sg9c83bYJ) | 23 |
@@ -103,11 +105,11 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 | [KPOO - On The Spot](https://open.spotify.com/playlist/3X0YxEZErmKe8wEGebUphO) | 4 |
 | [KPOO - Over Nite Sounds](https://open.spotify.com/playlist/61khtpvbgnPhYoZXy4JBHd) | 91 |
 | [KPOO - Pajaro Latinoamericano](https://open.spotify.com/playlist/50CReGVNyYC0HgJz3y1ZgI) | 12 |
-| [KPOO - Rap Snacks](https://open.spotify.com/playlist/1OpW9hUMA52K18vvQDgoAI) | 75 |
+| [KPOO - Rap Snacks](https://open.spotify.com/playlist/1OpW9hUMA52K18vvQDgoAI) | 43 |
 | [KPOO - Record Shop Hop - Variety Oldies](https://open.spotify.com/playlist/2SWYJhVZaHXl1s6etYQ9wP) | 74 |
-| [KPOO - Saturday Morning in Real Time](https://open.spotify.com/playlist/3dQ072hQOxkVwAObl8t5O9) | 14 |
+| [KPOO - Saturday Morning in Real Time](https://open.spotify.com/playlist/3dQ072hQOxkVwAObl8t5O9) | 27 |
 | [KPOO - Soul Explosion](https://open.spotify.com/playlist/7wIJfk24DpSPJCEqjahR4l) | 12 |
-| [KPOO - Sounds of the City](https://open.spotify.com/playlist/5H7OolOxH2kIaqkSJHa5h1) | 11 |
+| [KPOO - Sounds of the City](https://open.spotify.com/playlist/5H7OolOxH2kIaqkSJHa5h1) | 18 |
 | [KPOO - THE SOUL OF R&B](https://open.spotify.com/playlist/2GogO3nuUwQWLHx91lfgK5) | 57 |
 | [KPOO - The Power of Blues Compels You](https://open.spotify.com/playlist/7MJZQXCEPBfE4APrpMK1Wa) | 55 |
 | [KPOO - The Report](https://open.spotify.com/playlist/4Cs5a4XioGAG0q3GkZIbHe) | 12 |
@@ -123,33 +125,33 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 
 | Show | Tracks |
 |------|--------|
-| [Psyched - Angelo's House](https://open.spotify.com/playlist/5Nf6vPVPKGsj6Vcu5jMRqQ) | 32 |
-| [Psyched - B-Side](https://open.spotify.com/playlist/0izUtzuqEqpLIHD6GEj42F) | 32 |
+| [Psyched - Angelo's House](https://open.spotify.com/playlist/5Nf6vPVPKGsj6Vcu5jMRqQ) | 20 |
+| [Psyched - B-Side](https://open.spotify.com/playlist/0izUtzuqEqpLIHD6GEj42F) | 59 |
 | [Psyched - Black Lipstick](https://open.spotify.com/playlist/4QqE6Uptmd2OlvPXqkZINW) | 35 |
-| [Psyched - Bo's Veranda](https://open.spotify.com/playlist/76ElEeCoM8tAe8cxIVRjQv) | 57 |
-| [Psyched - Chill Out](https://open.spotify.com/playlist/1vtXypIGQZge9WlWJ7pnk4) | 25 |
+| [Psyched - Bo's Veranda](https://open.spotify.com/playlist/76ElEeCoM8tAe8cxIVRjQv) | 33 |
+| [Psyched - Chill Out](https://open.spotify.com/playlist/1vtXypIGQZge9WlWJ7pnk4) | 45 |
 | [Psyched - Communication Breakdown](https://open.spotify.com/playlist/0CUXFAgUkR0sTjz8yQPhKT) | 36 |
 | [Psyched - Corazon de Melon](https://open.spotify.com/playlist/4sk5tI3uSSh4h0TKX2qsqW) | 37 |
 | [Psyched - Culture of the Underground](https://open.spotify.com/playlist/3FMnejFaL0egKV6yNhm0mQ) | 36 |
 | [Psyched - DiscoMovil Salazar](https://open.spotify.com/playlist/2zrYSz6REFSEFRcLYW6BcO) | 6 |
 | [Psyched - Distorsiongay](https://open.spotify.com/playlist/1igd2A5EcmzEdEaxmTlckz) | 20 |
-| [Psyched - Firme Lab](https://open.spotify.com/playlist/2IgRaTdhByMqP0lOb1ONnD) | 34 |
+| [Psyched - Firme Lab](https://open.spotify.com/playlist/2IgRaTdhByMqP0lOb1ONnD) | 49 |
 | [Psyched - Freaky Folk from the West Coast and Beyond](https://open.spotify.com/playlist/3Jq0zzf0mzhRd7619NC7Zn) | 21 |
-| [Psyched - Garage Guru](https://open.spotify.com/playlist/5SENuUYF5GhUK0fykOFXeI) | 35 |
-| [Psyched - Habibi Radio](https://open.spotify.com/playlist/3KwEtAOJQ1G1js6aH4BGkY) | 66 |
-| [Psyched - Hard Shiny Plastic](https://open.spotify.com/playlist/7oOcfqvzaOB0jjwtCAbydk) | 5 |
+| [Psyched - Garage Guru](https://open.spotify.com/playlist/5SENuUYF5GhUK0fykOFXeI) | 67 |
+| [Psyched - Habibi Radio](https://open.spotify.com/playlist/3KwEtAOJQ1G1js6aH4BGkY) | 25 |
+| [Psyched - Hard Shiny Plastic](https://open.spotify.com/playlist/7oOcfqvzaOB0jjwtCAbydk) | 43 |
 | [Psyched - Hermosa y Extraa - Msica para modificar tus celulas](https://open.spotify.com/playlist/3oV6I9Oul38kJtQ3Hlq0HW) | 19 |
 | [Psyched - Hodge Podge Radio](https://open.spotify.com/playlist/6cAR0njZxgCCQBif1daeZC) | 29 |
 | [Psyched - Howler Hour](https://open.spotify.com/playlist/7vs8djniQDEAIEn27tAxLv) | 29 |
 | [Psyched - Isabel](https://open.spotify.com/playlist/0vxW1BPEL0FztSOot5XGbl) | 37 |
-| [Psyched - Lucy](https://open.spotify.com/playlist/1IeaCTlVTEu7aE2kFxgAPx) | 69 |
-| [Psyched - Melt Radio](https://open.spotify.com/playlist/7FH28FkqvZ4jXGRDD9JqyM) | 63 |
-| [Psyched - Midday Vibez](https://open.spotify.com/playlist/6yVzznhKBQNHnHfq8sNEij) | 30 |
+| [Psyched - Lucy](https://open.spotify.com/playlist/1IeaCTlVTEu7aE2kFxgAPx) | 35 |
+| [Psyched - Melt Radio](https://open.spotify.com/playlist/7FH28FkqvZ4jXGRDD9JqyM) | 35 |
+| [Psyched - Midday Vibez](https://open.spotify.com/playlist/6yVzznhKBQNHnHfq8sNEij) | 65 |
 | [Psyched - Mornings on Mission](https://open.spotify.com/playlist/1dcJYPso2i6tV7buEDLq4W) | 29 |
 | [Psyched - Nocturnal](https://open.spotify.com/playlist/6HHxFjdr8ZKRM0fRgyUNVV) | 660 |
 | [Psyched - Panorama](https://open.spotify.com/playlist/7tqXM5sl9pSKdktvm0Dtpz) | 30 |
 | [Psyched - Permanent Midnight](https://open.spotify.com/playlist/4zfrUG5wbtlu7frjD15TwP) | 27 |
-| [Psyched - Psyched! Radio University](https://open.spotify.com/playlist/19ujdPA3gbMDAMoRY7ipps) | 32 |
+| [Psyched - Psyched! Radio University](https://open.spotify.com/playlist/19ujdPA3gbMDAMoRY7ipps) | 63 |
 | [Psyched - Rage Bait Radio](https://open.spotify.com/playlist/3UlYEzxn1oPim9YhhCnGAb) | 36 |
 | [Psyched - Ratz in Cages](https://open.spotify.com/playlist/2jBWJR02rvbXKZoQ3leJbW) | 33 |
 | [Psyched - Signs and Symbols](https://open.spotify.com/playlist/6uNHeFjdvDUF1zIo82uCoe) | 25 |
@@ -159,8 +161,8 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 | [Psyched - The Black Lagoon](https://open.spotify.com/playlist/5V78KjMxLeOF7eYbvVo9wC) | 32 |
 | [Psyched - The Cut](https://open.spotify.com/playlist/0PSQPMg2v7SUZP5lr7cCqr) | 17 |
 | [Psyched - The Dollhouse](https://open.spotify.com/playlist/3zF4Yud6GWRWGj4B96lhcA) | 32 |
-| [Psyched - The Dust Monkey Vintage Hour](https://open.spotify.com/playlist/5cpLxFSVVy3UHBxQDQOezN) | 65 |
-| [Psyched - The Fried Onions Radio Program](https://open.spotify.com/playlist/4plzUoDQJk4kqpPPO7mp0M) | 7 |
+| [Psyched - The Dust Monkey Vintage Hour](https://open.spotify.com/playlist/5cpLxFSVVy3UHBxQDQOezN) | 30 |
+| [Psyched - The Fried Onions Radio Program](https://open.spotify.com/playlist/4plzUoDQJk4kqpPPO7mp0M) | 4 |
 | [Psyched - The Fuzz Deli](https://open.spotify.com/playlist/1aAdRN9bOXzaTFsrBVPHeW) | 29 |
 | [Psyched - The Garage](https://open.spotify.com/playlist/6aXvG0WEjddy9oTe0vm58z) | 29 |
 | [Psyched - The Headphone Zone](https://open.spotify.com/playlist/64K3LFYWca0j7pQY8cFBYR) | 27 |
@@ -169,8 +171,8 @@ Weekly aggregations of radio shows, updated daily at 6 AM UTC.
 
 ---
 
-*Last updated: 2025-07-13 06:24 UTC*  
-*Total playlists: 147*
+*Last updated: 2025-07-14 06:24 UTC*  
+*Total playlists: 149*
 
 <br>
 
