@@ -30,9 +30,7 @@ def main(infile, outfile):
         'table{width:100%;border-collapse:collapse;margin-bottom:2rem}',
         'th,td{border:1px solid #333;padding:0.5rem;vertical-align:top}',
         'th{background:#1f1f1f}',
-        '.preview-item{display:inline-block;margin:0.25rem;vertical-align:top;text-align:left}',
-        '.preview-item img{width:200px;height:200px;object-fit:cover}',
-        '.preview-item span{display:block;width:200px;margin-top:0.5rem;font-size:0.9rem}',
+        '.preview-item-text{display:inline-block;width:200px;margin:0.25rem;vertical-align:top;font-size:0.9rem}',
         '</style></head><body>',
         f'<h1>Radio Station Spotify Playlists</h1>',
         f'<p>Updated: {ts} · Total Playlists: {count}</p>',
@@ -46,19 +44,14 @@ def main(infile, outfile):
             html.append(f"<td><a href='{p['url']}'>{p['name']}</a></td>")
             html.append(f"<td>{p['track_count']}</td>")
             html.append(f"<td>{p.get('last_updated','')}</td>")
-            # previews
-            previews = []
-            for t in p.get('preview', []):
+            # Render first 12 artist names in a text grid
+            artist_cells = []
+            for t in p.get('preview', [])[:12]:
                 artists = ', '.join(t.get('artists', []))
-                name = t.get('name', '')
-                img = t.get('image_url')
-                if img:
-                    previews.append(
-                        f"<div class='preview-item'><img src='{img}' alt='{name}'><span>{artists} – {name}</span></div>"
-                    )
-                else:
-                    previews.append(f"<div class='preview-item'><span>{artists} – {name}</span></div>")
-            html.append(f"<td>{''.join(previews)}</td>")
+                artist_cells.append(
+                    f"<div class='preview-item-text'>{artists}</div>"
+                )
+            html.append(f"<td>{''.join(artist_cells)}</td>")
             html.append('</tr>')
         html.append('</tbody></table>')
 
