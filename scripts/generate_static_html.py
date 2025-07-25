@@ -13,18 +13,26 @@ def main(infile, outfile):
     ts = data.get('timestamp', '')
     count = data.get('total_playlist_count', 0)
 
+    # Sort playlists within each station by last_updated (newest first)
+    for stn, pls in stations.items():
+        pls.sort(key=lambda p: p.get('last_updated', ''), reverse=True)
+
     html = [
         '<!DOCTYPE html>',
         '<html lang="en"><head><meta charset="utf-8">',
         '<title>Radio Station Spotify Playlists</title>',
         '<style>',
-        'body{font-family:sans-serif;max-width:100vw;margin:0;padding:1rem}',
-        'h1,h2{margin-bottom:0.5rem}',
+        'body{font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;max-width:100vw;margin:0;padding:1rem;background:#121212;color:#e0e0e0}',
+        'a{color:#bb86fc;text-decoration:none}',
+        'a:hover{text-decoration:underline}',
+        'h1{font-size:1.5rem;margin-bottom:0.5rem}',
+        'h2{font-size:1.25rem;margin-bottom:0.5rem}',
         'table{width:100%;border-collapse:collapse;margin-bottom:2rem}',
-        'th,td{border:1px solid #ccc;padding:0.5rem;vertical-align:top}',
-        '.preview-item{display:inline-block;margin:0.25rem;text-align:center}',
+        'th,td{border:1px solid #333;padding:0.5rem;vertical-align:top}',
+        'th{background:#1f1f1f}',
+        '.preview-item{display:inline-block;margin:0.25rem;vertical-align:top;text-align:left}',
         '.preview-item img{width:200px;height:200px;object-fit:cover}',
-        '.preview-item span{display:block;width:200px;margin-top:0.5rem;}',
+        '.preview-item span{display:block;width:200px;margin-top:0.5rem;font-size:0.9rem}',
         '</style></head><body>',
         f'<h1>Radio Station Spotify Playlists</h1>',
         f'<p>Updated: {ts} · Total Playlists: {count}</p>',
