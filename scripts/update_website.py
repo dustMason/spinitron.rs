@@ -51,14 +51,18 @@ def main():
                 name = playlist['name']
                 url = playlist['url']
                 track_count = playlist['track_count']
-                
+                last_updated = playlist.get('last_updated', '')
+                preview = playlist.get('preview', [])
+
                 if station not in stations:
                     stations[station] = []
-                
+
                 stations[station].append({
                     'name': name,
                     'url': url,
-                    'track_count': track_count
+                    'track_count': track_count,
+                    'last_updated': last_updated,
+                    'preview': preview
                 })
                 total_playlist_count += 1
             except (json.JSONDecodeError, KeyError) as e:
@@ -69,17 +73,47 @@ def main():
         print("❌ Error: No playlists found in output")
         sys.exit(1)
     
-    # Generate markdown sections for each station
+    # Generate HTML table sections for each station (raw HTML avoids Markdown table limitations)
     sections = []
     for station in sorted(stations.keys()):
         playlists = stations[station]
-        section_lines = [f"## {station}\n"]
-        section_lines.append("| Show | Tracks |")
-        section_lines.append("|------|--------|")
-        
+        section_lines = [f"<h2>{station}</h2>",
+                         "<table>",
+                         "<thead><tr><th>Show</th><th>Tracks</th><th>Updated</th><th>Preview</th></tr></thead>",
+                         "<tbody>"]
+
         for playlist in playlists:
-            section_lines.append(f"| [{playlist['name']}]({playlist['url']}) | {playlist['track_count']} |")
-        
+            # Build HTML preview of up to 4 tracks as a horizontal grid with larger covers
+            items = []
+            for track in playlist.get('preview', []):
+                name = track.get('name', '')
+                artists = ', '.join(track.get('artists', []))
+                img = track.get('image_url')
+                if img:
+                    items.append(
+                        f'<div class="preview-item">'
+                        f'<img src="{img}" alt="{name}"/>'
+                        f'<br><span>{artists} – {name}</span>'
+                        f'</div>'
+                    )
+                else:
+                    items.append(
+                        f'<div class="preview-item">'
+                        f'<span>{artists} – {name}</span>'
+                        f'</div>'
+                    )
+            preview_html = f'<div class="preview-row">{"".join(items)}</div>'
+
+            section_lines.extend([
+                "<tr>",
+                f"<td><a href=\"{playlist['url']}\">{playlist['name']}</a></td>",
+                f"<td>{playlist['track_count']}</td>",
+                f"<td>{playlist.get('last_updated','')}</td>",
+                f"<td>{preview_html}</td>",
+                "</tr>"
+            ])
+
+        section_lines.extend(["</tbody>", "</table>"])
         sections.append("\n".join(section_lines))
     
     playlist_sections = "\n\n".join(sections)
@@ -97,13 +131,22 @@ def main():
     content = content.replace("{{TIMESTAMP}}", timestamp)
     content = content.replace("{{COUNT}}", str(total_playlist_count))
     
-    # Write the final file
+    # Write the markdown file
     with open("docs/index.md", "w") as f:
         f.write(content)
+
+    # Also dump raw data to JSON for alternative static HTML generation
+    json_data = {
+        'stations': stations,
+        'timestamp': timestamp,
+        'total_playlist_count': total_playlist_count,
+    }
+    with open("docs/playlists.json", "w") as jf:
+        json.dump(json_data, jf, indent=2)
     
     print("✅ Website update complete!")
     print(f"📊 Updated with {total_playlist_count} playlists across {len(stations)} stations")
-    print("📄 Generated: docs/index.md")
+    print("📄 Generated: docs/index.md and docs/playlists.json")
 
 if __name__ == "__main__":
     main()
