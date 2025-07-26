@@ -59,6 +59,7 @@ def main(infile):
         '<html lang="en"><head><meta charset="utf-8">',
         "<style>",
         "@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');",
+        "@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One:wght@400&display=swap');",
         'body { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 100vw; margin: 0; padding: 1rem; background-color: #ffffff; }',
         "a { color: inherit; text-decoration: none; }",
         "h2 { font-size: 1.25rem; margin-bottom: 0.5rem; }",
@@ -69,11 +70,10 @@ def main(infile):
         ".card:hover { background-color: #eaeaea; }",
         ".card h3 { font-size: 2rem; margin: 0 0 0.5rem; text-align: center; }",
         ".meta { font-size: 0.9rem; color: #555555; margin: 0 0 0.5rem; text-align: center; }",
-        ".media-block { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.25rem; }",
-        ".preview-grid { grid-column: 1 / span 4; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.25rem; }",
-        ".preview-grid img { width: 100%; height: auto; object-fit: cover; border-radius: 4px; }",
-        ".artists-list { grid-column: 5; list-style: none; margin: 0 0 0 0.5rem; padding: 0; }",
-        ".artists-list li { margin-bottom: 0.5rem; }",
+        ".media-block { position: relative; display: block; margin-bottom: 0.5rem; }",
+        ".preview-grid { display: grid; grid-template-columns: repeat(4, 1fr); }",
+        ".preview-grid img { width: 100%; height: auto; object-fit: cover; }",
+        ".overlay-all { position: absolute; inset: 0; background: rgba(0,0,0,0.1); color: #fff; display: flex; flex-wrap: wrap; justify-content: center; padding: 1rem; font-family: 'Special Gothic Expanded One', sans-serif; font-weight: 400; font-size: 3rem; text-transform: uppercase; overflow: hidden }",
         ".toc { position: fixed; top: 1rem; left: 1rem; max-width: 200px; }",
         ".toc strong { display: block; margin-bottom: 0.5rem; }",
         ".toc ul { list-style: none; padding: 0; margin: 0; }",
@@ -105,21 +105,19 @@ def main(infile):
             # Build side-by-side artist list + preview grid
             seen = set()
             html.append('<div class="media-block">')
-            # show album-art previews first, then artist list on right
             html.append('<div class="preview-grid">')
+            # render album-art tiles
+            artist_set = []
             for t in p.get("preview", [])[:12]:
                 img = t.get("image_url")
-                name = t.get("name", "")
+                for art in t.get("artists", []):
+                    if art not in artist_set:
+                        artist_set.append(art)
                 if img:
-                    html.append(f"<img src='{img}' alt='{name}'/>")
+                    html.append(f"<img src='{img}' alt='{t.get('name','')}'/>")
             html.append("</div>")
-            html.append('<ul class="artists-list">')
-            for t in p.get("preview", [])[:12]:
-                for artist in t.get("artists", []):
-                    if artist not in seen:
-                        seen.add(artist)
-                        html.append(f"<li>{artist}</li>")
-            html.append("</ul>")
+            # overlay artist names across the entire grid
+            html.append(f"<div class='overlay-all'>{' '.join(artist_set)}</div>")
             html.append("</div>")
             html.append("</a></li>")
     html.append("</ul></div>")
