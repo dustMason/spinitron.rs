@@ -7,6 +7,7 @@ import json
 import sys
 import os
 from datetime import datetime, timezone
+import random
 
 
 # Main processing: group JSONL (playlists.jsonl) into a JSON dump and produce HTML
@@ -22,10 +23,14 @@ def main(infile):
                 station = playlist.get("station")
                 if not station:
                     continue
+                # skip empty playlists
+                track_count = playlist.get("track_count", 0) or 0
+                if track_count == 0:
+                    continue
                 entry = {
                     "name": playlist.get("name"),
                     "url": playlist.get("url"),
-                    "track_count": playlist.get("track_count"),
+                    "track_count": track_count,
                     "last_updated": playlist.get("last_updated", ""),
                     "preview": playlist.get("preview", []),
                 }
@@ -60,20 +65,27 @@ def main(infile):
         "<style>",
         "@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');",
         "@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One:wght@400&display=swap');",
-        'body { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 100vw; margin: 0; padding: 1rem; background-color: #ffffff; }',
+        'body { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 100vw; margin: 0; padding: 1rem; background-color: #ffffff; background-image: url(bg.jpg); background-attachment: fixed; background-size: cover }',
         "a { color: inherit; text-decoration: none; }",
         "h2 { font-size: 1.25rem; margin-bottom: 0.5rem; }",
         "h3 { font-family: 'Permanent Marker', cursive; font-size: 1.5rem; margin: 0 0 0.5rem; }",
         ".station { margin-bottom: 2rem; }",
         ".playlist-list { list-style: none; margin: 0; padding: 0; }",
-        ".playlist-list .card { display: block; max-width: 800px; margin: 0 auto 1rem; background: #fafafa; border: 1px solid #ddd; border-radius: 8px; padding: 0.5rem; text-decoration: none; color: inherit; transition: background-color 0.2s ease; }",
+        ".playlist-list .card { display: block; max-width: 800px; text-decoration: none; color: inherit; transition: background-color 0.2s ease; }",
         ".card:hover { background-color: #eaeaea; }",
         ".card h3 { font-size: 2rem; margin: 0 0 0.5rem; text-align: center; }",
         ".meta { font-size: 0.9rem; color: #555555; margin: 0 0 0.5rem; text-align: center; }",
-        ".media-block { position: relative; display: block; margin-bottom: 0.5rem; }",
+        ".media-block { position: relative; margin-bottom: 2rem; }",
         ".preview-grid { display: grid; grid-template-columns: repeat(4, 1fr); }",
         ".preview-grid img { width: 100%; height: auto; object-fit: cover; }",
-        ".overlay-all { position: absolute; inset: 0; background: rgba(0,0,0,0.1); color: #fff; display: flex; flex-wrap: wrap; justify-content: center; padding: 1rem; font-family: 'Special Gothic Expanded One', sans-serif; font-weight: 400; font-size: 3rem; text-transform: uppercase; overflow: hidden }",
+        ".overlay-all { position: relative; overflow: hidden; }",
+        ".playlist-name { position: absolute; z-index: 5; }",
+        ".playlist-name { text-align: left; }",
+        ".playlist-name > span { background: #000; box-decoration-break: clone; }",
+        ".playlist-name > span > span { color: #fff; box-decoration-break: clone; -webkit-box-decoration-break: clone; word-break: break-word; }",
+        ".overlay-all .mask-text { position: absolute; padding: 0.5rem; font-family: 'Special Gothic Expanded One', sans-serif; font-weight: 400; font-size: 4.12rem; color: #000; text-transform: uppercase; text-align: justify; line-height: 0.9; word-break: break-all; }",
+        ".media-block img { mix-blend-mode: lighten; }",
+        ".badge { position: absolute; top: 0.5rem; right: 0.5rem; z-index: 10; background: #e63946; color: #fff; border-radius: 50%; width: 5rem; height: 5rem; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: bold; }",
         ".toc { position: fixed; top: 1rem; left: 1rem; max-width: 200px; }",
         ".toc strong { display: block; margin-bottom: 0.5rem; }",
         ".toc ul { list-style: none; padding: 0; margin: 0; }",
@@ -98,26 +110,41 @@ def main(infile):
             stations[station], key=lambda p: p.get("last_updated", ""), reverse=True
         ):
             html.append(f"<li><a class='card' href='{p['url']}'>")
-            html.append(f"<h3>{p['name']}</h3>")
-            html.append(
-                f"<p class='meta'>{p.get('track_count', 0)} songs · {p.get('last_updated', '')}</p>"
-            )
             # Build side-by-side artist list + preview grid
-            seen = set()
             html.append('<div class="media-block">')
-            html.append('<div class="preview-grid">')
-            # render album-art tiles
+            # wrap both images and text in a dark blending container
             artist_set = []
+            # collect unique artist names first
             for t in p.get("preview", [])[:12]:
-                img = t.get("image_url")
                 for art in t.get("artists", []):
                     if art not in artist_set:
                         artist_set.append(art)
+            # join artists with a random symbol between each name
+            symbols = [
+                '◆', '◇', '•', '×', '/', '\\', '✦', '✧', '✵', '✶', '✹', '✺',
+                '✿', '❖', '❂', '❄', '❈', '❉', '❋', '◈', '▫', '▱',
+                '✢', '✣', '✤', '✥', '✦', '✧', '★', '☆', '☉', '☾', '☽'
+            ]
+            txt = ''
+            if artist_set:
+                txt = artist_set[0]
+                for art in artist_set[1:]:
+                    sep = random.choice(symbols)
+                    txt += f" {sep} {art}"
+            # dark container: random saturated background per playlist
+            hue = random.randint(0, 360)
+            html.append(f"<div class='overlay-all' style='background:hsl({hue},100%,100%)'>")
+            # include playlist title in the mask text before artists
+            mask_content = f"<div class='playlist-name'><span><span>{p['name']}</span></span></div> {txt}"
+            html.append(f"<div class='mask-text'>{mask_content}</div>")
+            html.append('<div class="preview-grid">')
+            for t in p.get("preview", [])[:12]:
+                img = t.get("image_url")
                 if img:
                     html.append(f"<img src='{img}' alt='{t.get('name','')}'/>")
             html.append("</div>")
-            # overlay artist names across the entire grid
-            html.append(f"<div class='overlay-all'>{' '.join(artist_set)}</div>")
+            # sticker showing track count
+            html.append(f"<div class='badge'>{p.get('track_count',0)}</div>")
             html.append("</div>")
             html.append("</a></li>")
     html.append("</ul></div>")

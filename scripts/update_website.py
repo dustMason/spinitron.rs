@@ -25,20 +25,17 @@ def run_command(cmd):
 def main():
     print("🌐 Updating website with latest playlists...")
 
-    # Check if we have the required binary
     if not os.path.exists("./target/release/spinitron-scraper"):
         print("❌ Error: ./target/release/spinitron-scraper not found")
         print("   Run 'cargo build --release' first")
         sys.exit(1)
 
-    # Generate fresh playlist data and save JSONL
     print("📊 Generating fresh playlist data...")
     raw = run_command("./target/release/spinitron-scraper --list-playlists")
     os.makedirs("docs", exist_ok=True)
     with open("docs/playlists.jsonl", "w") as jf:
         jf.write(raw)
 
-    # Generate static HTML (including JSON grouping logic)
     print("📄 Generating static HTML...")
     run_command(
         "python3 scripts/generate_static_html.py docs/playlists.jsonl"
