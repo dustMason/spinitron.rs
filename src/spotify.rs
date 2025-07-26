@@ -541,6 +541,50 @@ impl SpotifyClient {
         Ok(all_track_uris)
     }
 
+    /// Fetch up to `limit` tracks for a preview (track name, artists, and largest album image URL).
+    pub async fn get_playlist_preview(
+        &self,
+        playlist_id: &str,
+        limit: usize,
+    ) -> Result<Vec<(String, Vec<String>, String)>> {
+        let url = format!(
+            "https://api.spotify.com/v1/playlists/{}/tracks?limit={}&fields=items(track(name,artists(name),album(images)))",
+            playlist_id, limit
+        );
+        let response = self
+            .client
+            .get(&url)
+            .header("Authorization", format!("Bearer {}", self.access_token))
+            .send()
+            .await?;
+        if !response.status().is_success() {
+            let error_text = response.text().await?;
+            return Err(anyhow!("Spotify preview API error: {}", error_text));
+        }
+        let json: Value = response.json().await?;
+        let mut previews = Vec::new();
+        if let Some(items) = json["items"].as_array() {
+            for item in items {
+                let track = &item["track"];
+                let name = track["name"].as_str().unwrap_or("").to_string();
+                let artists = track["artists"]
+                    .as_array()
+                    .unwrap_or(&vec![])
+                    .iter()
+                    .filter_map(|a| a["name"].as_str().map(|s| s.to_string()))
+                    .collect();
+                let image_url = track["album"]["images"]
+                    .as_array()
+                    .and_then(|imgs| imgs.first())
+                    .and_then(|img| img["url"].as_str())
+                    .unwrap_or("")
+                    .to_string();
+                previews.push((name, artists, image_url));
+            }
+        }
+        Ok(previews)
+    }
+
     async fn clear_playlist_tracks(&self, playlist_id: &str) -> Result<()> {
         let track_uris = self.get_playlist_tracks(playlist_id).await?;
 
