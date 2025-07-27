@@ -211,11 +211,34 @@ async fn output_playlist_jsonl(spotify_client: &mut SpotifyClient) -> Result<()>
             "Unknown"
         };
 
+        // Build a small preview of up to 12 tracks (artists, name, and full-size album image)
+        let preview_items = spotify_client
+            .get_playlist_preview(&playlist.id, 12)
+            .await?;
+        let preview = preview_items
+            .into_iter()
+            .map(|(name, artists, image_url)| {
+                serde_json::json!({
+                    "artists": artists,
+                    "name": name,
+                    "image_url": image_url,
+                })
+            })
+            .collect::<Vec<_>>();
+
+        // Extract a simple last-updated timestamp from the playlist description
+        let last_updated = playlist
+            .description
+            .as_deref()
+            .and_then(|d| d.split("Last updated: ").nth(1))
+            .unwrap_or("");
         let playlist_json = serde_json::json!({
             "station": station,
             "name": playlist.name,
             "url": playlist.external_url.as_deref().unwrap_or(""),
-            "track_count": playlist.track_count
+            "track_count": playlist.track_count,
+            "last_updated": last_updated,
+            "preview": preview,
         });
         println!("{}", playlist_json);
     }
