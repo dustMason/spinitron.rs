@@ -65,32 +65,47 @@ def main(infile):
         "<style>",
         "@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');",
         "@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One:wght@400&display=swap');",
+        "@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap');",
         'body { font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; max-width: 100vw; margin: 0; padding: 1rem; background-color: #ffffff; background-image: url(bg.jpg); background-attachment: fixed; background-size: cover }',
         "a { color: inherit; text-decoration: none; }",
         "h2 { font-size: 1.25rem; margin-bottom: 0.5rem; }",
         "h3 { font-family: 'Permanent Marker', cursive; font-size: 1.5rem; margin: 0 0 0.5rem; }",
         ".station { margin-bottom: 2rem; }",
         ".playlist-list { list-style: none; margin: 0; padding: 0; }",
-        ".playlist-list .card { display: block; max-width: 800px; text-decoration: none; color: inherit; transition: background-color 0.2s ease; }",
-        ".card:hover { background-color: #eaeaea; }",
+        ".playlist-list .card { display: block; max-width: 800px; text-decoration: none; color: inherit; transition: background-color 0.5s ease; }",
+        ".card:hover { background-color: #000; }",
         ".card h3 { font-size: 2rem; margin: 0 0 0.5rem; text-align: center; }",
         ".meta { font-size: 0.9rem; color: #555555; margin: 0 0 0.5rem; text-align: center; }",
         ".media-block { position: relative; margin-bottom: 2rem; }",
         ".preview-grid { display: grid; grid-template-columns: repeat(4, 1fr); }",
         ".preview-grid img { width: 100%; height: auto; object-fit: cover; }",
         ".overlay-all { position: relative; overflow: hidden; }",
-        ".playlist-name { position: absolute; z-index: 5; }",
-        ".playlist-name { text-align: left; }",
-        ".playlist-name > span { background: #000; box-decoration-break: clone; }",
-        ".playlist-name > span > span { color: #fff; box-decoration-break: clone; -webkit-box-decoration-break: clone; word-break: break-word; }",
-        ".overlay-all .mask-text { position: absolute; padding: 0.5rem; font-family: 'Special Gothic Expanded One', sans-serif; font-weight: 400; font-size: 4.12rem; color: #000; text-transform: uppercase; text-align: justify; line-height: 0.9; word-break: break-all; }",
+        ".playlist-name { position: absolute; z-index: 5; text-align: left; }",
+        ".playlist-name > span { position: absolute; z-index: 10; background: #000; color: #fff; word-break: break-word; }",
+        ".overlay-all .mask-text { position: absolute; inset: 0; padding: 0.5rem; font-family: 'Special Gothic Expanded One', sans-serif; font-weight: 400; font-size: 4.12rem; color: #000; text-transform: uppercase; text-align: justify; line-height: 0.9; word-break: break-all; transition: opacity 0.5s ease; }",
+        ".card:hover .overlay-all .mask-text { opacity: 0 }",
+        ".header-bar { position: relative; padding: 2rem; color: #fff; display: flex; flex-direction: column; justify-content: center; }",
+        ".header-bar .title { font-family: 'Libre Bodoni', serif; font-style: italic; font-size: 28px; margin: 0; }",
+        ".header-bar .timestamp { font-family: 'Libre Bodoni', serif; font-style: italic; font-size: 16px; margin: 0; }",
         ".media-block img { mix-blend-mode: lighten; }",
-        ".badge { position: absolute; top: 0.5rem; right: 0.5rem; z-index: 10; background: #e63946; color: #fff; border-radius: 50%; width: 5rem; height: 5rem; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: bold; }",
+        ".badge { position: absolute; top: 4.5rem; right: -1.5rem; z-index: 10; background: #e63946; color: #fff; border-radius: 50%; width: 5rem; height: 5rem; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: bold; }",
         ".toc { position: fixed; top: 1rem; left: 1rem; max-width: 200px; }",
         ".toc strong { display: block; margin-bottom: 0.5rem; }",
         ".toc ul { list-style: none; padding: 0; margin: 0; }",
         ".toc li { margin-bottom: 0.5rem; }",
         ".main { margin-left: 220px; }",
+        "@media (max-width: 768px) {",
+        "  .toc { position: static; margin: 0 0 1rem; max-width: none; }",
+        "  .main { margin-left: 0; }",
+        "  .overlay-all .mask-text { font-size: 2rem; }",
+        "  .badge { position: relative; top: auto; right: auto; margin-left: 0.5rem; }",
+        "}",
+        "@media (max-width: 768px) {",
+        "  .toc { position: static; margin-bottom: 1rem; max-width: none; }",
+        "  .main { margin-left: 0; }",
+        "  .overlay-all .mask-text { font-size: 2.5rem; }",
+        "  .badge { position: relative; top: auto; right: auto; margin-left: 0.5rem; }",
+        "}" ,
         ".station h2 { margin-bottom: 0.25rem; }",
         ".station h2 + hr { margin: 0 auto 1rem; border: none; border-top: 1px solid #ccc; }",
         ".footer { text-align: center; margin-top: 2rem; font-size: 0.9rem; color: #555555; }",
@@ -131,12 +146,29 @@ def main(infile):
                 for art in artist_set[1:]:
                     sep = random.choice(symbols)
                     txt += f" {sep} {art}"
-            # dark container: random saturated background per playlist
-            hue = random.randint(0, 360)
-            html.append(f"<div class='overlay-all' style='background:hsl({hue},100%,100%)'>")
-            # include playlist title in the mask text before artists
-            mask_content = f"<div class='playlist-name'><span><span>{p['name']}</span></span></div> {txt}"
-            html.append(f"<div class='mask-text'>{mask_content}</div>")
+            # choose a theme color from a fixed palette based on playlist name
+            palette = [
+                '#896241ff',  # raw-umber
+                '#422A19ff',  # bistre
+                '#88B1D4ff',  # carolina-blue
+                '#A9C8D8ff',  # columbia-blue
+                '#5A7ACFff',  # glaucous
+            ]
+            # stable selection via MD5 of playlist name
+            import hashlib
+            name_hash = hashlib.md5(p['name'].encode('utf-8')).hexdigest()
+            idx = int(name_hash[:8], 16) % len(palette)
+            color = palette[idx]
+            # header bar for title + timestamp (above masked grid)
+            last_up = p.get('last_updated', '')
+            html.append(f"<div class='header-bar' style='background:{color}'>")
+            html.append(f"<div class='badge'>{p.get('track_count',0)}</div>")
+            html.append(f"<div class='title'>{p['name']}</div>")
+            html.append(f"<div class='timestamp'>Last Updated {last_up}</div>")
+            html.append("</div>")
+            html.append("<div class='overlay-all'>")
+            # overlay with artists only (title removed)
+            html.append(f"<div class='mask-text'>{txt}</div>")
             html.append('<div class="preview-grid">')
             for t in p.get("preview", [])[:12]:
                 img = t.get("image_url")
@@ -144,7 +176,6 @@ def main(infile):
                     html.append(f"<img src='{img}' alt='{t.get('name','')}'/>")
             html.append("</div>")
             # sticker showing track count
-            html.append(f"<div class='badge'>{p.get('track_count',0)}</div>")
             html.append("</div>")
             html.append("</a></li>")
     html.append("</ul></div>")
