@@ -342,12 +342,11 @@ impl SpotifyClient {
             .cloned();
 
         let playlist = if let Some(existing) = existing_playlist {
-            // First, clear the existing playlist
+            // Finish fallible track searches before removing existing music.
+            let track_uris = self.resolve_track_uris(&all_tracks).await?;
             self.clear_playlist_tracks(&existing.id).await?;
 
-            // Then add all the new tracks
-            let new_tracks = show_group.all_tracks();
-            self.add_tracks_to_playlist(&existing.id, &new_tracks)
+            self.add_track_uris_to_playlist(&existing.id, &track_uris)
                 .await?;
 
             // Update the playlist description with new latest ID
@@ -380,6 +379,8 @@ impl SpotifyClient {
                 ));
             }
 
+            // Do not create an empty playlist if track lookup fails.
+            let track_uris = self.resolve_track_uris(&all_tracks).await?;
             let url = format!(
                 "https://api.spotify.com/v1/users/{}/playlists",
                 self.user_id
@@ -416,8 +417,7 @@ impl SpotifyClient {
                 track_count: 0, // Will be updated after tracks are added
             };
 
-            let all_tracks = show_group.all_tracks();
-            self.add_tracks_to_playlist(&playlist.id, &all_tracks)
+            self.add_track_uris_to_playlist(&playlist.id, &track_uris)
                 .await?;
             let mut updated_playlist = playlist.clone();
             updated_playlist.track_count = all_tracks.len() as u32;
@@ -465,7 +465,7 @@ impl SpotifyClient {
         Ok(())
     }
 
-    async fn add_tracks_to_playlist(&mut self, playlist_id: &str, tracks: &[Track]) -> Result<()> {
+    async fn resolve_track_uris(&mut self, tracks: &[Track]) -> Result<Vec<String>> {
         let mut track_uris = Vec::new();
         let mut found_tracks = 0;
         let mut not_found_tracks = 0;
@@ -512,6 +512,14 @@ impl SpotifyClient {
             found_tracks, not_found_tracks, cache_hits, api_calls_made
         );
 
+        Ok(track_uris)
+    }
+
+    async fn add_track_uris_to_playlist(
+        &self,
+        playlist_id: &str,
+        track_uris: &[String],
+    ) -> Result<()> {
         if !track_uris.is_empty() {
             for (i, chunk) in track_uris.chunks(100).enumerate() {
                 let add_tracks_data = serde_json::json!({
@@ -774,8 +782,82 @@ impl SpotifyClient {
 
 #[cfg(test)]
 mod tests {
-    use super::SpotifyClient;
+    use super::{PlaylistCache, SpotifyClient, SpotifyPlaylist, TrackSearchCache};
+    use crate::models::{Show, ShowEpisode, ShowGroup, Track};
     use reqwest::StatusCode;
+
+    #[tokio::test]
+    async fn failed_track_lookup_precedes_any_playlist_request() {
+        let show = ShowGroup {
+            station: "KALX".into(),
+            show_name: "Test Show".into(),
+            episodes: vec![ShowEpisode {
+                show: Show {
+                    id: 1,
+                    title: "Test Show".into(),
+                    url: String::new(),
+                    start_time: String::new(),
+                    end_time: String::new(),
+                },
+                tracks: vec![Track {
+                    artist: "Test Artist".into(),
+                    song: "Test Song".into(),
+                    album: String::new(),
+                    label: None,
+                    time: None,
+                }],
+            }],
+        };
+
+        for existing in [true, false] {
+            // Port zero cannot host a proxy: every request fails locally, and
+            // the error URL identifies which operation was attempted first.
+            // No real Spotify credentials or external API calls are used.
+            let client = reqwest::Client::builder()
+                .proxy(reqwest::Proxy::all("http://127.0.0.1:0").unwrap())
+                .timeout(std::time::Duration::from_secs(1))
+                .build()
+                .unwrap();
+            let mut spotify = SpotifyClient {
+                client,
+                access_token: "test-token".into(),
+                user_id: "test-user".into(),
+                track_cache: TrackSearchCache {
+                    entries: Default::default(),
+                },
+                playlist_cache: PlaylistCache {
+                    playlists: Default::default(),
+                },
+                cache_dir: String::new(),
+                total_cache_hits: 0,
+                total_api_calls: 0,
+            };
+            if existing {
+                spotify.playlist_cache.playlists.insert(
+                    "1".into(),
+                    SpotifyPlaylist {
+                        id: "existing-playlist".into(),
+                        name: show.playlist_name(),
+                        description: None,
+                        uri: String::new(),
+                        external_url: None,
+                        track_count: 42,
+                    },
+                );
+            }
+
+            let error = spotify
+                .create_or_update_show_playlist(&show)
+                .await
+                .unwrap_err();
+            assert!(
+                error
+                    .to_string()
+                    .contains("https://api.spotify.com/v1/search?"),
+                "playlist request happened before track lookup (existing={existing}): {error}"
+            );
+        }
+    }
 
     #[test]
     fn accepts_successful_token_response() {
