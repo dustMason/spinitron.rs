@@ -31,11 +31,21 @@ struct Args {
     /// Output markdown list of all cached playlists
     #[arg(long)]
     list_playlists: bool,
+
+    /// Verify Spotify authentication without scraping or modifying playlists
+    #[arg(long, conflicts_with_all = ["spotify", "list_playlists"])]
+    check_spotify_auth: bool,
 }
 
 #[tokio::main]
 async fn main() -> Result<()> {
     let args = Args::parse();
+
+    if args.check_spotify_auth {
+        SpotifyClient::new().await?;
+        println!("Spotify authentication succeeded.");
+        return Ok(());
+    }
 
     // Handle list playlists command first
     if args.list_playlists {

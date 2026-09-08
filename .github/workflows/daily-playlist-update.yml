@@ -5,6 +5,11 @@ on:
     # Run daily at 6 AM UTC (adjust timezone as needed)
     - cron: '0 6 * * *'
   workflow_dispatch: # Allow manual runs
+    inputs:
+      auth_check_only:
+        description: 'Only verify Spotify authentication; do not update playlists or the website'
+        type: boolean
+        default: false
 
 jobs:
   update-playlists:
@@ -38,8 +43,17 @@ jobs:
         
     - name: Build application
       run: cargo build --release
+
+    - name: Check Spotify authentication
+      if: ${{ inputs.auth_check_only }}
+      env:
+        SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+        SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+      run: ./target/release/spinitron-scraper --check-spotify-auth
       
     - name: Run playlist update
+      if: ${{ !inputs.auth_check_only }}
       env:
         SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
         SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
@@ -49,6 +63,7 @@ jobs:
         ./target/release/spinitron-scraper --spotify
         
     - name: Update website with latest playlists
+      if: ${{ !inputs.auth_check_only }}
       env:
         SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
         SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
@@ -56,6 +71,7 @@ jobs:
       run: python scripts/update_website.py
         
     - name: Upload cache as artifact
+      if: ${{ !inputs.auth_check_only }}
       uses: actions/upload-artifact@v4
       with:
         name: cache-data
@@ -64,6 +80,7 @@ jobs:
           spotify_cache/track_cache.json
         
     - name: Commit and push website updates
+      if: ${{ !inputs.auth_check_only }}
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"

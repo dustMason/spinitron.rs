@@ -130,12 +130,53 @@ impl SpotifyClient {
             .send()
             .await?;
 
-        let json: Value = response.json().await?;
+        let status = response.status();
+        let body = response.text().await?;
+        Self::parse_access_token_response(status, &body)
+    }
+
+    fn parse_access_token_response(status: reqwest::StatusCode, body: &str) -> Result<String> {
+        // Never include the raw response: successful responses contain credentials.
+        let json: Value = serde_json::from_str(body).map_err(|_| {
+            anyhow!(
+                "Spotify token refresh failed (HTTP {}): invalid JSON response",
+                status
+            )
+        })?;
+
+        if !status.is_success() {
+            let error = json["error"].as_str().unwrap_or("unknown_error");
+            let guidance = match error {
+                "invalid_grant" => concat!(
+                    "The refresh token is expired, revoked, or invalid. Reauthorize with ",
+                    "python3 scripts/get_spotify_token.py, then replace SPOTIFY_REFRESH_TOKEN ",
+                    "in your environment and GitHub Actions repository secrets. ",
+                    "Spotify refresh tokens expire after 6 months; retrying this token will not renew it."
+                ),
+                "invalid_client" => concat!(
+                    "Check SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET; they must belong ",
+                    "to the same Spotify app used to obtain the refresh token."
+                ),
+                _ => "Spotify rejected the token refresh request.",
+            };
+            return Err(anyhow!(
+                "Spotify token refresh failed (HTTP {}, {}): {}",
+                status,
+                error,
+                guidance
+            ));
+        }
 
         json["access_token"]
             .as_str()
+            .filter(|token| !token.is_empty())
             .map(|s| s.to_string())
-            .ok_or_else(|| anyhow!("Failed to get access token from Spotify"))
+            .ok_or_else(|| {
+                anyhow!(
+                    "Spotify token response (HTTP {}) is missing a non-empty access_token",
+                    status
+                )
+            })
     }
 
     async fn get_user_id(client: &Client, access_token: &str) -> Result<String> {
@@ -728,5 +769,88 @@ impl SpotifyClient {
 
     pub fn get_cache_stats(&self) -> (u32, u32) {
         (self.total_cache_hits, self.total_api_calls)
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::SpotifyClient;
+    use reqwest::StatusCode;
+
+    #[test]
+    fn accepts_successful_token_response() {
+        let token = SpotifyClient::parse_access_token_response(
+            StatusCode::OK,
+            r#"{"access_token":"test-access-token","expires_in":3600}"#,
+        )
+        .unwrap();
+        assert_eq!(token, "test-access-token");
+    }
+
+    #[test]
+    fn expired_refresh_token_explains_how_to_reauthorize() {
+        let error = SpotifyClient::parse_access_token_response(
+            StatusCode::BAD_REQUEST,
+            r#"{"error":"invalid_grant","error_description":"Refresh token expired"}"#,
+        )
+        .unwrap_err()
+        .to_string();
+        assert!(error.contains("400"));
+        assert!(error.contains("invalid_grant"));
+        assert!(error.contains("scripts/get_spotify_token.py"));
+        assert!(error.contains("SPOTIFY_REFRESH_TOKEN"));
+        assert!(error.contains("GitHub Actions repository secrets"));
+    }
+
+    #[test]
+    fn invalid_client_points_to_app_credentials() {
+        let error = SpotifyClient::parse_access_token_response(
+            StatusCode::UNAUTHORIZED,
+            r#"{"error":"invalid_client"}"#,
+        )
+        .unwrap_err()
+        .to_string();
+        assert!(error.contains("401"));
+        assert!(error.contains("SPOTIFY_CLIENT_ID"));
+        assert!(error.contains("SPOTIFY_CLIENT_SECRET"));
+    }
+
+    #[test]
+    fn non_json_error_preserves_http_status_without_body() {
+        let error = SpotifyClient::parse_access_token_response(
+            StatusCode::SERVICE_UNAVAILABLE,
+            "<html>private upstream details</html>",
+        )
+        .unwrap_err()
+        .to_string();
+        assert!(error.contains("503"));
+        assert!(!error.contains("private upstream details"));
+    }
+
+    #[test]
+    fn rejects_missing_or_empty_access_token_without_exposing_response() {
+        for body in [
+            r#"{"refresh_token":"secret-refresh-token"}"#,
+            r#"{"access_token":"","refresh_token":"secret-refresh-token"}"#,
+        ] {
+            let error = SpotifyClient::parse_access_token_response(StatusCode::OK, body)
+                .unwrap_err()
+                .to_string();
+            assert!(error.contains("missing a non-empty access_token"));
+            assert!(!error.contains("secret-refresh-token"));
+        }
+    }
+
+    #[test]
+    fn does_not_accept_token_in_failed_http_response() {
+        let error = SpotifyClient::parse_access_token_response(
+            StatusCode::BAD_REQUEST,
+            r#"{"error":"invalid_request","access_token":"secret-access-token","error_description":"private details"}"#,
+        )
+        .unwrap_err()
+        .to_string();
+        assert!(error.contains("invalid_request"));
+        assert!(!error.contains("secret-access-token"));
+        assert!(!error.contains("private details"));
     }
 }

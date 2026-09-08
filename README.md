@@ -49,6 +49,9 @@ export SPOTIFY_REFRESH_TOKEN="your_refresh_token"
 
 # Scrape and create Spotify playlists
 cargo run -- --spotify --date 2025-06-29
+
+# Verify Spotify credentials without scraping or changing playlists
+cargo run -- --check-spotify-auth
 ```
 
 ### Listing Playlists
@@ -97,7 +100,7 @@ The `ignores` field accepts regex patterns to filter out unwanted shows. Shows m
    - Go to https://developer.spotify.com/dashboard
    - Click "Create App"
    - Fill in app name and description
-   - Set the redirect URI to: `http://localhost:8888/callback`
+   - Set the redirect URI to: `http://127.0.0.1:8888/callback`
    - Save and note your **Client ID** and **Client Secret**
 
 2. **Get a Refresh Token:**
@@ -112,6 +115,28 @@ The `ignores` field accepts regex patterns to filter out unwanted shows. Shows m
    export SPOTIFY_CLIENT_SECRET="your_client_secret_here"
    export SPOTIFY_REFRESH_TOKEN="your_refresh_token_here"
    ```
+
+### Renewing an expired refresh token
+
+Spotify refresh tokens expire **6 months after authorization**. This applies to
+existing apps starting July 20, 2026. Daily access-token refreshes do not extend
+that lifetime. See [Spotify's announcement](https://developer.spotify.com/blog/2026-06-18-refresh-token-expiration).
+
+If the daily run reports `invalid_grant`, the refresh token is expired, revoked,
+or otherwise invalid. To reconnect:
+
+1. Set `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` for the existing Spotify app.
+2. Verify that its registered redirect URI is `http://127.0.0.1:8888/callback`.
+3. Run `python3 scripts/get_spotify_token.py` and authorize the app again.
+4. Replace `SPOTIFY_REFRESH_TOKEN` under the repository's **Settings → Secrets
+   and variables → Actions**, and in any local environment that uses the app.
+5. Manually run **Daily Playlist Update** from the **Actions** tab with
+   **auth_check_only** enabled to verify the credentials without updating playlists.
+   Once that succeeds, run it again with the option disabled to update playlists
+   and the website.
+
+Re-running the workflow with the old token cannot renew it. Reauthorization is
+required again when the new token reaches its six-month lifetime.
 
 ## Spotify Playlist Organization
 
