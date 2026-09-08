@@ -3,7 +3,7 @@ use base64::{engine::general_purpose, Engine as _};
 use reqwest::Client;
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 use std::fs;
 use std::path::Path;
 
@@ -775,6 +775,36 @@ impl SpotifyClient {
         &self.playlist_cache.playlists
     }
 
+    pub fn restrict_to_playlists(&mut self, playlist_ids: &[String]) -> Result<HashSet<String>> {
+        let requested: HashSet<_> = playlist_ids.iter().collect();
+        if requested.is_empty() {
+            return Err(anyhow!("At least one existing playlist ID is required"));
+        }
+        let selected: Vec<_> = self
+            .playlist_cache
+            .playlists
+            .values()
+            .filter(|playlist| requested.contains(&playlist.id))
+            .collect();
+        let found: HashSet<_> = selected.iter().map(|playlist| &playlist.id).collect();
+        if found != requested {
+            return Err(anyhow!(
+                "Some selected playlist IDs were not found in this account's Spinitron playlists"
+            ));
+        }
+        let names: HashSet<_> = selected
+            .iter()
+            .map(|playlist| playlist.name.clone())
+            .collect();
+        if names.len() != selected.len() {
+            return Err(anyhow!("Select only one playlist ID per show name"));
+        }
+        self.playlist_cache
+            .playlists
+            .retain(|_, playlist| requested.contains(&playlist.id));
+        Ok(names)
+    }
+
     pub fn get_cache_stats(&self) -> (u32, u32) {
         (self.total_cache_hits, self.total_api_calls)
     }
@@ -785,6 +815,65 @@ mod tests {
     use super::{PlaylistCache, SpotifyClient, SpotifyPlaylist, TrackSearchCache};
     use crate::models::{Show, ShowEpisode, ShowGroup, Track};
     use reqwest::StatusCode;
+
+    fn offline_client() -> SpotifyClient {
+        SpotifyClient {
+            client: reqwest::Client::builder()
+                .proxy(reqwest::Proxy::all("http://127.0.0.1:0").unwrap())
+                .timeout(std::time::Duration::from_secs(1))
+                .build()
+                .unwrap(),
+            access_token: "test-token".into(),
+            user_id: "test-user".into(),
+            track_cache: TrackSearchCache {
+                entries: Default::default(),
+            },
+            playlist_cache: PlaylistCache {
+                playlists: Default::default(),
+            },
+            cache_dir: String::new(),
+            total_cache_hits: 0,
+            total_api_calls: 0,
+        }
+    }
+
+    fn playlist(id: &str, name: &str) -> SpotifyPlaylist {
+        SpotifyPlaylist {
+            id: id.into(),
+            name: name.into(),
+            description: None,
+            uri: String::new(),
+            external_url: None,
+            track_count: 42,
+        }
+    }
+
+    #[test]
+    fn selection_requires_known_unambiguous_ids_and_excludes_other_playlists() {
+        let mut spotify = offline_client();
+        for (id, name) in [
+            ("a", "KALX - FREEFORM"),
+            ("b", "KALX - FREEFORM"),
+            ("c", "KPOO - More Overnight"),
+        ] {
+            spotify
+                .playlist_cache
+                .playlists
+                .insert(id.into(), playlist(id, name));
+        }
+        for invalid in [vec![], vec!["missing".into()], vec!["a".into(), "b".into()]] {
+            assert!(spotify.restrict_to_playlists(&invalid).is_err());
+            assert_eq!(spotify.playlist_cache.playlists.len(), 3);
+        }
+        let names = spotify
+            .restrict_to_playlists(&["a".into(), "c".into()])
+            .unwrap();
+        assert_eq!(names.len(), 2);
+        assert!(names.contains("KALX - FREEFORM"));
+        assert!(names.contains("KPOO - More Overnight"));
+        assert_eq!(spotify.playlist_cache.playlists.len(), 2);
+        assert!(!spotify.playlist_cache.playlists.contains_key("b"));
+    }
 
     #[tokio::test]
     async fn failed_track_lookup_precedes_any_playlist_request() {
@@ -813,36 +902,11 @@ mod tests {
             // Port zero cannot host a proxy: every request fails locally, and
             // the error URL identifies which operation was attempted first.
             // No real Spotify credentials or external API calls are used.
-            let client = reqwest::Client::builder()
-                .proxy(reqwest::Proxy::all("http://127.0.0.1:0").unwrap())
-                .timeout(std::time::Duration::from_secs(1))
-                .build()
-                .unwrap();
-            let mut spotify = SpotifyClient {
-                client,
-                access_token: "test-token".into(),
-                user_id: "test-user".into(),
-                track_cache: TrackSearchCache {
-                    entries: Default::default(),
-                },
-                playlist_cache: PlaylistCache {
-                    playlists: Default::default(),
-                },
-                cache_dir: String::new(),
-                total_cache_hits: 0,
-                total_api_calls: 0,
-            };
+            let mut spotify = offline_client();
             if existing {
                 spotify.playlist_cache.playlists.insert(
                     "1".into(),
-                    SpotifyPlaylist {
-                        id: "existing-playlist".into(),
-                        name: show.playlist_name(),
-                        description: None,
-                        uri: String::new(),
-                        external_url: None,
-                        track_count: 42,
-                    },
+                    playlist("existing-playlist", &show.playlist_name()),
                 );
             }
 

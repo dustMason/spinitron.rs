@@ -1,4 +1,4 @@
-use anyhow::Result;
+use anyhow::{bail, Result};
 use chrono::{Local, NaiveDate};
 use clap::Parser;
 use std::path::PathBuf;
@@ -27,6 +27,14 @@ struct Args {
     /// Create Spotify playlists from scraped data
     #[arg(short = 's', long)]
     spotify: bool,
+
+    /// Update only these existing Spotify playlist IDs (repeat for multiple IDs)
+    #[arg(
+        long = "playlist-id",
+        requires = "spotify",
+        conflicts_with = "list_playlists"
+    )]
+    playlist_ids: Vec<String>,
 
     /// Output markdown list of all cached playlists
     #[arg(long)]
@@ -130,8 +138,12 @@ async fn main() -> Result<()> {
     }
 
     // Always refresh playlist cache from Spotify to avoid duplicates
+    let mut pending_playlists = None;
     if let Some(ref mut spotify) = spotify_client {
         spotify.refresh_playlist_cache().await?;
+        if !args.playlist_ids.is_empty() {
+            pending_playlists = Some(spotify.restrict_to_playlists(&args.playlist_ids)?);
+        }
     }
 
     // Create ShowGroups and process playlists
@@ -149,6 +161,14 @@ async fn main() -> Result<()> {
                 episodes,
             };
 
+            let playlist_name = show_group.playlist_name();
+            if pending_playlists
+                .as_ref()
+                .is_some_and(|names| !names.contains(&playlist_name))
+            {
+                continue;
+            }
+
             let all_tracks = show_group.all_tracks();
             println!(
                 "\n📺 Show Group: {} ({} episodes, {} total tracks)",
@@ -161,6 +181,9 @@ async fn main() -> Result<()> {
             if let Some(ref mut spotify) = spotify_client {
                 match spotify.create_or_update_show_playlist(&show_group).await {
                     Ok(Some(playlist)) => {
+                        if let Some(names) = pending_playlists.as_mut() {
+                            names.remove(&playlist_name);
+                        }
                         println!(
                             "✅ Successfully created/updated Spotify playlist: {}\n",
                             playlist.name
@@ -184,6 +207,14 @@ async fn main() -> Result<()> {
                     }
                 }
             }
+        }
+    }
+
+    if let Some(names) = pending_playlists {
+        if !names.is_empty() {
+            let mut names: Vec<_> = names.into_iter().collect();
+            names.sort();
+            bail!("Selected playlists were not updated: {}", names.join(", "));
         }
     }
 

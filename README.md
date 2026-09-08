@@ -138,6 +138,20 @@ or otherwise invalid. To reconnect:
 Re-running the workflow with the old token cannot renew it. Reauthorization is
 required again when the new token reaches its six-month lifetime.
 
+### Retrying individual playlists
+
+To retry a failed update locally, pass each existing Spotify playlist ID explicitly:
+
+```bash
+cargo run -- --spotify --date 2026-09-07 --playlist-id YOUR_PLAYLIST_ID
+```
+
+Repeat `--playlist-id` for multiple playlists. The selected IDs must exist in the
+account's Spinitron playlists, with only one selected ID per show name. This mode
+updates only those IDs and exits with an error if any selected show is missing,
+empty, or fails to update. Track searches finish before an existing playlist is
+cleared, so a failed lookup preserves its current tracks.
+
 ## Spotify Playlist Organization
 
 ## Caching
