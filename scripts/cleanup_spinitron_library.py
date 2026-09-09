@@ -59,6 +59,12 @@ class Spotify:
         self.token = None
         self.expires = 0
 
+    def before_request(self):
+        """Optional pacing hook, applied to every API attempt including retries."""
+
+    def rate_limited(self, delay):
+        """Optional hook for durable cooldowns in scheduled workers."""
+
     def access_token(self):
         if time.monotonic() >= self.expires:
             client_id, secret, refresh = self.credentials
@@ -92,6 +98,7 @@ class Spotify:
                     or any(not re.fullmatch(r"spotify:playlist:[A-Za-z0-9]+", value) for value in values)):
                 raise ValueError("Only removing up to 40 unique playlists' library membership is supported")
         for attempt in range(3):
+            self.before_request()
             request = urllib.request.Request("https://api.spotify.com/v1" + path, method=method,
                                              headers={"Authorization": "Bearer " + self.access_token()})
             try:
@@ -101,6 +108,8 @@ class Spotify:
             except urllib.error.HTTPError as error:
                 retry = error.headers.get("Retry-After", str(2 ** attempt))
                 delay = int(retry) if retry.isdigit() else 2 ** attempt
+                if error.code == 429:
+                    self.rate_limited(delay)
                 if method == "GET" and attempt < 2 and (error.code == 429 or error.code >= 500) and delay <= 30:
                     time.sleep(delay)
                     continue
@@ -303,13 +312,17 @@ def verify_deployment(github, selected):
     return {"pages_commit": ref, "verified_at": now()}
 
 
-def apply_batches(spotify, plan, receipt, receipt_path, batch_size):
+def apply_batches(spotify, plan, receipt, receipt_path, batch_size, max_playlists=None):
     """Serial writes, bounded parallel reads, durable intent for every selected ID."""
     prior_uncertain = [pid for pid, result in receipt["results"].items()
                        if result["status"] not in ("removed", "already_absent")]
     if prior_uncertain:
         raise RuntimeError(f"{len(prior_uncertain)} uncertain previous attempts need review; they were not retried")
     pending = [item for item in plan["playlists"] if item["playlist_id"] not in receipt["results"]]
+    if max_playlists is not None:
+        if max_playlists < 1:
+            raise ValueError("Playlist limit must be positive")
+        pending = pending[:max_playlists]
     def read_metadata(item):
         return metadata_record(spotify.metadata(item["playlist_id"]), plan["owner_id"])
     with ThreadPoolExecutor(max_workers=4) as pool:
@@ -358,7 +371,7 @@ def apply_batches(spotify, plan, receipt, receipt_path, batch_size):
             print(f"{len(receipt['results'])}/{len(plan['playlists'])} checked; last {len(ids)} removed and preserved", flush=True)
 
 
-def apply(spotify, catalog, plan_path, github, batch_size=1):
+def apply(spotify, catalog, plan_path, github, batch_size=1, max_playlists=None):
     if not 1 <= batch_size <= 40:
         raise ValueError("Batch size must be between 1 and 40")
     plan = json.loads(plan_path.read_text())
@@ -377,9 +390,10 @@ def apply(spotify, catalog, plan_path, github, batch_size=1):
         "plan_sha256": digest(plan), "deployment": deployment, "results": {}}
     if receipt.get("plan_sha256") != digest(plan):
         raise ValueError("Plan changed after cleanup started; preserve the original plan")
-    if batch_size > 1:
-        apply_batches(spotify, plan, receipt, receipt_path, batch_size)
-        print(f"Cleanup complete. Playlist links and verification results: {receipt_path}")
+    if batch_size > 1 or max_playlists is not None:
+        apply_batches(spotify, plan, receipt, receipt_path, batch_size, max_playlists)
+        remaining = len(plan["playlists"]) - len(receipt["results"])
+        print(f"Cleanup pass complete; {remaining} remaining. Verification results: {receipt_path}")
         return
     unresolved = []
     for index, item in enumerate(plan["playlists"], 1):

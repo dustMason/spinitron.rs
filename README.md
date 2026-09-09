@@ -275,6 +275,16 @@ it is never automatically retried. Changes since planning also stop cleanup.
 The process holds a local lock to prevent overlapping cleanup commands. No
 credentials are written to the plan, backup, or receipt.
 
+For the approved full cleanup plan, `python3 scripts/resume_spinitron_cleanup.py`
+runs one bounded pass: up to 40 remaining playlists, with at least two seconds
+between Spotify API attempts. It saves HTTP 429 cooldowns in
+`verification/full-cleanup-20260909/rate-limit.json` and checks that file before
+authentication. Schedule separate passes after cooldowns; do not run the
+unrestricted command alongside this worker. The worker uses browser authorization
+without storing tokens, so an agent must complete the existing Spotify session.
+After the last pass it audits the unrelated library entries. If that audit is
+interrupted, `--verify-final` resumes only the final read-only audit.
+
 ### Catalog persistence and one-time library removal
 
 The catalog is durable state, **not a disposable cache**. Keep it in version

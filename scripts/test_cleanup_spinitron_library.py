@@ -222,12 +222,22 @@ class CleanupTest(unittest.TestCase):
         before = copy.deepcopy(self.spotify.playlists)
         cleanup.apply(self.spotify, catalog(), self.plan_path, self.github, batch_size=40)
         self.assertEqual(self.spotify.removed, ["a", "b"])
+
         self.assertEqual(before, self.spotify.playlists)
         self.assertTrue({"draft", "new", "otherowner", "unlisted"} <= self.spotify.library)
         self.spotify.library.add("a")
         cleanup.apply(self.spotify, catalog(), self.plan_path, self.github, batch_size=40)
         self.assertIn("a", self.spotify.library)
         self.assertEqual(self.spotify.removed, ["a", "b"])
+
+    def test_bounded_pass_resumes_original_plan_without_repeating_a_completed_removal(self):
+        self.prepare()
+        cleanup.apply(self.spotify, catalog(), self.plan_path, self.github, batch_size=40, max_playlists=1)
+        self.assertEqual(self.spotify.removed, ['a'])
+        self.spotify.library.add('a')
+        cleanup.apply(self.spotify, catalog(), self.plan_path, self.github, batch_size=40, max_playlists=1)
+        self.assertEqual(self.spotify.removed, ['a', 'b'])
+        self.assertIn('a', self.spotify.library)
 
     def test_batch_changed_metadata_aborts_before_any_mutation(self):
         self.prepare()
