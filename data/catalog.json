@@ -10,7 +10,7 @@
         "start_time": "2026-09-03T17:00:00-0700",
         "end_time": "2026-09-03T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3VM39PsXchnCelkbPU0CIV",
       "desired_uris": [
@@ -139,7 +139,7 @@
         "start_time": "2026-09-08T17:00:00-0700",
         "end_time": "2026-09-08T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "1AGWs3St1zTQ5JZ9rt8yNr",
       "desired_uris": [
@@ -244,7 +244,7 @@
         "start_time": "2026-09-01T17:00:00-0700",
         "end_time": "2026-09-01T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5mXjp66nsr3R9Av5bOX9ZF",
       "desired_uris": [
@@ -381,7 +381,7 @@
         "start_time": "2026-09-02T07:00:00-0700",
         "end_time": "2026-09-02T09:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7GDF9L04k0qcGfXhTJrokF",
       "desired_uris": [
@@ -521,7 +521,7 @@
         "start_time": "2026-09-03T22:00:00-0700",
         "end_time": "2026-09-04T00:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5Gljm9QtIqFx74GpqHNTrs",
       "desired_uris": [
@@ -656,7 +656,7 @@
         "start_time": "2026-09-01T00:00:00-0700",
         "end_time": "2026-09-01T01:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7JFKFLIRW6WgbfPzzjXDzy",
       "desired_uris": [
@@ -727,7 +727,7 @@
         "start_time": "2026-09-01T09:00:00-0700",
         "end_time": "2026-09-01T09:30:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7vaZ9gIA5nYnWRRxIIuY98",
       "desired_uris": [
@@ -764,7 +764,7 @@
         "start_time": "2026-08-31T22:00:00-0700",
         "end_time": "2026-09-01T00:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3HjoS5yHrUw15iT50muvbJ",
       "desired_uris": [
@@ -902,7 +902,7 @@
         "start_time": "2026-08-31T17:00:00-0700",
         "end_time": "2026-08-31T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4AX9LiuUrnsdmAn9ou3alu",
       "desired_uris": [
@@ -1019,7 +1019,7 @@
         "start_time": "2026-08-31T18:00:00-0700",
         "end_time": "2026-08-31T20:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4D0dbbA8dsHwaSbZSXjE7d",
       "desired_uris": [
@@ -1155,7 +1155,7 @@
         "start_time": "2026-08-31T20:00:00-0700",
         "end_time": "2026-08-31T22:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3CpFM11cactEbRPoGBnU0n",
       "desired_uris": [
@@ -1292,7 +1292,7 @@
         "start_time": "2026-09-01T01:00:00-0700",
         "end_time": "2026-09-01T07:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "76Kvm3IZ1WXFoKNwsDJSBi",
       "desired_uris": [
@@ -1477,7 +1477,7 @@
         "start_time": "2026-09-01T07:00:00-0700",
         "end_time": "2026-09-01T09:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "10OjsXBK6qAcqagn9DhGFD",
       "desired_uris": [
@@ -1617,7 +1617,7 @@
         "start_time": "2026-09-01T09:30:00-0700",
         "end_time": "2026-09-01T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5xyJ6PRidcb79qyRsNydZ6",
       "desired_uris": [
@@ -1759,7 +1759,7 @@
         "start_time": "2026-09-01T12:00:00-0700",
         "end_time": "2026-09-01T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5vLss1Yuw90Nf43PTAOqU3",
       "desired_uris": [
@@ -1906,7 +1906,7 @@
         "start_time": "2026-09-01T18:00:00-0700",
         "end_time": "2026-09-01T20:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6d9CPqlFDkJcILzTkBkz7f",
       "desired_uris": [
@@ -2050,7 +2050,7 @@
         "start_time": "2026-09-01T15:00:00-0700",
         "end_time": "2026-09-01T17:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "71yKAPz8rWd4aHhssd9wYi",
       "desired_uris": [
@@ -2188,7 +2188,7 @@
         "start_time": "2026-09-01T20:00:00-0700",
         "end_time": "2026-09-01T22:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6RdC6aIrCahqhYoYaKKFAg",
       "desired_uris": [
@@ -2327,7 +2327,7 @@
         "start_time": "2026-09-01T22:00:00-0700",
         "end_time": "2026-09-02T00:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6omBSBL5xR0uoGNNGcvJ0I",
       "desired_uris": [
@@ -2472,7 +2472,7 @@
         "start_time": "2026-09-02T00:00:00-0700",
         "end_time": "2026-09-02T07:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6diyrI2kHB49giCG1ghEr3",
       "desired_uris": [
@@ -2648,7 +2648,7 @@
         "start_time": "2026-09-02T09:00:00-0700",
         "end_time": "2026-09-02T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3Yq10GdL9jMxx2HLRIFVuz",
       "desired_uris": [
@@ -2795,7 +2795,7 @@
         "start_time": "2026-09-02T12:00:00-0700",
         "end_time": "2026-09-02T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6slc7xdvyGdgH5S9psuraA",
       "desired_uris": [
@@ -2946,7 +2946,7 @@
         "start_time": "2026-09-02T15:00:00-0700",
         "end_time": "2026-09-02T17:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "32kYGKTcVj3nYduIDUERyx",
       "desired_uris": [
@@ -3078,7 +3078,7 @@
         "start_time": "2026-09-02T17:00:00-0700",
         "end_time": "2026-09-02T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3mvfdAw6rNVqUb2D3Xl6Ob",
       "desired_uris": [
@@ -3208,7 +3208,7 @@
         "start_time": "2026-09-02T18:00:00-0700",
         "end_time": "2026-09-02T20:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "1iCvYYLQKYV16BZv0fwdnk",
       "desired_uris": [
@@ -3352,7 +3352,7 @@
         "start_time": "2026-09-02T20:00:00-0700",
         "end_time": "2026-09-02T21:30:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5f9G7Lssz4hwfdnSTLp13Z",
       "desired_uris": [
@@ -3486,7 +3486,7 @@
         "start_time": "2026-09-02T21:30:00-0700",
         "end_time": "2026-09-02T22:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2Pzn4KvlZH8GNbInDVDYWu",
       "desired_uris": [
@@ -3523,7 +3523,7 @@
         "start_time": "2026-09-02T22:00:00-0700",
         "end_time": "2026-09-03T00:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4V4MSLDqpLiZnj2pvu89Rm",
       "desired_uris": [
@@ -3656,7 +3656,7 @@
         "start_time": "2026-09-03T00:00:00-0700",
         "end_time": "2026-09-03T03:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7lOJexjxseAF8MbPDoXzo8",
       "desired_uris": [
@@ -3817,7 +3817,7 @@
         "start_time": "2026-09-03T03:00:00-0700",
         "end_time": "2026-09-03T07:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4u219u350ZA9BNlRIc7Kya",
       "desired_uris": [
@@ -3962,7 +3962,7 @@
         "start_time": "2026-09-05T13:00:00-0700",
         "end_time": "2026-09-05T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7kbp58hVMKoewxH7EWA8mB",
       "desired_uris": [
@@ -4093,7 +4093,7 @@
         "start_time": "2026-09-03T07:00:00-0700",
         "end_time": "2026-09-03T09:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3pbBmFL2U9vwMlb4P9QIDM",
       "desired_uris": [
@@ -4221,7 +4221,7 @@
         "start_time": "2026-09-03T09:00:00-0700",
         "end_time": "2026-09-03T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "63Yt8IN54TjuHAf92FsZgK",
       "desired_uris": [
@@ -4368,7 +4368,7 @@
         "start_time": "2026-09-03T12:30:00-0700",
         "end_time": "2026-09-03T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "0fxNPWtWVzYLyk60aenlbK",
       "desired_uris": [
@@ -4520,7 +4520,7 @@
         "start_time": "2026-09-03T15:00:00-0700",
         "end_time": "2026-09-03T17:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3egfOc7zZHRhln6myRESm7",
       "desired_uris": [
@@ -4657,7 +4657,7 @@
         "start_time": "2026-09-03T18:00:00-0700",
         "end_time": "2026-09-03T20:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6GruCEmnqzxcWgAL96CGV4",
       "desired_uris": [
@@ -4794,7 +4794,7 @@
         "start_time": "2026-09-03T20:00:00-0700",
         "end_time": "2026-09-03T22:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "45sd1evGYDm7zJL77msJMu",
       "desired_uris": [
@@ -4932,7 +4932,7 @@
         "start_time": "2026-09-04T00:00:00-0700",
         "end_time": "2026-09-04T02:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2CO46i3IpUECuowwYnCOXt",
       "desired_uris": [
@@ -5075,7 +5075,7 @@
         "start_time": "2026-09-04T02:00:00-0700",
         "end_time": "2026-09-04T07:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7tJujRSVmUKZUwRsMfcSFy",
       "desired_uris": [
@@ -5243,7 +5243,7 @@
         "start_time": "2026-09-04T07:00:00-0700",
         "end_time": "2026-09-04T09:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7qlXfXazCiL2Wc1ZiXW3RG",
       "desired_uris": [
@@ -5384,7 +5384,7 @@
         "start_time": "2026-09-04T09:00:00-0700",
         "end_time": "2026-09-04T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3TohH3Z6HIdyM1pR8SvZAH",
       "desired_uris": [
@@ -5534,7 +5534,7 @@
         "start_time": "2026-09-04T12:00:00-0700",
         "end_time": "2026-09-04T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6ufZ2e4LrdzL0X0SKpWBok",
       "desired_uris": [
@@ -5685,7 +5685,7 @@
         "start_time": "2026-09-04T22:00:00-0700",
         "end_time": "2026-09-05T00:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4l2Ai6hjQeoNd8pTBrKfNq",
       "desired_uris": [
@@ -5828,7 +5828,7 @@
         "start_time": "2026-09-05T08:00:00-0700",
         "end_time": "2026-09-05T10:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "41PCkf3mozNPHvY0lypGr0",
       "desired_uris": [
@@ -5962,7 +5962,7 @@
         "start_time": "2026-09-05T10:00:00-0700",
         "end_time": "2026-09-05T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "0IJqz1vVpfFDnGsrCvlqrR",
       "desired_uris": [
@@ -6094,7 +6094,7 @@
         "start_time": "2026-09-04T15:00:00-0700",
         "end_time": "2026-09-04T17:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2t5xxO5rY4NtYb5nUtcVff",
       "desired_uris": [
@@ -6230,7 +6230,7 @@
         "start_time": "2026-09-04T17:00:00-0700",
         "end_time": "2026-09-04T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "247pMMUUhj3upNSuqz6KT3",
       "desired_uris": [
@@ -6339,7 +6339,7 @@
         "start_time": "2026-09-04T18:00:00-0700",
         "end_time": "2026-09-04T20:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5xBLYp662KXL7EtmTTXv1W",
       "desired_uris": [
@@ -6468,7 +6468,7 @@
         "start_time": "2026-09-04T20:00:00-0700",
         "end_time": "2026-09-04T22:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6llOEO9OKOUt6fDvmKJrtZ",
       "desired_uris": [
@@ -6609,7 +6609,7 @@
         "start_time": "2026-09-05T00:00:00-0700",
         "end_time": "2026-09-05T02:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3M9UBcz8EMJ8QNMqpxvrcN",
       "desired_uris": [
@@ -6752,7 +6752,7 @@
         "start_time": "2026-09-05T05:30:00-0700",
         "end_time": "2026-09-05T08:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7kwwoCQsSedgVCwACVEv1R",
       "desired_uris": [
@@ -6899,7 +6899,7 @@
         "start_time": "2026-09-05T02:00:00-0700",
         "end_time": "2026-09-05T05:30:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6aNCVxlo8Ms2usYI7H8o2K",
       "desired_uris": [
@@ -7057,7 +7057,7 @@
         "start_time": "2026-09-05T12:00:00-0700",
         "end_time": "2026-09-05T13:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "27xjUJ7oMhrnE6sw9nVgox",
       "desired_uris": [
@@ -7118,7 +7118,7 @@
         "start_time": "2026-09-05T15:00:00-0700",
         "end_time": "2026-09-05T17:30:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2Xu5mFEFmum7Z8zrHLmmgI",
       "desired_uris": [
@@ -7258,7 +7258,7 @@
         "start_time": "2026-09-05T17:30:00-0700",
         "end_time": "2026-09-05T18:30:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2QtbdM8lthBJUwpv4Ncjn6",
       "desired_uris": [
@@ -7295,7 +7295,7 @@
         "start_time": "2026-09-05T18:30:00-0700",
         "end_time": "2026-09-05T19:30:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7DwBhftOv2KJu1SA3PxBoj",
       "desired_uris": [
@@ -7396,7 +7396,7 @@
         "start_time": "2026-09-05T19:30:00-0700",
         "end_time": "2026-09-06T00:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4NIW9XGSgZ0DoUjFjqFO1n",
       "desired_uris": [
@@ -7532,7 +7532,7 @@
         "start_time": "2026-09-06T00:00:00-0700",
         "end_time": "2026-09-06T02:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5WCHDViXxC5JlvmFtkhZUP",
       "desired_uris": [
@@ -7668,7 +7668,7 @@
         "start_time": "2026-09-06T02:00:00-0700",
         "end_time": "2026-09-06T06:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "1Nu2deNjOkytlxnhpn61eJ",
       "desired_uris": [
@@ -7800,7 +7800,7 @@
         "start_time": "2026-09-06T06:00:00-0700",
         "end_time": "2026-09-06T08:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "1hJymhAXxQWA2emrWlXG0L",
       "desired_uris": [
@@ -7935,7 +7935,7 @@
         "start_time": "2026-09-06T08:00:00-0700",
         "end_time": "2026-09-06T10:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4hgCNvcw05hJ6olCjEZQbF",
       "desired_uris": [
@@ -8071,7 +8071,7 @@
         "start_time": "2026-09-06T10:00:00-0700",
         "end_time": "2026-09-06T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "1fbKXuezoeBpRSd9tlxJd7",
       "desired_uris": [
@@ -8203,7 +8203,7 @@
         "start_time": "2026-09-06T12:00:00-0700",
         "end_time": "2026-09-06T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "0IIPGPObMI0Y0WUZQZRmJE",
       "desired_uris": [
@@ -8354,7 +8354,7 @@
         "start_time": "2026-09-06T15:00:00-0700",
         "end_time": "2026-09-06T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3yii0GM6Ayf4KhFsdlj2au",
       "desired_uris": [
@@ -8497,7 +8497,7 @@
         "start_time": "2026-09-06T18:00:00-0700",
         "end_time": "2026-09-06T21:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "1tlql17zyj0noFhOjmTd4O",
       "desired_uris": [
@@ -8640,7 +8640,7 @@
         "start_time": "2026-09-06T21:00:00-0700",
         "end_time": "2026-09-07T00:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6rhaqdblb91Z2qrR8VrYUy",
       "desired_uris": [
@@ -8783,7 +8783,7 @@
         "start_time": "2026-09-07T00:00:00-0700",
         "end_time": "2026-09-07T01:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2ZzoJxAMtJGbYbOW6XpL6b",
       "desired_uris": [
@@ -8863,7 +8863,7 @@
         "start_time": "2026-09-07T01:00:00-0700",
         "end_time": "2026-09-07T07:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "26ay5U3hTELjFJaifcVqLd",
       "desired_uris": [
@@ -9044,7 +9044,7 @@
         "start_time": "2026-09-07T07:00:00-0700",
         "end_time": "2026-09-07T09:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7FEfDoksxFKUDDkt0Y84Kf",
       "desired_uris": [
@@ -9183,7 +9183,7 @@
         "start_time": "2026-09-07T09:00:00-0700",
         "end_time": "2026-09-07T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "1Hrj5cdp11UK8lrn4Fixhf",
       "desired_uris": [
@@ -9331,7 +9331,7 @@
         "start_time": "2026-09-07T12:00:00-0700",
         "end_time": "2026-09-07T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4HxF29nFkVkYqVt2Vpu0VC",
       "desired_uris": [
@@ -9479,7 +9479,7 @@
         "start_time": "2026-09-07T15:00:00-0700",
         "end_time": "2026-09-07T17:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "0Gw7G8J8bGHmgrjUi00ZIU",
       "desired_uris": [
@@ -9615,7 +9615,7 @@
         "start_time": "2026-09-07T17:00:00-0700",
         "end_time": "2026-09-07T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "0B9QVNlvFk0OeL9ZgLIokU",
       "desired_uris": [
@@ -9671,7 +9671,7 @@
         "start_time": "2026-09-07T18:00:00-0700",
         "end_time": "2026-09-07T20:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "76xB9Owk47RVFCOu1lWcEs",
       "desired_uris": [
@@ -9815,7 +9815,7 @@
         "start_time": "2026-09-07T20:00:00-0700",
         "end_time": "2026-09-07T22:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3Gk3lMWZTxBQxDBuQYxGVR",
       "desired_uris": [
@@ -9955,7 +9955,7 @@
         "start_time": "2026-09-07T22:00:00-0700",
         "end_time": "2026-09-08T00:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7k7UlODh3bBu9MxrH0QgLZ",
       "desired_uris": [
@@ -10089,7 +10089,7 @@
         "start_time": "2026-09-08T00:00:00-0700",
         "end_time": "2026-09-08T01:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3p93cQa73gAbpuF44kCFWd",
       "desired_uris": [
@@ -10134,7 +10134,7 @@
         "start_time": "2026-09-08T01:00:00-0700",
         "end_time": "2026-09-08T07:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6vtTzDWIbUQO7obiumfSbK",
       "desired_uris": [
@@ -10315,7 +10315,7 @@
         "start_time": "2026-09-08T07:00:00-0700",
         "end_time": "2026-09-08T09:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4ACSI9xRkWiENMHIqRDaG9",
       "desired_uris": [
@@ -10460,7 +10460,7 @@
         "start_time": "2026-09-08T09:30:00-0700",
         "end_time": "2026-09-08T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "1VukzEHIvTmi8TE9xTPcFX",
       "desired_uris": [
@@ -10602,7 +10602,7 @@
         "start_time": "2026-09-08T22:00:00-0700",
         "end_time": "2026-09-09T00:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4OvThibU3zncwcFaz18uSF",
       "desired_uris": [
@@ -10742,7 +10742,7 @@
         "start_time": "2026-09-08T12:00:00-0700",
         "end_time": "2026-09-08T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3bnodTJ7AaxmDSDEmlbQBU",
       "desired_uris": [
@@ -10891,7 +10891,7 @@
         "start_time": "2026-09-08T15:00:00-0700",
         "end_time": "2026-09-08T17:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "29jjw53HavuPwhiy9Wr32o",
       "desired_uris": [
@@ -11025,7 +11025,7 @@
         "start_time": "2026-09-08T18:00:00-0700",
         "end_time": "2026-09-08T20:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "198ubJgmehGddTFlvr8e7P",
       "desired_uris": [
@@ -11168,7 +11168,7 @@
         "start_time": "2026-09-08T20:00:00-0700",
         "end_time": "2026-09-08T22:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4juKo6n8M1LEaQ0hI5nyuN",
       "desired_uris": [
@@ -11308,7 +11308,7 @@
         "start_time": "2026-09-09T00:00:00-0700",
         "end_time": "2026-09-09T02:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3slftnTVNRK6kz4R88ECpf",
       "desired_uris": [
@@ -11447,7 +11447,7 @@
         "start_time": "2026-09-09T02:00:00-0700",
         "end_time": "2026-09-09T07:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4OS4iNjEbTKAR01leUaZq3",
       "desired_uris": [
@@ -11637,7 +11637,7 @@
         "start_time": "2026-09-09T07:00:00-0700",
         "end_time": "2026-09-09T09:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "0mI6kJSBfrOJmeTXaXfnM8",
       "desired_uris": [
@@ -11777,7 +11777,7 @@
         "start_time": "2026-08-31T20:00:00-0700",
         "end_time": "2026-08-31T23:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6ymUC6qNQ2M0C1KYE8dlxt",
       "desired_uris": [
@@ -11920,7 +11920,7 @@
         "start_time": "2026-08-31T23:00:00-0700",
         "end_time": "2026-09-01T06:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5RFYIZy7HWUU5madnzkORc",
       "desired_uris": [
@@ -12098,7 +12098,7 @@
         "start_time": "2026-09-01T06:00:00-0700",
         "end_time": "2026-09-01T07:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7noy1mgeiIUgXjbljyRSHg",
       "desired_uris": [
@@ -12207,7 +12207,7 @@
         "start_time": "2026-09-01T07:00:00-0700",
         "end_time": "2026-09-01T09:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2ewKNUUMVRRo8deWrQei6s",
       "desired_uris": [
@@ -12325,7 +12325,7 @@
         "start_time": "2026-09-01T09:00:00-0700",
         "end_time": "2026-09-01T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "14iqz7lEpUa2l2G8vkmEn5",
       "desired_uris": [
@@ -12479,7 +12479,7 @@
         "start_time": "2026-09-01T12:00:00-0700",
         "end_time": "2026-09-01T16:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2hgOFglN1UhhKew3k2Ukux",
       "desired_uris": [
@@ -12617,7 +12617,7 @@
         "start_time": "2026-09-01T16:00:00-0700",
         "end_time": "2026-09-01T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "51BaL63vY5BkiExiuMl7DD",
       "desired_uris": [
@@ -12686,7 +12686,7 @@
         "start_time": "2026-09-01T18:00:00-0700",
         "end_time": "2026-09-01T20:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5o5BsMCQhvFMP5vHpKkhpS",
       "desired_uris": [
@@ -12820,7 +12820,7 @@
         "start_time": "2026-09-01T20:00:00-0700",
         "end_time": "2026-09-02T01:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2qdMabCplqXyG1pGcx6N66",
       "desired_uris": [
@@ -12985,7 +12985,7 @@
         "start_time": "2026-09-02T00:00:00-0700",
         "end_time": "2026-09-02T06:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "0P8msUBLoVTRXhNzkK4N5e",
       "desired_uris": [
@@ -13158,7 +13158,7 @@
         "start_time": "2026-09-02T06:00:00-0700",
         "end_time": "2026-09-02T09:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6Fmjvk377D1jq8aoEIORO5",
       "desired_uris": [
@@ -13314,7 +13314,7 @@
         "start_time": "2026-09-02T09:00:00-0700",
         "end_time": "2026-09-02T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "51HbcSe1yGMhlZcRwr5dNh",
       "desired_uris": [
@@ -13449,7 +13449,7 @@
         "start_time": "2026-09-04T09:00:00-0700",
         "end_time": "2026-09-04T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4SDP6daKyb5cqryIPomptl",
       "desired_uris": [
@@ -13596,7 +13596,7 @@
         "start_time": "2026-09-02T12:00:00-0700",
         "end_time": "2026-09-02T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "1AVn6FiUWl66Yp8fKvzA9g",
       "desired_uris": [
@@ -13735,7 +13735,7 @@
         "start_time": "2026-09-02T15:00:00-0700",
         "end_time": "2026-09-02T17:30:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "0hZDjrRjlUf3ZrfhLh7KvN",
       "desired_uris": [
@@ -13873,7 +13873,7 @@
         "start_time": "2026-09-02T17:30:00-0700",
         "end_time": "2026-09-02T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "0RQq5MwIYOW3vhs9axjiRi",
       "desired_uris": [
@@ -13927,7 +13927,7 @@
         "start_time": "2026-09-02T18:00:00-0700",
         "end_time": "2026-09-02T20:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "16274PzHopcU6XJebfpUa7",
       "desired_uris": [
@@ -14054,7 +14054,7 @@
         "start_time": "2026-09-02T20:00:00-0700",
         "end_time": "2026-09-03T00:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "56LpebyKwz4vgfatylJwow",
       "desired_uris": [
@@ -14193,7 +14193,7 @@
         "start_time": "2026-09-02T23:00:00-0700",
         "end_time": "2026-09-03T02:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5cT2rp6IAhv0F26H0lv1h4",
       "desired_uris": [
@@ -14334,7 +14334,7 @@
         "start_time": "2026-09-03T09:00:00-0700",
         "end_time": "2026-09-03T11:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7gOyvdG2GRim3Wu4jmpkyp",
       "desired_uris": [
@@ -14439,7 +14439,7 @@
         "start_time": "2026-09-03T11:00:00-0700",
         "end_time": "2026-09-03T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "56zlyMMnFZIXhi4IomiYnw",
       "desired_uris": [
@@ -14542,7 +14542,7 @@
         "start_time": "2026-09-03T15:00:00-0700",
         "end_time": "2026-09-03T17:30:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4O6KPtY4qEexGrnnfG309q",
       "desired_uris": [
@@ -14695,7 +14695,7 @@
         "start_time": "2026-09-03T17:30:00-0700",
         "end_time": "2026-09-03T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4HHt1n75Lw0SL89nNHxot3",
       "desired_uris": [
@@ -14749,7 +14749,7 @@
         "start_time": "2026-09-03T18:00:00-0700",
         "end_time": "2026-09-03T20:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "37hp30D0B3Da8ozDgvL0uI",
       "desired_uris": [
@@ -14889,7 +14889,7 @@
         "start_time": "2026-09-03T20:00:00-0700",
         "end_time": "2026-09-03T22:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2TfSo0RYVqPIfvU9W2MppH",
       "desired_uris": [
@@ -15026,7 +15026,7 @@
         "start_time": "2026-09-03T22:00:00-0700",
         "end_time": "2026-09-04T06:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "0DZz5GvdYM59p8pjUifry7",
       "desired_uris": [
@@ -15229,7 +15229,7 @@
         "start_time": "2026-09-04T12:00:00-0700",
         "end_time": "2026-09-04T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5NfaZS0erWx4xLSvzmUY8J",
       "desired_uris": [
@@ -15371,7 +15371,7 @@
         "start_time": "2026-09-04T15:00:00-0700",
         "end_time": "2026-09-04T17:30:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5K4SfzQQ2BSj6JwemjoUUe",
       "desired_uris": [
@@ -15532,7 +15532,7 @@
         "start_time": "2026-09-04T17:30:00-0700",
         "end_time": "2026-09-04T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4NBkWwhzXA7Do9tg5Tn4Bq",
       "desired_uris": [
@@ -15593,7 +15593,7 @@
         "start_time": "2026-09-04T18:00:00-0700",
         "end_time": "2026-09-04T21:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3FOALx9slPNXMt3Pcn4LgA",
       "desired_uris": [
@@ -15734,7 +15734,7 @@
         "start_time": "2026-09-04T22:00:00-0700",
         "end_time": "2026-09-05T02:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7vQUbIedJCBThekFyG9WlF",
       "desired_uris": [
@@ -15892,7 +15892,7 @@
         "start_time": "2026-09-05T02:00:00-0700",
         "end_time": "2026-09-05T08:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "61vRsJrfgbEWKu3uArAGgp",
       "desired_uris": [
@@ -16088,7 +16088,7 @@
         "start_time": "2026-09-05T08:00:00-0700",
         "end_time": "2026-09-05T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "55z57Ag6026v53hyt3UAsy",
       "desired_uris": [
@@ -16241,7 +16241,7 @@
         "start_time": "2026-09-05T12:00:00-0700",
         "end_time": "2026-09-05T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3mVBHvWezoAgOpBExXSYDk",
       "desired_uris": [
@@ -16378,7 +16378,7 @@
         "start_time": "2026-09-05T15:00:00-0700",
         "end_time": "2026-09-05T16:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2A8EKRCp7P4ONm6q80xxmz",
       "desired_uris": [
@@ -16516,7 +16516,7 @@
         "start_time": "2026-09-05T16:00:00-0700",
         "end_time": "2026-09-05T19:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "1qv8ImPiWegWsr9ftEFhrb",
       "desired_uris": [
@@ -16683,7 +16683,7 @@
         "start_time": "2026-09-05T19:00:00-0700",
         "end_time": "2026-09-05T22:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6JF4iKWOkFyntDr60CQNWY",
       "desired_uris": [
@@ -16848,7 +16848,7 @@
         "start_time": "2026-09-05T22:00:00-0700",
         "end_time": "2026-09-06T00:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7Jbpc79lDNDVuQeUgX9VDx",
       "desired_uris": [
@@ -16948,7 +16948,7 @@
         "start_time": "2026-09-06T00:00:00-0700",
         "end_time": "2026-09-06T02:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5mgEdaBvCe2k53yg3rewP1",
       "desired_uris": [
@@ -17067,7 +17067,7 @@
         "start_time": "2026-09-06T02:00:00-0700",
         "end_time": "2026-09-06T05:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "1WYRmZTaUwepJQgRWsIYwx",
       "desired_uris": [
@@ -17225,7 +17225,7 @@
         "start_time": "2026-09-06T12:00:00-0700",
         "end_time": "2026-09-06T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6MplWDdULpioG20Y85m4Xf",
       "desired_uris": [
@@ -17384,7 +17384,7 @@
         "start_time": "2026-09-06T15:00:00-0700",
         "end_time": "2026-09-06T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "6RCI80tuPL2LGwa32wTgh8",
       "desired_uris": [
@@ -17533,7 +17533,7 @@
         "start_time": "2026-09-06T19:00:00-0700",
         "end_time": "2026-09-06T22:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "0Sh99PwFNwdj659So2ping",
       "desired_uris": [
@@ -17672,7 +17672,7 @@
         "start_time": "2026-09-06T22:00:00-0700",
         "end_time": "2026-09-07T02:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7d9Dq4ewa6Jy8PLm2lEDPZ",
       "desired_uris": [
@@ -17857,7 +17857,7 @@
         "start_time": "2026-09-07T02:00:00-0700",
         "end_time": "2026-09-07T05:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "0riIU4kNAgD3vVm7DMoJA6",
       "desired_uris": [
@@ -18005,7 +18005,7 @@
         "start_time": "2026-09-07T05:00:00-0700",
         "end_time": "2026-09-07T09:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2yHzdcGYeDPqdKOIrvrRBU",
       "desired_uris": [
@@ -18196,7 +18196,7 @@
         "start_time": "2026-09-07T09:00:00-0700",
         "end_time": "2026-09-07T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3lPhZtJ5yWUwMuGv48QNgT",
       "desired_uris": [
@@ -18345,7 +18345,7 @@
         "start_time": "2026-09-07T12:00:00-0700",
         "end_time": "2026-09-07T13:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "5dXl4Yuddpi9pbhrQjszdM",
       "desired_uris": [
@@ -18438,7 +18438,7 @@
         "start_time": "2026-09-07T13:00:00-0700",
         "end_time": "2026-09-07T15:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "68Il9gtKBIgA4HXWcttjOK",
       "desired_uris": [
@@ -18582,7 +18582,7 @@
         "start_time": "2026-09-07T15:00:00-0700",
         "end_time": "2026-09-07T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4ckooLFO1JSkqQTP8duXa1",
       "desired_uris": [
@@ -18734,7 +18734,7 @@
         "start_time": "2026-09-07T20:00:00-0700",
         "end_time": "2026-09-07T23:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2UXb0VQsb6z6a4At095irJ",
       "desired_uris": [
@@ -18894,7 +18894,7 @@
         "start_time": "2026-09-07T23:00:00-0700",
         "end_time": "2026-09-08T06:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4Aud5QQ7DHbKqZqqcr7jGc",
       "desired_uris": [
@@ -19103,7 +19103,7 @@
         "start_time": "2026-09-08T06:00:00-0700",
         "end_time": "2026-09-08T07:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "47uATm0xdm2fPYxRz5hvTy",
       "desired_uris": [
@@ -19230,7 +19230,7 @@
         "start_time": "2026-09-08T07:00:00-0700",
         "end_time": "2026-09-08T09:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "0nDSJcsnTybbd69MtmRrX6",
       "desired_uris": [
@@ -19375,7 +19375,7 @@
         "start_time": "2026-09-08T09:00:00-0700",
         "end_time": "2026-09-08T12:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "4vdU5E2YPFs3gEgfKlpOph",
       "desired_uris": [
@@ -19529,7 +19529,7 @@
         "start_time": "2026-09-08T12:00:00-0700",
         "end_time": "2026-09-08T16:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2WsiuNtXQRiWxvJBMXz9it",
       "desired_uris": [
@@ -19671,7 +19671,7 @@
         "start_time": "2026-09-08T16:00:00-0700",
         "end_time": "2026-09-08T18:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "7CgkJHLlbZPQTep32Yo2Zq",
       "desired_uris": [
@@ -19732,7 +19732,7 @@
         "start_time": "2026-09-08T18:00:00-0700",
         "end_time": "2026-09-08T20:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "2rUHWFZOxVYcKMuhtnUOoS",
       "desired_uris": [
@@ -19793,7 +19793,7 @@
         "start_time": "2026-09-08T20:00:00-0700",
         "end_time": "2026-09-09T01:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "23Eup5rMnl3t1QeRouBGMn",
       "desired_uris": [
@@ -19958,7 +19958,7 @@
         "start_time": "2026-09-09T00:00:00-0700",
         "end_time": "2026-09-09T06:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "1KlMuVqVmDDfc6gXT4gO8W",
       "desired_uris": [
@@ -20132,7 +20132,7 @@
         "start_time": "2026-09-09T06:00:00-0700",
         "end_time": "2026-09-09T09:00:00-0700"
       },
-      "state": "release_attempted",
+      "state": "released",
       "owner_id": "dustmason",
       "playlist_id": "3jKzt4qXT62mko2MBaNvGM",
       "desired_uris": [
