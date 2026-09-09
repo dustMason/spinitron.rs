@@ -384,11 +384,12 @@ main{
   display:none
 }
 .sample-strip{
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:14px;
+  display:block;
   flex:1;
-  min-width:0
+  min-width:0;
+  font-size:11px;
+  line-height:1.7;
+  overflow-wrap:anywhere
 }
 .song{
   display:flex;
@@ -591,12 +592,6 @@ main{
     grid-template-columns:50px minmax(175px,.95fr) minmax(270px,1.5fr) 36px;
     gap:12px
   }
-  .sample-strip{
-    grid-template-columns:repeat(2,minmax(0,1fr))
-  }
-  .sample-strip>.song:nth-child(3){
-    display:none
-  }
   .sample-expanded>ul{
     grid-template-columns:repeat(2,minmax(0,1fr))
   }
@@ -737,9 +732,6 @@ main{
   }
   .station-code{
     font-size:10px
-  }
-  .sample-strip{
-    gap:12px
   }
   .sample-toggle{
     flex-basis:58px

@@ -75,13 +75,12 @@ def json_for_html(value):
     return json.dumps(value, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
 
 
-def sample(track, inline=False):
+def sample(track):
     name = escape(track["name"])
     artists = escape(", ".join(track["artists"]) or "Unknown artist")
     art = (f'<img src="{escape(track["image_url"])}" alt="" loading="lazy" width="32" height="32">'
            if track["image_url"] else '<span class="cover-placeholder" aria-hidden="true">♪</span>')
-    tag = "span" if inline else "li"
-    return f'<{tag} class="song">{art}<span class="song-text"><span class="song-artist" title="{artists}">{artists}</span><span class="song-title" title="{name}">{name}</span></span></{tag}>'
+    return f'<li class="song">{art}<span class="song-text"><span class="song-artist" title="{artists}">{artists}</span><span class="song-title" title="{name}">{name}</span></span></li>'
 
 
 def playlist_row(row):
@@ -93,7 +92,8 @@ def playlist_row(row):
         context = "Broadcast " + row["broadcast_label"]
     preview = row["preview"]
     if preview:
-        compact = ''.join(sample(t, inline=True) for t in preview[:3])
+        artists = list(dict.fromkeys(a.strip() for t in preview for a in t["artists"] if a.strip()))[:3]
+        compact = ' · '.join(f'<span class="preview-artist">{escape(a)}</span>' for a in artists or ["Unknown artist"])
         full = ''.join(sample(t) for t in preview)
         songs = f'''<details class="song-preview"><summary aria-label="Expand {len(preview)}-song sample for {escape(row['name'])}"><span class="sample-strip">{compact}</span><span class="sample-toggle"><span class="closed-label">+ {len(preview)} songs</span><span class="open-label">− Close</span></span></summary><div class="sample-expanded"><p>Song sample · {len(preview)} tracks</p><ul>{full}</ul></div></details>'''
     else:
@@ -106,7 +106,7 @@ def rows_html(rows):
 
 
 def column_head():
-    return '<div class="column-head" aria-hidden="true"><span>Station</span><span>Playlist / broadcast</span><span>A few songs inside</span><span>Tracks</span></div>'
+    return '<div class="column-head" aria-hidden="true"><span>Station</span><span>Playlist / broadcast</span><span>A few artists inside</span><span>Tracks</span></div>'
 
 
 def day_sections(rows, days):

@@ -95,6 +95,11 @@ class CatalogWebsiteTest(unittest.TestCase):
     def test_samples_preserve_unicode_and_quotes_without_broken_markup(self):
         row = playlist(1)
         row["name"] = 'KALX - Don\'t Stop — 音楽 & Friends <live>'
+        row["preview"].extend([
+            dict(row["preview"][0], artists=["Artist & Friends"]),
+            dict(row["preview"][0], artists=["Second artist", "Third artist"]),
+            dict(row["preview"][0], artists=["Fourth artist"]),
+        ])
         with tempfile.TemporaryDirectory() as tmp:
             output = self.generate([row], Path(tmp))
             html = (output / "index.html").read_text()
@@ -106,7 +111,16 @@ class CatalogWebsiteTest(unittest.TestCase):
             self.assertEqual(page.errors, [])
             self.assertEqual(page.stack, [])
             self.assertIn('class="sample-strip"', html)
-            self.assertIn('aria-label="Expand 1-song sample', html)
+            self.assertIn('aria-label="Expand 4-song sample', html)
+            summary = html.split('<summary', 1)[1].split('</summary>', 1)[0].split('>', 1)[1]
+            self.assertEqual(summary.count('class="preview-artist"'), 3)
+            for artist in ["Artist &amp; Friends", "Second artist", "Third artist"]:
+                self.assertIn(artist, summary)
+            self.assertNotIn("Fourth artist", summary)
+            self.assertNotIn("<img", summary)
+            self.assertNotIn('class="song-title"', summary)
+            self.assertIn("Fourth artist", html)
+            self.assertEqual(html.count('<li class="song">'), 4)
 
     def test_rebuild_removes_surplus_generated_pages_and_handles_empty_catalog(self):
         with tempfile.TemporaryDirectory() as tmp:

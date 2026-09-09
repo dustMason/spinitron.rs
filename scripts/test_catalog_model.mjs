@@ -28,13 +28,27 @@ test("pagination clamps out-of-range pages and keeps zero-track records", () => 
   assert.deepEqual(pageRows([], 3), {page:1,pages:1,rows:[],first:0,last:0});
 });
 
-test("rendered samples escape ordinary punctuation and use valid inline summary content", () => {
-  const html = renderRow(row(1));
+test("collapsed samples show three distinct artists while expanded samples keep every song", () => {
+  const playlist = row(1);
+  playlist.preview.push(
+    {...playlist.preview[0], artists:["Artist & Friends"]},
+    {...playlist.preview[0], artists:["Second artist", "Third artist"]},
+    {...playlist.preview[0], artists:["Fourth artist"]},
+  );
+  const html = renderRow(playlist);
+  const summary = html.match(/<summary[^>]*>(.*?)<\/summary>/s)[1];
   assert.ok(html.includes("Don&#39;t Stop — 音楽"));
-  assert.ok(html.includes("Artist &amp; Friends"));
+  assert.ok(summary.includes("Artist &amp; Friends"));
+  assert.ok(summary.includes("Second artist"));
+  assert.ok(summary.includes("Third artist"));
+  assert.equal((summary.match(/class="preview-artist"/g) || []).length, 3);
+  assert.ok(!summary.includes("Fourth artist"));
+  assert.ok(!summary.includes("<img"));
+  assert.ok(!summary.includes('class="song-title"'));
   assert.ok(html.includes("A song &lt;live&gt;"));
-  assert.ok(html.includes('<span class="sample-strip"><span class="song">'));
-  assert.ok(html.includes('<ul><li class="song">'));
+  assert.ok(html.includes('<ul><li class="song"><img'));
+  assert.equal((html.match(/<li class="song">/g) || []).length, 4);
+  assert.ok(html.includes("Fourth artist"));
   assert.ok(!html.includes("<live>"));
 });
 

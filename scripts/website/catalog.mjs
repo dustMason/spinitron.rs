@@ -18,14 +18,18 @@ export function pageRows(rows, requested, size = 25) {
     first: rows.length ? (page - 1) * size + 1 : 0, last: Math.min(page * size, rows.length)};
 }
 
-function song(track, inline = false) {
-  const tag = inline ? "span" : "li";
+function song(track) {
   const artists = escape(track.artists.join(", ") || "Unknown artist");
   const name = escape(track.name);
   const image = track.image_url
     ? `<img src="${escape(track.image_url)}" alt="" loading="lazy" width="32" height="32">`
     : '<span class="cover-placeholder" aria-hidden="true">♪</span>';
-  return `<${tag} class="song">${image}<span class="song-text"><span class="song-artist" title="${artists}">${artists}</span><span class="song-title" title="${name}">${name}</span></span></${tag}>`;
+  return `<li class="song">${image}<span class="song-text"><span class="song-artist" title="${artists}">${artists}</span><span class="song-title" title="${name}">${name}</span></span></li>`;
+}
+
+function artistPreview(tracks) {
+  const artists = [...new Set(tracks.flatMap(t => t.artists).map(a => a.trim()).filter(Boolean))].slice(0, 3);
+  return (artists.length ? artists : ["Unknown artist"]).map(a => `<span class="preview-artist">${escape(a)}</span>`).join(" · ");
 }
 
 export function renderRow(row) {
@@ -34,12 +38,12 @@ export function renderRow(row) {
     : `<span class="playlist-title">${escape(row.title)}</span>`;
   const meta = row.broadcast_label ? `Broadcast ${row.broadcast_label}` : `${row.date_kind} ${row.date_label}`;
   const preview = row.preview.length
-    ? `<details class="song-preview"><summary aria-label="Expand ${row.preview.length}-song sample for ${escape(row.name)}"><span class="sample-strip">${row.preview.slice(0, 3).map(t => song(t, true)).join("")}</span><span class="sample-toggle"><span class="closed-label">+ ${row.preview.length} songs</span><span class="open-label">− Close</span></span></summary><div class="sample-expanded"><p>Song sample · ${row.preview.length} tracks</p><ul>${row.preview.map(t => song(t)).join("")}</ul></div></details>`
+    ? `<details class="song-preview"><summary aria-label="Expand ${row.preview.length}-song sample for ${escape(row.name)}"><span class="sample-strip">${artistPreview(row.preview)}</span><span class="sample-toggle"><span class="closed-label">+ ${row.preview.length} songs</span><span class="open-label">− Close</span></span></summary><div class="sample-expanded"><p>Song sample · ${row.preview.length} tracks</p><ul>${row.preview.map(t => song(t)).join("")}</ul></div></details>`
     : '<span class="no-sample">No song sample available</span>';
   return `<article class="playlist-row" data-playlist-id="${escape(row.id)}"><span class="station-code">${escape(row.station)}</span><div class="playlist-info">${title}<span class="playlist-meta">${escape(meta)}</span></div><div class="preview-cell">${preview}</div><span class="track-count" title="${row.count_label === "—" ? "Track count unavailable" : "Tracks"}">${escape(row.count_label)}<span>tracks</span></span></article>`;
 }
 
-const columnHead = '<div class="column-head" aria-hidden="true"><span>Station</span><span>Playlist / broadcast</span><span>A few songs inside</span><span>Tracks</span></div>';
+const columnHead = '<div class="column-head" aria-hidden="true"><span>Station</span><span>Playlist / broadcast</span><span>A few artists inside</span><span>Tracks</span></div>';
 const pageHref = page => page === 1 ? "index.html" : `page-${page}.html`;
 
 function pagination(rows, state, config) {

@@ -14,8 +14,8 @@ Claude Code wrote nearly all of this!
 
 ## Browsing the catalog
 
-The website uses compact playlist rows with album art, artist and song samples,
-an expandable twelve-song preview, and a direct Spotify link. The recent view
+The website uses compact playlist rows with three artist names and a direct
+Spotify link. Expand a row to see the twelve-song sample with album art. The recent view
 has one section for each of the last seven calendar days, including days with no
 imports. Each day initially shows ten rows; expand it to see the rest.
 
