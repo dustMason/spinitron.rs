@@ -29,6 +29,8 @@ class FakeSpotify:
         self.library = set(self.playlists)
         self.removed = []
         self.fail_remove = False
+        self.tracks = {pid: [f"spotify:track:{pid}{n}" for n in range(p['tracks']['total'])]
+                       for pid, p in self.playlists.items()}
 
     def owner(self):
         return "dustmason"
@@ -41,6 +43,12 @@ class FakeSpotify:
 
     def metadata(self, playlist_id):
         return copy.deepcopy(self.playlists[playlist_id])
+
+    def track_uris(self, playlist_id):
+        return list(self.tracks[playlist_id])
+
+    def contents(self, playlist_id):
+        return self.metadata(playlist_id), self.track_uris(playlist_id)
 
     def saved(self, playlist_id):
         return playlist_id in self.library
@@ -273,6 +281,57 @@ class CleanupTest(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     client.remove_many(ids)
             request.assert_not_called()
+
+    def test_snapshot_change_on_unfollow_preserves_identical_song_sequence(self):
+        self.prepare()
+        original = self.spotify.remove
+        def remove(pid):
+            original(pid)
+            self.spotify.playlists[pid]['snapshot_id'] = 'membership-changed'
+        self.spotify.remove = remove
+        cleanup.apply(self.spotify, catalog(), self.plan_path, self.github, batch_size=40)
+        receipt = json.loads((self.output/'receipt.json').read_text())
+        self.assertEqual({r['status'] for r in receipt['results'].values()}, {'removed'})
+        self.assertEqual(receipt['results']['a']['track_uris_sha256'], cleanup.digest(self.spotify.tracks['a']))
+
+    def test_same_count_reordered_songs_are_detected_after_removal(self):
+        self.prepare()
+        original = self.spotify.remove
+        def remove(pid):
+            original(pid)
+            self.spotify.tracks[pid].reverse()
+            self.spotify.playlists[pid]['snapshot_id'] = 'membership-changed'
+        self.spotify.remove = remove
+        with self.assertRaisesRegex(RuntimeError, 'uncertain batch'):
+            cleanup.apply(self.spotify, catalog(), self.plan_path, self.github, batch_size=40)
+        receipt = json.loads((self.output/'receipt.json').read_text())
+        self.assertEqual(receipt['results']['a']['status'], 'uncertain')
+        self.assertEqual(receipt['results']['a']['track_uris_sha256'], cleanup.digest(list(reversed(self.spotify.tracks['a']))))
+
+    def test_content_pagination_preserves_order_and_unavailable_items(self):
+        client = cleanup.Spotify('id', 'secret', 'refresh')
+        pages = [{'items':[{'track':{'uri':'spotify:track:a'}},{'track':None}], 'next':'next', 'total':3},
+                 {'items':[{'track':{'uri':'spotify:track:b'}}], 'next':None, 'total':3}]
+        with patch.object(client, 'request', side_effect=pages) as request:
+            self.assertEqual(client.track_uris('a'), ['spotify:track:a', None, 'spotify:track:b'])
+            self.assertIn('offset=2', request.call_args.args[1])
+        with patch.object(client, 'request', return_value={'items':[], 'next':None, 'total':3}):
+            with self.assertRaisesRegex(RuntimeError, 'pagination'):
+                client.track_uris('a')
+
+    def test_contents_use_one_response_and_check_snapshot_when_paginating(self):
+        client = cleanup.Spotify('id', 'secret', 'refresh')
+        value = item('a', count=1)
+        value['tracks'].update(items=[{'track':{'uri':'spotify:track:a'}}], next=None)
+        with patch.object(client, 'request', return_value=value) as request:
+            self.assertEqual(cleanup.content_record(client,'a','dustmason')[1], cleanup.digest(['spotify:track:a']))
+            self.assertEqual(request.call_count,1)
+        value['tracks']['next'] = 'next-page'
+        changed = copy.deepcopy(value)
+        changed['snapshot_id'] = 'changed-during-pagination'
+        with patch.object(client, 'request', return_value=value), patch.object(client,'track_uris',return_value=['spotify:track:a']), patch.object(client,'metadata',return_value=changed):
+            with self.assertRaisesRegex(RuntimeError,'changed while reading'):
+                client.contents('a')
 
 
 if __name__ == "__main__":

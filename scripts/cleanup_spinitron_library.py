@@ -22,7 +22,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-from spotify_authorize import authorize
+from spotify_authorize import SCOPES, authorize
 
 REPO = Path(__file__).resolve().parents[1]
 GITHUB_REPO = "dustMason/spinitron.rs"
@@ -104,7 +104,8 @@ class Spotify:
                 if method == "GET" and attempt < 2 and (error.code == 429 or error.code >= 500) and delay <= 30:
                     time.sleep(delay)
                     continue
-                raise RuntimeError(f"Spotify {method} {parsed.path} failed (HTTP {error.code})") from None
+                cooldown = f"; retry after {delay}s" if error.code == 429 else ""
+                raise RuntimeError(f"Spotify {method} {parsed.path} failed (HTTP {error.code}){cooldown}") from None
             except (urllib.error.URLError, TimeoutError):
                 if method == "GET" and attempt < 2:
                     time.sleep(2 ** attempt)
@@ -119,6 +120,51 @@ class Spotify:
 
     def metadata(self, playlist_id):
         return self.request("GET", f"/playlists/{playlist_id}?fields=id,name,description,owner(id),snapshot_id,public,tracks(total)")
+
+    def track_uris(self, playlist_id):
+        uris = []
+        while True:
+            query = urllib.parse.urlencode({"limit": 100, "offset": len(uris),
+                                           "fields": "items(track(uri)),next,total"})
+            page = self.request("GET", f"/playlists/{playlist_id}/tracks?" + query)
+            items = page.get("items")
+            if not isinstance(items, list) or "next" not in page or type(page.get("total")) is not int:
+                raise RuntimeError("Incomplete playlist contents response")
+            for item in items:
+                track = item.get("track")
+                # Keep unavailable items in their original positions too.
+                uri = track.get("uri") if isinstance(track, dict) else None
+                if track is not None and (not isinstance(uri, str) or not uri):
+                    raise RuntimeError("Playlist item has no usable identity")
+                uris.append(uri)
+            if page["next"] is None:
+                if len(uris) != page["total"]:
+                    raise RuntimeError("Playlist contents changed during pagination")
+                return uris
+            if not items or len(uris) >= page["total"]:
+                raise RuntimeError("Invalid playlist contents pagination")
+
+    def contents(self, playlist_id):
+        value = self.request("GET", f"/playlists/{playlist_id}?fields=id,name,owner(id),snapshot_id,public,tracks(total,items(track(uri)),next)")
+        tracks = value.get('tracks', {})
+        items = tracks.get('items')
+        if not isinstance(items, list) or 'next' not in tracks:
+            raise RuntimeError('Incomplete playlist contents response')
+        if tracks['next'] is not None:
+            # Most generated playlists fit in one response. Larger playlists
+            # still need pagination with a snapshot check across the reads.
+            uris = self.track_uris(playlist_id)
+            if metadata_record(value, SPOTIFY_USER) != metadata_record(self.metadata(playlist_id), SPOTIFY_USER):
+                raise RuntimeError('Playlist changed while reading its contents')
+        else:
+            uris = []
+            for item in items:
+                track = item.get('track')
+                uri = track.get('uri') if isinstance(track, dict) else None
+                if track is not None and (not isinstance(uri, str) or not uri):
+                    raise RuntimeError('Playlist item has no usable identity')
+                uris.append(uri)
+        return value, uris
 
     def saved(self, playlist_id):
         query = urllib.parse.urlencode({"uris": f"spotify:playlist:{playlist_id}"})
@@ -160,6 +206,20 @@ def metadata_record(item, owner):
     return {"playlist_id": playlist_id, "name": item["name"], "owner_id": owner,
             "snapshot_id": item["snapshot_id"], "track_count": item["tracks"]["total"],
             "public": item["public"], "url": f"https://open.spotify.com/playlist/{playlist_id}"}
+
+
+def content_record(spotify, playlist_id, owner):
+    value, uris = spotify.contents(playlist_id)
+    before = metadata_record(value, owner)
+    if len(uris) != before["track_count"]:
+        raise RuntimeError("Playlist changed while reading its contents")
+    return before, digest(uris)
+
+
+def preserved_metadata(before, after):
+    # Spotify may advance snapshot_id when library membership changes.
+    # Contents are verified independently using the complete ordered URI hash.
+    return all(value == after.get(key) for key, value in before.items() if key != "snapshot_id")
 
 
 def prepare(spotify, catalog, output):
@@ -270,23 +330,30 @@ def apply_batches(spotify, plan, receipt, receipt_path, batch_size):
                 save(receipt_path, receipt)
                 continue
             ids = [item["playlist_id"] for item in selected]
+            contents = list(pool.map(lambda pid: content_record(spotify, pid, plan["owner_id"]), ids))
+            if [metadata for metadata, _ in contents] != selected:
+                raise RuntimeError("A playlist changed since planning; review it before cleanup")
+            fingerprints = {pid: fingerprint for pid, (_, fingerprint) in zip(ids, contents)}
             for pid in ids:
-                receipt["results"][pid] = {"status": "attempted", "at": now()}
+                receipt["results"][pid] = {"status": "attempted", "at": now(),
+                                           "track_uris_sha256": fingerprints[pid]}
             save(receipt_path, receipt)  # Persist the whole batch before its only write.
             try:
                 spotify.remove_many(ids)
-                after = list(pool.map(read_metadata, selected))
+                after = list(pool.map(lambda pid: content_record(spotify, pid, plan["owner_id"]), ids))
                 still_saved = spotify.saved_many(ids)
-                for item, preserved, present in zip(selected, after, still_saved):
-                    if item != preserved or present:
+                for item, (preserved, fingerprint), present in zip(selected, after, still_saved):
+                    if (not preserved_metadata(item, preserved) or present
+                            or fingerprints[item["playlist_id"]] != fingerprint):
                         raise RuntimeError("Library removal or playlist preservation could not be verified")
             except Exception as error:
                 for pid in ids:
                     receipt["results"][pid].update(status="uncertain", error=str(error))
                 save(receipt_path, receipt)
                 raise RuntimeError("Stopped after an uncertain batch; inspect receipt.json before further action") from error
-            for item in after:
-                receipt["results"][item["playlist_id"]] = {"status": "removed", "at": now(), "preserved": item}
+            for item, fingerprint in after:
+                receipt["results"][item["playlist_id"]] = {"status": "removed", "at": now(), "preserved": item,
+                                                          "track_uris_sha256": fingerprint}
             save(receipt_path, receipt)
             print(f"{len(receipt['results'])}/{len(plan['playlists'])} checked; last {len(ids)} removed and preserved", flush=True)
 
@@ -329,18 +396,23 @@ def apply(spotify, catalog, plan_path, github, batch_size=1):
             receipt["results"][playlist_id] = {"status": "already_absent", "at": now()}
             save(receipt_path, receipt)
             continue
-        receipt["results"][playlist_id] = {"status": "attempted", "at": now()}
+        checked, fingerprint = content_record(spotify, playlist_id, plan["owner_id"])
+        if checked != before:
+            raise RuntimeError(f"Playlist {playlist_id} changed before cleanup")
+        receipt["results"][playlist_id] = {"status": "attempted", "at": now(), "track_uris_sha256": fingerprint}
         save(receipt_path, receipt)  # Durable intent before the one library DELETE.
         try:
             spotify.remove(playlist_id)
-            after = metadata_record(spotify.metadata(playlist_id), plan["owner_id"])
-            if spotify.saved(playlist_id) or after != before:
+            after, after_fingerprint = content_record(spotify, playlist_id, plan["owner_id"])
+            if (spotify.saved(playlist_id) or not preserved_metadata(before, after)
+                    or fingerprint != after_fingerprint):
                 raise RuntimeError("Library removal or playlist preservation could not be verified")
         except Exception as error:
             receipt["results"][playlist_id].update(status="uncertain", error=str(error))
             save(receipt_path, receipt)
             raise RuntimeError(f"Stopped at {playlist_id}; inspect receipt.json before any further action") from error
-        receipt["results"][playlist_id] = {"status": "removed", "at": now(), "preserved": after}
+        receipt["results"][playlist_id] = {"status": "removed", "at": now(), "preserved": after,
+                                           "track_uris_sha256": fingerprint}
         save(receipt_path, receipt)
         print(f"{index}/{len(ids)} removed from library; playlist preserved: {item['name']}", flush=True)
     if unresolved:
@@ -378,7 +450,8 @@ def main():
         if not credentials[name]:
             parser.error(name + " must not be empty")
     if args.reauthorize:
-        credentials["SPOTIFY_REFRESH_TOKEN"] = authorize(credentials["SPOTIFY_CLIENT_ID"], credentials["SPOTIFY_CLIENT_SECRET"])
+        credentials["SPOTIFY_REFRESH_TOKEN"] = authorize(credentials["SPOTIFY_CLIENT_ID"], credentials["SPOTIFY_CLIENT_SECRET"],
+                                                       scopes=SCOPES + " user-follow-read")
     spotify = Spotify(*(credentials[n] for n in ("SPOTIFY_CLIENT_ID", "SPOTIFY_CLIENT_SECRET", "SPOTIFY_REFRESH_TOKEN")))
     if args.apply:
         lock_path = REPO / "verification/library-cleanup.lock"

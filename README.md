@@ -232,6 +232,8 @@ python3 scripts/cleanup_spinitron_library.py --prompt
 
 This one command prompts for the three Spotify values with hidden input. Use
 `--reauthorize` instead to reuse the app credentials and sign in through Spotify.
+Cleanup requests `user-follow-read` in addition to the archive's playlist scopes
+because Spotify's generic library-membership checks require it for playlists.
 The default mode only reads Spotify. It writes `plan.json` and a complete
 `catalog-backup.json` into a new dated folder under `verification/`. The plan
 includes all owned, saved **legacy catalog** playlists, including empty ones.
@@ -259,7 +261,11 @@ workflow discovers playlists through Your Library and could recreate removed one
 Cleanup uses Spotify's [Remove Items from Library](https://developer.spotify.com/documentation/web-api/reference/remove-library-items)
 endpoint for playlist URIs only. It never edits tracks, names, visibility, or the
 catalog. Each removal is checked afterward: the playlist must still be readable,
-have the same owner, track count and snapshot, and no longer be saved. This matches
+have the same owner, name, visibility, track count, and complete ordered song
+sequence, and no longer be saved. The script stores a hash of the ordered track
+URIs before each removal. Spotify can change the playlist snapshot when library
+membership changes, so the snapshot alone is not used to verify preservation.
+Snapshots still detect edits since planning and changes during paginated reads. This matches
 Spotify's [unfollowing semantics](https://developer.spotify.com/documentation/web-api/concepts/playlists#following-and-unfollowing-a-playlist).
 
 Keep `receipt.json` beside the plan. Each attempt is recorded before sending the

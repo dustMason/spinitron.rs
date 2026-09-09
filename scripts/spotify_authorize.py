@@ -17,7 +17,7 @@ REDIRECT_URI = "http://127.0.0.1:8888/callback"
 SCOPES = "playlist-modify-public playlist-modify-private playlist-read-private"
 
 
-def authorize(client_id, client_secret, timeout=300):
+def authorize(client_id, client_secret, timeout=300, scopes=SCOPES):
     if not client_id or not client_secret:
         raise ValueError("Spotify client ID and secret are required")
     state = secrets.token_urlsafe(32)
@@ -54,7 +54,7 @@ def authorize(client_id, client_secret, timeout=300):
         thread.start()
         url = "https://accounts.spotify.com/authorize?" + urllib.parse.urlencode({
             "client_id": client_id, "response_type": "code", "redirect_uri": REDIRECT_URI,
-            "scope": SCOPES, "state": state,
+            "scope": scopes, "state": state,
         })
         print("Open this Spotify authorization page (no values need copying):", flush=True)
         print(url, flush=True)
