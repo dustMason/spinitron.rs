@@ -307,6 +307,14 @@ playlist has the broadcast's precise archive marker. If none or multiple are
 found, reconcile the ID before continuing; the app does not repeat the creation
 blindly. Run only one local archive process at a time; Actions runs are serialized.
 
+Explicit creation rejections (such as HTTP 400) leave the entry `prepared` so a
+later run can retry after the cause is fixed. Timeouts and server errors remain
+`creating` and require reconciliation. Spotify's structured error message is
+included in failures. Archive descriptions use one line because Spotify rejects
+line breaks; recovery recognizes both the one-line and older multiline markers.
+Each run resumes saved drafts before scraping new broadcasts, including drafts
+older than the seven-day scraping window. A draft is attempted only once per run.
+
 The older `--spotify` and `--playlist-id` modes remain available for explicit
 repairs of legacy rolling playlists. The daily workflow uses `--archive`.
 

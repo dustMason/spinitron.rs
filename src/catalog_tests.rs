@@ -13,6 +13,7 @@ struct FakeSpotify {
     fail_fill: Cell<bool>,
     fail_remove: Cell<bool>,
     uncertain_create: bool,
+    reject_create: bool,
 }
 
 impl ArchiveSpotify for FakeSpotify {
@@ -30,11 +31,23 @@ impl ArchiveSpotify for FakeSpotify {
             .playlists
             .borrow()
             .values()
-            .find(|(p, _)| p.description.lines().any(|line| line == marker))
+            .find(|(p, _)| p.matches_marker(marker))
             .map(|(p, _)| p.clone()))
     }
     async fn create_archive(&mut self, name: &str, description: &str) -> Result<RemotePlaylist> {
         self.creates += 1;
+        if description.contains(['\n', '\r']) {
+            return Err(CreationRejected(
+                "Spotify rejects multiline descriptions (HTTP 400)".into(),
+            )
+            .into());
+        }
+        if self.reject_create {
+            self.reject_create = false;
+            return Err(
+                CreationRejected("Spotify rejected the description (HTTP 400)".into()).into(),
+            );
+        }
         let p = RemotePlaylist {
             id: format!("p{}", self.creates),
             owner_id: "owner".into(),
@@ -262,6 +275,38 @@ async fn uncertain_creation_is_adopted_by_exact_marker() {
 }
 
 #[tokio::test]
+async fn rejected_creation_is_persisted_as_prepared_and_can_be_retried() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify {
+        reject_create: true,
+        ..Default::default()
+    };
+    let error = f
+        .catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .unwrap_err();
+    assert!(error.is::<CreationRejected>());
+    f.catalog = Catalog::load(&f.path()).unwrap();
+    assert_eq!(f.catalog.entries["KALX:1"].state, State::Prepared);
+    assert!(f.catalog.entries["KALX:1"].playlist_id.is_none());
+    assert!(spotify.playlists.borrow().is_empty());
+    let resumed = f.catalog.resume_pending(&f.path(), &mut spotify).await;
+    assert_eq!(resumed.len(), 1);
+    assert_eq!(resumed[0].0, "KALX:1");
+    assert!(resumed.into_iter().next().unwrap().1.unwrap());
+    assert_eq!(spotify.creates, 2);
+    assert_eq!(spotify.playlists.borrow().len(), 1);
+    assert_eq!(f.catalog.entries["KALX:1"].state, State::Ready);
+    assert_eq!(spotify.track_uris("p2").await.unwrap().len(), 3);
+    assert!(f
+        .catalog
+        .resume_pending(&f.path(), &mut spotify)
+        .await
+        .is_empty());
+}
+
+#[tokio::test]
 async fn lost_creation_response_without_recovery_match_does_not_repeat_post() {
     let mut f = Fixture::new();
     let mut spotify = FakeSpotify {
@@ -363,4 +408,49 @@ fn spinitron_compact_offsets_and_rfc3339_offsets_are_equivalent() {
         broadcast_time("2026-09-08T14:00:00-07:00").unwrap()
     );
     assert!(broadcast_time("not a time").is_err());
+}
+
+#[test]
+fn descriptions_are_one_line_bounded_and_keep_the_exact_marker() {
+    let mut broadcast = show(1);
+    broadcast.url = format!(
+        "https://spinitron.com/KALX/pl/1/{}\nextra\ttext",
+        "音".repeat(400)
+    );
+    let description = archive_description("Spinitron archive: KALX:1", &broadcast);
+    assert!(description.starts_with("Spinitron archive: KALX:1 | Broadcast: "));
+    assert!(!description.chars().any(char::is_control));
+    assert_eq!(description.chars().count(), 300);
+}
+
+#[test]
+fn recovery_markers_accept_both_formats_but_not_prefix_collisions() {
+    for description in [
+        "Spinitron archive: KALX:1 | Broadcast: 2026-01-01 | https://spinitron.com/KALX/pl/1",
+        "Spinitron archive: KALX:1\nBroadcast: 2026-01-01\nhttps://spinitron.com/KALX/pl/1",
+        "Spinitron archive: KALX:1",
+    ] {
+        let playlist = RemotePlaylist {
+            id: "p".into(),
+            owner_id: "owner".into(),
+            name: "Broadcast".into(),
+            description: description.into(),
+        };
+        assert!(playlist.matches_marker("Spinitron archive: KALX:1"));
+        assert!(!playlist.matches_marker("Spinitron archive: KALX:10"));
+        assert!(!playlist.matches_marker("Spinitron archive: KPOO:1"));
+    }
+    for description in [
+        "Spinitron archive: KALX:10 | Broadcast: date",
+        "Spinitron archive: KALX:1 extra",
+        "Spinitron archive: KALX:1|invalid separator",
+    ] {
+        let playlist = RemotePlaylist {
+            id: "p".into(),
+            owner_id: "owner".into(),
+            name: "Broadcast".into(),
+            description: description.into(),
+        };
+        assert!(!playlist.matches_marker("Spinitron archive: KALX:1"));
+    }
 }

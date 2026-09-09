@@ -7,7 +7,7 @@ use std::collections::{HashMap, HashSet};
 use std::fs;
 use std::path::Path;
 
-use crate::catalog::{ArchiveSpotify, RemotePlaylist};
+use crate::catalog::{ArchiveSpotify, CreationRejected, RemotePlaylist};
 use crate::models::{ShowGroup, Track};
 
 const CACHE_DIR: &str = "spotify_cache";
@@ -419,27 +419,15 @@ impl SpotifyClient {
             if track_uris.is_empty() {
                 return Err(anyhow!("No Spotify tracks matched; no playlist created"));
             }
-            let url = format!("{}/users/{}/playlists", self.api_base_url, self.user_id);
-
             // Create new playlist
             let playlist_data = serde_json::json!({
                 "name": playlist_name,
                 "description": description,
                 "public": true
             });
-            let json_payload = serde_json::to_string(&playlist_data)?;
-
-            let response = self
-                .client
-                .post(&url)
-                .header("Authorization", format!("Bearer {}", self.access_token))
-                .header("Content-Type", "application/json")
-                .body(json_payload)
-                .send()
+            let playlist_json = self
+                .archive_request(reqwest::Method::POST, "me/playlists", Some(playlist_data))
                 .await?;
-
-            let response_text = response.text().await?;
-            let playlist_json: Value = serde_json::from_str(&response_text)?;
 
             let playlist = SpotifyPlaylist {
                 id: playlist_json["id"].as_str().unwrap_or("").to_string(),
@@ -1035,7 +1023,7 @@ impl SpotifyClient {
             let can_retry = method == reqwest::Method::GET && attempt < 2;
             let mut request = self
                 .client
-                .request(method.clone(), format!("https://api.spotify.com/v1/{path}"))
+                .request(method.clone(), format!("{}/{path}", self.api_base_url))
                 .bearer_auth(&self.access_token)
                 .timeout(std::time::Duration::from_secs(30));
             if let Some(body) = &body {
@@ -1066,7 +1054,30 @@ impl SpotifyClient {
                     tokio::time::sleep(std::time::Duration::from_secs(delay)).await;
                     continue;
                 }
-                return Err(anyhow!("Spotify {method} {path} failed (HTTP {status})"));
+                let text = response.text().await.unwrap_or_default();
+                let detail = serde_json::from_str::<Value>(&text)
+                    .ok()
+                    .and_then(|json| json["error"]["message"].as_str().map(str::to_owned))
+                    .map(|message| {
+                        message
+                            .replace(&self.access_token, "[REDACTED]")
+                            .chars()
+                            .filter(|c| !c.is_control())
+                            .take(300)
+                            .collect::<String>()
+                    })
+                    .filter(|message| !message.is_empty())
+                    .map(|message| format!(": {message}"))
+                    .unwrap_or_default();
+                let message = format!("Spotify {method} {path} failed (HTTP {status}){detail}");
+                if method == reqwest::Method::POST
+                    && (path == "me/playlists"
+                        || path == format!("users/{}/playlists", self.user_id))
+                    && matches!(status.as_u16(), 400 | 401 | 403 | 404 | 405 | 422 | 429)
+                {
+                    return Err(CreationRejected(message).into());
+                }
+                return Err(anyhow!(message));
             }
             let text = match response.text().await {
                 Ok(text) => text,
@@ -1152,7 +1163,7 @@ impl ArchiveSpotify for SpotifyClient {
             .as_ref()
             .unwrap()
             .iter()
-            .filter(|p| p.description.lines().any(|line| line == marker))
+            .filter(|p| p.matches_marker(marker))
             .collect();
         if matches.len() > 1 {
             return Err(anyhow!("Multiple playlists have archive marker {marker}; choose the correct ID before continuing"));
@@ -1164,7 +1175,7 @@ impl ArchiveSpotify for SpotifyClient {
         let value = self
             .archive_request(
                 reqwest::Method::POST,
-                &format!("users/{}/playlists", self.user_id),
+                "me/playlists",
                 Some(serde_json::json!({
                     "name":name, "description":description, "public":true,
                 })),

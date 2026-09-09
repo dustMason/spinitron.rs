@@ -348,13 +348,26 @@ async fn archive_broadcasts(
     let scraper = scraper::SpinitronClient::new();
     let mut failures = Vec::new();
     let mut created = 0;
+    let mut attempted = std::collections::HashSet::new();
+    for (key, result) in catalog.resume_pending(catalog_path, &mut spotify).await {
+        attempted.insert(key.clone());
+        match result {
+            Ok(true) => {
+                created += 1;
+                eprintln!("Resumed archive {key}");
+            }
+            Ok(false) => (),
+            Err(error) => failures.push(format!("{key}: {error}")),
+        }
+    }
     for (station, settings) in &config.stations {
         let mut date = start;
         while date <= end {
             match scraper::fetch_shows_for_date(station, date).await {
                 Ok(shows) => {
                     for show in settings.filter_shows(shows) {
-                        if catalog.finished(&Catalog::key(station, &show)) {
+                        let key = Catalog::key(station, &show);
+                        if catalog.finished(&key) || !attempted.insert(key) {
                             continue;
                         }
                         if catalog::broadcast_time(&show.end_time).is_ok_and(|time| {

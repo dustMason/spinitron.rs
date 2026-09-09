@@ -10,7 +10,7 @@
         "start_time": "2026-09-03T17:00:00-0700",
         "end_time": "2026-09-03T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3DQhsrsmpaIHakanQ8zujV",
@@ -40,7 +40,7 @@
         "start_time": "2026-09-08T17:00:00-0700",
         "end_time": "2026-09-08T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "ready",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:6LXh42hEpcVLKtUgVkiKZi",
@@ -61,9 +61,79 @@
         "spotify:track:3bGpcK33ZuOPIsxeagRd3L"
       ],
       "listing": {
+        "station": "KALX",
         "name": "KALX - 2026-09-08 17:00 - Why Baby Why (Chronological)",
-        "station": "KALX"
-      }
+        "url": "https://open.spotify.com/playlist/1AGWs3St1zTQ5JZ9rt8yNr",
+        "track_count": 16,
+        "last_updated": "2026-09-09T16:20:43.443978+00:00",
+        "imported_at": "2026-09-09T16:20:43.443978+00:00",
+        "broadcast_start": "2026-09-08T17:00:00-0700",
+        "broadcast_end": "2026-09-08T18:00:00-0700",
+        "source_url": "https://spinitron.com/KALX/pl/22759035/Why-Baby-Why-Chronological",
+        "preview": [
+          {
+            "name": "Wildwood Flower",
+            "artists": "The Carter Family",
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27372a0fa1ec9359fff8e48b6bb"
+          },
+          {
+            "name": "I'm Just Here To Get My Baby Out Of Jail - Live At The Lincoln Hall At The University Of Illinois / October 17, 1964",
+            "artists": "The Blue Sky Boys",
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2739a04488e8d6b0e08af9fa79b"
+          },
+          {
+            "name": "Drivin' Nails In My Coffin - Alt Take",
+            "artists": "Floyd Tillman",
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273b0ff62d310b2959bc6e70824"
+          },
+          {
+            "name": "I Couldn't Believe It Was True",
+            "artists": "The Maddox Brothers & Rose",
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273ad76db0def405b8c796f8fd0"
+          },
+          {
+            "name": "Look What Thoughts Will Do",
+            "artists": "Lefty Frizzell",
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273dbbb1665c269919b6642d3f8"
+          },
+          {
+            "name": "She's Better Than Most",
+            "artists": "Hank Locklin",
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27326d574b7e17974f14aedd5a1"
+          },
+          {
+            "name": "Stairway of Love",
+            "artists": "Marty Robbins",
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273de6a96b9d62a611e4ffc7756"
+          },
+          {
+            "name": "Baby Rocked Her Dolly",
+            "artists": "Frankie Miller",
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273e1505925a4f461cb2ba75bf8"
+          },
+          {
+            "name": "Heart Over Mind",
+            "artists": "Ray Price",
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2735172284441123dcdd435dddf"
+          },
+          {
+            "name": "Just Another Fool (Along The Way)",
+            "artists": "Melba Montgomery",
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273c50cbc3622a95d6a57f0715d"
+          },
+          {
+            "name": "Jackson Ain't a Very Big Town",
+            "artists": "Norma Jean",
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2737c2967f70cbab8dcea6c800a"
+          },
+          {
+            "name": "Flattery Will Get You Everywhere",
+            "artists": "Lynn Anderson",
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27303fe02bb1d2486ea84219d26"
+          }
+        ]
+      },
+      "playlist_id": "1AGWs3St1zTQ5JZ9rt8yNr"
     },
     "KALX:22821745": {
       "station": "KALX",
@@ -74,7 +144,7 @@
         "start_time": "2026-09-01T17:00:00-0700",
         "end_time": "2026-09-01T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:64NyKp1ucYONWBqMqSNRxE",
@@ -108,7 +178,7 @@
         "start_time": "2026-09-02T07:00:00-0700",
         "end_time": "2026-09-02T09:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2tjxBGXtnZIn5b97sqiGS7",
@@ -150,7 +220,7 @@
         "start_time": "2026-09-03T22:00:00-0700",
         "end_time": "2026-09-04T00:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:57O0FT2mC8Ksg4YnAr3AQ3",
@@ -187,7 +257,7 @@
         "start_time": "2026-09-01T00:00:00-0700",
         "end_time": "2026-09-01T01:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2jtmNBO0IIRN6PujgEefPm",
@@ -210,7 +280,7 @@
         "start_time": "2026-09-01T09:00:00-0700",
         "end_time": "2026-09-01T09:30:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1oSYnYRnn0my8btfvgBd9o"
@@ -229,7 +299,7 @@
         "start_time": "2026-08-31T22:00:00-0700",
         "end_time": "2026-09-01T00:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:64y3r6DxZx5Wpg47PEQhfC",
@@ -271,7 +341,7 @@
         "start_time": "2026-08-31T17:00:00-0700",
         "end_time": "2026-08-31T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:0BIoyx6pZfI4ctUSDMISBI",
@@ -300,7 +370,7 @@
         "start_time": "2026-08-31T18:00:00-0700",
         "end_time": "2026-08-31T20:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:17Zmft29sDOEfQPVehAM3Y",
@@ -341,7 +411,7 @@
         "start_time": "2026-08-31T20:00:00-0700",
         "end_time": "2026-08-31T22:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:04ltR77vyPhL6LtAwWY5F6",
@@ -380,7 +450,7 @@
         "start_time": "2026-09-01T01:00:00-0700",
         "end_time": "2026-09-01T07:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2hpMxW0cUf6CUoiUf8lFFh",
@@ -467,7 +537,7 @@
         "start_time": "2026-09-01T07:00:00-0700",
         "end_time": "2026-09-01T09:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:6I8DWWmz2ovgGTre0obJS9",
@@ -510,7 +580,7 @@
         "start_time": "2026-09-01T09:30:00-0700",
         "end_time": "2026-09-01T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1Pc5SlN3gymGBSezQmJiSI",
@@ -554,7 +624,7 @@
         "start_time": "2026-09-01T12:00:00-0700",
         "end_time": "2026-09-01T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:7iBggOLgXiScPJUAKFG3ah",
@@ -606,7 +676,7 @@
         "start_time": "2026-09-01T18:00:00-0700",
         "end_time": "2026-09-01T20:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:20kGxnG6DmuaPaAhZQUg3M",
@@ -650,7 +720,7 @@
         "start_time": "2026-09-01T15:00:00-0700",
         "end_time": "2026-09-01T17:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3Gm0VzTqEbbHF5B92Ntkz4",
@@ -689,7 +759,7 @@
         "start_time": "2026-09-01T20:00:00-0700",
         "end_time": "2026-09-01T22:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5grbqMXc1PkkhKBW6sq6qf",
@@ -732,7 +802,7 @@
         "start_time": "2026-09-01T22:00:00-0700",
         "end_time": "2026-09-02T00:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:0DvVy1XSbcRatqCTxs4yWK",
@@ -778,7 +848,7 @@
         "start_time": "2026-09-02T00:00:00-0700",
         "end_time": "2026-09-02T07:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4XrlgBREcw2wZr09qnRsA2",
@@ -859,7 +929,7 @@
         "start_time": "2026-09-02T09:00:00-0700",
         "end_time": "2026-09-02T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4o11neIplvwtEuu1PLPwOo",
@@ -910,7 +980,7 @@
         "start_time": "2026-09-02T12:00:00-0700",
         "end_time": "2026-09-02T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2fEBu0Z0WIhNddHm2Iw6mf",
@@ -965,7 +1035,7 @@
         "start_time": "2026-09-02T15:00:00-0700",
         "end_time": "2026-09-02T17:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:7DV0TzeNMylo6rlkrYXDiP",
@@ -1001,7 +1071,7 @@
         "start_time": "2026-09-02T17:00:00-0700",
         "end_time": "2026-09-02T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:211eyJ6d8ep4W5jdG6BTjM",
@@ -1036,7 +1106,7 @@
         "start_time": "2026-09-02T18:00:00-0700",
         "end_time": "2026-09-02T20:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:6deZo1UhTWKEbEbJL9tGQZ",
@@ -1082,7 +1152,7 @@
         "start_time": "2026-09-02T20:00:00-0700",
         "end_time": "2026-09-02T21:30:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2fIv98BZ6NdkeYLZAvNzP7",
@@ -1119,7 +1189,7 @@
         "start_time": "2026-09-02T21:30:00-0700",
         "end_time": "2026-09-02T22:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2EPxhPbZczxce6wHbuOlQ6"
@@ -1138,7 +1208,7 @@
         "start_time": "2026-09-02T22:00:00-0700",
         "end_time": "2026-09-03T00:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3nJANUU8P91F8ti4Oz1WML",
@@ -1174,7 +1244,7 @@
         "start_time": "2026-09-03T00:00:00-0700",
         "end_time": "2026-09-03T03:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1wgXZFadykcGX9W1olAOmp",
@@ -1237,7 +1307,7 @@
         "start_time": "2026-09-03T03:00:00-0700",
         "end_time": "2026-09-03T07:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4m66JWyH1X4b7kHSdjoeXX",
@@ -1285,7 +1355,7 @@
         "start_time": "2026-09-05T13:00:00-0700",
         "end_time": "2026-09-05T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5jSsiDPW6dV3Uv4bIKg6uf",
@@ -1319,7 +1389,7 @@
         "start_time": "2026-09-03T07:00:00-0700",
         "end_time": "2026-09-03T09:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1hUI7sEUhybwIX1VuTbTt2",
@@ -1350,7 +1420,7 @@
         "start_time": "2026-09-03T09:00:00-0700",
         "end_time": "2026-09-03T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:7HmMSIfZIG2C3qoorEDl1x",
@@ -1400,7 +1470,7 @@
         "start_time": "2026-09-03T12:30:00-0700",
         "end_time": "2026-09-03T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3AoRLUGbW5480SMXV62Kft",
@@ -1452,7 +1522,7 @@
         "start_time": "2026-09-03T15:00:00-0700",
         "end_time": "2026-09-03T17:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:70bWiiQg2fRVzanhcupJKh",
@@ -1494,7 +1564,7 @@
         "start_time": "2026-09-03T18:00:00-0700",
         "end_time": "2026-09-03T20:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:0j9rcyzxcAX2hR2BtknVES",
@@ -1531,7 +1601,7 @@
         "start_time": "2026-09-03T20:00:00-0700",
         "end_time": "2026-09-03T22:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:6xXTWCIEILy1ngQyRvtuI4",
@@ -1574,7 +1644,7 @@
         "start_time": "2026-09-04T00:00:00-0700",
         "end_time": "2026-09-04T02:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1wl5b2lw3YagQtZiYZbQWP",
@@ -1621,7 +1691,7 @@
         "start_time": "2026-09-04T02:00:00-0700",
         "end_time": "2026-09-04T07:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:0zAoco46XdaO3Bj7TyaFqZ",
@@ -1688,7 +1758,7 @@
         "start_time": "2026-09-04T07:00:00-0700",
         "end_time": "2026-09-04T09:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4lhEPcdwBUo5RrHbHHlfFh",
@@ -1732,7 +1802,7 @@
         "start_time": "2026-09-04T09:00:00-0700",
         "end_time": "2026-09-04T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5dnRuqlYUQK001jDr2431v",
@@ -1779,7 +1849,7 @@
         "start_time": "2026-09-04T12:00:00-0700",
         "end_time": "2026-09-04T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3o8qRdZh88ilMpZ1gwCeSQ",
@@ -1835,7 +1905,7 @@
         "start_time": "2026-09-04T22:00:00-0700",
         "end_time": "2026-09-05T00:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:7J18ZGhgSkWbdyVGrT49sK",
@@ -1877,7 +1947,7 @@
         "start_time": "2026-09-05T08:00:00-0700",
         "end_time": "2026-09-05T10:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3AMhsjzI4xejYqk6mZXgwL",
@@ -1913,7 +1983,7 @@
         "start_time": "2026-09-05T10:00:00-0700",
         "end_time": "2026-09-05T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5ogWb6eQzDSwSf9TkKm6xp",
@@ -1946,7 +2016,7 @@
         "start_time": "2026-09-04T15:00:00-0700",
         "end_time": "2026-09-04T17:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:57V8jV8i5bxiXT0xH1qyrY",
@@ -1983,7 +2053,7 @@
         "start_time": "2026-09-04T17:00:00-0700",
         "end_time": "2026-09-04T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:0EvNailO9I1Qc9oxWdpX4X",
@@ -2010,7 +2080,7 @@
         "start_time": "2026-09-04T18:00:00-0700",
         "end_time": "2026-09-04T20:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:02UsWVUJeCckPaG7oTBD8k",
@@ -2044,7 +2114,7 @@
         "start_time": "2026-09-04T20:00:00-0700",
         "end_time": "2026-09-04T22:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:61ZtsKvM5TO8Y5i9EIwCBz",
@@ -2088,7 +2158,7 @@
         "start_time": "2026-09-05T00:00:00-0700",
         "end_time": "2026-09-05T02:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:279Oh4NfdP7pXqx7wgfKzU",
@@ -2130,7 +2200,7 @@
         "start_time": "2026-09-05T05:30:00-0700",
         "end_time": "2026-09-05T08:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:66b4KRccFmehNCGx2qbANi",
@@ -2178,7 +2248,7 @@
         "start_time": "2026-09-05T02:00:00-0700",
         "end_time": "2026-09-05T05:30:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3ScrUahXejKM3ZWMJQuy3T",
@@ -2236,7 +2306,7 @@
         "start_time": "2026-09-05T12:00:00-0700",
         "end_time": "2026-09-05T13:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:6nNhOCGwxeGGiSRFOVF4op",
@@ -2258,7 +2328,7 @@
         "start_time": "2026-09-05T15:00:00-0700",
         "end_time": "2026-09-05T17:30:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:6woNKl0LjOgZfbTAibIz3c",
@@ -2298,7 +2368,7 @@
         "start_time": "2026-09-05T17:30:00-0700",
         "end_time": "2026-09-05T18:30:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:7sTYUBsAYG3wZg3s52TcFb"
@@ -2317,7 +2387,7 @@
         "start_time": "2026-09-05T18:30:00-0700",
         "end_time": "2026-09-05T19:30:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2V4cefv7I0wZDZOMipbXpN",
@@ -2344,7 +2414,7 @@
         "start_time": "2026-09-05T19:30:00-0700",
         "end_time": "2026-09-06T00:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3PCzqo0JnDaK53QUr0hlJy",
@@ -2381,7 +2451,7 @@
         "start_time": "2026-09-06T00:00:00-0700",
         "end_time": "2026-09-06T02:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:350B7JbTxAi3nBV5NHZcyG",
@@ -2421,7 +2491,7 @@
         "start_time": "2026-09-06T02:00:00-0700",
         "end_time": "2026-09-06T06:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:20K5mkrlFFc0hGRQvce0gb",
@@ -2456,7 +2526,7 @@
         "start_time": "2026-09-06T06:00:00-0700",
         "end_time": "2026-09-06T08:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:0JpqNzUZJ69EREgJbvhA2x",
@@ -2492,7 +2562,7 @@
         "start_time": "2026-09-06T08:00:00-0700",
         "end_time": "2026-09-06T10:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2iqA5Na5vlo0bnZUf8KT1N",
@@ -2533,7 +2603,7 @@
         "start_time": "2026-09-06T10:00:00-0700",
         "end_time": "2026-09-06T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1YXBzUPlvyl6MnawxDHsrJ",
@@ -2566,7 +2636,7 @@
         "start_time": "2026-09-06T12:00:00-0700",
         "end_time": "2026-09-06T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3qvJiQOb5Qa0jO7MdLoBp3",
@@ -2622,7 +2692,7 @@
         "start_time": "2026-09-06T15:00:00-0700",
         "end_time": "2026-09-06T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:23dYJvJgsupWvEliUxhCmD",
@@ -2665,7 +2735,7 @@
         "start_time": "2026-09-06T18:00:00-0700",
         "end_time": "2026-09-06T21:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:65vdMBskhx3akkG9vQlSH1",
@@ -2712,7 +2782,7 @@
         "start_time": "2026-09-06T21:00:00-0700",
         "end_time": "2026-09-07T00:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4C1YDOfA7XyWZXPlUnQ7SC",
@@ -2752,7 +2822,7 @@
         "start_time": "2026-09-07T00:00:00-0700",
         "end_time": "2026-09-07T01:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:7mjd2b1cIxkx8ihoDshSFZ",
@@ -2775,7 +2845,7 @@
         "start_time": "2026-09-07T01:00:00-0700",
         "end_time": "2026-09-07T07:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4iXxBkStpuyVrw1lK2Aylf",
@@ -2860,7 +2930,7 @@
         "start_time": "2026-09-07T07:00:00-0700",
         "end_time": "2026-09-07T09:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5z343ThRyQJJqOiBOQHVBD",
@@ -2903,7 +2973,7 @@
         "start_time": "2026-09-07T09:00:00-0700",
         "end_time": "2026-09-07T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2wdHsVnyLmVrUJpi8v10Vn",
@@ -2955,7 +3025,7 @@
         "start_time": "2026-09-07T12:00:00-0700",
         "end_time": "2026-09-07T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4gIdnxd5HZVbpIyKxmtscQ",
@@ -3008,7 +3078,7 @@
         "start_time": "2026-09-07T15:00:00-0700",
         "end_time": "2026-09-07T17:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2wJPs4Vqj7XiGGrQ6f1dDC",
@@ -3047,7 +3117,7 @@
         "start_time": "2026-09-07T17:00:00-0700",
         "end_time": "2026-09-07T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:6iF43tYwRqUHROV82zMZoR",
@@ -3068,7 +3138,7 @@
         "start_time": "2026-09-07T18:00:00-0700",
         "end_time": "2026-09-07T20:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:76UO345JoM0FJWHwDOYz5y",
@@ -3113,7 +3183,7 @@
         "start_time": "2026-09-07T20:00:00-0700",
         "end_time": "2026-09-07T22:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1R930VdeiVSAqRHtkYtTh5",
@@ -3156,7 +3226,7 @@
         "start_time": "2026-09-07T22:00:00-0700",
         "end_time": "2026-09-08T00:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:38Cj55wRyiokrlL1kkU0uO",
@@ -3195,7 +3265,7 @@
         "start_time": "2026-09-08T00:00:00-0700",
         "end_time": "2026-09-08T01:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:0eU4hj5WHzWQLJeiLJPZ7y",
@@ -3215,7 +3285,7 @@
         "start_time": "2026-09-08T01:00:00-0700",
         "end_time": "2026-09-08T07:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1oSYnYRnn0my8btfvgBd9o",
@@ -3298,7 +3368,7 @@
         "start_time": "2026-09-08T07:00:00-0700",
         "end_time": "2026-09-08T09:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:48OYnzMimQwhqMP05YiEMH",
@@ -3343,7 +3413,7 @@
         "start_time": "2026-09-08T09:30:00-0700",
         "end_time": "2026-09-08T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2ehML5DErefaiKBG4Y1nXz",
@@ -3389,7 +3459,7 @@
         "start_time": "2026-09-08T22:00:00-0700",
         "end_time": "2026-09-09T00:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:06dz9bDEaRt1YADeSLf0jZ",
@@ -3432,7 +3502,7 @@
         "start_time": "2026-09-08T12:00:00-0700",
         "end_time": "2026-09-08T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1axBAJc0BqOx8FsZ8lkPSf",
@@ -3483,7 +3553,7 @@
         "start_time": "2026-09-08T15:00:00-0700",
         "end_time": "2026-09-08T17:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3r4rLv43yOwDjXSnWsttzW",
@@ -3520,7 +3590,7 @@
         "start_time": "2026-09-08T18:00:00-0700",
         "end_time": "2026-09-08T20:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4BPfVOFVUn1n2jDDj3RPCG",
@@ -3565,7 +3635,7 @@
         "start_time": "2026-09-08T20:00:00-0700",
         "end_time": "2026-09-08T22:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3JJ4BoL9WVHk4Yye2EGJC7",
@@ -3608,7 +3678,7 @@
         "start_time": "2026-09-09T00:00:00-0700",
         "end_time": "2026-09-09T02:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:7ygAKCZNym7U5DllMuWrJk",
@@ -3652,7 +3722,7 @@
         "start_time": "2026-08-31T20:00:00-0700",
         "end_time": "2026-08-31T23:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5P41FP15pvfQepG7VKr4nX",
@@ -3700,7 +3770,7 @@
         "start_time": "2026-08-31T23:00:00-0700",
         "end_time": "2026-09-01T06:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2AqbuxkHkZ3aSlY65rvjHp",
@@ -3781,7 +3851,7 @@
         "start_time": "2026-09-01T06:00:00-0700",
         "end_time": "2026-09-01T07:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5Nmh2ae7TPOg7A8PplCejx",
@@ -3809,7 +3879,7 @@
         "start_time": "2026-09-01T07:00:00-0700",
         "end_time": "2026-09-01T09:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:18HPfnQYWzC3ZCtfKsHk5Z",
@@ -3838,7 +3908,7 @@
         "start_time": "2026-09-01T09:00:00-0700",
         "end_time": "2026-09-01T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3jxbmuhXNOHbkSyF3RikLm",
@@ -3896,7 +3966,7 @@
         "start_time": "2026-09-01T12:00:00-0700",
         "end_time": "2026-09-01T16:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4bQ8AfowYCb4oxrEKdKahe",
@@ -3935,7 +4005,7 @@
         "start_time": "2026-09-01T16:00:00-0700",
         "end_time": "2026-09-01T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1Zz0eisPgnQiSL8hsE1VDm",
@@ -3958,7 +4028,7 @@
         "start_time": "2026-09-01T18:00:00-0700",
         "end_time": "2026-09-01T20:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2aN2V82Jai6zxqb4YcDoIy",
@@ -3995,7 +4065,7 @@
         "start_time": "2026-09-01T20:00:00-0700",
         "end_time": "2026-09-02T01:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4gMy1dFDTCbJWkD5jZyfk6",
@@ -4057,7 +4127,7 @@
         "start_time": "2026-09-02T00:00:00-0700",
         "end_time": "2026-09-02T06:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2E2hfjWFXd5P9GBpEICcSc",
@@ -4121,7 +4191,7 @@
         "start_time": "2026-09-02T06:00:00-0700",
         "end_time": "2026-09-02T09:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1b7tZPt3S2UN6OrPUBqGCp",
@@ -4181,7 +4251,7 @@
         "start_time": "2026-09-02T09:00:00-0700",
         "end_time": "2026-09-02T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:15Gm7k9jCSlkWRk1KDw7Kp",
@@ -4221,7 +4291,7 @@
         "start_time": "2026-09-04T09:00:00-0700",
         "end_time": "2026-09-04T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:12dktWc80pmQOD7i1g0Ue3",
@@ -4270,7 +4340,7 @@
         "start_time": "2026-09-02T12:00:00-0700",
         "end_time": "2026-09-02T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2mbJy55OBRk1PR8gKLl9XE",
@@ -4313,7 +4383,7 @@
         "start_time": "2026-09-02T15:00:00-0700",
         "end_time": "2026-09-02T17:30:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:6BaVUtHpMRQErovnyLBzQ1",
@@ -4353,7 +4423,7 @@
         "start_time": "2026-09-02T17:30:00-0700",
         "end_time": "2026-09-02T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:0jrLiLWwTHVQOXkoKcn1YG",
@@ -4374,7 +4444,7 @@
         "start_time": "2026-09-02T18:00:00-0700",
         "end_time": "2026-09-02T20:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5AA36bgd55JXrej0TiMhX6",
@@ -4405,7 +4475,7 @@
         "start_time": "2026-09-02T20:00:00-0700",
         "end_time": "2026-09-03T00:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:7hcGgT9Hnq1kWTxvmFB4Yv",
@@ -4449,7 +4519,7 @@
         "start_time": "2026-09-02T23:00:00-0700",
         "end_time": "2026-09-03T02:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:26t8XvlfpOJT2uR2U6y336",
@@ -4487,7 +4557,7 @@
         "start_time": "2026-09-03T09:00:00-0700",
         "end_time": "2026-09-03T11:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2ICY6t4FTWPqM0CobYBx3M",
@@ -4514,7 +4584,7 @@
         "start_time": "2026-09-03T11:00:00-0700",
         "end_time": "2026-09-03T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1WkjwrkilljSUQm70854pW",
@@ -4541,7 +4611,7 @@
         "start_time": "2026-09-03T15:00:00-0700",
         "end_time": "2026-09-03T17:30:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5qJBMRbLmsY366Tfebi8cK",
@@ -4592,7 +4662,7 @@
         "start_time": "2026-09-03T17:30:00-0700",
         "end_time": "2026-09-03T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:0jrLiLWwTHVQOXkoKcn1YG",
@@ -4613,7 +4683,7 @@
         "start_time": "2026-09-03T18:00:00-0700",
         "end_time": "2026-09-03T20:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4jdvNdmgHxlNGmX3BACU76",
@@ -4645,7 +4715,7 @@
         "start_time": "2026-09-03T20:00:00-0700",
         "end_time": "2026-09-03T22:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:0GQFzIrfnWJGVM9DxRvDYV",
@@ -4686,7 +4756,7 @@
         "start_time": "2026-09-03T22:00:00-0700",
         "end_time": "2026-09-04T06:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:0lYyayygk8xNDUIxBgE1vV",
@@ -4793,7 +4863,7 @@
         "start_time": "2026-09-04T12:00:00-0700",
         "end_time": "2026-09-04T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1Wc2NJCTwgjYDvh2JJvZOu",
@@ -4830,7 +4900,7 @@
         "start_time": "2026-09-04T15:00:00-0700",
         "end_time": "2026-09-04T17:30:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4RVYHaPHVnMUqgPA5wSs1f",
@@ -4896,7 +4966,7 @@
         "start_time": "2026-09-04T17:30:00-0700",
         "end_time": "2026-09-04T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:0LiHWulNk5Vws57m9pvo9D",
@@ -4918,7 +4988,7 @@
         "start_time": "2026-09-04T18:00:00-0700",
         "end_time": "2026-09-04T21:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2QvqY0iSduwzUq9tchHPNJ",
@@ -4964,7 +5034,7 @@
         "start_time": "2026-09-04T22:00:00-0700",
         "end_time": "2026-09-05T02:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:6ADOUCJbNoEdqFPWPlfBhj",
@@ -5022,7 +5092,7 @@
         "start_time": "2026-09-05T02:00:00-0700",
         "end_time": "2026-09-05T08:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2jGTZoHmcdIoXtwuRypznJ",
@@ -5122,7 +5192,7 @@
         "start_time": "2026-09-05T08:00:00-0700",
         "end_time": "2026-09-05T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5opXsRzNra0j8fNSkjxODh",
@@ -5178,7 +5248,7 @@
         "start_time": "2026-09-05T12:00:00-0700",
         "end_time": "2026-09-05T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4zenEqlLYf0Z28SO2fbCrj",
@@ -5218,7 +5288,7 @@
         "start_time": "2026-09-05T15:00:00-0700",
         "end_time": "2026-09-05T16:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4AMROHcf3FCIuJPyCsWpN1",
@@ -5251,7 +5321,7 @@
         "start_time": "2026-09-05T16:00:00-0700",
         "end_time": "2026-09-05T19:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:48Lsxsxa8Z6XIxFK9uImA7",
@@ -5314,7 +5384,7 @@
         "start_time": "2026-09-05T19:00:00-0700",
         "end_time": "2026-09-05T22:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4FhLfF6RokK8qcq37E9AUN",
@@ -5375,7 +5445,7 @@
         "start_time": "2026-09-05T22:00:00-0700",
         "end_time": "2026-09-06T00:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1xSnynNivowTYtlfip3cZz",
@@ -5401,7 +5471,7 @@
         "start_time": "2026-09-06T00:00:00-0700",
         "end_time": "2026-09-06T02:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:7kFDkKpPDmFhXRH8dicLj2",
@@ -5430,7 +5500,7 @@
         "start_time": "2026-09-06T02:00:00-0700",
         "end_time": "2026-09-06T05:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5rc71108Te6vCfTaOLnD97",
@@ -5485,7 +5555,7 @@
         "start_time": "2026-09-06T12:00:00-0700",
         "end_time": "2026-09-06T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4vdJMfu5NtnnX7VHNpERXy",
@@ -5542,7 +5612,7 @@
         "start_time": "2026-09-06T15:00:00-0700",
         "end_time": "2026-09-06T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3lJsmYheC2zZ2KOj84UyBj",
@@ -5596,7 +5666,7 @@
         "start_time": "2026-09-06T19:00:00-0700",
         "end_time": "2026-09-06T22:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5lDqsu4gUAfFo8rPEEhHKw",
@@ -5634,7 +5704,7 @@
         "start_time": "2026-09-06T22:00:00-0700",
         "end_time": "2026-09-07T02:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:0f7pptDH6zg362O9LaTMHo",
@@ -5723,7 +5793,7 @@
         "start_time": "2026-09-07T02:00:00-0700",
         "end_time": "2026-09-07T05:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5bSd1uLuLjLreeig11RoVq",
@@ -5776,7 +5846,7 @@
         "start_time": "2026-09-07T05:00:00-0700",
         "end_time": "2026-09-07T09:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5G61sSSdxkOa194K5Y306b",
@@ -5871,7 +5941,7 @@
         "start_time": "2026-09-07T09:00:00-0700",
         "end_time": "2026-09-07T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:4ftwZvzoFAvS101Lm5NvuN",
@@ -5925,7 +5995,7 @@
         "start_time": "2026-09-07T12:00:00-0700",
         "end_time": "2026-09-07T13:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2TAb0MYiC6ADy6pYunLZiP",
@@ -5951,7 +6021,7 @@
         "start_time": "2026-09-07T13:00:00-0700",
         "end_time": "2026-09-07T15:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:6QVCRKucu5cuXhzig4sY4e",
@@ -6000,7 +6070,7 @@
         "start_time": "2026-09-07T15:00:00-0700",
         "end_time": "2026-09-07T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:5IVuqXILoxVWvWEPm82Jxr",
@@ -6056,7 +6126,7 @@
         "start_time": "2026-09-07T20:00:00-0700",
         "end_time": "2026-09-07T23:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3XpVcprOeQCmlpNTi5XYso",
@@ -6114,7 +6184,7 @@
         "start_time": "2026-09-07T23:00:00-0700",
         "end_time": "2026-09-08T06:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1geBpXfTnHSAuWM70o9Zow",
@@ -6226,7 +6296,7 @@
         "start_time": "2026-09-08T06:00:00-0700",
         "end_time": "2026-09-08T07:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:3OdBgzdF56PJ4wdRtjaGZa",
@@ -6256,7 +6326,7 @@
         "start_time": "2026-09-08T07:00:00-0700",
         "end_time": "2026-09-08T09:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:1e74PEk5pur3ts5YmjsQ83",
@@ -6306,7 +6376,7 @@
         "start_time": "2026-09-08T09:00:00-0700",
         "end_time": "2026-09-08T12:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:13PCBgjFVs1JYRRsdTSj5W",
@@ -6365,7 +6435,7 @@
         "start_time": "2026-09-08T12:00:00-0700",
         "end_time": "2026-09-08T16:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2SEpfEqxeuACELl94pZSCB",
@@ -6404,7 +6474,7 @@
         "start_time": "2026-09-08T16:00:00-0700",
         "end_time": "2026-09-08T18:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2urSBQat1mXT6bLgCunxAy",
@@ -6426,7 +6496,7 @@
         "start_time": "2026-09-08T20:00:00-0700",
         "end_time": "2026-09-09T01:00:00-0700"
       },
-      "state": "creating",
+      "state": "prepared",
       "owner_id": "dustmason",
       "desired_uris": [
         "spotify:track:2IgfsEXk5pE0bjLzcErDDX",
