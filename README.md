@@ -245,6 +245,11 @@ Apply the reviewed plan explicitly, using the folder printed by the first comman
 python3 scripts/cleanup_spinitron_library.py --apply verification/library-cleanup-TIMESTAMP/plan.json --prompt
 ```
 
+For a large sweep, add `--batch-size 40` to group library-removal requests.
+Metadata is still checked separately for every playlist, with at most four
+concurrent reads. Writes run one batch at a time. A failed or uncertain batch is
+recorded for every affected ID and stops the run without retrying the removal.
+
 The script requires the personal Spotify account `dustmason` and verifies GitHub
 as `dustMason`, without changing the default GitHub CLI account. Before any
 removal it checks that the archive workflow is on `main`, no daily run is active,
