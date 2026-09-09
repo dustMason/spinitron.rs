@@ -100,7 +100,7 @@ jobs:
         run: |
           git add data/catalog.json
           if [ '${{ steps.website.outcome }}' = success ]; then
-            git add docs/index.html docs/playlists.jsonl
+            git add docs/index.html docs/playlists.jsonl docs/assets docs/archive
           fi
           if ! git diff --staged --quiet; then
             git commit -m 'Record library removals and publish the catalog website'

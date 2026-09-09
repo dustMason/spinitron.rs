@@ -15,9 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - uses: dtolnay/rust-toolchain@stable
         with:
           components: rustfmt
       - run: cargo fmt --check
       - run: cargo test --locked
       - run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - run: node --test scripts/test_catalog_model.mjs

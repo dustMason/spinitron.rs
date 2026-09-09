@@ -272,9 +272,11 @@ impl Catalog {
             bail!("Spotify contents did not match broadcast {key}; leaving draft for recovery");
         }
         let preview = spotify.preview(id).await?;
+        let imported_at = Utc::now();
         let listing = serde_json::json!({
             "station":station, "name":remote.name, "url":format!("https://open.spotify.com/playlist/{id}"),
-            "track_count":entry.desired_uris.len(), "last_updated":Utc::now().format("%Y-%m-%d %H:%M UTC").to_string(),
+            "track_count":entry.desired_uris.len(), "last_updated":imported_at.format("%Y-%m-%d %H:%M UTC").to_string(),
+            "imported_at":imported_at.to_rfc3339(),
             "broadcast_start":show.start_time, "broadcast_end":show.end_time, "source_url":show.url,
             "preview":preview,
         });

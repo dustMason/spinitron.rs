@@ -12,6 +12,38 @@ The full catalog lives in `data/catalog.json` and on the website. New playlists 
 
 Claude Code wrote nearly all of this!
 
+## Browsing the catalog
+
+The website uses compact playlist rows with album art, artist and song samples,
+an expandable twelve-song preview, and a direct Spotify link. The recent view
+has one section for each of the last seven calendar days, including days with no
+imports. Each day initially shows ten rows; expand it to see the rest.
+
+The full archive includes every catalog record, including empty playlists and
+records without a known date, across static pages of 25 playlists. Search show
+names, stations, artists and sampled songs, combine a search with a station
+filter, and bookmark or share the resulting URL. Search uses the cached song
+samples; it does not search every track on Spotify. Pagination and previews also
+work without JavaScript; filtering requires it.
+
+New broadcasts record their first successful import time as `imported_at`.
+Import days use Pacific time (`America/Los_Angeles`, including daylight saving).
+Legacy records retain their last recorded update date; the site labels them
+"Updated" rather than assigning a new import date during regeneration.
+
+Generate and preview the complete site without Spotify credentials:
+
+```bash
+cargo build --release --locked
+python3 scripts/update_website.py
+python3 -m http.server 8765 --bind 127.0.0.1 --directory docs
+```
+
+Open `http://127.0.0.1:8765/`. For a separate build target, pass
+`--binary /path/to/spinitron-scraper` to `update_website.py`. The generator writes
+`docs/index.html`, `docs/archive/*.html`, shared CSS/JavaScript and the search
+data under `docs/assets/`, plus the original `docs/playlists.jsonl` export.
+
 ## Usage
 
 ### Basic Usage

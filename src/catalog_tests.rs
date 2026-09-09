@@ -148,6 +148,8 @@ async fn broadcasts_are_distinct_immutable_and_preserve_repeated_tracks() {
             .await
             .unwrap();
     }
+    let imported_at = f.catalog.entries["KALX:1"].listing["imported_at"].clone();
+    assert!(DateTime::parse_from_rfc3339(imported_at.as_str().unwrap()).is_ok());
     let mut renamed = show(1);
     renamed.title = "Changed episode title".into();
     assert!(!f
@@ -156,6 +158,10 @@ async fn broadcasts_are_distinct_immutable_and_preserve_repeated_tracks() {
         .await
         .unwrap());
     assert_eq!(spotify.creates, 2);
+    assert_eq!(
+        f.catalog.entries["KALX:1"].listing["imported_at"],
+        imported_at
+    );
     assert_eq!(spotify.fills.get(), 2);
     assert_eq!(
         spotify.track_uris("p1").await.unwrap(),
