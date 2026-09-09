@@ -182,9 +182,16 @@ cargo run -- --spotify --date 2026-09-07 --playlist-id YOUR_PLAYLIST_ID
 
 Repeat `--playlist-id` for multiple playlists. The selected IDs must exist in the
 account's Spinitron playlists, with only one selected ID per show name. This mode
-updates only those IDs and exits with an error if any selected show is missing,
-empty, or fails to update. Track searches finish before an existing playlist is
-cleared, so a failed lookup preserves its current tracks.
+syncs only those IDs and exits with an error if any selected show is missing,
+empty, or fails to sync. The legacy `--spotify` mode scrapes fresh track lists
+and compares the matched Spotify track IDs with the complete existing playlist,
+in order. Identical contents leave the tracks, description, and “Last updated”
+date untouched; the log reports `Unchanged`. Added, removed, or reordered tracks
+trigger an update. Track searches and Spotify playlist reads finish before any
+writes; a failed Spotify lookup/read or zero matches preserves the existing playlist.
+
+The daily `--archive` mode continues to preserve each completed broadcast and
+its original import date permanently.
 
 ## Spotify Playlist Organization
 

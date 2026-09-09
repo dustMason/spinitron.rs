@@ -12,7 +12,7 @@ mod spotify;
 use catalog::{ArchiveSpotify, Catalog};
 use config::AppConfig;
 use models::{ShowEpisode, ShowGroup};
-use spotify::SpotifyClient;
+use spotify::{PlaylistUpdate, SpotifyClient};
 use std::collections::HashMap;
 
 #[derive(Parser)]
@@ -176,6 +176,7 @@ async fn main() -> Result<()> {
 
     // Collect all episodes across the 7-day period
     let mut all_episodes: HashMap<String, Vec<ShowEpisode>> = HashMap::new();
+    let spinitron = scraper::SpinitronClient::new();
 
     // Process each station
     for (station_name, station_config) in &config.stations {
@@ -192,7 +193,12 @@ async fn main() -> Result<()> {
 
                     // Process each show
                     for show in shows_to_process {
-                        match scraper::fetch_playlist(&show.url).await {
+                        let scraped = if args.spotify {
+                            spinitron.fetch_playlist_fresh(&show.url).await
+                        } else {
+                            scraper::fetch_playlist(&show.url).await
+                        };
+                        match scraped {
                             Ok(tracks) => {
                                 let episode = ShowEpisode {
                                     show: show.clone(),
@@ -267,14 +273,16 @@ async fn main() -> Result<()> {
             // Create/update Spotify playlist if requested
             if let Some(ref mut spotify) = spotify_client {
                 match spotify.create_or_update_show_playlist(&show_group).await {
-                    Ok(Some(playlist)) => {
+                    Ok(Some(result)) => {
+                        let (status, playlist) = match result {
+                            PlaylistUpdate::Created(playlist) => ("Created", playlist),
+                            PlaylistUpdate::Updated(playlist) => ("Updated", playlist),
+                            PlaylistUpdate::Unchanged(playlist) => ("Unchanged", playlist),
+                        };
                         if let Some(names) = pending_playlists.as_mut() {
                             names.remove(&playlist_name);
                         }
-                        println!(
-                            "✅ Successfully created/updated Spotify playlist: {}\n",
-                            playlist.name
-                        );
+                        println!("✅ {} Spotify playlist: {}\n", status, playlist.name);
                         if let Some(url) = playlist.external_url {
                             println!("  🔗 Share: {}", url);
                         }
@@ -301,7 +309,10 @@ async fn main() -> Result<()> {
         if !names.is_empty() {
             let mut names: Vec<_> = names.into_iter().collect();
             names.sort();
-            bail!("Selected playlists were not updated: {}", names.join(", "));
+            bail!(
+                "Selected playlists did not sync successfully: {}",
+                names.join(", ")
+            );
         }
     }
 

@@ -14,7 +14,8 @@ pub struct SpinitronClient {
 }
 
 impl SpinitronClient {
-    /// New immutable archives must not inherit a cached partial broadcast/error page.
+    /// Fetch current contents for Spotify syncs and new archives; cached pages
+    /// may describe an unfinished broadcast or predate a corrected track list.
     pub async fn fetch_playlist_fresh(&self, url: &str) -> Result<Vec<Track>> {
         let html = self
             .client

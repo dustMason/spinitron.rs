@@ -13,6 +13,10 @@ use crate::models::{ShowGroup, Track};
 const CACHE_DIR: &str = "spotify_cache";
 const TRACK_CACHE_FILE: &str = "track_cache.json";
 
+#[cfg(test)]
+#[path = "spotify_sync_tests.rs"]
+mod sync_tests;
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct SpotifyTrack {
     pub id: String,
@@ -34,6 +38,13 @@ pub struct SpotifyPlaylist {
     pub uri: String,
     pub external_url: Option<String>,
     pub track_count: u32,
+}
+
+#[derive(Debug)]
+pub enum PlaylistUpdate {
+    Created(SpotifyPlaylist),
+    Updated(SpotifyPlaylist),
+    Unchanged(SpotifyPlaylist),
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -60,6 +71,7 @@ struct PlaylistCache {
 
 pub struct SpotifyClient {
     client: Client,
+    api_base_url: String,
     access_token: String,
     user_id: String,
     track_cache: TrackSearchCache,
@@ -101,6 +113,7 @@ impl SpotifyClient {
 
         Ok(Self {
             client,
+            api_base_url: "https://api.spotify.com/v1".into(),
             access_token,
             user_id,
             track_cache,
@@ -329,7 +342,7 @@ impl SpotifyClient {
     pub async fn create_or_update_show_playlist(
         &mut self,
         show_group: &ShowGroup,
-    ) -> Result<Option<SpotifyPlaylist>> {
+    ) -> Result<Option<PlaylistUpdate>> {
         let playlist_name = show_group.playlist_name();
         let description = show_group.description();
         let latest_id = show_group.latest_spinitron_id();
@@ -352,24 +365,38 @@ impl SpotifyClient {
         let playlist = if let Some(existing) = existing_playlist {
             // Finish fallible track searches before removing existing music.
             let track_uris = self.resolve_track_uris(&all_tracks).await?;
-            self.clear_playlist_tracks(&existing.id).await?;
+            if track_uris.is_empty() {
+                return Err(anyhow!(
+                    "No Spotify tracks matched; preserving existing playlist"
+                ));
+            }
+            let current_uris = self.get_playlist_tracks(&existing.id).await?;
+            // Compare the complete ordered sequence, including repeated tracks.
+            // A new scrape/date alone must not change Spotify's activity or our
+            // website's Last updated date, which comes from the description.
+            if current_uris == track_uris {
+                return Ok(Some(PlaylistUpdate::Unchanged(existing)));
+            }
+            self.clear_playlist_tracks(&existing.id, &current_uris)
+                .await?;
 
             self.add_track_uris_to_playlist(&existing.id, &track_uris)
                 .await?;
 
             // Update the playlist description with new latest ID
-            let updated_description = show_group.description();
-            self.update_playlist_description(&existing.id, &updated_description)
+            self.update_playlist_description(&existing.id, &description)
                 .await?;
 
-            let updated_existing = existing.clone();
+            let mut updated_existing = existing;
+            updated_existing.description = Some(description);
+            updated_existing.track_count = track_uris.len() as u32;
 
             // Update in-memory cache
             self.playlist_cache
                 .playlists
                 .insert(latest_id.to_string(), updated_existing.clone());
 
-            Some(updated_existing)
+            Some(PlaylistUpdate::Updated(updated_existing))
         } else {
             if playlist_name.is_empty() {
                 return Err(anyhow!("Playlist name cannot be empty"));
@@ -389,10 +416,10 @@ impl SpotifyClient {
 
             // Do not create an empty playlist if track lookup fails.
             let track_uris = self.resolve_track_uris(&all_tracks).await?;
-            let url = format!(
-                "https://api.spotify.com/v1/users/{}/playlists",
-                self.user_id
-            );
+            if track_uris.is_empty() {
+                return Err(anyhow!("No Spotify tracks matched; no playlist created"));
+            }
+            let url = format!("{}/users/{}/playlists", self.api_base_url, self.user_id);
 
             // Create new playlist
             let playlist_data = serde_json::json!({
@@ -428,14 +455,14 @@ impl SpotifyClient {
             self.add_track_uris_to_playlist(&playlist.id, &track_uris)
                 .await?;
             let mut updated_playlist = playlist.clone();
-            updated_playlist.track_count = all_tracks.len() as u32;
+            updated_playlist.track_count = track_uris.len() as u32;
 
             // Cache the playlist in memory
             self.playlist_cache
                 .playlists
                 .insert(latest_id.to_string(), updated_playlist.clone());
 
-            Some(updated_playlist)
+            Some(PlaylistUpdate::Created(updated_playlist))
         };
 
         Ok(playlist)
@@ -452,10 +479,7 @@ impl SpotifyClient {
 
         let response = self
             .client
-            .put(&format!(
-                "https://api.spotify.com/v1/playlists/{}",
-                playlist_id
-            ))
+            .put(&format!("{}/playlists/{}", self.api_base_url, playlist_id))
             .header("Authorization", format!("Bearer {}", self.access_token))
             .header("Content-Type", "application/json")
             .json(&update_data)
@@ -537,8 +561,8 @@ impl SpotifyClient {
                 let response = self
                     .client
                     .post(&format!(
-                        "https://api.spotify.com/v1/playlists/{}/tracks",
-                        playlist_id
+                        "{}/playlists/{}/tracks",
+                        self.api_base_url, playlist_id
                     ))
                     .header("Authorization", format!("Bearer {}", self.access_token))
                     .header("Content-Type", "application/json")
@@ -563,8 +587,8 @@ impl SpotifyClient {
     async fn get_playlist_tracks(&self, playlist_id: &str) -> Result<Vec<String>> {
         let mut all_track_uris = Vec::new();
         let mut url = Some(format!(
-            "https://api.spotify.com/v1/playlists/{}/tracks?limit=100",
-            playlist_id
+            "{}/playlists/{}/tracks?limit=100",
+            self.api_base_url, playlist_id
         ));
 
         while let Some(current_url) = url {
@@ -582,17 +606,28 @@ impl SpotifyClient {
 
             let json: serde_json::Value = response.json().await?;
 
-            if let Some(items) = json["items"].as_array() {
-                for item in items {
-                    if let Some(track) = item["track"].as_object() {
-                        if let Some(uri) = track["uri"].as_str() {
-                            all_track_uris.push(uri.to_string());
-                        }
-                    }
-                }
+            let items = json["items"].as_array().ok_or_else(|| {
+                anyhow!("Cannot compare playlist contents: Spotify response is missing items")
+            })?;
+            for item in items {
+                let uri = item["track"]["uri"]
+                    .as_str()
+                    .filter(|uri| !uri.is_empty())
+                    .ok_or_else(|| {
+                        anyhow!("Cannot compare playlist contents: track URI unavailable")
+                    })?;
+                all_track_uris.push(uri.to_string());
             }
 
-            url = json["next"].as_str().map(|s| s.to_string());
+            url = match json.get("next") {
+                Some(Value::Null) => None,
+                Some(Value::String(next)) if !next.is_empty() => Some(next.clone()),
+                _ => {
+                    return Err(anyhow!(
+                        "Cannot compare playlist contents: invalid pagination"
+                    ))
+                }
+            };
         }
 
         Ok(all_track_uris)
@@ -642,9 +677,7 @@ impl SpotifyClient {
         Ok(previews)
     }
 
-    async fn clear_playlist_tracks(&self, playlist_id: &str) -> Result<()> {
-        let track_uris = self.get_playlist_tracks(playlist_id).await?;
-
+    async fn clear_playlist_tracks(&self, playlist_id: &str, track_uris: &[String]) -> Result<()> {
         if track_uris.is_empty() {
             return Ok(());
         }
@@ -663,8 +696,8 @@ impl SpotifyClient {
             let response = self
                 .client
                 .delete(&format!(
-                    "https://api.spotify.com/v1/playlists/{}/tracks",
-                    playlist_id
+                    "{}/playlists/{}/tracks",
+                    self.api_base_url, playlist_id
                 ))
                 .header("Authorization", format!("Bearer {}", self.access_token))
                 .header("Content-Type", "application/json")
@@ -1202,13 +1235,14 @@ mod tests {
     use crate::models::{Show, ShowEpisode, ShowGroup, Track};
     use reqwest::StatusCode;
 
-    fn offline_client() -> SpotifyClient {
+    pub(super) fn offline_client() -> SpotifyClient {
         SpotifyClient {
             client: reqwest::Client::builder()
                 .proxy(reqwest::Proxy::all("http://127.0.0.1:0").unwrap())
                 .timeout(std::time::Duration::from_secs(1))
                 .build()
                 .unwrap(),
+            api_base_url: "https://api.spotify.com/v1".into(),
             access_token: "test-token".into(),
             user_id: "test-user".into(),
             track_cache: TrackSearchCache {
