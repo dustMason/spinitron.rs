@@ -14,6 +14,20 @@ pub struct SpinitronClient {
 }
 
 impl SpinitronClient {
+    /// New immutable archives must not inherit a cached partial broadcast/error page.
+    pub async fn fetch_playlist_fresh(&self, url: &str) -> Result<Vec<Track>> {
+        let html = self
+            .client
+            .get(url)
+            .timeout(std::time::Duration::from_secs(30))
+            .send()
+            .await?
+            .error_for_status()?
+            .text()
+            .await?;
+        parse_playlist_html(&html)
+    }
+
     pub fn new() -> Self {
         Self {
             client: Client::new(),

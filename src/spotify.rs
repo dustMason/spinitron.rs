@@ -7,6 +7,7 @@ use std::collections::{HashMap, HashSet};
 use std::fs;
 use std::path::Path;
 
+use crate::catalog::{ArchiveSpotify, RemotePlaylist};
 use crate::models::{ShowGroup, Track};
 
 const CACHE_DIR: &str = "spotify_cache";
@@ -66,6 +67,7 @@ pub struct SpotifyClient {
     cache_dir: String,
     total_cache_hits: u32,
     total_api_calls: u32,
+    archive_inventory: Option<Vec<RemotePlaylist>>,
 }
 
 impl SpotifyClient {
@@ -106,6 +108,7 @@ impl SpotifyClient {
             cache_dir,
             total_cache_hits: 0,
             total_api_calls: 0,
+            archive_inventory: None,
         })
     }
 
@@ -243,7 +246,12 @@ impl SpotifyClient {
         let search_key = track.cache_key();
 
         // Check cache first
-        if let Some(cached_entry) = self.track_cache.entries.get(&search_key) {
+        if let Some(cached_entry) = self
+            .track_cache
+            .entries
+            .get(&search_key)
+            .filter(|entry| entry.expires_at > Self::current_timestamp())
+        {
             self.total_cache_hits += 1;
             return Ok((cached_entry.track.clone(), false)); // false = no API call made
         }
@@ -810,6 +818,384 @@ impl SpotifyClient {
     }
 }
 
+impl SpotifyClient {
+    pub async fn legacy_library_cleanup_plan(
+        &self,
+        catalog: &crate::catalog::Catalog,
+    ) -> Result<Value> {
+        let legacy: HashSet<_> = catalog
+            .entries
+            .values()
+            .filter(|e| e.state == crate::catalog::State::Legacy)
+            .filter_map(|e| e.playlist_id.as_deref())
+            .collect();
+        let mut playlists = Vec::new();
+        let mut offset = 0;
+        loop {
+            let value = self
+                .archive_request(
+                    reqwest::Method::GET,
+                    &format!("me/playlists?limit=50&offset={offset}"),
+                    None,
+                )
+                .await?;
+            let items = value["items"]
+                .as_array()
+                .ok_or_else(|| anyhow!("Spotify library response is missing items"))?;
+            for item in items {
+                if item["owner"]["id"].as_str() == Some(&self.user_id)
+                    && item["id"].as_str().is_some_and(|id| legacy.contains(id))
+                {
+                    let p = Self::archive_metadata(item)?;
+                    playlists.push(serde_json::json!({"playlist_id":p.id,"name":p.name,
+                        "url":format!("https://open.spotify.com/playlist/{}",p.id),
+                        "track_count":item["tracks"]["total"],"action":"remove_from_library_only"}));
+                }
+            }
+            if items.len() < 50 {
+                break;
+            }
+            offset += 50;
+        }
+        playlists.sort_by(|a, b| a["name"].as_str().cmp(&b["name"].as_str()));
+        Ok(
+            serde_json::json!({"created_at":chrono::Utc::now().to_rfc3339(),"owner_id":self.user_id,
+            "read_only_plan":true,"count":playlists.len(),"playlists":playlists,
+            "note":"Existing catalog playlists currently owned and saved by this account. Review which to retain before any library cleanup. No playlist contents will be changed."}),
+        )
+    }
+
+    /// Exercise only a newly created test playlist; the source playlist is read-only.
+    pub async fn verify_archive_flow(
+        &mut self,
+        source_id: &str,
+        receipt_path: &Path,
+    ) -> Result<()> {
+        let source = self
+            .archive_request(
+                reqwest::Method::GET,
+                &format!("playlists/{source_id}/tracks?limit=1&fields=items(track(uri))"),
+                None,
+            )
+            .await?;
+        let uri = source["items"][0]["track"]["uri"]
+            .as_str()
+            .filter(|uri| uri.starts_with("spotify:track:"))
+            .ok_or_else(|| anyhow!("Verification source has no available track"))?
+            .to_string();
+        // Check membership-read access before creating anything.
+        self.library_contains(source_id).await?;
+        let marker = format!("Spinitron archive: verification:{}", uuid::Uuid::new_v4());
+        let playlist = self
+            .create_archive("Spinitron archive verification (temporary)", &marker)
+            .await?;
+        if playlist.owner_id != self.user_id {
+            return Err(anyhow!("Verification playlist has unexpected owner"));
+        }
+        let id = &playlist.id;
+        eprintln!("Verifying temporary playlist {id}");
+        let result = async {
+            crate::catalog::atomic_json(receipt_path, &serde_json::json!({
+                "spotify_user_id":self.user_id,"test_playlist_id":id,"verification_status":"started"
+            }))?;
+            self.replace_draft(id, &[uri.clone()]).await?;
+            if !self.library_contains(id).await? { return Err(anyhow!("Created playlist was not saved to the library")); }
+            self.remove_from_library(id).await?;
+            if self.library_contains(id).await? { return Err(anyhow!("Playlist is still in the library after removal")); }
+            if self.inspect(id).await?.owner_id != self.user_id || self.track_uris(id).await? != [uri.clone()] {
+                return Err(anyhow!("Playlist did not remain owned and readable after library removal"));
+            }
+            self.archive_request(reqwest::Method::PUT, &format!("playlists/{id}/followers"), Some(serde_json::json!({"public":true}))).await?;
+            if !self.library_contains(id).await? { return Err(anyhow!("Could not save the archived playlist back to the library")); }
+            Ok(serde_json::json!({"verified_at":chrono::Utc::now().to_rfc3339(),"spotify_user_id":self.user_id,
+                "test_playlist_id":id,"removal_preserves_playlist":true,"readable_after_removal":true,"can_save_again":true}))
+        }.await;
+        // Only this freshly created test object is cleaned up. Try every cleanup
+        // operation even if an earlier check failed, and report incomplete cleanup.
+        let mut cleanup_errors = Vec::new();
+        if let Err(error) = self
+            .archive_request(
+                reqwest::Method::PUT,
+                &format!("playlists/{id}"),
+                Some(serde_json::json!({"public":false})),
+            )
+            .await
+        {
+            cleanup_errors.push(error.to_string());
+        }
+        if let Err(error) = self
+            .archive_request(
+                reqwest::Method::PUT,
+                &format!("playlists/{id}/tracks"),
+                Some(serde_json::json!({"uris":[]})),
+            )
+            .await
+        {
+            cleanup_errors.push(error.to_string());
+        }
+        if let Err(error) = self.remove_from_library(id).await {
+            cleanup_errors.push(error.to_string());
+        }
+        // Read back the final state even after an uncertain write. Preserve the
+        // test result separately so a cleanup error cannot erase useful evidence.
+        let cleanup = async {
+            let value = self
+                .archive_request(reqwest::Method::GET, &format!("playlists/{id}"), None)
+                .await?;
+            let saved = self.library_contains(id).await?;
+            Ok::<_, anyhow::Error>(serde_json::json!({
+                "saved":saved,"public":value["public"],"track_count":value["tracks"]["total"],
+                "verified":!saved && value["public"] == false && value["tracks"]["total"] == 0
+                    && value["owner"]["id"] == self.user_id,
+            }))
+        }
+        .await;
+        let cleanup = match cleanup {
+            Ok(value) => value,
+            Err(error) => {
+                cleanup_errors.push(error.to_string());
+                serde_json::json!({"verified":false})
+            }
+        };
+        let mut receipt = match &result {
+            Ok(receipt) => receipt.clone(),
+            Err(error) => serde_json::json!({
+                "verified_at":chrono::Utc::now().to_rfc3339(),"spotify_user_id":self.user_id,
+                "test_playlist_id":id,"verification_error":error.to_string(),
+            }),
+        };
+        receipt["verification_status"] = if result.is_ok() { "passed" } else { "failed" }.into();
+        receipt["cleanup"] = cleanup.clone();
+        receipt["cleanup_errors"] = serde_json::json!(cleanup_errors);
+        crate::catalog::atomic_json(receipt_path, &receipt)?;
+        if cleanup["verified"] != true {
+            return Err(anyhow!(
+                "Verification cleanup needs attention for {id}; see {}. Verification: {:?}",
+                receipt_path.display(),
+                result.as_ref().map(|_| "passed").map_err(|e| e.to_string())
+            ));
+        }
+        result.map(|_| ())
+    }
+
+    async fn library_contains(&self, id: &str) -> Result<bool> {
+        let encoded = urlencoding::encode(&self.user_id);
+        self.archive_request(
+            reqwest::Method::GET,
+            &format!("playlists/{id}/followers/contains?ids={encoded}"),
+            None,
+        )
+        .await?
+        .get(0)
+        .and_then(Value::as_bool)
+        .ok_or_else(|| anyhow!("Invalid Spotify library-membership response"))
+    }
+
+    async fn archive_request(
+        &self,
+        method: reqwest::Method,
+        path: &str,
+        body: Option<Value>,
+    ) -> Result<Value> {
+        for attempt in 0..3 {
+            // Only reads can be repeated. A lost write response is ambiguous.
+            let can_retry = method == reqwest::Method::GET && attempt < 2;
+            let mut request = self
+                .client
+                .request(method.clone(), format!("https://api.spotify.com/v1/{path}"))
+                .bearer_auth(&self.access_token)
+                .timeout(std::time::Duration::from_secs(30));
+            if let Some(body) = &body {
+                request = request.json(body);
+            }
+            let response = match request.send().await {
+                Ok(response) => response,
+                Err(error) if can_retry && (error.is_timeout() || error.is_connect()) => {
+                    tokio::time::sleep(std::time::Duration::from_secs(1 << attempt)).await;
+                    continue;
+                }
+                Err(error) => return Err(error.into()),
+            };
+            let status = response.status();
+            if !status.is_success() {
+                let delay = response
+                    .headers()
+                    .get(reqwest::header::RETRY_AFTER)
+                    .and_then(|v| v.to_str().ok())
+                    .and_then(|v| v.parse::<u64>().ok())
+                    .unwrap_or(1 << attempt);
+                if can_retry
+                    && (status.is_server_error()
+                        || status == reqwest::StatusCode::TOO_MANY_REQUESTS)
+                    && delay <= 30
+                {
+                    eprintln!("Retrying Spotify GET {path} in {delay}s (HTTP {status})");
+                    tokio::time::sleep(std::time::Duration::from_secs(delay)).await;
+                    continue;
+                }
+                return Err(anyhow!("Spotify {method} {path} failed (HTTP {status})"));
+            }
+            let text = match response.text().await {
+                Ok(text) => text,
+                Err(error) if can_retry && (error.is_timeout() || error.is_body()) => {
+                    tokio::time::sleep(std::time::Duration::from_secs(1 << attempt)).await;
+                    continue;
+                }
+                Err(error) => return Err(error.into()),
+            };
+            return if text.is_empty() {
+                Ok(Value::Null)
+            } else {
+                Ok(serde_json::from_str(&text)?)
+            };
+        }
+        unreachable!("last attempt returns without retrying")
+    }
+
+    fn archive_metadata(value: &Value) -> Result<RemotePlaylist> {
+        let required = |field: &Value, name: &str| {
+            field
+                .as_str()
+                .filter(|s| !s.is_empty())
+                .map(str::to_owned)
+                .ok_or_else(|| anyhow!("Spotify playlist response is missing {name}"))
+        };
+        Ok(RemotePlaylist {
+            id: required(&value["id"], "id")?,
+            owner_id: required(&value["owner"]["id"], "owner.id")?,
+            name: required(&value["name"], "name")?,
+            description: value["description"].as_str().unwrap_or("").into(),
+        })
+    }
+}
+
+impl ArchiveSpotify for SpotifyClient {
+    fn owner_id(&self) -> &str {
+        &self.user_id
+    }
+
+    async fn resolve(&mut self, tracks: &[Track]) -> Result<Vec<String>> {
+        if tracks.len() > 5000 {
+            return Err(anyhow!(
+                "Broadcast exceeds 5000 tracks; refusing to truncate the archive"
+            ));
+        }
+        self.resolve_track_uris(tracks).await
+    }
+
+    async fn find_archive(&mut self, marker: &str) -> Result<Option<RemotePlaylist>> {
+        if self.archive_inventory.is_none() {
+            let mut inventory = Vec::new();
+            let mut offset = 0;
+            loop {
+                let response = self
+                    .archive_request(
+                        reqwest::Method::GET,
+                        &format!("me/playlists?limit=50&offset={offset}"),
+                        None,
+                    )
+                    .await?;
+                let items = response["items"]
+                    .as_array()
+                    .ok_or_else(|| anyhow!("Spotify library response is missing items"))?;
+                for item in items {
+                    if item["owner"]["id"].as_str() == Some(&self.user_id)
+                        && item["description"]
+                            .as_str()
+                            .is_some_and(|s| s.starts_with("Spinitron archive: "))
+                    {
+                        inventory.push(Self::archive_metadata(item)?);
+                    }
+                }
+                if items.len() < 50 {
+                    break;
+                }
+                offset += 50;
+            }
+            self.archive_inventory = Some(inventory);
+        }
+        let matches: Vec<_> = self
+            .archive_inventory
+            .as_ref()
+            .unwrap()
+            .iter()
+            .filter(|p| p.description.lines().any(|line| line == marker))
+            .collect();
+        if matches.len() > 1 {
+            return Err(anyhow!("Multiple playlists have archive marker {marker}; choose the correct ID before continuing"));
+        }
+        Ok(matches.first().map(|p| (*p).clone()))
+    }
+
+    async fn create_archive(&mut self, name: &str, description: &str) -> Result<RemotePlaylist> {
+        let value = self
+            .archive_request(
+                reqwest::Method::POST,
+                &format!("users/{}/playlists", self.user_id),
+                Some(serde_json::json!({
+                    "name":name, "description":description, "public":true,
+                })),
+            )
+            .await?;
+        let playlist = Self::archive_metadata(&value)?;
+        if let Some(inventory) = &mut self.archive_inventory {
+            inventory.push(playlist.clone());
+        }
+        Ok(playlist)
+    }
+
+    async fn replace_draft(&self, id: &str, uris: &[String]) -> Result<()> {
+        if uris.is_empty() {
+            return Err(anyhow!("Refusing to publish an empty broadcast"));
+        }
+        self.archive_request(
+            reqwest::Method::PUT,
+            &format!("playlists/{id}/tracks"),
+            Some(serde_json::json!({"uris":&uris[..uris.len().min(100)]})),
+        )
+        .await?;
+        for chunk in uris.get(100..).unwrap_or_default().chunks(100) {
+            self.archive_request(
+                reqwest::Method::POST,
+                &format!("playlists/{id}/tracks"),
+                Some(serde_json::json!({"uris":chunk})),
+            )
+            .await?;
+        }
+        Ok(())
+    }
+
+    async fn inspect(&self, id: &str) -> Result<RemotePlaylist> {
+        Self::archive_metadata(
+            &self
+                .archive_request(reqwest::Method::GET, &format!("playlists/{id}"), None)
+                .await?,
+        )
+    }
+
+    async fn track_uris(&self, id: &str) -> Result<Vec<String>> {
+        self.get_playlist_tracks(id).await
+    }
+
+    async fn preview(&self, id: &str) -> Result<Value> {
+        let preview = self.get_playlist_preview(id, 12).await?.into_iter()
+            .map(|(name,artists,image_url)| serde_json::json!({"name":name,"artists":artists,"image_url":image_url})).collect::<Vec<_>>();
+        Ok(serde_json::json!(preview))
+    }
+
+    async fn remove_from_library(&self, id: &str) -> Result<()> {
+        // Removing library membership leaves the public playlist available by ID.
+        // Never retry this write automatically: the user may have re-saved it.
+        self.archive_request(
+            reqwest::Method::DELETE,
+            &format!("playlists/{id}/followers"),
+            None,
+        )
+        .await?;
+        Ok(())
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::{PlaylistCache, SpotifyClient, SpotifyPlaylist, TrackSearchCache};
@@ -834,6 +1220,7 @@ mod tests {
             cache_dir: String::new(),
             total_cache_hits: 0,
             total_api_calls: 0,
+            archive_inventory: None,
         }
     }
 

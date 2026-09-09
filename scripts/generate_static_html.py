@@ -8,6 +8,7 @@ import sys
 import os
 from datetime import datetime, timezone
 import random
+from html import escape
 
 
 # Main processing: group JSONL (playlists.jsonl) into a JSON dump and produce HTML
@@ -62,6 +63,8 @@ def main(infile):
     html = [
         "<!DOCTYPE html>",
         '<html lang="en"><head><meta charset="utf-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1">',
+        '<title>Spinitron broadcast archive</title>',
         "<style>",
         "@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');",
         "@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One:wght@400&display=swap');",
@@ -113,18 +116,18 @@ def main(infile):
         "<div class='toc'><strong>Stations</strong><ul>",
     ]
     for station in sorted(stations):
-        html.append(f"<li><a href='#{station}'>{station}</a></li>")
+        html.append(f"<li><a href='#{escape(station)}'>{escape(station)}</a></li>")
     html.append("</ul></div>")
     html.append("<div class='main'>")
 
     for station in sorted(stations):
-        html.append(f'<div class="station" id="{station}"><h2>{station}</h2><hr/>')
+        html.append(f'<div class="station" id="{escape(station)}"><h2>{escape(station)}</h2><hr/>')
         html.append('<ul class="playlist-list">')
         # ensure playlists sorted by last_updated descending
         for p in sorted(
             stations[station], key=lambda p: p.get("last_updated", ""), reverse=True
         ):
-            html.append(f"<li><a class='card' href='{p['url']}'>")
+            html.append(f"<li><a class='card' href='{escape(p['url'])}'>")
             # Build side-by-side artist list + preview grid
             html.append('<div class="media-block">')
             # wrap both images and text in a dark blending container
@@ -141,10 +144,11 @@ def main(infile):
                 '✢', '✣', '✤', '✥', '✦', '✧', '★', '☆', '☉', '☾', '☽'
             ]
             txt = ''
+            rng = random.Random(p['url'])
             if artist_set:
                 txt = artist_set[0]
                 for art in artist_set[1:]:
-                    sep = random.choice(symbols)
+                    sep = rng.choice(symbols)
                     txt += f" {sep} {art}"
             # choose a theme color from a fixed palette based on playlist name
             palette = [
@@ -163,22 +167,23 @@ def main(infile):
             last_up = p.get('last_updated', '')
             html.append(f"<div class='header-bar' style='background:{color}'>")
             html.append(f"<div class='badge'>{p.get('track_count',0)}</div>")
-            html.append(f"<div class='title'>{p['name']}</div>")
-            html.append(f"<div class='timestamp'>Last Updated {last_up}</div>")
+            html.append(f"<div class='title'>{escape(p['name'])}</div>")
+            html.append(f"<div class='timestamp'>Last Updated {escape(last_up)}</div>")
             html.append("</div>")
             html.append("<div class='overlay-all'>")
             # overlay with artists only (title removed)
-            html.append(f"<div class='mask-text'>{txt}</div>")
+            html.append(f"<div class='mask-text'>{escape(txt)}</div>")
             html.append('<div class="preview-grid">')
             for t in p.get("preview", [])[:12]:
                 img = t.get("image_url")
                 if img:
-                    html.append(f"<img src='{img}' alt='{t.get('name','')}'/>")
+                    html.append(f"<img loading='lazy' src='{escape(img)}' alt='{escape(t.get('name',''))}'/>")
             html.append("</div>")
             # sticker showing track count
             html.append("</div>")
+            html.append("</div>")
             html.append("</a></li>")
-    html.append("</ul></div>")
+        html.append("</ul></div>")
 
     # close main content and add overall timestamp footer
     html.append("</div>")

@@ -4,9 +4,11 @@ A Rust application that scrapes radio station playlists from Spinitron and creat
 
 I made it because I love listening to KALX and wanted an easy way to pull music that i hear on the air into my Spotify library. I discovered that Spinitron powers their radio playlists feature, so I'm using that as the source of data to power this app.
 
-When it runs, it first scrapes the list of all shows for the given station. Then it scrapes each show's playlist to get all spins over the past week, and updates a Spotify playlist to include all of those tracks (or at least the ones that it can find on Spotify). This repo has a github action that runs daily at 6 AM UTC to update the playlists for the stations configured in `config.toml`.
+The daily job checks the past seven days for completed broadcasts. Each broadcast gets its own Spotify playlist, preserving the original order and repeated tracks that Spotify can match. Once published, that playlist is never rewritten by the archive job. Broadcasts are identified by station and Spinitron episode ID, so title changes do not create replacements.
 
-Playlists are created with the naming format: **"Station Name - Show Name"**, like "KALX - Another Flippin' Sunday".
+New playlists are named **"Station - YYYY-MM-DD HH:MM - Broadcast title"**. The date and time come from the station's broadcast timestamp. The job waits until an episode has finished, plus a one-hour buffer, and fetches fresh track data before archiving it.
+
+The full catalog lives in `data/catalog.json` and on the website. New playlists are removed from the owner's Spotify library once, after the catalog has been committed. They remain accessible by their Spotify links. Save any playlist you want to keep in your library; subsequent archive runs leave it alone. Existing playlists are imported as legacy catalog entries and are not automatically removed or rewritten.
 
 Claude Code wrote nearly all of this!
 
@@ -47,8 +49,8 @@ export SPOTIFY_CLIENT_ID="your_client_id"
 export SPOTIFY_CLIENT_SECRET="your_client_secret"
 export SPOTIFY_REFRESH_TOKEN="your_refresh_token"
 
-# Scrape and create Spotify playlists
-cargo run -- --spotify --date 2025-06-29
+# Archive individual completed broadcasts
+cargo run -- --archive --date 2026-09-07
 
 # Verify Spotify credentials without scraping or changing playlists
 cargo run -- --check-spotify-auth
@@ -57,11 +59,11 @@ cargo run -- --check-spotify-auth
 ### Listing Playlists
 
 ```bash
-# List all playlists as JSONL (requires Spotify auth)
-cargo run -- --list-playlists
+# List the complete catalog as JSONL (no Spotify auth or API calls)
+cargo run -- --list-catalog
 
 # Save JSONL output to a file
-cargo run -- --list-playlists > playlists.jsonl
+cargo run -- --list-catalog > playlists.jsonl
 
 # Example JSONL output:
 # {"station":"KALX","name":"KALX - Show Name","url":"https://open.spotify.com/playlist/abc123","track_count":25}
@@ -154,6 +156,74 @@ cleared, so a failed lookup preserves its current tracks.
 
 ## Spotify Playlist Organization
 
+Spotify's Web API cannot manage playlist folders. This project separates the full
+public archive from the playlists you choose to save in your personal library.
+See [Spotify's library-removal semantics](https://developer.spotify.com/documentation/web-api/concepts/playlists#following-and-unfollowing-a-playlist).
+
+### Verify library behavior before rollout
+
+```bash
+python3 scripts/verify_archive.py --reauthorize
+```
+
+This command reuses `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` from your
+environment (prompting only for missing values), then prints a Spotify sign-in
+link. Open that link to authorize the app. The loopback callback captures the new
+refresh token automatically, with no token copying. If you already have all three
+credentials to paste, use `--prompt` instead.
+
+The command builds the app and creates one temporary test playlist. It verifies that removing the playlist
+from the library preserves its contents and ownership, and that it can be saved
+again. The test playlist is then emptied, removed from the library, and removed
+from the public profile. No existing playlist is modified. Credentials stay in
+process memory; the verification receipt contains no secrets.
+
+The same command writes a **read-only cleanup proposal** containing existing
+legacy catalog playlists that are still owned and saved by the authenticated
+account. Review which to keep before any existing-library cleanup. The proposal
+does not itself remove anything.
+
+### Catalog persistence and one-time library removal
+
+The catalog is durable state, **not a disposable cache**. Keep it in version
+control and restore it if a checkout loses it. Missing or malformed catalogs
+cause the archive to fail rather than silently creating duplicate playlists.
+
+The workflow performs these phases in order:
+
+1. Archive new broadcasts and verify the exact track sequence. Failed drafts stay
+   in the library and can be resumed; completed playlists are never repopulated.
+2. Generate the full website from the catalog, including playlists outside the library.
+3. Prepare a removal plan for newly completed broadcasts and mark those entries
+   as attempted. Commit and push the catalog **before** applying that plan.
+4. Consume the plan, remove those new playlists from the library, persist results,
+   and publish the website. The new links are published after the initial removal.
+
+For manual operation:
+
+```bash
+cargo run -- --archive
+cargo run -- --prepare-library-release release-plan.json
+# Commit and push data/catalog.json before the next command.
+cargo run -- --apply-library-release release-plan.json
+# Commit and push data/catalog.json again to record results.
+```
+
+Use a fresh plan filename for another manual run. A consumed or uncertain removal
+is never retried automatically, because you might have saved the playlist in the
+meantime. An interrupted run may therefore leave a playlist in the library for
+manual review. Recovery artifacts preserve the catalog and attempted plan if a
+workflow cannot push its state. Do not replay a consumed plan or rebuild the
+catalog from the library: playlists outside the library would be lost.
+
+An uncertain playlist-creation request is recovered only when exactly one owned
+playlist has the broadcast's precise archive marker. If none or multiple are
+found, reconcile the ID before continuing; the app does not repeat the creation
+blindly. Run only one local archive process at a time; Actions runs are serialized.
+
+The older `--spotify` and `--playlist-id` modes remain available for explicit
+repairs of legacy rolling playlists. The daily workflow uses `--archive`.
+
 ## Caching
 
 The app uses two caches:
@@ -175,4 +245,8 @@ The repository includes a GitHub Actions workflow for automated daily playlist u
    - `SPOTIFY_REFRESH_TOKEN` - Your refresh token (from `scripts/get_spotify_token.py`)
 
 **Workflow:**
-The **Daily Update** workflow (`.github/workflows/daily-playlist-update.yml`) runs once daily at 6 AM UTC to update playlists and commit the markdown list.
+The **Daily Playlist Update** workflow (`.github/workflows/daily-playlist-update.yml`)
+runs daily at 6 AM UTC, commits the broadcast catalog, removes newly archived
+playlists from the library once, and publishes the website. Partial failures are reported as
+failures after recovery state has been persisted. Pull requests run offline Rust
+and website tests without Spotify credentials.

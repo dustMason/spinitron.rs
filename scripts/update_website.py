@@ -31,7 +31,7 @@ def main():
         sys.exit(1)
 
     print("📊 Generating fresh playlist data...")
-    raw = run_command("./target/release/spinitron-scraper --list-playlists")
+    raw = run_command("./target/release/spinitron-scraper --list-catalog")
     os.makedirs("docs", exist_ok=True)
     with open("docs/playlists.jsonl", "w") as jf:
         jf.write(raw)
@@ -42,7 +42,7 @@ def main():
     )
 
     print("✅ Website update complete!")
-    print("📄 Generated: docs/index.html and docs/playlists.json")
+    print("📄 Generated: docs/index.html and docs/playlists.jsonl")
 
 
 if __name__ == "__main__":

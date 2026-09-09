@@ -1,0 +1,23 @@
+name: Checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'Cargo.*'
+      - '.github/workflows/**'
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt
+      - run: cargo fmt --check
+      - run: cargo test --locked
+      - run: python3 -m unittest discover -s scripts -p 'test_*.py'
