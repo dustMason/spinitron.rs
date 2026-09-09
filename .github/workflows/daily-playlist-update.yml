@@ -2,76 +2,125 @@ name: Daily Playlist Update
 
 on:
   schedule:
-    # Run daily at 6 AM UTC (adjust timezone as needed)
     - cron: '0 6 * * *'
-  workflow_dispatch: # Allow manual runs
+  workflow_dispatch:
+    inputs:
+      auth_check_only:
+        description: 'Only verify Spotify authentication'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: spinitron-catalog
+  cancel-in-progress: false
 
 jobs:
   update-playlists:
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      
-    - name: Install Rust
-      uses: dtolnay/rust-toolchain@stable
-      
-    - name: Cache Rust dependencies
-      uses: actions/cache@v3
-      with:
-        path: |
-          ~/.cargo/registry
-          ~/.cargo/git
-          target
-        key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
-        
-    - name: Cache track search data
-      uses: actions/cache@v3
-      with:
-        path: |
-          cache
-          spotify_cache/track_cache.json
-        key: ${{ runner.os }}-track-cache-v1
-        restore-keys: |
-          ${{ runner.os }}-track-cache-
-        
-    - name: Build application
-      run: cargo build --release
-      
-    - name: Run playlist update
-      env:
-        SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
-        SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
-        SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
-      run: |
-        # Run for yesterday's date (default behavior)
-        ./target/release/spinitron-scraper --spotify
-        
-    - name: Update website with latest playlists
-      env:
-        SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
-        SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
-        SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
-      run: python scripts/update_website.py
-        
-    - name: Upload cache as artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: cache-data
-        path: |
-          cache/
-          spotify_cache/track_cache.json
-        
-    - name: Commit and push website updates
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add docs/index.html
-        git add docs/playlists.jsonl
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-        else
-          git commit -m "Update website with latest playlists"
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('Cargo.lock') }}
+      - uses: actions/cache@v4
+        with:
+          path: |
+            cache
+            spotify_cache/track_cache.json
+          key: ${{ runner.os }}-track-cache-v2-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: ${{ runner.os }}-track-cache-v2-
+      - name: Build and test
+        id: build
+        run: |
+          cargo test --locked
+          cargo build --release --locked
+      - name: Check Spotify authentication
+        if: ${{ inputs.auth_check_only }}
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        run: ./target/release/spinitron-scraper --check-spotify-auth
+      - name: Archive completed broadcasts
+        id: archive
+        if: ${{ !inputs.auth_check_only }}
+        continue-on-error: true
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        run: ./target/release/spinitron-scraper --archive
+      - name: Export the complete catalog to the website
+        id: website
+        if: ${{ !cancelled() && !inputs.auth_check_only && steps.build.outcome == 'success' }}
+        continue-on-error: true
+        run: python3 scripts/update_website.py
+      - name: Prepare one-time removals for new broadcasts
+        id: prepare
+        if: ${{ !cancelled() && !inputs.auth_check_only && steps.build.outcome == 'success' }}
+        continue-on-error: true
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        run: ./target/release/spinitron-scraper --prepare-library-release release-plan.json
+      - name: Persist catalog before removing library membership
+        id: checkpoint
+        if: ${{ !cancelled() && !inputs.auth_check_only && steps.build.outcome == 'success' }}
+        continue-on-error: true
+        run: |
+          git config user.email 'action@github.com'
+          git config user.name 'GitHub Action'
+          git add data/catalog.json
+          if ! git diff --staged --quiet; then
+            git commit -m 'Archive broadcasts and checkpoint catalog'
+          fi
           git push
-        fi
+      - name: Remove newly archived playlists from the library once
+        id: release
+        if: ${{ !cancelled() && !inputs.auth_check_only && steps.prepare.outcome == 'success' && steps.website.outcome == 'success' && steps.checkpoint.outcome == 'success' }}
+        continue-on-error: true
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        run: ./target/release/spinitron-scraper --apply-library-release release-plan.json
+      - name: Persist removal results
+        id: persist
+        if: ${{ !cancelled() && !inputs.auth_check_only && steps.checkpoint.outcome == 'success' }}
+        continue-on-error: true
+        run: |
+          git add data/catalog.json
+          if [ '${{ steps.website.outcome }}' = success ]; then
+            git add docs/index.html docs/playlists.jsonl docs/assets docs/archive
+          fi
+          if ! git diff --staged --quiet; then
+            git commit -m 'Record library removals and publish the catalog website'
+          fi
+          git push
+      - name: Preserve recovery state
+        if: ${{ always() && !inputs.auth_check_only }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-recovery-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            data/catalog.json
+            release-plan*.json
+            spotify_cache/track_cache.json
+      - name: Report partial failures
+        if: ${{ !cancelled() && !inputs.auth_check_only && steps.build.outcome == 'success' }}
+        env:
+          OUTCOMES: '${{ steps.archive.outcome }} ${{ steps.website.outcome }} ${{ steps.prepare.outcome }} ${{ steps.checkpoint.outcome }} ${{ steps.release.outcome }} ${{ steps.persist.outcome }}'
+        run: |
+          echo "Archive, website, preparation, checkpoint, removal, persistence: $OUTCOMES" >> "$GITHUB_STEP_SUMMARY"
+          for outcome in $OUTCOMES; do
+            test "$outcome" = success || exit 1
+          done

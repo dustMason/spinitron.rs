@@ -1,20 +1,23 @@
-use anyhow::Result;
+use anyhow::{bail, Result};
 use chrono::{Local, NaiveDate};
 use clap::Parser;
 use std::path::PathBuf;
 
+mod catalog;
 mod config;
 mod models;
 mod scraper;
 mod spotify;
 
+use catalog::{ArchiveSpotify, Catalog};
 use config::AppConfig;
 use models::{ShowEpisode, ShowGroup};
-use spotify::SpotifyClient;
+use spotify::{PlaylistUpdate, SpotifyClient};
 use std::collections::HashMap;
 
 #[derive(Parser)]
 #[command(author, version, about, long_about = None)]
+#[command(group(clap::ArgGroup::new("mode").args(["spotify", "list_playlists", "check_spotify_auth", "archive", "list_catalog", "prepare_library_release", "apply_library_release", "verify_archive_flow", "plan_library_cleanup"])))]
 struct Args {
     /// Path to config file
     #[arg(short, long, default_value = "config.toml")]
@@ -28,14 +31,112 @@ struct Args {
     #[arg(short = 's', long)]
     spotify: bool,
 
+    /// Update only these existing Spotify playlist IDs (repeat for multiple IDs)
+    #[arg(
+        long = "playlist-id",
+        requires = "spotify",
+        conflicts_with = "list_playlists"
+    )]
+    playlist_ids: Vec<String>,
+
     /// Output markdown list of all cached playlists
     #[arg(long)]
     list_playlists: bool,
+
+    /// Verify Spotify authentication without scraping or modifying playlists
+    #[arg(long, conflicts_with_all = ["spotify", "list_playlists"])]
+    check_spotify_auth: bool,
+
+    /// Archive each completed broadcast once; preserve its tracks permanently
+    #[arg(long)]
+    archive: bool,
+
+    /// Durable catalog, independent of the Spotify library
+    #[arg(long, default_value = "data/catalog.json")]
+    catalog: PathBuf,
+
+    /// Export the complete catalog as JSONL without Spotify authentication
+    #[arg(long)]
+    list_catalog: bool,
+
+    /// Prepare one-time library removals for new broadcasts; commit the catalog before applying
+    #[arg(long, value_name = "PLAN.json")]
+    prepare_library_release: Option<PathBuf>,
+
+    /// Apply and consume a prepared library-removal plan; never reuses a consumed plan
+    #[arg(long, value_name = "PLAN.json")]
+    apply_library_release: Option<PathBuf>,
+
+    /// Verify the library/archive behavior on one temporary playlist and write a receipt
+    #[arg(long, value_name = "RECEIPT.json")]
+    verify_archive_flow: Option<PathBuf>,
+
+    /// Write a read-only cleanup proposal for existing catalog playlists in your library
+    #[arg(long, value_name = "PLAN.json")]
+    plan_library_cleanup: Option<PathBuf>,
 }
 
 #[tokio::main]
 async fn main() -> Result<()> {
     let args = Args::parse();
+
+    if let Some(plan_path) = &args.plan_library_cleanup {
+        let catalog = Catalog::load(&args.catalog)?;
+        let spotify = SpotifyClient::new().await?;
+        let plan = spotify.legacy_library_cleanup_plan(&catalog).await?;
+        catalog::atomic_json(plan_path, &plan)?;
+        println!("Wrote a read-only proposal for {} existing playlists; no library membership was changed.", plan["count"]);
+        return Ok(());
+    }
+
+    if let Some(receipt_path) = &args.verify_archive_flow {
+        let catalog = Catalog::load(&args.catalog)?;
+        let source = catalog
+            .entries
+            .values()
+            .find(|e| e.listing["track_count"].as_u64().unwrap_or(0) > 0)
+            .and_then(|e| e.playlist_id.as_deref())
+            .ok_or_else(|| {
+                anyhow::anyhow!("Catalog needs a nonempty source playlist for verification")
+            })?;
+        let mut spotify = SpotifyClient::new().await?;
+        spotify.verify_archive_flow(source, receipt_path).await?;
+        println!("Verified archive access after removal and saving it again. The test playlist was emptied, removed from the library, and removed from the public profile.");
+        return Ok(());
+    }
+
+    if args.list_catalog {
+        let catalog = Catalog::load(&args.catalog)?;
+        for listing in catalog.listings() {
+            println!("{}", serde_json::to_string(listing)?);
+        }
+        return Ok(());
+    }
+    if let Some(plan_path) = &args.prepare_library_release {
+        if plan_path.exists() || plan_path.with_extension("consumed.json").exists() {
+            bail!("Choose a new plan path; existing plans must not be overwritten");
+        }
+        let spotify = SpotifyClient::new().await?;
+        let mut catalog = Catalog::load(&args.catalog)?;
+        let plan = catalog.prepare_release(&args.catalog, spotify.owner_id())?;
+        catalog::atomic_json(plan_path, &plan)?;
+        eprintln!("Prepared {} new broadcasts. Commit and push the catalog before applying this one-use plan.", plan.playlists.len());
+        return Ok(());
+    }
+    if let Some(plan_path) = &args.apply_library_release {
+        let spotify = SpotifyClient::new().await?;
+        let mut catalog = Catalog::load(&args.catalog)?;
+        catalog
+            .apply_release(&args.catalog, plan_path, &spotify)
+            .await?;
+        return Ok(());
+    }
+
+    if args.check_spotify_auth {
+        SpotifyClient::new().await?;
+        println!("Spotify authentication succeeded.");
+        return Ok(());
+    }
 
     // Handle list playlists command first
     if args.list_playlists {
@@ -57,6 +158,10 @@ async fn main() -> Result<()> {
     // Calculate start date (7 days before end date)
     let start_date = end_date - chrono::Duration::days(6);
 
+    if args.archive {
+        return archive_broadcasts(&config, &args.catalog, start_date, end_date).await;
+    }
+
     println!(
         "Scraping playlists from {} to {} (7 days)",
         start_date, end_date
@@ -71,6 +176,7 @@ async fn main() -> Result<()> {
 
     // Collect all episodes across the 7-day period
     let mut all_episodes: HashMap<String, Vec<ShowEpisode>> = HashMap::new();
+    let spinitron = scraper::SpinitronClient::new();
 
     // Process each station
     for (station_name, station_config) in &config.stations {
@@ -87,7 +193,12 @@ async fn main() -> Result<()> {
 
                     // Process each show
                     for show in shows_to_process {
-                        match scraper::fetch_playlist(&show.url).await {
+                        let scraped = if args.spotify {
+                            spinitron.fetch_playlist_fresh(&show.url).await
+                        } else {
+                            scraper::fetch_playlist(&show.url).await
+                        };
+                        match scraped {
                             Ok(tracks) => {
                                 let episode = ShowEpisode {
                                     show: show.clone(),
@@ -120,8 +231,12 @@ async fn main() -> Result<()> {
     }
 
     // Always refresh playlist cache from Spotify to avoid duplicates
+    let mut pending_playlists = None;
     if let Some(ref mut spotify) = spotify_client {
         spotify.refresh_playlist_cache().await?;
+        if !args.playlist_ids.is_empty() {
+            pending_playlists = Some(spotify.restrict_to_playlists(&args.playlist_ids)?);
+        }
     }
 
     // Create ShowGroups and process playlists
@@ -139,6 +254,14 @@ async fn main() -> Result<()> {
                 episodes,
             };
 
+            let playlist_name = show_group.playlist_name();
+            if pending_playlists
+                .as_ref()
+                .is_some_and(|names| !names.contains(&playlist_name))
+            {
+                continue;
+            }
+
             let all_tracks = show_group.all_tracks();
             println!(
                 "\n📺 Show Group: {} ({} episodes, {} total tracks)",
@@ -150,11 +273,16 @@ async fn main() -> Result<()> {
             // Create/update Spotify playlist if requested
             if let Some(ref mut spotify) = spotify_client {
                 match spotify.create_or_update_show_playlist(&show_group).await {
-                    Ok(Some(playlist)) => {
-                        println!(
-                            "✅ Successfully created/updated Spotify playlist: {}\n",
-                            playlist.name
-                        );
+                    Ok(Some(result)) => {
+                        let (status, playlist) = match result {
+                            PlaylistUpdate::Created(playlist) => ("Created", playlist),
+                            PlaylistUpdate::Updated(playlist) => ("Updated", playlist),
+                            PlaylistUpdate::Unchanged(playlist) => ("Unchanged", playlist),
+                        };
+                        if let Some(names) = pending_playlists.as_mut() {
+                            names.remove(&playlist_name);
+                        }
+                        println!("✅ {} Spotify playlist: {}\n", status, playlist.name);
                         if let Some(url) = playlist.external_url {
                             println!("  🔗 Share: {}", url);
                         }
@@ -177,6 +305,17 @@ async fn main() -> Result<()> {
         }
     }
 
+    if let Some(names) = pending_playlists {
+        if !names.is_empty() {
+            let mut names: Vec<_> = names.into_iter().collect();
+            names.sort();
+            bail!(
+                "Selected playlists did not sync successfully: {}",
+                names.join(", ")
+            );
+        }
+    }
+
     if let Some(ref mut spotify) = spotify_client {
         let (cache_hits, api_calls) = spotify.get_cache_stats();
         let total_requests = cache_hits + api_calls;
@@ -195,6 +334,69 @@ async fn main() -> Result<()> {
         spotify.purge_expired_cache_entries()?;
     }
 
+    Ok(())
+}
+
+async fn archive_broadcasts(
+    config: &AppConfig,
+    catalog_path: &std::path::Path,
+    start: NaiveDate,
+    end: NaiveDate,
+) -> Result<()> {
+    let mut catalog = Catalog::load(catalog_path)?;
+    let mut spotify = SpotifyClient::new().await?;
+    let scraper = scraper::SpinitronClient::new();
+    let mut failures = Vec::new();
+    let mut created = 0;
+    for (station, settings) in &config.stations {
+        let mut date = start;
+        while date <= end {
+            match scraper::fetch_shows_for_date(station, date).await {
+                Ok(shows) => {
+                    for show in settings.filter_shows(shows) {
+                        if catalog.finished(&Catalog::key(station, &show)) {
+                            continue;
+                        }
+                        if catalog::broadcast_time(&show.end_time).is_ok_and(|time| {
+                            time.with_timezone(&chrono::Utc)
+                                > chrono::Utc::now() - chrono::Duration::hours(1)
+                        }) {
+                            eprintln!("Waiting for broadcast {} to finish", show.id);
+                            continue;
+                        }
+                        let result = async {
+                            let tracks = scraper.fetch_playlist_fresh(&show.url).await?;
+                            if tracks.is_empty() {
+                                eprintln!("No music listed for {} ({})", show.title, show.id);
+                                return Ok(false);
+                            }
+                            catalog
+                                .archive(catalog_path, &mut spotify, station, &show, &tracks)
+                                .await
+                        }
+                        .await;
+                        match result {
+                            Ok(true) => {
+                                created += 1;
+                                eprintln!("Archived {station} - {} ({})", show.title, show.id);
+                            }
+                            Ok(false) => (),
+                            Err(error) => failures.push(format!("{station}:{}: {error}", show.id)),
+                        }
+                    }
+                }
+                Err(error) => failures.push(format!("{station} {date}: {error}")),
+            }
+            date += chrono::Duration::days(1);
+        }
+    }
+    eprintln!(
+        "Archived {created} broadcasts; {} failures. Existing completed playlists were preserved.",
+        failures.len()
+    );
+    if !failures.is_empty() {
+        bail!("Broadcast archive incomplete:\n{}", failures.join("\n"));
+    }
     Ok(())
 }
 

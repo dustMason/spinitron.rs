@@ -1,49 +1,35 @@
 #!/usr/bin/env python3
-"""
-Script to update the GitHub Pages website with fresh playlist data
-Used by GitHub Actions and can be run locally for testing
-"""
+"""Export the durable catalog and generate the static website without Spotify."""
 
+import argparse
+from pathlib import Path
 import subprocess
 import sys
-import os
 
-
-def run_command(cmd):
-    """Run shell command and return output"""
-    try:
-        result = subprocess.run(
-            cmd, shell=True, capture_output=True, text=True, check=True
-        )
-        return result.stdout
-    except subprocess.CalledProcessError as e:
-        print(f"❌ Error running command: {cmd}")
-        print(f"   {e.stderr}")
-        sys.exit(1)
+from generate_static_html import main as generate
 
 
 def main():
-    print("🌐 Updating website with latest playlists...")
-
-    if not os.path.exists("./target/release/spinitron-scraper"):
-        print("❌ Error: ./target/release/spinitron-scraper not found")
-        print("   Run 'cargo build --release' first")
-        sys.exit(1)
-
-    print("📊 Generating fresh playlist data...")
-    raw = run_command("./target/release/spinitron-scraper --list-playlists")
-    os.makedirs("docs", exist_ok=True)
-    with open("docs/playlists.jsonl", "w") as jf:
-        jf.write(raw)
-
-    print("📄 Generating static HTML...")
-    run_command(
-        "python3 scripts/generate_static_html.py docs/playlists.jsonl"
-    )
-
-    print("✅ Website update complete!")
-    print("📄 Generated: docs/index.html and docs/playlists.json")
+    repo = Path(__file__).resolve().parents[1]
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--binary", type=Path, default=repo / "target/release/spinitron-scraper")
+    parser.add_argument("--output-dir", type=Path, default=repo / "docs")
+    args = parser.parse_args()
+    binary = args.binary.resolve()
+    if not binary.is_file():
+        parser.error(f"{binary} not found. Build with cargo build --release first, or pass --binary.")
+    raw = subprocess.run([str(binary), "--list-catalog"], cwd=repo, capture_output=True, text=True, check=True).stdout
+    output = args.output_dir.resolve()
+    output.mkdir(parents=True, exist_ok=True)
+    data = output / "playlists.jsonl"
+    data.write_text(raw, encoding="utf-8")
+    generate(data, output)
+    print(f"Website ready: {output / 'index.html'}")
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except subprocess.CalledProcessError as error:
+        print(error.stderr, file=sys.stderr)
+        raise SystemExit(error.returncode)

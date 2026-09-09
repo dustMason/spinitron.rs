@@ -3,6 +3,9 @@
 # Cache directories  
 cache/
 spotify_cache/
+release-plan*.json
+verification/
+__pycache__/
 
 # IDE files
 .idea/

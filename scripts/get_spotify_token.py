@@ -52,7 +52,7 @@ class CallbackHandler(BaseHTTPRequestHandler):
 
 def get_refresh_token():
     # Step 1: Start local server for callback
-    server = HTTPServer(('localhost', 8888), CallbackHandler)
+    server = HTTPServer(('127.0.0.1', 8888), CallbackHandler)
     server_thread = threading.Thread(target=server.serve_forever)
     server_thread.daemon = True
     server_thread.start()
@@ -136,7 +136,7 @@ if __name__ == "__main__":
     print("🎵 Spotify Refresh Token Generator")
     print("==================================")
     print("\nThis script will help you get a refresh token for the Spinitron scraper.")
-    print("Make sure you've set your Spotify app's redirect URI to: http://localhost:8888/callback\n")
+    print(f"Make sure you've set your Spotify app's redirect URI to: {REDIRECT_URI}\n")
     
     refresh_token = get_refresh_token()
     
