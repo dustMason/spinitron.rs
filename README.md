@@ -222,6 +222,48 @@ legacy catalog playlists that are still owned and saved by the authenticated
 account. Review which to keep before any existing-library cleanup. The proposal
 does not itself remove anything.
 
+### Remove the old scraped playlists from Your Library
+
+After deploying the archive workflow and website, prepare a fresh plan:
+
+```bash
+python3 scripts/cleanup_spinitron_library.py --prompt
+```
+
+This one command prompts for the three Spotify values with hidden input. Use
+`--reauthorize` instead to reuse the app credentials and sign in through Spotify.
+The default mode only reads Spotify. It writes `plan.json` and a complete
+`catalog-backup.json` into a new dated folder under `verification/`. The plan
+includes all owned, saved **legacy catalog** playlists, including empty ones.
+Uncataloged generated playlists are listed separately for review; draft and new
+broadcast playlists are excluded. Remove entries from `plan.json` if you want to
+keep some in Your Library, before starting the cleanup.
+
+Apply the reviewed plan explicitly, using the folder printed by the first command:
+
+```bash
+python3 scripts/cleanup_spinitron_library.py --apply verification/library-cleanup-TIMESTAMP/plan.json --prompt
+```
+
+The script requires the personal Spotify account `dustmason` and verifies GitHub
+as `dustMason`, without changing the default GitHub CLI account. Before any
+removal it checks that the archive workflow is on `main`, no daily run is active,
+and every selected link exists in a successfully deployed Pages catalog. The old
+workflow discovers playlists through Your Library and could recreate removed ones.
+
+Cleanup uses Spotify's [Remove Items from Library](https://developer.spotify.com/documentation/web-api/reference/remove-library-items)
+endpoint for playlist URIs only. It never edits tracks, names, visibility, or the
+catalog. Each removal is checked afterward: the playlist must still be readable,
+have the same owner, track count and snapshot, and no longer be saved. This matches
+Spotify's [unfollowing semantics](https://developer.spotify.com/documentation/web-api/concepts/playlists#following-and-unfollowing-a-playlist).
+
+Keep `receipt.json` beside the plan. Each attempt is recorded before sending the
+request. Rerunning the **same plan** skips completed and uncertain attempts, so
+playlists you saved again survive. An uncertain result stops that run for review;
+it is never automatically retried. Changes since planning also stop cleanup.
+The process holds a local lock to prevent overlapping cleanup commands. No
+credentials are written to the plan, backup, or receipt.
+
 ### Catalog persistence and one-time library removal
 
 The catalog is durable state, **not a disposable cache**. Keep it in version
