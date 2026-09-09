@@ -245,6 +245,11 @@ Apply the reviewed plan explicitly, using the folder printed by the first comman
 python3 scripts/cleanup_spinitron_library.py --apply verification/library-cleanup-TIMESTAMP/plan.json --prompt
 ```
 
+For a large sweep, add `--batch-size 40` to group library-removal requests.
+Metadata is still checked separately for every playlist, with at most four
+concurrent reads. Writes run one batch at a time. A failed or uncertain batch is
+recorded for every affected ID and stops the run without retrying the removal.
+
 The script requires the personal Spotify account `dustmason` and verifies GitHub
 as `dustMason`, without changing the default GitHub CLI account. Before any
 removal it checks that the archive workflow is on `main`, no daily run is active,
@@ -301,6 +306,14 @@ An uncertain playlist-creation request is recovered only when exactly one owned
 playlist has the broadcast's precise archive marker. If none or multiple are
 found, reconcile the ID before continuing; the app does not repeat the creation
 blindly. Run only one local archive process at a time; Actions runs are serialized.
+
+Explicit creation rejections (such as HTTP 400) leave the entry `prepared` so a
+later run can retry after the cause is fixed. Timeouts and server errors remain
+`creating` and require reconciliation. Spotify's structured error message is
+included in failures. Archive descriptions use one line because Spotify rejects
+line breaks; recovery recognizes both the one-line and older multiline markers.
+Each run resumes saved drafts before scraping new broadcasts, including drafts
+older than the seven-day scraping window. A draft is attempted only once per run.
 
 The older `--spotify` and `--playlist-id` modes remain available for explicit
 repairs of legacy rolling playlists. The daily workflow uses `--archive`.

@@ -80,6 +80,43 @@ pub struct RemotePlaylist {
     pub description: String,
 }
 
+impl RemotePlaylist {
+    pub fn matches_marker(&self, marker: &str) -> bool {
+        // New descriptions are one line. Also recognize earlier multiline
+        // descriptions when reconciling a playlist from an interrupted run.
+        self.description.lines().any(|line| line == marker)
+            || self
+                .description
+                .split_once(" | ")
+                .is_some_and(|(prefix, _)| prefix == marker)
+    }
+}
+
+fn archive_description(marker: &str, show: &Show) -> String {
+    // Spotify rejects line breaks in descriptions with a generic HTTP 400.
+    // The catalog retains the full source URL and broadcast timestamps.
+    format!("{marker} | Broadcast: {} | {}", show.start_time, show.url)
+        .split_whitespace()
+        .collect::<Vec<_>>()
+        .join(" ")
+        .chars()
+        .take(300)
+        .collect()
+}
+
+/// Spotify explicitly rejected a creation request without creating a playlist.
+/// Transport failures and server errors must never use this classification.
+#[derive(Debug)]
+pub struct CreationRejected(pub String);
+
+impl std::fmt::Display for CreationRejected {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        f.write_str(&self.0)
+    }
+}
+
+impl std::error::Error for CreationRejected {}
+
 pub trait ArchiveSpotify {
     fn owner_id(&self) -> &str;
     async fn resolve(&mut self, tracks: &[Track]) -> Result<Vec<String>>;
@@ -168,6 +205,37 @@ impl Catalog {
         rows
     }
 
+    /// Resume saved work even after its broadcast leaves the scraping window.
+    pub async fn resume_pending(
+        &mut self,
+        path: &Path,
+        spotify: &mut impl ArchiveSpotify,
+    ) -> Vec<(String, Result<bool>)> {
+        let pending: Vec<_> = self
+            .entries
+            .iter()
+            .filter(|(_, entry)| {
+                matches!(
+                    entry.state,
+                    State::Prepared | State::Creating | State::Filling
+                )
+            })
+            .filter_map(|(key, entry)| {
+                entry
+                    .broadcast
+                    .clone()
+                    .map(|show| (key.clone(), entry.station.clone(), show))
+            })
+            .collect();
+        let mut results = Vec::new();
+        for (key, station, show) in pending {
+            // Existing entries already contain the scraped and matched sequence.
+            let result = self.archive(path, spotify, &station, &show, &[]).await;
+            results.push((key, result));
+        }
+        results
+    }
+
     pub async fn archive(
         &mut self,
         path: &Path,
@@ -238,17 +306,22 @@ impl Catalog {
                     let name = self.entries[&key].listing["name"]
                         .as_str()
                         .context("Missing archive name")?;
-                    spotify
-                        .create_archive(
-                            name,
-                            &format!("{marker}\nBroadcast: {}\n{}", show.start_time, show.url),
-                        )
-                        .await?
+                    let result = spotify
+                        .create_archive(name, &archive_description(&marker, show))
+                        .await;
+                    if result
+                        .as_ref()
+                        .is_err_and(|error| error.is::<CreationRejected>())
+                    {
+                        // An explicit rejection can be retried on a later run.
+                        // Lost responses remain Creating to prevent duplicates.
+                        self.entries.get_mut(&key).unwrap().state = State::Prepared;
+                        self.save(path)?;
+                    }
+                    result?
                 }
             };
-            if remote.owner_id != spotify.owner_id()
-                || !remote.description.lines().any(|line| line == marker)
-            {
+            if remote.owner_id != spotify.owner_id() || !remote.matches_marker(&marker) {
                 bail!("Created/recovered playlist has unexpected owner or archive marker");
             }
             let entry = self.entries.get_mut(&key).unwrap();
@@ -259,9 +332,7 @@ impl Catalog {
         let entry = &self.entries[&key];
         let id = entry.playlist_id.as_deref().unwrap();
         let remote = spotify.inspect(id).await?;
-        if remote.owner_id != spotify.owner_id()
-            || !remote.description.lines().any(|line| line == marker)
-        {
+        if remote.owner_id != spotify.owner_id() || !remote.matches_marker(&marker) {
             bail!("Refusing to populate a playlist with unexpected owner or archive marker");
         }
         // Only unfinished drafts can be replaced. Completed broadcasts are immutable.

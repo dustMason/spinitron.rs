@@ -151,6 +151,55 @@ fn uris(names: &[&str]) -> Vec<String> {
 }
 
 #[tokio::test]
+async fn archive_rejections_keep_the_error_reason_without_echoing_credentials() {
+    let (mut client, server) = mock_client(|_| {
+        vec![Exchange {
+            method: "POST",
+            path: "/v1/me/playlists".into(),
+            status: 400,
+            reply: serde_json::json!({
+                "error":{"status":400,"message":"Invalid description test-token\n"},
+                "access_token":"other-secret-that-must-not-be-logged"
+            }),
+        }]
+    })
+    .await;
+    let error = client
+        .create_archive("Archive", "Description")
+        .await
+        .unwrap_err();
+    assert!(error.is::<CreationRejected>());
+    let message = error.to_string();
+    assert!(message.contains("HTTP 400"));
+    assert!(message.contains("Invalid description [REDACTED]"));
+    assert!(!message.contains("test-token"));
+    assert!(!message.contains("other-secret"));
+    assert!(!message.contains('\n'));
+    assert_eq!(requests(server).await.len(), 1);
+}
+
+#[tokio::test]
+async fn server_and_timeout_responses_do_not_allow_repeating_a_creation() {
+    for status in [408, 500, 502, 503] {
+        let (mut client, server) = mock_client(|_| {
+            vec![Exchange {
+                method: "POST",
+                path: "/v1/me/playlists".into(),
+                status,
+                reply: serde_json::json!({"error":{"message":"Temporary failure"}}),
+            }]
+        })
+        .await;
+        let error = client
+            .create_archive("Archive", "Description")
+            .await
+            .unwrap_err();
+        assert!(!error.is::<CreationRejected>());
+        assert_eq!(requests(server).await.len(), 1);
+    }
+}
+
+#[tokio::test]
 async fn identical_paginated_contents_do_not_write_or_change_the_date() {
     let contents = uris(&["a", "b", "a"]);
     let (mut client, server) = mock_client(|base| {
@@ -366,7 +415,7 @@ async fn new_playlists_still_get_created_with_the_matched_track_count() {
         vec![
             exchange(
                 "POST",
-                "/v1/users/test-user/playlists",
+                "/v1/me/playlists",
                 serde_json::json!({"id":"new","name":"KALX - Test"}),
             ),
             exchange("POST", "/v1/playlists/new/tracks", serde_json::json!({})),

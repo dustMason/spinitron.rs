@@ -6,6 +6,7 @@ https://developer.spotify.com/documentation/web-api/reference/remove-library-ite
 """
 import argparse
 import base64
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import fcntl
 import getpass
@@ -85,8 +86,11 @@ class Spotify:
         if method != "GET":
             params = urllib.parse.parse_qs(parsed.query)
             uri = params.get("uris", [""])
-            if method != "DELETE" or parsed.path != "/me/library" or len(uri) != 1 or not re.fullmatch(r"spotify:playlist:[A-Za-z0-9]+", uri[0]):
-                raise ValueError("Only removing one playlist's library membership is supported")
+            values = uri[0].split(",")
+            if (method != "DELETE" or parsed.path != "/me/library" or len(uri) != 1
+                    or not 1 <= len(values) <= 40 or len(set(values)) != len(values)
+                    or any(not re.fullmatch(r"spotify:playlist:[A-Za-z0-9]+", value) for value in values)):
+                raise ValueError("Only removing up to 40 unique playlists' library membership is supported")
         for attempt in range(3):
             request = urllib.request.Request("https://api.spotify.com/v1" + path, method=method,
                                              headers={"Authorization": "Bearer " + self.access_token()})
@@ -125,6 +129,17 @@ class Spotify:
 
     def remove(self, playlist_id):
         self.request("DELETE", "/me/library?" + urllib.parse.urlencode({"uris": f"spotify:playlist:{playlist_id}"}))
+
+    def saved_many(self, playlist_ids):
+        query = urllib.parse.urlencode({"uris": ",".join(f"spotify:playlist:{pid}" for pid in playlist_ids)})
+        value = self.request("GET", "/me/library/contains?" + query)
+        if not isinstance(value, list) or len(value) != len(playlist_ids) or any(type(v) is not bool for v in value):
+            raise RuntimeError("Invalid Spotify library-membership response")
+        return value
+
+    def remove_many(self, playlist_ids):
+        self.request("DELETE", "/me/library?" + urllib.parse.urlencode({
+            "uris": ",".join(f"spotify:playlist:{pid}" for pid in playlist_ids)}))
 
 
 def legacy_ids(catalog):
@@ -228,7 +243,57 @@ def verify_deployment(github, selected):
     return {"pages_commit": ref, "verified_at": now()}
 
 
-def apply(spotify, catalog, plan_path, github):
+def apply_batches(spotify, plan, receipt, receipt_path, batch_size):
+    """Serial writes, bounded parallel reads, durable intent for every selected ID."""
+    prior_uncertain = [pid for pid, result in receipt["results"].items()
+                       if result["status"] not in ("removed", "already_absent")]
+    if prior_uncertain:
+        raise RuntimeError(f"{len(prior_uncertain)} uncertain previous attempts need review; they were not retried")
+    pending = [item for item in plan["playlists"] if item["playlist_id"] not in receipt["results"]]
+    def read_metadata(item):
+        return metadata_record(spotify.metadata(item["playlist_id"]), plan["owner_id"])
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        for start in range(0, len(pending), batch_size):
+            batch = pending[start:start + batch_size]
+            before = list(pool.map(read_metadata, batch))
+            if before != batch:
+                raise RuntimeError("A playlist changed since planning; review it before cleanup")
+            saved = spotify.saved_many([item["playlist_id"] for item in batch])
+            selected = []
+            for item, present in zip(batch, saved):
+                pid = item["playlist_id"]
+                if present:
+                    selected.append(item)
+                else:
+                    receipt["results"][pid] = {"status": "already_absent", "at": now()}
+            if not selected:
+                save(receipt_path, receipt)
+                continue
+            ids = [item["playlist_id"] for item in selected]
+            for pid in ids:
+                receipt["results"][pid] = {"status": "attempted", "at": now()}
+            save(receipt_path, receipt)  # Persist the whole batch before its only write.
+            try:
+                spotify.remove_many(ids)
+                after = list(pool.map(read_metadata, selected))
+                still_saved = spotify.saved_many(ids)
+                for item, preserved, present in zip(selected, after, still_saved):
+                    if item != preserved or present:
+                        raise RuntimeError("Library removal or playlist preservation could not be verified")
+            except Exception as error:
+                for pid in ids:
+                    receipt["results"][pid].update(status="uncertain", error=str(error))
+                save(receipt_path, receipt)
+                raise RuntimeError("Stopped after an uncertain batch; inspect receipt.json before further action") from error
+            for item in after:
+                receipt["results"][item["playlist_id"]] = {"status": "removed", "at": now(), "preserved": item}
+            save(receipt_path, receipt)
+            print(f"{len(receipt['results'])}/{len(plan['playlists'])} checked; last {len(ids)} removed and preserved", flush=True)
+
+
+def apply(spotify, catalog, plan_path, github, batch_size=1):
+    if not 1 <= batch_size <= 40:
+        raise ValueError("Batch size must be between 1 and 40")
     plan = json.loads(plan_path.read_text())
     backup = json.loads(plan_path.with_name("catalog-backup.json").read_text())
     if plan.get("version") != 1 or plan.get("action") != "remove_legacy_library_membership" or plan.get("catalog_sha256") != digest(backup):
@@ -245,6 +310,10 @@ def apply(spotify, catalog, plan_path, github):
         "plan_sha256": digest(plan), "deployment": deployment, "results": {}}
     if receipt.get("plan_sha256") != digest(plan):
         raise ValueError("Plan changed after cleanup started; preserve the original plan")
+    if batch_size > 1:
+        apply_batches(spotify, plan, receipt, receipt_path, batch_size)
+        print(f"Cleanup complete. Playlist links and verification results: {receipt_path}")
+        return
     unresolved = []
     for index, item in enumerate(plan["playlists"], 1):
         playlist_id = item["playlist_id"]
@@ -284,10 +353,13 @@ def main():
     parser.add_argument("--catalog", type=Path, default=REPO / "data/catalog.json")
     parser.add_argument("--output-dir", type=Path, help="New folder for the read-only plan and catalog backup")
     parser.add_argument("--apply", type=Path, metavar="PLAN.json", help="Explicitly apply a previously reviewed plan after deployment")
+    parser.add_argument("--batch-size", type=int, default=1, help="Playlists per removal request (1–40; default 1)")
     auth = parser.add_mutually_exclusive_group()
     auth.add_argument("--prompt", action="store_true", help="Prompt once for all three Spotify credentials")
     auth.add_argument("--reauthorize", action="store_true", help="Reuse app credentials and capture a token via Spotify sign-in")
     args = parser.parse_args()
+    if not 1 <= args.batch_size <= 40:
+        parser.error("--batch-size must be between 1 and 40")
     if args.apply and args.output_dir:
         parser.error("--output-dir only applies when preparing a plan")
     catalog = json.loads(args.catalog.read_text())
@@ -313,7 +385,7 @@ def main():
         lock_path.parent.mkdir(parents=True, exist_ok=True)
         with lock_path.open("a") as lock:
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-            apply(spotify, catalog, args.apply, github)
+            apply(spotify, catalog, args.apply, github, args.batch_size)
     else:
         output = args.output_dir or REPO / "verification" / datetime.now(timezone.utc).strftime("library-cleanup-%Y%m%dT%H%M%SZ")
         prepare(spotify, catalog, output.resolve())
