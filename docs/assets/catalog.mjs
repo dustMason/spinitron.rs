@@ -6,7 +6,7 @@ export function filterRows(rows, query = "", station = "") {
   const terms = searchable(query).trim().split(/\s+/).filter(Boolean);
   return rows.filter(row => {
     if (station && row.station !== station) return false;
-    const text = searchable([row.name, row.station, ...row.preview.flatMap(t => [t.name, ...t.artists])].join(" "));
+    const text = searchable([row.name, row.title, row.station, ...row.preview.flatMap(t => [t.name, ...t.artists])].join(" "));
     return terms.every(term => text.includes(term));
   });
 }

@@ -17,6 +17,15 @@ test("search matches show, artist and song terms together, combined with station
   assert.equal(filterRows(rows, "   ").length, 2);
 });
 
+test("search finds dates added to catalog titles without changing their labels", () => {
+  const rows = [row(1), row(2)];
+  rows[0].title = "FREEFORM · 2026-09-01 · 01:00 -0700";
+  rows[1].title = "FREEFORM · 2026-09-01 · 07:00 -0700";
+  const matches = filterRows(rows, "FREEFORM 2026-09-01 07:00");
+  assert.deepEqual(matches.map(r => r.id), ["2"]);
+  assert.ok(renderRow(matches[0]).includes("FREEFORM · 2026-09-01 · 07:00 -0700"));
+});
+
 test("pagination clamps out-of-range pages and keeps zero-track records", () => {
   const rows = Array.from({length: 51}, (_, i) => row(i));
   rows[0].track_count = 0;

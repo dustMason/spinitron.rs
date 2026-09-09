@@ -9,6 +9,7 @@ from html import escape
 import json
 from pathlib import Path
 import shutil
+import unicodedata
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
@@ -48,6 +49,18 @@ def normalize(row, zone):
     broadcast = parse_time(row.get("broadcast_start"))
     if broadcast:
         title = title.removeprefix(broadcast.strftime("%Y-%m-%d %H:%M") + " - ")
+    # Keep the source broadcast date visible; import time can be days later.
+    # Legacy collections have no episode date, only their recorded update time.
+    title_time = ""
+    if broadcast:
+        title += broadcast.strftime(" · %Y-%m-%d")
+        title_time = broadcast.strftime("%H:%M %z")
+    elif local:
+        kind = "imported" if imported else "updated"
+        title += f" · {kind} {local:%Y-%m-%d}"
+        title_time = local.strftime("%H:%M %z")
+    else:
+        title += " · date unavailable"
     preview = []
     for track in row.get("preview") or []:
         preview.append({
@@ -59,6 +72,7 @@ def normalize(row, zone):
     return {
         "id": hashlib.sha256(str(row.get("url", "")).encode()).hexdigest()[:16],
         "station": station, "name": name, "title": title,
+        "_title_time": title_time,
         "url": safe_url(row.get("url")), "source_url": safe_url(row.get("source_url")),
         "track_count": count,
         "count_label": str(count) if count >= len(preview[:12]) else "—",
@@ -69,6 +83,27 @@ def normalize(row, zone):
         "broadcast_label": broadcast.strftime("%b %d, %Y · %H:%M %z") if broadcast else "",
         "preview": preview[:12],
     }
+
+
+def unique_titles(rows):
+    """Disambiguate across the entire archive before pagination or filtering."""
+    def key(row):
+        return tuple(unicodedata.normalize("NFKC", row[field]).casefold()
+                     for field in ("station", "title"))
+
+    counts = Counter(key(row) for row in rows)
+    for row in rows:
+        time = row.pop("_title_time")
+        if counts[key(row)] > 1 and time:
+            row["title"] += " · " + time
+    # Some legacy records share even the update minute. Use a stable identifier
+    # as a last resort rather than inventing an episode date or renumbering them.
+    counts = Counter(key(row) for row in rows)
+    for row in rows:
+        if counts[key(row)] > 1:
+            row["title"] += " · " + row["id"]
+    if len({key(row) for row in rows}) != len(rows):
+        raise ValueError("Catalog still contains duplicate playlist titles")
 
 
 def json_for_html(value):
@@ -183,6 +218,7 @@ def main(infile, output_dir="docs", now=None, timezone_name=DEFAULT_TIMEZONE):
                     rows.append(normalize(json.loads(line), zone))
                 except (ValueError, TypeError, AttributeError) as error:
                     raise ValueError(f"Invalid playlist on line {number}: {error}") from error
+    unique_titles(rows)
     rows.sort(key=lambda r: (-r["timestamp"], r["station"], r["name"], r["url"]))
     days = []
     for offset in range(7):

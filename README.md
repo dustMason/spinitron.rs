@@ -19,6 +19,14 @@ Spotify link. Expand a row to see the twelve-song sample with album art. The rec
 has one section for each of the last seven calendar days, including days with no
 imports. Each day initially shows ten rows; expand it to see the rest.
 
+Titles include the broadcast date, for example **FREEFORM · 2026-09-01**.
+When a station has multiple entries with the same title on that date, the time
+and UTC offset distinguish them. Legacy collections use a clearly labeled
+**updated** date because their original broadcast dates are unknown. Records
+with identical titles and timestamps also show a stable identifier. These
+catalog labels are calculated across the full archive, so filtering and paging
+do not change them; the underlying Spotify names and playlists are untouched.
+
 The full archive includes every catalog record, including empty playlists and
 records without a known date, across static pages of 25 playlists. Search show
 names, stations, artists and sampled songs, combine a search with a station
