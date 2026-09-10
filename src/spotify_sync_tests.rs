@@ -93,6 +93,36 @@ async fn requests(server: tokio::task::JoinHandle<Vec<Value>>) -> Vec<Value> {
         .unwrap()
 }
 
+#[tokio::test]
+async fn archive_rename_writes_only_name_and_does_not_retry_uncertain_write() {
+    let (client, server) = mock_client(|_| {
+        vec![
+            exchange("PUT", "/v1/playlists/p1", Value::Null),
+            Exchange {
+                status: 502,
+                ..exchange("PUT", "/v1/playlists/p2", Value::Null)
+            },
+        ]
+    })
+    .await;
+    client
+        .rename_archive("p1", "KALX - Radio Dunya - 2026-09-09")
+        .await
+        .unwrap();
+    assert!(client
+        .rename_archive("p2", "KALX - FREEFORM - 2026-09-09 5:00pm")
+        .await
+        .is_err());
+    let bodies = requests(server).await;
+    assert_eq!(
+        bodies,
+        vec![
+            serde_json::json!({"name":"KALX - Radio Dunya - 2026-09-09"}),
+            serde_json::json!({"name":"KALX - FREEFORM - 2026-09-09 5:00pm"}),
+        ]
+    );
+}
+
 fn seed_show(client: &mut SpotifyClient, uris: &[String], existing: bool) -> ShowGroup {
     let tracks: Vec<_> = uris
         .iter()

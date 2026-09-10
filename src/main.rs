@@ -17,7 +17,7 @@ use std::collections::HashMap;
 
 #[derive(Parser)]
 #[command(author, version, about, long_about = None)]
-#[command(group(clap::ArgGroup::new("mode").args(["spotify", "list_playlists", "check_spotify_auth", "archive", "list_catalog", "prepare_library_release", "apply_library_release", "verify_archive_flow", "plan_library_cleanup"])))]
+#[command(group(clap::ArgGroup::new("mode").args(["spotify", "list_playlists", "check_spotify_auth", "archive", "list_catalog", "sync_archive_names", "plan_archive_names", "prepare_library_release", "apply_library_release", "verify_archive_flow", "plan_library_cleanup"])))]
 struct Args {
     /// Path to config file
     #[arg(short, long, default_value = "config.toml")]
@@ -59,6 +59,18 @@ struct Args {
     #[arg(long)]
     list_catalog: bool,
 
+    /// Rename broadcast archives whose catalog names differ; preserve tracks and membership
+    #[arg(long)]
+    sync_archive_names: bool,
+
+    /// Show proposed broadcast name changes without authentication or writes
+    #[arg(long)]
+    plan_archive_names: bool,
+
+    /// Maximum existing playlists to rename per pass (two seconds between requests)
+    #[arg(long, default_value_t = 40, requires = "sync_archive_names")]
+    name_limit: usize,
+
     /// Prepare one-time library removals for new broadcasts; commit the catalog before applying
     #[arg(long, value_name = "PLAN.json")]
     prepare_library_release: Option<PathBuf>,
@@ -79,6 +91,34 @@ struct Args {
 #[tokio::main]
 async fn main() -> Result<()> {
     let args = Args::parse();
+
+    if args.plan_archive_names {
+        let catalog = Catalog::load(&args.catalog)?;
+        for (key, name) in catalog.archive_names()? {
+            let entry = &catalog.entries[&key];
+            if entry.listing["name"].as_str() != Some(&name) {
+                println!(
+                    "{}",
+                    serde_json::json!({"key":key,"playlist_id":entry.playlist_id,"before":entry.listing["name"],"after":name})
+                );
+            }
+        }
+        return Ok(());
+    }
+    if args.sync_archive_names {
+        let mut catalog = Catalog::load(&args.catalog)?;
+        let spotify = SpotifyClient::new().await?;
+        let count = catalog
+            .sync_archive_names(
+                &args.catalog,
+                &spotify,
+                args.name_limit,
+                std::time::Duration::from_secs(2),
+            )
+            .await?;
+        eprintln!("Synchronized {count} archive names");
+        return Ok(());
+    }
 
     if let Some(plan_path) = &args.plan_library_cleanup {
         let catalog = Catalog::load(&args.catalog)?;
@@ -107,8 +147,8 @@ async fn main() -> Result<()> {
 
     if args.list_catalog {
         let catalog = Catalog::load(&args.catalog)?;
-        for listing in catalog.listings() {
-            println!("{}", serde_json::to_string(listing)?);
+        for listing in catalog.listings()? {
+            println!("{}", serde_json::to_string(&listing)?);
         }
         return Ok(());
     }
@@ -403,8 +443,21 @@ async fn archive_broadcasts(
             date += chrono::Duration::days(1);
         }
     }
+    // A newly discovered same-day broadcast can also change an older name.
+    // The bounded migration resumes from the catalog on the next daily run.
+    if let Err(error) = catalog
+        .sync_archive_names(
+            catalog_path,
+            &spotify,
+            40,
+            std::time::Duration::from_secs(2),
+        )
+        .await
+    {
+        failures.push(format!("Archive names: {error}"));
+    }
     eprintln!(
-        "Archived {created} broadcasts; {} failures. Existing completed playlists were preserved.",
+        "Archived {created} broadcasts; {} failures. Existing completed tracks were preserved.",
         failures.len()
     );
     if !failures.is_empty() {

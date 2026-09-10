@@ -4,9 +4,9 @@ A Rust application that scrapes radio station playlists from Spinitron and creat
 
 I made it because I love listening to KALX and wanted an easy way to pull music that i hear on the air into my Spotify library. I discovered that Spinitron powers their radio playlists feature, so I'm using that as the source of data to power this app.
 
-The daily job checks the past seven days for completed broadcasts. Each broadcast gets its own Spotify playlist, preserving the original order and repeated tracks that Spotify can match. Once published, that playlist is never rewritten by the archive job. Broadcasts are identified by station and Spinitron episode ID, so title changes do not create replacements.
+The daily job checks the past seven days for completed broadcasts. Each broadcast gets its own Spotify playlist, preserving the original order and repeated tracks that Spotify can match. Once published, its tracks are never rewritten by the archive job. Broadcasts are identified by station and Spinitron episode ID, so title changes do not create replacements.
 
-New playlists are named **"Station - YYYY-MM-DD HH:MM - Broadcast title"**. The date and time come from the station's broadcast timestamp. The job waits until an episode has finished, plus a one-hour buffer, and fetches fresh track data before archiving it.
+New playlists are named **"Station - Broadcast title - YYYY-MM-DD"**. Duplicate show names on the same date add a time such as **5:00pm**. The date and time come from the station's broadcast timestamp. The job waits until an episode has finished, plus a one-hour buffer, and fetches fresh track data before archiving it.
 
 Spotify track searches retry temporary server and connection errors up to three
 attempts, with backoff and a 30-second timeout per attempt. Short `Retry-After`
@@ -25,13 +25,15 @@ Spotify link. Expand a row to see the twelve-song sample with album art. The rec
 has one section for each of the last seven calendar days, including days with no
 imports. Each day initially shows ten rows; expand it to see the rest.
 
-Titles include the broadcast date, for example **FREEFORM · 2026-09-01**.
-When a station has multiple entries with the same title on that date, the time
-and UTC offset distinguish them. Legacy collections use a clearly labeled
+Titles include the broadcast date, for example **FREEFORM - 2026-09-01**.
+When a station has multiple entries with the same title on that date, a time
+such as **5:00pm** distinguishes them; the UTC offset appears only if the clock
+time repeats. Legacy collections use a clearly labeled
 **updated** date because their original broadcast dates are unknown. Records
 with identical titles and timestamps also show a stable identifier. These
 catalog labels are calculated across the full archive, so filtering and paging
-do not change them; the underlying Spotify names and playlists are untouched.
+do not change them. Broadcast labels share the Spotify naming policy; legacy
+labels use update dates only on the website.
 
 The full archive includes every catalog record, including empty playlists and
 records without a known date, across static pages of 25 playlists. Search show
@@ -300,6 +302,31 @@ After the last pass it audits the unrelated library entries. If that audit is
 interrupted, `--verify-final` resumes only the final read-only audit.
 
 ### Catalog persistence and one-time library removal
+
+Broadcast playlists use `STATION - Show - YYYY-MM-DD`, using the broadcast's
+local date. Repeated show names on the same station and date add a time, for
+example `KALX - FREEFORM - 2026-09-09 5:00pm`. Times appear only when needed;
+repeated daylight-saving hours also include the UTC offset. A broadcast ID is
+the final fallback for otherwise identical names. Long show titles are shortened
+before the date suffix, preserving the suffix and Unicode.
+
+The website uses the same names. Each daily run also reconciles up to 40 existing
+broadcast names, including older broadcasts when a later import introduces a
+collision. It spaces rename reads and writes by two seconds and checkpoints
+each verified name. Unchanged names make no requests. A lost rename response is
+checked before another write, and unexpected manual name changes stop the pass.
+Tracks, import dates, and saved status are preserved. Legacy rolling playlists
+retain their names because their recorded update dates are not broadcast dates.
+
+```bash
+# Read-only name proposal; no Spotify authentication needed.
+cargo run -- --plan-archive-names
+# Apply one bounded pass using the configured Spotify account.
+cargo run -- --sync-archive-names
+```
+
+Run a manual name pass separately from the archive workflow and library cleanup;
+honor any active Spotify cooldown before starting it.
 
 The catalog is durable state, **not a disposable cache**. Keep it in version
 control and restore it if a checkout loses it. Missing or malformed catalogs

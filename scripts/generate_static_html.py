@@ -7,6 +7,7 @@ from datetime import datetime, timedelta, timezone
 import hashlib
 from html import escape
 import json
+import re
 from pathlib import Path
 import shutil
 import unicodedata
@@ -39,26 +40,34 @@ def safe_url(value):
     return value if parsed.scheme in ("https", "http") and parsed.netloc else ""
 
 
+def clock_time(value):
+    return value.strftime("%I:%M%p").lstrip("0").lower()
+
+
 def normalize(row, zone):
     station = str(row.get("station") or "Unknown")
     name = str(row.get("name") or "Untitled playlist")
-    title = name.removeprefix(station + " - ")
+    title = str(row.get("display_name") or name).removeprefix(station + " - ")
     imported = parse_time(row.get("imported_at"))
     recorded = imported or parse_time(row.get("last_updated"))
     local = recorded.astimezone(zone) if recorded else None
     broadcast = parse_time(row.get("broadcast_start"))
-    if broadcast:
+    if broadcast and not row.get("display_name"):
         title = title.removeprefix(broadcast.strftime("%Y-%m-%d %H:%M") + " - ")
+        # Accept raw exports of either naming generation without doubling dates.
+        title = re.sub(r" - " + broadcast.strftime("%Y-%m-%d") +
+                       r"(?: \d{1,2}:\d{2}(?:am|pm)(?: [+-]\d{4})?(?: \[[^\]]+\])?)?$", "", title)
     # Keep the source broadcast date visible; import time can be days later.
     # Legacy collections have no episode date, only their recorded update time.
     title_time = ""
     if broadcast:
-        title += broadcast.strftime(" · %Y-%m-%d")
-        title_time = broadcast.strftime("%H:%M %z")
+        if not row.get("display_name"):
+            title += broadcast.strftime(" - %Y-%m-%d")
+            title_time = clock_time(broadcast)
     elif local:
         kind = "imported" if imported else "updated"
         title += f" · {kind} {local:%Y-%m-%d}"
-        title_time = local.strftime("%H:%M %z")
+        title_time = clock_time(local)
     else:
         title += " · date unavailable"
     preview = []
@@ -73,14 +82,15 @@ def normalize(row, zone):
         "id": hashlib.sha256(str(row.get("url", "")).encode()).hexdigest()[:16],
         "station": station, "name": name, "title": title,
         "_title_time": title_time,
+        "_title_offset": (broadcast or local).strftime("%z") if broadcast or local else "",
         "url": safe_url(row.get("url")), "source_url": safe_url(row.get("source_url")),
         "track_count": count,
         "count_label": str(count) if count >= len(preview[:12]) else "—",
         "day": local.date().isoformat() if local else None,
         "timestamp": recorded.timestamp() if recorded else 0,
-        "date_label": local.strftime("%b %d, %Y · %H:%M %Z") if local else "Date unavailable",
+        "date_label": f"{local:%b %d, %Y} · {clock_time(local)} {local:%Z}" if local else "Date unavailable",
         "date_kind": "Imported" if imported else "Updated",
-        "broadcast_label": broadcast.strftime("%b %d, %Y · %H:%M %z") if broadcast else "",
+        "broadcast_label": f"{broadcast:%b %d, %Y} · {clock_time(broadcast)} {broadcast:%z}" if broadcast else "",
         "preview": preview[:12],
     }
 
@@ -95,7 +105,12 @@ def unique_titles(rows):
     for row in rows:
         time = row.pop("_title_time")
         if counts[key(row)] > 1 and time:
-            row["title"] += " · " + time
+            row["title"] += " " + time
+    counts = Counter(key(row) for row in rows)
+    for row in rows:
+        offset = row.pop("_title_offset")
+        if counts[key(row)] > 1 and offset:
+            row["title"] += " " + offset
     # Some legacy records share even the update minute. Use a stable identifier
     # as a last resort rather than inventing an episode date or renumbering them.
     counts = Counter(key(row) for row in rows)
@@ -130,7 +145,7 @@ def playlist_row(row):
         artists = list(dict.fromkeys(a.strip() for t in preview for a in t["artists"] if a.strip()))[:3]
         compact = ' · '.join(f'<span class="preview-artist">{escape(a)}</span>' for a in artists or ["Unknown artist"])
         full = ''.join(sample(t) for t in preview)
-        songs = f'''<details class="song-preview"><summary aria-label="Expand {len(preview)}-song sample for {escape(row['name'])}"><span class="sample-strip">{compact}</span><span class="sample-toggle"><span class="closed-label">+ {len(preview)} songs</span><span class="open-label">− Close</span></span></summary><div class="sample-expanded"><p>Song sample · {len(preview)} tracks</p><ul>{full}</ul></div></details>'''
+        songs = f'''<details class="song-preview"><summary aria-label="Expand {len(preview)}-song sample for {escape(row['station'] + ' - ' + row['title'])}"><span class="sample-strip">{compact}</span><span class="sample-toggle"><span class="closed-label">+ {len(preview)} songs</span><span class="open-label">− Close</span></span></summary><div class="sample-expanded"><p>Song sample · {len(preview)} tracks</p><ul>{full}</ul></div></details>'''
     else:
         songs = '<span class="no-sample">No song sample available</span>'
     return f'''<article class="playlist-row" data-playlist-id="{row['id']}"><span class="station-code">{escape(row['station'])}</span><div class="playlist-info">{link}<span class="playlist-meta">{escape(context)}</span></div><div class="preview-cell">{songs}</div><span class="track-count" title="{'Track count unavailable' if row['count_label'] == '—' else 'Tracks'}">{row['count_label']}<span>tracks</span></span></article>'''
@@ -227,7 +242,7 @@ def main(infile, output_dir="docs", now=None, timezone_name=DEFAULT_TIMEZONE):
                      "short": day.strftime("%a %d %b"), "weekday": day.strftime("%a"), "today": offset == 0})
     payload = json.dumps(rows, ensure_ascii=False, separators=(",", ":"))
     config = {
-        "days": days, "timezone": timezone_name, "updatedLabel": local_now.strftime("%d %b %Y · %H:%M %Z"),
+        "days": days, "timezone": timezone_name, "updatedLabel": f"{local_now:%d %b %Y} · {clock_time(local_now)} {local_now:%Z}",
         "timezoneLabel": "Pacific time" if timezone_name == DEFAULT_TIMEZONE else timezone_name,
         "dataVersion": hashlib.sha256(payload.encode()).hexdigest()[:12],
         "assetVersion": hashlib.sha256((ASSETS / "catalog.css").read_bytes() + (ASSETS / "catalog.mjs").read_bytes()).hexdigest()[:12],

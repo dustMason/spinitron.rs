@@ -7,7 +7,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from generate_static_html import main, normalize, unique_titles
+from generate_static_html import clock_time, main, normalize, unique_titles
 from zoneinfo import ZoneInfo
 
 NOW = datetime.fromisoformat("2026-09-09T02:00:00+00:00")
@@ -63,12 +63,29 @@ class CatalogWebsiteTest(unittest.TestCase):
             rows.append(normalize(row, ZONE))
         unique_titles(rows)
         self.assertEqual([r["title"] for r in rows], [
-            "FREEFORM · 2026-09-01 · 01:00 -0700",
-            "FREEFORM · 2026-09-01 · 07:00 -0700",
-            "FREEFORM · 2026-08-31",
+            "FREEFORM - 2026-09-01 1:00am",
+            "FREEFORM - 2026-09-01 7:00am",
+            "FREEFORM - 2026-08-31",
         ])
         self.assertTrue(all(r["day"] == "2026-09-08" for r in rows))
         self.assertTrue(all("_title_time" not in r for r in rows))
+
+    def test_canonical_names_are_shared_with_spotify_and_suffixes_are_not_doubled(self):
+        rows = []
+        for i, hour in enumerate([0, 12, 17]):
+            start = f"2026-09-09T{hour:02}:00:00-0700"
+            self.assertEqual(clock_time(datetime.fromisoformat(start)), ["12:00am", "12:00pm", "5:00pm"][i])
+            row = playlist(i, broadcast_start=start)
+            row["name"] = "KALX - Radio Dunya - 2026-09-09"
+            normalized = normalize(row, ZONE)
+            self.assertEqual(normalized["title"], "Radio Dunya - 2026-09-09")
+            row["display_name"] = "KALX - FREEFORM - 2026-09-09 " + clock_time(datetime.fromisoformat(start))
+            rows.append(normalize(row, ZONE))
+        unique_titles(rows)
+        self.assertEqual([r["title"] for r in rows], [
+            "FREEFORM - 2026-09-09 12:00am", "FREEFORM - 2026-09-09 12:00pm", "FREEFORM - 2026-09-09 5:00pm"])
+        self.assertIn("5:00pm", rows[2]["broadcast_label"])
+        self.assertNotIn("17:00", rows[2]["broadcast_label"])
 
     def test_legacy_dates_are_labeled_and_exact_collisions_are_stable(self):
         originals = [playlist(i) for i in range(4)]
@@ -94,8 +111,8 @@ class CatalogWebsiteTest(unittest.TestCase):
         originals[1]["broadcast_start"] = "2025-11-02T01:00:00-0800"
         rows = [normalize(r, ZONE) for r in originals]
         unique_titles(rows)
-        self.assertEqual(rows[0]["title"], "FREEFORM · 2025-11-02 · 01:00 -0700")
-        self.assertEqual(rows[1]["title"], "FREEFORM · 2025-11-02 · 01:00 -0800")
+        self.assertEqual(rows[0]["title"], "FREEFORM - 2025-11-02 1:00am -0700")
+        self.assertEqual(rows[1]["title"], "FREEFORM - 2025-11-02 1:00am -0800")
         self.assertIn("date unavailable", rows[2]["title"])
         self.assertEqual(len({r["title"] for r in rows}), 4)
 

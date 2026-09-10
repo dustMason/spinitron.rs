@@ -1049,7 +1049,13 @@ impl SpotifyClient {
                     .filter(|message| !message.is_empty())
                     .map(|message| format!(": {message}"))
                     .unwrap_or_default();
-                let message = format!("Spotify {method} {path} failed (HTTP {status}){detail}");
+                let cooldown = if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+                    format!("; Retry-After: {delay}s")
+                } else {
+                    String::new()
+                };
+                let message =
+                    format!("Spotify {method} {path} failed (HTTP {status}){detail}{cooldown}");
                 if method == reqwest::Method::POST
                     && (path == "me/playlists"
                         || path == format!("users/{}/playlists", self.user_id))
@@ -1199,6 +1205,16 @@ impl ArchiveSpotify for SpotifyClient {
 
     async fn track_uris(&self, id: &str) -> Result<Vec<String>> {
         self.get_playlist_tracks(id).await
+    }
+
+    async fn rename_archive(&self, id: &str, name: &str) -> Result<()> {
+        self.archive_request(
+            reqwest::Method::PUT,
+            &format!("playlists/{id}"),
+            Some(serde_json::json!({"name": name})),
+        )
+        .await?;
+        Ok(())
     }
 
     async fn preview(&self, id: &str) -> Result<Value> {
