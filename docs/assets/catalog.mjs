@@ -38,7 +38,7 @@ export function renderRow(row) {
     : `<span class="playlist-title">${escape(row.title)}</span>`;
   const meta = row.broadcast_label ? `Broadcast ${row.broadcast_label}` : `${row.date_kind} ${row.date_label}`;
   const preview = row.preview.length
-    ? `<details class="song-preview"><summary aria-label="Expand ${row.preview.length}-song sample for ${escape(row.name)}"><span class="sample-strip">${artistPreview(row.preview)}</span><span class="sample-toggle"><span class="closed-label">+ ${row.preview.length} songs</span><span class="open-label">− Close</span></span></summary><div class="sample-expanded"><p>Song sample · ${row.preview.length} tracks</p><ul>${row.preview.map(t => song(t)).join("")}</ul></div></details>`
+    ? `<details class="song-preview"><summary aria-label="Expand ${row.preview.length}-song sample for ${escape(`${row.station} - ${row.title}`)}"><span class="sample-strip">${artistPreview(row.preview)}</span><span class="sample-toggle"><span class="closed-label">+ ${row.preview.length} songs</span><span class="open-label">− Close</span></span></summary><div class="sample-expanded"><p>Song sample · ${row.preview.length} tracks</p><ul>${row.preview.map(t => song(t)).join("")}</ul></div></details>`
     : '<span class="no-sample">No song sample available</span>';
   return `<article class="playlist-row" data-playlist-id="${escape(row.id)}"><span class="station-code">${escape(row.station)}</span><div class="playlist-info">${title}<span class="playlist-meta">${escape(meta)}</span></div><div class="preview-cell">${preview}</div><span class="track-count" title="${row.count_label === "—" ? "Track count unavailable" : "Tracks"}">${escape(row.count_label)}<span>tracks</span></span></article>`;
 }
