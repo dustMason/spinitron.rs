@@ -8,6 +8,12 @@ The daily job checks the past seven days for completed broadcasts. Each broadcas
 
 New playlists are named **"Station - YYYY-MM-DD HH:MM - Broadcast title"**. The date and time come from the station's broadcast timestamp. The job waits until an episode has finished, plus a one-hour buffer, and fetches fresh track data before archiving it.
 
+Spotify track searches retry temporary server and connection errors up to three
+attempts, with backoff and a 30-second timeout per attempt. Short `Retry-After`
+delays are honored; longer cooldowns stop the lookup. Failed searches remain
+errors and are never cached as missing songs. Playlist creation and other writes
+are never retried automatically after an uncertain response.
+
 The full catalog lives in `data/catalog.json` and on the website. New playlists are removed from the owner's Spotify library once, after the catalog has been committed. They remain accessible by their Spotify links. Save any playlist you want to keep in your library; subsequent archive runs leave it alone. Existing playlists are imported as legacy catalog entries and are not automatically removed or rewritten.
 
 Claude Code wrote nearly all of this!
