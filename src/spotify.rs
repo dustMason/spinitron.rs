@@ -273,38 +273,20 @@ impl SpotifyClient {
         let query = format!("track:{} artist:{}", track.song, track.artist);
         let encoded_query = urlencoding::encode(&query);
 
-        let url = format!(
-            "https://api.spotify.com/v1/search?q={}&type=track&limit=1",
-            encoded_query
-        );
-
-        let response = self
-            .client
-            .get(&url)
-            .header("Authorization", format!("Bearer {}", self.access_token))
-            .send()
-            .await?;
-
-        let status = response.status();
-        if !status.is_success() {
-            let error_text = response.text().await?;
-            return Err(anyhow!(
-                "Spotify search API error ({}): {}",
-                status,
-                error_text
-            ));
-        }
-
-        let response_text = response.text().await?;
-        let json: Value = serde_json::from_str(&response_text).map_err(|e| {
-            anyhow!(
-                "Failed to parse search JSON response: {}. Response body: {}",
-                e,
-                response_text
+        // Searches are reads: use the same bounded retry/timeout handling as
+        // archive reads. An upstream 502 must not become a cached "no match".
+        let json = self
+            .archive_request(
+                reqwest::Method::GET,
+                &format!("search?q={encoded_query}&type=track&limit=1"),
+                None,
             )
-        })?;
+            .await?;
+        let tracks = json["tracks"]["items"]
+            .as_array()
+            .ok_or_else(|| anyhow!("Spotify search response is missing tracks.items"))?;
 
-        let spotify_track = if let Some(tracks) = json["tracks"]["items"].as_array() {
+        let spotify_track = {
             if let Some(track_data) = tracks.first() {
                 Some(SpotifyTrack {
                     id: track_data["id"].as_str().unwrap_or("").to_string(),
@@ -322,8 +304,6 @@ impl SpotifyClient {
             } else {
                 None
             }
-        } else {
-            None
         };
 
         // Cache the result with 14-day expiration
@@ -1069,7 +1049,13 @@ impl SpotifyClient {
                     .filter(|message| !message.is_empty())
                     .map(|message| format!(": {message}"))
                     .unwrap_or_default();
-                let message = format!("Spotify {method} {path} failed (HTTP {status}){detail}");
+                let cooldown = if status == reqwest::StatusCode::TOO_MANY_REQUESTS {
+                    format!("; Retry-After: {delay}s")
+                } else {
+                    String::new()
+                };
+                let message =
+                    format!("Spotify {method} {path} failed (HTTP {status}){detail}{cooldown}");
                 if method == reqwest::Method::POST
                     && (path == "me/playlists"
                         || path == format!("users/{}/playlists", self.user_id))
@@ -1219,6 +1205,16 @@ impl ArchiveSpotify for SpotifyClient {
 
     async fn track_uris(&self, id: &str) -> Result<Vec<String>> {
         self.get_playlist_tracks(id).await
+    }
+
+    async fn rename_archive(&self, id: &str, name: &str) -> Result<()> {
+        self.archive_request(
+            reqwest::Method::PUT,
+            &format!("playlists/{id}"),
+            Some(serde_json::json!({"name": name})),
+        )
+        .await?;
+        Ok(())
     }
 
     async fn preview(&self, id: &str) -> Result<Value> {

@@ -124,6 +124,7 @@ pub trait ArchiveSpotify {
     async fn create_archive(&mut self, name: &str, description: &str) -> Result<RemotePlaylist>;
     async fn replace_draft(&self, id: &str, uris: &[String]) -> Result<()>;
     async fn inspect(&self, id: &str) -> Result<RemotePlaylist>;
+    async fn rename_archive(&self, id: &str, name: &str) -> Result<()>;
     async fn track_uris(&self, id: &str) -> Result<Vec<String>>;
     async fn preview(&self, id: &str) -> Result<Value>;
     async fn remove_from_library(&self, id: &str) -> Result<()>;
@@ -194,15 +195,153 @@ impl Catalog {
             .is_some_and(|e| !matches!(e.state, State::Prepared | State::Creating | State::Filling))
     }
 
-    pub fn listings(&self) -> Vec<&Value> {
+    pub fn listings(&self) -> Result<Vec<Value>> {
+        let names = self.archive_names()?;
         let mut rows: Vec<_> = self
             .entries
-            .values()
-            .filter(|e| !matches!(e.state, State::Prepared | State::Creating | State::Filling))
-            .map(|e| &e.listing)
+            .iter()
+            .filter(|(_, e)| !matches!(e.state, State::Prepared | State::Creating | State::Filling))
+            .map(|(key, e)| {
+                let mut listing = e.listing.clone();
+                if let Some(name) = names.get(key) {
+                    // Share the exact naming policy with the website, even while
+                    // a bounded migration is still catching up on Spotify.
+                    listing["display_name"] = name.clone().into();
+                }
+                listing
+            })
             .collect();
         rows.sort_by(|a, b| a["name"].as_str().cmp(&b["name"].as_str()));
-        rows
+        Ok(rows)
+    }
+
+    /// Names are computed over the whole catalog, including earlier broadcasts
+    /// outside the scrape window. Reserve the suffix before truncating the title.
+    pub fn archive_names(&self) -> Result<BTreeMap<String, String>> {
+        let broadcasts = self
+            .entries
+            .iter()
+            .filter_map(|(key, entry)| {
+                entry
+                    .broadcast
+                    .as_ref()
+                    .filter(|_| entry.state != State::Legacy)
+                    .map(|show| (key, entry, show))
+            })
+            .collect::<Vec<_>>();
+        let mut levels = BTreeMap::<&String, usize>::new();
+        loop {
+            let mut names = BTreeMap::new();
+            let mut groups = BTreeMap::<String, Vec<&String>>::new();
+            for (key, entry, show) in &broadcasts {
+                let start = broadcast_time(&show.start_time)?;
+                let level = *levels.get(key).unwrap_or(&0);
+                let mut suffix = start.format(" - %Y-%m-%d").to_string();
+                if level >= 1 {
+                    suffix.push_str(&start.format(" %-I:%M%P").to_string());
+                }
+                if level >= 2 {
+                    // The clock repeats during the autumn DST transition.
+                    suffix.push_str(&start.format(" %z").to_string());
+                }
+                if level >= 3 {
+                    suffix.push_str(&format!(" [{key}]"));
+                }
+                let room = 100usize
+                    .checked_sub(suffix.chars().count())
+                    .context("Archive name suffix exceeds Spotify's name limit")?;
+                let title = show.title.replace("&amp;", "&").replace("&quot;", "\"");
+                let prefix = format!(
+                    "{} - {}",
+                    entry.station,
+                    title.split_whitespace().collect::<Vec<_>>().join(" ")
+                );
+                let prefix = prefix.chars().take(room).collect::<String>();
+                let name = format!("{}{suffix}", prefix.trim_end());
+                groups.entry(name.to_lowercase()).or_default().push(key);
+                names.insert((*key).clone(), name);
+            }
+            let collisions = groups
+                .values()
+                .filter(|keys| keys.len() > 1)
+                .collect::<Vec<_>>();
+            if collisions.is_empty() {
+                return Ok(names);
+            }
+            for keys in collisions {
+                let next = keys
+                    .iter()
+                    .map(|key| *levels.get(key).unwrap_or(&0))
+                    .max()
+                    .unwrap()
+                    + 1;
+                if next > 3 {
+                    bail!("Could not disambiguate archive names");
+                }
+                for key in keys {
+                    levels.insert(key, next);
+                }
+            }
+        }
+    }
+
+    /// Only name changes require Spotify requests. A lost response is reconciled
+    /// with a read on the next run; completed tracks and library membership stay put.
+    pub async fn sync_archive_names(
+        &mut self,
+        path: &Path,
+        spotify: &impl ArchiveSpotify,
+        limit: usize,
+        interval: std::time::Duration,
+    ) -> Result<usize> {
+        let mut synced = 0;
+        for (key, name) in self.archive_names()? {
+            let entry = &self.entries[&key];
+            if entry.listing["name"].as_str() == Some(&name) {
+                continue;
+            }
+            if entry.owner_id.as_deref() != Some(spotify.owner_id()) {
+                bail!("Archive name update belongs to a different Spotify account");
+            }
+            if let Some(id) = &entry.playlist_id {
+                if synced == limit {
+                    break;
+                }
+                let marker = format!("Spinitron archive: {key}");
+                tokio::time::sleep(interval).await;
+                let remote = spotify.inspect(id).await?;
+                if remote.id != *id
+                    || remote.owner_id != spotify.owner_id()
+                    || !remote.matches_marker(&marker)
+                {
+                    bail!("Refusing to rename {key}: unexpected ID, owner, or archive marker");
+                }
+                if remote.name != name {
+                    if entry.listing["name"].as_str() != Some(&remote.name) {
+                        bail!("Name of {key} changed outside the catalog; review before renaming");
+                    }
+                    tokio::time::sleep(interval).await;
+                    spotify.rename_archive(id, &name).await?;
+                    tokio::time::sleep(interval).await;
+                    let verified = spotify.inspect(id).await?;
+                    if verified.id != *id
+                        || verified.owner_id != remote.owner_id
+                        || verified.description != remote.description
+                        || verified.name != name
+                    {
+                        bail!("Spotify name update for {key} was not verified; retry will inspect first");
+                    }
+                }
+                synced += 1;
+                eprintln!("Archive name: {name}");
+            } else if entry.state != State::Prepared {
+                // Keep the old name while recovering an uncertain creation.
+                continue;
+            }
+            self.entries.get_mut(&key).unwrap().listing["name"] = name.into();
+            self.save(path)?;
+        }
+        Ok(synced)
     }
 
     /// Resume saved work even after its broadcast leaves the scraping window.
@@ -265,15 +404,6 @@ impl Catalog {
                     show.id
                 );
             }
-            let date = broadcast_time(&show.start_time)?
-                .format("%Y-%m-%d %H:%M")
-                .to_string();
-            let title = show.title.replace("&amp;", "&").replace("&quot;", "\"");
-            // Put the date first so it survives title truncation. Keep Unicode.
-            let name: String = format!("{station} - {date} - {title}")
-                .chars()
-                .take(100)
-                .collect();
             self.entries.insert(
                 key.clone(),
                 Entry {
@@ -283,10 +413,17 @@ impl Catalog {
                     owner_id: Some(spotify.owner_id().into()),
                     playlist_id: None,
                     desired_uris: uris,
-                    listing: serde_json::json!({"station":station,"name":name}),
+                    listing: serde_json::json!({"station":station}),
                     release_attempt: None,
                 },
             );
+        }
+        if self.entries[&key].state == State::Prepared {
+            let name = self
+                .archive_names()?
+                .remove(&key)
+                .context("Missing archive name")?;
+            self.entries.get_mut(&key).unwrap().listing["name"] = name.into();
             self.save(path)?;
         }
         if self.entries[&key].owner_id.as_deref() != Some(spotify.owner_id()) {

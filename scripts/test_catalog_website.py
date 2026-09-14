@@ -7,7 +7,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from generate_static_html import main, normalize
+from generate_static_html import clock_time, main, normalize, unique_titles
 from zoneinfo import ZoneInfo
 
 NOW = datetime.fromisoformat("2026-09-09T02:00:00+00:00")
@@ -53,6 +53,80 @@ class CatalogWebsiteTest(unittest.TestCase):
         with contextlib.redirect_stdout(io.StringIO()):
             main(data, root / "docs", now=NOW)
         return root / "docs"
+
+    def test_titles_use_broadcast_date_and_disambiguate_same_day_broadcasts(self):
+        rows = []
+        for i, start in enumerate(["2026-09-01T01:00:00-0700", "2026-09-01T07:00:00-0700",
+                                   "2026-08-31T22:00:00-0700"]):
+            row = playlist(i, imported_at="2026-09-09T00:00:00Z", broadcast_start=start)
+            row["name"] = "KALX - " + datetime.fromisoformat(start).strftime("%Y-%m-%d %H:%M") + " - FREEFORM"
+            rows.append(normalize(row, ZONE))
+        unique_titles(rows)
+        self.assertEqual([r["title"] for r in rows], [
+            "FREEFORM - 2026-09-01 1:00am",
+            "FREEFORM - 2026-09-01 7:00am",
+            "FREEFORM - 2026-08-31",
+        ])
+        self.assertTrue(all(r["day"] == "2026-09-08" for r in rows))
+        self.assertTrue(all("_title_time" not in r for r in rows))
+
+    def test_canonical_names_are_shared_with_spotify_and_suffixes_are_not_doubled(self):
+        rows = []
+        for i, hour in enumerate([0, 12, 17]):
+            start = f"2026-09-09T{hour:02}:00:00-0700"
+            self.assertEqual(clock_time(datetime.fromisoformat(start)), ["12:00am", "12:00pm", "5:00pm"][i])
+            row = playlist(i, broadcast_start=start)
+            row["name"] = "KALX - Radio Dunya - 2026-09-09"
+            normalized = normalize(row, ZONE)
+            self.assertEqual(normalized["title"], "Radio Dunya - 2026-09-09")
+            row["display_name"] = "KALX - FREEFORM - 2026-09-09 " + clock_time(datetime.fromisoformat(start))
+            rows.append(normalize(row, ZONE))
+        unique_titles(rows)
+        self.assertEqual([r["title"] for r in rows], [
+            "FREEFORM - 2026-09-09 12:00am", "FREEFORM - 2026-09-09 12:00pm", "FREEFORM - 2026-09-09 5:00pm"])
+        self.assertIn("5:00pm", rows[2]["broadcast_label"])
+        self.assertNotIn("17:00", rows[2]["broadcast_label"])
+
+    def test_legacy_dates_are_labeled_and_exact_collisions_are_stable(self):
+        originals = [playlist(i) for i in range(4)]
+        for row in originals:
+            row["name"] = "KALX - FREEFORM"
+        originals[0]["last_updated"] = "2026-07-18 08:04 UTC"
+        originals[1]["last_updated"] = "2026-07-20 09:11 UTC"
+        rows = [normalize(r, ZONE) for r in originals]
+        unique_titles(rows)
+        self.assertEqual(rows[0]["title"], "FREEFORM · updated 2026-07-18")
+        self.assertEqual(rows[1]["title"], "FREEFORM · updated 2026-07-20")
+        self.assertEqual(len({r["title"] for r in rows}), 4)
+        reverse = [normalize(r, ZONE) for r in reversed(originals)]
+        unique_titles(reverse)
+        self.assertEqual({r["id"]: r["title"] for r in rows}, {r["id"]: r["title"] for r in reverse})
+        self.assertTrue(all(r["name"] == "KALX - FREEFORM" for r in rows))
+
+    def test_fall_back_hour_and_missing_dates_have_unique_titles(self):
+        originals = [playlist(i) for i in range(4)]
+        for row in originals:
+            row.update(name="KALX - FREEFORM", last_updated="")
+        originals[0]["broadcast_start"] = "2025-11-02T01:00:00-0700"
+        originals[1]["broadcast_start"] = "2025-11-02T01:00:00-0800"
+        rows = [normalize(r, ZONE) for r in originals]
+        unique_titles(rows)
+        self.assertEqual(rows[0]["title"], "FREEFORM - 2025-11-02 1:00am -0700")
+        self.assertEqual(rows[1]["title"], "FREEFORM - 2025-11-02 1:00am -0800")
+        self.assertIn("date unavailable", rows[2]["title"])
+        self.assertEqual(len({r["title"] for r in rows}), 4)
+
+    def test_dates_and_titles_are_shared_by_static_pages_and_search_data(self):
+        rows = [playlist(i, broadcast_start="2026-09-01T01:00:00-0700") for i in range(26)]
+        for row in rows:
+            row["name"] = "KALX - 2026-09-01 01:00 - FREEFORM"
+        with tempfile.TemporaryDirectory() as tmp:
+            output = self.generate(rows, Path(tmp))
+            data = json.loads((output / "assets/catalog-data.json").read_text())
+            self.assertEqual(len({r["title"] for r in data}), 26)
+            pages = "".join("".join(Page(p.read_text()).text) for p in (output / "archive").glob("*.html"))
+            for row in data:
+                self.assertEqual(pages.count(row["title"]), 1)
 
     def test_seven_calendar_days_use_import_time_in_pacific_with_legacy_fallback(self):
         rows = [

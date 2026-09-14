@@ -353,9 +353,20 @@ main{
   color:#828282
 }
 .playlist-meta{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:4px 12px;
   font-size:9px;
   line-height:1.5;
   color:var(--muted)
+}
+.playlist-app-link{
+  color:var(--blue);
+  font-size:10px;
+  white-space:nowrap;
+  text-decoration:underline;
+  text-underline-offset:2px
 }
 .preview-cell{
   min-width:0;

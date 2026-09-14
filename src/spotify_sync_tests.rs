@@ -8,6 +8,7 @@ struct Exchange {
     path: String,
     status: u16,
     reply: Value,
+    headers: Vec<(&'static str, &'static str)>,
 }
 
 fn exchange(method: &'static str, path: &str, reply: Value) -> Exchange {
@@ -16,6 +17,7 @@ fn exchange(method: &'static str, path: &str, reply: Value) -> Exchange {
         path: path.into(),
         status: 200,
         reply,
+        headers: vec![],
     }
 }
 
@@ -64,7 +66,12 @@ async fn mock_client(
                 serde_json::from_slice(&request[header_end..header_end + length]).unwrap()
             });
             let body = expected.reply.to_string();
-            let response = format!("HTTP/1.1 {} Test\r\nContent-Type: application/json\r\nContent-Length: {}\r\nConnection: close\r\n\r\n{}", expected.status, body.len(), body);
+            let extra_headers: String = expected
+                .headers
+                .iter()
+                .map(|(name, value)| format!("{name}: {value}\r\n"))
+                .collect();
+            let response = format!("HTTP/1.1 {} Test\r\nContent-Type: application/json\r\nContent-Length: {}\r\n{extra_headers}Connection: close\r\n\r\n{}", expected.status, body.len(), body);
             stream.write_all(response.as_bytes()).await.unwrap();
         }
         bodies
@@ -84,6 +91,36 @@ async fn requests(server: tokio::task::JoinHandle<Vec<Value>>) -> Vec<Value> {
         .await
         .unwrap()
         .unwrap()
+}
+
+#[tokio::test]
+async fn archive_rename_writes_only_name_and_does_not_retry_uncertain_write() {
+    let (client, server) = mock_client(|_| {
+        vec![
+            exchange("PUT", "/v1/playlists/p1", Value::Null),
+            Exchange {
+                status: 502,
+                ..exchange("PUT", "/v1/playlists/p2", Value::Null)
+            },
+        ]
+    })
+    .await;
+    client
+        .rename_archive("p1", "KALX - Radio Dunya - 2026-09-09")
+        .await
+        .unwrap();
+    assert!(client
+        .rename_archive("p2", "KALX - FREEFORM - 2026-09-09 5:00pm")
+        .await
+        .is_err());
+    let bodies = requests(server).await;
+    assert_eq!(
+        bodies,
+        vec![
+            serde_json::json!({"name":"KALX - Radio Dunya - 2026-09-09"}),
+            serde_json::json!({"name":"KALX - FREEFORM - 2026-09-09 5:00pm"}),
+        ]
+    );
 }
 
 fn seed_show(client: &mut SpotifyClient, uris: &[String], existing: bool) -> ShowGroup {
@@ -150,6 +187,152 @@ fn uris(names: &[&str]) -> Vec<String> {
         .collect()
 }
 
+fn search_track() -> Track {
+    Track {
+        artist: "Test Artist".into(),
+        song: "Test Song".into(),
+        album: String::new(),
+        label: None,
+        time: None,
+    }
+}
+
+fn search_exchange(status: u16, reply: Value) -> Exchange {
+    let mut response = exchange(
+        "GET",
+        "/v1/search?q=track%3ATest%20Song%20artist%3ATest%20Artist&type=track&limit=1",
+        reply,
+    );
+    response.status = status;
+    response
+}
+
+fn search_match() -> Value {
+    serde_json::json!({"tracks":{"items":[{
+        "id":"matched", "uri":"spotify:track:matched", "name":"Test Song",
+        "artists":[{"name":"Test Artist"}]
+    }]}})
+}
+
+#[tokio::test]
+async fn search_recovers_from_502_and_caches_the_successful_match() {
+    let (mut client, server) = mock_client(|_| vec![
+        search_exchange(502, serde_json::json!({"error":{"message":"An unexpected error occurred. Please try again later."}})),
+        search_exchange(200, search_match()),
+    ]).await;
+    let started = std::time::Instant::now();
+    let (found, called) = client
+        .search_track_with_cache_info(&search_track())
+        .await
+        .unwrap();
+    assert!(called);
+    assert_eq!(found.unwrap().uri, "spotify:track:matched");
+    assert!(started.elapsed() >= std::time::Duration::from_secs(1));
+    let (cached, called) = client
+        .search_track_with_cache_info(&search_track())
+        .await
+        .unwrap();
+    assert!(!called);
+    assert_eq!(cached.unwrap().uri, "spotify:track:matched");
+    assert_eq!(requests(server).await.len(), 2);
+}
+
+#[tokio::test]
+async fn exhausted_search_retries_are_bounded_and_do_not_poison_the_cache() {
+    let (mut client, server) = mock_client(|_| {
+        let mut replies: Vec<_> = (0..3)
+            .map(|_| {
+                search_exchange(
+                    502,
+                    serde_json::json!({"error":{"message":"Temporary failure"}}),
+                )
+            })
+            .collect();
+        replies.push(search_exchange(200, search_match()));
+        replies
+    })
+    .await;
+    let error = client
+        .search_track_with_cache_info(&search_track())
+        .await
+        .unwrap_err();
+    assert!(error.to_string().contains("HTTP 502"));
+    assert!(client.track_cache.entries.is_empty());
+    let (found, called) = client
+        .search_track_with_cache_info(&search_track())
+        .await
+        .unwrap();
+    assert!(called);
+    assert_eq!(found.unwrap().uri, "spotify:track:matched");
+    assert_eq!(requests(server).await.len(), 4);
+}
+
+#[tokio::test]
+async fn search_honors_short_retry_after_and_stops_for_long_cooldowns() {
+    for (delay, retries) in [("2", true), ("8128", false)] {
+        let (mut client, server) = mock_client(|_| {
+            let mut limited =
+                search_exchange(429, serde_json::json!({"error":{"message":"Rate limited"}}));
+            limited.headers.push(("Retry-After", delay));
+            let mut replies = vec![limited];
+            if retries {
+                replies.push(search_exchange(200, search_match()));
+            }
+            replies
+        })
+        .await;
+        let started = std::time::Instant::now();
+        let result = client.search_track_with_cache_info(&search_track()).await;
+        if retries {
+            assert!(result.is_ok());
+            assert!(started.elapsed() >= std::time::Duration::from_secs(2));
+        } else {
+            assert!(result.unwrap_err().to_string().contains("HTTP 429"));
+            assert!(client.track_cache.entries.is_empty());
+        }
+        assert_eq!(requests(server).await.len(), if retries { 2 } else { 1 });
+    }
+}
+
+#[tokio::test]
+async fn search_does_not_retry_permanent_errors_or_cache_malformed_results() {
+    for status in [200, 400, 401, 403] {
+        let (mut client, server) = mock_client(|_| {
+            vec![search_exchange(
+                status,
+                serde_json::json!({"error":{"message":"Invalid request"}}),
+            )]
+        })
+        .await;
+        assert!(client
+            .search_track_with_cache_info(&search_track())
+            .await
+            .is_err());
+        assert!(client.track_cache.entries.is_empty());
+        assert_eq!(requests(server).await.len(), 1);
+    }
+}
+
+#[tokio::test]
+async fn search_still_caches_genuine_no_match_results() {
+    let (mut client, server) = mock_client(|_| {
+        vec![search_exchange(
+            200,
+            serde_json::json!({"tracks":{"items":[]}}),
+        )]
+    })
+    .await;
+    for expected_call in [true, false] {
+        let (found, called) = client
+            .search_track_with_cache_info(&search_track())
+            .await
+            .unwrap();
+        assert!(found.is_none());
+        assert_eq!(called, expected_call);
+    }
+    assert_eq!(requests(server).await.len(), 1);
+}
+
 #[tokio::test]
 async fn archive_rejections_keep_the_error_reason_without_echoing_credentials() {
     let (mut client, server) = mock_client(|_| {
@@ -157,6 +340,7 @@ async fn archive_rejections_keep_the_error_reason_without_echoing_credentials() 
             method: "POST",
             path: "/v1/me/playlists".into(),
             status: 400,
+            headers: vec![],
             reply: serde_json::json!({
                 "error":{"status":400,"message":"Invalid description test-token\n"},
                 "access_token":"other-secret-that-must-not-be-logged"
@@ -186,6 +370,7 @@ async fn server_and_timeout_responses_do_not_allow_repeating_a_creation() {
                 method: "POST",
                 path: "/v1/me/playlists".into(),
                 status,
+                headers: vec![],
                 reply: serde_json::json!({"error":{"message":"Temporary failure"}}),
             }]
         })
@@ -375,6 +560,7 @@ async fn incomplete_or_failed_playlist_reads_never_write() {
                     path: "/v1/page2".into(),
                     status,
                     reply,
+                    headers: vec![],
                 },
             ]
         })

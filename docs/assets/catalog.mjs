@@ -6,7 +6,7 @@ export function filterRows(rows, query = "", station = "") {
   const terms = searchable(query).trim().split(/\s+/).filter(Boolean);
   return rows.filter(row => {
     if (station && row.station !== station) return false;
-    const text = searchable([row.name, row.station, ...row.preview.flatMap(t => [t.name, ...t.artists])].join(" "));
+    const text = searchable([row.name, row.title, row.station, ...row.preview.flatMap(t => [t.name, ...t.artists])].join(" "));
     return terms.every(term => text.includes(term));
   });
 }
@@ -37,10 +37,13 @@ export function renderRow(row) {
     ? `<a class="playlist-title" href="${escape(row.url)}" target="_blank" rel="noopener">${escape(row.title)}<span aria-hidden="true"> ↗</span></a>`
     : `<span class="playlist-title">${escape(row.title)}</span>`;
   const meta = row.broadcast_label ? `Broadcast ${row.broadcast_label}` : `${row.date_kind} ${row.date_label}`;
+  const appLink = row.app_uri
+    ? `<a class="playlist-app-link" href="${escape(row.app_uri)}" aria-label="Open ${escape(`${row.station} - ${row.title}`)} in Spotify">Open in Spotify</a>`
+    : "";
   const preview = row.preview.length
-    ? `<details class="song-preview"><summary aria-label="Expand ${row.preview.length}-song sample for ${escape(row.name)}"><span class="sample-strip">${artistPreview(row.preview)}</span><span class="sample-toggle"><span class="closed-label">+ ${row.preview.length} songs</span><span class="open-label">− Close</span></span></summary><div class="sample-expanded"><p>Song sample · ${row.preview.length} tracks</p><ul>${row.preview.map(t => song(t)).join("")}</ul></div></details>`
+    ? `<details class="song-preview"><summary aria-label="Expand ${row.preview.length}-song sample for ${escape(`${row.station} - ${row.title}`)}"><span class="sample-strip">${artistPreview(row.preview)}</span><span class="sample-toggle"><span class="closed-label">+ ${row.preview.length} songs</span><span class="open-label">− Close</span></span></summary><div class="sample-expanded"><p>Song sample · ${row.preview.length} tracks</p><ul>${row.preview.map(t => song(t)).join("")}</ul></div></details>`
     : '<span class="no-sample">No song sample available</span>';
-  return `<article class="playlist-row" data-playlist-id="${escape(row.id)}"><span class="station-code">${escape(row.station)}</span><div class="playlist-info">${title}<span class="playlist-meta">${escape(meta)}</span></div><div class="preview-cell">${preview}</div><span class="track-count" title="${row.count_label === "—" ? "Track count unavailable" : "Tracks"}">${escape(row.count_label)}<span>tracks</span></span></article>`;
+  return `<article class="playlist-row" data-playlist-id="${escape(row.id)}"><span class="station-code">${escape(row.station)}</span><div class="playlist-info">${title}<div class="playlist-meta"><span>${escape(meta)}</span>${appLink}</div></div><div class="preview-cell">${preview}</div><span class="track-count" title="${row.count_label === "—" ? "Track count unavailable" : "Tracks"}">${escape(row.count_label)}<span>tracks</span></span></article>`;
 }
 
 const columnHead = '<div class="column-head" aria-hidden="true"><span>Station</span><span>Playlist / broadcast</span><span>A few artists inside</span><span>Tracks</span></div>';

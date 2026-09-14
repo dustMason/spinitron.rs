@@ -4,9 +4,15 @@ A Rust application that scrapes radio station playlists from Spinitron and creat
 
 I made it because I love listening to KALX and wanted an easy way to pull music that i hear on the air into my Spotify library. I discovered that Spinitron powers their radio playlists feature, so I'm using that as the source of data to power this app.
 
-The daily job checks the past seven days for completed broadcasts. Each broadcast gets its own Spotify playlist, preserving the original order and repeated tracks that Spotify can match. Once published, that playlist is never rewritten by the archive job. Broadcasts are identified by station and Spinitron episode ID, so title changes do not create replacements.
+The daily job checks the past seven days for completed broadcasts. Each broadcast gets its own Spotify playlist, preserving the original order and repeated tracks that Spotify can match. Once published, its tracks are never rewritten by the archive job. Broadcasts are identified by station and Spinitron episode ID, so title changes do not create replacements.
 
-New playlists are named **"Station - YYYY-MM-DD HH:MM - Broadcast title"**. The date and time come from the station's broadcast timestamp. The job waits until an episode has finished, plus a one-hour buffer, and fetches fresh track data before archiving it.
+New playlists are named **"Station - Broadcast title - YYYY-MM-DD"**. Duplicate show names on the same date add a time such as **5:00pm**. The date and time come from the station's broadcast timestamp. The job waits until an episode has finished, plus a one-hour buffer, and fetches fresh track data before archiving it.
+
+Spotify track searches retry temporary server and connection errors up to three
+attempts, with backoff and a 30-second timeout per attempt. Short `Retry-After`
+delays are honored; longer cooldowns stop the lookup. Failed searches remain
+errors and are never cached as missing songs. Playlist creation and other writes
+are never retried automatically after an uncertain response.
 
 The full catalog lives in `data/catalog.json` and on the website. New playlists are removed from the owner's Spotify library once, after the catalog has been committed. They remain accessible by their Spotify links. Save any playlist you want to keep in your library; subsequent archive runs leave it alone. Existing playlists are imported as legacy catalog entries and are not automatically removed or rewritten.
 
@@ -14,10 +20,22 @@ Claude Code wrote nearly all of this!
 
 ## Browsing the catalog
 
-The website uses compact playlist rows with three artist names and a direct
-Spotify link. Expand a row to see the twelve-song sample with album art. The recent view
+The website uses compact playlist rows with three artist names. **Open in Spotify**
+uses a `spotify:playlist:…` link to open the installed app; the playlist title
+opens the web player. These links work in recent imports, archive pages and
+filtered search results. Expand a row to see the twelve-song sample with album art. The recent view
 has one section for each of the last seven calendar days, including days with no
 imports. Each day initially shows ten rows; expand it to see the rest.
+
+Titles include the broadcast date, for example **FREEFORM - 2026-09-01**.
+When a station has multiple entries with the same title on that date, a time
+such as **5:00pm** distinguishes them; the UTC offset appears only if the clock
+time repeats. Legacy collections use a clearly labeled
+**updated** date because their original broadcast dates are unknown. Records
+with identical titles and timestamps also show a stable identifier. These
+catalog labels are calculated across the full archive, so filtering and paging
+do not change them. Broadcast labels share the Spotify naming policy; legacy
+labels use update dates only on the website.
 
 The full archive includes every catalog record, including empty playlists and
 records without a known date, across static pages of 25 playlists. Search show
@@ -232,6 +250,8 @@ python3 scripts/cleanup_spinitron_library.py --prompt
 
 This one command prompts for the three Spotify values with hidden input. Use
 `--reauthorize` instead to reuse the app credentials and sign in through Spotify.
+Cleanup requests `user-follow-read` in addition to the archive's playlist scopes
+because Spotify's generic library-membership checks require it for playlists.
 The default mode only reads Spotify. It writes `plan.json` and a complete
 `catalog-backup.json` into a new dated folder under `verification/`. The plan
 includes all owned, saved **legacy catalog** playlists, including empty ones.
@@ -259,7 +279,11 @@ workflow discovers playlists through Your Library and could recreate removed one
 Cleanup uses Spotify's [Remove Items from Library](https://developer.spotify.com/documentation/web-api/reference/remove-library-items)
 endpoint for playlist URIs only. It never edits tracks, names, visibility, or the
 catalog. Each removal is checked afterward: the playlist must still be readable,
-have the same owner, track count and snapshot, and no longer be saved. This matches
+have the same owner, name, visibility, track count, and complete ordered song
+sequence, and no longer be saved. The script stores a hash of the ordered track
+URIs before each removal. Spotify can change the playlist snapshot when library
+membership changes, so the snapshot alone is not used to verify preservation.
+Snapshots still detect edits since planning and changes during paginated reads. This matches
 Spotify's [unfollowing semantics](https://developer.spotify.com/documentation/web-api/concepts/playlists#following-and-unfollowing-a-playlist).
 
 Keep `receipt.json` beside the plan. Each attempt is recorded before sending the
@@ -269,7 +293,42 @@ it is never automatically retried. Changes since planning also stop cleanup.
 The process holds a local lock to prevent overlapping cleanup commands. No
 credentials are written to the plan, backup, or receipt.
 
+For the approved full cleanup plan, `python3 scripts/resume_spinitron_cleanup.py`
+runs one bounded pass: up to 40 remaining playlists, with at least two seconds
+between Spotify API attempts. It saves HTTP 429 cooldowns in
+`verification/full-cleanup-20260909/rate-limit.json` and checks that file before
+authentication. Schedule separate passes after cooldowns; do not run the
+unrestricted command alongside this worker. The worker uses browser authorization
+without storing tokens, so an agent must complete the existing Spotify session.
+After the last pass it audits the unrelated library entries. If that audit is
+interrupted, `--verify-final` resumes only the final read-only audit.
+
 ### Catalog persistence and one-time library removal
+
+Broadcast playlists use `STATION - Show - YYYY-MM-DD`, using the broadcast's
+local date. Repeated show names on the same station and date add a time, for
+example `KALX - FREEFORM - 2026-09-09 5:00pm`. Times appear only when needed;
+repeated daylight-saving hours also include the UTC offset. A broadcast ID is
+the final fallback for otherwise identical names. Long show titles are shortened
+before the date suffix, preserving the suffix and Unicode.
+
+The website uses the same names. Each daily run also reconciles up to 40 existing
+broadcast names, including older broadcasts when a later import introduces a
+collision. It spaces rename reads and writes by two seconds and checkpoints
+each verified name. Unchanged names make no requests. A lost rename response is
+checked before another write, and unexpected manual name changes stop the pass.
+Tracks, import dates, and saved status are preserved. Legacy rolling playlists
+retain their names because their recorded update dates are not broadcast dates.
+
+```bash
+# Read-only name proposal; no Spotify authentication needed.
+cargo run -- --plan-archive-names
+# Apply one bounded pass using the configured Spotify account.
+cargo run -- --sync-archive-names
+```
+
+Run a manual name pass separately from the archive workflow and library cleanup;
+honor any active Spotify cooldown before starting it.
 
 The catalog is durable state, **not a disposable cache**. Keep it in version
 control and restore it if a checkout loses it. Missing or malformed catalogs

@@ -10,6 +10,8 @@ struct FakeSpotify {
     creates: usize,
     fills: Cell<usize>,
     removals: Cell<usize>,
+    renames: Cell<usize>,
+    uncertain_rename: Cell<bool>,
     fail_fill: Cell<bool>,
     fail_remove: Cell<bool>,
     uncertain_create: bool,
@@ -81,6 +83,14 @@ impl ArchiveSpotify for FakeSpotify {
     async fn inspect(&self, id: &str) -> Result<RemotePlaylist> {
         Ok(self.playlists.borrow()[id].0.clone())
     }
+    async fn rename_archive(&self, id: &str, name: &str) -> Result<()> {
+        self.renames.set(self.renames.get() + 1);
+        self.playlists.borrow_mut().get_mut(id).unwrap().0.name = name.into();
+        if self.uncertain_rename.replace(false) {
+            bail!("Lost rename response");
+        }
+        Ok(())
+    }
     async fn track_uris(&self, id: &str) -> Result<Vec<String>> {
         Ok(self.playlists.borrow()[id].1.clone())
     }
@@ -149,6 +159,176 @@ fn tracks() -> Vec<Track> {
             time: None,
         })
         .collect()
+}
+
+#[tokio::test]
+async fn names_only_add_times_for_collisions_and_rename_earlier_broadcasts_once() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify::default();
+    let mut first = show(1);
+    first.title = "FREEFORM".into();
+    first.start_time = "2026-01-01T00:00:00-0800".into();
+    f.catalog
+        .archive(&f.path(), &mut spotify, "KALX", &first, &tracks())
+        .await
+        .unwrap();
+    assert_eq!(
+        spotify.inspect("p1").await.unwrap().name,
+        "KALX - FREEFORM - 2026-01-01"
+    );
+    let before = f.catalog.entries["KALX:1"].clone();
+    // Unsaved and saved copies retain their membership across name changes.
+    spotify.library.borrow_mut().remove("p1");
+    let mut second = first.clone();
+    second.id = 2;
+    second.start_time = "2026-01-01T17:00:00-0800".into();
+    f.catalog
+        .archive(&f.path(), &mut spotify, "KALX", &second, &tracks())
+        .await
+        .unwrap();
+    assert_eq!(
+        spotify.inspect("p2").await.unwrap().name,
+        "KALX - FREEFORM - 2026-01-01 5:00pm"
+    );
+    let pause = std::time::Duration::ZERO;
+    assert_eq!(
+        f.catalog
+            .sync_archive_names(&f.path(), &spotify, 40, pause)
+            .await
+            .unwrap(),
+        1
+    );
+    assert_eq!(
+        spotify.inspect("p1").await.unwrap().name,
+        "KALX - FREEFORM - 2026-01-01 12:00am"
+    );
+    assert_eq!(
+        f.catalog
+            .sync_archive_names(&f.path(), &spotify, 40, pause)
+            .await
+            .unwrap(),
+        0
+    );
+    let mut after = f.catalog.entries["KALX:1"].clone();
+    after.listing["name"] = before.listing["name"].clone();
+    assert_eq!(
+        serde_json::to_value(after).unwrap(),
+        serde_json::to_value(before).unwrap()
+    );
+    assert_eq!(
+        spotify.track_uris("p1").await.unwrap(),
+        spotify.track_uris("p2").await.unwrap()
+    );
+    assert!(!spotify.library.borrow().contains("p1"));
+    assert!(spotify.library.borrow().contains("p2"));
+    assert_eq!(
+        (
+            spotify.creates,
+            spotify.fills.get(),
+            spotify.renames.get(),
+            spotify.removals.get()
+        ),
+        (2, 2, 1, 0)
+    );
+    assert_eq!(
+        f.catalog.listings().unwrap()[0]["display_name"],
+        "KALX - FREEFORM - 2026-01-01 12:00am"
+    );
+}
+
+#[tokio::test]
+async fn names_preserve_suffix_and_unicode_and_disambiguate_dst_and_truncation() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify::default();
+    let title = "音楽".repeat(100);
+    for (id, start, ending) in [
+        (1, "2025-11-02T01:00:00-0700", "A"),
+        (2, "2025-11-02T01:00:00-0800", "B"),
+        (3, "2025-11-02T01:00:00-0800", "C"),
+        (4, "2025-11-03T12:00:00-0800", "D"),
+    ] {
+        let mut broadcast = show(id);
+        broadcast.title = format!("{title}{ending}");
+        broadcast.start_time = start.into();
+        f.catalog
+            .archive(&f.path(), &mut spotify, "KALX", &broadcast, &tracks())
+            .await
+            .unwrap();
+    }
+    let names = f.catalog.archive_names().unwrap();
+    assert!(names["KALX:1"].ends_with(" - 2025-11-02 1:00am -0700"));
+    assert!(names["KALX:2"].ends_with(" - 2025-11-02 1:00am -0800 [KALX:2]"));
+    assert!(names["KALX:3"].ends_with(" - 2025-11-02 1:00am -0800 [KALX:3]"));
+    assert!(names["KALX:4"].ends_with(" - 2025-11-03"));
+    assert!(names
+        .values()
+        .all(|n| n.chars().count() <= 100 && n.contains("音楽")));
+    assert_eq!(names.values().collect::<HashSet<_>>().len(), 4);
+}
+
+#[tokio::test]
+async fn name_migration_is_bounded_reconciles_lost_response_and_preserves_custom_names() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify::default();
+    for id in [1, 2] {
+        f.catalog
+            .archive(&f.path(), &mut spotify, "KALX", &show(id), &tracks())
+            .await
+            .unwrap();
+        let old = format!("KALX - 2026-01-01 12:00 - Old title {id}");
+        f.catalog
+            .entries
+            .get_mut(&format!("KALX:{id}"))
+            .unwrap()
+            .listing["name"] = old.clone().into();
+        spotify
+            .playlists
+            .borrow_mut()
+            .get_mut(&format!("p{id}"))
+            .unwrap()
+            .0
+            .name = old;
+    }
+    f.catalog.save(&f.path()).unwrap();
+    spotify.uncertain_rename.set(true);
+    let pause = std::time::Duration::ZERO;
+    assert!(f
+        .catalog
+        .sync_archive_names(&f.path(), &spotify, 1, pause)
+        .await
+        .is_err());
+    f.catalog = Catalog::load(&f.path()).unwrap();
+    assert_eq!(
+        f.catalog
+            .sync_archive_names(&f.path(), &spotify, 1, pause)
+            .await
+            .unwrap(),
+        1
+    );
+    assert_eq!(spotify.renames.get(), 1); // Lost response is recovered without another PUT.
+    spotify.playlists.borrow_mut().get_mut("p2").unwrap().0.name = "My custom title".into();
+    assert!(f
+        .catalog
+        .sync_archive_names(&f.path(), &spotify, 40, pause)
+        .await
+        .unwrap_err()
+        .to_string()
+        .contains("outside the catalog"));
+    assert_eq!(spotify.renames.get(), 1);
+    spotify
+        .playlists
+        .borrow_mut()
+        .get_mut("p2")
+        .unwrap()
+        .0
+        .owner_id = "someone-else".into();
+    assert!(f
+        .catalog
+        .sync_archive_names(&f.path(), &spotify, 40, pause)
+        .await
+        .unwrap_err()
+        .to_string()
+        .contains("owner"));
 }
 
 #[tokio::test]
@@ -225,7 +405,7 @@ async fn saving_an_archived_playlist_survives_future_runs() {
     assert!(spotify.library.borrow().contains("p1"));
     assert_eq!(spotify.removals.get(), 1);
     assert_eq!(spotify.creates, 1);
-    assert_eq!(f.catalog.listings().len(), 1);
+    assert_eq!(f.catalog.listings().unwrap().len(), 1);
 }
 
 #[tokio::test]
@@ -238,7 +418,7 @@ async fn partial_draft_recovers_without_creating_another_playlist() {
         .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
         .await
         .is_err());
-    assert!(f.catalog.listings().is_empty());
+    assert!(f.catalog.listings().unwrap().is_empty());
     assert!(f
         .catalog
         .prepare_release(&f.path(), "owner")
@@ -383,7 +563,20 @@ async fn empty_or_unfinished_broadcast_does_not_create_a_playlist() {
 async fn legacy_playlists_remain_listed_and_are_never_automatically_removed() {
     let mut f = Fixture::new();
     f.catalog.entries.insert("legacy:existing".into(),Entry { station:"KALX".into(),broadcast:None,state:State::Legacy,owner_id:None,playlist_id:Some("existing".into()),desired_uris:Vec::new(),listing:serde_json::json!({"name":"Old archive","url":"https://open.spotify.com/playlist/existing","track_count":17}),release_attempt:None });
-    assert_eq!(f.catalog.listings().len(), 1);
+    assert_eq!(f.catalog.listings().unwrap().len(), 1);
+    assert!(f.catalog.archive_names().unwrap().is_empty());
+    assert_eq!(
+        f.catalog
+            .sync_archive_names(
+                &f.path(),
+                &FakeSpotify::default(),
+                40,
+                std::time::Duration::ZERO
+            )
+            .await
+            .unwrap(),
+        0
+    );
     assert!(f
         .catalog
         .prepare_release(&f.path(), "owner")
