@@ -85,9 +85,6 @@ ul{
   font-size:22px;
   vertical-align:-1px
 }
-.site-description{
-  color:var(--muted)
-}
 .site-header nav{
   margin-left:auto;
   display:flex;
@@ -111,7 +108,7 @@ ul{
 }
 .intro-line{
   display:flex;
-  justify-content:space-between;
+  justify-content:flex-end;
   gap:16px;
   align-items:center;
   padding:14px 0 20px;
@@ -611,9 +608,6 @@ main{
   }
 }
 @media(max-width:950px){
-  .site-description{
-    display:none
-  }
   .intro-line{
     align-items:start
   }
