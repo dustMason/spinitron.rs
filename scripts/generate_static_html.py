@@ -40,6 +40,14 @@ def safe_url(value):
     return value if parsed.scheme in ("https", "http") and parsed.netloc else ""
 
 
+def spotify_app_uri(value):
+    parsed = urlparse(safe_url(value))
+    playlist = re.fullmatch(r"/(?:intl-[a-z-]+/)?playlist/([A-Za-z0-9]{22})/?", parsed.path)
+    if parsed.netloc == "open.spotify.com" and playlist:
+        return "spotify:playlist:" + playlist[1]
+    return ""
+
+
 def clock_time(value):
     return value.strftime("%I:%M%p").lstrip("0").lower()
 
@@ -84,6 +92,7 @@ def normalize(row, zone):
         "_title_time": title_time,
         "_title_offset": (broadcast or local).strftime("%z") if broadcast or local else "",
         "url": safe_url(row.get("url")), "source_url": safe_url(row.get("source_url")),
+        "app_uri": spotify_app_uri(row.get("url")),
         "track_count": count,
         "count_label": str(count) if count >= len(preview[:12]) else "—",
         "day": local.date().isoformat() if local else None,
@@ -140,6 +149,9 @@ def playlist_row(row):
     context = f'{row["date_kind"]} {row["date_label"]}'
     if row["broadcast_label"]:
         context = "Broadcast " + row["broadcast_label"]
+    app_link = (f'<a class="playlist-app-link" href="{escape(row["app_uri"])}" '
+                f'aria-label="Open {escape(row["station"] + " - " + row["title"])} in Spotify">Open in Spotify</a>'
+                if row["app_uri"] else "")
     preview = row["preview"]
     if preview:
         artists = list(dict.fromkeys(a.strip() for t in preview for a in t["artists"] if a.strip()))[:3]
@@ -148,7 +160,7 @@ def playlist_row(row):
         songs = f'''<details class="song-preview"><summary aria-label="Expand {len(preview)}-song sample for {escape(row['station'] + ' - ' + row['title'])}"><span class="sample-strip">{compact}</span><span class="sample-toggle"><span class="closed-label">+ {len(preview)} songs</span><span class="open-label">− Close</span></span></summary><div class="sample-expanded"><p>Song sample · {len(preview)} tracks</p><ul>{full}</ul></div></details>'''
     else:
         songs = '<span class="no-sample">No song sample available</span>'
-    return f'''<article class="playlist-row" data-playlist-id="{row['id']}"><span class="station-code">{escape(row['station'])}</span><div class="playlist-info">{link}<span class="playlist-meta">{escape(context)}</span></div><div class="preview-cell">{songs}</div><span class="track-count" title="{'Track count unavailable' if row['count_label'] == '—' else 'Tracks'}">{row['count_label']}<span>tracks</span></span></article>'''
+    return f'''<article class="playlist-row" data-playlist-id="{row['id']}"><span class="station-code">{escape(row['station'])}</span><div class="playlist-info">{link}<div class="playlist-meta"><span>{escape(context)}</span>{app_link}</div></div><div class="preview-cell">{songs}</div><span class="track-count" title="{'Track count unavailable' if row['count_label'] == '—' else 'Tracks'}">{row['count_label']}<span>tracks</span></span></article>'''
 
 
 def rows_html(rows):
