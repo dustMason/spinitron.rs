@@ -9,3 +9,8 @@ __pycache__/
 
 # IDE files
 .idea/
+
+# Native macOS companion build products
+companion/macos/.build/
+companion/macos/build/
+companion/macos/.swiftpm/

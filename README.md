@@ -16,7 +16,7 @@ are never retried automatically after an uncertain response.
 
 The full catalog lives in `data/catalog.json` and on the website. New playlists are removed from the owner's Spotify library once, after the catalog has been committed. They remain accessible by their Spotify links. Save any playlist you want to keep in your library; subsequent archive runs leave it alone. Existing playlists are imported as legacy catalog entries and are not automatically removed or rewritten.
 
-Claude Code wrote nearly all of this!
+Started with Claude Code, then built out with Codex.
 
 ## Browsing the catalog
 
@@ -61,6 +61,13 @@ Open `http://127.0.0.1:8765/`. For a separate build target, pass
 `--binary /path/to/spinitron-scraper` to `update_website.py`. The generator writes
 `docs/index.html`, `docs/archive/*.html`, shared CSS/JavaScript and the search
 data under `docs/assets/`, plus the original `docs/playlists.jsonl` export.
+
+## macOS menu bar app
+
+The [native companion app](companion/macos/README.md) browses the published
+catalog from the menu bar and opens playlists directly in Spotify. It caches
+the list locally, includes an explicit Refresh command, and defaults to KALX.
+Use Settings to change the default station or include older collections.
 
 ## Usage
 
