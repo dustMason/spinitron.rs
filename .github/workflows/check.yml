@@ -1,6 +1,12 @@
 name: Checks
 on:
   pull_request:
+    # The macOS companion is built and tested locally, independently of the scraper.
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'Cargo.*'
+      - '.github/workflows/**'
   push:
     branches: [main]
     paths:
@@ -15,6 +21,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /*
+            !/companion/
+          sparse-checkout-cone-mode: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'

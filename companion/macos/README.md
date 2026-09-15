@@ -51,3 +51,11 @@ Tests cover broadcast dates, station/search filtering, legacy records, valid
 Spotify destinations, offline reload and preserving the cache on refresh
 failure. To also validate a downloaded production catalog, set
 `SPINITRON_CATALOG_FIXTURE=/absolute/path/to/playlists.jsonl` when running tests.
+
+## CI
+
+The app source stays in this repository under `companion/macos/`. App-only
+changes skip the scraper's push and pull-request checks. Both the checks and
+the scheduled playlist job exclude `companion/` from their working checkouts;
+they do not build or test Swift. Run the app's build and test scripts locally.
+GitHub Pages publishes only `docs/`, so the app is not part of the website.

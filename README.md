@@ -16,7 +16,7 @@ are never retried automatically after an uncertain response.
 
 The full catalog lives in `data/catalog.json` and on the website. New playlists are removed from the owner's Spotify library once, after the catalog has been committed. They remain accessible by their Spotify links. Save any playlist you want to keep in your library; subsequent archive runs leave it alone. Existing playlists are imported as legacy catalog entries and are not automatically removed or rewritten.
 
-Claude Code wrote nearly all of this!
+Started with Claude Code, then built out with Codex.
 
 ## Browsing the catalog
 
