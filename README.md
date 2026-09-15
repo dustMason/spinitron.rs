@@ -62,6 +62,13 @@ Open `http://127.0.0.1:8765/`. For a separate build target, pass
 `docs/index.html`, `docs/archive/*.html`, shared CSS/JavaScript and the search
 data under `docs/assets/`, plus the original `docs/playlists.jsonl` export.
 
+## macOS menu bar app
+
+The [native companion app](companion/macos/README.md) browses the published
+catalog from the menu bar and opens playlists directly in Spotify. It caches
+the list locally, includes an explicit Refresh command, and defaults to KALX.
+Use Settings to change the default station or include older collections.
+
 ## Usage
 
 ### Basic Usage
