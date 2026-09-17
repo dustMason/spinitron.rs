@@ -69,47 +69,19 @@ jobs:
         if: ${{ !cancelled() && !inputs.auth_check_only && steps.build.outcome == 'success' }}
         continue-on-error: true
         run: python3 scripts/update_website.py
-      - name: Prepare one-time removals for new broadcasts
-        id: prepare
-        if: ${{ !cancelled() && !inputs.auth_check_only && steps.build.outcome == 'success' }}
-        continue-on-error: true
-        env:
-          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
-          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
-          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
-        run: ./target/release/spinitron-scraper --prepare-library-release release-plan.json
-      - name: Persist catalog before removing library membership
-        id: checkpoint
+      - name: Persist catalog and publish the website
+        id: persist
         if: ${{ !cancelled() && !inputs.auth_check_only && steps.build.outcome == 'success' }}
         continue-on-error: true
         run: |
           git config user.email 'action@github.com'
           git config user.name 'GitHub Action'
           git add data/catalog.json
-          if ! git diff --staged --quiet; then
-            git commit -m 'Archive broadcasts and checkpoint catalog'
-          fi
-          git push
-      - name: Remove newly archived playlists from the library once
-        id: release
-        if: ${{ !cancelled() && !inputs.auth_check_only && steps.prepare.outcome == 'success' && steps.website.outcome == 'success' && steps.checkpoint.outcome == 'success' }}
-        continue-on-error: true
-        env:
-          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
-          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
-          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
-        run: ./target/release/spinitron-scraper --apply-library-release release-plan.json
-      - name: Persist removal results
-        id: persist
-        if: ${{ !cancelled() && !inputs.auth_check_only && steps.checkpoint.outcome == 'success' }}
-        continue-on-error: true
-        run: |
-          git add data/catalog.json
           if [ '${{ steps.website.outcome }}' = success ]; then
             git add docs/index.html docs/playlists.jsonl docs/assets docs/archive
           fi
           if ! git diff --staged --quiet; then
-            git commit -m 'Record library removals and publish the catalog website'
+            git commit -m 'Archive broadcasts and publish the catalog website'
           fi
           git push
       - name: Preserve recovery state
@@ -119,14 +91,13 @@ jobs:
           name: catalog-recovery-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
             data/catalog.json
-            release-plan*.json
             spotify_cache/track_cache.json
       - name: Report partial failures
         if: ${{ !cancelled() && !inputs.auth_check_only && steps.build.outcome == 'success' }}
         env:
-          OUTCOMES: '${{ steps.archive.outcome }} ${{ steps.website.outcome }} ${{ steps.prepare.outcome }} ${{ steps.checkpoint.outcome }} ${{ steps.release.outcome }} ${{ steps.persist.outcome }}'
+          OUTCOMES: '${{ steps.archive.outcome }} ${{ steps.website.outcome }} ${{ steps.persist.outcome }}'
         run: |
-          echo "Archive, website, preparation, checkpoint, removal, persistence: $OUTCOMES" >> "$GITHUB_STEP_SUMMARY"
+          echo "Archive, website, persistence: $OUTCOMES" >> "$GITHUB_STEP_SUMMARY"
           for outcome in $OUTCOMES; do
             test "$outcome" = success || exit 1
           done

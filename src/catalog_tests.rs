@@ -9,11 +9,9 @@ struct FakeSpotify {
     library: RefCell<HashSet<String>>,
     creates: usize,
     fills: Cell<usize>,
-    removals: Cell<usize>,
     renames: Cell<usize>,
     uncertain_rename: Cell<bool>,
     fail_fill: Cell<bool>,
-    fail_remove: Cell<bool>,
     uncertain_create: bool,
     reject_create: bool,
 }
@@ -97,14 +95,6 @@ impl ArchiveSpotify for FakeSpotify {
     async fn preview(&self, _: &str) -> Result<Value> {
         Ok(serde_json::json!([]))
     }
-    async fn remove_from_library(&self, id: &str) -> Result<()> {
-        self.removals.set(self.removals.get() + 1);
-        if self.fail_remove.get() {
-            bail!("Uncertain removal");
-        }
-        self.library.borrow_mut().remove(id);
-        Ok(())
-    }
 }
 
 struct Fixture {
@@ -128,9 +118,6 @@ impl Fixture {
     }
     fn path(&self) -> PathBuf {
         self.root.join("catalog.json")
-    }
-    fn plan(&self) -> PathBuf {
-        self.root.join("release.json")
     }
 }
 impl Drop for Fixture {
@@ -222,13 +209,8 @@ async fn names_only_add_times_for_collisions_and_rename_earlier_broadcasts_once(
     assert!(!spotify.library.borrow().contains("p1"));
     assert!(spotify.library.borrow().contains("p2"));
     assert_eq!(
-        (
-            spotify.creates,
-            spotify.fills.get(),
-            spotify.renames.get(),
-            spotify.removals.get()
-        ),
-        (2, 2, 1, 0)
+        (spotify.creates, spotify.fills.get(), spotify.renames.get()),
+        (2, 2, 1)
     );
     assert_eq!(
         f.catalog.listings().unwrap()[0]["display_name"],
@@ -371,41 +353,34 @@ async fn broadcasts_are_distinct_immutable_and_preserve_repeated_tracks() {
 }
 
 #[tokio::test]
-async fn saving_an_archived_playlist_survives_future_runs() {
+async fn archives_stay_saved_and_historical_removal_states_remain_readable() {
     let mut f = Fixture::new();
     let mut spotify = FakeSpotify::default();
-    f.catalog
-        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
-        .await
-        .unwrap();
-    let plan = f.catalog.prepare_release(&f.path(), "owner").unwrap();
-    assert_eq!(
-        Catalog::load(&f.path()).unwrap().entries["KALX:1"].state,
-        State::ReleaseAttempted
-    );
-    atomic_json(&f.plan(), &plan).unwrap();
-    f.catalog
-        .apply_release(&f.path(), &f.plan(), &spotify)
-        .await
-        .unwrap();
-    assert!(!spotify.library.borrow().contains("p1"));
-    // Simulate the user saving the broadcast from the website.
-    spotify.library.borrow_mut().insert("p1".into());
+    for id in 1..=3 {
+        f.catalog
+            .archive(&f.path(), &mut spotify, "KALX", &show(id), &tracks())
+            .await
+            .unwrap();
+    }
+    assert_eq!(spotify.library.borrow().len(), 3);
+    f.catalog.entries.get_mut("KALX:2").unwrap().state = State::Released;
+    f.catalog.entries.get_mut("KALX:3").unwrap().state = State::ReleaseAttempted;
+    spotify.library.borrow_mut().remove("p2");
+    f.catalog.save(&f.path()).unwrap();
     f.catalog = Catalog::load(&f.path()).unwrap();
-    f.catalog
-        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
-        .await
-        .unwrap();
-    assert!(f
-        .catalog
-        .prepare_release(&f.path(), "owner")
-        .unwrap()
-        .playlists
-        .is_empty());
+    for id in 1..=3 {
+        assert!(!f
+            .catalog
+            .archive(&f.path(), &mut spotify, "KALX", &show(id), &tracks())
+            .await
+            .unwrap());
+    }
+    assert_eq!(spotify.creates, 3);
+    assert_eq!(spotify.fills.get(), 3);
     assert!(spotify.library.borrow().contains("p1"));
-    assert_eq!(spotify.removals.get(), 1);
-    assert_eq!(spotify.creates, 1);
-    assert_eq!(f.catalog.listings().unwrap().len(), 1);
+    assert!(!spotify.library.borrow().contains("p2"));
+    assert!(spotify.library.borrow().contains("p3"));
+    assert_eq!(f.catalog.listings().unwrap().len(), 3);
 }
 
 #[tokio::test]
@@ -419,12 +394,6 @@ async fn partial_draft_recovers_without_creating_another_playlist() {
         .await
         .is_err());
     assert!(f.catalog.listings().unwrap().is_empty());
-    assert!(f
-        .catalog
-        .prepare_release(&f.path(), "owner")
-        .unwrap()
-        .playlists
-        .is_empty());
     f.catalog = Catalog::load(&f.path()).unwrap();
     f.catalog
         .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
@@ -508,38 +477,6 @@ async fn lost_creation_response_without_recovery_match_does_not_repeat_post() {
 }
 
 #[tokio::test]
-async fn uncertain_removal_is_not_retried_even_if_the_user_saves_it() {
-    let mut f = Fixture::new();
-    let mut spotify = FakeSpotify::default();
-    f.catalog
-        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
-        .await
-        .unwrap();
-    let plan = f.catalog.prepare_release(&f.path(), "owner").unwrap();
-    atomic_json(&f.plan(), &plan).unwrap();
-    spotify.fail_remove.set(true);
-    assert!(f
-        .catalog
-        .apply_release(&f.path(), &f.plan(), &spotify)
-        .await
-        .is_err());
-    assert!(!f.plan().exists());
-    assert!(f
-        .catalog
-        .prepare_release(&f.path(), "owner")
-        .unwrap()
-        .playlists
-        .is_empty());
-    atomic_json(&f.plan(), &plan).unwrap();
-    assert!(f
-        .catalog
-        .apply_release(&f.path(), &f.plan(), &spotify)
-        .await
-        .is_err());
-    assert_eq!(spotify.removals.get(), 1);
-}
-
-#[tokio::test]
 async fn empty_or_unfinished_broadcast_does_not_create_a_playlist() {
     let mut f = Fixture::new();
     let mut spotify = FakeSpotify::default();
@@ -577,12 +514,6 @@ async fn legacy_playlists_remain_listed_and_are_never_automatically_removed() {
             .unwrap(),
         0
     );
-    assert!(f
-        .catalog
-        .prepare_release(&f.path(), "owner")
-        .unwrap()
-        .playlists
-        .is_empty());
 }
 
 #[test]

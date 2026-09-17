@@ -14,7 +14,7 @@ delays are honored; longer cooldowns stop the lookup. Failed searches remain
 errors and are never cached as missing songs. Playlist creation and other writes
 are never retried automatically after an uncertain response.
 
-The full catalog lives in `data/catalog.json` and on the website. New playlists are removed from the owner's Spotify library once, after the catalog has been committed. They remain accessible by their Spotify links. Save any playlist you want to keep in your library; subsequent archive runs leave it alone. Existing playlists are imported as legacy catalog entries and are not automatically removed or rewritten.
+The full catalog lives in `data/catalog.json` and on the website. New playlists stay saved in the owner's Spotify library. Archive runs preserve completed broadcasts and never automatically remove library membership. Existing playlists remain in the catalog even if they were removed from the library previously.
 
 Started with Claude Code, then built out with Codex.
 
@@ -220,97 +220,23 @@ its original import date permanently.
 
 ## Spotify Playlist Organization
 
-Spotify's Web API cannot manage playlist folders. This project separates the full
-public archive from the playlists you choose to save in your personal library.
-See [Spotify's library-removal semantics](https://developer.spotify.com/documentation/web-api/concepts/playlists#following-and-unfollowing-a-playlist).
+Spotify's Web API [does not expose playlist folders](https://developer.spotify.com/documentation/web-api/concepts/playlists#folders).
+New broadcasts stay in Your Library. Use Spotify's desktop or web interface to
+move generated playlists into a folder such as **KALX**; moving a playlist keeps
+its ID, songs, and catalog link intact.
 
-### Verify library behavior before rollout
+A separate local Codex automation can organize saved catalog playlists through
+Spotify's interface after the daily import. It matches playlists against the
+published catalog and skips ones already filed. Folder organization does not
+run in GitHub Actions and needs the local Spotify session to be available.
 
-```bash
-python3 scripts/verify_archive.py --reauthorize
-```
+Automatic library removal was retired after new archives became unavailable
+following removal on September 17, 2026. The scraper no longer provides release
+plans or an archive-removal verification command. The Python legacy-cleanup
+scripts and old receipts are historical recovery tools, not part of daily runs.
+Do not rerun an old cleanup plan to organize playlists.
 
-This command reuses `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` from your
-environment (prompting only for missing values), then prints a Spotify sign-in
-link. Open that link to authorize the app. The loopback callback captures the new
-refresh token automatically, with no token copying. If you already have all three
-credentials to paste, use `--prompt` instead.
-
-The command builds the app and creates one temporary test playlist. It verifies that removing the playlist
-from the library preserves its contents and ownership, and that it can be saved
-again. The test playlist is then emptied, removed from the library, and removed
-from the public profile. No existing playlist is modified. Credentials stay in
-process memory; the verification receipt contains no secrets.
-
-The same command writes a **read-only cleanup proposal** containing existing
-legacy catalog playlists that are still owned and saved by the authenticated
-account. Review which to keep before any existing-library cleanup. The proposal
-does not itself remove anything.
-
-### Remove the old scraped playlists from Your Library
-
-After deploying the archive workflow and website, prepare a fresh plan:
-
-```bash
-python3 scripts/cleanup_spinitron_library.py --prompt
-```
-
-This one command prompts for the three Spotify values with hidden input. Use
-`--reauthorize` instead to reuse the app credentials and sign in through Spotify.
-Cleanup requests `user-follow-read` in addition to the archive's playlist scopes
-because Spotify's generic library-membership checks require it for playlists.
-The default mode only reads Spotify. It writes `plan.json` and a complete
-`catalog-backup.json` into a new dated folder under `verification/`. The plan
-includes all owned, saved **legacy catalog** playlists, including empty ones.
-Uncataloged generated playlists are listed separately for review; draft and new
-broadcast playlists are excluded. Remove entries from `plan.json` if you want to
-keep some in Your Library, before starting the cleanup.
-
-Apply the reviewed plan explicitly, using the folder printed by the first command:
-
-```bash
-python3 scripts/cleanup_spinitron_library.py --apply verification/library-cleanup-TIMESTAMP/plan.json --prompt
-```
-
-For a large sweep, add `--batch-size 40` to group library-removal requests.
-Metadata is still checked separately for every playlist, with at most four
-concurrent reads. Writes run one batch at a time. A failed or uncertain batch is
-recorded for every affected ID and stops the run without retrying the removal.
-
-The script requires the personal Spotify account `dustmason` and verifies GitHub
-as `dustMason`, without changing the default GitHub CLI account. Before any
-removal it checks that the archive workflow is on `main`, no daily run is active,
-and every selected link exists in a successfully deployed Pages catalog. The old
-workflow discovers playlists through Your Library and could recreate removed ones.
-
-Cleanup uses Spotify's [Remove Items from Library](https://developer.spotify.com/documentation/web-api/reference/remove-library-items)
-endpoint for playlist URIs only. It never edits tracks, names, visibility, or the
-catalog. Each removal is checked afterward: the playlist must still be readable,
-have the same owner, name, visibility, track count, and complete ordered song
-sequence, and no longer be saved. The script stores a hash of the ordered track
-URIs before each removal. Spotify can change the playlist snapshot when library
-membership changes, so the snapshot alone is not used to verify preservation.
-Snapshots still detect edits since planning and changes during paginated reads. This matches
-Spotify's [unfollowing semantics](https://developer.spotify.com/documentation/web-api/concepts/playlists#following-and-unfollowing-a-playlist).
-
-Keep `receipt.json` beside the plan. Each attempt is recorded before sending the
-request. Rerunning the **same plan** skips completed and uncertain attempts, so
-playlists you saved again survive. An uncertain result stops that run for review;
-it is never automatically retried. Changes since planning also stop cleanup.
-The process holds a local lock to prevent overlapping cleanup commands. No
-credentials are written to the plan, backup, or receipt.
-
-For the approved full cleanup plan, `python3 scripts/resume_spinitron_cleanup.py`
-runs one bounded pass: up to 40 remaining playlists, with at least two seconds
-between Spotify API attempts. It saves HTTP 429 cooldowns in
-`verification/full-cleanup-20260909/rate-limit.json` and checks that file before
-authentication. Schedule separate passes after cooldowns; do not run the
-unrestricted command alongside this worker. The worker uses browser authorization
-without storing tokens, so an agent must complete the existing Spotify session.
-After the last pass it audits the unrelated library entries. If that audit is
-interrupted, `--verify-final` resumes only the final read-only audit.
-
-### Catalog persistence and one-time library removal
+### Catalog persistence
 
 Broadcast playlists use `STATION - Show - YYYY-MM-DD`, using the broadcast's
 local date. Repeated show names on the same station and date add a time, for
@@ -345,28 +271,22 @@ The workflow performs these phases in order:
 
 1. Archive new broadcasts and verify the exact track sequence. Failed drafts stay
    in the library and can be resumed; completed playlists are never repopulated.
-2. Generate the full website from the catalog, including playlists outside the library.
-3. Prepare a removal plan for newly completed broadcasts and mark those entries
-   as attempted. Commit and push the catalog **before** applying that plan.
-4. Consume the plan, remove those new playlists from the library, persist results,
-   and publish the website. The new links are published after the initial removal.
+2. Generate the full website from the catalog, including older playlists outside
+   the library.
+3. Commit the catalog and generated website together, keeping new playlists saved.
 
 For manual operation:
 
 ```bash
 cargo run -- --archive
-cargo run -- --prepare-library-release release-plan.json
-# Commit and push data/catalog.json before the next command.
-cargo run -- --apply-library-release release-plan.json
-# Commit and push data/catalog.json again to record results.
+python3 scripts/update_website.py
+# Commit and push data/catalog.json and the generated docs changes.
 ```
 
-Use a fresh plan filename for another manual run. A consumed or uncertain removal
-is never retried automatically, because you might have saved the playlist in the
-meantime. An interrupted run may therefore leave a playlist in the library for
-manual review. Recovery artifacts preserve the catalog and attempted plan if a
-workflow cannot push its state. Do not replay a consumed plan or rebuild the
-catalog from the library: playlists outside the library would be lost.
+Recovery artifacts preserve the catalog if a workflow cannot push its state.
+Historical `released` and `release_attempted` entries remain readable and are
+never automatically re-created, saved, or removed. Do not rebuild the catalog
+from Your Library: older playlists outside the library would be lost.
 
 An uncertain playlist-creation request is recovered only when exactly one owned
 playlist has the broadcast's precise archive marker. If none or multiple are
@@ -406,7 +326,7 @@ The repository includes a GitHub Actions workflow for automated daily playlist u
 
 **Workflow:**
 The **Daily Playlist Update** workflow (`.github/workflows/daily-playlist-update.yml`)
-runs daily at 6 AM UTC, commits the broadcast catalog, removes newly archived
-playlists from the library once, and publishes the website. Partial failures are reported as
+runs daily at 6 AM UTC, keeps new broadcasts saved in Spotify, commits the
+broadcast catalog, and publishes the website. Partial failures are reported as
 failures after recovery state has been persisted. Pull requests run offline Rust
 and website tests without Spotify credentials.
