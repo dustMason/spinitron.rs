@@ -9,7 +9,7 @@ mod models;
 mod scraper;
 mod spotify;
 
-use catalog::{ArchiveSpotify, Catalog};
+use catalog::Catalog;
 use config::AppConfig;
 use models::{ShowEpisode, ShowGroup};
 use spotify::{PlaylistUpdate, SpotifyClient};
@@ -17,7 +17,7 @@ use std::collections::HashMap;
 
 #[derive(Parser)]
 #[command(author, version, about, long_about = None)]
-#[command(group(clap::ArgGroup::new("mode").args(["spotify", "list_playlists", "check_spotify_auth", "archive", "list_catalog", "sync_archive_names", "plan_archive_names", "prepare_library_release", "apply_library_release", "verify_archive_flow", "plan_library_cleanup"])))]
+#[command(group(clap::ArgGroup::new("mode").args(["spotify", "list_playlists", "check_spotify_auth", "archive", "list_catalog", "sync_archive_names", "plan_archive_names"])))]
 struct Args {
     /// Path to config file
     #[arg(short, long, default_value = "config.toml")]
@@ -70,22 +70,6 @@ struct Args {
     /// Maximum existing playlists to rename per pass (two seconds between requests)
     #[arg(long, default_value_t = 40, requires = "sync_archive_names")]
     name_limit: usize,
-
-    /// Prepare one-time library removals for new broadcasts; commit the catalog before applying
-    #[arg(long, value_name = "PLAN.json")]
-    prepare_library_release: Option<PathBuf>,
-
-    /// Apply and consume a prepared library-removal plan; never reuses a consumed plan
-    #[arg(long, value_name = "PLAN.json")]
-    apply_library_release: Option<PathBuf>,
-
-    /// Verify the library/archive behavior on one temporary playlist and write a receipt
-    #[arg(long, value_name = "RECEIPT.json")]
-    verify_archive_flow: Option<PathBuf>,
-
-    /// Write a read-only cleanup proposal for existing catalog playlists in your library
-    #[arg(long, value_name = "PLAN.json")]
-    plan_library_cleanup: Option<PathBuf>,
 }
 
 #[tokio::main]
@@ -120,31 +104,6 @@ async fn main() -> Result<()> {
         return Ok(());
     }
 
-    if let Some(plan_path) = &args.plan_library_cleanup {
-        let catalog = Catalog::load(&args.catalog)?;
-        let spotify = SpotifyClient::new().await?;
-        let plan = spotify.legacy_library_cleanup_plan(&catalog).await?;
-        catalog::atomic_json(plan_path, &plan)?;
-        println!("Wrote a read-only proposal for {} existing playlists; no library membership was changed.", plan["count"]);
-        return Ok(());
-    }
-
-    if let Some(receipt_path) = &args.verify_archive_flow {
-        let catalog = Catalog::load(&args.catalog)?;
-        let source = catalog
-            .entries
-            .values()
-            .find(|e| e.listing["track_count"].as_u64().unwrap_or(0) > 0)
-            .and_then(|e| e.playlist_id.as_deref())
-            .ok_or_else(|| {
-                anyhow::anyhow!("Catalog needs a nonempty source playlist for verification")
-            })?;
-        let mut spotify = SpotifyClient::new().await?;
-        spotify.verify_archive_flow(source, receipt_path).await?;
-        println!("Verified archive access after removal and saving it again. The test playlist was emptied, removed from the library, and removed from the public profile.");
-        return Ok(());
-    }
-
     if args.list_catalog {
         let catalog = Catalog::load(&args.catalog)?;
         for listing in catalog.listings()? {
@@ -152,26 +111,6 @@ async fn main() -> Result<()> {
         }
         return Ok(());
     }
-    if let Some(plan_path) = &args.prepare_library_release {
-        if plan_path.exists() || plan_path.with_extension("consumed.json").exists() {
-            bail!("Choose a new plan path; existing plans must not be overwritten");
-        }
-        let spotify = SpotifyClient::new().await?;
-        let mut catalog = Catalog::load(&args.catalog)?;
-        let plan = catalog.prepare_release(&args.catalog, spotify.owner_id())?;
-        catalog::atomic_json(plan_path, &plan)?;
-        eprintln!("Prepared {} new broadcasts. Commit and push the catalog before applying this one-use plan.", plan.playlists.len());
-        return Ok(());
-    }
-    if let Some(plan_path) = &args.apply_library_release {
-        let spotify = SpotifyClient::new().await?;
-        let mut catalog = Catalog::load(&args.catalog)?;
-        catalog
-            .apply_release(&args.catalog, plan_path, &spotify)
-            .await?;
-        return Ok(());
-    }
-
     if args.check_spotify_auth {
         SpotifyClient::new().await?;
         println!("Spotify authentication succeeded.");

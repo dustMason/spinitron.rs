@@ -94,52 +94,6 @@ async fn requests(server: tokio::task::JoinHandle<Vec<Value>>) -> Vec<Value> {
 }
 
 #[tokio::test]
-async fn archive_membership_uses_library_endpoints_and_does_not_retry_writes() {
-    let (client, server) = mock_client(|_| {
-        vec![
-            exchange(
-                "GET",
-                "/v1/me/library/contains?uris=spotify%3Aplaylist%3Ap1",
-                serde_json::json!([true]),
-            ),
-            exchange(
-                "DELETE",
-                "/v1/me/library?uris=spotify%3Aplaylist%3Ap1",
-                Value::Null,
-            ),
-            exchange(
-                "PUT",
-                "/v1/me/library?uris=spotify%3Aplaylist%3Ap1",
-                Value::Null,
-            ),
-            Exchange {
-                status: 502,
-                ..exchange(
-                    "DELETE",
-                    "/v1/me/library?uris=spotify%3Aplaylist%3Ap2",
-                    Value::Null,
-                )
-            },
-            Exchange {
-                status: 502,
-                ..exchange(
-                    "PUT",
-                    "/v1/me/library?uris=spotify%3Aplaylist%3Ap2",
-                    Value::Null,
-                )
-            },
-        ]
-    })
-    .await;
-    assert!(client.is_saved("p1").await.unwrap());
-    client.remove_from_library("p1").await.unwrap();
-    client.save_to_library("p1").await.unwrap();
-    assert!(client.remove_from_library("p2").await.is_err());
-    assert!(client.save_to_library("p2").await.is_err());
-    assert_eq!(requests(server).await, vec![Value::Null; 5]);
-}
-
-#[tokio::test]
 async fn archive_rename_writes_only_name_and_does_not_retry_uncertain_write() {
     let (client, server) = mock_client(|_| {
         vec![

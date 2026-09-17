@@ -1,8 +1,7 @@
-//! Broadcast archives are independent of Spotify library membership.
+//! Broadcast archives retain their Spotify library membership.
 //!
-//! Publication and library removal are separate phases. The workflow checkpoints
-//! the catalog before applying a one-use removal plan. An uncertain removal is
-//! never retried automatically: the owner may have saved that playlist meanwhile.
+//! The catalog permanently records each completed broadcast, including older
+//! archives outside the library. Archiving never follows or unfollows playlists.
 use anyhow::{bail, Context, Result};
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
@@ -30,6 +29,7 @@ pub enum State {
     Creating,
     Filling,
     Ready,
+    // Retained to read catalogs written before automatic removal was retired.
     ReleaseAttempted,
     Released,
 }
@@ -56,20 +56,6 @@ pub struct Entry {
 pub struct Catalog {
     version: u32,
     pub entries: BTreeMap<String, Entry>,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct ReleasePlan {
-    pub attempt: String,
-    pub owner_id: String,
-    pub playlists: Vec<ReleaseItem>,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct ReleaseItem {
-    pub key: String,
-    pub playlist_id: String,
-    pub name: String,
 }
 
 #[derive(Debug, Clone)]
@@ -127,9 +113,6 @@ pub trait ArchiveSpotify {
     async fn rename_archive(&self, id: &str, name: &str) -> Result<()>;
     async fn track_uris(&self, id: &str) -> Result<Vec<String>>;
     async fn preview(&self, id: &str) -> Result<Value>;
-    async fn is_saved(&self, id: &str) -> Result<bool>;
-    async fn save_to_library(&self, id: &str) -> Result<()>;
-    async fn remove_from_library(&self, id: &str) -> Result<()>;
 }
 
 pub fn atomic_json(path: &Path, value: &impl Serialize) -> Result<()> {
@@ -496,127 +479,4 @@ impl Catalog {
         self.save(path)?;
         Ok(true)
     }
-
-    /// This persisted intent must be committed remotely before applying the plan.
-    /// Only new broadcasts are selected; imported legacy playlists are untouched.
-    pub fn prepare_release(&mut self, path: &Path, owner: &str) -> Result<ReleasePlan> {
-        let attempt = uuid::Uuid::new_v4().to_string();
-        let playlists = self
-            .entries
-            .iter()
-            .filter(|(_, e)| e.state == State::Ready)
-            .map(|(key, e)| {
-                if e.owner_id.as_deref() != Some(owner) {
-                    bail!("Release owner does not match catalog");
-                }
-                Ok(ReleaseItem {
-                    key: key.clone(),
-                    playlist_id: e.playlist_id.clone().context("Missing playlist ID")?,
-                    name: e.listing["name"].as_str().unwrap_or("").into(),
-                })
-            })
-            .collect::<Result<Vec<_>>>()?;
-        for item in &playlists {
-            let e = self.entries.get_mut(&item.key).unwrap();
-            e.state = State::ReleaseAttempted;
-            e.release_attempt = Some(attempt.clone());
-        }
-        self.save(path)?;
-        Ok(ReleasePlan {
-            attempt,
-            owner_id: owner.into(),
-            playlists,
-        })
-    }
-
-    pub async fn apply_release(
-        &mut self,
-        path: &Path,
-        plan_path: &Path,
-        spotify: &impl ArchiveSpotify,
-    ) -> Result<()> {
-        let plan: ReleasePlan = serde_json::from_slice(&fs::read(plan_path)?)?;
-        if plan.owner_id != spotify.owner_id() {
-            bail!("Release plan belongs to a different Spotify account");
-        }
-        for item in &plan.playlists {
-            let entry = self
-                .entries
-                .get(&item.key)
-                .context("Release plan refers to an unknown entry")?;
-            if entry.state != State::ReleaseAttempted
-                || entry.release_attempt.as_deref() != Some(&plan.attempt)
-                || entry.playlist_id.as_deref() != Some(&item.playlist_id)
-                || entry.owner_id.as_deref() != Some(spotify.owner_id())
-            {
-                bail!("Stale or inconsistent release plan");
-            }
-        }
-        // Consume locally before any network mutation. A workflow rerun starts
-        // with the committed attempted state and produces no new plan for these IDs.
-        let consumed = plan_path.with_extension("consumed.json");
-        if consumed.exists() {
-            bail!("This release plan was already attempted");
-        }
-        fs::rename(plan_path, &consumed)?;
-        for item in plan.playlists {
-            let id = &item.playlist_id;
-            let expected = &self.entries[&item.key].desired_uris;
-            // Check contents before touching membership, then verify again after
-            // removal. A successful DELETE alone does not prove the link works.
-            verify_archive_contents(spotify, id, expected).await?;
-            spotify.remove_from_library(id).await.with_context(|| {
-                format!("Removal of {id} is uncertain; stopping the batch. No removals will be retried automatically")
-            })?;
-            let verification = async {
-                verify_archive_contents(spotify, id, expected).await?;
-                if spotify.is_saved(id).await? {
-                    bail!("Playlist is still saved after library removal");
-                }
-                Ok::<_, anyhow::Error>(())
-            }
-            .await;
-            if let Err(error) = verification {
-                // Spotify can make a newly unfollowed archive unavailable. Save
-                // this exact playlist back once, without rewriting its tracks.
-                // Stop before exposing any more broadcasts to the same failure.
-                let recovery = async {
-                    spotify.save_to_library(id).await?;
-                    verify_archive_contents(spotify, id, expected).await?;
-                    if !spotify.is_saved(id).await? {
-                        bail!("Playlist was not saved back to the library");
-                    }
-                    Ok::<_, anyhow::Error>(())
-                }
-                .await;
-                let recovery = match recovery {
-                    Ok(()) => "Restored to the library with its original tracks".to_string(),
-                    Err(error) => format!("Recovery needs manual review: {error:#}"),
-                };
-                bail!("Archive {id} failed verification after library removal: {error:#}. {recovery}. Stopping the batch; no removals will be retried automatically");
-            }
-            self.entries.get_mut(&item.key).unwrap().state = State::Released;
-            self.save(path)?;
-            eprintln!(
-                "Removed new broadcast from library and verified contents: {}",
-                item.name
-            );
-        }
-        Ok(())
-    }
-}
-
-async fn verify_archive_contents(
-    spotify: &impl ArchiveSpotify,
-    id: &str,
-    expected: &[String],
-) -> Result<()> {
-    let remote = spotify.inspect(id).await?;
-    if remote.id != id || remote.owner_id != spotify.owner_id() {
-        bail!("Playlist identity or ownership changed");
-    }
-    if spotify.track_uris(id).await? != expected {
-        bail!("Playlist contents no longer match the catalog");
-    }
-    Ok(())
 }
