@@ -127,6 +127,8 @@ pub trait ArchiveSpotify {
     async fn rename_archive(&self, id: &str, name: &str) -> Result<()>;
     async fn track_uris(&self, id: &str) -> Result<Vec<String>>;
     async fn preview(&self, id: &str) -> Result<Value>;
+    async fn is_saved(&self, id: &str) -> Result<bool>;
+    async fn save_to_library(&self, id: &str) -> Result<()>;
     async fn remove_from_library(&self, id: &str) -> Result<()>;
 }
 
@@ -557,31 +559,64 @@ impl Catalog {
             bail!("This release plan was already attempted");
         }
         fs::rename(plan_path, &consumed)?;
-        let mut failures = Vec::new();
         for item in plan.playlists {
-            let result = async {
-                let remote = spotify.inspect(&item.playlist_id).await?;
-                if remote.owner_id != spotify.owner_id() {
-                    bail!("Playlist ownership changed");
+            let id = &item.playlist_id;
+            let expected = &self.entries[&item.key].desired_uris;
+            // Check contents before touching membership, then verify again after
+            // removal. A successful DELETE alone does not prove the link works.
+            verify_archive_contents(spotify, id, expected).await?;
+            spotify.remove_from_library(id).await.with_context(|| {
+                format!("Removal of {id} is uncertain; stopping the batch. No removals will be retried automatically")
+            })?;
+            let verification = async {
+                verify_archive_contents(spotify, id, expected).await?;
+                if spotify.is_saved(id).await? {
+                    bail!("Playlist is still saved after library removal");
                 }
-                spotify.remove_from_library(&item.playlist_id).await
+                Ok::<_, anyhow::Error>(())
             }
             .await;
-            match result {
-                Ok(()) => {
-                    self.entries.get_mut(&item.key).unwrap().state = State::Released;
-                    self.save(path)?;
-                    eprintln!("Removed new broadcast from library: {}", item.name);
+            if let Err(error) = verification {
+                // Spotify can make a newly unfollowed archive unavailable. Save
+                // this exact playlist back once, without rewriting its tracks.
+                // Stop before exposing any more broadcasts to the same failure.
+                let recovery = async {
+                    spotify.save_to_library(id).await?;
+                    verify_archive_contents(spotify, id, expected).await?;
+                    if !spotify.is_saved(id).await? {
+                        bail!("Playlist was not saved back to the library");
+                    }
+                    Ok::<_, anyhow::Error>(())
                 }
-                Err(error) => failures.push(format!("{}: {error}", item.playlist_id)),
+                .await;
+                let recovery = match recovery {
+                    Ok(()) => "Restored to the library with its original tracks".to_string(),
+                    Err(error) => format!("Recovery needs manual review: {error:#}"),
+                };
+                bail!("Archive {id} failed verification after library removal: {error:#}. {recovery}. Stopping the batch; no removals will be retried automatically");
             }
-        }
-        if !failures.is_empty() {
-            bail!(
-                "Some removals need review; they will not be retried automatically:\n{}",
-                failures.join("\n")
+            self.entries.get_mut(&item.key).unwrap().state = State::Released;
+            self.save(path)?;
+            eprintln!(
+                "Removed new broadcast from library and verified contents: {}",
+                item.name
             );
         }
         Ok(())
     }
+}
+
+async fn verify_archive_contents(
+    spotify: &impl ArchiveSpotify,
+    id: &str,
+    expected: &[String],
+) -> Result<()> {
+    let remote = spotify.inspect(id).await?;
+    if remote.id != id || remote.owner_id != spotify.owner_id() {
+        bail!("Playlist identity or ownership changed");
+    }
+    if spotify.track_uris(id).await? != expected {
+        bail!("Playlist contents no longer match the catalog");
+    }
+    Ok(())
 }

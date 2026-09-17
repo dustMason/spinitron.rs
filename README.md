@@ -14,7 +14,7 @@ delays are honored; longer cooldowns stop the lookup. Failed searches remain
 errors and are never cached as missing songs. Playlist creation and other writes
 are never retried automatically after an uncertain response.
 
-The full catalog lives in `data/catalog.json` and on the website. New playlists are removed from the owner's Spotify library once, after the catalog has been committed. They remain accessible by their Spotify links. Save any playlist you want to keep in your library; subsequent archive runs leave it alone. Existing playlists are imported as legacy catalog entries and are not automatically removed or rewritten.
+The full catalog lives in `data/catalog.json` and on the website. New playlists are removed from the owner's Spotify library once, after the catalog has been committed, and checked to ensure their contents remain readable. If Spotify makes an archive unavailable after removal, the app saves it back and stops the batch for review. Save any playlist you want to keep in your library; subsequent archive runs leave it alone. Existing playlists are imported as legacy catalog entries and are not automatically removed or rewritten.
 
 Started with Claude Code, then built out with Codex.
 
@@ -348,8 +348,18 @@ The workflow performs these phases in order:
 2. Generate the full website from the catalog, including playlists outside the library.
 3. Prepare a removal plan for newly completed broadcasts and mark those entries
    as attempted. Commit and push the catalog **before** applying that plan.
-4. Consume the plan, remove those new playlists from the library, persist results,
-   and publish the website. The new links are published after the initial removal.
+4. Consume the plan and remove new playlists from the library one at a time,
+   verifying ownership, exact track order, and library membership after each
+   removal. Persist the results and publish the website.
+
+A successful Spotify removal response is not enough: on September 17, 2026,
+new archives returned "Resource not found" after removal even though older
+archives still worked. If post-removal verification fails, the app attempts to
+save that same playlist back once and checks its original contents. It never
+rewrites tracks or creates a replacement. The batch stops, reports whether
+recovery succeeded, and leaves the remaining playlists saved for review. These
+attempted entries are not removed again on later runs, including recovered ones.
+Membership operations use Spotify's current `/me/library` endpoints.
 
 For manual operation:
 

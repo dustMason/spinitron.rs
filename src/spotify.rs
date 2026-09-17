@@ -906,7 +906,7 @@ impl SpotifyClient {
             if self.inspect(id).await?.owner_id != self.user_id || self.track_uris(id).await? != [uri.clone()] {
                 return Err(anyhow!("Playlist did not remain owned and readable after library removal"));
             }
-            self.archive_request(reqwest::Method::PUT, &format!("playlists/{id}/followers"), Some(serde_json::json!({"public":true}))).await?;
+            self.save_to_library(id).await?;
             if !self.library_contains(id).await? { return Err(anyhow!("Could not save the archived playlist back to the library")); }
             Ok(serde_json::json!({"verified_at":chrono::Utc::now().to_rfc3339(),"spotify_user_id":self.user_id,
                 "test_playlist_id":id,"removal_preserves_playlist":true,"readable_after_removal":true,"can_save_again":true}))
@@ -980,10 +980,11 @@ impl SpotifyClient {
     }
 
     async fn library_contains(&self, id: &str) -> Result<bool> {
-        let encoded = urlencoding::encode(&self.user_id);
+        let uri = format!("spotify:playlist:{id}");
+        let encoded = urlencoding::encode(&uri);
         self.archive_request(
             reqwest::Method::GET,
-            &format!("playlists/{id}/followers/contains?ids={encoded}"),
+            &format!("me/library/contains?uris={encoded}"),
             None,
         )
         .await?
@@ -1223,12 +1224,28 @@ impl ArchiveSpotify for SpotifyClient {
         Ok(serde_json::json!(preview))
     }
 
+    async fn is_saved(&self, id: &str) -> Result<bool> {
+        self.library_contains(id).await
+    }
+
+    async fn save_to_library(&self, id: &str) -> Result<()> {
+        let uri = format!("spotify:playlist:{id}");
+        self.archive_request(
+            reqwest::Method::PUT,
+            &format!("me/library?uris={}", urlencoding::encode(&uri)),
+            None,
+        )
+        .await?;
+        Ok(())
+    }
+
     async fn remove_from_library(&self, id: &str) -> Result<()> {
-        // Removing library membership leaves the public playlist available by ID.
+        // The caller must verify that the playlist remains readable afterwards.
         // Never retry this write automatically: the user may have re-saved it.
+        let uri = format!("spotify:playlist:{id}");
         self.archive_request(
             reqwest::Method::DELETE,
-            &format!("playlists/{id}/followers"),
+            &format!("me/library?uris={}", urlencoding::encode(&uri)),
             None,
         )
         .await?;
