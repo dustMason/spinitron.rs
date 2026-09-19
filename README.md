@@ -69,6 +69,50 @@ catalog from the menu bar and opens playlists directly in Spotify. It caches
 the list locally, includes an explicit Refresh command, and defaults to KALX.
 Use Settings to change the default station or include older collections.
 
+## Filing playlists in Spotify
+
+The daily GitHub job can move saved Spinitron playlists into the existing **KALX**
+folder immediately after importing. It runs on GitHub, so the laptop and Spotify
+app can stay closed. Both KALX and KPOO broadcasts go into that folder.
+
+This uses Spotify's undocumented web-player rootlist API. It selects only
+completed catalog IDs that are saved at the library root and owned by `dustmason`.
+Playlists inside any folder stay there. Older unsaved catalog records are never
+restored. The script changes only folder membership; tracks, titles and library
+membership stay unchanged. The personal account and existing folder ID are pinned
+in `scripts/file_spotify_playlists.py`.
+
+Configure the repository Actions secret **SPOTIFY_SP_DC** with the `sp_dc` cookie
+from a signed-in personal Spotify web-player session (Chrome DevTools → Application
+→ Cookies → `https://open.spotify.com`). Treat it as a login credential: never
+commit it, put it in a command argument, or include it in logs. The script exchanges
+it directly with Spotify for a fresh web token each run; it does not use the
+scraper's public API client credentials. The cookie can expire or be revoked, and
+Spotify can change this private protocol. A 401/403 requires checking the cookie
+and the pinned public token-protocol parameters, not repeatedly retrying.
+
+With `SPOTIFY_SP_DC` set securely in the environment:
+
+```bash
+# Preview without changing anything.
+python3 scripts/file_spotify_playlists.py
+
+# Move up to 50 verified playlists, one at a time, with readback after each move.
+python3 scripts/file_spotify_playlists.py --apply
+```
+
+Each run writes a receipt under `verification/` with planned, completed and any
+uncertain playlist IDs. The workflow preserves it as a recovery artifact. Writes
+use the library revision to detect concurrent edits and are never automatically
+retried. Rate limits stop the run and save a cooldown for the next run. A fresh
+run reads actual folder membership, so an interrupted move is not blindly replayed.
+Filing failures are reported separately and do not prevent the catalog or website
+from being saved. Without the secret, the workflow reports that filing is not
+configured and continues importing normally.
+
+The local UI automation should be retired only after the deployed GitHub filing
+step has succeeded with this personal session.
+
 ## Usage
 
 ### Basic Usage

@@ -46,6 +46,7 @@ jobs:
       - name: Build and test
         id: build
         run: |
+          python3 -m unittest discover -s scripts -p 'test_file_spotify_playlists.py'
           cargo test --locked
           cargo build --release --locked
       - name: Check Spotify authentication
@@ -64,6 +65,32 @@ jobs:
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
         run: ./target/release/spinitron-scraper --archive
+      - name: Restore Spotify folder cooldown
+        if: ${{ !cancelled() && !inputs.auth_check_only && steps.build.outcome == 'success' }}
+        uses: actions/cache/restore@v4
+        with:
+          path: spotify_cache/folder-cooldown.json
+          key: ${{ runner.os }}-spotify-folder-cooldown-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: ${{ runner.os }}-spotify-folder-cooldown-
+      - name: File saved catalog playlists in KALX
+        id: folders
+        timeout-minutes: 10
+        if: ${{ !cancelled() && !inputs.auth_check_only && steps.build.outcome == 'success' }}
+        continue-on-error: true
+        env:
+          SPOTIFY_SP_DC: ${{ secrets.SPOTIFY_SP_DC }}
+        run: |
+          if [ -z "$SPOTIFY_SP_DC" ]; then
+            echo 'Spotify folder filing is not configured (SPOTIFY_SP_DC is missing).' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          python3 scripts/file_spotify_playlists.py --apply --receipt verification/spotify-folder-filing.json
+      - name: Save Spotify folder cooldown
+        if: ${{ always() && !inputs.auth_check_only && hashFiles('spotify_cache/folder-cooldown.json') != '' }}
+        uses: actions/cache/save@v4
+        with:
+          path: spotify_cache/folder-cooldown.json
+          key: ${{ runner.os }}-spotify-folder-cooldown-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Export the complete catalog to the website
         id: website
         if: ${{ !cancelled() && !inputs.auth_check_only && steps.build.outcome == 'success' }}
@@ -92,12 +119,13 @@ jobs:
           path: |
             data/catalog.json
             spotify_cache/track_cache.json
+            verification/spotify-folder-filing.json
       - name: Report partial failures
         if: ${{ !cancelled() && !inputs.auth_check_only && steps.build.outcome == 'success' }}
         env:
-          OUTCOMES: '${{ steps.archive.outcome }} ${{ steps.website.outcome }} ${{ steps.persist.outcome }}'
+          OUTCOMES: '${{ steps.archive.outcome }} ${{ steps.folders.outcome }} ${{ steps.website.outcome }} ${{ steps.persist.outcome }}'
         run: |
-          echo "Archive, website, persistence: $OUTCOMES" >> "$GITHUB_STEP_SUMMARY"
+          echo "Archive, folder filing, website, persistence: $OUTCOMES" >> "$GITHUB_STEP_SUMMARY"
           for outcome in $OUTCOMES; do
             test "$outcome" = success || exit 1
           done
