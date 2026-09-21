@@ -384,10 +384,13 @@ impl Catalog {
         if !recovering {
             let uris = spotify.resolve(tracks).await?;
             if uris.is_empty() {
-                bail!(
-                    "No Spotify tracks matched broadcast {}; no playlist created",
-                    show.id
+                eprintln!(
+                    "Skipping {station} - {} ({}): no Spotify matches for {} listed tracks; no playlist created",
+                    show.title, show.id, tracks.len()
                 );
+                // Leave it out of the catalog so corrected source metadata can
+                // be reconsidered on a later run within the scraping window.
+                return Ok(false);
             }
             self.entries.insert(
                 key.clone(),
