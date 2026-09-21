@@ -14,6 +14,8 @@ struct FakeSpotify {
     fail_fill: Cell<bool>,
     uncertain_create: bool,
     reject_create: bool,
+    no_matches: bool,
+    fail_resolve: bool,
 }
 
 impl ArchiveSpotify for FakeSpotify {
@@ -21,6 +23,12 @@ impl ArchiveSpotify for FakeSpotify {
         "owner"
     }
     async fn resolve(&mut self, tracks: &[Track]) -> Result<Vec<String>> {
+        if self.fail_resolve {
+            bail!("Spotify search failed (HTTP 503)");
+        }
+        if self.no_matches {
+            return Ok(Vec::new());
+        }
         Ok(tracks
             .iter()
             .map(|t| format!("spotify:track:{}", t.song))
@@ -477,14 +485,64 @@ async fn lost_creation_response_without_recovery_match_does_not_repeat_post() {
 }
 
 #[tokio::test]
+async fn unmatched_broadcast_is_skipped_and_can_be_revisited() {
+    let mut f = Fixture::new();
+    let before = fs::read(f.path()).unwrap();
+    let mut spotify = FakeSpotify {
+        no_matches: true,
+        ..Default::default()
+    };
+    // Live sets and interviews may produce valid searches with no matches.
+    assert!(!f
+        .catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .unwrap());
+    assert_eq!(spotify.creates, 0);
+    assert!(spotify.library.borrow().is_empty());
+    assert!(f.catalog.entries.is_empty());
+    assert_eq!(fs::read(f.path()).unwrap(), before);
+
+    // Keep it eligible for a later run if the source metadata is corrected.
+    spotify.no_matches = false;
+    assert!(f
+        .catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .unwrap());
+    assert_eq!(spotify.creates, 1);
+    assert!(f.catalog.finished("KALX:1"));
+}
+
+#[tokio::test]
+async fn search_errors_still_fail_archive_without_creating_playlist() {
+    let mut f = Fixture::new();
+    let before = fs::read(f.path()).unwrap();
+    let mut spotify = FakeSpotify {
+        fail_resolve: true,
+        ..Default::default()
+    };
+    let error = f
+        .catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .unwrap_err();
+    assert!(error.to_string().contains("HTTP 503"));
+    assert_eq!(spotify.creates, 0);
+    assert!(spotify.library.borrow().is_empty());
+    assert!(f.catalog.entries.is_empty());
+    assert_eq!(fs::read(f.path()).unwrap(), before);
+}
+
+#[tokio::test]
 async fn empty_or_unfinished_broadcast_does_not_create_a_playlist() {
     let mut f = Fixture::new();
     let mut spotify = FakeSpotify::default();
-    assert!(f
+    assert!(!f
         .catalog
         .archive(&f.path(), &mut spotify, "KALX", &show(1), &[])
         .await
-        .is_err());
+        .unwrap());
     let mut current = show(2);
     current.end_time = (Utc::now() + chrono::Duration::hours(1)).to_rfc3339();
     assert!(f

@@ -14,6 +14,11 @@ delays are honored; longer cooldowns stop the lookup. Failed searches remain
 errors and are never cached as missing songs. Playlist creation and other writes
 are never retried automatically after an uncertain response.
 
+When successful searches find no Spotify matches for a broadcast (for example,
+live sets or interviews), the job logs a skip without creating an empty playlist
+or failing the run. Skipped broadcasts remain eligible for later runs within the
+scraping window if their source metadata changes. API errors still fail the run.
+
 The full catalog lives in `data/catalog.json` and on the website. New playlists stay saved in the owner's Spotify library. Archive runs preserve completed broadcasts and never automatically remove library membership. Existing playlists remain in the catalog even if they were removed from the library previously.
 
 Started with Claude Code, then built out with Codex.
