@@ -214,6 +214,139 @@ fn search_match() -> Value {
     }]}})
 }
 
+#[test]
+fn search_queries_preserve_short_metadata_and_bound_long_unicode_fields() {
+    let ordinary = search_track();
+    assert_eq!(
+        search_query(&ordinary),
+        ("track:Test Song artist:Test Artist".into(), false)
+    );
+    let mut boundary = ordinary.clone();
+    boundary.song = "A".repeat(225);
+    assert_eq!(search_query(&boundary).0.len(), 250);
+    assert!(!search_query(&boundary).1);
+    boundary.song.push('A');
+    assert!(search_query(&boundary).1);
+
+    for (song, artist) in [
+        ("Medley / ".repeat(50), "Various Artists".into()),
+        ("音楽🎷 ".repeat(80), "Zurnacı Emin".into()),
+        ("Test Song".into(), "Å🎸".repeat(80)),
+        ("音楽".repeat(100), "演奏者".repeat(100)),
+    ] {
+        let track = Track {
+            song,
+            artist,
+            ..ordinary.clone()
+        };
+        let (query, shortened) = search_query(&track);
+        assert!(shortened);
+        assert!(query.len() <= 250);
+        let (title, artist) = query
+            .strip_prefix("track:")
+            .unwrap()
+            .split_once(" artist:")
+            .unwrap();
+        assert!(!title.is_empty() && !artist.is_empty());
+        assert!(track.song.starts_with(title));
+        assert!(track.artist.starts_with(artist));
+        if track.artist.len() < 100 {
+            assert_eq!(artist, track.artist);
+        }
+    }
+}
+
+#[tokio::test]
+async fn long_search_checks_full_metadata_before_accepting_a_candidate() {
+    let track = Track {
+        song: "A".repeat(300),
+        ..search_track()
+    };
+    let query = format!("track:{} artist:Test Artist", "A".repeat(225));
+    let path = format!(
+        "/v1/search?q={}&type=track&limit=10",
+        urlencoding::encode(&query)
+    );
+    let (mut client, server) = mock_client(|_| vec![exchange("GET", &path,
+        serde_json::json!({"tracks":{"items":[
+            {"id":"wrong-title", "uri":"spotify:track:wrong-title", "name":"A".repeat(225), "artists":[{"name":"Test Artist"}]},
+            {"id":"wrong-artist", "uri":"spotify:track:wrong-artist", "name":track.song, "artists":[{"name":"Someone Else"}]},
+            {"id":"correct", "uri":"spotify:track:correct", "name":track.song, "artists":[{"name":"Test Artist"}]}
+        ]}})
+    )]).await;
+    let (found, called) = client.search_track_with_cache_info(&track).await.unwrap();
+    assert!(called);
+    assert_eq!(found.unwrap().uri, "spotify:track:correct");
+    assert!(client.track_cache.entries.contains_key(&track.cache_key()));
+    let (cached, called) = client.search_track_with_cache_info(&track).await.unwrap();
+    assert!(!called);
+    assert_eq!(cached.unwrap().uri, "spotify:track:correct");
+    assert_eq!(requests(server).await.len(), 1);
+}
+
+#[test]
+fn shortened_artist_queries_still_require_the_full_title_and_artist() {
+    let track = Track {
+        song: "Test".into(),
+        artist: "Artist".repeat(50),
+        ..search_track()
+    };
+    let mut candidate = serde_json::json!({"name":"Testimony", "artists":[{"name":track.artist}]});
+    assert!(!matches_full_metadata(&candidate, &track));
+    candidate["name"] = "Test".into();
+    assert!(matches_full_metadata(&candidate, &track));
+    candidate["artists"][0]["name"] = "Artist".into();
+    assert!(!matches_full_metadata(&candidate, &track));
+
+    let truncated = Track {
+        song: "A".repeat(255),
+        ..search_track()
+    };
+    let extended = serde_json::json!({"name":"A".repeat(300), "artists":[{"name":"Test Artist"}]});
+    assert!(matches_full_metadata(&extended, &truncated));
+}
+
+#[tokio::test]
+async fn long_search_does_not_add_a_similar_but_different_recording() {
+    let track = Track {
+        song: "A".repeat(300),
+        ..search_track()
+    };
+    let query = format!("track:{} artist:Test Artist", "A".repeat(225));
+    let path = format!(
+        "/v1/search?q={}&type=track&limit=10",
+        urlencoding::encode(&query)
+    );
+    let (mut client, server) = mock_client(|_| vec![exchange("GET", &path,
+        serde_json::json!({"tracks":{"items":[
+            {"id":"wrong", "uri":"spotify:track:wrong", "name":"A".repeat(225), "artists":[{"name":"Test Artist"}]}
+        ]}})
+    )]).await;
+    let (found, called) = client.search_track_with_cache_info(&track).await.unwrap();
+    assert!(called);
+    assert!(found.is_none());
+    assert_eq!(requests(server).await.len(), 1);
+}
+
+#[tokio::test]
+async fn search_recovers_after_more_than_the_previous_three_attempts() {
+    let (mut client, server) = mock_client(|_| {
+        let mut replies: Vec<_> = (0..3).map(|_| search_exchange(502, Value::Null)).collect();
+        replies.push(search_exchange(200, search_match()));
+        replies
+    })
+    .await;
+    let started = std::time::Instant::now();
+    let (found, called) = client
+        .search_track_with_cache_info(&search_track())
+        .await
+        .unwrap();
+    assert!(called);
+    assert_eq!(found.unwrap().uri, "spotify:track:matched");
+    assert!(started.elapsed() >= std::time::Duration::from_secs(17));
+    assert_eq!(requests(server).await.len(), 4);
+}
+
 #[tokio::test]
 async fn search_recovers_from_502_and_caches_the_successful_match() {
     let (mut client, server) = mock_client(|_| vec![
@@ -227,7 +360,7 @@ async fn search_recovers_from_502_and_caches_the_successful_match() {
         .unwrap();
     assert!(called);
     assert_eq!(found.unwrap().uri, "spotify:track:matched");
-    assert!(started.elapsed() >= std::time::Duration::from_secs(1));
+    assert!(started.elapsed() >= std::time::Duration::from_secs(2));
     let (cached, called) = client
         .search_track_with_cache_info(&search_track())
         .await
@@ -240,7 +373,7 @@ async fn search_recovers_from_502_and_caches_the_successful_match() {
 #[tokio::test]
 async fn exhausted_search_retries_are_bounded_and_do_not_poison_the_cache() {
     let (mut client, server) = mock_client(|_| {
-        let mut replies: Vec<_> = (0..3)
+        let mut replies: Vec<_> = (0..5)
             .map(|_| {
                 search_exchange(
                     502,
@@ -264,7 +397,7 @@ async fn exhausted_search_retries_are_bounded_and_do_not_poison_the_cache() {
         .unwrap();
     assert!(called);
     assert_eq!(found.unwrap().uri, "spotify:track:matched");
-    assert_eq!(requests(server).await.len(), 4);
+    assert_eq!(requests(server).await.len(), 6);
 }
 
 #[tokio::test]

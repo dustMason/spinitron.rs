@@ -8,11 +8,17 @@ The daily job checks the past seven days for completed broadcasts. Each broadcas
 
 New playlists are named **"Station - Broadcast title - YYYY-MM-DD"**. Duplicate show names on the same date add a time such as **5:00pm**. The date and time come from the station's broadcast timestamp. The job waits until an episode has finished, plus a one-hour buffer, and fetches fresh track data before archiving it.
 
-Spotify track searches retry temporary server and connection errors up to three
-attempts, with backoff and a 30-second timeout per attempt. Short `Retry-After`
+Spotify reads, including track searches, retry temporary server and connection
+errors up to five attempts, waiting 2, 5, 10 and 20 seconds between attempts,
+with a 30-second timeout per attempt. Short `Retry-After`
 delays are honored; longer cooldowns stop the lookup. Failed searches remain
 errors and are never cached as missing songs. Playlist creation and other writes
 are never retried automatically after an uncertain response.
+
+Searches keep both title and artist within Spotify's 250-character query limit
+(using a conservative UTF-8 byte budget). Long metadata uses a shortened query
+and checks up to ten candidates against the complete original title and artist
+before accepting a match. Full source metadata remains the cache key.
 
 When successful searches find no Spotify matches for a broadcast (for example,
 live sets or interviews), the job logs a skip without creating an empty playlist
