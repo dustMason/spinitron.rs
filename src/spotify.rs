@@ -12,6 +12,60 @@ use crate::models::{ShowGroup, Track};
 
 const CACHE_DIR: &str = "spotify_cache";
 const TRACK_CACHE_FILE: &str = "track_cache.json";
+// Spotify rejects search queries longer than 250 characters. A UTF-8 byte
+// budget is conservative for both Unicode scalar and UTF-16 character counts.
+const SEARCH_QUERY_LIMIT: usize = 250;
+const READ_RETRY_DELAYS: [u64; 4] = [2, 5, 10, 20];
+
+fn search_query(track: &Track) -> (String, bool) {
+    let query = format!("track:{} artist:{}", track.song, track.artist);
+    if query.len() <= SEARCH_QUERY_LIMIT {
+        return (query, false);
+    }
+    fn prefix(value: &str, budget: usize) -> &str {
+        let mut end = budget.min(value.len());
+        while !value.is_char_boundary(end) {
+            end -= 1;
+        }
+        value[..end].trim_end()
+    }
+    let available = SEARCH_QUERY_LIMIT - "track: artist:".len();
+    // Reserve space for both filters; a short artist leaves more room for the
+    // title. Never truncate the combined query and accidentally lose artist:.
+    let artist_budget = track.artist.len().min(available / 2);
+    let song = prefix(&track.song, available - artist_budget);
+    let artist = prefix(&track.artist, available - song.len());
+    (format!("track:{song} artist:{artist}"), true)
+}
+
+fn matches_full_metadata(candidate: &Value, track: &Track) -> bool {
+    fn normalize(value: &str) -> String {
+        value
+            .split_whitespace()
+            .collect::<Vec<_>>()
+            .join(" ")
+            .to_lowercase()
+    }
+    // A shortened query may return another recording with the same prefix.
+    // Require the complete original title and artist before accepting it.
+    // Spinitron may cut titles at 255 characters (as in the failed medley),
+    // so only that boundary permits a longer returned title sharing the prefix.
+    let title = normalize(&track.song);
+    let artist = normalize(&track.artist);
+    !title.is_empty()
+        && !artist.is_empty()
+        && candidate["name"].as_str().is_some_and(|name| {
+            let name = normalize(name);
+            name == title || (track.song.chars().count() == 255 && name.starts_with(&title))
+        })
+        && candidate["artists"].as_array().is_some_and(|artists| {
+            artists.iter().any(|value| {
+                value["name"]
+                    .as_str()
+                    .is_some_and(|name| normalize(name) == artist)
+            })
+        })
+}
 
 #[cfg(test)]
 #[path = "spotify_sync_tests.rs"]
@@ -270,15 +324,16 @@ impl SpotifyClient {
         }
 
         // Search Spotify
-        let query = format!("track:{} artist:{}", track.song, track.artist);
+        let (query, shortened) = search_query(track);
         let encoded_query = urlencoding::encode(&query);
+        let limit = if shortened { 10 } else { 1 };
 
         // Searches are reads: use the same bounded retry/timeout handling as
         // archive reads. An upstream 502 must not become a cached "no match".
         let json = self
             .archive_request(
                 reqwest::Method::GET,
-                &format!("search?q={encoded_query}&type=track&limit=1"),
+                &format!("search?q={encoded_query}&type=track&limit={limit}"),
                 None,
             )
             .await?;
@@ -287,7 +342,10 @@ impl SpotifyClient {
             .ok_or_else(|| anyhow!("Spotify search response is missing tracks.items"))?;
 
         let spotify_track = {
-            if let Some(track_data) = tracks.first() {
+            if let Some(track_data) = tracks
+                .iter()
+                .find(|value| !shortened || matches_full_metadata(value, track))
+            {
                 Some(SpotifyTrack {
                     id: track_data["id"].as_str().unwrap_or("").to_string(),
                     name: track_data["name"].as_str().unwrap_or("").to_string(),
@@ -826,9 +884,10 @@ impl SpotifyClient {
         path: &str,
         body: Option<Value>,
     ) -> Result<Value> {
-        for attempt in 0..3 {
+        for attempt in 0..=READ_RETRY_DELAYS.len() {
             // Only reads can be repeated. A lost write response is ambiguous.
-            let can_retry = method == reqwest::Method::GET && attempt < 2;
+            let can_retry = method == reqwest::Method::GET && attempt < READ_RETRY_DELAYS.len();
+            let backoff = READ_RETRY_DELAYS[attempt.min(READ_RETRY_DELAYS.len() - 1)];
             let mut request = self
                 .client
                 .request(method.clone(), format!("{}/{path}", self.api_base_url))
@@ -840,7 +899,7 @@ impl SpotifyClient {
             let response = match request.send().await {
                 Ok(response) => response,
                 Err(error) if can_retry && (error.is_timeout() || error.is_connect()) => {
-                    tokio::time::sleep(std::time::Duration::from_secs(1 << attempt)).await;
+                    tokio::time::sleep(std::time::Duration::from_secs(backoff)).await;
                     continue;
                 }
                 Err(error) => return Err(error.into()),
@@ -852,7 +911,7 @@ impl SpotifyClient {
                     .get(reqwest::header::RETRY_AFTER)
                     .and_then(|v| v.to_str().ok())
                     .and_then(|v| v.parse::<u64>().ok())
-                    .unwrap_or(1 << attempt);
+                    .unwrap_or(backoff);
                 if can_retry
                     && (status.is_server_error()
                         || status == reqwest::StatusCode::TOO_MANY_REQUESTS)
@@ -896,7 +955,7 @@ impl SpotifyClient {
             let text = match response.text().await {
                 Ok(text) => text,
                 Err(error) if can_retry && (error.is_timeout() || error.is_body()) => {
-                    tokio::time::sleep(std::time::Duration::from_secs(1 << attempt)).await;
+                    tokio::time::sleep(std::time::Duration::from_secs(backoff)).await;
                     continue;
                 }
                 Err(error) => return Err(error.into()),
