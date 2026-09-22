@@ -15,10 +15,26 @@ delays are honored; longer cooldowns stop the lookup. Failed searches remain
 errors and are never cached as missing songs. Playlist creation and other writes
 are never retried automatically after an uncertain response.
 
+Each search requests ten candidates in one API call. Among exact artist/title
+matches, the listed album wins, followed by the earliest album release date;
+Spotify's order breaks remaining ties. An exact artist/album match can also
+accept a title with an added suffix such as " - 2025 Remaster" when that label
+also appears in the source album, respecting an explicitly listed edition.
+Full version names are preserved, without a blacklist of remaster/live/remix
+words. If no confident metadata match exists, Spotify's first playable result
+remains the fallback.
+
+This favors original releases when they are among the results, but Spotify has
+no definitive original-mastering field: an album release date does not prove
+which mastering Spotify serves. Some originals are unavailable or outside the
+first ten results. Existing completed broadcast playlists are not rewritten.
+
 Searches keep both title and artist within Spotify's 250-character query limit
 (using a conservative UTF-8 byte budget). Long metadata uses a shortened query
-and checks up to ten candidates against the complete original title and artist
-before accepting a match. Full source metadata remains the cache key.
+and requires the complete original title and artist before accepting a match.
+The search cache includes full artist, title, album, and a matching-policy version,
+so older first-result choices and different album editions cannot override this
+ranking. New imports re-resolve old cached choices as needed.
 
 When successful searches find no Spotify matches for a broadcast (for example,
 live sets or interviews), the job logs a skip without creating an empty playlist
