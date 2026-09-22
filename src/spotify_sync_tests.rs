@@ -136,7 +136,7 @@ fn seed_show(client: &mut SpotifyClient, uris: &[String], existing: bool) -> Sho
                 time: None,
             };
             client.track_cache.entries.insert(
-                track.cache_key(),
+                track_search_cache_key(&track),
                 CachedTrackEntry {
                     track: (!uri.is_empty()).then(|| SpotifyTrack {
                         id: uri.clone(),
@@ -200,7 +200,7 @@ fn search_track() -> Track {
 fn search_exchange(status: u16, reply: Value) -> Exchange {
     let mut response = exchange(
         "GET",
-        "/v1/search?q=track%3ATest%20Song%20artist%3ATest%20Artist&type=track&limit=1",
+        "/v1/search?q=track%3ATest%20Song%20artist%3ATest%20Artist&type=track&limit=10",
         reply,
     );
     response.status = status;
@@ -212,6 +212,211 @@ fn search_match() -> Value {
         "id":"matched", "uri":"spotify:track:matched", "name":"Test Song",
         "artists":[{"name":"Test Artist"}]
     }]}})
+}
+
+fn recording(id: &str, name: &str, album: &str, date: &str) -> Value {
+    serde_json::json!({
+        "id":id, "uri":format!("spotify:track:{id}"), "name":name,
+        "artists":[{"name":"Test Artist"}],
+        "album":{"name":album, "release_date":date}
+    })
+}
+
+fn chosen_recording(candidates: &[Value], track: &Track) -> String {
+    best_search_match(candidates, track, false).unwrap()["id"]
+        .as_str()
+        .unwrap()
+        .to_string()
+}
+
+#[test]
+fn ranking_prefers_the_source_title_to_unspecified_versions() {
+    let candidates = vec![
+        recording(
+            "remaster",
+            "Test Song - 2025 Remaster",
+            "Original Album",
+            "1970",
+        ),
+        recording("live", "Test Song (Live)", "Original Album", "1969"),
+        recording("original", "Test Song", "Original Album", "1970"),
+    ];
+    for album in ["", "Original Album"] {
+        let track = Track {
+            album: album.into(),
+            ..search_track()
+        };
+        assert_eq!(chosen_recording(&candidates, &track), "original");
+    }
+    let track = Track {
+        song: "Test Song - 2025 Remaster".into(),
+        ..search_track()
+    };
+    assert_eq!(chosen_recording(&candidates, &track), "remaster");
+    let track = Track {
+        song: "Test Song (Live)".into(),
+        ..search_track()
+    };
+    assert_eq!(chosen_recording(&candidates, &track), "live");
+}
+
+#[test]
+fn ranking_honors_an_explicit_album_edition_even_with_an_added_title_annotation() {
+    for suffix in [
+        " - 2025 Remaster",
+        " (2025 Remaster)",
+        " [Mono]",
+        " – Live",
+        " — Remix",
+    ] {
+        let edition_album = format!("Original Album{suffix}");
+        let candidates = vec![
+            recording("original", "Test Song", "Original Album", "1970"),
+            recording(
+                "edition",
+                &format!("Test Song{suffix}"),
+                &edition_album,
+                "2025",
+            ),
+        ];
+        let track = Track {
+            album: edition_album,
+            ..search_track()
+        };
+        assert_eq!(chosen_recording(&candidates, &track), "edition");
+    }
+    let candidates = vec![
+        recording(
+            "different-song",
+            "Test Song Reprise",
+            "Requested Edition",
+            "1960",
+        ),
+        recording("original", "Test Song", "Original Album", "1970"),
+    ];
+    let track = Track {
+        album: "Requested Edition".into(),
+        ..search_track()
+    };
+    assert_eq!(chosen_recording(&candidates, &track), "original");
+}
+
+#[test]
+fn ranking_does_not_infer_a_requested_version_from_an_undecorated_album_name() {
+    let candidates = vec![
+        recording(
+            "remaster",
+            "Test Song - 2025 Remaster",
+            "Original Album",
+            "1970",
+        ),
+        recording("original", "Test Song", "Compilation", "1980"),
+    ];
+    let track = Track {
+        album: "Original Album".into(),
+        ..search_track()
+    };
+    assert_eq!(chosen_recording(&candidates, &track), "original");
+}
+
+#[test]
+fn ranking_uses_album_then_earliest_date_for_equally_matching_titles() {
+    let candidates = vec![
+        recording("new", "Test Song", "Recent Compilation", "2025-09-22"),
+        recording("oldest", "Test Song", "Original Album", "1970"),
+        recording("requested", "Test Song", "Broadcast Album", "1985-06"),
+    ];
+    assert_eq!(chosen_recording(&candidates, &search_track()), "oldest");
+    let track = Track {
+        album: "Broadcast Album".into(),
+        ..search_track()
+    };
+    assert_eq!(chosen_recording(&candidates, &track), "requested");
+}
+
+#[test]
+fn ranking_does_not_promote_older_wrong_artists_or_unplayable_tracks() {
+    let mut cover = recording("cover", "Test Song", "Broadcast Album", "1960");
+    cover["artists"][0]["name"] = "Cover Artist".into();
+    let mut unavailable = recording("unavailable", "Test Song", "Broadcast Album", "1970");
+    unavailable["is_playable"] = false.into();
+    let candidates = vec![
+        cover,
+        unavailable,
+        recording("correct", "Test Song", "Other Album", "2025"),
+    ];
+    let track = Track {
+        album: "Broadcast Album".into(),
+        ..search_track()
+    };
+    assert_eq!(chosen_recording(&candidates, &track), "correct");
+}
+
+#[test]
+fn ranking_handles_missing_dates_and_preserves_relevance_order_for_ties() {
+    let candidates = vec![
+        recording("unknown", "Test Song", "Album", ""),
+        recording("invalid", "Test Song", "Album", "1960-99-99"),
+        recording("first", "  TEST   Song ", "Album", "1970-06"),
+        recording("second", "Test Song", "Album", "1970-06-01"),
+        recording("later", "Test Song", "Album", "1970-07-01"),
+    ];
+    assert_eq!(chosen_recording(&candidates, &search_track()), "first");
+    assert_eq!(
+        chosen_recording(&candidates[..2], &search_track()),
+        "unknown"
+    );
+}
+
+#[test]
+fn ranking_keeps_spotify_fallback_when_no_confident_metadata_match_exists() {
+    // Avoid dropping music solely because the original mastering is unavailable.
+    let candidates = vec![
+        recording("first", "Test Song - 2025 Remaster", "Album", "2025"),
+        recording("second", "Test Song - 1990 Remaster", "Album", "1990"),
+    ];
+    assert_eq!(chosen_recording(&candidates, &search_track()), "first");
+    assert!(best_search_match(&[], &search_track(), false).is_none());
+}
+
+#[tokio::test]
+async fn search_ranks_one_response_and_caches_album_specific_choices() {
+    let choices = serde_json::json!({"tracks":{"items":[
+        recording("edition", "Test Song - 2025 Remaster", "Original Album (2025 Remaster)", "2025"),
+        recording("original", "Test Song", "Original Album", "1970")
+    ]}});
+    let (mut client, server) = mock_client(|_| {
+        vec![
+            search_exchange(200, choices.clone()),
+            search_exchange(200, choices),
+        ]
+    })
+    .await;
+    // Simulate the legacy 14-day cache entry that must no longer decide a match.
+    client.track_cache.entries.insert(
+        search_track().cache_key(),
+        CachedTrackEntry {
+            track: Some(SpotifyTrack {
+                id: "old-result".into(),
+                name: "Test Song - Remaster".into(),
+                uri: "spotify:track:old-result".into(),
+                artists: vec![],
+            }),
+            expires_at: u64::MAX,
+        },
+    );
+    let edition = Track {
+        album: "Original Album (2025 Remaster)".into(),
+        ..search_track()
+    };
+    for (track, expected) in [(search_track(), "original"), (edition, "edition")] {
+        for expected_call in [true, false] {
+            let (found, made_call) = client.search_track_with_cache_info(&track).await.unwrap();
+            assert_eq!(found.unwrap().id, expected);
+            assert_eq!(made_call, expected_call);
+        }
+    }
+    assert_eq!(requests(server).await.len(), 2);
 }
 
 #[test]
@@ -277,7 +482,10 @@ async fn long_search_checks_full_metadata_before_accepting_a_candidate() {
     let (found, called) = client.search_track_with_cache_info(&track).await.unwrap();
     assert!(called);
     assert_eq!(found.unwrap().uri, "spotify:track:correct");
-    assert!(client.track_cache.entries.contains_key(&track.cache_key()));
+    assert!(client
+        .track_cache
+        .entries
+        .contains_key(&track_search_cache_key(&track)));
     let (cached, called) = client.search_track_with_cache_info(&track).await.unwrap();
     assert!(!called);
     assert_eq!(cached.unwrap().uri, "spotify:track:correct");

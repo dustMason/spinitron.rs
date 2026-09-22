@@ -38,33 +38,134 @@ fn search_query(track: &Track) -> (String, bool) {
     (format!("track:{song} artist:{artist}"), true)
 }
 
-fn matches_full_metadata(candidate: &Value, track: &Track) -> bool {
-    fn normalize(value: &str) -> String {
-        value
-            .split_whitespace()
-            .collect::<Vec<_>>()
-            .join(" ")
-            .to_lowercase()
-    }
-    // A shortened query may return another recording with the same prefix.
-    // Require the complete original title and artist before accepting it.
-    // Spinitron may cut titles at 255 characters (as in the failed medley),
-    // so only that boundary permits a longer returned title sharing the prefix.
-    let title = normalize(&track.song);
-    let artist = normalize(&track.artist);
-    !title.is_empty()
-        && !artist.is_empty()
-        && candidate["name"].as_str().is_some_and(|name| {
-            let name = normalize(name);
-            name == title || (track.song.chars().count() == 255 && name.starts_with(&title))
-        })
+fn normalize_metadata(value: &str) -> String {
+    value
+        .split_whitespace()
+        .collect::<Vec<_>>()
+        .join(" ")
+        .to_lowercase()
+}
+
+fn matches_artist(candidate: &Value, artist: &str) -> bool {
+    !artist.is_empty()
         && candidate["artists"].as_array().is_some_and(|artists| {
             artists.iter().any(|value| {
                 value["name"]
                     .as_str()
-                    .is_some_and(|name| normalize(name) == artist)
+                    .is_some_and(|name| normalize_metadata(name) == artist)
             })
         })
+}
+
+fn matches_full_metadata(candidate: &Value, track: &Track) -> bool {
+    // A shortened query may return another recording with the same prefix.
+    // Require the complete original title and artist before accepting it.
+    // Spinitron may cut titles at 255 characters (as in the failed medley),
+    // so only that boundary permits a longer returned title sharing the prefix.
+    let title = normalize_metadata(&track.song);
+    let artist = normalize_metadata(&track.artist);
+    !title.is_empty()
+        && !artist.is_empty()
+        && candidate["name"].as_str().is_some_and(|name| {
+            let name = normalize_metadata(name);
+            name == title || (track.song.chars().count() == 255 && name.starts_with(&title))
+        })
+        && matches_artist(candidate, &artist)
+}
+
+fn track_search_cache_key(track: &Track) -> String {
+    // Version the policy so old first-result matches cannot bypass ranking.
+    // Album is significant: the same song can explicitly request another edition.
+    format!(
+        "metadata-v1:{}",
+        serde_json::json!([track.artist, track.song, track.album])
+    )
+}
+
+fn candidate_release_date(candidate: &Value) -> chrono::NaiveDate {
+    let date = candidate["album"]["release_date"].as_str().unwrap_or("");
+    let padded = match date.len() {
+        4 => format!("{date}-01-01"),
+        7 => format!("{date}-01"),
+        10 => date.to_string(),
+        _ => return chrono::NaiveDate::MAX,
+    };
+    chrono::NaiveDate::parse_from_str(&padded, "%Y-%m-%d").unwrap_or(chrono::NaiveDate::MAX)
+}
+
+fn album_names_annotation(album: &str, annotation: &str) -> bool {
+    let words = |value: &str| {
+        value
+            .split(|c: char| !c.is_alphanumeric())
+            .filter(|word| !word.is_empty())
+            .map(str::to_owned)
+            .collect::<Vec<_>>()
+    };
+    let album_words = words(album);
+    let annotation_words = words(annotation);
+    !annotation_words.is_empty()
+        && album_words
+            .windows(annotation_words.len())
+            .any(|window| window == annotation_words)
+}
+
+fn best_search_match<'a>(
+    candidates: &'a [Value],
+    track: &Track,
+    shortened: bool,
+) -> Option<&'a Value> {
+    let title = normalize_metadata(&track.song);
+    let artist = normalize_metadata(&track.artist);
+    let album = normalize_metadata(&track.album);
+    let eligible = |candidate: &&Value| {
+        candidate["is_playable"].as_bool() != Some(false)
+            && (!shortened || matches_full_metadata(candidate, track))
+    };
+
+    candidates
+        .iter()
+        .filter(eligible)
+        .enumerate()
+        .filter_map(|(index, candidate)| {
+            let name = normalize_metadata(candidate["name"].as_str()?);
+            let exact_title = !title.is_empty() && name == title;
+            let exact_album = !album.is_empty()
+                && candidate["album"]["name"]
+                    .as_str()
+                    .is_some_and(|name| normalize_metadata(name) == album);
+            // An explicitly listed edition may put its version on the Spotify
+            // title too. Require the added label to appear in the source album;
+            // an undecorated album name alone does not request a remaster.
+            // Do not strip words such as Live or maintain a version dictionary.
+            let annotated_title = !title.is_empty()
+                && name.strip_prefix(&title).is_some_and(|suffix| {
+                    [" - ", " (", " [", " – ", " — "]
+                        .iter()
+                        .filter_map(|delimiter| suffix.strip_prefix(delimiter))
+                        .any(|annotation| album_names_annotation(&album, annotation))
+                });
+            if !matches_artist(candidate, &artist)
+                || !(exact_title || (exact_album && annotated_title))
+            {
+                return None;
+            }
+            // Source metadata outranks age. Dates only break ties between
+            // plausible versions, never promote an older unrelated search hit.
+            Some((
+                (
+                    !exact_album,
+                    !exact_title,
+                    candidate_release_date(candidate),
+                    index,
+                ),
+                candidate,
+            ))
+        })
+        .min_by_key(|(rank, _)| *rank)
+        .map(|(_, candidate)| candidate)
+        // Keep Spotify's relevance order when metadata cannot distinguish the
+        // results, including when only remasters are available in this market.
+        .or_else(|| candidates.iter().find(eligible))
 }
 
 #[cfg(test)]
@@ -310,7 +411,7 @@ impl SpotifyClient {
         &mut self,
         track: &Track,
     ) -> Result<(Option<SpotifyTrack>, bool)> {
-        let search_key = track.cache_key();
+        let search_key = track_search_cache_key(track);
 
         // Check cache first
         if let Some(cached_entry) = self
@@ -326,14 +427,13 @@ impl SpotifyClient {
         // Search Spotify
         let (query, shortened) = search_query(track);
         let encoded_query = urlencoding::encode(&query);
-        let limit = if shortened { 10 } else { 1 };
 
         // Searches are reads: use the same bounded retry/timeout handling as
         // archive reads. An upstream 502 must not become a cached "no match".
         let json = self
             .archive_request(
                 reqwest::Method::GET,
-                &format!("search?q={encoded_query}&type=track&limit={limit}"),
+                &format!("search?q={encoded_query}&type=track&limit=10"),
                 None,
             )
             .await?;
@@ -342,10 +442,7 @@ impl SpotifyClient {
             .ok_or_else(|| anyhow!("Spotify search response is missing tracks.items"))?;
 
         let spotify_track = {
-            if let Some(track_data) = tracks
-                .iter()
-                .find(|value| !shortened || matches_full_metadata(value, track))
-            {
+            if let Some(track_data) = best_search_match(tracks, track, shortened) {
                 Some(SpotifyTrack {
                     id: track_data["id"].as_str().unwrap_or("").to_string(),
                     name: track_data["name"].as_str().unwrap_or("").to_string(),
