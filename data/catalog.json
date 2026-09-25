@@ -30152,6 +30152,139 @@
         "url": "https://open.spotify.com/playlist/3eP6DUgsYJLdEPjkZAhQ8B"
       }
     },
+    "KALX:23062412": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23062412,
+        "title": "FREEFORM",
+        "url": "https://spinitron.com/KALX/pl/23062412/FREEFORM",
+        "start_time": "2026-09-24T22:00:00-0700",
+        "end_time": "2026-09-25T00:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "3KNP5JOEfEgjJA2deRGLhs",
+      "desired_uris": [
+        "spotify:track:2ftHpReHQLPrCfR6ZCmXub",
+        "spotify:track:5DvARILpN2CbvAfKhn0PjV",
+        "spotify:track:5Pvaycf1bu6dZfbXW9KPuj",
+        "spotify:track:6eJxxfpEouEfFWXYESBEBy",
+        "spotify:track:1v2gNspuP1ZCCDxl9sndXg",
+        "spotify:track:0BAfztoGPJn9g548mwMQ4j",
+        "spotify:track:3AJ8S8Qgl8q4anaIUnz7cL",
+        "spotify:track:3kk1xi4EYoL8bYjLoEt5PE",
+        "spotify:track:0Ttu5r50k0DaRZAnTzg2v1",
+        "spotify:track:6V6pXFdU5ucHN0xilIDZDb",
+        "spotify:track:5Ie4c18GI5hyht9FQmCC2k",
+        "spotify:track:3VinsgNhOaeNQV91NvLz7H",
+        "spotify:track:30ZwNBLhLaDqGv3QA5vlhd",
+        "spotify:track:5bemNuoCswPpDI812rmIaA",
+        "spotify:track:4mlkFlfr1PS2oKgbivULW9",
+        "spotify:track:6tYmR0IbZB5tZjy9wwd5d3",
+        "spotify:track:5CIIJoRwejXCcRRXJ2mImn",
+        "spotify:track:5tX7JQGUJrWaFoq8UUf21G",
+        "spotify:track:3Pui6gRuR8mIDcQtuo9El4",
+        "spotify:track:4xhn631zuwdvqwqHzNKwVP"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-25T00:00:00-0700",
+        "broadcast_start": "2026-09-24T22:00:00-0700",
+        "imported_at": "2026-09-25T11:20:46.486976352+00:00",
+        "last_updated": "2026-09-25 11:20 UTC",
+        "name": "KALX - FREEFORM - 2026-09-24 10:00pm",
+        "preview": [
+          {
+            "artists": [
+              "Philip Glass"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273a7defd01ad06d6725d14d572",
+            "name": "Mad Rush"
+          },
+          {
+            "artists": [
+              "Sarah Davachi"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273ea53ff7f5f02e2c1d28862ba",
+            "name": "Songs of the Smile's Fig: III. Follies"
+          },
+          {
+            "artists": [
+              "Odetta"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27391a9e5832ceb532fe57bb459",
+            "name": "Masters Of War"
+          },
+          {
+            "artists": [
+              "Marianne Faithfull"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273ababf9f8c994043ce761f12f",
+            "name": "I'll Keep It With Mine"
+          },
+          {
+            "artists": [
+              "Sonny Terry"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273d7e986f07c56030ab4eb1cde",
+            "name": "Old Jabo"
+          },
+          {
+            "artists": [
+              "Maisy Owen"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27316f4a8c8d1b2d7cef0656003",
+            "name": "My Youth is All For You"
+          },
+          {
+            "artists": [
+              "Margo Price"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2734b55af9d0c3ac049860a31f9",
+            "name": "Oval Room"
+          },
+          {
+            "artists": [
+              "Shannon Lay"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273964fbf1a498f5e688fe5d3b7",
+            "name": "Sky Song"
+          },
+          {
+            "artists": [
+              "Neil Young",
+              "Crazy Horse"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273adc7646ec2dc90fc12477818",
+            "name": "Through My Sails - 2016 Remaster"
+          },
+          {
+            "artists": [
+              "Mose Allison"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273cb5eda628caf4eb34f5aa675",
+            "name": "One Room Country Shack"
+          },
+          {
+            "artists": [
+              "The Durutti Column"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273198dc7f6ac4a2e12581fdbf7",
+            "name": "Jacqueline"
+          },
+          {
+            "artists": [
+              "Alela Diane"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273fd49f9afa7000f68d7acdbf5",
+            "name": "California"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23062412/FREEFORM",
+        "station": "KALX",
+        "track_count": 20,
+        "url": "https://open.spotify.com/playlist/3KNP5JOEfEgjJA2deRGLhs"
+      }
+    },
     "KALX:23062786": {
       "station": "KALX",
       "broadcast": {
@@ -31312,6 +31445,155 @@
         "url": "https://open.spotify.com/playlist/3IbkZliPHxHr28s0ugR0a3"
       }
     },
+    "KALX:23067637": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23067637,
+        "title": "The Lysergic Listen",
+        "url": "https://spinitron.com/KALX/pl/23067637/The-Lysergic-Listen",
+        "start_time": "2026-09-24T09:00:00-0700",
+        "end_time": "2026-09-24T12:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "712gdRG3t0ZMGmHzLvccRr",
+      "desired_uris": [
+        "spotify:track:4HkQtiWQC9VfeYZzfESHaS",
+        "spotify:track:3kk1xi4EYoL8bYjLoEt5PE",
+        "spotify:track:553XVBvKof3z70BOFOjrKT",
+        "spotify:track:3BtljlUwhUbwg0bjLPEs4A",
+        "spotify:track:7N39StCjy1XnttL6JcXxSm",
+        "spotify:track:0QrwsOaoCpUO2ziLi6lUiM",
+        "spotify:track:2p7drL0Q1gQEbVSgrY1NnY",
+        "spotify:track:4z3ta7NIjD4GHBipQZhbsN",
+        "spotify:track:0bcqlXTDN4fcZx2viQITW1",
+        "spotify:track:3knnCmxbiADOwtCupRmTxa",
+        "spotify:track:2QftQKJUfxg9XmhplFN9ys",
+        "spotify:track:4zrTWDe8FwBQQNxL6XwdNM",
+        "spotify:track:1OteLQSr8DWef4uiPbJwx1",
+        "spotify:track:4rXszmPghFtOb8IoyZX88w",
+        "spotify:track:5Q5l2Hkq4JVSi43v3fDOyf",
+        "spotify:track:5uYXq5fdcKTHihY1kMBfnW",
+        "spotify:track:4yxKooT0EhkBSWhnFzJ7MC",
+        "spotify:track:5Sgq3RV6uDza8tdxquUIBq",
+        "spotify:track:1cI6eTVbO41Jhbo2DTLDbI",
+        "spotify:track:1qZDV5FoHPZKEwmeP8Wkt4",
+        "spotify:track:2EDJwbdpnsGuqktzupFCuY",
+        "spotify:track:4jsYpFk995FSoaFjQkglzw",
+        "spotify:track:57MXcBXXMRc88jp62Asohw",
+        "spotify:track:0Ny0jG7RiWC2aSlLPs783b",
+        "spotify:track:1mfUpDQFgQV3whe4UHEgIW",
+        "spotify:track:36JUcmmAlOYfLrYq2w8HGH",
+        "spotify:track:0jj6L6ux0ZaMjZqBZN1GZ3",
+        "spotify:track:1NaS9Ya8JMaRSrDrwQEnB4",
+        "spotify:track:2kVQfPr871HI9ydp4T4sBm",
+        "spotify:track:70bWqjXT5RTxH7IvgcVkHM",
+        "spotify:track:6lQLTcOtFh5Og0BbgEs1K3",
+        "spotify:track:69wHZxQPnwQw6guAcFEwAr"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T12:00:00-0700",
+        "broadcast_start": "2026-09-24T09:00:00-0700",
+        "imported_at": "2026-09-25T11:19:43.378306487+00:00",
+        "last_updated": "2026-09-25 11:19 UTC",
+        "name": "KALX - The Lysergic Listen - 2026-09-24",
+        "preview": [
+          {
+            "artists": [
+              "claire rousay",
+              "Martyna Basta"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27331972ad90da3dbdf664ddd06",
+            "name": "cool girls go to heaven"
+          },
+          {
+            "artists": [
+              "Shannon Lay"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273964fbf1a498f5e688fe5d3b7",
+            "name": "Sky Song"
+          },
+          {
+            "artists": [
+              "Alexander Ortolan"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2739a9a784c16d24fd4b393356a",
+            "name": "tidewater"
+          },
+          {
+            "artists": [
+              "Agnes Obel"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2737c34bf09fe2f2369180efd46",
+            "name": "Gemini"
+          },
+          {
+            "artists": [
+              "Squirrel Flower"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27389fe56851f5d68e971126056",
+            "name": "Weightless, Untethered"
+          },
+          {
+            "artists": [
+              "Warren Ellis"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273bedd364714813dc8cf108500",
+            "name": "Lynx"
+          },
+          {
+            "artists": [
+              "Shearwater",
+              "Laurie Anderson"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2733329aaf3098be832ee7fef71",
+            "name": "You and Your Dog"
+          },
+          {
+            "artists": [
+              "L'Rain"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2739ea5a26ce4370090fc6698f4",
+            "name": "borderline"
+          },
+          {
+            "artists": [
+              "Bonobo",
+              "Aanya Martin"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273dd6e0f2e911f3d04f576aba9",
+            "name": "Can’t You See"
+          },
+          {
+            "artists": [
+              "Ibibio Sound Machine"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2738377ac5fbafebad9549413c8",
+            "name": "River Don't Rush"
+          },
+          {
+            "artists": [
+              "Meshell Ndegeocello",
+              "Cat Power"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27354eb12b04fd7b92cb130f621",
+            "name": "Don’t You Want Me (with Cat Power)"
+          },
+          {
+            "artists": [
+              "Ezra Collective",
+              "Lila Iké"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2736d02e8be17bfe4eb4afb2141",
+            "name": "Well Organised (feat. Lila Iké)"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23067637/The-Lysergic-Listen",
+        "station": "KALX",
+        "track_count": 32,
+        "url": "https://open.spotify.com/playlist/712gdRG3t0ZMGmHzLvccRr"
+      }
+    },
     "KALX:23067974": {
       "station": "KALX",
       "broadcast": {
@@ -31643,7 +31925,7 @@
         "broadcast_start": "2026-09-23T00:00:00-0700",
         "imported_at": "2026-09-24T11:15:35.284007160+00:00",
         "last_updated": "2026-09-24 11:15 UTC",
-        "name": "KALX - TraneCentennial with Petra Core and Last Will - 2026-09-23",
+        "name": "KALX - TraneCentennial with Petra Core and Last Will - 2026-09-23 12:00am",
         "preview": [
           {
             "artists": [
@@ -32003,6 +32285,1287 @@
         "station": "KALX",
         "track_count": 21,
         "url": "https://open.spotify.com/playlist/1lrd8lSZOUgfnAPCxd15vh"
+      }
+    },
+    "KALX:23070340": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23070340,
+        "title": "OVERNIGHTS",
+        "url": "https://spinitron.com/KALX/pl/23070340/OVERNIGHTS",
+        "start_time": "2026-09-24T02:00:00-0700",
+        "end_time": "2026-09-24T07:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "54REfTkTpX3Wgi978lnM2F",
+      "desired_uris": [
+        "spotify:track:46ryPPZoZclOnofg7XmmUs",
+        "spotify:track:4Kf2ys7tGIGvgORVxqnCeq",
+        "spotify:track:2W8ace2rlaN5NVGywZMtbG",
+        "spotify:track:06Wawsa8T4RYApPQ1Hs8kP",
+        "spotify:track:2unR1CRivQvId1REJIzFCI",
+        "spotify:track:0VjvyzMoleGvCVtGnJQI6O",
+        "spotify:track:56Q8UTxYRhMu1YaF3wW9GG",
+        "spotify:track:4pCw5Lgty7zzJPYJWqWWbQ",
+        "spotify:track:55AzN3ytctDDQu1AMHgqXu",
+        "spotify:track:0SciNbVGCW0HdifRH0L5oG",
+        "spotify:track:4H1Jsbb0mTjcwgFzQRcZIV",
+        "spotify:track:2IO7KQvaff1Y2xJh8apJgU",
+        "spotify:track:5RSbdAplUjroZLlopPPYnU",
+        "spotify:track:4KWe7Ft9BInk8gFgOhOMbd",
+        "spotify:track:7IBumr832TOgx3MhHaGkg1",
+        "spotify:track:7pmOVNGWu1lRBWVpYTcKH1",
+        "spotify:track:53VwOqwtHFyfdVVnV4qxi5",
+        "spotify:track:766xo3dFJmkqc9a4tPSlBH",
+        "spotify:track:4EWRs9yMcz3dOFDE0h8zPl",
+        "spotify:track:48k6gJDEd2Gt2jeZjC6w07",
+        "spotify:track:1lg1pdKilsWaDU8GqME2t5",
+        "spotify:track:1nBm0DkoFQdpKsSGLOSgBB",
+        "spotify:track:4ZDx6cyzSUHxflYxGA7D2l",
+        "spotify:track:6pZ22iZbCm9vrQrAv7oBc4",
+        "spotify:track:15KDhi6aXmV9IjV6WKL24N",
+        "spotify:track:5A8V0AsGjqMW2JK8yPO3Zl",
+        "spotify:track:3lpa6fzS3rSAbRogEhWxu7",
+        "spotify:track:5cPAqyGwaEYCczpdBP2yF2",
+        "spotify:track:7FBHJeb412mRpdBk2s8ZEW",
+        "spotify:track:7tu2rAUSTMPj1aqaTkBXAs",
+        "spotify:track:3Dwd3TkdSpJK3umAhAPp0B",
+        "spotify:track:3Rbdqz5Ow9hkjpWsbvaj9h",
+        "spotify:track:4IjZDtzKy4udPAXl8t8NqL",
+        "spotify:track:2K8n33xDYWwMCfDHB7Q2KA",
+        "spotify:track:5wNvUkq9JGTnOC1vRMjRGz",
+        "spotify:track:0BAfztoGPJn9g548mwMQ4j",
+        "spotify:track:1fKhumUXCV78LYBQJkVmuX",
+        "spotify:track:7KVrxdBkgTAlNLxYLBl4C8",
+        "spotify:track:4s6MrkUT8Tf5zgnJsmzeGg",
+        "spotify:track:3XJI7o9BcIcQdyjQ3hXs1W",
+        "spotify:track:3kBD1TBwT8rmq76v5VrHiY",
+        "spotify:track:5FQCWdV9sRzymMJAn1zbSG",
+        "spotify:track:4dw0UdaTQb55fMkqOIVyRA",
+        "spotify:track:5CIIJoRwejXCcRRXJ2mImn",
+        "spotify:track:6jISQ9olEnBzhSZ13VgpfW",
+        "spotify:track:7FwYAOgjz2ZEoVt6vestTk",
+        "spotify:track:666c286mls0pVjU2U4GNgY",
+        "spotify:track:2GDph18DBNFsPSkT1Bf2ZD",
+        "spotify:track:4IdB6ipGd0Cwrf2sXuWY2W",
+        "spotify:track:0ThIfLoWfjsx199d9eu9CT",
+        "spotify:track:39irRnySrRADgui9AVTqdx",
+        "spotify:track:2NllsXTI6BFRG9VR7B5Raf",
+        "spotify:track:2TXf8slmOoy1K9D3dSSI1g"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T07:00:00-0700",
+        "broadcast_start": "2026-09-24T02:00:00-0700",
+        "imported_at": "2026-09-25T11:20:00.351661006+00:00",
+        "last_updated": "2026-09-25 11:20 UTC",
+        "name": "KALX - OVERNIGHTS - 2026-09-24",
+        "preview": [
+          {
+            "artists": [
+              "Daniel Avery",
+              "Jonnine"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2734b23acab3dd896d1b3a7c6a0",
+            "name": "Only"
+          },
+          {
+            "artists": [
+              "ML Buch"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273c9ce9bcd4ab167980bfaa12b",
+            "name": "I'm A Girl You Can Hold IRL"
+          },
+          {
+            "artists": [
+              "PJ Harvey"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27309e4ac9a68d9ea5ef0ad9b05",
+            "name": "Horses In My Dreams"
+          },
+          {
+            "artists": [
+              "Two Lone Swordsmen"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27392f9a000a881a5496fa62b6d",
+            "name": "As Worldly Pleasures Wave Goodbye…."
+          },
+          {
+            "artists": [
+              "spirit blue"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273e64e065071386f99d0a24fb0",
+            "name": "language"
+          },
+          {
+            "artists": [
+              "NewDad"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2737384aedb0b3e88bc6fb17c47",
+            "name": "Kick The Curb"
+          },
+          {
+            "artists": [
+              "Daniel Avery",
+              "Julie Dawson"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273c57a5d6d23f21100fc5585d0",
+            "name": "⁠The Ghost of Her Smile"
+          },
+          {
+            "artists": [
+              "Hysterical Love Project"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2730959c1f704355928ea4860e1",
+            "name": "Boyracer"
+          },
+          {
+            "artists": [
+              "Slowdive",
+              "Daniel Avery"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2739a91a561e0cb3e0f3a47f12e",
+            "name": "kisses - Daniel Avery Remix"
+          },
+          {
+            "artists": [
+              "Allen Toussaint"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2730ff7983361faf581e74a80e5",
+            "name": "Night People - Remastered"
+          },
+          {
+            "artists": [
+              "Acopia",
+              "Daniel Avery"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27342de0a0e37a92c1eb9b7cc6d",
+            "name": "Be Enough - Daniel Avery Remix"
+          },
+          {
+            "artists": [
+              "DIIV",
+              "Daniel Avery"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273f07ef37f2895150ee18a8a0a",
+            "name": "Raining On Your Pillow - Daniel Avery Remix"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23070340/OVERNIGHTS",
+        "station": "KALX",
+        "track_count": 53,
+        "url": "https://open.spotify.com/playlist/54REfTkTpX3Wgi978lnM2F"
+      }
+    },
+    "KALX:23071256": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23071256,
+        "title": "Sapphic Donut Sunrise",
+        "url": "https://spinitron.com/KALX/pl/23071256/Sapphic-Donut-Sunrise",
+        "start_time": "2026-09-24T07:00:00-0700",
+        "end_time": "2026-09-24T09:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "4eVbUGsUl09bLYrj6FWvz4",
+      "desired_uris": [
+        "spotify:track:69zJscnkwZSAoYOajxKXZd",
+        "spotify:track:5LQoYPAjIh2bqHNeOH1Sy0",
+        "spotify:track:0b8ErkzbDe8R4ueOIAprJQ",
+        "spotify:track:6puf7LmDaq4ctcWJTP7WS8",
+        "spotify:track:3oHpMsG6KdaR0XkRjVJUBp",
+        "spotify:track:0rHFpD7usUXgFT04DTr2u3",
+        "spotify:track:7cOYI1tTCTiL23k5WQOshI",
+        "spotify:track:7IDEKg2ZkoeHUx770ap2m4",
+        "spotify:track:1OejtX2vp35vGQg81pKORg",
+        "spotify:track:124Ufpwu2knrSTW4b5Wyhi",
+        "spotify:track:1KTD3iV8jOQy3KxT4p5OaQ",
+        "spotify:track:7thKRxakHnWBMdMeTR1Z2Z",
+        "spotify:track:7ykVNlRuNqatPFLc8pngVe",
+        "spotify:track:5mHVLwmYNSR0rc71ZOnV0N",
+        "spotify:track:1gXjlJH1LPtgmB6mrMvOEQ",
+        "spotify:track:7LopPRUCQkE4wKbsiA5Lau",
+        "spotify:track:3NToDkrNrQjjqlioCbpTwH",
+        "spotify:track:0XHf6Pm3PmOkhQmZpRcPxP",
+        "spotify:track:6tG7zAsfg9RqmPdTL3ZNS8",
+        "spotify:track:13YhQP09USHYL67Po1Mqwh",
+        "spotify:track:3BV3cDC5RVFjoFwcIdUD1H"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T09:00:00-0700",
+        "broadcast_start": "2026-09-24T07:00:00-0700",
+        "imported_at": "2026-09-25T11:20:07.453617362+00:00",
+        "last_updated": "2026-09-25 11:20 UTC",
+        "name": "KALX - Sapphic Donut Sunrise - 2026-09-24",
+        "preview": [
+          {
+            "artists": [
+              "The Sterling Jubilee Singers"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273580c153ce97309a642281a5e",
+            "name": "Jesus Hits Like the Atom Bomb"
+          },
+          {
+            "artists": [
+              "Sister Gertrude Morgan"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2736b6bad487f034a2a2290b795",
+            "name": "Way In The Middle Of The Air"
+          },
+          {
+            "artists": [
+              "Rev. Gary Davis"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2736cd48b3df77c687f169cd208",
+            "name": "Get Right Church"
+          },
+          {
+            "artists": [
+              "Nasiba Abdullaeva"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273351a0b37d310e27beb044725",
+            "name": "Ona (Mother)"
+          },
+          {
+            "artists": [
+              "La Niña De La Puebla"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27382b6a6ae7b7f35840c2135e9",
+            "name": "Mis dolores son muy grandes"
+          },
+          {
+            "artists": [
+              "Aziz Balouch"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273847554beea9bf55bfce41bfc",
+            "name": "Granadina Arabe Del Siglo IX"
+          },
+          {
+            "artists": [
+              "La Niña De La Puebla"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27382b6a6ae7b7f35840c2135e9",
+            "name": "Montaña arriba"
+          },
+          {
+            "artists": [
+              "The Womack Sisters"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273afa44cba895ec03a35a27778",
+            "name": "I Am Your Season"
+          },
+          {
+            "artists": [
+              "Laura Nyro",
+              "LaBelle"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273fdfd589e9e40c0257ec68e10",
+            "name": "You've Really Got A Hold On Me"
+          },
+          {
+            "artists": [
+              "Norma Tanega"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2734cfa5ba31191eb254f12ef05",
+            "name": "Now is the Time"
+          },
+          {
+            "artists": [
+              "Rufus & Chaka Khan"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27395607ebfcc3da418c580fa4e",
+            "name": "I'm A Woman (I'm A Backbone)"
+          },
+          {
+            "artists": [
+              "Fantastic Negrito"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2738fe9cf8d6781873a259a61b1",
+            "name": "California Loner"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23071256/Sapphic-Donut-Sunrise",
+        "station": "KALX",
+        "track_count": 21,
+        "url": "https://open.spotify.com/playlist/4eVbUGsUl09bLYrj6FWvz4"
+      }
+    },
+    "KALX:23071664": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23071664,
+        "title": "TraneCentennial with Petra Core and Last Will",
+        "url": "https://spinitron.com/KALX/pl/23071664/TraneCentennial-with-Petra-Core-and-Last-Will",
+        "start_time": "2026-09-23T18:15:00-0700",
+        "end_time": "2026-09-23T20:00:00-0700"
+      },
+      "state": "creating",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:1VT4hCdbHrn87tfXXGyOOp",
+        "spotify:track:0tUYfa8feO0EDEeOuikJ9E",
+        "spotify:track:3Z6O3vNS4Gy8rL1IlEO9zG"
+      ],
+      "listing": {
+        "name": "KALX - TraneCentennial with Petra Core and Last Will - 2026-09-23 6:15pm",
+        "station": "KALX"
+      }
+    },
+    "KALX:23072650": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23072650,
+        "title": "FREEFORM",
+        "url": "https://spinitron.com/KALX/pl/23072650/FREEFORM",
+        "start_time": "2026-09-24T12:30:00-0700",
+        "end_time": "2026-09-24T15:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "3bB5pfdZHGbfasjZSqMCsA",
+      "desired_uris": [
+        "spotify:track:1TddVIqBrUufjMPp0vStUF",
+        "spotify:track:5UV2rKLzS2CqnFAoB6Lr0H",
+        "spotify:track:325m2yL6RExbmZGu62M9w3",
+        "spotify:track:2rv0LVCuRDIQsc5uQN0rbU",
+        "spotify:track:2rK0MkWS2lKbQMIZ0zeuNa",
+        "spotify:track:6KyNTZ3oG0DMi9n7YAm5Ld",
+        "spotify:track:37KTvGoLvfynlfNsbMhj3O",
+        "spotify:track:2ZxpXDy75THoU2VU5psMbu",
+        "spotify:track:3ABAJj57o7rt7Fa1J2ksgG",
+        "spotify:track:07av7W1ZiEFV6ApN97Jb42",
+        "spotify:track:5KsRqlgcwKiayanq6zZtDv",
+        "spotify:track:4xNNdG2SmtnrtcK3NxQghU",
+        "spotify:track:1lfrEfIqFx5uUrJInBub0n",
+        "spotify:track:7cAOiCJFuctPZNdkbZsEwq",
+        "spotify:track:2PUIkIHdDpF2bDbNqTCNOP",
+        "spotify:track:3J1DUoeBgOF9AYfBM8BiG6",
+        "spotify:track:40zzXd9zKvBpkGg4YeriRg",
+        "spotify:track:4yd4DoD4ydcIgU4tHeDrm9",
+        "spotify:track:7mR9MjL3hVKn0wPTgc8Sll",
+        "spotify:track:3v5bMNeiu0RS1FEmBfOzis",
+        "spotify:track:1Q8DiHLL0f2Q34a51YLTMq",
+        "spotify:track:1EETE4FmCHWNEJqkAwCEFF",
+        "spotify:track:0YfHbTXviYqWTRD7bB1Tus",
+        "spotify:track:2YqC9Ka3oCTTNFcLcn1GMF",
+        "spotify:track:75CSP43AyPixVbs2yUsUxa",
+        "spotify:track:2IrB7Xq1VvcatiOvWbbA4H",
+        "spotify:track:291wKtqxAhEa62B8Ra1Q7a",
+        "spotify:track:2gfZmjBwcg1jsAtxpc49tp",
+        "spotify:track:7zbCMkW3u8u0JdQlrBbcdV"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T15:00:00-0700",
+        "broadcast_start": "2026-09-24T12:30:00-0700",
+        "imported_at": "2026-09-25T11:20:21.263163925+00:00",
+        "last_updated": "2026-09-25 11:20 UTC",
+        "name": "KALX - FREEFORM - 2026-09-24 12:30pm",
+        "preview": [
+          {
+            "artists": [
+              "Asha Bhosle",
+              "Kishore Kumar"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273acf622a7cddf752f5b23ee08",
+            "name": "Nach Meri Jaan Phataphat"
+          },
+          {
+            "artists": [
+              "Minyo Crusaders",
+              "Frente Cumbiero"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2738964f1cac00a4c6bcf5b514f",
+            "name": "Hanagasa Ondo"
+          },
+          {
+            "artists": [
+              "Tom Zé"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2731f0672b08d4305d0aec00377",
+            "name": "Um \"Oh!\" e Um \"Ah!\""
+          },
+          {
+            "artists": [
+              "Fernand Raynaud"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2734c0fe40a7ccf5aab5560a6d5",
+            "name": "Oh! Eh! Hein! Quoi!"
+          },
+          {
+            "artists": [
+              "Silvio Francesco",
+              "Caterina Valente"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27353dda80893ac0df27b020550",
+            "name": "Itsy Bitsy Teenie Weenie Honolulu Strand Bikini"
+          },
+          {
+            "artists": [
+              "The Peanuts"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2733b2a027fccd58b206fd94863",
+            "name": "青空の笑顔"
+          },
+          {
+            "artists": [
+              "DJ Seinfeld",
+              "TS Graye"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2735cca535b2ae72dd0a3723338",
+            "name": "U Can't Come Home"
+          },
+          {
+            "artists": [
+              "Dorian Pimpernel"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27392fd3021e1ec3f22a9c413e0",
+            "name": "Twisted Charm Honey"
+          },
+          {
+            "artists": [
+              "Shannon Lay"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273964fbf1a498f5e688fe5d3b7",
+            "name": "What Does It Mean?"
+          },
+          {
+            "artists": [
+              "Cain Culto"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273268c6817debd6ed4961a8d95",
+            "name": "cucuru"
+          },
+          {
+            "artists": [
+              "Orquesta Akokán",
+              "Miriam Elhajli"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273515e239648537ec6810e8a7e",
+            "name": "Girassol"
+          },
+          {
+            "artists": [
+              "Ibibio Sound Machine"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2738377ac5fbafebad9549413c8",
+            "name": "Menso"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23072650/FREEFORM",
+        "station": "KALX",
+        "track_count": 29,
+        "url": "https://open.spotify.com/playlist/3bB5pfdZHGbfasjZSqMCsA"
+      }
+    },
+    "KALX:23073170": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23073170,
+        "title": "FREEFORM",
+        "url": "https://spinitron.com/KALX/pl/23073170/FREEFORM",
+        "start_time": "2026-09-24T15:00:00-0700",
+        "end_time": "2026-09-24T17:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "4tCTLhUml37DMP2CFaxGsf",
+      "desired_uris": [
+        "spotify:track:08hvKlzfjR1uXbDsUdFtXE",
+        "spotify:track:0YuwsyMxYaB5M7THOoprze",
+        "spotify:track:2JIjYKbTcHqfCgqHw52yFJ",
+        "spotify:track:7umZS0zU5ZND8wbakn8GJu",
+        "spotify:track:6b37xrsNCWYIUphFBazqD6",
+        "spotify:track:7B2gLupDwMtH3TMUIxoz5G",
+        "spotify:track:2aQPNm5EtLWBHsqzNuAdcq",
+        "spotify:track:2i5eajmCJ4fp9b1yQk8Hlg",
+        "spotify:track:3NSBx0qFG4raBpQzG6ErLR",
+        "spotify:track:61hXA1ECZViJflP9g5FpYP",
+        "spotify:track:0x20jMq9v5RUiu2HiFu71b",
+        "spotify:track:1dzK2gIVyTaE1aWttZrrFD",
+        "spotify:track:1yghEKyic4jHAhFZek4w0d",
+        "spotify:track:3AMhsjzI4xejYqk6mZXgwL",
+        "spotify:track:6w7ZC03yZh3DmqJem9dB9c",
+        "spotify:track:3M47d9PxmZRl6dDQOSAwdr",
+        "spotify:track:38zbwfC0JwRPMq4Lze3dXm",
+        "spotify:track:50uR3GqfYQJjuPDmx4NjzM",
+        "spotify:track:5drV8Ej6wGTgNHhGTtVme7",
+        "spotify:track:0lSbwT0hsNUOSyYf17P0as",
+        "spotify:track:4Hj0b5ZZkKTSghuGYULPhx",
+        "spotify:track:3nr8E8JoINMdRMKg52hqD7",
+        "spotify:track:4aUHXyMSMVfuLyz8FAEiNm",
+        "spotify:track:04X3gZTOCcaBtoTYCV3X3K"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T17:00:00-0700",
+        "broadcast_start": "2026-09-24T15:00:00-0700",
+        "imported_at": "2026-09-25T11:20:29.633305418+00:00",
+        "last_updated": "2026-09-25 11:20 UTC",
+        "name": "KALX - FREEFORM - 2026-09-24 3:00pm -0700 [KALX:23073170]",
+        "preview": [
+          {
+            "artists": [
+              "Bad Manners"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273c3029321c09e6d722d682fca",
+            "name": "Sally Brown"
+          },
+          {
+            "artists": [
+              "Hot Chocolate"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2730a1e397abec97c0aa3aec8ed",
+            "name": "Every 1's a Winner - Groove Mix"
+          },
+          {
+            "artists": [
+              "Holy Wave"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273f29f40fb43dac2c3288fac09",
+            "name": "s33.u.in/HAL"
+          },
+          {
+            "artists": [
+              "Mike D"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2736eb01697a86d9953fa8d5063",
+            "name": "Switch Up"
+          },
+          {
+            "artists": [
+              "Manu Chao"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2731dcba4a728ca0b17cbd204a5",
+            "name": "Me Gustas Tu"
+          },
+          {
+            "artists": [
+              "Edgar"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2730dd35fa735bccd352ec6b205",
+            "name": "La Cuca"
+          },
+          {
+            "artists": [
+              "Love and Rockets"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2735122b30d974cb5cf7f0a2ccd",
+            "name": "Haunted When the Minutes Drag"
+          },
+          {
+            "artists": [
+              "Station Model Violence"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273c35d95e9007ae98dead80464",
+            "name": "Learn To Hate"
+          },
+          {
+            "artists": [
+              "Fol Chen"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2732add714205a1d33b42970512",
+            "name": "The Believers"
+          },
+          {
+            "artists": [
+              "Mungo Jerry"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2732c32773808a599d9aa5f5a54",
+            "name": "Memoirs of a Stockbroker"
+          },
+          {
+            "artists": [
+              "Orquesta Akokán",
+              "Carolina Oliveros"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27362db583f40385422fe54d697",
+            "name": "No Me Voy"
+          },
+          {
+            "artists": [
+              "Liars"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2738fcb1a8888b3c740c5bd5f48",
+            "name": "Ice Pick, Kalamazoo"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23073170/FREEFORM",
+        "station": "KALX",
+        "track_count": 24,
+        "url": "https://open.spotify.com/playlist/4tCTLhUml37DMP2CFaxGsf"
+      }
+    },
+    "KALX:23073636": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23073636,
+        "title": "Dealer's Choice - Popcorn!",
+        "url": "https://spinitron.com/KALX/pl/23073636/Dealer-s-Choice-Popcorn",
+        "start_time": "2026-09-24T17:00:00-0700",
+        "end_time": "2026-09-24T18:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "2UY5bIm5j77fBnABUoyI5n",
+      "desired_uris": [
+        "spotify:track:0IlRRSK8RZZJJ5LsGm3RFl",
+        "spotify:track:6FSesHLjxnw4kzpn8ZnrRp",
+        "spotify:track:3Kf1Rc1lmCJwaoQsVBr0pi",
+        "spotify:track:7EMeDckoX1hGOqbHCx8Rr2",
+        "spotify:track:7nwkCLpPH9Z4sQ1W4rBPV0",
+        "spotify:track:1NkzA0lpXjUUvO60dbcQRj",
+        "spotify:track:0hbkKFIJm7Z05H8Zl9w30f",
+        "spotify:track:5CZ5kLFRQhPbtGbQ2rXScE",
+        "spotify:track:26HKyKKbVrfbEgeR4dDsea",
+        "spotify:track:6uo1QE6vKtrvtjwzombd6l",
+        "spotify:track:61Zo9Nw42uY7Qa6MygAsb8",
+        "spotify:track:5VRG0c5cLtIKu2qZnkQnSQ",
+        "spotify:track:3RyJW2TYCJEzoC4iFnppyK",
+        "spotify:track:1gqju52hH5Khz7Nx3fmGpR",
+        "spotify:track:0OlBRhO8koJ2S1lepGifJl",
+        "spotify:track:0u80tAyLIueUgxiAou2xFP",
+        "spotify:track:02oUhPB9IzkQKFgyfmVi4m"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T18:00:00-0700",
+        "broadcast_start": "2026-09-24T17:00:00-0700",
+        "imported_at": "2026-09-25T11:20:52.806008688+00:00",
+        "last_updated": "2026-09-25 11:20 UTC",
+        "name": "KALX - Dealer's Choice - Popcorn! - 2026-09-24",
+        "preview": [
+          {
+            "artists": [
+              "Rose Mitchell"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2733a709753d50c62e38325c791",
+            "name": "Baby Please Don't Go"
+          },
+          {
+            "artists": [
+              "Faye Adams"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2738e27217350897d9ce27546d8",
+            "name": "The Hammer (Keeps a Knockin') - Remastered"
+          },
+          {
+            "artists": [
+              "Baby Washington"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2732f0028703499f076443d9568",
+            "name": "Medicine Man"
+          },
+          {
+            "artists": [
+              "Percy Mayfield"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273c4ffa09ec7b95d3d9b470e6f",
+            "name": "The Voice Within"
+          },
+          {
+            "artists": [
+              "Roy Brown"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2730cb18d9bfdc1405a9e84590d",
+            "name": "Queen of Diamonds"
+          },
+          {
+            "artists": [
+              "Tarheel Slim & Little Ann"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2739c4400ec0378dca6c72c6bb3",
+            "name": "It's Too Late"
+          },
+          {
+            "artists": [
+              "Screamin' Jay Hawkins"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27360af0eda3af19a1188e8beeb",
+            "name": "I Put A Spell On You"
+          },
+          {
+            "artists": [
+              "O.V. Wright"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2735169c75b221bf4bcd823c790",
+            "name": "Eight Men And Four Women - Single Version"
+          },
+          {
+            "artists": [
+              "Wynona Carr"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2738a588ee3b8ffd080fb1ecb0d",
+            "name": "Please Mr. Jailer"
+          },
+          {
+            "artists": [
+              "Little Jimmy Ray"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273604a990ac3f4f3203cb2119e",
+            "name": "You Need to Fall in Love"
+          },
+          {
+            "artists": [
+              "Paul Perryman"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273304ae9fd0ba8549478692cdf",
+            "name": "Look at My Baby"
+          },
+          {
+            "artists": [
+              "Ann Cole"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273fd51f631f754b35122fb0b5b",
+            "name": "Each Day"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23073636/Dealer-s-Choice-Popcorn",
+        "station": "KALX",
+        "track_count": 17,
+        "url": "https://open.spotify.com/playlist/2UY5bIm5j77fBnABUoyI5n"
+      }
+    },
+    "KALX:23073892": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23073892,
+        "title": "Mixed Blessings",
+        "url": "https://spinitron.com/KALX/pl/23073892/Mixed-Blessings",
+        "start_time": "2026-09-24T18:00:00-0700",
+        "end_time": "2026-09-24T20:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "0K6KS054nUpd0ES3j5QHYA",
+      "desired_uris": [
+        "spotify:track:3bEECCaIejir3Amq4iTpCg",
+        "spotify:track:2Cl2YelFwu2A2ynP8sm5Lz",
+        "spotify:track:1Q8DiHLL0f2Q34a51YLTMq",
+        "spotify:track:77x095YNNuHGdTL3sYPG4N",
+        "spotify:track:79t5LlfbozeE8ETlT41cdX",
+        "spotify:track:64YesFcTLisRSvGVNWTXvp",
+        "spotify:track:4K6xBKCaPGi7DlYRJSLZh5",
+        "spotify:track:4XkzHY5Bp7KgHKlH6fg619",
+        "spotify:track:2WX9kw39LL3RdrJCQC9XiO",
+        "spotify:track:1Z9FvuHkARWbU9H0P7OzaD",
+        "spotify:track:6ajUEn3yDD2pt2he3HifXH",
+        "spotify:track:5fHdabNUYrUZ0sOhO6ek8w",
+        "spotify:track:2Bdvo5FydOCO9EIN3Fl7jT",
+        "spotify:track:6puf7LmDaq4ctcWJTP7WS8",
+        "spotify:track:5NWJI0D5UYOrI7h7wM1O4K",
+        "spotify:track:0ehbAfaq4WWG2nE7AJp9sR",
+        "spotify:track:4gYaI1S9Qug6B96E2HwxeN",
+        "spotify:track:6c0N50C2IcQIAWSZopdEuw"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T20:00:00-0700",
+        "broadcast_start": "2026-09-24T18:00:00-0700",
+        "imported_at": "2026-09-25T11:20:58.971555714+00:00",
+        "last_updated": "2026-09-25 11:20 UTC",
+        "name": "KALX - Mixed Blessings - 2026-09-24",
+        "preview": [
+          {
+            "artists": [
+              "Link Wray"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2734478dcaf4a7b766feabb75cc",
+            "name": "Fire And Brimstone"
+          },
+          {
+            "artists": [
+              "Niney"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2735a7938092536cf43836c4cdc",
+            "name": "Blood & Fire"
+          },
+          {
+            "artists": [
+              "Birmingham Jubilee Singers"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273186e69a78b9dc7ab606edb02",
+            "name": "What You Gonna Do When The World's On Fire"
+          },
+          {
+            "artists": [
+              "Los Orientales de Paramonga"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27334f9cf9754657c5050df7f7b",
+            "name": "San Patricio"
+          },
+          {
+            "artists": [
+              "Miguel Angel Fuster"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2731e6f9a7033ca56a24fbdddc9",
+            "name": "Polvo Lunar"
+          },
+          {
+            "artists": [
+              "Alwin Nikolais"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273cd2e0dacfa202136fcd80a2b",
+            "name": "TEN LEGS: Dance 1"
+          },
+          {
+            "artists": [
+              "Folque"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2736b7c1b835b8034b404cfeb3e",
+            "name": "Skjøn Jomfru"
+          },
+          {
+            "artists": [
+              "Adriano Monteduro"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2730299f2d088f3255b67b199a7",
+            "name": "Suoni Di Umanità"
+          },
+          {
+            "artists": [
+              "Damian O'Neill"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273fc086630b3d14a11287c23dc",
+            "name": "Inside Out"
+          },
+          {
+            "artists": [
+              "Maki Asakawa"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273e82a12fa2630e742f34a588c",
+            "name": "ふしあわせという名の猫"
+          },
+          {
+            "artists": [
+              "Ahmed Abdul-Malik"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2735e27baec2e21d0792e677360",
+            "name": "Nadusilma - Instrumental"
+          },
+          {
+            "artists": [
+              "Ken McIntyre"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27317ab15e2310284c5079ac2f7",
+            "name": "96.5"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23073892/Mixed-Blessings",
+        "station": "KALX",
+        "track_count": 18,
+        "url": "https://open.spotify.com/playlist/0K6KS054nUpd0ES3j5QHYA"
+      }
+    },
+    "KALX:23074365": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23074365,
+        "title": "FREEFORM",
+        "url": "https://spinitron.com/KALX/pl/23074365/FREEFORM",
+        "start_time": "2026-09-24T20:00:00-0700",
+        "end_time": "2026-09-24T22:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "09nVLj6xMW0xuh3T0MIrSY",
+      "desired_uris": [
+        "spotify:track:3WQzjZsLvlMXQVO8ca6buL",
+        "spotify:track:3Lz5xN9tSHKJsGvRe5FogX",
+        "spotify:track:0eDJF9OdxeOB0ajeaEvU8j",
+        "spotify:track:7EWDXdu3BzLLCuAGrAx4RT",
+        "spotify:track:3QIks8fZm1jZYcl1kdH8Jb",
+        "spotify:track:72fx5r2Ce1Ap9mzpIVflc3",
+        "spotify:track:2rFip3zL6mqFv3XcALMqhd",
+        "spotify:track:4lGNE5i4p2lD839nrqG9xt",
+        "spotify:track:6pwBrbBVCdIJ22GR4vmqbG",
+        "spotify:track:1u9Dkko59QyCkBuLrgRCz3",
+        "spotify:track:3usuePEtMFacdsktVJ2Zw3",
+        "spotify:track:3l75cLGKRMPUQyCMI0DZWC",
+        "spotify:track:3BMh4atqrpmfbgT88fCtJd",
+        "spotify:track:4iWvBAiamWRLXM8p0wHdib",
+        "spotify:track:7dOyNOOb1BHTwYcFncSQr3",
+        "spotify:track:4fuH1YZCvWRTM7YPwWkDp5",
+        "spotify:track:4b1QYjd7i5D1Gx2VjN21qI",
+        "spotify:track:7ixqaiPMahVz07xUWEPDOz",
+        "spotify:track:4yxKooT0EhkBSWhnFzJ7MC",
+        "spotify:track:7usk7zdSDyBKeEF0THDKoK",
+        "spotify:track:5bfvQG4NGiTFfUxPdMKrUd",
+        "spotify:track:15oFDT73ssJ42uK7bsP2AT"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T22:00:00-0700",
+        "broadcast_start": "2026-09-24T20:00:00-0700",
+        "imported_at": "2026-09-25T11:21:06.510610608+00:00",
+        "last_updated": "2026-09-25 11:21 UTC",
+        "name": "KALX - FREEFORM - 2026-09-24 8:00pm",
+        "preview": [
+          {
+            "artists": [
+              "Allan Bryant"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27327902849a0135d06b671ab0e",
+            "name": "Whirling Take-Off"
+          },
+          {
+            "artists": [
+              "Child Seat"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2730d0e88f58f988ab30811b0fe",
+            "name": "Love Drug"
+          },
+          {
+            "artists": [
+              "Clan of Xymox"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273321c60d787db4d28ea5ced2e",
+            "name": "Going Round"
+          },
+          {
+            "artists": [
+              "Beach House"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2739b7190e673e46271b2754aab",
+            "name": "Levitation"
+          },
+          {
+            "artists": [
+              "Blonde Redhead"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27338e2400d2838fd5972ecfc3e",
+            "name": "SW"
+          },
+          {
+            "artists": [
+              "CHALK TEETH"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273333afcbf7372a38659427d41",
+            "name": "Paskuda!"
+          },
+          {
+            "artists": [
+              "The Cure"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2738613a922e2b503736fb2f91f",
+            "name": "Drone:Nodrone"
+          },
+          {
+            "artists": [
+              "Cocteau Twins"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273dd141adcc0e3942de6cd044f",
+            "name": "Pearly-Dewdrops' Drops - 12\" Version"
+          },
+          {
+            "artists": [
+              "The Vaselines"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273b92cc9de7940342c83063e69",
+            "name": "Teenage Superstars"
+          },
+          {
+            "artists": [
+              "The Chutes"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2733d3ae2c0201831173c25e332",
+            "name": "Everything Loses Its Color in the Dark"
+          },
+          {
+            "artists": [
+              "Heavenly"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273f6db28bffe61653353fc0cd5",
+            "name": "Cool Guitar Boy"
+          },
+          {
+            "artists": [
+              "Angine de Poitrine"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2734821b77fd92093513d7634b5",
+            "name": "Angor"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23074365/FREEFORM",
+        "station": "KALX",
+        "track_count": 22,
+        "url": "https://open.spotify.com/playlist/09nVLj6xMW0xuh3T0MIrSY"
+      }
+    },
+    "KALX:23075191": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23075191,
+        "title": "FREEFORM",
+        "url": "https://spinitron.com/KALX/pl/23075191/FREEFORM",
+        "start_time": "2026-09-24T15:00:00-0700",
+        "end_time": "2026-09-24T18:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "752vhG74p27U1a1xQ1w6wI",
+      "desired_uris": [
+        "spotify:track:2dwJu5YAygyVjzvd90uwIR",
+        "spotify:track:5ASi5EqhJcpUgXjgXtw4hP",
+        "spotify:track:0mkc6bvfRwZJPDp6du23zW",
+        "spotify:track:4YYohb8xh69oSBn0O1Xbuj",
+        "spotify:track:2KKm0eabyXdRGvPX3NE8mP",
+        "spotify:track:3NwF2TH8AuW0zoLQVRRy51",
+        "spotify:track:4EMyyiC4kzcgyCcz1kRcs8",
+        "spotify:track:0Bs0hUYxz7REyIHH7tRhL2",
+        "spotify:track:0GRBFjza23Im7Xb16c9AaK",
+        "spotify:track:6jrzTN8AezZ9SgE2UMb9tE",
+        "spotify:track:0J3CHAStO3pNGTnYnxKZod",
+        "spotify:track:055ze3Zcscqc0UiEwaL02D",
+        "spotify:track:6SkAlqOZd4oAveFht2FDkU",
+        "spotify:track:1wdc7QpmcpMJZV9tyrqaym",
+        "spotify:track:43syeziBqARg4rYwHMxKcX",
+        "spotify:track:65XuPLwSG77sLp2txx7GkF",
+        "spotify:track:4Uwis4v4b76JtlKBDn7vsv",
+        "spotify:track:1IjFsLye5xTyYD3UkMXPCR",
+        "spotify:track:6yF7b2B22KJJRiV3nZnD9n",
+        "spotify:track:6CqOvYedv98MEi6V96k4jp",
+        "spotify:track:6N6bWpmpOhBDmGT3solazc",
+        "spotify:track:5vK9uX6mvFJQFeAmqPuPoq",
+        "spotify:track:2oiLDyYVLnUUDKcdnLm9va",
+        "spotify:track:4PAZKdUttmFxrf6Luv9KEC",
+        "spotify:track:1gCswXgTK764dzN253Rl3m",
+        "spotify:track:5yHSqWWUpU27n9s8kbZ94g",
+        "spotify:track:2hwR48Nzl2OlucyMalGEKS"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T18:00:00-0700",
+        "broadcast_start": "2026-09-24T15:00:00-0700",
+        "imported_at": "2026-09-25T11:20:39.149768607+00:00",
+        "last_updated": "2026-09-25 11:20 UTC",
+        "name": "KALX - FREEFORM - 2026-09-24 3:00pm -0700 [KALX:23075191]",
+        "preview": [
+          {
+            "artists": [
+              "Exploding Zones"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2739f9c8f803df31ec43b9504e7",
+            "name": "Sun Pill"
+          },
+          {
+            "artists": [
+              "SLIFT"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273be47b9c90a4494aabab327c4",
+            "name": "Corrupted Sky"
+          },
+          {
+            "artists": [
+              "McCoy Tyner"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273c5f86d67f8d8e7a1040f392d",
+            "name": "Fly With The Wind"
+          },
+          {
+            "artists": [
+              "Thought Industry"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27380841d393282c7dc7f23cf79",
+            "name": "Fairy"
+          },
+          {
+            "artists": [
+              "Sloome"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273ebef9f036ae4ac42a2d0dccb",
+            "name": "omen"
+          },
+          {
+            "artists": [
+              "David Moore"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27388a0458624876c2a82d551c0",
+            "name": "Being Flowers"
+          },
+          {
+            "artists": [
+              "Patrice Rushen"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273dd51f0bf670da32e46f18af8",
+            "name": "The Dream - Remastered"
+          },
+          {
+            "artists": [
+              "The Beatles"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2734ce8b4e42588bf18182a1ad2",
+            "name": "Helter Skelter - Remastered 2009"
+          },
+          {
+            "artists": [
+              "Led Zeppelin"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2731aa47e71c4edfeaddb65cd54",
+            "name": "No Quarter - Remaster"
+          },
+          {
+            "artists": [
+              "The Doors"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273e3213d2798644a5935b6dce3",
+            "name": "Yes, the River Knows"
+          },
+          {
+            "artists": [
+              "Jimi Hendrix"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27319dcd95d28b63d10164327f2",
+            "name": "If 6 Was 9"
+          },
+          {
+            "artists": [
+              "The Monkees"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27342360a57337ab2482d8ae27f",
+            "name": "Daily Nightly"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23075191/FREEFORM",
+        "station": "KALX",
+        "track_count": 27,
+        "url": "https://open.spotify.com/playlist/752vhG74p27U1a1xQ1w6wI"
+      }
+    },
+    "KALX:23075269": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23075269,
+        "title": "FREEFORM",
+        "url": "https://spinitron.com/KALX/pl/23075269/FREEFORM",
+        "start_time": "2026-09-25T00:00:00-0700",
+        "end_time": "2026-09-25T03:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "0qexsX8bB87AOIeubxYsOP",
+      "desired_uris": [
+        "spotify:track:4NTnsmgHxlu92IlJqFwvoz",
+        "spotify:track:2dwJu5YAygyVjzvd90uwIR",
+        "spotify:track:5ASi5EqhJcpUgXjgXtw4hP",
+        "spotify:track:4Zhz4xtIUJTeNJ580Uy449",
+        "spotify:track:0mkc6bvfRwZJPDp6du23zW",
+        "spotify:track:4YYohb8xh69oSBn0O1Xbuj",
+        "spotify:track:3NwF2TH8AuW0zoLQVRRy51",
+        "spotify:track:4EMyyiC4kzcgyCcz1kRcs8",
+        "spotify:track:0Bs0hUYxz7REyIHH7tRhL2",
+        "spotify:track:0GRBFjza23Im7Xb16c9AaK",
+        "spotify:track:6jrzTN8AezZ9SgE2UMb9tE",
+        "spotify:track:0J3CHAStO3pNGTnYnxKZod",
+        "spotify:track:055ze3Zcscqc0UiEwaL02D",
+        "spotify:track:5LauBuZpcIBpeCqhGchJuL",
+        "spotify:track:7Lbln6Tgd76MSEaPOhsJMf",
+        "spotify:track:1wdc7QpmcpMJZV9tyrqaym",
+        "spotify:track:43syeziBqARg4rYwHMxKcX",
+        "spotify:track:3lpa6fzS3rSAbRogEhWxu7",
+        "spotify:track:65XuPLwSG77sLp2txx7GkF",
+        "spotify:track:25GjRARYrRAKn6UvTc0L9p",
+        "spotify:track:1IjFsLye5xTyYD3UkMXPCR",
+        "spotify:track:6RWqnVlroksjSdD6S1L9qo",
+        "spotify:track:6CqOvYedv98MEi6V96k4jp",
+        "spotify:track:6N6bWpmpOhBDmGT3solazc",
+        "spotify:track:56DYNKo3QHkakqOUkWi3vl",
+        "spotify:track:2mN7k8VFqTHKK1FZF7514Z",
+        "spotify:track:1gCswXgTK764dzN253Rl3m",
+        "spotify:track:5yHSqWWUpU27n9s8kbZ94g",
+        "spotify:track:2XXnH6y4FGVxK8q6yj16Tj"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-25T03:00:00-0700",
+        "broadcast_start": "2026-09-25T00:00:00-0700",
+        "imported_at": "2026-09-25T11:21:14.057510570+00:00",
+        "last_updated": "2026-09-25 11:21 UTC",
+        "name": "KALX - FREEFORM - 2026-09-25",
+        "preview": [
+          {
+            "artists": [
+              "Daft Punk"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27344d9e117d2a21880f06f57b7",
+            "name": "Around the World"
+          },
+          {
+            "artists": [
+              "Exploding Zones"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2739f9c8f803df31ec43b9504e7",
+            "name": "Sun Pill"
+          },
+          {
+            "artists": [
+              "SLIFT"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273be47b9c90a4494aabab327c4",
+            "name": "Corrupted Sky"
+          },
+          {
+            "artists": [
+              "Glenn Miller"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273aff46654b5dd4a0f72d17cc0",
+            "name": "In the Mood"
+          },
+          {
+            "artists": [
+              "McCoy Tyner"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273c5f86d67f8d8e7a1040f392d",
+            "name": "Fly With The Wind"
+          },
+          {
+            "artists": [
+              "Thought Industry"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27380841d393282c7dc7f23cf79",
+            "name": "Fairy"
+          },
+          {
+            "artists": [
+              "David Moore"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27388a0458624876c2a82d551c0",
+            "name": "Being Flowers"
+          },
+          {
+            "artists": [
+              "Patrice Rushen"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273dd51f0bf670da32e46f18af8",
+            "name": "The Dream - Remastered"
+          },
+          {
+            "artists": [
+              "The Beatles"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2734ce8b4e42588bf18182a1ad2",
+            "name": "Helter Skelter - Remastered 2009"
+          },
+          {
+            "artists": [
+              "Led Zeppelin"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2731aa47e71c4edfeaddb65cd54",
+            "name": "No Quarter - Remaster"
+          },
+          {
+            "artists": [
+              "The Doors"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273e3213d2798644a5935b6dce3",
+            "name": "Yes, the River Knows"
+          },
+          {
+            "artists": [
+              "Jimi Hendrix"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27319dcd95d28b63d10164327f2",
+            "name": "If 6 Was 9"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23075269/FREEFORM",
+        "station": "KALX",
+        "track_count": 29,
+        "url": "https://open.spotify.com/playlist/0qexsX8bB87AOIeubxYsOP"
       }
     },
     "KPOO:22953138": {
@@ -55518,6 +57081,773 @@
         "station": "KPOO",
         "track_count": 11,
         "url": "https://open.spotify.com/playlist/7xU8dPB4dhowKPu9ipSFDH"
+      }
+    },
+    "KPOO:23071773": {
+      "station": "KPOO",
+      "broadcast": {
+        "id": 23071773,
+        "title": "JIVIN' AROUND",
+        "url": "https://spinitron.com/KPOO/pl/23071773/JIVIN-AROUND",
+        "start_time": "2026-09-24T09:00:00-0700",
+        "end_time": "2026-09-24T11:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "6yVcBVTk9Ag8of0CKKuzox",
+      "desired_uris": [
+        "spotify:track:7kxMwCdLI8SOXjLA9tWVyF",
+        "spotify:track:2hb2SAjXUSpq9JghS0WctQ",
+        "spotify:track:1shA8IhS5CB4yYzwrn6Fzl",
+        "spotify:track:7hPv1lfCZmK5EGKzZgxxIA",
+        "spotify:track:3iH0u6MqXPENZaR7nyHvpG",
+        "spotify:track:1XTzERcWA8JFv7q1jHdFI8",
+        "spotify:track:4uKvNOzREv71NXxynO9CXg",
+        "spotify:track:0h7pMUK2EKEj7E4gGvhDO5",
+        "spotify:track:2Q20X4fKdfYZxMbrqiO1S1",
+        "spotify:track:55TTHESiRE4irTWZ3xHIAX",
+        "spotify:track:1KqfkPxRaoTZ3xfz6LwSnq",
+        "spotify:track:796HwtDRCE3MVNQoW15YJK",
+        "spotify:track:6laxOwoFvwOnvpGlRs92gV",
+        "spotify:track:0lJ3iwfMWh8xDXWuGhbMv7",
+        "spotify:track:1kYaYV2JbDP53LWPh0ckJn",
+        "spotify:track:7jqrD6XG20EZ5QbMdyUpZd",
+        "spotify:track:16ZNz0wXDJERo4zquNPw7x",
+        "spotify:track:2mYOqnBfDk2baqoWlmRiwd",
+        "spotify:track:4PSSl2dWKhnNKFM0hUfMVy",
+        "spotify:track:295RNpUAzruIoPcxFdzHl0",
+        "spotify:track:1uiMXPkNhcpXSx7RlGFbQB",
+        "spotify:track:6L5ZVZSkI3u2H1BDUhtkEW",
+        "spotify:track:4xuku3YQWl6sbhpTU7TaE8",
+        "spotify:track:40yDIZa7ncHhfeMTFC73nj"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T11:00:00-0700",
+        "broadcast_start": "2026-09-24T09:00:00-0700",
+        "imported_at": "2026-09-25T11:21:26.940688189+00:00",
+        "last_updated": "2026-09-25 11:21 UTC",
+        "name": "KPOO - JIVIN' AROUND - 2026-09-24",
+        "preview": [
+          {
+            "artists": [
+              "Shirley Ellis"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2733f536daffcfd8defdfcfb4d0",
+            "name": "The Clapping Song (Clap Pat Clap Slap) - Single Version"
+          },
+          {
+            "artists": [
+              "James Brown & The Famous Flames"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2734174d223710bcf3edc7f4119",
+            "name": "There Was A Time"
+          },
+          {
+            "artists": [
+              "The Dells"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273d30ad2e1bdc7779138f08e48",
+            "name": "Always Together"
+          },
+          {
+            "artists": [
+              "Mark de Clive-Lowe"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27357a32b83e3832ad56ebf2a3b",
+            "name": "Imam"
+          },
+          {
+            "artists": [
+              "Jimmy Smith"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273da8da2fccb8ae21d66a1e90a",
+            "name": "Mack The Knife"
+          },
+          {
+            "artists": [
+              "Leon Haywood"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273f2308f5f5b548b59435a897c",
+            "name": "It's Got To Be Mellow"
+          },
+          {
+            "artists": [
+              "Ruby And The Romantics"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27351db7ae9134cc2448f46cd31",
+            "name": "Every Day's A Holiday"
+          },
+          {
+            "artists": [
+              "Marva Whitney"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2730dedb76afbbced21b175ae21",
+            "name": "Unwind Yourself"
+          },
+          {
+            "artists": [
+              "Keith Colley"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27398a3e1f4a5fe8802db76d851",
+            "name": "Enamorado"
+          },
+          {
+            "artists": [
+              "Mel & Tim"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2736c06453cdf0d2abe3c629d27",
+            "name": "Backfield In Motion"
+          },
+          {
+            "artists": [
+              "Booker T. & the M.G.'s"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27375a472ba9623364b2303fe4d",
+            "name": "Johnny I Love You"
+          },
+          {
+            "artists": [
+              "James Brown"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273f7009b199768fc7ff3a8d7e0",
+            "name": "I Don't Want Nobody To Give Me Nothing (Open Up The Door I'll Get It Myself) - Pt.1 / Single Version"
+          }
+        ],
+        "source_url": "https://spinitron.com/KPOO/pl/23071773/JIVIN-AROUND",
+        "station": "KPOO",
+        "track_count": 24,
+        "url": "https://open.spotify.com/playlist/6yVcBVTk9Ag8of0CKKuzox"
+      }
+    },
+    "KPOO:23072220": {
+      "station": "KPOO",
+      "broadcast": {
+        "id": 23072220,
+        "title": "KPOO Public Affairs Programming",
+        "url": "https://spinitron.com/KPOO/pl/23072220/KPOO-Public-Affairs-Programming",
+        "start_time": "2026-09-24T11:00:00-0700",
+        "end_time": "2026-09-24T15:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "20kseqCTCnmYLLUsxm65bn",
+      "desired_uris": [
+        "spotify:track:1WkjwrkilljSUQm70854pW",
+        "spotify:track:6xbtDXk8utIS8rOWD0X9XA",
+        "spotify:track:6gyKgaPHaciNbXJJZRYzH6",
+        "spotify:track:5b6QESphWzfmonVHPEdF0z",
+        "spotify:track:37IXywlInusno9ef2kYjPc",
+        "spotify:track:6gyKgaPHaciNbXJJZRYzH6",
+        "spotify:track:57vLKSsU2gUirCUpUttlX2",
+        "spotify:track:0lMrcqu6cQj8HvHxYqbrCw",
+        "spotify:track:3qSnYtelDGqpvbJ5hSP2ax",
+        "spotify:track:600wNkX9UT5rB0HRceHxX7",
+        "spotify:track:1oFFxpO8r6p8vOhO1vPENY"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T15:00:00-0700",
+        "broadcast_start": "2026-09-24T11:00:00-0700",
+        "imported_at": "2026-09-25T11:21:30.808490115+00:00",
+        "last_updated": "2026-09-25 11:21 UTC",
+        "name": "KPOO - KPOO Public Affairs Programming - 2026-09-24",
+        "preview": [
+          {
+            "artists": [
+              "Minister King X Pyeface",
+              "Louis C. Powell Jr"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2734b085f999ed3313b237630fa",
+            "name": "The STRIKE soundtrack California Prison Focus The Menticide Project"
+          },
+          {
+            "artists": [
+              "Bob Marley & The Wailers"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2735c15cf8bfc892d27aecf2f6d",
+            "name": "Babylon System"
+          },
+          {
+            "artists": [
+              "Tom Morello: the Nightwatchman"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273623368f45d47277c6e04f307",
+            "name": "Union Town"
+          },
+          {
+            "artists": [
+              "Anne Feeney"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27386b335d46fad5f3a7d65dd5f",
+            "name": "War on the Workers"
+          },
+          {
+            "artists": [
+              "Bensound"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273ea21cd53b7cf22433dd722c1",
+            "name": "Adventure"
+          },
+          {
+            "artists": [
+              "Tom Morello: the Nightwatchman"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273623368f45d47277c6e04f307",
+            "name": "Union Town"
+          },
+          {
+            "artists": [
+              "Rachid Taha"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273671f4fb522764279f84987d4",
+            "name": "Ya Rayah"
+          },
+          {
+            "artists": [
+              "Grant Green Jr",
+              "Reuben Wilson & Leo Gandelman"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273dabf99be578cb99cfd783d8a",
+            "name": "Cantaloupe Women"
+          },
+          {
+            "artists": [
+              "The Showmen"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2737e6dd58cd60790fd6cf93044",
+            "name": "Medley: 39-21-46 / Hey Baby"
+          },
+          {
+            "artists": [
+              "Ann-Margret"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27384d5a997b297e54678eea32b",
+            "name": "Thirteen Men"
+          },
+          {
+            "artists": [
+              "John Brim"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27314f0dd676acf912284d0af48",
+            "name": "Gary Stomp"
+          }
+        ],
+        "source_url": "https://spinitron.com/KPOO/pl/23072220/KPOO-Public-Affairs-Programming",
+        "station": "KPOO",
+        "track_count": 11,
+        "url": "https://open.spotify.com/playlist/20kseqCTCnmYLLUsxm65bn"
+      }
+    },
+    "KPOO:23073296": {
+      "station": "KPOO",
+      "broadcast": {
+        "id": 23073296,
+        "title": "Blues and Oldies",
+        "url": "https://spinitron.com/KPOO/pl/23073296/Blues-and-Oldies",
+        "start_time": "2026-09-24T15:00:00-0700",
+        "end_time": "2026-09-24T17:30:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "0ZFBgPXjZnkCgQLGapAgAS",
+      "desired_uris": [
+        "spotify:track:1YABsU8IQW8rNLXhCOOzPG",
+        "spotify:track:0Blx954dlTy2SUHSH8l4Dk",
+        "spotify:track:7pFx4GURKAzlv3hY7avm8k",
+        "spotify:track:600wNkX9UT5rB0HRceHxX7",
+        "spotify:track:3OCr0KGoXKnDnCbUw17lyZ",
+        "spotify:track:6wccwN37R7tRotVrK8Htni",
+        "spotify:track:7bNB6sDI9ZmHwYqMMQ6wng",
+        "spotify:track:66IZqK1t7r8IQBqz2bYRyH",
+        "spotify:track:7KKEKlp23uBIXjeVNIltBw",
+        "spotify:track:62drmA2bs0sh3WWMSc3AfQ",
+        "spotify:track:7J5tyfg3OYVNR97KH66ovw",
+        "spotify:track:0ptwE0ZLZzqZEWdHmTcVd5",
+        "spotify:track:2BNONY8wNoDDoAtRNdCSk5",
+        "spotify:track:00zbm6y8FLGWUarQuxf7gm",
+        "spotify:track:4t1EHyQEMdaN91UA6G3PfD",
+        "spotify:track:2JrxqUksBwyRvJYVabn9f7",
+        "spotify:track:76OUhpuAQSQ2orR5TUeeRc",
+        "spotify:track:4GCw6INXZdZ9tun38JUig1",
+        "spotify:track:68ngnSqAtSBOUc0s2LZkcf",
+        "spotify:track:6UoklSOHrajLQkD98nP7re",
+        "spotify:track:0ydH7amZ8mOIVE2GIfOYx1",
+        "spotify:track:5myAVCE7xrl7dcihM9ElxX",
+        "spotify:track:0MWCdYR2rF8s0MjTn3dBgK",
+        "spotify:track:750MyCr4WSyxRw9qvLAhnU",
+        "spotify:track:3Lnq2depByCjn4WvVM5is8",
+        "spotify:track:6SnOc3Zdg2VElnvmHRexEb",
+        "spotify:track:6DRIjPAVjieFeDipYOSZWk",
+        "spotify:track:2VPfaY9Wb8oUHre1c4BGhs",
+        "spotify:track:44MnBtzl9HSjWql6Bu1fON",
+        "spotify:track:6gwOxeFtMlANU77et372oy",
+        "spotify:track:2ADscYLRgENJXhtBkwfQIX",
+        "spotify:track:7FeTFLoDeMFcSgWeBECwkV",
+        "spotify:track:60G9ZPSU2YA1qDXjvTJzwV"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T17:30:00-0700",
+        "broadcast_start": "2026-09-24T15:00:00-0700",
+        "imported_at": "2026-09-25T11:21:42.447516818+00:00",
+        "last_updated": "2026-09-25 11:21 UTC",
+        "name": "KPOO - Blues and Oldies - 2026-09-24",
+        "preview": [
+          {
+            "artists": [
+              "Chuck Willis"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27398d2785a2b17a1f9b0b8d2cb",
+            "name": "I Feel So Bad"
+          },
+          {
+            "artists": [
+              "T-Bone Walker"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2730f0b35e3f495f09b5d29ff8d",
+            "name": "Welcome Blues (Say Pretty Baby)"
+          },
+          {
+            "artists": [
+              "Ann Peebles"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27343b6f11f531aafcfe18388cf",
+            "name": "Full Time Lover"
+          },
+          {
+            "artists": [
+              "Ann-Margret"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27384d5a997b297e54678eea32b",
+            "name": "Thirteen Men"
+          },
+          {
+            "artists": [
+              "The Chambers Brothers"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27308597f977f49e4993b9210d5",
+            "name": "Uptown"
+          },
+          {
+            "artists": [
+              "The Drifters"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27367acd3db8b22e9ac4ff2bcf5",
+            "name": "This Magic Moment - Single Version; Remastered"
+          },
+          {
+            "artists": [
+              "Sonny Burgess"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2738ef2d927cfad6c295057c7cc",
+            "name": "Daddy Blues"
+          },
+          {
+            "artists": [
+              "Louis Armstrong"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2731eecf25ccdcb5f3b8ca4ceb6",
+            "name": "Your Cheatin' Heart"
+          },
+          {
+            "artists": [
+              "Ramblin' Jack Elliott"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273e8e968bddd25a213d78a7472",
+            "name": "Don't Think Twice, It's All Right"
+          },
+          {
+            "artists": [
+              "The Limeliters"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273e8ab306e2a7cadb1541f162a",
+            "name": "Lonesome Traveler"
+          },
+          {
+            "artists": [
+              "Ricky Nelson",
+              "The Stone Canyon Band"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273a03dddeb460e37ecc8abe718",
+            "name": "Garden Party"
+          },
+          {
+            "artists": [
+              "Janie Dee"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27371cfaff7bd88e75db9b1d24a",
+            "name": "The Boy From... - Live"
+          }
+        ],
+        "source_url": "https://spinitron.com/KPOO/pl/23073296/Blues-and-Oldies",
+        "station": "KPOO",
+        "track_count": 33,
+        "url": "https://open.spotify.com/playlist/0ZFBgPXjZnkCgQLGapAgAS"
+      }
+    },
+    "KPOO:23073864": {
+      "station": "KPOO",
+      "broadcast": {
+        "id": 23073864,
+        "title": "KPOO  Community News",
+        "url": "https://spinitron.com/KPOO/pl/23073864/KPOO-Community-News",
+        "start_time": "2026-09-24T17:30:00-0700",
+        "end_time": "2026-09-24T18:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "5noO4X2FkDiG4X501AbiIB",
+      "desired_uris": [
+        "spotify:track:1kYaYV2JbDP53LWPh0ckJn",
+        "spotify:track:3yYi6SLXg25akUqFDHWYEU"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T18:00:00-0700",
+        "broadcast_start": "2026-09-24T17:30:00-0700",
+        "imported_at": "2026-09-25T11:21:44.419546984+00:00",
+        "last_updated": "2026-09-25 11:21 UTC",
+        "name": "KPOO - KPOO Community News - 2026-09-24",
+        "preview": [
+          {
+            "artists": [
+              "Joaquin \"Joe\" Claussell",
+              "Trip Do"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273b2f8fc851243b9a16552e9fd",
+            "name": "Agora e Seu Tempo"
+          },
+          {
+            "artists": [
+              "Afro-Cuban All Stars"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2734feaf0d8a260b69381272487",
+            "name": "Distinto, Diferente"
+          }
+        ],
+        "source_url": "https://spinitron.com/KPOO/pl/23073864/KPOO-Community-News",
+        "station": "KPOO",
+        "track_count": 2,
+        "url": "https://open.spotify.com/playlist/5noO4X2FkDiG4X501AbiIB"
+      }
+    },
+    "KPOO:23073979": {
+      "station": "KPOO",
+      "broadcast": {
+        "id": 23073979,
+        "title": "Pajaro Latinoamericano",
+        "url": "https://spinitron.com/KPOO/pl/23073979/Pajaro-Latinoamericano",
+        "start_time": "2026-09-24T18:00:00-0700",
+        "end_time": "2026-09-24T20:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "3lrwVeUg9HQ1Q48Y7Uo2CU",
+      "desired_uris": [
+        "spotify:track:4aMhgmiVCVWPHKoEb5hEPD",
+        "spotify:track:1uQ9klqOodcpUsESUjSwL6",
+        "spotify:track:69CXRVL0lCxB7tVjG1rg1c",
+        "spotify:track:7CfGILN4FYnfzyzTRgcsWa",
+        "spotify:track:2xuYcmQW7sFoVHygnyP2k1",
+        "spotify:track:4jdvNdmgHxlNGmX3BACU76",
+        "spotify:track:5VEdw7qndGhGGB53TDyNFD",
+        "spotify:track:6zNodZlJX640W8UqazMj6A",
+        "spotify:track:3VdERyYcjFDt705y4p0U49",
+        "spotify:track:5VIDgMv9x9PfEHK9I1ukEA",
+        "spotify:track:5Z3eEWd02O1RekV96ohDPx",
+        "spotify:track:4Xz0g4QSbfJARnXTuQ6QjL",
+        "spotify:track:3SVTLjzV0y5PgFFKvtHhNE",
+        "spotify:track:4TWlqCHppTSGBKwUVvd3eE"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T20:00:00-0700",
+        "broadcast_start": "2026-09-24T18:00:00-0700",
+        "imported_at": "2026-09-25T11:21:49.589028325+00:00",
+        "last_updated": "2026-09-25 11:21 UTC",
+        "name": "KPOO - Pajaro Latinoamericano - 2026-09-24",
+        "preview": [
+          {
+            "artists": [
+              "Ximena Castro"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27379c4bbedd6020baebf747c71",
+            "name": "Manos Blancas"
+          },
+          {
+            "artists": [
+              "Bullenrap"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273f6c6322fe14a335840283f3e",
+            "name": "Somos Americanos"
+          },
+          {
+            "artists": [
+              "Doctor Krápula",
+              "Bukahara"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273bca95819ed509573d573f651",
+            "name": "No Disparen"
+          },
+          {
+            "artists": [
+              "Saltapatrás"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273a5b43b72c7636dcd399e56fc",
+            "name": "Extranjero"
+          },
+          {
+            "artists": [
+              "Músicxs De Chile",
+              "Francisca Valenzuela",
+              "Cami",
+              "Gepe",
+              "Moral Distraida",
+              "Fernando Milagros",
+              "Mon Laferte",
+              "Denisse Malebrán",
+              "Benjamín Walker",
+              "Pedropiedra",
+              "C-Funk",
+              "Noche de Brujas",
+              "Santaferia",
+              "Chancho En Piedra",
+              "Consuelo Schuster",
+              "Schuster",
+              "Gianluca",
+              "Princesa Alba",
+              "Joe Vasconcellos",
+              "Illapu"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2731cce5abcd06f65deb9a21ddc",
+            "name": "El Derecho de Vivir en Paz"
+          },
+          {
+            "artists": [
+              "León Gieco"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27371b7840f60a6cf622fe0f209",
+            "name": "La Memoria"
+          },
+          {
+            "artists": [
+              "Doctor Krápula"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273f40372858f77603f5ab1bdfc",
+            "name": "Hágase Sentir"
+          },
+          {
+            "artists": [
+              "Herencia de Timbiqui"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273293589b20e56149201a777bb",
+            "name": "Coca por Coco"
+          },
+          {
+            "artists": [
+              "Esa Te La Debo"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27372c443559968a06fe9d38a80",
+            "name": "Normalidad"
+          },
+          {
+            "artists": [
+              "Banda Femenil Regional \"Mujeres del Viento Florido\"",
+              "Vivir Quintana"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273e4a821d0a7764116d2eb8fca",
+            "name": "Canción Sin Miedo - Versión Ayuujk (Tlahuiltoltepec) / Español"
+          },
+          {
+            "artists": [
+              "Resistiré 2020",
+              "Alex Ubago",
+              "Carlos Baute",
+              "Despistaos",
+              "Diana Navarro",
+              "Efecto Pasillo",
+              "Georgina",
+              "Mikel Erentxun",
+              "Rosana",
+              "Rulo y la contrabanda",
+              "Alvaro Soler",
+              "Conchita",
+              "David Bisbal",
+              "David Otero",
+              "David Summers",
+              "Dvicio",
+              "Efecto Mariposa",
+              "ELE",
+              "India Martinez",
+              "Jose Merce"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273f828ea8bc6c546618b32d10d",
+            "name": "Resistiré"
+          },
+          {
+            "artists": [
+              "León Gieco"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27371b7840f60a6cf622fe0f209",
+            "name": "Ídolo De Los Quemados"
+          }
+        ],
+        "source_url": "https://spinitron.com/KPOO/pl/23073979/Pajaro-Latinoamericano",
+        "station": "KPOO",
+        "track_count": 14,
+        "url": "https://open.spotify.com/playlist/3lrwVeUg9HQ1Q48Y7Uo2CU"
+      }
+    },
+    "KPOO:23074404": {
+      "station": "KPOO",
+      "broadcast": {
+        "id": 23074404,
+        "title": "Da Madd Houze",
+        "url": "https://spinitron.com/KPOO/pl/23074404/Da-Madd-Houze",
+        "start_time": "2026-09-24T20:00:00-0700",
+        "end_time": "2026-09-24T22:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "1bc4Ev5ifAKW4aoTBnr6fq",
+      "desired_uris": [
+        "spotify:track:74vezG8Ufn80jjZnwNkpBc",
+        "spotify:track:0Z7dRxJtgHHgAQfXFC8gRs",
+        "spotify:track:2JiDi0qAXsPwhPqA2qaKGt",
+        "spotify:track:6jOtQ3m64xhI5uzxHrmm1Z",
+        "spotify:track:5CmkDgWqxDNPcCXCEetkph",
+        "spotify:track:3SQlC7Bgt3V9l0pjVEepDX",
+        "spotify:track:6fgtJ1TTBwiAwG9dy5ONqS",
+        "spotify:track:5HnvffBBpa513IyuiTcXr8",
+        "spotify:track:0r2Bul2NuCViraT2zX1l5j",
+        "spotify:track:5rvGX4pQyvLH6BYznZ3vHd",
+        "spotify:track:4Dt909Q9rw8AGCn8It7LRu",
+        "spotify:track:3gBTydt2078NDbbzLJB6ts",
+        "spotify:track:4jl4iJKPaFITFc0DkOpvvK",
+        "spotify:track:45T4uUz8dMls9hQ2xLvONF",
+        "spotify:track:4S9igu2YyLNTUdP6UTlGb0",
+        "spotify:track:0F8sx9FxNkOC9mYsCjgpa0",
+        "spotify:track:4g3GosJ8AauJZDK2sAHIsE",
+        "spotify:track:60w2HDJICF5YgHDsQ1kn2r",
+        "spotify:track:09owVit80UsbsEudbMAcpm",
+        "spotify:track:1KGSUrVTY3WR3rfPtXLLdX",
+        "spotify:track:4Q70twp3lG15Makjdocw6z",
+        "spotify:track:72UJUQD8jN9f0rG9xnVbyZ",
+        "spotify:track:7bo2pbetPEqYvsBv6if58b",
+        "spotify:track:5bM15Dj8WqtJ6WAcKR7k6y",
+        "spotify:track:25qwUZ54vIidI4HzP6zCHC",
+        "spotify:track:5t2RYFYNIVDSGUTv7Okw6M",
+        "spotify:track:7F30c3HdMeUOF8BtR5uFOB",
+        "spotify:track:1BGbSqFrkCC5fgMVrwmloK",
+        "spotify:track:2q6huuxvfj4X5XDpSJwR9c",
+        "spotify:track:6r8A7mF6uLVxhshV7iAdhC"
+      ],
+      "listing": {
+        "broadcast_end": "2026-09-24T22:00:00-0700",
+        "broadcast_start": "2026-09-24T20:00:00-0700",
+        "imported_at": "2026-09-25T11:22:00.875552688+00:00",
+        "last_updated": "2026-09-25 11:22 UTC",
+        "name": "KPOO - Da Madd Houze - 2026-09-24",
+        "preview": [
+          {
+            "artists": [
+              "Hilario Duran",
+              "Jane Bunnett",
+              "Alain Caron",
+              "Sonny Greenwich"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273b7847581523df463ab2be880",
+            "name": "Suavecito"
+          },
+          {
+            "artists": [
+              "Giuseppe Masia"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273e8273d13a4f699a2338726e2",
+            "name": "Toast"
+          },
+          {
+            "artists": [
+              "Queen"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273fdab4a163ab9f6db72c952ee",
+            "name": "Bohemian Rhapsody"
+          },
+          {
+            "artists": [
+              "Gease"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273cadcf2b4334a239f7b3a26be",
+            "name": "Fake"
+          },
+          {
+            "artists": [
+              "Tarli",
+              "Graydon Francis",
+              "IAMKAYE"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2739f11d8e58173a791b76d4264",
+            "name": "Say When"
+          },
+          {
+            "artists": [
+              "Niko Torres"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273efe822f0b771f46d9007ec3c",
+            "name": "judini"
+          },
+          {
+            "artists": [
+              "Lil MC",
+              "Mike Devoe",
+              "Kodak Black"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2736e3f98905bd1bcb5964dd4ec",
+            "name": "Future Faking"
+          },
+          {
+            "artists": [
+              "Locksmith",
+              "Marc E. Bassy"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2730019f5d5a98d967ab83802d8",
+            "name": "American Beauty (feat. Marc E. Bassy)"
+          },
+          {
+            "artists": [
+              "Lil Jon & The East Side Boyz",
+              "Ying Yang Twins"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2733ba0e7112f965bfda72b1c5b",
+            "name": "Get Low"
+          },
+          {
+            "artists": [
+              "Cashum Inn",
+              "Fly Spruce"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273b9a2c27dcbe76cfdfca46f7a",
+            "name": "Buss Down"
+          },
+          {
+            "artists": [
+              "Cash Campain",
+              "Whitegurl The Truth"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2737e0668708bb8c0adbcca297b",
+            "name": "X Out - Original Mix"
+          },
+          {
+            "artists": [
+              "Magico the Mac Star",
+              "Hector Andres",
+              "Don P",
+              "Miss Vicky"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27391fef36636b84dfd62836e1a",
+            "name": "No Te Siento (feat. Don P & Miss Vicky)"
+          }
+        ],
+        "source_url": "https://spinitron.com/KPOO/pl/23074404/Da-Madd-Houze",
+        "station": "KPOO",
+        "track_count": 30,
+        "url": "https://open.spotify.com/playlist/1bc4Ev5ifAKW4aoTBnr6fq"
       }
     },
     "legacy:00E6soA12rEXiByiwKj8eV": {
