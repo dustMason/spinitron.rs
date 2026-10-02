@@ -16,6 +16,8 @@ struct FakeSpotify {
     reject_create: bool,
     no_matches: bool,
     fail_resolve: bool,
+    fail_inventory: bool,
+    fresh_inventories: usize,
 }
 
 impl ArchiveSpotify for FakeSpotify {
@@ -34,13 +36,26 @@ impl ArchiveSpotify for FakeSpotify {
             .map(|t| format!("spotify:track:{}", t.song))
             .collect())
     }
-    async fn find_archive(&mut self, marker: &str) -> Result<Option<RemotePlaylist>> {
-        Ok(self
-            .playlists
-            .borrow()
+    async fn find_archive(
+        &mut self,
+        marker: &str,
+        refresh: bool,
+    ) -> Result<Option<RemotePlaylist>> {
+        if refresh {
+            self.fresh_inventories += 1;
+        }
+        if self.fail_inventory {
+            bail!("Inventory unavailable");
+        }
+        let playlists = self.playlists.borrow();
+        let matches: Vec<_> = playlists
             .values()
-            .find(|(p, _)| p.matches_marker(marker))
-            .map(|(p, _)| p.clone()))
+            .filter(|(p, _)| p.matches_marker(marker))
+            .collect();
+        if matches.len() > 1 {
+            bail!("Multiple archive markers");
+        }
+        Ok(matches.first().map(|(p, _)| p.clone()))
     }
     async fn create_archive(&mut self, name: &str, description: &str) -> Result<RemotePlaylist> {
         self.creates += 1;
@@ -448,7 +463,11 @@ async fn rejected_creation_is_persisted_as_prepared_and_can_be_retried() {
     assert_eq!(f.catalog.entries["KALX:1"].state, State::Prepared);
     assert!(f.catalog.entries["KALX:1"].playlist_id.is_none());
     assert!(spotify.playlists.borrow().is_empty());
-    let resumed = f.catalog.resume_pending(&f.path(), &mut spotify).await;
+    let resumed = f
+        .catalog
+        .resume_pending(&f.path(), &mut spotify, None)
+        .await
+        .unwrap();
     assert_eq!(resumed.len(), 1);
     assert_eq!(resumed[0].0, "KALX:1");
     assert!(resumed.into_iter().next().unwrap().1.unwrap());
@@ -458,8 +477,9 @@ async fn rejected_creation_is_persisted_as_prepared_and_can_be_retried() {
     assert_eq!(spotify.track_uris("p2").await.unwrap().len(), 3);
     assert!(f
         .catalog
-        .resume_pending(&f.path(), &mut spotify)
+        .resume_pending(&f.path(), &mut spotify, None)
         .await
+        .unwrap()
         .is_empty());
 }
 
@@ -482,6 +502,222 @@ async fn lost_creation_response_without_recovery_match_does_not_repeat_post() {
         .await
         .is_err());
     assert_eq!(spotify.creates, 1);
+}
+
+#[tokio::test]
+async fn manual_recovery_retries_only_the_named_missing_creation_and_preserves_tracks() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify::default();
+    for id in [1, 2] {
+        spotify.uncertain_create = true;
+        assert!(f
+            .catalog
+            .archive(&f.path(), &mut spotify, "KALX", &show(id), &tracks())
+            .await
+            .is_err());
+    }
+    spotify.playlists.borrow_mut().clear();
+    f.catalog = Catalog::load(&f.path()).unwrap();
+    let desired = f.catalog.entries["KALX:1"].desired_uris.clone();
+    let results = f
+        .catalog
+        .resume_pending(&f.path(), &mut spotify, Some("KALX:1"))
+        .await
+        .unwrap();
+    assert!(results[0].1.as_ref().is_ok_and(|created| *created));
+    assert!(results[1].1.is_err());
+    assert_eq!(spotify.creates, 3);
+    assert_eq!(spotify.fresh_inventories, 1);
+    assert_eq!(spotify.track_uris("p3").await.unwrap(), desired);
+    let saved = Catalog::load(&f.path()).unwrap();
+    assert_eq!(saved.entries["KALX:1"].state, State::Ready);
+    assert_eq!(saved.entries["KALX:2"].state, State::Creating);
+    assert_eq!(saved.entries["KALX:1"].desired_uris, desired);
+
+    // The same input is harmless after success and never authorizes key 2.
+    for input in [Some("KALX:1"), None] {
+        let results = f
+            .catalog
+            .resume_pending(&f.path(), &mut spotify, input)
+            .await
+            .unwrap();
+        assert_eq!(results.len(), 1);
+        assert!(results[0].1.is_err());
+    }
+    assert_eq!(spotify.creates, 3);
+    assert_eq!(spotify.fresh_inventories, 1);
+}
+
+#[tokio::test]
+async fn manual_recovery_adopts_an_existing_marker_without_another_creation() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify {
+        uncertain_create: true,
+        ..Default::default()
+    };
+    assert!(f
+        .catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .is_err());
+    let results = f
+        .catalog
+        .resume_pending(&f.path(), &mut spotify, Some("KALX:1"))
+        .await
+        .unwrap();
+    assert!(results[0].1.as_ref().is_ok_and(|created| *created));
+    assert_eq!(spotify.creates, 1);
+    assert_eq!(spotify.fresh_inventories, 1);
+    assert_eq!(spotify.track_uris("p1").await.unwrap().len(), 3);
+}
+
+#[tokio::test]
+async fn manual_recovery_stops_on_failed_ambiguous_or_wrong_owner_inventory() {
+    for scenario in ["failed", "duplicate", "owner"] {
+        let mut f = Fixture::new();
+        let mut spotify = FakeSpotify {
+            uncertain_create: true,
+            ..Default::default()
+        };
+        assert!(f
+            .catalog
+            .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+            .await
+            .is_err());
+        if scenario == "failed" {
+            spotify.fail_inventory = true;
+        }
+        if scenario == "duplicate" {
+            let mut duplicate = spotify.playlists.borrow()["p1"].clone();
+            duplicate.0.id = "duplicate".into();
+            spotify
+                .playlists
+                .borrow_mut()
+                .insert("duplicate".into(), duplicate);
+        }
+        if scenario == "owner" {
+            spotify
+                .playlists
+                .borrow_mut()
+                .get_mut("p1")
+                .unwrap()
+                .0
+                .owner_id = "someone-else".into();
+        }
+        let before = fs::read(f.path()).unwrap();
+        let results = f
+            .catalog
+            .resume_pending(&f.path(), &mut spotify, Some("KALX:1"))
+            .await
+            .unwrap();
+        assert!(results[0].1.is_err());
+        assert_eq!(spotify.creates, 1);
+        assert_eq!(spotify.fills.get(), 0);
+        assert_eq!(fs::read(f.path()).unwrap(), before);
+    }
+}
+
+#[tokio::test]
+async fn manual_recovery_permission_does_not_survive_another_lost_response() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify {
+        uncertain_create: true,
+        ..Default::default()
+    };
+    assert!(f
+        .catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .is_err());
+    spotify.playlists.borrow_mut().clear();
+    spotify.uncertain_create = true;
+    let results = f
+        .catalog
+        .resume_pending(&f.path(), &mut spotify, Some("KALX:1"))
+        .await
+        .unwrap();
+    assert!(results[0].1.is_err());
+    assert_eq!(spotify.creates, 2);
+    spotify.playlists.borrow_mut().clear();
+    f.catalog = Catalog::load(&f.path()).unwrap();
+    assert_eq!(f.catalog.entries["KALX:1"].state, State::Creating);
+    let results = f
+        .catalog
+        .resume_pending(&f.path(), &mut spotify, None)
+        .await
+        .unwrap();
+    assert!(results[0].1.is_err());
+    assert_eq!(spotify.creates, 2);
+}
+
+#[tokio::test]
+async fn manual_recovery_can_resume_population_after_a_partial_fill() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify {
+        uncertain_create: true,
+        ..Default::default()
+    };
+    assert!(f
+        .catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .is_err());
+    spotify.playlists.borrow_mut().clear();
+    spotify.fail_fill.set(true);
+    let results = f
+        .catalog
+        .resume_pending(&f.path(), &mut spotify, Some("KALX:1"))
+        .await
+        .unwrap();
+    assert!(results[0].1.is_err());
+    f.catalog = Catalog::load(&f.path()).unwrap();
+    assert_eq!(f.catalog.entries["KALX:1"].state, State::Filling);
+    let results = f
+        .catalog
+        .resume_pending(&f.path(), &mut spotify, Some("KALX:1"))
+        .await
+        .unwrap();
+    assert!(results[0].1.as_ref().is_ok_and(|created| *created));
+    assert_eq!(spotify.creates, 2);
+    assert_eq!(spotify.fresh_inventories, 1);
+    assert_eq!(spotify.track_uris("p2").await.unwrap().len(), 3);
+}
+
+#[tokio::test]
+async fn manual_recovery_validates_the_target_before_any_pending_work() {
+    for scenario in ["unknown", "owner", "key", "empty", "id"] {
+        let mut f = Fixture::new();
+        let mut spotify = FakeSpotify {
+            uncertain_create: true,
+            ..Default::default()
+        };
+        assert!(f
+            .catalog
+            .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+            .await
+            .is_err());
+        let entry = f.catalog.entries.get_mut("KALX:1").unwrap();
+        match scenario {
+            "owner" => entry.owner_id = Some("someone-else".into()),
+            "key" => entry.broadcast.as_mut().unwrap().id = 9,
+            "empty" => entry.desired_uris.clear(),
+            "id" => entry.playlist_id = Some("p1".into()),
+            _ => (),
+        }
+        let key = if scenario == "unknown" {
+            "KALX:9"
+        } else {
+            "KALX:1"
+        };
+        assert!(f
+            .catalog
+            .resume_pending(&f.path(), &mut spotify, Some(key))
+            .await
+            .is_err());
+        assert_eq!(spotify.creates, 1);
+        assert_eq!(spotify.fresh_inventories, 0);
+        assert_eq!(spotify.fills.get(), 0);
+    }
 }
 
 #[tokio::test]
