@@ -106,7 +106,8 @@ impl std::error::Error for CreationRejected {}
 pub trait ArchiveSpotify {
     fn owner_id(&self) -> &str;
     async fn resolve(&mut self, tracks: &[Track]) -> Result<Vec<String>>;
-    async fn find_archive(&mut self, marker: &str) -> Result<Option<RemotePlaylist>>;
+    async fn find_archive(&mut self, marker: &str, refresh: bool)
+        -> Result<Option<RemotePlaylist>>;
     async fn create_archive(&mut self, name: &str, description: &str) -> Result<RemotePlaylist>;
     async fn replace_draft(&self, id: &str, uris: &[String]) -> Result<()>;
     async fn inspect(&self, id: &str) -> Result<RemotePlaylist>;
@@ -334,7 +335,31 @@ impl Catalog {
         &mut self,
         path: &Path,
         spotify: &mut impl ArchiveSpotify,
-    ) -> Vec<(String, Result<bool>)> {
+        retry_creation: Option<&str>,
+    ) -> Result<Vec<(String, Result<bool>)>> {
+        if let Some(key) = retry_creation {
+            let entry = self
+                .entries
+                .get(key)
+                .context("Unknown recovery broadcast ID")?;
+            let show = entry
+                .broadcast
+                .as_ref()
+                .context("Recovery requires a broadcast")?;
+            if Self::key(&entry.station, show) != key
+                || entry.owner_id.as_deref() != Some(spotify.owner_id())
+            {
+                bail!("Recovery broadcast ID or Spotify owner does not match the catalog");
+            }
+            // Re-running a successful recovery is a no-op for that broadcast.
+            if !self.finished(key)
+                && (matches!(entry.state, State::Prepared | State::Creating)
+                    != entry.playlist_id.is_none()
+                    || entry.desired_uris.is_empty())
+            {
+                bail!("Recovery requires a valid pending broadcast with saved tracks");
+            }
+        }
         let pending: Vec<_> = self
             .entries
             .iter()
@@ -354,10 +379,19 @@ impl Catalog {
         let mut results = Vec::new();
         for (key, station, show) in pending {
             // Existing entries already contain the scraped and matched sequence.
-            let result = self.archive(path, spotify, &station, &show, &[]).await;
+            let result = self
+                .archive_inner(
+                    path,
+                    spotify,
+                    &station,
+                    &show,
+                    &[],
+                    retry_creation == Some(&key) && self.entries[&key].state == State::Creating,
+                )
+                .await;
             results.push((key, result));
         }
-        results
+        Ok(results)
     }
 
     pub async fn archive(
@@ -367,6 +401,19 @@ impl Catalog {
         station: &str,
         show: &Show,
         tracks: &[Track],
+    ) -> Result<bool> {
+        self.archive_inner(path, spotify, station, show, tracks, false)
+            .await
+    }
+
+    async fn archive_inner(
+        &mut self,
+        path: &Path,
+        spotify: &mut impl ArchiveSpotify,
+        station: &str,
+        show: &Show,
+        tracks: &[Track],
+        retry_creation: bool,
     ) -> Result<bool> {
         let key = Self::key(station, show);
         if self.finished(&key) {
@@ -420,12 +467,18 @@ impl Catalog {
         if self.entries[&key].playlist_id.is_none() {
             // Recovery can adopt an owned, precisely marked creation, but never
             // blindly repeats an uncertain POST and creates another playlist.
-            let remote = match spotify.find_archive(&marker).await? {
+            let remote = match spotify.find_archive(&marker, retry_creation).await? {
                 Some(found) => found,
-                None if self.entries[&key].state == State::Creating => bail!(
-                    "Creation of {key} is uncertain; reconcile the marked playlist before retrying"
+                None if self.entries[&key].state == State::Creating && !retry_creation => bail!(
+                    "Creation of {key} is uncertain; inspect the library, then use the manual workflow retry_creation input '{key}' (CLI: --archive --retry-creation {key}) if creation should be retried"
                 ),
                 None => {
+                    if retry_creation {
+                        eprintln!("No owned playlist has marker {marker}; explicitly retrying this creation once");
+                    }
+                    // Authorization is only for this invocation. Keep Creating
+                    // on disk before the POST, so another lost response cannot
+                    // silently authorize another attempt in a scheduled run.
                     self.entries.get_mut(&key).unwrap().state = State::Creating;
                     self.save(path)?;
                     let name = self.entries[&key].listing["name"]

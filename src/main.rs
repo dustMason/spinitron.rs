@@ -51,6 +51,10 @@ struct Args {
     #[arg(long)]
     archive: bool,
 
+    /// Allow one uncertain creation to be retried after a fresh library check (STATION:ID)
+    #[arg(long, requires = "archive")]
+    retry_creation: Option<String>,
+
     /// Durable catalog, independent of the Spotify library
     #[arg(long, default_value = "data/catalog.json")]
     catalog: PathBuf,
@@ -70,6 +74,37 @@ struct Args {
     /// Maximum existing playlists to rename per pass (two seconds between requests)
     #[arg(long, default_value_t = 40, requires = "sync_archive_names")]
     name_limit: usize,
+}
+
+#[cfg(test)]
+mod argument_tests {
+    use super::*;
+
+    #[test]
+    fn recovery_input_requires_archive_and_names_one_broadcast() {
+        assert!(Args::try_parse_from(["scraper", "--retry-creation", "KALX:1"]).is_err());
+        assert!(Args::try_parse_from([
+            "scraper",
+            "--check-spotify-auth",
+            "--archive",
+            "--retry-creation",
+            "KALX:1"
+        ])
+        .is_err());
+        assert!(Args::try_parse_from([
+            "scraper",
+            "--archive",
+            "--retry-creation",
+            "KALX:1",
+            "--retry-creation",
+            "KALX:2"
+        ])
+        .is_err());
+        let args =
+            Args::try_parse_from(["scraper", "--archive", "--retry-creation", "KALX:23071664"])
+                .unwrap();
+        assert_eq!(args.retry_creation.as_deref(), Some("KALX:23071664"));
+    }
 }
 
 #[tokio::main]
@@ -138,7 +173,14 @@ async fn main() -> Result<()> {
     let start_date = end_date - chrono::Duration::days(6);
 
     if args.archive {
-        return archive_broadcasts(&config, &args.catalog, start_date, end_date).await;
+        return archive_broadcasts(
+            &config,
+            &args.catalog,
+            start_date,
+            end_date,
+            args.retry_creation.as_deref(),
+        )
+        .await;
     }
 
     println!(
@@ -321,6 +363,7 @@ async fn archive_broadcasts(
     catalog_path: &std::path::Path,
     start: NaiveDate,
     end: NaiveDate,
+    retry_creation: Option<&str>,
 ) -> Result<()> {
     let mut catalog = Catalog::load(catalog_path)?;
     let mut spotify = SpotifyClient::new().await?;
@@ -328,7 +371,10 @@ async fn archive_broadcasts(
     let mut failures = Vec::new();
     let mut created = 0;
     let mut attempted = std::collections::HashSet::new();
-    for (key, result) in catalog.resume_pending(catalog_path, &mut spotify).await {
+    for (key, result) in catalog
+        .resume_pending(catalog_path, &mut spotify, retry_creation)
+        .await?
+    {
         attempted.insert(key.clone());
         match result {
             Ok(true) => {

@@ -364,6 +364,28 @@ playlist has the broadcast's precise archive marker. If none or multiple are
 found, reconcile the ID before continuing; the app does not repeat the creation
 blindly. Run only one local archive process at a time; Actions runs are serialized.
 
+After inspecting an unresolved creation, use **Actions → Daily Playlist Update →
+Run workflow**, with `retry_creation` set to its exact catalog key, for example
+`KALX:23071664`. Leave `auth_check_only` unchecked. The equivalent local command is:
+
+```bash
+cargo run -- --archive --retry-creation KALX:23071664
+```
+
+This is a one-run authorization for that broadcast only. It refreshes the complete
+Spotify library inventory, adopts exactly one owned playlist with the archive
+marker if found, or attempts creation once if no match is found. Incomplete or
+failed inventory reads and multiple matches stop recovery. It uses the saved
+track sequence, including broadcasts older than the scraping window. A completed
+broadcast is left alone when the same recovery input is supplied again.
+
+The retry permission is not stored in the catalog or enabled for scheduled runs.
+Another ambiguous creation failure remains `creating` and requires a new manual
+decision. A library inventory cannot discover an unsaved playlist, so do not
+authorize a retry if the original was removed from the library. The workflow
+then files the recovered playlist, publishes the catalog, and saves recovery
+state using its usual steps.
+
 Explicit creation rejections (such as HTTP 400) leave the entry `prepared` so a
 later run can retry after the cause is fixed. Timeouts and server errors remain
 `creating` and require reconciliation. Spotify's structured error message is

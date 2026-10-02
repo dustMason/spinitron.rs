@@ -9,6 +9,11 @@ on:
         description: 'Only verify Spotify authentication'
         type: boolean
         default: false
+      retry_creation:
+        description: 'Optional: retry one uncertain creation after checking the library (STATION:ID)'
+        type: string
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -61,10 +66,16 @@ jobs:
         if: ${{ !inputs.auth_check_only }}
         continue-on-error: true
         env:
+          RETRY_CREATION: ${{ inputs.retry_creation }}
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
-        run: ./target/release/spinitron-scraper --archive
+        run: |
+          args=(--archive)
+          if [ -n "$RETRY_CREATION" ]; then
+            args+=(--retry-creation "$RETRY_CREATION")
+          fi
+          ./target/release/spinitron-scraper "${args[@]}"
       - name: Restore Spotify folder cooldown
         if: ${{ !cancelled() && !inputs.auth_check_only && steps.build.outcome == 'success' }}
         uses: actions/cache/restore@v4
