@@ -33569,16 +33569,47 @@
         "start_time": "2026-09-23T18:15:00-0700",
         "end_time": "2026-09-23T20:00:00-0700"
       },
-      "state": "creating",
+      "state": "ready",
       "owner_id": "dustmason",
+      "playlist_id": "53gvWa9Q8J93FBhbhwbVMg",
       "desired_uris": [
         "spotify:track:1VT4hCdbHrn87tfXXGyOOp",
         "spotify:track:0tUYfa8feO0EDEeOuikJ9E",
         "spotify:track:3Z6O3vNS4Gy8rL1IlEO9zG"
       ],
       "listing": {
+        "broadcast_end": "2026-09-23T20:00:00-0700",
+        "broadcast_start": "2026-09-23T18:15:00-0700",
+        "imported_at": "2026-10-02T15:54:21.740802856+00:00",
+        "last_updated": "2026-10-02 15:54 UTC",
         "name": "KALX - TraneCentennial with Petra Core and Last Will - 2026-09-23 6:15pm",
-        "station": "KALX"
+        "preview": [
+          {
+            "artists": [
+              "Alice Coltrane"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273646303f7a489b8de9318c603",
+            "name": "A Love Supreme"
+          },
+          {
+            "artists": [
+              "Alt Jazz Ark Corpus X Quartet"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27328fead4163ad60050ce07897",
+            "name": "Trane's Sound"
+          },
+          {
+            "artists": [
+              "Art Ensemble Of Chicago"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2737b6ca2d6e9d59391f46607b5",
+            "name": "Ohnedaruth - Instrumental"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23071664/TraneCentennial-with-Petra-Core-and-Last-Will",
+        "station": "KALX",
+        "track_count": 3,
+        "url": "https://open.spotify.com/playlist/53gvWa9Q8J93FBhbhwbVMg"
       }
     },
     "KALX:23072650": {
@@ -42869,6 +42900,178 @@
         "station": "KALX",
         "track_count": 20,
         "url": "https://open.spotify.com/playlist/1uMqgps2cvBa8gHdzeFNQ8"
+      }
+    },
+    "KALX:23111971": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23111971,
+        "title": "OVERNIGHTS",
+        "url": "https://spinitron.com/KALX/pl/23111971/OVERNIGHTS",
+        "start_time": "2026-10-02T02:00:00-0700",
+        "end_time": "2026-10-02T07:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "5ilfjZ2MizbYQFFZO38xNW",
+      "desired_uris": [
+        "spotify:track:0ARov5gkfBA3cyeWJ2x9bl",
+        "spotify:track:7q5a5ikQaxXCIlAiCjzq8V",
+        "spotify:track:4fmLnYfVCMzVZ8VXixNIrc",
+        "spotify:track:0V0iNlLz8S7q99bPkJcxdJ",
+        "spotify:track:0bvSQvlCiXscJjVZMVKYqg",
+        "spotify:track:6kAtuykZO50BfRztYF0Blb",
+        "spotify:track:6mRHnFm6wSWFSTceuOqIUk",
+        "spotify:track:5IcA7GsAGDyu1hfO1aUNdK",
+        "spotify:track:6ZnBdUwirE7UhqMlAlV35G",
+        "spotify:track:46vX7SIrGlfk4kfREWvd6Z",
+        "spotify:track:3Ltp1g5vWo5QCOb5tuT20S",
+        "spotify:track:2cK1DW6Od3BylERFN6QHqx",
+        "spotify:track:4tXs6JVQfwl9fyPlwVM2dc",
+        "spotify:track:4RqT1PVITOmXo9lpDPFUw8",
+        "spotify:track:0UdKFAVGKnS32Zz2WPL51k",
+        "spotify:track:3Y9tu0vssINKFcA90JiLHb",
+        "spotify:track:6A2rU9JC5r9eD4KQfY5Rc6",
+        "spotify:track:5nmCXdk4Eewm8nBtQcYF6F",
+        "spotify:track:4Mcwq6MhMPV2K1fZ0uaKOl",
+        "spotify:track:5YuDcOndRr4H2EJ933FcMq",
+        "spotify:track:6lp92mrJSjXhTk52HgIPGg",
+        "spotify:track:3xJTTyCZ0sCAFC2K9fU4ai",
+        "spotify:track:1vbzOXWyw8eDP8RpQT9xS1",
+        "spotify:track:2tTBdqoJnr5nA3o1qN39Or",
+        "spotify:track:4CyjuvRQStesmMNV2ZEZve",
+        "spotify:track:6NeJg0UmByi6nsdIQhAyWl",
+        "spotify:track:3vhoCNDK4jBpNmdPKFdnIk",
+        "spotify:track:2caXnGhQOdD8n3gW7zglDM",
+        "spotify:track:36plAeJKK9eXU8KuUJTKkl",
+        "spotify:track:27PzpcdNoyEQsOvCSdNb3V",
+        "spotify:track:3UCxkaSyOmBgsyiE1bdbXS",
+        "spotify:track:6qNQCK3d1ISRajXSjaITOX",
+        "spotify:track:0z2qoYHBMdLSmT8ME5Sf2x",
+        "spotify:track:25hadd25PQz7Cdx66AyTeB",
+        "spotify:track:7apwHncamsXJ7zwmPem6hf",
+        "spotify:track:62gjJsrXSI4GRN3Fayu3qg",
+        "spotify:track:6D0hjRhUM0j3lobFgYxIQ1",
+        "spotify:track:6bhdP10kMctWRZjw7qC1fs",
+        "spotify:track:6XzFdWnT3E98Sz2mJAQc0M",
+        "spotify:track:3YHGbnlnSQNHpKi5DRrPc1",
+        "spotify:track:5KyozidEcswlGZdpAc7VPi",
+        "spotify:track:0KqtYvorgr1Uf1Dn8QIquz",
+        "spotify:track:4rvkXfaJcSgMuNY0d13bAm",
+        "spotify:track:7sNHAFFqSgaAv3LXqbvk2O",
+        "spotify:track:5nlsXkRIR3ZFTdeot66Yj6",
+        "spotify:track:4vKQV5PL5wbzjryEOHfGhr",
+        "spotify:track:50EdWvC5m4oC6cNUG4dIfK",
+        "spotify:track:443DL7oQzzE2nfNr9afocb",
+        "spotify:track:5PCdzprEjXQcC5sxUq7vqV",
+        "spotify:track:7sxnVPoAYgZDywZN10cIam",
+        "spotify:track:2xUU7wZ6MwrsHloQCa8JCV",
+        "spotify:track:3DysiKILD0Ji2TjVR7fwiz",
+        "spotify:track:1eCsSIKEMt5Gc53RQyC6HR",
+        "spotify:track:6E86xOVKaJY03eRloX66QD",
+        "spotify:track:02l21qCvoXbeokK810oxjE",
+        "spotify:track:5Q2sJ9AkSaH8Veni6yZsf0",
+        "spotify:track:02l21qCvoXbeokK810oxjE"
+      ],
+      "listing": {
+        "broadcast_end": "2026-10-02T07:00:00-0700",
+        "broadcast_start": "2026-10-02T02:00:00-0700",
+        "imported_at": "2026-10-02T15:54:46.197810694+00:00",
+        "last_updated": "2026-10-02 15:54 UTC",
+        "name": "KALX - OVERNIGHTS - 2026-10-02",
+        "preview": [
+          {
+            "artists": [
+              "Laurie Anderson"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27376d8033b879915c3b27e5750",
+            "name": "Sharkey's Day"
+          },
+          {
+            "artists": [
+              "Sosyete '25"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273517ab1495ed446e04487e105",
+            "name": "Bilmece"
+          },
+          {
+            "artists": [
+              "Yabby You"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273fb7d9cef365e308b8124ac72",
+            "name": "prophets"
+          },
+          {
+            "artists": [
+              "Mexican Institute Of Sound",
+              "Meridian Brothers",
+              "Beck"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27370ddaea002796dfe4d92e53a",
+            "name": "Cumbia Beckiana"
+          },
+          {
+            "artists": [
+              "Tone-Loc"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273a3a2e1d87112238e69a85587",
+            "name": "Wild Thing - Wild Beats"
+          },
+          {
+            "artists": [
+              "Eric B. & Rakim"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27353b36f6a2fa94981f7991d4e",
+            "name": "I Know You Got Soul - Acappela Version"
+          },
+          {
+            "artists": [
+              "mary in the junkyard"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2737642addd573054269cb9a577",
+            "name": "Mantra III"
+          },
+          {
+            "artists": [
+              "Brion Gysin"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273f9149a54dda0e9d7a9417722",
+            "name": "Stop Smoking"
+          },
+          {
+            "artists": [
+              "Mike D"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2736eb01697a86d9953fa8d5063",
+            "name": "I Don't Care"
+          },
+          {
+            "artists": [
+              "Hot Tuna"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27302cf5fe61b8c8e50621768e9",
+            "name": "Funky #7"
+          },
+          {
+            "artists": [
+              "Jah Wobble",
+              "Tian Qiyi"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273e5d73048bf7a21a537b4f799",
+            "name": "Within You Without You"
+          },
+          {
+            "artists": [
+              "MC Solaar"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2737a9ca169cc10cbd02f9f5a8d",
+            "name": "Nouveau western"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23111971/OVERNIGHTS",
+        "station": "KALX",
+        "track_count": 57,
+        "url": "https://open.spotify.com/playlist/5ilfjZ2MizbYQFFZO38xNW"
       }
     },
     "KPOO:22953138": {
@@ -74138,6 +74341,213 @@
         "station": "KPOO",
         "track_count": 20,
         "url": "https://open.spotify.com/playlist/3MfpnjRkgWw6UNhpS6m2Lg"
+      }
+    },
+    "KPOO:23111257": {
+      "station": "KPOO",
+      "broadcast": {
+        "id": 23111257,
+        "title": "Thursday-Friday Night Sounds",
+        "url": "https://spinitron.com/KPOO/pl/23111257/Thursday-Friday-Night-Sounds",
+        "start_time": "2026-10-01T22:00:00-0700",
+        "end_time": "2026-10-02T06:00:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "3IVQISFN3CLdrW5E188YVL",
+      "desired_uris": [
+        "spotify:track:0lYyayygk8xNDUIxBgE1vV",
+        "spotify:track:1S7lxioAmF6TklfKkpDBsy",
+        "spotify:track:4Ate8jCflphJLuHQyQb1vf",
+        "spotify:track:6LPiSYlucwTQDBJtyttvO9",
+        "spotify:track:6Vt6pTtW7cYTnZvYzCnUjj",
+        "spotify:track:196fSpLf8GpyaJSg46WWlw",
+        "spotify:track:5buDxUhcMScUlZrhCmqNHi",
+        "spotify:track:7DVRH6GDrmfzxAXpeNXVnG",
+        "spotify:track:4yabwNkChXdAcTfaiEOyKo",
+        "spotify:track:1zqTqZsPW33xiIRzQexP6f",
+        "spotify:track:0OGuFr5LNPBS0n1CIGS7vr",
+        "spotify:track:0sT9huyQRkzYgpWpJbZrkn",
+        "spotify:track:4l1Z9L2l0bBSHFxYtReBUk",
+        "spotify:track:71KwWlZvuikRRORNH3xvCq",
+        "spotify:track:1KW59MWzw1fpL26SxWbITR",
+        "spotify:track:4myvF5dbQsa2hYcjwQyQau",
+        "spotify:track:3GWn4H5mye7gBkfjKFVINO",
+        "spotify:track:6zvRtiO5RHFVHjhOcfdJMM",
+        "spotify:track:3X5lCDg1oKPipImjHBvhE2",
+        "spotify:track:3y8i3WqE21HZvXfUSZ42zM",
+        "spotify:track:1MRzWYjol5UCEYFt9a2jjh",
+        "spotify:track:3EQcLjwS37RkTeWj3OXyx8",
+        "spotify:track:7zZ5VLHGRQYVBKUX6ipCXF",
+        "spotify:track:6LVRMj57cUhHwm60UBtaow",
+        "spotify:track:3Hvk645LrZ4elKC6iinEwf",
+        "spotify:track:1M7eYZzo4LbBw6K9UighMp",
+        "spotify:track:0KUr4Suxb4EI3fFR1kRa7X",
+        "spotify:track:4IaEzaQko4nq67ZysjBGEO",
+        "spotify:track:0Nh8iFq061Ee84SALoIiFP",
+        "spotify:track:6JoMNa04k4Le1snJ0jCD5v",
+        "spotify:track:6vkbCV6mPi6IIGnTiNg7OT",
+        "spotify:track:1gnDuE2xyqMU8P94Vxylv3",
+        "spotify:track:0wbspZLVbv26LbHWNy4kAa",
+        "spotify:track:5xanZM1oVhNja7w0PpPavG",
+        "spotify:track:1jTkyJr2oEy7Xth9An2Qww",
+        "spotify:track:20HYmVaZo1G5KVfPmh707j",
+        "spotify:track:0ytJDve7MCiFLlmbP3SvYl",
+        "spotify:track:7lWsF1AbQscktKrM7QaKX4",
+        "spotify:track:2izwYuMc1s3fHbTiyu8pje",
+        "spotify:track:3Nc6fVfrORav6B7Ol9zbia",
+        "spotify:track:3pQHlMx7y4tn3o9aWW1cJn",
+        "spotify:track:0tFcLqJMik9ZhWne94mSYg",
+        "spotify:track:07bBelacrGl6v9UaectpNq",
+        "spotify:track:3LXaPmSJnX2KScaV2rfth2",
+        "spotify:track:2I5Ol3x9G2p6xZ7LKCwgC2",
+        "spotify:track:0qaJtX2AMT7SZ33bwi5vDZ",
+        "spotify:track:6orpSjwf5CehhLqbq5mOfm",
+        "spotify:track:1v2gNspuP1ZCCDxl9sndXg",
+        "spotify:track:3e9SEmz7saZxYCj5qL74Z5",
+        "spotify:track:6ePzDYyzigaLDa7HvPLbv5",
+        "spotify:track:0M2vtsUONPw7bLnlTJ9D7U",
+        "spotify:track:6cwnKFsWDB8uzAUx2K7d3g",
+        "spotify:track:2ghHHcT9QbAfbyo1EWEJ3O",
+        "spotify:track:3PX2hfTvjRC0n8K6JCWtDM",
+        "spotify:track:52Gj8YMcK0SeUodBoSVmZL",
+        "spotify:track:48mnXmOaMs5yUcRRsbj9vi",
+        "spotify:track:2pi7jHHGeGJDijLKgeElxN",
+        "spotify:track:0zZ8ICmGKSitIOHnNkIqGM",
+        "spotify:track:2R5YEWPaRyxA8QiZYNzDIx",
+        "spotify:track:74fWDu4R3bcz3EvDM4KlIg",
+        "spotify:track:3LiDSGUN5XKppTfEIHf3k1",
+        "spotify:track:2dFzg0b9AQDsw79XPNs6eu",
+        "spotify:track:2EJBSWqYYNJxUp1cG7Qmzs",
+        "spotify:track:4VLMTbHZEy8eqrxa9D4HNB",
+        "spotify:track:7LooTX9aJohwggAetMv3xN",
+        "spotify:track:7zd8y097BTLDLC9zVDdgS2",
+        "spotify:track:2pziBGjvtizHRe6G5UEwuU",
+        "spotify:track:25tefEyzm3oyuV2nUKsKjM",
+        "spotify:track:4EsQOJs7PRS8zVrHPr4Lzb",
+        "spotify:track:3NDQdoP2pjszk21d0MuaEp",
+        "spotify:track:0MBbMcZozrMhf2MWuNR6ik",
+        "spotify:track:0ILjTa0KSbZQLfd8SlVk8c",
+        "spotify:track:4lla0qZwRVKpyN9FcCt90G",
+        "spotify:track:6tVaGwOKvVmg5eVM5OOnFm",
+        "spotify:track:5plY6tcUs7TuGA0wjqmsXW",
+        "spotify:track:67J6NR2Tdl0h2epWHcCBBN",
+        "spotify:track:3Hy1dxYNOlRBYGrbd6cXeb",
+        "spotify:track:3c4MBlHdGeDQgpbzk6glMG",
+        "spotify:track:4Nhgi3gGIasnxVsasMQVfg",
+        "spotify:track:3k3IanlTMYyeekuDswo2U3",
+        "spotify:track:2HMHmFHnRpGboIOoQd48hj",
+        "spotify:track:2S4HKddVaa6hK6jaLcAtDZ",
+        "spotify:track:3rvsYlCYW4rPnheO9ho9af",
+        "spotify:track:3SitSj6mIHd2uy0ib0hp3r",
+        "spotify:track:0ixqaDDGieVdPaUu8eZBdX",
+        "spotify:track:4klUsEeJ6K1dmNOlZrHQnw",
+        "spotify:track:22LGj0CfvgIiqlKhWDyjDI",
+        "spotify:track:1oCd54LpkZUi5VLM4uWlyP",
+        "spotify:track:4UvOgXwG5gnsczAh7v7q9x",
+        "spotify:track:6IOMEe4pxEefFzKXXLMDRB",
+        "spotify:track:1wDo9Q9zPmJk7ngtBuH6JC",
+        "spotify:track:4LojJDouYhCOJdpg2ZVDjL",
+        "spotify:track:3wARNOXPa2RTE8tkmZ7pLV",
+        "spotify:track:71wjaRAUkUKlVpBXBorHP7"
+      ],
+      "listing": {
+        "broadcast_end": "2026-10-02T06:00:00-0700",
+        "broadcast_start": "2026-10-01T22:00:00-0700",
+        "imported_at": "2026-10-02T15:55:21.121107637+00:00",
+        "last_updated": "2026-10-02 15:55 UTC",
+        "name": "KPOO - Thursday-Friday Night Sounds - 2026-10-01",
+        "preview": [
+          {
+            "artists": [
+              "Roy Hargrove Quintet"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273e0b22fccd0551cd62d3dd544",
+            "name": "Caryisms"
+          },
+          {
+            "artists": [
+              "Terence Blanchard"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2731b6ef592311ffc58c34d7759",
+            "name": "Harvesting Dance"
+          },
+          {
+            "artists": [
+              "Kenny Garrett"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2736c4ad936b75487019546b6d2",
+            "name": "Ja-Hed"
+          },
+          {
+            "artists": [
+              "Joe Henderson"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273f7feeeae79c13fc505227559",
+            "name": "Lush Life"
+          },
+          {
+            "artists": [
+              "Abbey Lincoln"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2734b30724114e4db62c8cd68a1",
+            "name": "Bird Alone - 1991 You Gotta Pay The Band Version"
+          },
+          {
+            "artists": [
+              "Dale Fielder Quartet"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273ae01492cc4a5c9c37e4d3cef",
+            "name": "A Pretty Girl Is Like a Melody"
+          },
+          {
+            "artists": [
+              "Dale Fielder"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27329c260d1638135e0a627f87e",
+            "name": "Now In Our Lives"
+          },
+          {
+            "artists": [
+              "Cannonball Adderley"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2730d997ddea9595eca5a4081a6",
+            "name": "The Song My Lady Sings - Live"
+          },
+          {
+            "artists": [
+              "Kim Nalley"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b2737de434401ed7b85cd7f62d7b",
+            "name": "In the Evening by the Moonlight"
+          },
+          {
+            "artists": [
+              "Eric Dolphy"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27308a9398a2404e1fe2afe99f8",
+            "name": "Body And Soul - Take 2"
+          },
+          {
+            "artists": [
+              "Larry Douglas",
+              "Jorge Pineda Alltet"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273490d7e0cc6e755086617d5ab",
+            "name": "Butterfly"
+          },
+          {
+            "artists": [
+              "Sonny Rollins"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b273d1ae6a07bffdef38fde0c372",
+            "name": "I've Found A New Baby - Alternate Take"
+          }
+        ],
+        "source_url": "https://spinitron.com/KPOO/pl/23111257/Thursday-Friday-Night-Sounds",
+        "station": "KPOO",
+        "track_count": 94,
+        "url": "https://open.spotify.com/playlist/3IVQISFN3CLdrW5E188YVL"
       }
     },
     "legacy:00E6soA12rEXiByiwKj8eV": {
