@@ -57,13 +57,10 @@ struct HiFiBezel: ViewModifier {
 
 /// The socket stays still while the key face travels inside it.
 struct HiFiButtonSurface: ViewModifier {
-    var selected = false
     var pressed = false
     @Environment(\.isEnabled) private var enabled
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var hovered = false
-
-    private var inset: Bool { selected || pressed }
 
     func body(content: Content) -> some View {
         content
@@ -74,7 +71,7 @@ struct HiFiButtonSurface: ViewModifier {
                 RoundedRectangle(cornerRadius: 3)
                     .fill(HiFi.edge)
                 RoundedRectangle(cornerRadius: 2)
-                    .fill(LinearGradient(stops: inset ? [
+                    .fill(LinearGradient(stops: pressed ? [
                         .init(color: HiFi.lcdTop, location: 0),
                         .init(color: HiFi.lcdBottom, location: 1),
                     ] : [
@@ -85,7 +82,7 @@ struct HiFiButtonSurface: ViewModifier {
                     ], startPoint: .top, endPoint: .bottom))
                     .overlay {
                         RoundedRectangle(cornerRadius: 2)
-                            .strokeBorder(LinearGradient(colors: inset
+                            .strokeBorder(LinearGradient(colors: pressed
                                 ? [HiFi.ink.opacity(0.4), .clear]
                                 : [.white.opacity(0.85), .clear],
                                 startPoint: .top, endPoint: .bottom), lineWidth: 0.5)
@@ -97,7 +94,7 @@ struct HiFiButtonSurface: ViewModifier {
                         }
                     }
                     .padding(.horizontal, 1)
-                    .padding(.top, inset ? 2 : 1)
+                    .padding(.top, pressed ? 2 : 1)
                     .padding(.bottom, 1)
             }
             .overlay {
@@ -115,9 +112,7 @@ struct HiFiButtonSurface: ViewModifier {
 }
 
 struct HiFiButtonStyle: ButtonStyle {
-    var selected = false
     var compact = false
-    var height: CGFloat = 30
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
@@ -126,8 +121,8 @@ struct HiFiButtonStyle: ButtonStyle {
             .shadow(color: .white.opacity(0.75), radius: 0, x: 0, y: 0.5)
             .padding(.horizontal, compact ? 8 : 13)
             .frame(minWidth: 30)
-            .frame(height: height)
-            .modifier(HiFiButtonSurface(selected: selected, pressed: configuration.isPressed))
+            .frame(height: 30)
+            .modifier(HiFiButtonSurface(pressed: configuration.isPressed))
     }
 }
 

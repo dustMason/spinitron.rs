@@ -13,7 +13,7 @@ STORY: Select the station, scan dated broadcasts and three sampled artists,
 then open the chosen playlist. Cached content stays available during refresh.
 
 FIRST VIEWPORT: Within the existing 520 × 640-point popover, a narrow title bar
-sits above the station display and preset buttons. Search and refresh sit above
+sits above the wide station display and a single station dropdown. Search and refresh sit above
 the inset scrolling list. Date headers pin. A compact cache-status footer closes
 the frame. Rows are full-width buttons and support two-line long titles.
 

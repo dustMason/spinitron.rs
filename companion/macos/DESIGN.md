@@ -36,7 +36,7 @@ components:
     rounded: "{rounded.control}"
     padding: "0pt 13pt"
     height: "30pt"
-  button-selected:
+  button-pressed:
     textColor: "{colors.ink}"
     typography: "{typography.button}"
     rounded: "{rounded.control}"
@@ -50,8 +50,6 @@ components:
     textColor: "{colors.ink}"
     rounded: "{rounded.lcd}"
     padding: "0pt 14pt"
-    height: "64pt"
-  station-preset:
     height: "64pt"
   station-menu:
     width: "24pt"
@@ -113,8 +111,8 @@ Small rounded rectangles distinguish the controls, LCD, and chassis using the fr
 
 ## Components
 
-- **Hi-Fi buttons:** minimum width 30 pt and default fixed height 30 pt, with 13 pt horizontal padding or 8 pt for compact controls. Station presets override the height to match the LCD. The socket stays fixed; pressing shifts the label down 1 pt. Face insets are 1 pt horizontally and at the bottom; the top inset increases from 1 to 2 pt when selected or pressed. Selected or pressed faces use the opaque LCD gradient. Selection is indicated by the blue face without an underline. Enabled hover adds a 1 pt blue outline and, when not pressed, a faint white face overlay. Disabled opacity remains 0.48; the 0.09-second ease-out press animation respects Reduce Motion.
-- **Station LCD and presets:** the LCD, presets, and station menu share `HiFi.stationControlHeight` (64 pt), aligning their top and bottom edges. LCD content is vertically centered with 14 pt horizontal padding; the dropdown is 24 pt wide. The display has a 1 pt outer rim, 2 pt graphite gasket inset 1 pt, and a 0.5 pt inner edge inset 3 pt. A 9 pt top shadow and 5 pt bottom highlight shade the subtle glass reflection. Dot-matrix lettering includes inactive cells at 0.08 ink opacity; its tracked subtitle remains and all station names use the same lettering. Two station presets sit beside a native menu using the same button surface; selection retains its accessibility trait.
+- **Hi-Fi buttons:** minimum width 30 pt and default fixed height 30 pt, with 13 pt horizontal padding or 8 pt for compact controls. The socket stays fixed; pressing shifts the label down 1 pt. Face insets are 1 pt horizontally and at the bottom; the top inset increases from 1 to 2 pt when pressed. Pressed faces use the opaque LCD gradient. Enabled hover adds a 1 pt blue outline and, when not pressed, a faint white face overlay. Disabled opacity remains 0.48; the 0.09-second ease-out press animation respects Reduce Motion.
+- **Station LCD and menu:** the LCD and station menu share `HiFi.stationControlHeight` (64 pt), aligning their top and bottom edges. LCD content is vertically centered with 14 pt horizontal padding; the dropdown is 24 pt wide. The display has a 1 pt outer rim, 2 pt graphite gasket inset 1 pt, and a 0.5 pt inner edge inset 3 pt. A 9 pt top shadow and 5 pt bottom highlight shade the subtle glass reflection. Dot-matrix lettering includes inactive cells at 0.08 ink opacity; its tracked subtitle remains and all station names use the same lettering. The LCD fills the row beside a single native station menu using the same button surface. All stations are selected through this menu; the LCD identifies the current selection.
 - **Search:** plain native text field inside a translucent white recess. A 2 pt blue outline marks focus. Its custom placeholder uses `secondary`, ignores pointer events, and is hidden from accessibility. A clear button appears for nonempty queries. ⌘F focuses search.
 - **Catalog rows:** navy title, three sampled artists when available, track count, and blue outbound arrow. The entire row opens the playlist in Spotify. Hover adds the blue fill. All-stations and older-collection rows add identifying metadata.
 - **Date dividers and footer:** etched silver headers carry uppercase Pacific dates and counts. The footer carries cache status and Quit. Refresh uses a native progress indicator, disables during refresh, and supports ⌘R.
