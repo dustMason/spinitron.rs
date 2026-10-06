@@ -129,27 +129,21 @@ struct HiFiButtonStyle: ButtonStyle {
 /// A tiny vector dot-matrix display; the accessible value remains ordinary text.
 struct StationDisplay: View {
     let station: String
-    var subtitle = "BROADCAST CATALOG"
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            GeometryReader { geometry in
-                let displayName = station.uppercased()
-                let columns = CGFloat(max(1, displayName.count * 6 - 1))
-                DotMatrixText(text: displayName, pitch: min(3.4, geometry.size.width / columns),
-                              showsInactiveCells: true)
-                    .frame(maxHeight: .infinity)
-                    .accessibilityLabel(station)
-            }
-            .frame(height: 23.8)
-            .shadow(color: HiFi.ink.opacity(0.18), radius: 0.5, x: 0, y: 0.7)
-            Text(subtitle)
-                .font(.system(size: 9, weight: .semibold, design: .monospaced))
-                .tracking(1.1)
+        GeometryReader { geometry in
+            let displayName = station.uppercased()
+            let columns = CGFloat(max(1, displayName.count * 6 - 1))
+            let pitch = min(geometry.size.height / 7, geometry.size.width / columns)
+            DotMatrixText(text: displayName, pitch: pitch, showsInactiveCells: true)
+                .frame(maxHeight: .infinity)
+                .accessibilityLabel(station)
         }
+        .shadow(color: HiFi.ink.opacity(0.18), radius: 0.5, x: 0, y: 0.7)
         .foregroundStyle(HiFi.ink)
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal, 14)
+        .padding(.vertical, 8)
         .frame(height: HiFi.stationControlHeight)
         .background {
             LinearGradient(colors: [HiFi.lcdTop, HiFi.lcdBottom], startPoint: .top, endPoint: .bottom)

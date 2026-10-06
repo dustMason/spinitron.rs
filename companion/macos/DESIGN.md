@@ -16,7 +16,6 @@ typography:
   artist: { fontFamily: "SF", fontSize: "11pt", fontWeight: 400 }
   button: { fontFamily: "SF Mono", fontSize: "12pt", fontWeight: 600 }
   date: { fontFamily: "SF Mono", fontSize: "10pt", fontWeight: 600, letterSpacing: "0.6pt" }
-  subtitle: { fontFamily: "SF Mono", fontSize: "9pt", fontWeight: 600, letterSpacing: "1.1pt" }
   metadata: { fontFamily: "SF", fontSize: "10pt", fontWeight: 400 }
 rounded:
   control: "3pt"
@@ -52,7 +51,7 @@ components:
   station-display:
     textColor: "{colors.ink}"
     rounded: "{rounded.lcd}"
-    padding: "0pt 14pt"
+    padding: "8pt 14pt"
     height: "64pt"
   station-menu:
     height: "64pt"
@@ -97,7 +96,7 @@ LCD blue runs from `lcd-top` to `lcd-bottom`. `blue` marks search focus, button 
 
 SwiftUI's system font supplies SF; `.monospaced` supplies SF Mono. Keep the frontmatter hierarchy, native metrics, and monospaced counts. Titles wrap to two lines; artist samples stay on one line.
 
-The brand and all station names use custom 5 × 7 vector glyphs, not a font asset. Station display names are uppercase; the glyph set covers A–Z, digits, and common punctuation. Glyph pitch is 1.65 pt for the brand and up to 3.4 pt for the LCD; each character advances six cells. Longer station names scale uniformly to the available LCD width within the same 23.8 pt lettering area. Unsupported characters display a question-mark glyph rather than disappearing. The native station menu exposes the current station name as its accessibility value; its decorative LCD background is hidden from accessibility.
+The brand and all station names use custom 5 × 7 vector glyphs, not a font asset. Station display names are uppercase; the glyph set covers A–Z, digits, and common punctuation. Glyph pitch is 1.65 pt for the brand. The station title fills the LCD’s 48 pt lettering area with pitch `min(availableHeight / 7, availableWidth / glyphColumns)`; each character advances six cells. Longer names scale uniformly to fit the width. There is no subtitle. Unsupported characters display a question-mark glyph rather than disappearing. The native station menu exposes the current station name as its accessibility value; its decorative LCD background is hidden from accessibility.
 
 ## Layout
 
@@ -114,7 +113,7 @@ Small rounded rectangles distinguish the controls, LCD, and chassis using the fr
 ## Components
 
 - **Hi-Fi buttons:** minimum width 30 pt and default fixed height 30 pt, with 13 pt horizontal padding or 8 pt for compact controls. The socket stays fixed; pressing shifts the label down 1 pt. Face insets are 1 pt horizontally and at the bottom; the top inset increases from 1 to 2 pt when pressed. Pressed faces use the opaque LCD gradient. Enabled hover adds a 1 pt blue outline and, when not pressed, a faint white face overlay. Disabled opacity remains 0.48; the 0.09-second ease-out press animation respects Reduce Motion.
-- **Station LCD and menu:** the entire full-width LCD opens the native station menu. A clear Menu label fills its 64 pt height, with the noninteractive `StationDisplay` as an accessibility-hidden background. The menu is labeled “Choose station” and exposes the current station or “All stations” as its accessibility value. It contains “All stations” and every available station, with no separate dropdown control. LCD content is vertically centered with 14 pt horizontal padding. The display retains its 1 pt outer rim, 2 pt graphite gasket inset 1 pt, and 0.5 pt inner edge inset 3 pt; its 9 pt top shadow, 5 pt bottom highlight, and subtle glass reflection are unchanged. Dot-matrix lettering includes inactive cells at 0.08 ink opacity; its tracked subtitle remains and all station names use the same lettering.
+- **Station LCD and menu:** the entire full-width LCD opens the native station menu. A clear Menu label fills its 64 pt height, with the noninteractive `StationDisplay` as an accessibility-hidden background. The menu is labeled “Choose station” and exposes the current station or “All stations” as its accessibility value. It contains “All stations” and every available station, with no separate dropdown control. The enlarged station title is vertically centered with 14 pt horizontal and 8 pt vertical padding. The display retains its 1 pt outer rim, 2 pt graphite gasket inset 1 pt, and 0.5 pt inner edge inset 3 pt; its 9 pt top shadow, 5 pt bottom highlight, and subtle glass reflection are unchanged. Dot-matrix lettering includes inactive cells at 0.08 ink opacity; all station names use the same enlarged lettering without a subtitle.
 - **Search:** full-width, 33 pt-high plain native text field inside a translucent white recess. A 2 pt blue outline marks focus. Its custom placeholder uses `secondary`, ignores pointer events, and is hidden from accessibility. A clear button appears for nonempty queries. ⌘F focuses search.
 - **Title actions:** Refresh and Settings are the two compact top controls; there is no Close button. Refresh supports ⌘R, uses a native progress indicator, and disables during refresh.
 - **Catalog rows:** navy title, three sampled artists when available, track count, and blue outbound arrow. The entire row opens the playlist in Spotify. Hover adds the blue fill. All-stations and older-collection rows add identifying metadata.

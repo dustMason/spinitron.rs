@@ -43,12 +43,12 @@
       "dotMatrix": {
         "grid": "5 columns × 7 rows; six-cell character advance",
         "brandPitchPt": 1.65,
-        "stationPitchPt": 3.4,
+        "stationPitchPt": "min(availableHeight / 7, availableWidth / glyphColumns)",
         "dotSize": "0.77 × pitch",
         "dotCornerRadius": "0.15 × pitch",
         "lcdGrid": "0.5 × 0.5 pt cells every 3.4 pt; HiFi.blue at opacity 0.16",
         "inactiveCells": "Station dot-matrix only: unlit glyph cells use HiFi.ink at opacity 0.08. The brand leaves inactive cells unpainted.",
-        "fallback": "Uppercase station names use the same dot-matrix lettering at min(3.4 pt, availableWidth / glyphColumns), vertically centered in a 23.8 pt area. A–Z, digits, and common punctuation are covered; unsupported characters use a question-mark glyph."
+        "fallback": "Uppercase station names use the same dot-matrix lettering at min(availableHeight / 7, availableWidth / glyphColumns), vertically centered in a 48 pt area with no subtitle. A–Z, digits, and common punctuation are covered; unsupported characters use a question-mark glyph."
       },
       "review": {
         "disposition": "ship",
@@ -82,7 +82,7 @@
     { "name": "Pressed Hi-Fi button", "kind": "button", "refersTo": "button-pressed", "description": "Pressed faces use the opaque LCD gradient and a 2 pt top inset; bottom and horizontal insets remain 1 pt." },
     { "name": "Title actions", "kind": "button", "refersTo": "title-action", "description": "Refresh immediately left of Settings; each is 30 × 30 pt with an 8 pt gap and compact HiFiButtonStyle. Refresh supports Command-R, shows native progress, and disables during refresh. There is no Close button." },
     { "name": "Search", "kind": "input", "refersTo": "search", "description": "Full-width 33 pt-high native TextField in a translucent white recess, aligned with the LCD and catalog; explicit blue focus stroke, secondary placeholder, and conditional clear button. Command-F focuses it." },
-    { "name": "Station LCD", "kind": "custom", "refersTo": "station-display", "description": "Full-width, fixed 64 pt height from HiFi.stationControlHeight, with vertically centered content and 14 pt horizontal padding. Native Canvas dot-matrix lettering with inactive cells at 0.08 ink opacity, behind reflected glass with a graphite gasket and shaded inner edge. Every station uses uppercase dot-matrix lettering scaled to fit. This decorative StationDisplay background is hidden from accessibility; the enclosing Menu supplies its label and current-station value." },
+    { "name": "Station LCD", "kind": "custom", "refersTo": "station-display", "description": "Full-width, fixed 64 pt height from HiFi.stationControlHeight, with an enlarged vertically centered station title, 14 pt horizontal padding, 8 pt vertical padding, and no subtitle. Native Canvas dot-matrix lettering with inactive cells at 0.08 ink opacity, behind reflected glass with a graphite gasket and shaded inner edge. Every station uses uppercase dot-matrix lettering scaled to fit. This decorative StationDisplay background is hidden from accessibility; the enclosing Menu supplies its label and current-station value." },
     { "name": "Station menu", "kind": "nav", "refersTo": "station-menu", "description": "The entire LCD is a native Menu: a clear full-width 64 pt-high label over StationDisplay, aligned to the search and catalog edges. Its hidden menu indicator replaces the separate dropdown control. Accessibility label is Choose station; value is the current station or All stations. Items are All stations followed by every available station." },
     { "name": "Playlist row", "kind": "button", "refersTo": "playlist-row", "description": "Full-width native button, minimum height 58 pt, two-line title, artist sample, fixed track count and outbound SF Symbol; hover uses playlist-row-hover." },
     { "name": "Inset catalog", "kind": "custom", "refersTo": "catalog", "description": "Recessed ScrollView with LazyVStack and pinned etched date headers; loading and empty states occupy the same region." }
