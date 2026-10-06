@@ -77,8 +77,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         popover.behavior = .transient
         popover.contentSize = NSSize(width: 520, height: 640)
         popover.contentViewController = NSHostingController(rootView:
-            CatalogView(store: store, showSettings: { [weak self] in self?.openSettings() },
-                        close: { [weak self] in self?.popover.performClose(nil) }))
+            CatalogView(store: store, showSettings: { [weak self] in self?.openSettings() }))
         showPopover()
     }
 

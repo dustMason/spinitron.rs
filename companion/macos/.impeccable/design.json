@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-06T17:18:44Z",
+  "generatedAt": "2026-10-06T20:27:59Z",
   "title": "Design System: Spinitron — Silver Hi-Fi",
   "extensions": {
     "colorMeta": {
@@ -67,6 +67,12 @@
           "regressions": "No visual, size, or interaction regressions found by finish reviewer.",
           "captures": ["clean-button-rims.png", "clean-button-rims-kpoo.png"],
           "verification": "Release build and app signature passed; both station presets checked natively."
+        },
+        "clickableLcdGrid": {
+          "disposition": "ship",
+          "findings": "Aligned LCD/search/catalog edges, removed Close and separate dropdown controls, matching Refresh/Settings buttons, and native LCD menu confirmed by finish reviewer.",
+          "captures": ["clickable-lcd-grid.png"],
+          "verification": "Release build passed. Accessibility click opened the LCD menu; Down/Return selected KPOO and updated the catalog; top-bar Refresh fetched the latest catalog."
         }
       }
     }
@@ -74,9 +80,10 @@
   "components": [
     { "name": "Hi-Fi button", "kind": "button", "refersTo": "button", "description": "Native HiFiButtonStyle with a fixed socket and raised metal face, minimum width 30 pt and default fixed height 30 pt. Compact horizontal padding is 8 pt. Press moves the label down 1 pt; enabled hover adds a blue outline. Disabled opacity remains 0.48 and press animation honors Reduce Motion." },
     { "name": "Pressed Hi-Fi button", "kind": "button", "refersTo": "button-pressed", "description": "Pressed faces use the opaque LCD gradient and a 2 pt top inset; bottom and horizontal insets remain 1 pt." },
-    { "name": "Search", "kind": "input", "refersTo": "search", "description": "Plain native TextField in a translucent white recess, explicit blue focus stroke, secondary placeholder, and conditional clear button. Command-F focuses it." },
-    { "name": "Station LCD", "kind": "custom", "refersTo": "station-display", "description": "Fixed 64 pt height from HiFi.stationControlHeight, with vertically centered content and 14 pt horizontal padding. Native Canvas dot-matrix lettering with inactive cells at 0.08 ink opacity, behind reflected glass with a graphite gasket and shaded inner edge. Original station-name accessibility labels are retained; every station uses uppercase dot-matrix lettering scaled to fit." },
-    { "name": "Station menu", "kind": "nav", "refersTo": "station-menu", "description": "A single 24 × 64 pt native Menu with HiFiButtonSurface exposes all stations. The LCD fills the remaining width, matches its height, and identifies the current selection. There are no station preset buttons." },
+    { "name": "Title actions", "kind": "button", "refersTo": "title-action", "description": "Refresh immediately left of Settings; each is 30 × 30 pt with an 8 pt gap and compact HiFiButtonStyle. Refresh supports Command-R, shows native progress, and disables during refresh. There is no Close button." },
+    { "name": "Search", "kind": "input", "refersTo": "search", "description": "Full-width 33 pt-high native TextField in a translucent white recess, aligned with the LCD and catalog; explicit blue focus stroke, secondary placeholder, and conditional clear button. Command-F focuses it." },
+    { "name": "Station LCD", "kind": "custom", "refersTo": "station-display", "description": "Full-width, fixed 64 pt height from HiFi.stationControlHeight, with vertically centered content and 14 pt horizontal padding. Native Canvas dot-matrix lettering with inactive cells at 0.08 ink opacity, behind reflected glass with a graphite gasket and shaded inner edge. Every station uses uppercase dot-matrix lettering scaled to fit. This decorative StationDisplay background is hidden from accessibility; the enclosing Menu supplies its label and current-station value." },
+    { "name": "Station menu", "kind": "nav", "refersTo": "station-menu", "description": "The entire LCD is a native Menu: a clear full-width 64 pt-high label over StationDisplay, aligned to the search and catalog edges. Its hidden menu indicator replaces the separate dropdown control. Accessibility label is Choose station; value is the current station or All stations. Items are All stations followed by every available station." },
     { "name": "Playlist row", "kind": "button", "refersTo": "playlist-row", "description": "Full-width native button, minimum height 58 pt, two-line title, artist sample, fixed track count and outbound SF Symbol; hover uses playlist-row-hover." },
     { "name": "Inset catalog", "kind": "custom", "refersTo": "catalog", "description": "Recessed ScrollView with LazyVStack and pinned etched date headers; loading and empty states occupy the same region." }
   ],
@@ -85,7 +92,7 @@
     "overview": "Jordan selected this direction from the three-way Winamp concept board on October 6, 2026. Satin brushed silver, a blue dot-matrix LCD, tactile beveled controls, and compact navy text give the native catalog browser its identity. Preserve the chosen material and density when extending it.",
     "keyCharacteristics": [
       "Satin silver chassis and shallow machined bevels.",
-      "Blue LCD and selected controls; navy text on pale playlist rows.",
+      "Blue LCD and pressed controls; navy text on pale playlist rows.",
       "Native SF typography, custom dot-matrix lettering, and SF Symbols."
     ],
     "rules": [],

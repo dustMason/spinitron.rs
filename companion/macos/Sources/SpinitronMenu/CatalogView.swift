@@ -10,7 +10,6 @@ private struct DayGroup: Identifiable {
 struct CatalogView: View {
     @ObservedObject var store: CatalogStore
     let showSettings: () -> Void
-    let close: () -> Void
     @AppStorage("defaultStation") private var defaultStation = "KALX"
     @AppStorage("includeLegacy") private var includeLegacy = false
     @State private var station = UserDefaults.standard.string(forKey: "defaultStation") ?? "KALX"
@@ -58,81 +57,83 @@ struct CatalogView: View {
     }
 
     private var titleBar: some View {
-        HStack(spacing: 7) {
+        HStack(spacing: 8) {
             DotMatrixText(text: "SPINITRON", pitch: 1.65)
                 .padding(.leading, 4)
                 .shadow(color: .white.opacity(0.9), radius: 0, x: 0, y: 1)
             Spacer()
+            refreshButton
             Button(action: showSettings) { Image(systemName: "gearshape") }
                 .buttonStyle(HiFiButtonStyle(compact: true))
                 .help("Settings").accessibilityLabel("Settings")
-            Button(action: close) { Image(systemName: "xmark") }
-                .buttonStyle(HiFiButtonStyle(compact: true))
-                .help("Close panel").accessibilityLabel("Close panel")
         }
     }
 
     private var stationControls: some View {
-        HStack(spacing: 10) {
-            StationDisplay(station: station.isEmpty ? "ALL" : station)
-            Menu {
-                Button("All stations") { station = "" }
-                Divider()
-                ForEach(store.stations, id: \.self) { value in
-                    Button(value) { station = value }
-                }
-            } label: {
-                Image(systemName: "chevron.down").font(.system(size: 10, weight: .bold))
+        Menu {
+            Button("All stations") { station = "" }
+            Divider()
+            ForEach(store.stations, id: \.self) { value in
+                Button(value) { station = value }
             }
-            .menuStyle(.borderlessButton).menuIndicator(.hidden).fixedSize()
-            .frame(width: 24, height: HiFi.stationControlHeight)
-            .modifier(HiFiButtonSurface())
-            .help("All stations").accessibilityLabel("Choose station")
+        } label: {
+            // Keep the material outside the label: macOS simplifies Menu labels.
+            Color.clear.frame(maxWidth: .infinity).frame(height: HiFi.stationControlHeight)
+                .contentShape(Rectangle())
         }
+        .menuStyle(.borderlessButton).menuIndicator(.hidden)
+        .frame(maxWidth: .infinity).frame(height: HiFi.stationControlHeight)
+        .background {
+            StationDisplay(station: station.isEmpty ? "ALL" : station)
+                .accessibilityHidden(true)
+        }
+        .help("Choose station").accessibilityLabel("Choose station")
+        .accessibilityValue(station.isEmpty ? "All stations" : station)
     }
 
     private var searchControls: some View {
-        HStack(spacing: 8) {
-            HStack(spacing: 7) {
-                Image(systemName: "magnifyingglass").foregroundStyle(HiFi.secondary)
-                TextField("", text: $query)
-                    .font(.system(size: 12))
-                    .textFieldStyle(.plain).focused($searching)
-                    .overlay(alignment: .leading) {
-                        if query.isEmpty {
-                            Text("Search shows, artists or songs")
-                                .font(.system(size: 12)).foregroundStyle(HiFi.secondary)
-                                .allowsHitTesting(false).accessibilityHidden(true)
-                        }
+        HStack(spacing: 7) {
+            Image(systemName: "magnifyingglass").foregroundStyle(HiFi.secondary)
+            TextField("", text: $query)
+                .font(.system(size: 12))
+                .textFieldStyle(.plain).focused($searching)
+                .overlay(alignment: .leading) {
+                    if query.isEmpty {
+                        Text("Search shows, artists or songs")
+                            .font(.system(size: 12)).foregroundStyle(HiFi.secondary)
+                            .allowsHitTesting(false).accessibilityHidden(true)
                     }
-                    .accessibilityLabel("Search shows, artists or songs")
-                    .accessibilityIdentifier("catalog-search")
-                if !query.isEmpty {
-                    Button { query = ""; searching = true } label: { Image(systemName: "xmark.circle.fill") }
-                        .buttonStyle(.plain).foregroundStyle(HiFi.secondary)
-                        .help("Clear search").accessibilityLabel("Clear search")
                 }
+                .accessibilityLabel("Search shows, artists or songs")
+                .accessibilityIdentifier("catalog-search")
+            if !query.isEmpty {
+                Button { query = ""; searching = true } label: { Image(systemName: "xmark.circle.fill") }
+                    .buttonStyle(.plain).foregroundStyle(HiFi.secondary)
+                    .help("Clear search").accessibilityLabel("Clear search")
             }
-            .padding(.horizontal, 10).frame(height: 33)
-            .background(Color.white.opacity(0.67))
-            .modifier(HiFiBezel(radius: 3, recessed: true))
-            .overlay {
-                if searching {
-                    RoundedRectangle(cornerRadius: 3).strokeBorder(HiFi.blue, lineWidth: 2)
-                        .allowsHitTesting(false)
-                }
-            }
-            Button { Task { await store.refresh() } } label: {
-                ZStack {
-                    Image(systemName: "arrow.clockwise").opacity(store.isRefreshing ? 0 : 1)
-                    if store.isRefreshing { ProgressView().controlSize(.small) }
-                }.frame(width: 18)
-            }
-            .buttonStyle(HiFiButtonStyle()).disabled(store.isRefreshing)
-            .keyboardShortcut("r")
-            .help("Download the latest catalog (⌘R)")
-            .accessibilityLabel(store.isRefreshing ? "Refreshing catalog" : "Refresh")
         }
+        .padding(.horizontal, 10).frame(height: 33)
+        .background(Color.white.opacity(0.67))
+        .modifier(HiFiBezel(radius: 3, recessed: true))
+        .overlay {
+            if searching {
+                RoundedRectangle(cornerRadius: 3).strokeBorder(HiFi.blue, lineWidth: 2)
+                    .allowsHitTesting(false)
+            }
+        }
+    }
+
+    private var refreshButton: some View {
+        Button { Task { await store.refresh() } } label: {
+            ZStack {
+                Image(systemName: "arrow.clockwise").opacity(store.isRefreshing ? 0 : 1)
+                if store.isRefreshing { ProgressView().controlSize(.small) }
+            }.frame(width: 14, height: 14)
+        }
+        .buttonStyle(HiFiButtonStyle(compact: true)).disabled(store.isRefreshing)
+        .keyboardShortcut("r")
+        .help("Download the latest catalog (⌘R)")
+        .accessibilityLabel(store.isRefreshing ? "Refreshing catalog" : "Refresh")
     }
 
     @ViewBuilder private var catalog: some View {

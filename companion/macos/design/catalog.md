@@ -13,8 +13,9 @@ STORY: Select the station, scan dated broadcasts and three sampled artists,
 then open the chosen playlist. Cached content stays available during refresh.
 
 FIRST VIEWPORT: Within the existing 520 × 640-point popover, a narrow title bar
-sits above the wide station display and a single station dropdown. Search and refresh sit above
-the inset scrolling list. Date headers pin. A compact cache-status footer closes
+sits above a full-width LCD that opens station choices. Matching Refresh and
+Settings buttons occupy the top-right; the full-width search field sits above
+the inset scrolling list. LCD, search, and catalog share vertical edges. Date headers pin. A compact cache-status footer closes
 the frame. Rows are full-width buttons and support two-line long titles.
 
 FORM: User-pinned option B, Silver Hi-Fi, approved with “lets do silver hifi!”
@@ -60,3 +61,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 - The flat selection marker sits 8 pt inside the face, clear of the border.
 - Release build and signature pass; checked both station selections in the native
   app. Fresh review against the user's defect screenshot: `ship`.
+
+### Aligned controls and clickable LCD — build 9
+
+- Removed the close button and separate station dropdown. The full-width LCD is
+  now the native station menu, with an accessible label and current station value.
+- Refresh and Settings are matching 30 pt controls in the title bar, separated
+  by 8 pt. LCD, search, and playlist list share the same left and right edges.
+- Native menu activation and keyboard selection changed the catalog to KPOO;
+  the relocated Refresh downloaded the catalog successfully. Build and signature
+  checks pass. Focused layout review: `ship`.
