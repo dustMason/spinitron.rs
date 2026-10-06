@@ -100,15 +100,6 @@ struct HiFiButtonSurface: ViewModifier {
                     .padding(.top, inset ? 2 : 1)
                     .padding(.bottom, 1)
             }
-            .overlay(alignment: .bottom) {
-                if selected {
-                    Capsule()
-                        .fill(HiFi.blue)
-                        .frame(width: 14, height: 2)
-                        .padding(.bottom, 8)
-                        .allowsHitTesting(false)
-                }
-            }
             .overlay {
                 if hovered && enabled {
                     RoundedRectangle(cornerRadius: 3)
