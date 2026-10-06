@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T16:41:49Z",
+  "title": "Design System: Spinitron — Silver Hi-Fi",
+  "extensions": {
+    "colorMeta": {
+      "ink": { "role": "neutral", "displayName": "Deep Navy Ink" },
+      "secondary": { "role": "neutral", "displayName": "Quiet Navy" },
+      "edge": { "role": "neutral", "displayName": "Machined Edge" },
+      "paper": { "role": "neutral", "displayName": "Cool Silver Base" },
+      "blue": { "role": "primary", "displayName": "Focus Blue" },
+      "highlight": { "role": "primary", "displayName": "Playlist Hover Blue" },
+      "lcd-top": { "role": "primary", "displayName": "LCD Upper Blue" },
+      "lcd-bottom": { "role": "primary", "displayName": "LCD Lower Blue" }
+    },
+    "shadows": [
+      { "name": "etched-brand", "value": "SwiftUI .shadow(color: .white.opacity(0.9), radius: 0, x: 0, y: 1)", "purpose": "One-point etched highlight beneath the catalog wordmark." }
+    ],
+    "motion": [
+      { "name": "button-press", "value": "SwiftUI .easeOut(duration: 0.09); pressed offset y: 1 pt", "purpose": "Tactile press feedback; animation is nil when accessibilityReduceMotion is enabled." }
+    ],
+    "native": {
+      "platform": "macOS 14+; SwiftUI in an AppKit popover",
+      "units": "Native points; SF and SF Mono are SwiftUI system fonts.",
+      "sourceFiles": ["Sources/SpinitronMenu/HiFiSkin.swift", "Sources/SpinitronMenu/CatalogView.swift"],
+      "previewPolicy": "Native component descriptions only. No HTML/CSS replicas, web breakpoints, or web detector apply.",
+      "tonalRamps": "No separate tonal ramps are implemented; the frontmatter preserves the actual palette without synthesized colors.",
+      "materials": {
+        "silver": "Tile Sources/SpinitronMenu/Resources/brushed-silver.png at opacity 0.85 over HiFi.paper; overlay a top-to-bottom gradient of white at 0.24 opacity, clear, and black at 0.06 opacity.",
+        "raisedBezel": "HiFi.edge strokeBorder width 1 pt; inner stroke inset 1 pt with white at 0.95 opacity to black at 0.14 opacity, topLeading to bottomTrailing.",
+        "recessedBezel": "Same geometry; inner gradient black at 0.28 opacity to white at 0.8 opacity.",
+        "button": "Top-to-bottom gradient: white, HiFi.paper, SwiftUI sRGB (0.72, 0.76, 0.80). Selected or pressed: HiFi.lcdTop to HiFi.lcdBottom.",
+        "search": "White at opacity 0.67; focus stroke HiFi.blue, 2 pt.",
+        "rule": "1 pt HiFi.edge at opacity 0.30 above 1 pt white at opacity 0.65."
+      },
+      "dotMatrix": {
+        "grid": "5 columns × 7 rows; six-cell character advance",
+        "brandPitchPt": 1.65,
+        "stationPitchPt": 3.4,
+        "dotSize": "0.77 × pitch",
+        "dotCornerRadius": "0.15 × pitch",
+        "lcdGrid": "0.5 × 0.5 pt cells every 3.4 pt; HiFi.blue at opacity 0.16",
+        "fallback": "Station strings longer than six characters or containing unsupported glyphs use the station-fallback typography token, one line, minimumScaleFactor 0.65."
+      },
+      "review": {
+        "disposition": "ship",
+        "resolvedFindings": ["Bundled silver texture rendering", "Search placeholder contrast"],
+        "captureDirectory": "/Users/jordans/Documents/Codex/2026-09-08/lets-x20/outputs/silver-hifi-review",
+        "captures": ["catalog-final.png", "settings-final.png", "empty-final.png", "all-stations-final.png"]
+      }
+    }
+  },
+  "components": [
+    { "name": "Hi-Fi button", "kind": "button", "refersTo": "button", "description": "Native HiFiButtonStyle; raised silver bezel, minimum 30 × 30 pt. Compact horizontal padding is 8 pt; disabled opacity is 0.48." },
+    { "name": "Selected Hi-Fi button", "kind": "button", "refersTo": "button-selected", "description": "LCD gradient and recessed bevel for a selected preset or pressed button; selected presets expose the native selected accessibility trait." },
+    { "name": "Search", "kind": "input", "refersTo": "search", "description": "Plain native TextField in a translucent white recess, explicit blue focus stroke, secondary placeholder, and conditional clear button. Command-F focuses it." },
+    { "name": "Station LCD", "kind": "custom", "refersTo": "station-display", "description": "Native Canvas dot-matrix lettering over an LCD gradient and geometric cell grid, with ordinary-text accessibility labels and an SF Mono fallback." },
+    { "name": "Station presets", "kind": "nav", "description": "First two available stations use HiFiButtonStyle; a 24 × 30 pt native Menu exposes all stations. Selected state is visible and accessible." },
+    { "name": "Playlist row", "kind": "button", "refersTo": "playlist-row", "description": "Full-width native button, minimum height 58 pt, two-line title, artist sample, fixed track count and outbound SF Symbol; hover uses playlist-row-hover." },
+    { "name": "Inset catalog", "kind": "custom", "refersTo": "catalog", "description": "Recessed ScrollView with LazyVStack and pinned etched date headers; loading and empty states occupy the same region." }
+  ],
+  "narrative": {
+    "northStar": "Silver Hi-Fi",
+    "overview": "Jordan selected this direction from the three-way Winamp concept board on October 6, 2026. Satin brushed silver, a blue dot-matrix LCD, tactile beveled controls, and compact navy text give the native catalog browser its identity. Preserve the chosen material and density when extending it.",
+    "keyCharacteristics": [
+      "Satin silver chassis and shallow machined bevels.",
+      "Blue LCD and selected controls; navy text on pale playlist rows.",
+      "Native SF typography, custom dot-matrix lettering, and SF Symbols."
+    ],
+    "rules": [],
+    "dos": [
+      "Do reuse the HiFi palette, material, bezel, and button components.",
+      "Do preserve native keyboard, menu, focus, and accessibility behavior.",
+      "Do render real catalog records and let long titles increase row height."
+    ],
+    "donts": [
+      "Don't replace the satin silver, blue LCD, or compact navy typography with a different visual world.",
+      "Don't rasterize catalog text or replace native controls with web controls.",
+      "Don't carry illustrative concept-board records or placeholder rows into the live catalog."
+    ]
+  }
+}

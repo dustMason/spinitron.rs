@@ -7,7 +7,8 @@ let package = Package(
     products: [.executable(name: "SpinitronMenu", targets: ["SpinitronMenu"])],
     targets: [
         .target(name: "SpinitronCore"),
-        .executableTarget(name: "SpinitronMenu", dependencies: ["SpinitronCore"]),
+        .executableTarget(name: "SpinitronMenu", dependencies: ["SpinitronCore"],
+                          resources: [.process("Resources")]),
         .testTarget(name: "SpinitronCoreTests", dependencies: ["SpinitronCore"]),
     ]
 )

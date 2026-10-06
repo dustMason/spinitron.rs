@@ -40,6 +40,27 @@ private func feed(_ rows: [[String: Any]]) throws -> Data {
     #expect(Playlist.filtered(items, station: "", query: "missing", includeLegacy: true).isEmpty)
 }
 
+@Test func browserTitlesOmitOnlyTheirSectionDateAndKeepDuplicateTimes() throws {
+    // This broadcast is September 10 in UTC, but September 9 in the UI's Pacific sections.
+    for (name, expected) in [
+        ("Radio Dunya - 2026-09-09", "Radio Dunya"),
+        ("FREEFORM - 2026-09-09 5:00pm", "FREEFORM · 5:00pm"),
+        ("FREEFORM - 2026-09-09 12:00am", "FREEFORM · 12:00am"),
+        ("Special - 2026-09-10", "Special - 2026-09-10"),
+        ("Special - 2026-09-09 Anniversary", "Special - 2026-09-09 Anniversary"),
+        ("音楽 - 2026-09-09", "音楽"),
+    ] {
+        var record = row()
+        record["display_name"] = "KALX - " + name
+        let playlist = try CatalogFeed.decode(feed([record])).playlists[0]
+        #expect(playlist.browseTitle == expected)
+        #expect(playlist.title == name)
+    }
+    var legacy = row(broadcast: nil)
+    legacy["display_name"] = "KALX - Collection - 2026-09-15"
+    #expect(try CatalogFeed.decode(feed([legacy])).playlists[0].browseTitle == "Collection - 2026-09-15")
+}
+
 @Test func acceptsBothArtistFormatsAndKeepsIndividualNamesIntact() throws {
     var record = row()
     record["preview"] = [

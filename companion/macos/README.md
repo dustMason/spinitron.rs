@@ -30,6 +30,20 @@ bundle and signs it locally. Copy `build/Spinitron.app` into `~/Applications`
 for a permanent installation. Distribution to other Macs would need a Developer
 ID signature and notarization, or a local rebuild on those Macs.
 
+## Silver Hi-Fi skin
+
+The browser uses a brushed-silver frame, blue dot-matrix station display and
+tactile station presets. The small arrow beside the presets includes **All
+stations**. Date headers stay visible while scrolling; rows show three artists
+and a track count. Dates live in the section headers, while same-day broadcast
+times remain in row titles. The full original title is available in the tooltip
+and accessibility label. The skin uses a fixed light palette, including when
+macOS is in dark mode.
+
+The material texture is bundled locally. No extra fonts, downloads or Spotify
+permissions are needed. `build-app.sh` copies the Swift resource bundle into the
+app before signing, so the installed app is independent of the source checkout.
+
 ## Data and settings
 
 The app reads only the public

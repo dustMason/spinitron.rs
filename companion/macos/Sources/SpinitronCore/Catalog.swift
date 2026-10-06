@@ -27,6 +27,26 @@ public struct Playlist: Codable, Identifiable, Equatable, Sendable {
     public let preview: [Track]
 
     public var spotifyURL: URL { URL(string: "spotify:playlist:\(id)")! }
+    /// The date already appears in the browser's section heading. Preserve a
+    /// same-day disambiguating time, and never shorten unrecognized name formats.
+    public var browseTitle: String {
+        guard isBroadcast, let date else { return title }
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.timeZone = TimeZone(identifier: "America/Los_Angeles")
+        formatter.dateFormat = "yyyy-MM-dd"
+        let suffix = " - " + formatter.string(from: date)
+        guard let range = title.range(of: suffix, options: .backwards), range.lowerBound != title.startIndex else {
+            return title
+        }
+        let trailing = String(title[range.upperBound...])
+        if trailing.isEmpty { return String(title[..<range.lowerBound]) }
+        if trailing.range(of: "^ (?:[1-9]|1[0-2]):[0-5][0-9](?:am|pm)$", options: .regularExpression) != nil {
+            return String(title[..<range.lowerBound]) + " ·" + trailing
+        }
+        return title
+    }
+
     public var artistSample: String {
         var seen = Set<String>()
         return preview.flatMap(\.artists).filter { seen.insert($0).inserted }
