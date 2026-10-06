@@ -94,8 +94,7 @@ struct CatalogView: View {
                 }
                 .menuStyle(.borderlessButton).menuIndicator(.hidden).fixedSize()
                 .frame(width: 24, height: 30)
-                .background(HiFi.paper)
-                .modifier(HiFiBezel(radius: 3))
+                .modifier(HiFiButtonSurface())
                 .help("All stations").accessibilityLabel("Choose station")
             }
         }

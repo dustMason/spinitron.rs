@@ -34,3 +34,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   contrast (approximately 6.6:1). Both findings resolved in the final captures.
 - `DESIGN.md` and `.impeccable/design.json` record the shipped components.
   The single bundled raster contains its generation prompt as provenance.
+
+### Button and LCD refinement — build 3
+
+- Fixed metal sockets, moving key faces, hover outlines, and a selected-preset
+  indicator refine the existing controls without changing their size or actions.
+- The LCD has a graphite inset rim, edge shading, a subtle glass reflection,
+  and faint inactive glyph cells. Longer station names retain native text.
+- Release build, signature, and all nine core tests pass. KALX/KPOO selection
+  and the full station menu were checked, including the Psyched text fallback.
+- Focused finish review: `ship`, with no introduced blocking findings in the
+  source diff and native captures. Build 3 is installed and running on KALX.

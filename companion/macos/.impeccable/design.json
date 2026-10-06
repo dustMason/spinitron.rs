@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-06T16:41:49Z",
+  "generatedAt": "2026-10-06T17:07:08Z",
   "title": "Design System: Spinitron — Silver Hi-Fi",
   "extensions": {
     "colorMeta": {
@@ -14,10 +14,13 @@
       "lcd-bottom": { "role": "primary", "displayName": "LCD Lower Blue" }
     },
     "shadows": [
-      { "name": "etched-brand", "value": "SwiftUI .shadow(color: .white.opacity(0.9), radius: 0, x: 0, y: 1)", "purpose": "One-point etched highlight beneath the catalog wordmark." }
+      { "name": "etched-brand", "value": "SwiftUI .shadow(color: .white.opacity(0.9), radius: 0, x: 0, y: 1)", "purpose": "One-point etched highlight beneath the catalog wordmark." },
+      { "name": "button-depth", "value": "SwiftUI .shadow(color: .black.opacity(selected || pressed ? 0.04 : 0.12), radius: 0.6, x: 0, y: 1)", "purpose": "Ground the raised face; reduce the shadow for inset states." },
+      { "name": "button-label", "value": "SwiftUI .shadow(color: .white.opacity(0.75), radius: 0, x: 0, y: 0.5)", "purpose": "Etched highlight beneath button labels." },
+      { "name": "lcd-glyph", "value": "SwiftUI .shadow(color: HiFi.ink.opacity(0.18), radius: 0.5, x: 0, y: 0.7)", "purpose": "Subtle depth beneath station dot-matrix lettering." }
     ],
     "motion": [
-      { "name": "button-press", "value": "SwiftUI .easeOut(duration: 0.09); pressed offset y: 1 pt", "purpose": "Tactile press feedback; animation is nil when accessibilityReduceMotion is enabled." }
+      { "name": "button-press", "value": "SwiftUI .easeOut(duration: 0.09); pressed label offset y: 1 pt, fixed socket", "purpose": "Tactile press feedback; animation is nil when accessibilityReduceMotion is enabled." }
     ],
     "native": {
       "platform": "macOS 14+; SwiftUI in an AppKit popover",
@@ -29,7 +32,13 @@
         "silver": "Tile Sources/SpinitronMenu/Resources/brushed-silver.png at opacity 0.85 over HiFi.paper; overlay a top-to-bottom gradient of white at 0.24 opacity, clear, and black at 0.06 opacity.",
         "raisedBezel": "HiFi.edge strokeBorder width 1 pt; inner stroke inset 1 pt with white at 0.95 opacity to black at 0.14 opacity, topLeading to bottomTrailing.",
         "recessedBezel": "Same geometry; inner gradient black at 0.28 opacity to white at 0.8 opacity.",
-        "button": "Top-to-bottom gradient: white, HiFi.paper, SwiftUI sRGB (0.72, 0.76, 0.80). Selected or pressed: HiFi.lcdTop to HiFi.lcdBottom.",
+        "buttonSocket": "Fixed rounded rectangle, radius 3 pt, SwiftUI sRGB (0.30, 0.36, 0.42); 1 pt top-to-bottom stroke from black at opacity 0.18 to white at opacity 0.9.",
+        "buttonFace": "Radius 2 pt; top-to-bottom gradient stops: white at 0, sRGB (0.91, 0.93, 0.95) at 0.42, (0.80, 0.83, 0.87) at 0.48, (0.89, 0.91, 0.94) at 1. Horizontal inset 1 pt, top inset 1 pt, bottom inset 3 pt. A 1 pt stroke runs from white to HiFi.edge at opacity 0.45.",
+        "buttonInsetFace": "Selected or pressed: HiFi.lcdTop at opacity 0.88 to HiFi.lcdBottom; horizontal inset 1 pt, top inset 2 pt, bottom inset 1 pt. A 1 pt stroke runs from HiFi.ink at opacity 0.4 to white at opacity 0.6.",
+        "buttonSelection": "14 × 2 pt HiFi.blue capsule, bottom padding 4 pt; a 0.5 pt white highlight at opacity 0.7 across its top.",
+        "buttonHover": "Enabled hover: 1 pt HiFi.blue outline at opacity 0.75, radius 3 pt. If also not pressed, add white at opacity 0.15 over the face. Disabled opacity remains 0.48.",
+        "lcdRim": "Clip radius 4 pt; 1 pt outer stroke from HiFi.edge to white at opacity 0.95. Graphite sRGB (0.20, 0.27, 0.34) gasket: 2 pt stroke, radius 3 pt, inset 1 pt. Inner edge: 0.5 pt stroke, radius 1 pt, inset 3 pt, HiFi.ink at opacity 0.35 to white at opacity 0.65.",
+        "lcdGlass": "TopLeading-to-bottomTrailing reflection: white opacity 0.20 at 0, 0.05 at 0.45, clear at 0.46, white opacity 0.06 at 1. Edge shading inset 3 pt: 9 pt upper gradient from HiFi.ink opacity 0.42 to clear; 5 pt lower gradient from clear to white opacity 0.3. Overlays do not intercept pointer events.",
         "search": "White at opacity 0.67; focus stroke HiFi.blue, 2 pt.",
         "rule": "1 pt HiFi.edge at opacity 0.30 above 1 pt white at opacity 0.65."
       },
@@ -40,22 +49,29 @@
         "dotSize": "0.77 × pitch",
         "dotCornerRadius": "0.15 × pitch",
         "lcdGrid": "0.5 × 0.5 pt cells every 3.4 pt; HiFi.blue at opacity 0.16",
+        "inactiveCells": "Station dot-matrix only: unlit glyph cells use HiFi.ink at opacity 0.08. The brand leaves inactive cells unpainted.",
         "fallback": "Station strings longer than six characters or containing unsupported glyphs use the station-fallback typography token, one line, minimumScaleFactor 0.65."
       },
       "review": {
         "disposition": "ship",
         "resolvedFindings": ["Bundled silver texture rendering", "Search placeholder contrast"],
         "captureDirectory": "/Users/jordans/Documents/Codex/2026-09-08/lets-x20/outputs/silver-hifi-review",
-        "captures": ["catalog-final.png", "settings-final.png", "empty-final.png", "all-stations-final.png"]
+        "captures": ["catalog-final.png", "settings-final.png", "empty-final.png", "all-stations-final.png"],
+        "buttonLcdPolish": {
+          "disposition": "ship",
+          "regressions": "None found by finish reviewer.",
+          "captures": ["controls-lcd-v2.png", "controls-lcd-fallback-v2.png"],
+          "verification": "Release build and app signature passed; nine tests passed; native station selection and menu verified."
+        }
       }
     }
   },
   "components": [
-    { "name": "Hi-Fi button", "kind": "button", "refersTo": "button", "description": "Native HiFiButtonStyle; raised silver bezel, minimum 30 × 30 pt. Compact horizontal padding is 8 pt; disabled opacity is 0.48." },
-    { "name": "Selected Hi-Fi button", "kind": "button", "refersTo": "button-selected", "description": "LCD gradient and recessed bevel for a selected preset or pressed button; selected presets expose the native selected accessibility trait." },
+    { "name": "Hi-Fi button", "kind": "button", "refersTo": "button", "description": "Native HiFiButtonStyle with a fixed socket and raised metal face, minimum 30 × 30 pt. Compact horizontal padding is 8 pt. Press moves the label down 1 pt; enabled hover adds a blue outline. Disabled opacity remains 0.48 and press animation honors Reduce Motion." },
+    { "name": "Selected Hi-Fi button", "kind": "button", "refersTo": "button-selected", "description": "Selected or pressed faces use the LCD gradient and deeper inset. A selected preset carries a 14 × 2 pt blue bar and retains the native selected accessibility trait." },
     { "name": "Search", "kind": "input", "refersTo": "search", "description": "Plain native TextField in a translucent white recess, explicit blue focus stroke, secondary placeholder, and conditional clear button. Command-F focuses it." },
-    { "name": "Station LCD", "kind": "custom", "refersTo": "station-display", "description": "Native Canvas dot-matrix lettering over an LCD gradient and geometric cell grid, with ordinary-text accessibility labels and an SF Mono fallback." },
-    { "name": "Station presets", "kind": "nav", "description": "First two available stations use HiFiButtonStyle; a 24 × 30 pt native Menu exposes all stations. Selected state is visible and accessible." },
+    { "name": "Station LCD", "kind": "custom", "refersTo": "station-display", "description": "Native Canvas dot-matrix lettering with inactive cells at 0.08 ink opacity, behind reflected glass with a graphite gasket and shaded inner edge. Ordinary-text accessibility labels and SF Mono fallback are retained." },
+    { "name": "Station presets", "kind": "nav", "description": "First two available stations use HiFiButtonStyle; a 24 × 30 pt native Menu with HiFiButtonSurface exposes all stations. Selected state is visible and accessible." },
     { "name": "Playlist row", "kind": "button", "refersTo": "playlist-row", "description": "Full-width native button, minimum height 58 pt, two-line title, artist sample, fixed track count and outbound SF Symbol; hover uses playlist-row-hover." },
     { "name": "Inset catalog", "kind": "custom", "refersTo": "catalog", "description": "Recessed ScrollView with LazyVStack and pinned etched date headers; loading and empty states occupy the same region." }
   ],

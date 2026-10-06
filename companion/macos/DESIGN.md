@@ -75,13 +75,13 @@ Jordan selected this direction from the three-way Winamp concept board on Octobe
 - Blue LCD and selected controls; navy text on pale playlist rows.
 - Native SF typography, custom dot-matrix lettering, and SF Symbols.
 
-The implementation authority is `Sources/SpinitronMenu/HiFiSkin.swift` and `CatalogView.swift`. All dimensions here are native macOS points. Color percentages preserve the exact SwiftUI sRGB channels; they do not imply CSS rendering. The final review disposition is **ship**, following the texture and search-placeholder fixes.
+The implementation authority is `Sources/SpinitronMenu/HiFiSkin.swift` and `CatalogView.swift`. All dimensions here are native macOS points. Color percentages preserve the exact SwiftUI sRGB channels; they do not imply CSS rendering. The final review disposition is **ship**, including the subsequent button and LCD depth polish with no regressions found.
 
 ## Colors
 
 ### Primary
 
-LCD blue runs from `lcd-top` to `lcd-bottom`. `blue` marks the search focus outline and outbound arrows; `highlight` is the playlist hover fill.
+LCD blue runs from `lcd-top` to `lcd-bottom`. `blue` marks search focus, button hover outlines, selected-preset bars, and outbound arrows; `highlight` is the playlist hover fill.
 
 ### Neutral
 
@@ -99,7 +99,7 @@ The AppKit popover is fixed at 520 × 640 pt, with a 4 pt outer edge, 10 pt cont
 
 ## Elevation & Depth
 
-Depth comes from one-point edge strokes and inset light/dark bevel strokes. Raised controls catch light at the top-left; recessed controls reverse that treatment. `SilverSurface` tiles the bundled `Resources/brushed-silver.png` at 0.85 opacity over `paper`, with a subtle vertical white-to-black overlay. The brand has a one-point white etched shadow. Exact material, bevel, and motion details are recorded in the sidecar.
+The chassis and catalog use one-point edge strokes and inset light/dark bevels. Buttons have a fixed dark socket beneath a raised metal face with a narrow mid-face gradient step and a small downward shadow. The LCD sits behind a graphite gasket, with top shadow, bottom highlight, and subtle diagonal glass reflection. `SilverSurface` tiles the bundled `Resources/brushed-silver.png` at 0.85 opacity over `paper`, with a subtle vertical white-to-black overlay. The brand retains its one-point white etched shadow. Exact material, bevel, and motion details are recorded in the sidecar.
 
 ## Shapes
 
@@ -107,8 +107,8 @@ Small rounded rectangles distinguish the controls, LCD, and chassis using the fr
 
 ## Components
 
-- **Hi-Fi buttons:** minimum 30 × 30 pt, with 13 pt horizontal padding or 8 pt for compact controls. Selected and pressed buttons use the LCD gradient and a recessed bezel. Pressing shifts the control down 1 pt; disabled opacity is 0.48. The 0.09-second ease-out press animation respects Reduce Motion.
-- **Station LCD and presets:** the inset display carries dot-matrix station lettering and a tracked subtitle. Two station presets sit beside a native menu for the full list; selection has an accessibility trait.
+- **Hi-Fi buttons:** minimum 30 × 30 pt, with 13 pt horizontal padding or 8 pt for compact controls. The socket stays fixed; pressing shifts the label down 1 pt. Selected or pressed faces use the LCD gradient and deeper inset. A selected preset also carries a 14 × 2 pt blue bar. Enabled hover adds a 1 pt blue outline and, when not pressed, a faint white face overlay. Disabled opacity remains 0.48; the 0.09-second ease-out press animation respects Reduce Motion.
+- **Station LCD and presets:** the display has a 1 pt outer rim, 2 pt graphite gasket inset 1 pt, and a 0.5 pt inner edge inset 3 pt. A 9 pt top shadow and 5 pt bottom highlight shade the subtle glass reflection. Dot-matrix lettering includes inactive cells at 0.08 ink opacity; its tracked subtitle and SF Mono fallback remain. Two station presets sit beside a native menu using the same button surface; selection retains its accessibility trait.
 - **Search:** plain native text field inside a translucent white recess. A 2 pt blue outline marks focus. Its custom placeholder uses `secondary`, ignores pointer events, and is hidden from accessibility. A clear button appears for nonempty queries. ⌘F focuses search.
 - **Catalog rows:** navy title, three sampled artists when available, track count, and blue outbound arrow. The entire row opens the playlist in Spotify. Hover adds the blue fill. All-stations and older-collection rows add identifying metadata.
 - **Date dividers and footer:** etched silver headers carry uppercase Pacific dates and counts. The footer carries cache status and Quit. Refresh uses a native progress indicator, disables during refresh, and supports ⌘R.

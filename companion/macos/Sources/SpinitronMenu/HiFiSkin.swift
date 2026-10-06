@@ -54,31 +54,91 @@ struct HiFiBezel: ViewModifier {
     }
 }
 
+/// The socket stays still while the key face travels inside it.
+struct HiFiButtonSurface: ViewModifier {
+    var selected = false
+    var pressed = false
+    @Environment(\.isEnabled) private var enabled
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var hovered = false
+
+    private var inset: Bool { selected || pressed }
+
+    func body(content: Content) -> some View {
+        content
+            .offset(y: pressed ? 1 : 0)
+            .background {
+                RoundedRectangle(cornerRadius: 3)
+                    .fill(Color(red: 0.30, green: 0.36, blue: 0.42))
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 3)
+                            .strokeBorder(LinearGradient(colors: [.black.opacity(0.18), .white.opacity(0.9)],
+                                                         startPoint: .top, endPoint: .bottom), lineWidth: 1)
+                    }
+                RoundedRectangle(cornerRadius: 2)
+                    .fill(LinearGradient(stops: inset ? [
+                        .init(color: HiFi.lcdTop.opacity(0.88), location: 0),
+                        .init(color: HiFi.lcdBottom, location: 1),
+                    ] : [
+                        .init(color: .white, location: 0),
+                        .init(color: Color(red: 0.91, green: 0.93, blue: 0.95), location: 0.42),
+                        .init(color: Color(red: 0.80, green: 0.83, blue: 0.87), location: 0.48),
+                        .init(color: Color(red: 0.89, green: 0.91, blue: 0.94), location: 1),
+                    ], startPoint: .top, endPoint: .bottom))
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 2)
+                            .strokeBorder(LinearGradient(colors: inset
+                                ? [HiFi.ink.opacity(0.4), .white.opacity(0.6)]
+                                : [.white, HiFi.edge.opacity(0.45)],
+                                startPoint: .top, endPoint: .bottom), lineWidth: 1)
+                    }
+                    .overlay {
+                        if hovered && enabled && !pressed {
+                            RoundedRectangle(cornerRadius: 2)
+                                .fill(.white.opacity(0.15))
+                        }
+                    }
+                    .padding(.horizontal, 1)
+                    .padding(.top, inset ? 2 : 1)
+                    .padding(.bottom, inset ? 1 : 3)
+            }
+            .overlay(alignment: .bottom) {
+                if selected {
+                    Capsule()
+                        .fill(HiFi.blue)
+                        .frame(width: 14, height: 2)
+                        .overlay(alignment: .top) { Color.white.opacity(0.7).frame(height: 0.5) }
+                        .padding(.bottom, 4)
+                        .allowsHitTesting(false)
+                }
+            }
+            .overlay {
+                if hovered && enabled {
+                    RoundedRectangle(cornerRadius: 3)
+                        .strokeBorder(HiFi.blue.opacity(0.75), lineWidth: 1)
+                        .allowsHitTesting(false)
+                }
+            }
+            .shadow(color: .black.opacity(inset ? 0.04 : 0.12), radius: 0.6, x: 0, y: 1)
+            .contentShape(RoundedRectangle(cornerRadius: 3))
+            .opacity(enabled ? 1 : 0.48)
+            .onHover { hovered = $0 }
+            .animation(reduceMotion ? nil : .easeOut(duration: 0.09), value: pressed)
+    }
+}
+
 struct HiFiButtonStyle: ButtonStyle {
     var selected = false
     var compact = false
-    @Environment(\.isEnabled) private var enabled
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.system(size: 12, weight: .semibold, design: .monospaced))
             .foregroundStyle(HiFi.ink)
+            .shadow(color: .white.opacity(0.75), radius: 0, x: 0, y: 0.5)
             .padding(.horizontal, compact ? 8 : 13)
             .frame(minWidth: 30, minHeight: 30)
-            .background {
-                if selected || configuration.isPressed {
-                    LinearGradient(colors: [HiFi.lcdTop, HiFi.lcdBottom],
-                                   startPoint: .top, endPoint: .bottom)
-                } else {
-                    LinearGradient(colors: [.white, HiFi.paper, Color(red: 0.72, green: 0.76, blue: 0.80)],
-                                   startPoint: .top, endPoint: .bottom)
-                }
-            }
-            .modifier(HiFiBezel(radius: 3, recessed: configuration.isPressed || selected))
-            .offset(y: configuration.isPressed ? 1 : 0)
-            .opacity(enabled ? 1 : 0.48)
-            .animation(reduceMotion ? nil : .easeOut(duration: 0.09), value: configuration.isPressed)
+            .modifier(HiFiButtonSurface(selected: selected, pressed: configuration.isPressed))
     }
 }
 
@@ -90,7 +150,8 @@ struct StationDisplay: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
             if station.count <= 6 && station.allSatisfy({ DotMatrixText.glyphs[$0] != nil }) {
-                DotMatrixText(text: station, pitch: 3.4)
+                DotMatrixText(text: station, pitch: 3.4, showsInactiveCells: true)
+                    .shadow(color: HiFi.ink.opacity(0.18), radius: 0.5, x: 0, y: 0.7)
                     .frame(height: 23.8)
                     .accessibilityLabel(station)
             } else {
@@ -117,13 +178,41 @@ struct StationDisplay: View {
                 context.fill(cells, with: .color(HiFi.blue.opacity(0.16)))
             }.accessibilityHidden(true)
         }
-        .modifier(HiFiBezel(radius: 4, recessed: true))
+        // Reflection and edge shading sit over the pixels, like the glass over an LCD.
+        .overlay {
+            LinearGradient(stops: [
+                .init(color: .white.opacity(0.20), location: 0),
+                .init(color: .white.opacity(0.05), location: 0.45),
+                .init(color: .clear, location: 0.46),
+                .init(color: .white.opacity(0.06), location: 1),
+            ], startPoint: .topLeading, endPoint: .bottomTrailing)
+            VStack(spacing: 0) {
+                LinearGradient(colors: [HiFi.ink.opacity(0.42), .clear], startPoint: .top, endPoint: .bottom)
+                    .frame(height: 9)
+                Spacer(minLength: 0)
+                LinearGradient(colors: [.clear, .white.opacity(0.3)], startPoint: .top, endPoint: .bottom)
+                    .frame(height: 5)
+            }.padding(3)
+        }
+        .clipShape(RoundedRectangle(cornerRadius: 4))
+        .overlay {
+            RoundedRectangle(cornerRadius: 4)
+                .strokeBorder(LinearGradient(colors: [HiFi.edge, .white.opacity(0.95)],
+                                             startPoint: .top, endPoint: .bottom), lineWidth: 1)
+            RoundedRectangle(cornerRadius: 3).inset(by: 1)
+                .strokeBorder(Color(red: 0.20, green: 0.27, blue: 0.34), lineWidth: 2)
+            RoundedRectangle(cornerRadius: 1).inset(by: 3)
+                .strokeBorder(LinearGradient(colors: [HiFi.ink.opacity(0.35), .white.opacity(0.65)],
+                                             startPoint: .top, endPoint: .bottom), lineWidth: 0.5)
+        }
+        .allowsHitTesting(false)
     }
 }
 
 struct DotMatrixText: View {
     let text: String
     let pitch: CGFloat
+    var showsInactiveCells = false
 
     static let glyphs: [Character: [UInt8]] = [
         "A": [14,17,17,31,17,17,17], "K": [17,18,20,24,20,18,17],
@@ -137,16 +226,23 @@ struct DotMatrixText: View {
     var body: some View {
         Canvas { context, _ in
             var dots = Path()
+            var inactive = Path()
             for (index, character) in text.enumerated() {
                 for (y, row) in (Self.glyphs[character] ?? []).enumerated() {
-                    for x in 0..<5 where row & (1 << (4 - x)) != 0 {
-                        dots.addRoundedRect(in: CGRect(x: CGFloat(index * 6 + x) * pitch,
-                                                       y: CGFloat(y) * pitch,
-                                                       width: pitch * 0.77, height: pitch * 0.77),
-                                            cornerSize: CGSize(width: pitch * 0.15, height: pitch * 0.15))
+                    for x in 0..<5 {
+                        let cell = Path(roundedRect: CGRect(x: CGFloat(index * 6 + x) * pitch,
+                                                           y: CGFloat(y) * pitch,
+                                                           width: pitch * 0.77, height: pitch * 0.77),
+                                        cornerRadius: pitch * 0.15)
+                        if row & (1 << (4 - x)) != 0 {
+                            dots.addPath(cell)
+                        } else if showsInactiveCells {
+                            inactive.addPath(cell)
+                        }
                     }
                 }
             }
+            context.fill(inactive, with: .color(HiFi.ink.opacity(0.08)))
             context.fill(dots, with: .foreground)
         }
         .frame(width: CGFloat(max(0, text.count * 6 - 1)) * pitch, height: 7 * pitch)
