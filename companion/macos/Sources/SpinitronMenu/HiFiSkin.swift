@@ -10,6 +10,7 @@ enum HiFi {
     static let highlight = Color(red: 0.68, green: 0.84, blue: 0.97)
     static let lcdTop = Color(red: 0.53, green: 0.76, blue: 0.94)
     static let lcdBottom = Color(red: 0.77, green: 0.89, blue: 0.98)
+    static let stationControlHeight: CGFloat = 64
 }
 
 struct SilverSurface: View {
@@ -130,6 +131,7 @@ struct HiFiButtonSurface: ViewModifier {
 struct HiFiButtonStyle: ButtonStyle {
     var selected = false
     var compact = false
+    var height: CGFloat = 30
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
@@ -137,7 +139,8 @@ struct HiFiButtonStyle: ButtonStyle {
             .foregroundStyle(HiFi.ink)
             .shadow(color: .white.opacity(0.75), radius: 0, x: 0, y: 0.5)
             .padding(.horizontal, compact ? 8 : 13)
-            .frame(minWidth: 30, minHeight: 30)
+            .frame(minWidth: 30)
+            .frame(height: height)
             .modifier(HiFiButtonSurface(selected: selected, pressed: configuration.isPressed))
     }
 }
@@ -164,7 +167,8 @@ struct StationDisplay: View {
         }
         .foregroundStyle(HiFi.ink)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.horizontal, 14).padding(.vertical, 12)
+        .padding(.horizontal, 14)
+        .frame(height: HiFi.stationControlHeight)
         .background {
             LinearGradient(colors: [HiFi.lcdTop, HiFi.lcdBottom], startPoint: .top, endPoint: .bottom)
             Canvas { context, size in

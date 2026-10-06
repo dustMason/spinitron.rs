@@ -78,7 +78,7 @@ struct CatalogView: View {
             HStack(spacing: 5) {
                 ForEach(Array(store.stations.prefix(2)), id: \.self) { value in
                     Button(value) { station = value }
-                        .buttonStyle(HiFiButtonStyle(selected: station == value))
+                        .buttonStyle(HiFiButtonStyle(selected: station == value, height: HiFi.stationControlHeight))
                         .accessibilityLabel("Station: \(value)")
                         .accessibilityAddTraits(station == value ? .isSelected : [])
                         .help("Browse \(value)")
@@ -93,7 +93,7 @@ struct CatalogView: View {
                     Image(systemName: "chevron.down").font(.system(size: 10, weight: .bold))
                 }
                 .menuStyle(.borderlessButton).menuIndicator(.hidden).fixedSize()
-                .frame(width: 24, height: 30)
+                .frame(width: 24, height: HiFi.stationControlHeight)
                 .modifier(HiFiButtonSurface())
                 .help("All stations").accessibilityLabel("Choose station")
             }

@@ -45,3 +45,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   and the full station menu were checked, including the Psyched text fallback.
 - Focused finish review: `ship`, with no introduced blocking findings in the
   source diff and native captures. Build 3 is installed and running on KALX.
+
+### Matching station-control heights — build 4
+
+- LCD, station presets, and station menu share a 64 pt height, matching the
+  approved mockup. Other controls retain their compact 30 pt height.
+- Release build and signature pass; native preset selection and menu interaction
+  checked. Focused visual review confirms aligned edges and centered labels: `ship`.
