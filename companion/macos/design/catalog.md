@@ -52,3 +52,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   approved mockup. Other controls retain their compact 30 pt height.
 - Release build and signature pass; native preset selection and menu interaction
   checked. Focused visual review confirms aligned edges and centered labels: `ship`.
+
+### Continuous button rims — build 5
+
+- Removed the stacked white lower bevel and external button shadow. A continuous
+  dark rim with a one-point lower inset now holds both selected and normal faces.
+- The flat selection marker sits 8 pt inside the face, clear of the border.
+- Release build and signature pass; checked both station selections in the native
+  app. Fresh review against the user's defect screenshot: `ship`.

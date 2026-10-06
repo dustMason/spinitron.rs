@@ -69,16 +69,13 @@ struct HiFiButtonSurface: ViewModifier {
         content
             .offset(y: pressed ? 1 : 0)
             .background {
+                // One continuous rim: layered bottom strokes made the inset key
+                // look like it had a loose white lip beneath the face.
                 RoundedRectangle(cornerRadius: 3)
-                    .fill(Color(red: 0.30, green: 0.36, blue: 0.42))
-                    .overlay {
-                        RoundedRectangle(cornerRadius: 3)
-                            .strokeBorder(LinearGradient(colors: [.black.opacity(0.18), .white.opacity(0.9)],
-                                                         startPoint: .top, endPoint: .bottom), lineWidth: 1)
-                    }
+                    .fill(HiFi.edge)
                 RoundedRectangle(cornerRadius: 2)
                     .fill(LinearGradient(stops: inset ? [
-                        .init(color: HiFi.lcdTop.opacity(0.88), location: 0),
+                        .init(color: HiFi.lcdTop, location: 0),
                         .init(color: HiFi.lcdBottom, location: 1),
                     ] : [
                         .init(color: .white, location: 0),
@@ -89,9 +86,9 @@ struct HiFiButtonSurface: ViewModifier {
                     .overlay {
                         RoundedRectangle(cornerRadius: 2)
                             .strokeBorder(LinearGradient(colors: inset
-                                ? [HiFi.ink.opacity(0.4), .white.opacity(0.6)]
-                                : [.white, HiFi.edge.opacity(0.45)],
-                                startPoint: .top, endPoint: .bottom), lineWidth: 1)
+                                ? [HiFi.ink.opacity(0.4), .clear]
+                                : [.white.opacity(0.85), .clear],
+                                startPoint: .top, endPoint: .bottom), lineWidth: 0.5)
                     }
                     .overlay {
                         if hovered && enabled && !pressed {
@@ -101,15 +98,14 @@ struct HiFiButtonSurface: ViewModifier {
                     }
                     .padding(.horizontal, 1)
                     .padding(.top, inset ? 2 : 1)
-                    .padding(.bottom, inset ? 1 : 3)
+                    .padding(.bottom, 1)
             }
             .overlay(alignment: .bottom) {
                 if selected {
                     Capsule()
                         .fill(HiFi.blue)
                         .frame(width: 14, height: 2)
-                        .overlay(alignment: .top) { Color.white.opacity(0.7).frame(height: 0.5) }
-                        .padding(.bottom, 4)
+                        .padding(.bottom, 8)
                         .allowsHitTesting(false)
                 }
             }
@@ -120,7 +116,6 @@ struct HiFiButtonSurface: ViewModifier {
                         .allowsHitTesting(false)
                 }
             }
-            .shadow(color: .black.opacity(inset ? 0.04 : 0.12), radius: 0.6, x: 0, y: 1)
             .contentShape(RoundedRectangle(cornerRadius: 3))
             .opacity(enabled ? 1 : 0.48)
             .onHover { hovered = $0 }
