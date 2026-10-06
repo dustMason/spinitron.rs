@@ -134,7 +134,7 @@ struct StationDisplay: View {
         GeometryReader { geometry in
             let displayName = station.uppercased()
             let columns = CGFloat(max(1, displayName.count * 6 - 1))
-            let pitch = min(geometry.size.height / 7, geometry.size.width / columns)
+            let pitch = 0.85 * min(geometry.size.height / 7, geometry.size.width / columns)
             DotMatrixText(text: displayName, pitch: pitch, showsInactiveCells: true)
                 .frame(maxHeight: .infinity)
                 .accessibilityLabel(station)
