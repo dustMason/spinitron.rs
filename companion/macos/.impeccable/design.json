@@ -49,7 +49,7 @@
         "dotCornerRadius": "0.15 × pitch",
         "lcdGrid": "0.5 × 0.5 pt cells every 3.4 pt; HiFi.blue at opacity 0.16",
         "inactiveCells": "Station dot-matrix only: unlit glyph cells use HiFi.ink at opacity 0.08. The brand leaves inactive cells unpainted.",
-        "fallback": "Station strings longer than six characters or containing unsupported glyphs use the station-fallback typography token, one line, minimumScaleFactor 0.65."
+        "fallback": "Uppercase station names use the same dot-matrix lettering at min(3.4 pt, availableWidth / glyphColumns), vertically centered in a 23.8 pt area. A–Z, digits, and common punctuation are covered; unsupported characters use a question-mark glyph."
       },
       "review": {
         "disposition": "ship",
@@ -76,7 +76,7 @@
     { "name": "Hi-Fi button", "kind": "button", "refersTo": "button", "description": "Native HiFiButtonStyle with a fixed socket and raised metal face, minimum width 30 pt and default fixed height 30 pt. Station presets override height to 64 pt. Compact horizontal padding is 8 pt. Press moves the label down 1 pt; enabled hover adds a blue outline. Disabled opacity remains 0.48 and press animation honors Reduce Motion." },
     { "name": "Selected Hi-Fi button", "kind": "button", "refersTo": "button-selected", "description": "Selected or pressed faces use the opaque LCD gradient and a 2 pt top inset; bottom and horizontal insets remain 1 pt. A selected preset uses the blue face without an underline and retains the native selected accessibility trait." },
     { "name": "Search", "kind": "input", "refersTo": "search", "description": "Plain native TextField in a translucent white recess, explicit blue focus stroke, secondary placeholder, and conditional clear button. Command-F focuses it." },
-    { "name": "Station LCD", "kind": "custom", "refersTo": "station-display", "description": "Fixed 64 pt height from HiFi.stationControlHeight, with vertically centered content and 14 pt horizontal padding. Native Canvas dot-matrix lettering with inactive cells at 0.08 ink opacity, behind reflected glass with a graphite gasket and shaded inner edge. Ordinary-text accessibility labels and SF Mono fallback are retained." },
+    { "name": "Station LCD", "kind": "custom", "refersTo": "station-display", "description": "Fixed 64 pt height from HiFi.stationControlHeight, with vertically centered content and 14 pt horizontal padding. Native Canvas dot-matrix lettering with inactive cells at 0.08 ink opacity, behind reflected glass with a graphite gasket and shaded inner edge. Original station-name accessibility labels are retained; every station uses uppercase dot-matrix lettering scaled to fit." },
     { "name": "Station presets", "kind": "nav", "refersTo": "station-preset", "description": "First two available stations use HiFiButtonStyle at the shared HiFi.stationControlHeight of 64 pt, matching the LCD. A 24 × 64 pt native Menu with HiFiButtonSurface exposes all stations. Selected state is visible and accessible." },
     { "name": "Playlist row", "kind": "button", "refersTo": "playlist-row", "description": "Full-width native button, minimum height 58 pt, two-line title, artist sample, fixed track count and outbound SF Symbol; hover uses playlist-row-hover." },
     { "name": "Inset catalog", "kind": "custom", "refersTo": "catalog", "description": "Recessed ScrollView with LazyVStack and pinned etched date headers; loading and empty states occupy the same region." }

@@ -138,15 +138,16 @@ struct StationDisplay: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
-            if station.count <= 6 && station.allSatisfy({ DotMatrixText.glyphs[$0] != nil }) {
-                DotMatrixText(text: station, pitch: 3.4, showsInactiveCells: true)
-                    .shadow(color: HiFi.ink.opacity(0.18), radius: 0.5, x: 0, y: 0.7)
-                    .frame(height: 23.8)
+            GeometryReader { geometry in
+                let displayName = station.uppercased()
+                let columns = CGFloat(max(1, displayName.count * 6 - 1))
+                DotMatrixText(text: displayName, pitch: min(3.4, geometry.size.width / columns),
+                              showsInactiveCells: true)
+                    .frame(maxHeight: .infinity)
                     .accessibilityLabel(station)
-            } else {
-                Text(station).font(.system(size: 23, weight: .medium, design: .monospaced))
-                    .lineLimit(1).minimumScaleFactor(0.65)
             }
+            .frame(height: 23.8)
+            .shadow(color: HiFi.ink.opacity(0.18), radius: 0.5, x: 0, y: 0.7)
             Text(subtitle)
                 .font(.system(size: 9, weight: .semibold, design: .monospaced))
                 .tracking(1.1)
@@ -205,12 +206,29 @@ struct DotMatrixText: View {
     var showsInactiveCells = false
 
     static let glyphs: [Character: [UInt8]] = [
-        "A": [14,17,17,31,17,17,17], "K": [17,18,20,24,20,18,17],
-        "L": [16,16,16,16,16,16,31], "X": [17,17,10,4,10,17,17],
-        "P": [30,17,17,30,16,16,16], "O": [14,17,17,17,17,17,14],
-        "S": [15,16,16,14,1,1,30], "I": [31,4,4,4,4,4,31],
-        "N": [17,25,25,21,19,19,17], "T": [31,4,4,4,4,4,4],
+        "A": [14,17,17,31,17,17,17], "B": [30,17,17,30,17,17,30],
+        "C": [14,17,16,16,16,17,14], "D": [30,17,17,17,17,17,30],
+        "E": [31,16,16,30,16,16,31], "F": [31,16,16,30,16,16,16],
+        "G": [14,17,16,23,17,17,15], "H": [17,17,17,31,17,17,17],
+        "I": [31,4,4,4,4,4,31], "J": [7,2,2,2,18,18,12],
+        "K": [17,18,20,24,20,18,17], "L": [16,16,16,16,16,16,31],
+        "M": [17,27,21,21,17,17,17], "N": [17,25,25,21,19,19,17],
+        "O": [14,17,17,17,17,17,14], "P": [30,17,17,30,16,16,16],
+        "Q": [14,17,17,17,21,18,13],
         "R": [30,17,17,30,20,18,17],
+        "S": [15,16,16,14,1,1,30], "T": [31,4,4,4,4,4,4],
+        "U": [17,17,17,17,17,17,14], "V": [17,17,17,17,17,10,4],
+        "W": [17,17,17,21,21,27,17], "X": [17,17,10,4,10,17,17],
+        "Y": [17,17,10,4,4,4,4], "Z": [31,1,2,4,8,16,31],
+        "0": [14,17,19,21,25,17,14], "1": [4,12,4,4,4,4,14],
+        "2": [14,17,1,2,4,8,31], "3": [30,1,1,14,1,1,30],
+        "4": [2,6,10,18,31,2,2], "5": [31,16,16,30,1,1,30],
+        "6": [14,16,16,30,17,17,14], "7": [31,1,2,4,8,8,8],
+        "8": [14,17,17,14,17,17,14], "9": [14,17,17,15,1,1,14],
+        " ": [0,0,0,0,0,0,0], "-": [0,0,0,31,0,0,0],
+        ".": [0,0,0,0,0,12,12], "&": [12,18,20,8,21,18,13],
+        "'": [4,4,8,0,0,0,0], "/": [1,2,2,4,8,8,16],
+        "?": [14,17,1,2,4,0,4],
     ]
 
     var body: some View {
@@ -218,7 +236,7 @@ struct DotMatrixText: View {
             var dots = Path()
             var inactive = Path()
             for (index, character) in text.enumerated() {
-                for (y, row) in (Self.glyphs[character] ?? []).enumerated() {
+                for (y, row) in (Self.glyphs[character] ?? Self.glyphs["?"]!).enumerated() {
                     for x in 0..<5 {
                         let cell = Path(roundedRect: CGRect(x: CGFloat(index * 6 + x) * pitch,
                                                            y: CGFloat(y) * pitch,

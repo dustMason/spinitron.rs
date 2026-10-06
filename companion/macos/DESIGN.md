@@ -11,7 +11,6 @@ colors:
   lcd-top: "rgb(53% 76% 94%)"
   lcd-bottom: "rgb(77% 89% 98%)"
 typography:
-  station-fallback: { fontFamily: "SF Mono", fontSize: "23pt", fontWeight: 500 }
   title: { fontFamily: "SF", fontSize: "13pt", fontWeight: 600 }
   body: { fontFamily: "SF", fontSize: "12pt", fontWeight: 400 }
   artist: { fontFamily: "SF", fontSize: "11pt", fontWeight: 400 }
@@ -98,7 +97,7 @@ LCD blue runs from `lcd-top` to `lcd-bottom`. `blue` marks search focus, button 
 
 SwiftUI's system font supplies SF; `.monospaced` supplies SF Mono. Keep the frontmatter hierarchy, native metrics, and monospaced counts. Titles wrap to two lines; artist samples stay on one line.
 
-The brand and short station names use custom 5 × 7 vector glyphs, not a font asset. Glyph pitch is 1.65 pt for the brand and 3.4 pt for the LCD; each character advances six cells. Station names longer than six characters or outside the implemented glyph set use the SF Mono fallback with a minimum scale of 0.65. Dot-matrix text retains an ordinary-text accessibility label.
+The brand and all station names use custom 5 × 7 vector glyphs, not a font asset. Station display names are uppercase; the glyph set covers A–Z, digits, and common punctuation. Glyph pitch is 1.65 pt for the brand and up to 3.4 pt for the LCD; each character advances six cells. Longer station names scale uniformly to the available LCD width within the same 23.8 pt lettering area. Unsupported characters display a question-mark glyph rather than disappearing. Dot-matrix text retains the original station name as its accessibility label.
 
 ## Layout
 
@@ -115,7 +114,7 @@ Small rounded rectangles distinguish the controls, LCD, and chassis using the fr
 ## Components
 
 - **Hi-Fi buttons:** minimum width 30 pt and default fixed height 30 pt, with 13 pt horizontal padding or 8 pt for compact controls. Station presets override the height to match the LCD. The socket stays fixed; pressing shifts the label down 1 pt. Face insets are 1 pt horizontally and at the bottom; the top inset increases from 1 to 2 pt when selected or pressed. Selected or pressed faces use the opaque LCD gradient. Selection is indicated by the blue face without an underline. Enabled hover adds a 1 pt blue outline and, when not pressed, a faint white face overlay. Disabled opacity remains 0.48; the 0.09-second ease-out press animation respects Reduce Motion.
-- **Station LCD and presets:** the LCD, presets, and station menu share `HiFi.stationControlHeight` (64 pt), aligning their top and bottom edges. LCD content is vertically centered with 14 pt horizontal padding; the dropdown is 24 pt wide. The display has a 1 pt outer rim, 2 pt graphite gasket inset 1 pt, and a 0.5 pt inner edge inset 3 pt. A 9 pt top shadow and 5 pt bottom highlight shade the subtle glass reflection. Dot-matrix lettering includes inactive cells at 0.08 ink opacity; its tracked subtitle and SF Mono fallback remain. Two station presets sit beside a native menu using the same button surface; selection retains its accessibility trait.
+- **Station LCD and presets:** the LCD, presets, and station menu share `HiFi.stationControlHeight` (64 pt), aligning their top and bottom edges. LCD content is vertically centered with 14 pt horizontal padding; the dropdown is 24 pt wide. The display has a 1 pt outer rim, 2 pt graphite gasket inset 1 pt, and a 0.5 pt inner edge inset 3 pt. A 9 pt top shadow and 5 pt bottom highlight shade the subtle glass reflection. Dot-matrix lettering includes inactive cells at 0.08 ink opacity; its tracked subtitle remains and all station names use the same lettering. Two station presets sit beside a native menu using the same button surface; selection retains its accessibility trait.
 - **Search:** plain native text field inside a translucent white recess. A 2 pt blue outline marks focus. Its custom placeholder uses `secondary`, ignores pointer events, and is hidden from accessibility. A clear button appears for nonempty queries. ⌘F focuses search.
 - **Catalog rows:** navy title, three sampled artists when available, track count, and blue outbound arrow. The entire row opens the playlist in Spotify. Hover adds the blue fill. All-stations and older-collection rows add identifying metadata.
 - **Date dividers and footer:** etched silver headers carry uppercase Pacific dates and counts. The footer carries cache status and Quit. Refresh uses a native progress indicator, disables during refresh, and supports ⌘R.
