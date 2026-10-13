@@ -1,0 +1,5 @@
+// Set your personal development team in Xcode's Signing & Capabilities tab,
+// or create the ignored Signing.local.xcconfig with DEVELOPMENT_TEAM = YOUR_TEAM.
+CODE_SIGN_STYLE = Automatic
+PRODUCT_BUNDLE_IDENTIFIER = net.fiftyfootfoghorn.spinitron.ios
+#include? "Signing.local.xcconfig"

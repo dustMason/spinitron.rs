@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-13T19:20:00Z",
+  "title": "Design System: Spinitron for iPhone — Silver Hi-Fi",
+  "extensions": {
+    "colorMeta": {
+      "ink": { "role": "neutral", "displayName": "Deep Navy Ink" },
+      "secondary": { "role": "neutral", "displayName": "Quiet Navy" },
+      "edge": { "role": "neutral", "displayName": "Machined Edge" },
+      "paper": { "role": "neutral", "displayName": "Cool Silver Base" },
+      "blue": { "role": "primary", "displayName": "Action Blue" },
+      "lcd-top": { "role": "primary", "displayName": "LCD Upper Blue" },
+      "lcd-bottom": { "role": "primary", "displayName": "LCD Lower Blue" },
+      "error-surface": { "role": "neutral", "displayName": "Warm Refresh Error" }
+    },
+    "typographyMeta": {
+      "title": { "displayName": "Playlist title", "purpose": "SwiftUI .headline; wraps without a line limit." },
+      "artist": { "displayName": "Artist sample", "purpose": "SwiftUI .subheadline; wraps without a line limit." },
+      "metadata": { "displayName": "Metadata and freshness", "purpose": "SwiftUI .caption." },
+      "button": { "displayName": "Touch key", "purpose": "SwiftUI .system(.body, design: .monospaced).weight(.semibold)." },
+      "date": { "displayName": "Date header", "purpose": "SwiftUI .caption.weight(.semibold); counts use monospacedDigit()." }
+    },
+    "shadows": [
+      { "name": "button-label", "value": "SwiftUI .shadow(color: .white.opacity(0.75), radius: 0, x: 0, y: 0.5)", "purpose": "Etched highlight beneath key labels." },
+      { "name": "lcd-glyph", "value": "SwiftUI .shadow(color: HiFi.ink.opacity(0.18), radius: 0.5, x: 0, y: 0.7)", "purpose": "Subtle depth beneath station lettering." }
+    ],
+    "motion": [
+      { "name": "button-press", "value": "SwiftUI .easeOut(duration: 0.09); label offset y: 1 pt", "purpose": "Tactile key response; animation is nil when accessibilityReduceMotion is enabled." }
+    ],
+    "native": {
+      "platform": "iPhone, iOS 17+; SwiftUI",
+      "units": "Native points and SwiftUI semantic text styles; font sizes follow Dynamic Type.",
+      "sourceFiles": [
+        "../shared/Sources/SpinitronUI/HiFiSkin.swift",
+        "../shared/Sources/SpinitronUI/PlaylistSummary.swift",
+        "Spinitron/CatalogView.swift",
+        "Spinitron/SettingsView.swift",
+        "Spinitron/SpinitronApp.swift"
+      ],
+      "previewPolicy": "Native component descriptions only. No HTML/CSS replicas, web detector results, or synthesized tonal ramps represent this implementation.",
+      "appearance": "User-selected fixed light Silver Hi-Fi, enforced with preferredColorScheme(.light), including under a dark system appearance.",
+      "adaptation": {
+        "trigger": "verticalSizeClass == .compact || dynamicTypeSize.isAccessibilitySize",
+        "normal": "64 pt station display above the list; freshness footer below it.",
+        "compact": "48 pt station display in the first list row; footer omitted; freshness remains in Settings.",
+        "touch": "HiFiButtonStyle(touch: true) has minimum width and height 44 pt. Retry and Dismiss each set the same minimum inside their labels with a rectangular content shape. Playlist content has a 44 pt minimum height plus 5 pt vertical padding on each side."
+      },
+      "materials": {
+        "silver": "Tile ../shared/Sources/SpinitronUI/Resources/brushed-silver.png at opacity 0.85 over HiFi.paper; overlay white at 0.24 opacity, clear, and black at 0.06 opacity from top to bottom.",
+        "buttonSocket": "Fixed HiFi.edge rim with radius 3 pt. Face radius 2 pt; no button-surface drop shadow or separate outer stroke.",
+        "buttonFace": "Vertical gradient stops: white at 0, sRGB (0.91, 0.93, 0.95) at 0.42, (0.80, 0.83, 0.87) at 0.48, (0.89, 0.91, 0.94) at 1. Insets 1 pt. A 0.5 pt inner bevel fades from white opacity 0.85 to clear.",
+        "buttonPressed": "HiFi.lcdTop to HiFi.lcdBottom gradient. Top inset 2 pt; other insets 1 pt. Inner bevel fades from HiFi.ink opacity 0.4 to clear. Disabled opacity 0.48.",
+        "buttonPointer": "Shared enabled hover adds a 1 pt HiFi.blue outline at opacity 0.75 and, if unpressed, white at opacity 0.15. Touch operation does not require hover.",
+        "lcdRim": "Radius 4 pt, 1 pt outer edge; graphite sRGB (0.20, 0.27, 0.34) gasket with 2 pt stroke inset 1 pt; 0.5 pt inner edge inset 3 pt.",
+        "lcdGlass": "Diagonal reflection: white opacity 0.20 at 0, 0.05 at 0.45, clear at 0.46, 0.06 at 1. Upper shade 9 pt, lower highlight 5 pt, inset 3 pt. Display decoration does not intercept touches."
+      },
+      "dotMatrix": {
+        "grid": "5 columns × 7 rows; six-cell character advance",
+        "brandPitchPt": 2,
+        "stationPitchPt": "0.85 * min(availableHeight / 7, availableWidth / glyphColumns)",
+        "dotSize": "0.77 × pitch",
+        "dotCornerRadius": "0.15 × pitch",
+        "lcdGrid": "0.5 × 0.5 pt cells every 3.4 pt, HiFi.blue at opacity 0.16",
+        "inactiveCells": "Station glyph cells use HiFi.ink at opacity 0.08; the wordmark has no inactive cells.",
+        "fallback": "Unsupported glyphs use a question mark. The station button supplies the accessible station value."
+      },
+      "review": {
+        "disposition": "ship",
+        "date": "2026-10-13",
+        "evidenceType": "Native iPhone Simulator screenshots, XCTest UI interactions, and local build/test results",
+        "captureDirectory": ".impeccable/review",
+        "captures": ["iphone-live-dark-system.png", "iphone-portrait.png", "iphone-landscape.png", "iphone-accessibility.png", "iphone-accessibility-scrolled.png", "settings.png", "settings-accessibility.png", "station-kpoo.png", "empty-search.png", "spotify-unavailable.png", "offline-refresh.png"],
+        "finalTouchCapture": "touch-fix/6423A3C1-6137-4A4D-A6EE-E5AEB9198169.png",
+        "verified": [
+          "12 shared tests passed on macOS and 12 on iOS; three native UI tests passed.",
+          "Generic Simulator Release and unsigned device-SDK Release builds passed; Mac Release build and signature verification passed.",
+          "Normal live launch loaded 2,269 catalog records; live capture used a dark system appearance while preserving the selected light skin.",
+          "Portrait, landscape, normal text, and accessibility XXXL captured; station selection, empty search, settings, cached offline content, and missing-Spotify alert exercised.",
+          "Final focused test measured Retry and Dismiss accessibility frames at least 44 × 44 pt and tapped their lower edges. Dismiss removed the banner while cached rows remained."
+        ],
+        "limits": [
+          "No connected physical iPhone: personal signing, installation, physical-device usability, and real Spotify handoff remain untested.",
+          "Simulator test verified the missing-Spotify alert and browser option, not actual browser navigation or playback.",
+          "Retry was tapped while already offline; the UI test does not independently observe a network request.",
+          "Builds and Simulator tests used the iOS 27 SDK/runtime; iOS 17 runtime behavior remains untested.",
+          "The desktop was locked, so there was no fresh Mac GUI capture. The installed Mac app was left untouched."
+        ]
+      }
+    }
+  },
+  "components": [
+    { "name": "Touch Hi-Fi key", "kind": "button", "refersTo": "button", "description": "Shared SwiftUI key surface with touch: true, semantic monospaced body label, at least 44 × 44 pt, fixed rim, inset blue pressed face, and Reduce Motion support." },
+    { "name": "Toolbar actions", "kind": "button", "refersTo": "button-compact", "description": "Refresh and Settings use compact touch keys in a native toolbar with an 8 pt gap. Refresh swaps its symbol for progress and disables while refreshing." },
+    { "name": "Station LCD", "kind": "nav", "refersTo": "station-display", "description": "The full-width LCD button opens a native confirmation dialog. Its height changes from 64 to 48 pt and it enters the list for compact vertical size or accessibility text. Accessible label, station value, and hint accompany the vector display." },
+    { "name": "Native search", "kind": "input", "description": "SwiftUI searchable in the navigation bar drawer, always displayed; native text input without autocorrection or automatic capitalization. List scrolling dismisses the keyboard interactively." },
+    { "name": "Playlist row", "kind": "button", "refersTo": "playlist-row", "description": "Full-width native List button containing shared PlaylistSummary and an outward SF Symbol. Headline, artist sample, and metadata grow with Dynamic Type. Tap attempts a Spotify playlist handoff." },
+    { "name": "Refresh error", "kind": "custom", "refersTo": "refresh-error", "description": "Warm banner above retained catalog content; Retry and Dismiss each own a minimum 44 × 44 pt target. Dismiss removes the banner." },
+    { "name": "Settings sheet", "kind": "custom", "description": "Native NavigationStack and Form with station picker, older-collection toggle, cache details, refresh, and Done." },
+    { "name": "Spotify fallback", "kind": "custom", "description": "Native alert following a failed Spotify open attempt, offering Open in browser and Cancel." }
+  ],
+  "narrative": {
+    "northStar": "Silver Hi-Fi",
+    "overview": "The iPhone companion carries forward Jordan's selected Mac skin: satin brushed silver, a blue dot-matrix LCD, tactile beveled keys, and navy catalog text. Native iPhone navigation, search, lists, sheets, and reading sizes supply the interaction model. The user pinned the light silver appearance, including when the operating system uses Dark Mode.",
+    "keyCharacteristics": [
+      "Shared silver material, blue LCD, and shallow beveled controls.",
+      "Native Dynamic Type for reading text; vector dot-matrix branding and station names.",
+      "Full-width playlist targets and native station, search, and settings controls."
+    ],
+    "rules": [],
+    "dos": [
+      "Do reuse the shared HiFi material, palette, vector glyphs, and touch button style.",
+      "Do preserve native controls, 44 pt touch targets, semantic text styles, and growing playlist rows.",
+      "Do keep the selected light Silver Hi-Fi appearance under either system appearance."
+    ],
+    "donts": [
+      "Don't replace the selected silver and blue skin with another visual world.",
+      "Don't apply the Mac popover's fixed width, tiny type, or 30 pt key height to iPhone.",
+      "Don't treat a screenshot or a Simulator handoff alert as physical-device or Spotify playback validation."
+    ]
+  }
+}

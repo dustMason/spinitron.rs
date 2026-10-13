@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T20:27:59Z",
+  "title": "Design System: Spinitron — Silver Hi-Fi",
+  "extensions": {
+    "colorMeta": {
+      "ink": { "role": "neutral", "displayName": "Deep Navy Ink" },
+      "secondary": { "role": "neutral", "displayName": "Quiet Navy" },
+      "edge": { "role": "neutral", "displayName": "Machined Edge" },
+      "paper": { "role": "neutral", "displayName": "Cool Silver Base" },
+      "blue": { "role": "primary", "displayName": "Focus Blue" },
+      "highlight": { "role": "primary", "displayName": "Playlist Hover Blue" },
+      "lcd-top": { "role": "primary", "displayName": "LCD Upper Blue" },
+      "lcd-bottom": { "role": "primary", "displayName": "LCD Lower Blue" }
+    },
+    "shadows": [
+      { "name": "etched-brand", "value": "SwiftUI .shadow(color: .white.opacity(0.9), radius: 0, x: 0, y: 1)", "purpose": "One-point etched highlight beneath the catalog wordmark." },
+      { "name": "button-label", "value": "SwiftUI .shadow(color: .white.opacity(0.75), radius: 0, x: 0, y: 0.5)", "purpose": "Etched highlight beneath button labels." },
+      { "name": "lcd-glyph", "value": "SwiftUI .shadow(color: HiFi.ink.opacity(0.18), radius: 0.5, x: 0, y: 0.7)", "purpose": "Subtle depth beneath station dot-matrix lettering." }
+    ],
+    "motion": [
+      { "name": "button-press", "value": "SwiftUI .easeOut(duration: 0.09); pressed label offset y: 1 pt, fixed socket", "purpose": "Tactile press feedback; animation is nil when accessibilityReduceMotion is enabled." }
+    ],
+    "native": {
+      "platform": "macOS 14+; SwiftUI in an AppKit popover",
+      "units": "Native points; SF and SF Mono are SwiftUI system fonts.",
+      "sourceFiles": ["../shared/Sources/SpinitronUI/HiFiSkin.swift", "../shared/Sources/SpinitronUI/PlaylistSummary.swift", "Sources/SpinitronMenu/CatalogView.swift"],
+      "previewPolicy": "Native component descriptions only. No HTML/CSS replicas, web breakpoints, or web detector apply.",
+      "tonalRamps": "No separate tonal ramps are implemented; the frontmatter preserves the actual palette without synthesized colors.",
+      "materials": {
+        "silver": "Tile ../shared/Sources/SpinitronUI/Resources/brushed-silver.png at opacity 0.85 over HiFi.paper; overlay a top-to-bottom gradient of white at 0.24 opacity, clear, and black at 0.06 opacity.",
+        "raisedBezel": "HiFi.edge strokeBorder width 1 pt; inner stroke inset 1 pt with white at 0.95 opacity to black at 0.14 opacity, topLeading to bottomTrailing.",
+        "recessedBezel": "Same geometry; inner gradient black at 0.28 opacity to white at 0.8 opacity.",
+        "buttonSocket": "Fixed rounded rectangle, radius 3 pt, filled with HiFi.edge as one uniform continuous rim. No outer stroke or button-surface drop shadow.",
+        "buttonFace": "Radius 2 pt; top-to-bottom gradient stops: white at 0, sRGB (0.91, 0.93, 0.95) at 0.42, (0.80, 0.83, 0.87) at 0.48, (0.89, 0.91, 0.94) at 1. Horizontal, top, and bottom insets are 1 pt. A 0.5 pt inner bevel fades from white at opacity 0.85 at the top to clear at the bottom.",
+        "buttonInsetFace": "Pressed: opaque HiFi.lcdTop to HiFi.lcdBottom; horizontal inset 1 pt, top inset 2 pt, bottom inset 1 pt. A 0.5 pt inner bevel fades from HiFi.ink at opacity 0.4 at the top to clear at the bottom.",
+        "buttonHover": "Enabled hover: 1 pt HiFi.blue outline at opacity 0.75, radius 3 pt. If also not pressed, add white at opacity 0.15 over the face. Disabled opacity remains 0.48.",
+        "lcdRim": "Clip radius 4 pt; 1 pt outer stroke from HiFi.edge to white at opacity 0.95. Graphite sRGB (0.20, 0.27, 0.34) gasket: 2 pt stroke, radius 3 pt, inset 1 pt. Inner edge: 0.5 pt stroke, radius 1 pt, inset 3 pt, HiFi.ink at opacity 0.35 to white at opacity 0.65.",
+        "lcdGlass": "TopLeading-to-bottomTrailing reflection: white opacity 0.20 at 0, 0.05 at 0.45, clear at 0.46, white opacity 0.06 at 1. Edge shading inset 3 pt: 9 pt upper gradient from HiFi.ink opacity 0.42 to clear; 5 pt lower gradient from clear to white opacity 0.3. Overlays do not intercept pointer events.",
+        "search": "White at opacity 0.67; focus stroke HiFi.blue, 2 pt.",
+        "rule": "1 pt HiFi.edge at opacity 0.30 above 1 pt white at opacity 0.65."
+      },
+      "dotMatrix": {
+        "grid": "5 columns × 7 rows; six-cell character advance",
+        "brandPitchPt": 1.65,
+        "stationPitchPt": "0.85 * min(availableHeight / 7, availableWidth / glyphColumns)",
+        "dotSize": "0.77 × pitch",
+        "dotCornerRadius": "0.15 × pitch",
+        "lcdGrid": "0.5 × 0.5 pt cells every 3.4 pt; HiFi.blue at opacity 0.16",
+        "inactiveCells": "Station dot-matrix only: unlit glyph cells use HiFi.ink at opacity 0.08. The brand leaves inactive cells unpainted.",
+        "fallback": "Uppercase station names use the same dot-matrix lettering at 0.85 * min(availableHeight / 7, availableWidth / glyphColumns), vertically centered in a 48 pt area with no subtitle. A–Z, digits, and common punctuation are covered; unsupported characters use a question-mark glyph."
+      },
+      "review": {
+        "disposition": "ship",
+        "resolvedFindings": ["Bundled silver texture rendering", "Search placeholder contrast"],
+        "captureDirectory": "/Users/jordans/Documents/Codex/2026-09-08/lets-x20/outputs/silver-hifi-review",
+        "captures": ["catalog-final.png", "settings-final.png", "empty-final.png", "all-stations-final.png"],
+        "buttonLcdPolish": {
+          "disposition": "ship",
+          "regressions": "None found by finish reviewer.",
+          "captures": ["controls-lcd-v2.png", "controls-lcd-fallback-v2.png"],
+          "verification": "Release build and app signature passed; nine tests passed; native station selection and menu verified."
+        },
+        "buttonRimCorrection": {
+          "disposition": "ship",
+          "resolvedFinding": "Loose white lower lip removed from selected and ordinary controls.",
+          "regressions": "No visual, size, or interaction regressions found by finish reviewer.",
+          "captures": ["clean-button-rims.png", "clean-button-rims-kpoo.png"],
+          "verification": "Release build and app signature passed; both station presets checked natively."
+        },
+        "clickableLcdGrid": {
+          "disposition": "ship",
+          "findings": "Aligned LCD/search/catalog edges, removed Close and separate dropdown controls, matching Refresh/Settings buttons, and native LCD menu confirmed by finish reviewer.",
+          "captures": ["clickable-lcd-grid.png"],
+          "verification": "Release build passed. Accessibility click opened the LCD menu; Down/Return selected KPOO and updated the catalog; top-bar Refresh fetched the latest catalog."
+        }
+      }
+    }
+  },
+  "components": [
+    { "name": "Hi-Fi button", "kind": "button", "refersTo": "button", "description": "Native HiFiButtonStyle with a fixed socket and raised metal face, minimum width 30 pt and default fixed height 30 pt. Compact horizontal padding is 8 pt. Press moves the label down 1 pt; enabled hover adds a blue outline. Disabled opacity remains 0.48 and press animation honors Reduce Motion." },
+    { "name": "Pressed Hi-Fi button", "kind": "button", "refersTo": "button-pressed", "description": "Pressed faces use the opaque LCD gradient and a 2 pt top inset; bottom and horizontal insets remain 1 pt." },
+    { "name": "Title actions", "kind": "button", "refersTo": "title-action", "description": "Refresh immediately left of Settings; each is 30 × 30 pt with an 8 pt gap and compact HiFiButtonStyle. Refresh supports Command-R, shows native progress, and disables during refresh. There is no Close button." },
+    { "name": "Search", "kind": "input", "refersTo": "search", "description": "Full-width 33 pt-high native TextField in a translucent white recess, aligned with the LCD and catalog; explicit blue focus stroke, secondary placeholder, and conditional clear button. Command-F focuses it." },
+    { "name": "Station LCD", "kind": "custom", "refersTo": "station-display", "description": "Full-width, fixed 64 pt height from HiFi.stationControlHeight, with a vertically centered station title scaled to 85% of its fitted size, 14 pt horizontal padding, 8 pt vertical padding, and no subtitle. Native Canvas dot-matrix lettering with inactive cells at 0.08 ink opacity, behind reflected glass with a graphite gasket and shaded inner edge. Every station uses uppercase dot-matrix lettering scaled to fit. This decorative StationDisplay background is hidden from accessibility; the enclosing Menu supplies its label and current-station value." },
+    { "name": "Station menu", "kind": "nav", "refersTo": "station-menu", "description": "The entire LCD is a native Menu: a clear full-width 64 pt-high label over StationDisplay, aligned to the search and catalog edges. Its hidden menu indicator replaces the separate dropdown control. Accessibility label is Choose station; value is the current station or All stations. Items are All stations followed by every available station." },
+    { "name": "Playlist row", "kind": "button", "refersTo": "playlist-row", "description": "Full-width native button, minimum height 58 pt, two-line title, artist sample, fixed track count and outbound SF Symbol; hover uses playlist-row-hover." },
+    { "name": "Inset catalog", "kind": "custom", "refersTo": "catalog", "description": "Recessed ScrollView with LazyVStack and pinned etched date headers; loading and empty states occupy the same region." }
+  ],
+  "narrative": {
+    "northStar": "Silver Hi-Fi",
+    "overview": "Jordan selected this direction from the three-way Winamp concept board on October 6, 2026. Satin brushed silver, a blue dot-matrix LCD, tactile beveled controls, and compact navy text give the native catalog browser its identity. Preserve the chosen material and density when extending it.",
+    "keyCharacteristics": [
+      "Satin silver chassis and shallow machined bevels.",
+      "Blue LCD and pressed controls; navy text on pale playlist rows.",
+      "Native SF typography, custom dot-matrix lettering, and SF Symbols."
+    ],
+    "rules": [],
+    "dos": [
+      "Do reuse the HiFi palette, material, bezel, and button components.",
+      "Do preserve native keyboard, menu, focus, and accessibility behavior.",
+      "Do render real catalog records and let long titles increase row height."
+    ],
+    "donts": [
+      "Don't replace the satin silver, blue LCD, or compact navy typography with a different visual world.",
+      "Don't rasterize catalog text or replace native controls with web controls.",
+      "Don't carry illustrative concept-board records or placeholder rows into the live catalog."
+    ]
+  }
+}
