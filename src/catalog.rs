@@ -517,8 +517,20 @@ impl Catalog {
         if spotify.track_uris(id).await? != entry.desired_uris {
             spotify.replace_draft(id, &entry.desired_uris).await?;
         }
-        if spotify.track_uris(id).await? != entry.desired_uris {
-            bail!("Spotify contents did not match broadcast {key}; leaving draft for recovery");
+        let actual_uris = spotify.track_uris(id).await?;
+        if actual_uris != entry.desired_uris {
+            let mismatch = entry
+                .desired_uris
+                .iter()
+                .zip(&actual_uris)
+                .position(|(expected, actual)| expected != actual)
+                .unwrap_or(entry.desired_uris.len().min(actual_uris.len()));
+            bail!(
+                "Spotify contents did not match broadcast {key}: expected {} tracks, got {}; first mismatch at position {} (expected {}, got {}); leaving draft for recovery",
+                entry.desired_uris.len(), actual_uris.len(), mismatch + 1,
+                entry.desired_uris.get(mismatch).map(String::as_str).unwrap_or("<end>"),
+                actual_uris.get(mismatch).map(String::as_str).unwrap_or("<end>"),
+            );
         }
         let preview = spotify.preview(id).await?;
         let imported_at = Utc::now();
