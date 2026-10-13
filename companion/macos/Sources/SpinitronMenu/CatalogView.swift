@@ -1,11 +1,7 @@
 import AppKit
 import SwiftUI
 import SpinitronCore
-
-private struct DayGroup: Identifiable {
-    let id: Date
-    let playlists: [Playlist]
-}
+import SpinitronUI
 
 struct CatalogView: View {
     @ObservedObject var store: CatalogStore
@@ -20,13 +16,7 @@ struct CatalogView: View {
         Playlist.filtered(store.snapshot?.playlists ?? [], station: station, query: query, includeLegacy: includeLegacy)
     }
 
-    private var groups: [DayGroup] {
-        var calendar = Calendar(identifier: .gregorian)
-        calendar.timeZone = TimeZone(identifier: "America/Los_Angeles")!
-        return Dictionary(grouping: matches) { playlist in
-            playlist.date.map { calendar.startOfDay(for: $0) } ?? .distantPast
-        }.map { DayGroup(id: $0.key, playlists: $0.value) }.sorted { $0.id > $1.id }
-    }
+    private var groups: [CatalogDay] { CatalogDay.grouped(matches) }
 
     var body: some View {
         VStack(spacing: 8) {
@@ -171,10 +161,10 @@ struct CatalogView: View {
         }
     }
 
-    private func dayHeader(_ group: DayGroup) -> some View {
+    private func dayHeader(_ group: CatalogDay) -> some View {
         VStack(spacing: 0) {
             HStack {
-                Text(dayLabel(group.id))
+                Text(group.label.uppercased())
                 Spacer()
                 Text("\(group.playlists.count)").monospacedDigit()
             }
@@ -215,14 +205,7 @@ struct CatalogView: View {
         .modifier(HiFiBezel(radius: 3))
     }
 
-    private func dayLabel(_ date: Date) -> String {
-        if date == .distantPast { return "DATE UNAVAILABLE" }
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.timeZone = TimeZone(identifier: "America/Los_Angeles")
-        formatter.dateFormat = "EEE, MMM d · yyyy"
-        return formatter.string(from: date).uppercased()
-    }
+
 }
 
 struct PlaylistRow: View {
@@ -234,22 +217,7 @@ struct PlaylistRow: View {
     var body: some View {
         Button(action: open) {
             HStack(spacing: 10) {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(playlist.browseTitle)
-                        .font(.system(size: 13, weight: .semibold)).lineLimit(2)
-                        .fixedSize(horizontal: false, vertical: true)
-                    if !playlist.artistSample.isEmpty {
-                        Text(playlist.artistSample).font(.system(size: 11))
-                            .foregroundStyle(HiFi.secondary).lineLimit(1)
-                    }
-                    if showStation || !playlist.isBroadcast {
-                        HStack(spacing: 6) {
-                            if showStation { Text(playlist.station) }
-                            if !playlist.isBroadcast { Text("Older collection") }
-                        }.font(.system(size: 9, weight: .medium)).foregroundStyle(HiFi.secondary)
-                    }
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
+                PlaylistSummary(playlist: playlist, showStation: showStation, compact: true)
                 Text("\(playlist.trackCount) tracks")
                     .font(.system(size: 10)).monospacedDigit().foregroundStyle(HiFi.secondary)
                     .fixedSize()

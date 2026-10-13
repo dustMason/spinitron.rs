@@ -1,27 +1,39 @@
+#if os(macOS)
 import AppKit
+#else
+import UIKit
+#endif
 import SwiftUI
 
-enum HiFi {
-    static let ink = Color(red: 0.08, green: 0.18, blue: 0.29)
-    static let secondary = Color(red: 0.25, green: 0.33, blue: 0.41)
-    static let edge = Color(red: 0.37, green: 0.42, blue: 0.47)
-    static let paper = Color(red: 0.88, green: 0.90, blue: 0.92)
-    static let blue = Color(red: 0.04, green: 0.34, blue: 0.56)
-    static let highlight = Color(red: 0.68, green: 0.84, blue: 0.97)
-    static let lcdTop = Color(red: 0.53, green: 0.76, blue: 0.94)
-    static let lcdBottom = Color(red: 0.77, green: 0.89, blue: 0.98)
-    static let stationControlHeight: CGFloat = 64
+public enum HiFi {
+    public static let ink = Color(red: 0.08, green: 0.18, blue: 0.29)
+    public static let secondary = Color(red: 0.25, green: 0.33, blue: 0.41)
+    public static let edge = Color(red: 0.37, green: 0.42, blue: 0.47)
+    public static let paper = Color(red: 0.88, green: 0.90, blue: 0.92)
+    public static let blue = Color(red: 0.04, green: 0.34, blue: 0.56)
+    public static let highlight = Color(red: 0.68, green: 0.84, blue: 0.97)
+    public static let lcdTop = Color(red: 0.53, green: 0.76, blue: 0.94)
+    public static let lcdBottom = Color(red: 0.77, green: 0.89, blue: 0.98)
+    public static let stationControlHeight: CGFloat = 64
 }
 
-struct SilverSurface: View {
+public struct SilverSurface: View {
+    public init() {}
+
     // Loading explicitly keeps SwiftUI from silently losing the package image
     // when the executable is embedded in the locally assembled .app bundle.
-    private static let texture = NSImage(contentsOf:
-        Bundle.module.url(forResource: "brushed-silver", withExtension: "png")!)!
+    private static let textureURL = Bundle.module.url(forResource: "brushed-silver", withExtension: "png")!
+    #if os(macOS)
+    private static let texture = NSImage(contentsOf: textureURL)!
+    private var textureImage: Image { Image(nsImage: Self.texture) }
+    #else
+    private static let texture = UIImage(contentsOfFile: textureURL.path)!
+    private var textureImage: Image { Image(uiImage: Self.texture) }
+    #endif
 
-    var body: some View {
+    public var body: some View {
         HiFi.paper.overlay {
-            Image(nsImage: Self.texture)
+            textureImage
                 .resizable(resizingMode: .tile)
                 .opacity(0.85)
         }
@@ -34,11 +46,13 @@ struct SilverSurface: View {
     }
 }
 
-struct HiFiBezel: ViewModifier {
+public struct HiFiBezel: ViewModifier {
+    public init(radius: CGFloat = 4, recessed: Bool = false) { self.radius = radius; self.recessed = recessed }
+
     var radius: CGFloat = 4
     var recessed = false
 
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .clipShape(RoundedRectangle(cornerRadius: radius))
             .overlay {
@@ -56,13 +70,15 @@ struct HiFiBezel: ViewModifier {
 }
 
 /// The socket stays still while the key face travels inside it.
-struct HiFiButtonSurface: ViewModifier {
+public struct HiFiButtonSurface: ViewModifier {
+    public init(pressed: Bool = false) { self.pressed = pressed }
+
     var pressed = false
     @Environment(\.isEnabled) private var enabled
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var hovered = false
 
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .offset(y: pressed ? 1 : 0)
             .background {
@@ -111,26 +127,35 @@ struct HiFiButtonSurface: ViewModifier {
     }
 }
 
-struct HiFiButtonStyle: ButtonStyle {
+public struct HiFiButtonStyle: ButtonStyle {
+    public init(compact: Bool = false, touch: Bool = false) { self.compact = compact; self.touch = touch }
+    var touch = false
+
     var compact = false
 
-    func makeBody(configuration: Configuration) -> some View {
+    public func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.system(size: 12, weight: .semibold, design: .monospaced))
+            .font(touch ? .system(.body, design: .monospaced).weight(.semibold) : .system(size: 12, weight: .semibold, design: .monospaced))
             .foregroundStyle(HiFi.ink)
             .shadow(color: .white.opacity(0.75), radius: 0, x: 0, y: 0.5)
             .padding(.horizontal, compact ? 8 : 13)
-            .frame(minWidth: 30)
-            .frame(height: 30)
+            .frame(minWidth: touch ? 44 : 30, minHeight: touch ? 44 : 30)
+            .frame(height: touch ? nil : 30)
             .modifier(HiFiButtonSurface(pressed: configuration.isPressed))
     }
 }
 
 /// A tiny vector dot-matrix display; the accessible value remains ordinary text.
-struct StationDisplay: View {
-    let station: String
+public struct StationDisplay: View {
+    public init(station: String, height: CGFloat = HiFi.stationControlHeight) {
+        self.station = station
+        self.height = height
+    }
 
-    var body: some View {
+    let station: String
+    let height: CGFloat
+
+    public var body: some View {
         GeometryReader { geometry in
             let displayName = station.uppercased()
             let columns = CGFloat(max(1, displayName.count * 6 - 1))
@@ -144,7 +169,7 @@ struct StationDisplay: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal, 14)
         .padding(.vertical, 8)
-        .frame(height: HiFi.stationControlHeight)
+        .frame(height: height)
         .background {
             LinearGradient(colors: [HiFi.lcdTop, HiFi.lcdBottom], startPoint: .top, endPoint: .bottom)
             Canvas { context, size in
@@ -189,7 +214,9 @@ struct StationDisplay: View {
     }
 }
 
-struct DotMatrixText: View {
+public struct DotMatrixText: View {
+    public init(text: String, pitch: CGFloat, showsInactiveCells: Bool = false) { self.text = text; self.pitch = pitch; self.showsInactiveCells = showsInactiveCells }
+
     let text: String
     let pitch: CGFloat
     var showsInactiveCells = false
@@ -220,7 +247,7 @@ struct DotMatrixText: View {
         "?": [14,17,1,2,4,0,4],
     ]
 
-    var body: some View {
+    public var body: some View {
         Canvas { context, _ in
             var dots = Path()
             var inactive = Path()
@@ -248,8 +275,10 @@ struct DotMatrixText: View {
     }
 }
 
-struct HiFiRule: View {
-    var body: some View {
+public struct HiFiRule: View {
+    public init() {}
+
+    public var body: some View {
         VStack(spacing: 0) {
             HiFi.edge.opacity(0.30).frame(height: 1)
             Color.white.opacity(0.65).frame(height: 1)

@@ -80,7 +80,7 @@ Jordan selected this direction from the three-way Winamp concept board on Octobe
 - Blue LCD and pressed controls; navy text on pale playlist rows.
 - Native SF typography, custom dot-matrix lettering, and SF Symbols.
 
-The implementation authority is `Sources/SpinitronMenu/HiFiSkin.swift` and `CatalogView.swift`. All dimensions here are native macOS points. Color percentages preserve the exact SwiftUI sRGB channels; they do not imply CSS rendering. The aligned LCD/search/catalog layout received a **ship** review, including the matching Refresh/Settings controls and native LCD menu. Native menu opening, keyboard station selection, and top-bar Refresh were verified.
+The implementation authority is `../shared/Sources/SpinitronUI/HiFiSkin.swift`, `../shared/Sources/SpinitronUI/PlaylistSummary.swift`, and `Sources/SpinitronMenu/CatalogView.swift`. All dimensions here are native macOS points. Color percentages preserve the exact SwiftUI sRGB channels; they do not imply CSS rendering. The aligned LCD/search/catalog layout received a **ship** review, including the matching Refresh/Settings controls and native LCD menu. Native menu opening, keyboard station selection, and top-bar Refresh were verified.
 
 ## Colors
 
@@ -104,7 +104,7 @@ The AppKit popover is fixed at 520 × 640 pt, with a 4 pt outer edge, 10 pt cont
 
 ## Elevation & Depth
 
-The chassis and catalog use one-point edge strokes and inset light/dark bevels. Buttons have a fixed, continuous `edge` rim around a metal face with a narrow mid-face gradient step. Their half-point inner bevel fades to clear at the bottom; the button surface has no drop shadow or separate outer stroke. The LCD sits behind a graphite gasket, with top shadow, bottom highlight, and subtle diagonal glass reflection. `SilverSurface` tiles the bundled `Resources/brushed-silver.png` at 0.85 opacity over `paper`, with a subtle vertical white-to-black overlay. The brand retains its one-point white etched shadow. Exact material, bevel, and motion details are recorded in the sidecar.
+The chassis and catalog use one-point edge strokes and inset light/dark bevels. Buttons have a fixed, continuous `edge` rim around a metal face with a narrow mid-face gradient step. Their half-point inner bevel fades to clear at the bottom; the button surface has no drop shadow or separate outer stroke. The LCD sits behind a graphite gasket, with top shadow, bottom highlight, and subtle diagonal glass reflection. `SilverSurface` tiles the bundled `../shared/Sources/SpinitronUI/Resources/brushed-silver.png` at 0.85 opacity over `paper`, with a subtle vertical white-to-black overlay. The brand retains its one-point white etched shadow. Exact material, bevel, and motion details are recorded in the sidecar.
 
 ## Shapes
 

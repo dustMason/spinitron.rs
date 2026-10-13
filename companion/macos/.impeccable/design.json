@@ -24,11 +24,11 @@
     "native": {
       "platform": "macOS 14+; SwiftUI in an AppKit popover",
       "units": "Native points; SF and SF Mono are SwiftUI system fonts.",
-      "sourceFiles": ["Sources/SpinitronMenu/HiFiSkin.swift", "Sources/SpinitronMenu/CatalogView.swift"],
+      "sourceFiles": ["../shared/Sources/SpinitronUI/HiFiSkin.swift", "../shared/Sources/SpinitronUI/PlaylistSummary.swift", "Sources/SpinitronMenu/CatalogView.swift"],
       "previewPolicy": "Native component descriptions only. No HTML/CSS replicas, web breakpoints, or web detector apply.",
       "tonalRamps": "No separate tonal ramps are implemented; the frontmatter preserves the actual palette without synthesized colors.",
       "materials": {
-        "silver": "Tile Sources/SpinitronMenu/Resources/brushed-silver.png at opacity 0.85 over HiFi.paper; overlay a top-to-bottom gradient of white at 0.24 opacity, clear, and black at 0.06 opacity.",
+        "silver": "Tile ../shared/Sources/SpinitronUI/Resources/brushed-silver.png at opacity 0.85 over HiFi.paper; overlay a top-to-bottom gradient of white at 0.24 opacity, clear, and black at 0.06 opacity.",
         "raisedBezel": "HiFi.edge strokeBorder width 1 pt; inner stroke inset 1 pt with white at 0.95 opacity to black at 0.14 opacity, topLeading to bottomTrailing.",
         "recessedBezel": "Same geometry; inner gradient black at 0.28 opacity to white at 0.8 opacity.",
         "buttonSocket": "Fixed rounded rectangle, radius 3 pt, filled with HiFi.edge as one uniform continuous rim. No outer stroke or button-surface drop shadow.",

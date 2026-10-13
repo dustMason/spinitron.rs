@@ -5,10 +5,11 @@ let package = Package(
     name: "SpinitronMenu",
     platforms: [.macOS(.v14)],
     products: [.executable(name: "SpinitronMenu", targets: ["SpinitronMenu"])],
+    dependencies: [.package(path: "../shared")],
     targets: [
-        .target(name: "SpinitronCore"),
-        .executableTarget(name: "SpinitronMenu", dependencies: ["SpinitronCore"],
-                          resources: [.process("Resources")]),
-        .testTarget(name: "SpinitronCoreTests", dependencies: ["SpinitronCore"]),
+        .executableTarget(name: "SpinitronMenu", dependencies: [
+            .product(name: "SpinitronCore", package: "shared"),
+            .product(name: "SpinitronUI", package: "shared"),
+        ]),
     ]
 )

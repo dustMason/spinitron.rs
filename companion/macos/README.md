@@ -32,9 +32,8 @@ ID signature and notarization, or a local rebuild on those Macs.
 
 ## Silver Hi-Fi skin
 
-The browser uses a brushed-silver frame, blue dot-matrix station display and
-tactile station presets. The small arrow beside the presets includes **All
-stations**. Date headers stay visible while scrolling; rows show three artists
+The browser uses a brushed-silver frame and a blue dot-matrix station display.
+Click the LCD to choose a station, including **All stations**. Date headers stay visible while scrolling; rows show three artists
 and a track count. Dates live in the section headers, while same-day broadcast
 times remain in row titles. The full original title is available in the tooltip
 and accessibility label. The skin uses a fixed light palette, including when
@@ -43,6 +42,10 @@ macOS is in dark mode.
 The material texture is bundled locally. No extra fonts, downloads or Spotify
 permissions are needed. `build-app.sh` copies the Swift resource bundle into the
 app before signing, so the installed app is independent of the source checkout.
+
+Catalog logic and reusable Silver Hi-Fi views/assets now live in the local
+`../shared/` Swift package, also used by the iPhone app. AppKit integration,
+desktop layout, bundle identity and existing cache/preferences remain here.
 
 ## Data and settings
 

@@ -8,7 +8,7 @@ app="$PWD/build/Spinitron.app"
 mkdir -p "$app/Contents/MacOS"
 cp .build/release/SpinitronMenu "$app/Contents/MacOS/SpinitronMenu"
 mkdir -p "$app/Contents/Resources"
-cp -R .build/release/SpinitronMenu_SpinitronMenu.bundle "$app/Contents/Resources/"
+cp -R .build/release/SpinitronShared_SpinitronUI.bundle "$app/Contents/Resources/"
 cat > "$app/Contents/Info.plist" <<'PLIST'
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -19,7 +19,7 @@ cat > "$app/Contents/Info.plist" <<'PLIST'
 <key>CFBundleExecutable</key><string>SpinitronMenu</string>
 <key>CFBundlePackageType</key><string>APPL</string>
 <key>CFBundleShortVersionString</key><string>1.1</string>
-<key>CFBundleVersion</key><string>11</string>
+<key>CFBundleVersion</key><string>12</string>
 <key>LSMinimumSystemVersion</key><string>14.0</string>
 <key>LSUIElement</key><true/>
 <key>NSHighResolutionCapable</key><true/>

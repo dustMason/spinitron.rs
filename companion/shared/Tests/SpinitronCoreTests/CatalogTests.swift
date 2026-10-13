@@ -27,6 +27,7 @@ private func feed(_ rows: [[String: Any]]) throws -> Data {
     let playlist = try #require(snapshot.playlists.first)
     #expect(playlist.title == "Radio Dunya - 2026-09-09")
     #expect(playlist.spotifyURL.absoluteString == "spotify:playlist:\(firstID)")
+    #expect(playlist.webURL.absoluteString == "https://open.spotify.com/playlist/\(firstID)")
     #expect(playlist.date == ISO8601DateFormatter().date(from: "2026-09-10T00:00:00Z"))
     #expect(playlist.isBroadcast)
     #expect(playlist.artistSample == "Gerardo Batiz · Tino Contreras")
@@ -134,4 +135,55 @@ private func feed(_ rows: [[String: Any]]) throws -> Data {
     let lines = try #require(String(data: data, encoding: .utf8)).split(whereSeparator: \.isNewline)
     #expect(snapshot.playlists.count == lines.count)
     #expect(snapshot.playlists.contains { $0.station == "KALX" && $0.isBroadcast })
+}
+
+@Test func dayGroupsUsePacificDatesAndKeepOrderWithinEachDay() throws {
+    let snapshot = try CatalogFeed.decode(feed([
+        row(broadcast: "2026-09-09T23:30:00-0700"),
+        row(id: secondID, broadcast: "2026-09-10T00:30:00-0700"),
+    ]))
+    let groups = CatalogDay.grouped(Playlist.filtered(snapshot.playlists, station: "", query: "", includeLegacy: true))
+    #expect(groups.count == 2)
+    #expect(groups[0].label == "Thu, Sep 10 · 2026")
+    #expect(groups[1].label == "Wed, Sep 9 · 2026")
+    #expect(groups[0].playlists[0].id == secondID)
+}
+
+private actor DownloadCounter {
+    var calls = 0
+    func fetch(_ data: Data) -> Data { calls += 1; return data }
+}
+
+@Test @MainActor func storeUsesOfflineCacheAndOnlyRefreshesWhenAsked() async throws {
+    let root = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+    defer { try? FileManager.default.removeItem(at: root) }
+    let data = try feed([row()])
+    let cache = root.appendingPathComponent("catalog.json")
+    _ = try await CatalogRepository(cacheURL: cache, download: { data }).refresh()
+    let counter = DownloadCounter()
+    let store = CatalogStore(repository: CatalogRepository(cacheURL: cache, download: { await counter.fetch(data) }))
+    await store.start()
+    await store.start()
+    #expect(store.snapshot?.playlists.count == 1)
+    #expect(await counter.calls == 0)
+    await store.refresh()
+    #expect(await counter.calls == 1)
+    #expect(!store.isRefreshing)
+    #expect(store.error == nil)
+}
+
+@Test @MainActor func storeKeepsBrowseableSnapshotAfterFailedRefresh() async throws {
+    let root = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+    defer { try? FileManager.default.removeItem(at: root) }
+    let data = try feed([row()])
+    let cache = root.appendingPathComponent("catalog.json")
+    let snapshot = try await CatalogRepository(cacheURL: cache, download: { data }).refresh()
+    let store = CatalogStore(repository: CatalogRepository(cacheURL: cache, download: { throw URLError(.notConnectedToInternet) }))
+    await store.start()
+    await store.refresh()
+    #expect(store.snapshot?.playlists == snapshot.playlists)
+    #expect(store.error?.contains("Couldn’t refresh") == true)
+    #expect(store.error?.contains("offline") == true)
+    #expect(store.error?.contains("NSURLErrorDomain") == false)
+    #expect(!store.isRefreshing)
 }

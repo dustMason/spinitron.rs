@@ -27,6 +27,7 @@ public struct Playlist: Codable, Identifiable, Equatable, Sendable {
     public let preview: [Track]
 
     public var spotifyURL: URL { URL(string: "spotify:playlist:\(id)")! }
+    public var webURL: URL { URL(string: "https://open.spotify.com/playlist/\(id)")! }
     /// The date already appears in the browser's section heading. Preserve a
     /// same-day disambiguating time, and never shorten unrecognized name formats.
     public var browseTitle: String {
