@@ -5,7 +5,32 @@ Choose a station, browse broadcasts grouped by Pacific date, search shows and
 the catalog's sampled artists/songs, and tap a row to open its playlist in Spotify.
 The first release targets iPhone, in portrait and landscape.
 
-## Install on your own iPhone
+## Set up on another Mac
+
+The repository contains the app, shared Swift package, assets, and Xcode project.
+No files or signing credentials need to be copied from the original development
+laptop.
+
+Prerequisites:
+
+- Full Xcode with iOS platform support, not only the Command Line Tools.
+  This implementation was built and tested with Xcode 27.0; other Xcode versions
+  have not been verified.
+- Your personal Apple account added in Xcode's account settings for device signing.
+- An iPhone running iOS 17 or later, with Spotify installed for direct app links.
+- Internet access for the first catalog download. An iOS Simulator runtime is
+  only required if you want to run the Simulator build or tests.
+
+Clone `https://github.com/dustMason/spinitron.rs.git` and check out the revision
+containing this app. Until the app is merged into `main`, use the published
+`feat/ios-companion` branch. The branch must be pushed before another laptop can
+fetch it.
+
+Keep `companion/ios` and `companion/shared` together: the Xcode project references
+the shared package at `../shared`. Rust, the scraper's dependencies, and Spotify
+API credentials are not required to build or use the iPhone app.
+
+## Install on your own iPhone from that Mac
 
 1. Open `companion/ios/Spinitron.xcodeproj` in Xcode. The **Spinitron** scheme is
    shared; its Swift packages are local and require no external dependencies.
@@ -22,6 +47,11 @@ refresh token, or GitHub credential belongs in the app.
 
 The app does not need TestFlight. Apple signing/provisioning is a local Xcode
 installation step, separate from building and testing the source.
+
+After installation, select a station and tap a broadcast to confirm that it opens
+the expected playlist in Spotify. Physical-device installation and this handoff
+are checks to perform on the installing Mac and phone; they were not verified by
+the Simulator tests.
 
 ## Use
 
