@@ -12,6 +12,7 @@ struct FakeSpotify {
     renames: Cell<usize>,
     uncertain_rename: Cell<bool>,
     fail_fill: Cell<bool>,
+    readback_override: Option<Vec<String>>,
     uncertain_create: bool,
     reject_create: bool,
     no_matches: bool,
@@ -113,6 +114,9 @@ impl ArchiveSpotify for FakeSpotify {
         Ok(())
     }
     async fn track_uris(&self, id: &str) -> Result<Vec<String>> {
+        if let Some(uris) = &self.readback_override {
+            return Ok(uris.clone());
+        }
         Ok(self.playlists.borrow()[id].1.clone())
     }
     async fn preview(&self, _: &str) -> Result<Value> {
@@ -404,6 +408,28 @@ async fn archives_stay_saved_and_historical_removal_states_remain_readable() {
     assert!(!spotify.library.borrow().contains("p2"));
     assert!(spotify.library.borrow().contains("p3"));
     assert_eq!(f.catalog.listings().unwrap().len(), 3);
+}
+
+#[tokio::test]
+async fn mismatched_draft_reports_position_and_counts_without_publishing() {
+    for (actual, detail) in [
+        (vec!["first", "wrong", "first"], "expected 3 tracks, got 3; first mismatch at position 2 (expected spotify:track:second, got spotify:track:wrong)"),
+        (vec!["first", "second"], "expected 3 tracks, got 2; first mismatch at position 3 (expected spotify:track:first, got <end>)"),
+        (vec!["first", "second", "first", "extra"], "expected 3 tracks, got 4; first mismatch at position 4 (expected <end>, got spotify:track:extra)"),
+    ] {
+        let mut f = Fixture::new();
+        let mut spotify = FakeSpotify {
+            readback_override: Some(actual.iter().map(|id| format!("spotify:track:{id}")).collect()),
+            ..Default::default()
+        };
+        let error = f.catalog.archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+            .await.unwrap_err();
+        assert!(error.to_string().contains(detail), "{error}");
+        assert_eq!(Catalog::load(&f.path()).unwrap().entries["KALX:1"].state, State::Filling);
+        assert!(f.catalog.listings().unwrap().is_empty());
+        assert_eq!(spotify.creates, 1);
+        assert_eq!(spotify.fills.get(), 1);
+    }
 }
 
 #[tokio::test]
