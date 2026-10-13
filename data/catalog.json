@@ -58624,6 +58624,42 @@
         "url": "https://open.spotify.com/playlist/1xRyEhOwoeHdzL32plTLZj"
       }
     },
+    "KALX:23170536": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23170536,
+        "title": "Fiat Lux Redux",
+        "url": "https://spinitron.com/KALX/pl/23170536/Fiat-Lux-Redux",
+        "start_time": "2026-10-13T09:00:00-0700",
+        "end_time": "2026-10-13T09:30:00-0700"
+      },
+      "state": "ready",
+      "owner_id": "dustmason",
+      "playlist_id": "6xNpZV1zxKcaJbKeh0tjJh",
+      "desired_uris": [
+        "spotify:track:1oSYnYRnn0my8btfvgBd9o"
+      ],
+      "listing": {
+        "broadcast_end": "2026-10-13T09:30:00-0700",
+        "broadcast_start": "2026-10-13T09:00:00-0700",
+        "imported_at": "2026-10-13T17:38:47.509481833+00:00",
+        "last_updated": "2026-10-13 17:38 UTC",
+        "name": "KALX - Fiat Lux Redux - 2026-10-13",
+        "preview": [
+          {
+            "artists": [
+              "New Monsoon"
+            ],
+            "image_url": "https://i.scdn.co/image/ab67616d0000b27337645011fef61a95329d4517",
+            "name": "Song for Marie"
+          }
+        ],
+        "source_url": "https://spinitron.com/KALX/pl/23170536/Fiat-Lux-Redux",
+        "station": "KALX",
+        "track_count": 1,
+        "url": "https://open.spotify.com/playlist/6xNpZV1zxKcaJbKeh0tjJh"
+      }
+    },
     "KPOO:22953138": {
       "station": "KPOO",
       "broadcast": {
