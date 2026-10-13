@@ -519,7 +519,10 @@ impl Catalog {
         }
         let actual_uris = spotify.track_uris(id).await?;
         if actual_uris != entry.desired_uris {
-            let mismatch = entry.desired_uris.iter().zip(&actual_uris)
+            let mismatch = entry
+                .desired_uris
+                .iter()
+                .zip(&actual_uris)
                 .position(|(expected, actual)| expected != actual)
                 .unwrap_or(entry.desired_uris.len().min(actual_uris.len()));
             bail!(
