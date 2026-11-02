@@ -58,7 +58,7 @@ pub struct Catalog {
     pub entries: BTreeMap<String, Entry>,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct RemotePlaylist {
     pub id: String,
     pub owner_id: String,

@@ -224,6 +224,15 @@ struct PlaylistCache {
     playlists: HashMap<String, SpotifyPlaylist>, // Key is spinitron_id
 }
 
+#[derive(PartialEq)]
+struct ArchiveInventory {
+    playlists: Vec<RemotePlaylist>,
+    // Keep returned order and repetitions so the confirmation scan cannot hide
+    // changed membership behind deduplication. Only these fields are compared.
+    entries: Vec<Value>,
+    repeated_ids: usize,
+}
+
 pub struct SpotifyClient {
     client: Client,
     api_base_url: String,
@@ -1066,6 +1075,106 @@ impl SpotifyClient {
         unreachable!("last attempt returns without retrying")
     }
 
+    async fn read_archive_inventory(&self, refresh: bool) -> Result<ArchiveInventory> {
+        let mut inventory = Vec::new();
+        let mut offset = 0;
+        let mut total = None;
+        let mut seen = HashMap::new();
+        let mut entries = Vec::new();
+        let mut repeated_ids = 0;
+        loop {
+            let response = self
+                .archive_request(
+                    reqwest::Method::GET,
+                    &format!("me/playlists?limit=50&offset={offset}"),
+                    None,
+                )
+                .await?;
+            let items = response["items"]
+                .as_array()
+                .ok_or_else(|| anyhow!("Spotify library response is missing items"))?;
+            let page_total = response["total"]
+                .as_u64()
+                .ok_or_else(|| anyhow!("Spotify library response is missing total"))?;
+            if page_total > 100_000 || total.is_some_and(|count| count != page_total) {
+                return Err(anyhow!("Spotify library changed during pagination or is too large; retry the inventory later"));
+            }
+            total = Some(page_total);
+            if response["offset"].as_u64() != Some(offset) || items.len() > 50 {
+                return Err(anyhow!(
+                    "Spotify library page has an unexpected offset or size"
+                ));
+            }
+            let has_next = match response.get("next") {
+                Some(Value::Null) => false,
+                Some(Value::String(next)) if !next.is_empty() => true,
+                _ => {
+                    return Err(anyhow!(
+                        "Spotify library response is missing valid pagination"
+                    ))
+                }
+            };
+            offset += items.len() as u64;
+            if offset > page_total
+                || has_next != (offset < page_total)
+                || (items.is_empty() && has_next)
+            {
+                return Err(anyhow!("Spotify library inventory is incomplete; refusing to infer that a playlist is missing"));
+            }
+            for item in items {
+                let id = item["id"]
+                    .as_str()
+                    .filter(|id| !id.is_empty())
+                    .ok_or_else(|| anyhow!("Spotify library item is missing its ID"))?;
+                let owner = item["owner"]["id"]
+                    .as_str()
+                    .filter(|id| !id.is_empty())
+                    .ok_or_else(|| anyhow!("Spotify library item is missing its owner"))?;
+                // Compare only identity/recovery metadata. Image URLs and track
+                // counts can change independently of library membership.
+                let identity = serde_json::json!([id, owner, item["name"], item["description"]]);
+                entries.push(identity.clone());
+                if let Some(previous) = seen.insert(id.to_owned(), identity.clone()) {
+                    if previous != identity {
+                        return Err(anyhow!("Spotify library returned conflicting metadata for repeated playlist {id}; retry the inventory later"));
+                    }
+                    repeated_ids += 1;
+                    continue;
+                }
+                // The list endpoint can omit descriptions. A manual retry
+                // must inspect those owned playlists before claiming there
+                // is no matching marker.
+                if refresh && owner == self.user_id && !item["description"].is_string() {
+                    let detail = self.inspect(id).await?;
+                    if detail.id != id || detail.owner_id != owner {
+                        return Err(anyhow!(
+                            "Spotify playlist identity changed during recovery inventory"
+                        ));
+                    }
+                    if detail.description.starts_with("Spinitron archive: ") {
+                        inventory.push(detail);
+                    }
+                    continue;
+                }
+                if owner == self.user_id
+                    && item["description"]
+                        .as_str()
+                        .is_some_and(|s| s.starts_with("Spinitron archive: "))
+                {
+                    inventory.push(Self::archive_metadata(item)?);
+                }
+            }
+            if !has_next {
+                break;
+            }
+        }
+        Ok(ArchiveInventory {
+            playlists: inventory,
+            entries,
+            repeated_ids,
+        })
+    }
+
     fn archive_metadata(value: &Value) -> Result<RemotePlaylist> {
         let required = |field: &Value, name: &str| {
             field
@@ -1106,89 +1215,22 @@ impl ArchiveSpotify for SpotifyClient {
             // A manual retry must not rely on a cached absence. If refresh
             // fails, also discard the old inventory rather than reuse it later.
             self.archive_inventory = None;
-            let mut inventory = Vec::new();
-            let mut offset = 0;
-            let mut total = None;
-            let mut seen = HashSet::new();
-            loop {
-                let response = self
-                    .archive_request(
-                        reqwest::Method::GET,
-                        &format!("me/playlists?limit=50&offset={offset}"),
-                        None,
-                    )
-                    .await?;
-                let items = response["items"]
-                    .as_array()
-                    .ok_or_else(|| anyhow!("Spotify library response is missing items"))?;
-                let page_total = response["total"]
-                    .as_u64()
-                    .ok_or_else(|| anyhow!("Spotify library response is missing total"))?;
-                if page_total > 100_000 || total.is_some_and(|count| count != page_total) {
-                    return Err(anyhow!("Spotify library changed during pagination or is too large; retry the inventory later"));
-                }
-                total = Some(page_total);
-                if response["offset"].as_u64() != Some(offset) || items.len() > 50 {
+            let inventory = self.read_archive_inventory(refresh).await?;
+            if inventory.repeated_ids > 0 {
+                eprintln!(
+                    "Spotify library returned {} repeated entries; confirming with a second complete scan",
+                    inventory.repeated_ids
+                );
+                // Stable repeats are an API listing quirk, not another playlist.
+                // Require agreement before using this scan to infer absence.
+                let confirmation = self.read_archive_inventory(refresh).await?;
+                if inventory != confirmation {
                     return Err(anyhow!(
-                        "Spotify library page has an unexpected offset or size"
+                        "Spotify library changed between scans; refusing to use the inventory"
                     ));
                 }
-                let has_next = match response.get("next") {
-                    Some(Value::Null) => false,
-                    Some(Value::String(next)) if !next.is_empty() => true,
-                    _ => {
-                        return Err(anyhow!(
-                            "Spotify library response is missing valid pagination"
-                        ))
-                    }
-                };
-                offset += items.len() as u64;
-                if offset > page_total
-                    || has_next != (offset < page_total)
-                    || (items.is_empty() && has_next)
-                {
-                    return Err(anyhow!("Spotify library inventory is incomplete; refusing to infer that a playlist is missing"));
-                }
-                for item in items {
-                    let id = item["id"]
-                        .as_str()
-                        .filter(|id| !id.is_empty())
-                        .ok_or_else(|| anyhow!("Spotify library item is missing its ID"))?;
-                    if !seen.insert(id.to_owned()) {
-                        return Err(anyhow!("Spotify library contains repeated IDs during pagination; retry the inventory later"));
-                    }
-                    let owner = item["owner"]["id"]
-                        .as_str()
-                        .filter(|id| !id.is_empty())
-                        .ok_or_else(|| anyhow!("Spotify library item is missing its owner"))?;
-                    // The list endpoint can omit descriptions. A manual retry
-                    // must inspect those owned playlists before claiming there
-                    // is no matching marker.
-                    if refresh && owner == self.user_id && !item["description"].is_string() {
-                        let detail = self.inspect(id).await?;
-                        if detail.id != id || detail.owner_id != owner {
-                            return Err(anyhow!(
-                                "Spotify playlist identity changed during recovery inventory"
-                            ));
-                        }
-                        if detail.description.starts_with("Spinitron archive: ") {
-                            inventory.push(detail);
-                        }
-                        continue;
-                    }
-                    if owner == self.user_id
-                        && item["description"]
-                            .as_str()
-                            .is_some_and(|s| s.starts_with("Spinitron archive: "))
-                    {
-                        inventory.push(Self::archive_metadata(item)?);
-                    }
-                }
-                if !has_next {
-                    break;
-                }
             }
-            self.archive_inventory = Some(inventory);
+            self.archive_inventory = Some(inventory.playlists);
         }
         let matches: Vec<_> = self
             .archive_inventory
