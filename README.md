@@ -379,6 +379,14 @@ failed inventory reads and multiple matches stop recovery. It uses the saved
 track sequence, including broadcasts older than the scraping window. A completed
 broadcast is left alone when the same recovery input is supplied again.
 
+Spotify sometimes lists the same playlist ID more than once. The inventory
+counts those rows for pagination but retains one playlist per ID, only when its
+owner, name, and description agree. If any IDs repeat, a second complete scan
+must return the same ordered entries and recovery metadata before the inventory
+is used. Changed or incomplete scans still stop recovery, as do two different
+playlist IDs carrying the same broadcast marker. This does not remove or change
+playlists in Spotify.
+
 The retry permission is not stored in the catalog or enabled for scheduled runs.
 Another ambiguous creation failure remains `creating` and requires a new manual
 decision. A library inventory cannot discover an unsaved playlist, so do not

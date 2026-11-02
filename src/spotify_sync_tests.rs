@@ -119,6 +119,217 @@ async fn recovery_inventory_refresh_replaces_cached_absence_and_reads_all_pages(
 }
 
 #[tokio::test]
+async fn recovery_inventory_deduplicates_stable_repeats_and_keeps_raw_offsets() {
+    let marker = "Spinitron archive: KALX:1";
+    for refresh in [false, true] {
+        let (mut client, server) = mock_client(|base| {
+            let mut plan = Vec::new();
+            for pass in 0..2 {
+                // Image URLs are temporary; only identity and recovery metadata
+                // must agree. Pagination counts every returned entry, not IDs.
+                let mut found = archive_item("found", marker);
+                found["images"] = serde_json::json!([{"url":format!("image-{pass}")}]);
+                plan.extend([
+                    exchange("GET", "/v1/me/playlists?limit=50&offset=0",
+                        serde_json::json!({"items":[found.clone(), archive_item("other", "Other")],
+                            "offset":0,"total":5,"next":format!("{base}/me/playlists?limit=50&offset=2")})),
+                    exchange("GET", "/v1/me/playlists?limit=50&offset=2",
+                        serde_json::json!({"items":[archive_item("other", "Other"), found],
+                            "offset":2,"total":5,"next":format!("{base}/me/playlists?limit=50&offset=4")})),
+                    exchange("GET", "/v1/me/playlists?limit=50&offset=4",
+                        serde_json::json!({"items":[archive_item("tail", "Spinitron archive: KPOO:2")],
+                            "offset":4,"total":5,"next":null})),
+                ]);
+            }
+            plan
+        }).await;
+        assert_eq!(
+            client
+                .find_archive(marker, refresh)
+                .await
+                .unwrap()
+                .unwrap()
+                .id,
+            "found"
+        );
+        assert_eq!(
+            client
+                .find_archive("Spinitron archive: KPOO:2", false)
+                .await
+                .unwrap()
+                .unwrap()
+                .id,
+            "tail"
+        );
+        assert!(client
+            .find_archive("Spinitron archive: KALX:3", false)
+            .await
+            .unwrap()
+            .is_none());
+        assert_eq!(client.archive_inventory.as_ref().unwrap().len(), 2);
+        assert_eq!(requests(server).await.len(), 6);
+    }
+}
+
+#[tokio::test]
+async fn recovery_inventory_repeated_id_does_not_hide_two_matching_playlists() {
+    let marker = "Spinitron archive: KALX:1";
+    for other_id in ["one", "two"] {
+        let (mut client, server) = mock_client(|_| {
+            (0..2).map(|_| exchange("GET", "/v1/me/playlists?limit=50&offset=0",
+                serde_json::json!({"items":[archive_item("one", marker), archive_item("one", marker),
+                    archive_item(other_id, marker)],"offset":0,"total":3,"next":null}))).collect()
+        }).await;
+        let result = client.find_archive(marker, true).await;
+        if other_id == "one" {
+            assert_eq!(result.unwrap().unwrap().id, "one");
+        } else {
+            assert!(result
+                .unwrap_err()
+                .to_string()
+                .contains("Multiple playlists"));
+        }
+        assert_eq!(requests(server).await.len(), 2);
+    }
+}
+
+#[tokio::test]
+async fn recovery_inventory_rejects_conflicting_metadata_for_repeated_id() {
+    let marker = "Spinitron archive: KALX:1";
+    for field in ["owner", "description", "name"] {
+        let mut conflicting = archive_item("same", marker);
+        conflicting[field] = if field == "owner" {
+            serde_json::json!({"id":"someone-else"})
+        } else {
+            "Changed".into()
+        };
+        let (mut client, server) = mock_client(|_| vec![exchange("GET", "/v1/me/playlists?limit=50&offset=0",
+            serde_json::json!({"items":[archive_item("same", marker),conflicting],"offset":0,"total":2,"next":null}))]).await;
+        client.archive_inventory = Some(Vec::new());
+        let error = client.find_archive(marker, true).await.unwrap_err();
+        assert!(
+            error.to_string().contains("conflicting metadata"),
+            "{error}"
+        );
+        assert!(client.archive_inventory.is_none());
+        assert_eq!(requests(server).await.len(), 1);
+    }
+}
+
+#[tokio::test]
+async fn recovery_inventory_rejects_changes_or_failure_during_repeat_confirmation() {
+    let marker = "Spinitron archive: KALX:1";
+    for change in ["id", "order", "metadata", "failure"] {
+        let first = vec![
+            archive_item("one", marker),
+            archive_item("one", marker),
+            archive_item("other", "Other"),
+        ];
+        let mut changed = first.clone();
+        match change {
+            "id" => changed[2]["id"] = "new-id".into(),
+            "order" => changed.swap(1, 2),
+            "metadata" => changed[2]["description"] = "Changed".into(),
+            _ => {}
+        }
+        let (mut client, server) = mock_client(|_| {
+            vec![
+                exchange(
+                    "GET",
+                    "/v1/me/playlists?limit=50&offset=0",
+                    serde_json::json!({"items":first,"offset":0,"total":3,"next":null}),
+                ),
+                Exchange {
+                    status: if change == "failure" { 403 } else { 200 },
+                    ..exchange(
+                        "GET",
+                        "/v1/me/playlists?limit=50&offset=0",
+                        serde_json::json!({"items":changed,"offset":0,"total":3,"next":null}),
+                    )
+                },
+            ]
+        })
+        .await;
+        client.archive_inventory = Some(Vec::new());
+        let error = client.find_archive(marker, true).await.unwrap_err();
+        assert!(
+            error.to_string().contains(if change == "failure" {
+                "403"
+            } else {
+                "changed between scans"
+            }),
+            "{error}"
+        );
+        assert!(client.archive_inventory.is_none());
+        assert_eq!(requests(server).await.len(), 2);
+    }
+}
+
+#[tokio::test]
+async fn recovery_inventory_confirms_details_once_per_repeated_owned_id() {
+    let marker = "Spinitron archive: KALX:1";
+    for changed in [false, true] {
+        let (mut client, server) = mock_client(|_| {
+            let mut summary = archive_item("hidden", marker);
+            summary["description"] = Value::Null;
+            let mut plan = Vec::new();
+            for pass in 0..2 {
+                let description = if changed && pass == 1 {
+                    "Spinitron archive: KALX:2"
+                } else {
+                    marker
+                };
+                plan.extend([
+                    exchange(
+                        "GET",
+                        "/v1/me/playlists?limit=50&offset=0",
+                        serde_json::json!({"items":[summary.clone(),summary.clone()],
+                            "offset":0,"total":2,"next":null}),
+                    ),
+                    exchange(
+                        "GET",
+                        "/v1/playlists/hidden",
+                        archive_item("hidden", description),
+                    ),
+                ]);
+            }
+            plan
+        })
+        .await;
+        let result = client.find_archive(marker, true).await;
+        if changed {
+            assert!(result
+                .unwrap_err()
+                .to_string()
+                .contains("changed between scans"));
+            assert!(client.archive_inventory.is_none());
+        } else {
+            assert_eq!(result.unwrap().unwrap().id, "hidden");
+        }
+        assert_eq!(requests(server).await.len(), 4);
+    }
+}
+
+#[tokio::test]
+async fn recovery_inventory_repeated_ids_do_not_excuse_an_incomplete_scan() {
+    let marker = "Spinitron archive: KALX:1";
+    let (mut client, server) = mock_client(|base| vec![
+        exchange("GET", "/v1/me/playlists?limit=50&offset=0",
+            serde_json::json!({"items":[archive_item("one", marker),archive_item("one", marker)],
+                "offset":0,"total":3,"next":format!("{base}/me/playlists?limit=50&offset=2")})),
+        exchange("GET", "/v1/me/playlists?limit=50&offset=2",
+            serde_json::json!({"items":[],"offset":2,"total":3,"next":null})),
+    ]).await;
+    let error = client.find_archive(marker, false).await.unwrap_err();
+    assert!(
+        error.to_string().contains("inventory is incomplete"),
+        "{error}"
+    );
+    assert!(client.archive_inventory.is_none());
+    assert_eq!(requests(server).await.len(), 2);
+}
+
+#[tokio::test]
 async fn recovery_inventory_rejects_incomplete_malformed_and_ambiguous_results() {
     let marker = "Spinitron archive: KALX:1";
     let good = serde_json::json!({"items":[], "offset":0, "total":0, "next":null});
@@ -130,7 +341,6 @@ async fn recovery_inventory_rejects_incomplete_malformed_and_ambiguous_results()
         serde_json::json!({"items":[], "offset":0, "next":null}),
         serde_json::json!({"items":[null], "offset":0, "total":1, "next":null}),
         serde_json::json!({"items":[{"id":"unknown-owner"}], "offset":0, "total":1, "next":null}),
-        serde_json::json!({"items":[archive_item("same", marker),archive_item("same", marker)], "offset":0,"total":2,"next":null}),
         serde_json::json!({"items":[archive_item("one", marker),archive_item("two", marker)], "offset":0,"total":2,"next":null}),
     ];
     for bad in cases {
