@@ -1383,6 +1383,27 @@
         "url": "https://open.spotify.com/playlist/1ycs9tBvcDpAMeaxuD1B6O"
       }
     },
+    "KALX:22932317": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 22932317,
+        "title": "Information Overload",
+        "url": "https://spinitron.com/KALX/pl/22932317/Information-Overload",
+        "start_time": "2026-11-03T00:00:00-0800",
+        "end_time": "2026-11-03T01:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:2YbEpLlC1q2fJAsWB6GeRD",
+        "spotify:track:47Aeb3Fdi9wedRucdtDZWI",
+        "spotify:track:6HfmH1Rh3QtIDbpvsxNRuJ"
+      ],
+      "listing": {
+        "name": "KALX - Information Overload - 2026-11-03",
+        "station": "KALX"
+      }
+    },
     "KALX:22939133": {
       "station": "KALX",
       "broadcast": {
@@ -77919,6 +77940,32 @@
         "url": "https://open.spotify.com/playlist/1ftkN4SsprZUqIPo71eFGB"
       }
     },
+    "KALX:23242322": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23242322,
+        "title": "Take Five",
+        "url": "https://spinitron.com/KALX/pl/23242322/Take-Five",
+        "start_time": "2026-11-02T17:00:00-0800",
+        "end_time": "2026-11-02T18:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:7whWIkYvJLws59SuBgFaKx",
+        "spotify:track:5PKQZEBc7LHC8yvb2MqYVZ",
+        "spotify:track:2GhirY1WxwRTIW6R6FowyO",
+        "spotify:track:2BnLbPib6bx7PvigoOPQPN",
+        "spotify:track:5lSpraZXcyYb8nhYY924ZV",
+        "spotify:track:2NahmfJ6cFY8DEWpt7T4kP",
+        "spotify:track:0iMZgt7X6ovN0JybovBiZi",
+        "spotify:track:3kiu9rIqYFfk8TEVlIl4zf"
+      ],
+      "listing": {
+        "name": "KALX - Take Five - 2026-11-02",
+        "station": "KALX"
+      }
+    },
     "KALX:23242501": {
       "station": "KALX",
       "broadcast": {
@@ -86230,7 +86277,7 @@
         "broadcast_start": "2026-11-02T01:00:00-0800",
         "imported_at": "2026-11-02T19:30:28.919266831+00:00",
         "last_updated": "2026-11-02 19:30 UTC",
-        "name": "KALX - FREEFORM - 2026-11-02",
+        "name": "KALX - FREEFORM - 2026-11-02 1:00am",
         "preview": [
           {
             "artists": [
@@ -86459,6 +86506,276 @@
         "station": "KALX",
         "track_count": 23,
         "url": "https://open.spotify.com/playlist/38YHwVkyzjbE2xyLRCNwNi"
+      }
+    },
+    "KALX:23276641": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23276641,
+        "title": "FREEFORM",
+        "url": "https://spinitron.com/KALX/pl/23276641/FREEFORM",
+        "start_time": "2026-11-02T09:00:00-0800",
+        "end_time": "2026-11-02T12:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:7Me0vOSlJfaPY7Pc4GeItd",
+        "spotify:track:0YA6BYi1Fwv58UfX3M1z7f",
+        "spotify:track:6lRnkoWcRBgGt4teFG3KNu",
+        "spotify:track:5eIq2L5yAl8YPzSO9aX0nW",
+        "spotify:track:1tXTo9iAt2yWE8PIAVfcEw",
+        "spotify:track:2L16jZXenNlMjXZuZJ2hxt",
+        "spotify:track:3HeuVsJsfobPyHmjlwYVdN",
+        "spotify:track:3GOOBbC0uedCdUQZfSrwOp",
+        "spotify:track:47w0bCg60WtegkZYYQZOMd",
+        "spotify:track:4ELPwRTSxhhecugfPSyueU",
+        "spotify:track:0mmJcStGfqDAEAJ1gfa9pO",
+        "spotify:track:5zlS0ABxi4rwkCxlTdDpIq",
+        "spotify:track:6duF3dx2wIxwwLgE8VOCZS",
+        "spotify:track:4IfTytd0YFt9jGf2t0T8R6",
+        "spotify:track:3Rs0rWhNhOAkCsZofHxLHi",
+        "spotify:track:2Hs7YqZwFEPIxRTnqtrHvP",
+        "spotify:track:2x8DUaN7M6DJQlnXzXtcrB",
+        "spotify:track:46O0uajv9K1TJX0PdvW80C",
+        "spotify:track:3PB7DNU2nq6083seARvlqL",
+        "spotify:track:0JxUqyj3Zum5eT9fY7MJjd",
+        "spotify:track:1otVluDY1IjN2PqHqZfclU",
+        "spotify:track:3PQCZh7ZUQchzC4Aop2rEo",
+        "spotify:track:7JFDjtA7uYGroQyUgsdObp",
+        "spotify:track:520WsWWf9erseB9zaenEHz",
+        "spotify:track:6p0ozNSacSfmrw7dmYIGhh",
+        "spotify:track:3PH1n0JC1icuzNQTD4Rsv0",
+        "spotify:track:3k0xITtgCxdbwyGTxpbpH1",
+        "spotify:track:0udVezQhKTttwkJpOAgbxq",
+        "spotify:track:7q5OMmhPqwpyTig3A2yPPz",
+        "spotify:track:34iG85KkfdODQEokNB3cgH",
+        "spotify:track:4DqahEuFiFwmzZfoLywSWa",
+        "spotify:track:7umq42ly6rYKT4845YPRwY",
+        "spotify:track:7IVbdVwNnNHNgGFzpBp00H",
+        "spotify:track:49chKnIpyO0LxKUnqMJghb",
+        "spotify:track:7vfYUQiOFsan7YJZ3pm3VO"
+      ],
+      "listing": {
+        "name": "KALX - FREEFORM - 2026-11-02 9:00am",
+        "station": "KALX"
+      }
+    },
+    "KALX:23277335": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23277335,
+        "title": "Hot, Rare, Lasagna (w/ guest Rare Earth)",
+        "url": "https://spinitron.com/KALX/pl/23277335/Hot-Rare-Lasagna-w-guest-Rare-Earth",
+        "start_time": "2026-11-02T12:00:00-0800",
+        "end_time": "2026-11-02T15:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:2Zge4Ca03jM16XhjX4Vwcc",
+        "spotify:track:2QeMk7OvxCHfZL4edoxaoM",
+        "spotify:track:4YMUmA7sWJXj7TJPBKU3pI",
+        "spotify:track:4LFa7X2BriAFUwAaSxFbUG",
+        "spotify:track:7Aipo9KCo2aUBYad0fX1Wo",
+        "spotify:track:1GqJuW0QpIIpUKksj1MPzV",
+        "spotify:track:0ZSN9G31kArqJrk06wu9zm",
+        "spotify:track:5sxyQcq3BfP1xbzrmW7fy3",
+        "spotify:track:0835fczYE7WQy6rQALiwXD",
+        "spotify:track:5XpXWsOZ5OBnyJtAbLmSbL",
+        "spotify:track:2bmRxQi3Jt42vE0xcFWEp5",
+        "spotify:track:6hMv2YjUTFZrMRppZZ314P",
+        "spotify:track:15TJ2zvv0Dzf3LcM3ccW9n",
+        "spotify:track:2zIW7CQ7uoQxYaDJYgrjPC",
+        "spotify:track:1OdejQ6IKQm3iqa9vcgoH4",
+        "spotify:track:1bH43KBv1T9KoXCRbDKlUL",
+        "spotify:track:2OemeNQiFBK4RLJurX2ki1",
+        "spotify:track:7DokN0Spqqvm4we1kHaNhk",
+        "spotify:track:283Mn1hh92qrcrb8fcIfHJ",
+        "spotify:track:49g3szYE0qIgP76FqQz2Oh",
+        "spotify:track:4hh98lPI8eofSZwtD1RRR7",
+        "spotify:track:3E8wDLAW6u8mqZ5slhMgP6",
+        "spotify:track:254s1g9Z6rfoogtdUcsXzt",
+        "spotify:track:0L1v9biTstS29aPUyIzzPG",
+        "spotify:track:1ZrdxW1UhxiyqDJVUzz9mp",
+        "spotify:track:43ge0rclt9TZX1NnZ6eUgd",
+        "spotify:track:7GX4qlmf0Zoy5zgtuPz28g",
+        "spotify:track:6NowyvBNiF3nYc0SXMdA2v"
+      ],
+      "listing": {
+        "name": "KALX - Hot, Rare, Lasagna (w/ guest Rare Earth) - 2026-11-02",
+        "station": "KALX"
+      }
+    },
+    "KALX:23277974": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23277974,
+        "title": "No Motion Picture",
+        "url": "https://spinitron.com/KALX/pl/23277974/No-Motion-Picture",
+        "start_time": "2026-11-02T15:00:00-0800",
+        "end_time": "2026-11-02T17:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:38Cj55wRyiokrlL1kkU0uO",
+        "spotify:track:5R85SgCHuTe7BSwDev9HQF",
+        "spotify:track:3PoIchFY9HxBqQhngEUKdS",
+        "spotify:track:5gnfxmjtolGmHNKGg3hsgQ",
+        "spotify:track:4B2uLfhkU5sNzseEhmi4S9",
+        "spotify:track:18ZFZ7R9F45nm3Xsg5NJJc",
+        "spotify:track:6s3El7lbfesvbqelVr10yK",
+        "spotify:track:4wBdGRxCaWFtqei59k5InB",
+        "spotify:track:1r4PsMLMGAMxc72Rm4YdJm",
+        "spotify:track:3RDfcTaxKAbcfBi3iCXV8S",
+        "spotify:track:27WA4tdC9OuzjaDSaU9LQC",
+        "spotify:track:0eZK6mHnLp7A4EVdVJmqfs",
+        "spotify:track:16Iowt02OAANO6h8Sqq5fw",
+        "spotify:track:0zAoco46XdaO3Bj7TyaFqZ",
+        "spotify:track:3otIsU8cYL1Jd82koGZfbv",
+        "spotify:track:0XGE1tG4ISXKxy9AEBuG5h",
+        "spotify:track:4HsrkYs0OgwEDsqGLmmXON",
+        "spotify:track:2LlaOzvhXNhLjsGBbPyVGb",
+        "spotify:track:0NbJ4j40Zz7EYxnPf6dIsj",
+        "spotify:track:14X7pbediCFpxA1HOOsCgU"
+      ],
+      "listing": {
+        "name": "KALX - No Motion Picture - 2026-11-02",
+        "station": "KALX"
+      }
+    },
+    "KALX:23278783": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23278783,
+        "title": "NEWS",
+        "url": "https://spinitron.com/KALX/pl/23278783/NEWS",
+        "start_time": "2026-11-02T18:00:00-0800",
+        "end_time": "2026-11-02T18:15:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:1QGy4rzK5p8N7OYYn5kWSt",
+        "spotify:track:6eB35pgMXdfhz5Z0WjwF1O"
+      ],
+      "listing": {
+        "name": "KALX - NEWS - 2026-11-02",
+        "station": "KALX"
+      }
+    },
+    "KALX:23278931": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23278931,
+        "title": "FREEFORM",
+        "url": "https://spinitron.com/KALX/pl/23278931/FREEFORM",
+        "start_time": "2026-11-02T18:15:00-0800",
+        "end_time": "2026-11-02T20:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:0WzPM5x9NoPMrtFJIkbxl7",
+        "spotify:track:3Ka4Z83YtVN57ckfdS2Cb1",
+        "spotify:track:36T6UzxRznWRn038GvM7U5",
+        "spotify:track:2R5qLFcvMc0zablqfIr3lM",
+        "spotify:track:2bmRxQi3Jt42vE0xcFWEp5",
+        "spotify:track:2XUQ0AYl4HPE0oK0qt70qw",
+        "spotify:track:31qvNzMEJmcJCeSsHq9iGQ",
+        "spotify:track:6P0X1mi9TdMnbyh4LBmCZW",
+        "spotify:track:6qn8HvjQBdfRxkSL3ELium",
+        "spotify:track:6VecBjaKdc1fZBSbgpsxq9",
+        "spotify:track:3kAiVHyHd0O25yawr07TKR",
+        "spotify:track:6hQ4FNfbxDiETvXAgHMGp9",
+        "spotify:track:4jXWabhPWO75yMlUribnSg",
+        "spotify:track:5NtATk9xTMCKBlL46IJoXC",
+        "spotify:track:7ieSKdo9F5jrblXxVypz1s",
+        "spotify:track:15TJ2zvv0Dzf3LcM3ccW9n",
+        "spotify:track:1uBy9ezTVDrKWTIhkbqIVW",
+        "spotify:track:5hebWsviguP3NDcGwzVF4j",
+        "spotify:track:3h1AFc1D6tC4fjmhCojQdP",
+        "spotify:track:0mXU4e7OW0pl1Gkch9sX1s"
+      ],
+      "listing": {
+        "name": "KALX - FREEFORM - 2026-11-02 6:15pm",
+        "station": "KALX"
+      }
+    },
+    "KALX:23279238": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23279238,
+        "title": "FREEFORM",
+        "url": "https://spinitron.com/KALX/pl/23279238/FREEFORM",
+        "start_time": "2026-11-02T20:00:00-0800",
+        "end_time": "2026-11-02T22:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:76amMtyRHVVa2mpIuclM9l",
+        "spotify:track:7sRwx30bx2zCSJz6Lo6KB1",
+        "spotify:track:2dKZPlqXJ8Y4I1yfnDyCbY",
+        "spotify:track:5GlLhXOe2wxVCIzoiobgQe",
+        "spotify:track:3rt36njbDLJGdvdySoH0uQ",
+        "spotify:track:5oAstMfysTU1PmFOZHIFOe",
+        "spotify:track:3tlDydl22InR44g9k8zZPl",
+        "spotify:track:73WVkxADucgcm9tniaMTEH",
+        "spotify:track:5qKD8WTc5qIZW96rIcgzXE",
+        "spotify:track:0ZpRZOwHjte2faGYjv5G22",
+        "spotify:track:18gnfGYOXPj9plwfyqlwDQ",
+        "spotify:track:4Y5Zx6Dht91ZUpCQ8NPePX",
+        "spotify:track:4IiAXno0qReuQfsQztt0nD",
+        "spotify:track:4BgwTRny1mWTRtjXAV2B1o",
+        "spotify:track:0XHf6Pm3PmOkhQmZpRcPxP"
+      ],
+      "listing": {
+        "name": "KALX - FREEFORM - 2026-11-02 8:00pm",
+        "station": "KALX"
+      }
+    },
+    "KALX:23279769": {
+      "station": "KALX",
+      "broadcast": {
+        "id": 23279769,
+        "title": ".",
+        "url": "https://spinitron.com/KALX/pl/23279769/-",
+        "start_time": "2026-11-02T22:00:00-0800",
+        "end_time": "2026-11-03T00:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:3fPB1bnRQIFjh79tKkC8Z8",
+        "spotify:track:3td1pGANkEItfyVmfxB6Vb",
+        "spotify:track:0iSDA5x3Szznzb7JkM4dZN",
+        "spotify:track:1UQwm3FCflbYDYl1C1cuQI",
+        "spotify:track:5hvyCq3jgDrv3hUAlsqMvO",
+        "spotify:track:7HASP2XchCf5Wm7Kjlb7ua",
+        "spotify:track:31dHt2zr4E9aBgLqLrkncq",
+        "spotify:track:7lRsrT9rpJO0oOsriiVfHv",
+        "spotify:track:3wgN7w9we5a5fJt1bg0H3a",
+        "spotify:track:7Izv79UWDt0Vtn5nisAObO",
+        "spotify:track:1h7bvS8VXii2hQ5L9TuIfI",
+        "spotify:track:2Qv5PG1qRblecEHPZtXrCF",
+        "spotify:track:4Uwis4v4b76JtlKBDn7vsv",
+        "spotify:track:5Lsjkx2mwnz7GyOoFVpSLK",
+        "spotify:track:3OT8nua8BTjLjFBGIm1tf1",
+        "spotify:track:4DqahEuFiFwmzZfoLywSWa",
+        "spotify:track:31rIoFLrx5sNv4CfoiKO6a",
+        "spotify:track:1SFZh7BERHLo4WLAgANmD8",
+        "spotify:track:3kxGAfkFu8rmxuHXDmh8es",
+        "spotify:track:59n67ZzlUV3lySWgJlnhUG",
+        "spotify:track:22m6BocmDlBBScE4xsFhFp",
+        "spotify:track:5J9283BeJeyuhqSwQSMknB",
+        "spotify:track:4mcQKvmzBgPn4vJht3uF3n",
+        "spotify:track:4AdY2eRIHaZgPnZVHG6LoI"
+      ],
+      "listing": {
+        "name": "KALX - . - 2026-11-02",
+        "station": "KALX"
       }
     },
     "KPOO:22953138": {
@@ -148978,6 +149295,259 @@
         "station": "KPOO",
         "track_count": 61,
         "url": "https://open.spotify.com/playlist/0VpsJzGSbmYC9XATPS0nIk"
+      }
+    },
+    "KPOO:23276672": {
+      "station": "KPOO",
+      "broadcast": {
+        "id": 23276672,
+        "title": "The Power of Blues Compels You",
+        "url": "https://spinitron.com/KPOO/pl/23276672/The-Power-of-Blues-Compels-You",
+        "start_time": "2026-11-02T09:00:00-0800",
+        "end_time": "2026-11-02T12:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:4z2vmbaLbwKsOxUsMQAeoi",
+        "spotify:track:10Yo58FUYLVZkTlQZaeRIi",
+        "spotify:track:1mAUlLRhsIhOpXxE6Kpdrj",
+        "spotify:track:50RfvOD6zPhR96rDca4xXi",
+        "spotify:track:0qvTRFGltfjEUGjsyX7Lf7",
+        "spotify:track:3EHvrOCplH38dsAKkvEEs7",
+        "spotify:track:14RtX37onWzSyGDxrVEjnH",
+        "spotify:track:7dAPKLon6nww4Wnuh40rCl",
+        "spotify:track:27xShB6Qt2GgXVnqBWvrGE",
+        "spotify:track:54PGLCAmvfMS2icEdPfh1B",
+        "spotify:track:38naqW6vgJRO74QMX2Iegv",
+        "spotify:track:0dKsPTVUbeG8cqrc6OLipX",
+        "spotify:track:50grzJoU0ero7A53Lrtx5O",
+        "spotify:track:26KSi89P5neJ0WMDWx1rlB",
+        "spotify:track:5DrlwMMjMRzZOU17ZqcYlo",
+        "spotify:track:3YdKJzcoMZMacISlpY4QoP",
+        "spotify:track:2KIz4ileT7mvzFhAR8U5gS",
+        "spotify:track:3dUcm0TvbLkJvS0MxeA4EJ",
+        "spotify:track:1cP8ipMra7G4lsaub87cma",
+        "spotify:track:5pVrJ3eGaDMfoLB4ZHzGTZ",
+        "spotify:track:4bklenp0y0YM8IaBL3soDg",
+        "spotify:track:1kHewB463xeQLENrXpjsNG",
+        "spotify:track:7e4prWT6mySqhXX5Jzr4bY",
+        "spotify:track:62ADPtrDDtZmFMt6WLUsp0",
+        "spotify:track:3iS1606O6RxHnaTNjvdqQm",
+        "spotify:track:3P1ZfYgfdZQPIpcQmAHxah",
+        "spotify:track:3OG9kdrsIuvM3cjD9np7pq",
+        "spotify:track:5wq930Kw7zzYduN7V75vPI",
+        "spotify:track:0kzT5CkMeGxDAWp9iSqokY",
+        "spotify:track:5AaUTfAm00FZg5O4ZFECBK",
+        "spotify:track:3KNceuSjPLnVmeVKwBiavG",
+        "spotify:track:76x2i8XTh1eORHc8ZXNFjP",
+        "spotify:track:1WFulxlaY6sz4mhr86EOYY",
+        "spotify:track:5aiMOFus41X2EIBIQuHAFX",
+        "spotify:track:5zpXF0lTiuXLFrlPZYGmj4",
+        "spotify:track:44BmNSqH9uZV5OfIjGcER3",
+        "spotify:track:1lvcrvzsxGXfaVO5zFgJf9",
+        "spotify:track:7wuO3DvGbHPGYbcaY0qCqB",
+        "spotify:track:4qpIk2rvkmxJEVvt38tepd",
+        "spotify:track:1SMve8RRwhfTtAiWIvYfAj",
+        "spotify:track:2TAb0MYiC6ADy6pYunLZiP"
+      ],
+      "listing": {
+        "name": "KPOO - The Power of Blues Compels You - 2026-11-02",
+        "station": "KPOO"
+      }
+    },
+    "KPOO:23277453": {
+      "station": "KPOO",
+      "broadcast": {
+        "id": 23277453,
+        "title": "Let Me Touch Your Mind",
+        "url": "https://spinitron.com/KPOO/pl/23277453/Let-Me-Touch-Your-Mind",
+        "start_time": "2026-11-02T12:00:00-0800",
+        "end_time": "2026-11-02T13:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:1GYQ2TIHZnRvEs6mc0bbDn",
+        "spotify:track:2nMIbw9NAjPGzkZa7c8Bre"
+      ],
+      "listing": {
+        "name": "KPOO - Let Me Touch Your Mind - 2026-11-02",
+        "station": "KPOO"
+      }
+    },
+    "KPOO:23277525": {
+      "station": "KPOO",
+      "broadcast": {
+        "id": 23277525,
+        "title": "Soul Explosion",
+        "url": "https://spinitron.com/KPOO/pl/23277525/Soul-Explosion",
+        "start_time": "2026-11-02T13:00:00-0800",
+        "end_time": "2026-11-02T15:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:0WZiCwrrfFy7oGmvROawXY",
+        "spotify:track:3rfzlFCQsbH1x6DclZugGB",
+        "spotify:track:3JNd8K8SiSCgo0XpPOG8ml",
+        "spotify:track:7eIsqXSlZsZNjFycE8WbHX",
+        "spotify:track:2turkFGCzq31j4l3y3p5ya",
+        "spotify:track:0D1S1rK4M8D3kJDFN50u0G",
+        "spotify:track:2tX1LD4EFEfk6rsJx5D8K4",
+        "spotify:track:0cpEhkrQAzSp0YSLoDWbYy",
+        "spotify:track:0ZWEwxGqr2p5t9SZhxbYCf",
+        "spotify:track:2rzgfGkOI769f7aCA4L1P4",
+        "spotify:track:3JzXQy3K14u0wz0jUGSCJw",
+        "spotify:track:1KAhxpbk4ameKD0XPiDnrl",
+        "spotify:track:3bJduRocSXrNtCVzlYaWQm",
+        "spotify:track:3hSjL3OHRfIJp9P3RT2RQw",
+        "spotify:track:5EoYc5wvRYOtkudLfrjsL1",
+        "spotify:track:2P9LXPhctJZy6GUYtC5NSm",
+        "spotify:track:3b3ssgz0tjcoVqfKavrbaA",
+        "spotify:track:0Vj4Cz1tMS18YvmT1YUvlP",
+        "spotify:track:4Pya4rIhdgMbk6Iwkm7irj",
+        "spotify:track:5ff6yHII2d6LwjY9DIYKQd",
+        "spotify:track:4QgwAu6f0kmF3ST3ixpkIy",
+        "spotify:track:00EslWMyKhFhrMXvU11t7S",
+        "spotify:track:1Yy2Mz3WwxZQfQe55ZgB6I",
+        "spotify:track:0ZifV6O6XUOdMShpo5KgsX",
+        "spotify:track:3AIKlMw7NcJNRQpPb70YaH"
+      ],
+      "listing": {
+        "name": "KPOO - Soul Explosion - 2026-11-02",
+        "station": "KPOO"
+      }
+    },
+    "KPOO:23278060": {
+      "station": "KPOO",
+      "broadcast": {
+        "id": 23278060,
+        "title": "Gramophoney Baloney",
+        "url": "https://spinitron.com/KPOO/pl/23278060/Gramophoney-Baloney",
+        "start_time": "2026-11-02T15:00:00-0800",
+        "end_time": "2026-11-02T18:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:0kpMOh8navjCfHGlW9Qufl",
+        "spotify:track:22HG96BZKJuBxDdcYJmGEc",
+        "spotify:track:7ektv3vTyawXCpwCAGlvJY",
+        "spotify:track:7jAB11K2UAxyeNR9i3rewt",
+        "spotify:track:5hRc360NJsiQGYqcJ6eeWp",
+        "spotify:track:2KEfEVjNYYMGPM7c0Loorw",
+        "spotify:track:1ZISZsNzkcx4yfQ9yfTlNs",
+        "spotify:track:1KABJkxC1hSYgi8uBawIBp",
+        "spotify:track:125gDWdciRUVUC9mJARtd8",
+        "spotify:track:6E83nnusIQtHYwb0YXGlTn",
+        "spotify:track:37KryvwJh7dkNG0AZkkYh4",
+        "spotify:track:2qSHGCt3pjNbwmN8m5ufXf",
+        "spotify:track:4DqMi3N2u6tVHcycKkIBVs",
+        "spotify:track:0kEBYD0sMCPtsfpwFLG9aj",
+        "spotify:track:6T03DlZKvuET4V1IvMJDXS",
+        "spotify:track:69wR5RzarK0rbsprMEcWzM",
+        "spotify:track:6quC7Y2iuvMMQJWYIX4ida",
+        "spotify:track:2Ux7URPXGphrg2hpfha38g",
+        "spotify:track:0rwDA4SbpVPBOjMWlhOSRN",
+        "spotify:track:3OLup44BjmBAJWoj7Inj9p",
+        "spotify:track:1hn1anDgmYRxS9M3raq88c",
+        "spotify:track:53YyeapfoD8sFvDsgxrUCc",
+        "spotify:track:60j8nfuSyTFMHmtzFXyqJl",
+        "spotify:track:48Jj9dbwXDCRxmWPYZAk3V",
+        "spotify:track:3nCz1b5DMdju29NC0QPyDV",
+        "spotify:track:7Aedv4emaWoPM7xCIaiuox",
+        "spotify:track:532g2CGQLh4cOr7Ls0rEYT",
+        "spotify:track:3oDfNPDyck6ejYTWA0rDu7"
+      ],
+      "listing": {
+        "name": "KPOO - Gramophoney Baloney - 2026-11-02",
+        "station": "KPOO"
+      }
+    },
+    "KPOO:23278817": {
+      "station": "KPOO",
+      "broadcast": {
+        "id": 23278817,
+        "title": "Wheels",
+        "url": "https://spinitron.com/KPOO/pl/23278817/Wheels",
+        "start_time": "2026-11-02T18:00:00-0800",
+        "end_time": "2026-11-02T21:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:05N6kofGjyDnuJQrUmSfdL",
+        "spotify:track:1j5zkcGDtU6kttmDZdUcMk",
+        "spotify:track:1P5eIMak59g6gv3rNWvKz0",
+        "spotify:track:7fNIPFUeUdeSNK09ZsS4it",
+        "spotify:track:6s5LxaNwBzVxpALGd1lcz4",
+        "spotify:track:2va8itdYMiLmHkZ80IiAGQ",
+        "spotify:track:0odnXEVpQhbdNwLiZsmJIW",
+        "spotify:track:4TrIZFWEQiug61RhhcXiJb",
+        "spotify:track:4PR5j5MHSNFHuw62LbTE7F",
+        "spotify:track:0lMrcqu6cQj8HvHxYqbrCw",
+        "spotify:track:1ad70G1YFyYXkJH4aLqZlo",
+        "spotify:track:5vafH68gZnicjkrNlIWONm",
+        "spotify:track:3mmh33qMJ8Q6dzSki07o9b",
+        "spotify:track:3yQnxPJ6yI6DLSMnxHfZbi",
+        "spotify:track:6oJcYjhoDhxnK2igzLPKCL",
+        "spotify:track:6SrRegB7sIl0meq3J5M0bJ",
+        "spotify:track:5iUT6cJ9qNoWUwY16tAviB",
+        "spotify:track:2H6dgGxdZMYZxMcvvoZQk2",
+        "spotify:track:64WnWiungUiNSONzmBsuVP",
+        "spotify:track:5IDUpukg1YmxqoMMA84cHY",
+        "spotify:track:0wZXCxfn0wyrf81OEwsLTP",
+        "spotify:track:2KhsSm9Mvo6VBd8oP5H0LJ",
+        "spotify:track:34wm3LlGB1R6kVPHvPCyVe",
+        "spotify:track:2r28ekGGb7aH5t6UvH0yh6",
+        "spotify:track:3qjIa6m7qxY2AN27Rm4obc",
+        "spotify:track:1f54Az7xbZJn1ErEY1Xkw1",
+        "spotify:track:3oExRYlOZPqBEDAX9W22Dy",
+        "spotify:track:2MpvyTQg3micUo7S6gHE6j"
+      ],
+      "listing": {
+        "name": "KPOO - Wheels - 2026-11-02",
+        "station": "KPOO"
+      }
+    },
+    "KPOO:23279653": {
+      "station": "KPOO",
+      "broadcast": {
+        "id": 23279653,
+        "title": "Grinders Grooveyard",
+        "url": "https://spinitron.com/KPOO/pl/23279653/Grinders-Grooveyard",
+        "start_time": "2026-11-02T21:00:00-0800",
+        "end_time": "2026-11-03T00:00:00-0800"
+      },
+      "state": "prepared",
+      "owner_id": "dustmason",
+      "desired_uris": [
+        "spotify:track:3cJ0HFvcNIzRXLAyCVSL0n",
+        "spotify:track:5hyX5W3m1WW7vMt8E0vgrg",
+        "spotify:track:38XhnzjSlehQJSa5G2PjrR",
+        "spotify:track:0U7yKJzLF7KpKU7FVkELtz",
+        "spotify:track:6Tit6k7H1nlApI3CUeQNXc",
+        "spotify:track:5PPmP7W8yHIexyhKtupZCi",
+        "spotify:track:63h6VArWjWLCU9ocI0NBrH",
+        "spotify:track:58wRR8qNn4MpdsHmYZPCxw",
+        "spotify:track:0h0ZWe2DHlhc4CJTza2RtZ",
+        "spotify:track:3Hvk645LrZ4elKC6iinEwf",
+        "spotify:track:4gu0iQhIvSDVonZzWA6t64",
+        "spotify:track:1Kpjunm8KJsR73VbYFSaj2",
+        "spotify:track:5T02JeV8QqQ0dgGkjr7RZC",
+        "spotify:track:38p4I9p7myOXSvJLDh0ll5",
+        "spotify:track:7ojZPdQL1ZAlDkX2g8TO6E",
+        "spotify:track:0D9X9leyIktRiqeYoerh7e",
+        "spotify:track:3lM45UpDFwQDJDwcLA7bpo",
+        "spotify:track:456bq3ntPq1DlBViKjDWh3",
+        "spotify:track:54V1OUmc7rDtxrSG9NSU2h",
+        "spotify:track:11vbGx2Dzzk0ZXh2tUbC6a",
+        "spotify:track:0jHhCSwho154BN4Afal81D"
+      ],
+      "listing": {
+        "name": "KPOO - Grinders Grooveyard - 2026-11-02",
+        "station": "KPOO"
       }
     },
     "legacy:00E6soA12rEXiByiwKj8eV": {
