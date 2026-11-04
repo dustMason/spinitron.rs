@@ -244,6 +244,7 @@ pub struct SpotifyClient {
     total_cache_hits: u32,
     total_api_calls: u32,
     archive_inventory: Option<Vec<RemotePlaylist>>,
+    archive_inventory_error: Option<String>,
 }
 
 impl SpotifyClient {
@@ -286,6 +287,7 @@ impl SpotifyClient {
             total_cache_hits: 0,
             total_api_calls: 0,
             archive_inventory: None,
+            archive_inventory_error: None,
         })
     }
 
@@ -1211,26 +1213,41 @@ impl ArchiveSpotify for SpotifyClient {
         marker: &str,
         refresh: bool,
     ) -> Result<Option<RemotePlaylist>> {
-        if refresh || self.archive_inventory.is_none() {
-            // A manual retry must not rely on a cached absence. If refresh
-            // fails, also discard the old inventory rather than reuse it later.
+        if refresh {
             self.archive_inventory = None;
-            let inventory = self.read_archive_inventory(refresh).await?;
-            if inventory.repeated_ids > 0 {
-                eprintln!(
-                    "Spotify library returned {} repeated entries; confirming with a second complete scan",
-                    inventory.repeated_ids
-                );
-                // Stable repeats are an API listing quirk, not another playlist.
-                // Require agreement before using this scan to infer absence.
-                let confirmation = self.read_archive_inventory(refresh).await?;
-                if inventory != confirmation {
-                    return Err(anyhow!(
-                        "Spotify library changed between scans; refusing to use the inventory"
-                    ));
+            self.archive_inventory_error = None;
+        }
+        if let Some(error) = &self.archive_inventory_error {
+            return Err(anyhow!(
+                "Recovery inventory failed earlier in this run: {error}"
+            ));
+        }
+        if self.archive_inventory.is_none() {
+            let scan = async {
+                let inventory = self.read_archive_inventory(refresh).await?;
+                if inventory.repeated_ids > 0 {
+                    eprintln!(
+                        "Spotify library returned {} repeated entries; confirming with a second complete scan",
+                        inventory.repeated_ids
+                    );
+                    let confirmation = self.read_archive_inventory(refresh).await?;
+                    if inventory != confirmation {
+                        return Err(anyhow!(
+                            "Spotify library changed between scans; refusing to use the inventory"
+                        ));
+                    }
+                }
+                Ok(inventory.playlists)
+            }.await;
+            match scan {
+                Ok(playlists) => self.archive_inventory = Some(playlists),
+                Err(error) => {
+                    // A failed scan is not evidence of absence. Avoid repeating
+                    // the same full-library failure for every pending broadcast.
+                    self.archive_inventory_error = Some(error.to_string());
+                    return Err(error);
                 }
             }
-            self.archive_inventory = Some(inventory.playlists);
         }
         let matches: Vec<_> = self
             .archive_inventory
@@ -1338,6 +1355,7 @@ mod tests {
             total_cache_hits: 0,
             total_api_calls: 0,
             archive_inventory: None,
+            archive_inventory_error: None,
         }
     }
 

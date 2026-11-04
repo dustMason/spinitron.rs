@@ -338,21 +338,71 @@ The catalog is durable state, **not a disposable cache**. Keep it in version
 control and restore it if a checkout loses it. Missing or malformed catalogs
 cause the archive to fail rather than silently creating duplicate playlists.
 
+### Durable creation journal
+
+Archive mode also requires the `spinitron-creation-journal` branch on `origin`.
+Its `creation-journal.json` records the Spotify owner, broadcast, matched track
+sequence and creation state. It contains no credentials. This branch is durable
+state: do not delete, reset, merge or replace it with an Actions cache.
+
 The workflow performs these phases in order:
 
-1. Archive new broadcasts and verify the exact track sequence. Failed drafts stay
-   in the library and can be resumed; completed playlists are never repopulated.
-2. Generate the full website from the catalog, including older playlists outside
-   the library.
-3. Commit the catalog and generated website together, keeping new playlists saved.
+1. Restore acknowledged creation records into the catalog, including IDs and
+   completed broadcasts that a previous runner could not publish.
+2. For a new broadcast, push a `creating` record **before** sending the creation
+   request. Push the returned playlist ID as `filling` **before** adding tracks.
+   After verifying tracks and building the preview, push `ready`.
+3. Generate the full website and commit the catalog and generated website together.
+   This final publication is independent of the earlier creation checkpoints.
 
-For manual operation:
+Normal new broadcasts and explicit rejected creations do not scan Your Library.
+Known IDs are inspected directly. Only uncertain creations and pending records
+from before this journal existed use the library inventory. Recovery failures
+remain visible, but do not prevent unrelated new broadcasts from being archived.
+A failed inventory is remembered as an error for the rest of the process; it is
+never treated as an empty library. A manual retry forces a fresh scan.
+
+Journal pushes use ordinary fast-forward updates with unique commit IDs so two
+writers starting from the same revision cannot both acknowledge the same claim.
+A rejected or uncertain journal push stops further archive writes. Returned IDs
+are also saved in the local catalog for the workflow's recovery artifact. On
+restart, acknowledged journal state is restored before new work; conflicting IDs,
+owners or track sequences stop the archive for reconciliation. Completed playlists
+are never repopulated.
+
+#### First deployment
+
+After merging this version, run **Actions → Daily Playlist Update → Run workflow**
+on **main** once with `initialize_creation_journal` checked and `auth_check_only`
+unchecked. Later scheduled/manual runs leave initialization unchecked. The existing
+`contents: write` workflow permission and checkout credentials are sufficient; no
+new GitHub or Spotify secret is needed.
+
+Initialization refuses an existing journal. A missing journal on an ordinary run
+is an error, not permission to recreate it. If the branch is ever lost, restore
+its history from a trusted backup rather than checking initialization again.
+Pre-existing `prepared` records are marked as requiring reconciliation because
+the old runner may have created a playlist without publishing its ID. They still
+require a complete, unambiguous library check; this upgrade does not silently
+clear them or authorize duplicate creation.
+
+For manual operation, use a current checkout authenticated to the personal
+GitHub account and run from the repository root. Archive mode now pushes creation
+checkpoints to `origin` itself, even though publishing the website remains separate:
 
 ```bash
+# First deployment only, if the journal branch has never existed:
+cargo run -- --archive --initialize-creation-journal
+
+# All subsequent runs:
 cargo run -- --archive
 python3 scripts/update_website.py
 # Commit and push data/catalog.json and the generated docs changes.
 ```
+
+Do not run a local archive concurrently with Actions or another local archive.
+Actions runs are serialized by the `spinitron-catalog` concurrency group. Stop old
+archive binaries/workflows before migrating; they do not write this journal.
 
 Recovery artifacts preserve the catalog if a workflow cannot push its state.
 Historical `released` and `release_attempted` entries remain readable and are
@@ -361,8 +411,7 @@ from Your Library: older playlists outside the library would be lost.
 
 An uncertain playlist-creation request is recovered only when exactly one owned
 playlist has the broadcast's precise archive marker. If none or multiple are
-found, reconcile the ID before continuing; the app does not repeat the creation
-blindly. Run only one local archive process at a time; Actions runs are serialized.
+found, reconcile the ID before continuing; the app does not repeat creation blindly.
 
 After inspecting an unresolved creation, use **Actions → Daily Playlist Update →
 Run workflow**, with `retry_creation` set to its exact catalog key, for example

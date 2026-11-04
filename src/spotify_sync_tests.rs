@@ -1294,3 +1294,40 @@ async fn new_playlists_still_get_created_with_the_matched_track_count() {
     assert_eq!(bodies[0]["name"], "KALX - Test");
     assert_eq!(bodies[1], serde_json::json!({"uris":contents}));
 }
+
+#[tokio::test]
+async fn failed_recovery_inventory_is_cached_as_an_error_until_explicit_refresh() {
+    let (mut client, server) = mock_client(|_| {
+        vec![
+            exchange(
+                "GET",
+                "/v1/me/playlists?limit=50&offset=0",
+                serde_json::json!({"items": [], "offset": 0, "total": 1, "next": null}),
+            ),
+            exchange(
+                "GET",
+                "/v1/me/playlists?limit=50&offset=0",
+                serde_json::json!({"items": [], "offset": 0, "total": 0, "next": null}),
+            ),
+        ]
+    })
+    .await;
+    assert!(client
+        .find_archive("Spinitron archive: KALX:1", false)
+        .await
+        .is_err());
+    assert!(client
+        .find_archive("Spinitron archive: KALX:2", false)
+        .await
+        .unwrap_err()
+        .to_string()
+        .contains("failed earlier"));
+    assert!(client.archive_inventory.is_none());
+    assert!(client
+        .find_archive("Spinitron archive: KALX:1", true)
+        .await
+        .unwrap()
+        .is_none());
+    assert!(client.archive_inventory_error.is_none());
+    assert_eq!(requests(server).await.len(), 2);
+}
