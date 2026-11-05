@@ -6248,7 +6248,7 @@
           "start_time": "2026-11-03T20:00:00-0800",
           "end_time": "2026-11-04T01:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1cTXB5nj4WEIfUzVMgr9Xp",
         "desired_uris": [
@@ -6268,8 +6268,105 @@
           "spotify:track:7lY7BHiZ50wCwiUBIGmrlk"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T01:00:00-0800",
+          "broadcast_start": "2026-11-03T20:00:00-0800",
+          "imported_at": "2026-11-05T23:55:03.896431891+00:00",
+          "last_updated": "2026-11-05 23:55 UTC",
           "name": "KPOO - Fingersnaps Salon...Music & Conversation - 2026-11-03",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Rachid Taha"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736472673c1cca3bd562fa9eeb",
+              "name": "Ya Rayah"
+            },
+            {
+              "artists": [
+                "Woody Shaw"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f9d2a0a64df1ec3dcd5a7486",
+              "name": "Escape Velocity - Live"
+            },
+            {
+              "artists": [
+                "Jim McNeely",
+                "Vanguard Jazz Orchestra",
+                "Scott Wendholt",
+                "John Mosca"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27378ad9c23c8f578cb23cc0991",
+              "name": "Thad"
+            },
+            {
+              "artists": [
+                "Vanguard Jazz Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27369e46064f359c4b5501011bd",
+              "name": "Gil"
+            },
+            {
+              "artists": [
+                "Vanguard Jazz Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337271df18f0be9c92058f7da",
+              "name": "Tow Away Zone (Live)"
+            },
+            {
+              "artists": [
+                "Gloria Coleman Quartet",
+                "Pola Roberts"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eae5618b8fc2d909ebd98998",
+              "name": "Hey Sonny Red"
+            },
+            {
+              "artists": [
+                "Woody Shaw"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f9d2a0a64df1ec3dcd5a7486",
+              "name": "Blues for Ball - Live"
+            },
+            {
+              "artists": [
+                "Woody Shaw"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f9d2a0a64df1ec3dcd5a7486",
+              "name": "Seventh Avenue - Live"
+            },
+            {
+              "artists": [
+                "Chris Potter Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325925fbe3f109601521704a4",
+              "name": "Boogie Stop Shuffle - Live at The Village Vanguard, New York / 2002"
+            },
+            {
+              "artists": [
+                "Chris Potter Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325925fbe3f109601521704a4",
+              "name": "7.5 - Live at The Village Vanguard, New York / 2002"
+            },
+            {
+              "artists": [
+                "Chris Potter Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325925fbe3f109601521704a4",
+              "name": "What You Wish - Live at The Village Vanguard, New York / 2002"
+            },
+            {
+              "artists": [
+                "George Adams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f536fe19f093c0e03e6306a8",
+              "name": "Intentions"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23285049/Fingersnaps-Salon-Music-Conversation",
+          "station": "KPOO",
+          "track_count": 14,
+          "url": "https://open.spotify.com/playlist/1cTXB5nj4WEIfUzVMgr9Xp"
         }
       },
       "needs_reconciliation": false
