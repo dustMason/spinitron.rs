@@ -30,7 +30,13 @@ impl Repo {
         Self { root, client }
     }
     fn journal(&self, initialize: bool) -> Result<CreationJournal> {
-        CreationJournal::open(&self.client, "owner", initialize)
+        let mut journal = CreationJournal::open(&self.client, "owner", initialize)?;
+        // Bare-repository tests do not contact GitHub. Test the production
+        // twelve-second policy with a simulated clock below instead of sleeping.
+        if let Store::Git { pacer, .. } = &mut journal.store {
+            pacer.interval = Duration::ZERO;
+        }
+        Ok(journal)
     }
 }
 impl Drop for Repo {
@@ -115,9 +121,15 @@ fn competing_identical_claims_cannot_both_be_acknowledged() {
     let mut first = repo.journal(false).unwrap();
     let mut second = repo.journal(false).unwrap();
     first.record("KALX:1", &entry()).unwrap();
-    assert!(second.record("KALX:1", &entry()).is_err());
-    assert!(second.check_health().is_err());
-    assert!(second.record("KALX:1", &entry()).is_err());
+    let error = second.record("KALX:1", &entry()).unwrap_err();
+    assert!(format!("{error:#}").contains("remote ref changed"));
+    let health = second.check_health().unwrap_err().to_string();
+    assert!(health.contains("Git push failed"));
+    assert!(health.contains("remote ref changed"));
+    assert_eq!(
+        second.record("KALX:1", &entry()).unwrap_err().to_string(),
+        health
+    );
     assert_eq!(
         repo.journal(false).unwrap().records()["KALX:1"].entry.state,
         State::Creating
@@ -172,4 +184,92 @@ fn malformed_or_conflicting_records_fail_closed() {
         assert!(parse(&bad.to_string(), "owner").is_err(), "{scenario}");
     }
     assert!(parse("not JSON", "owner").is_err());
+}
+
+#[test]
+fn push_pacing_waits_between_acknowledged_checkpoints_without_clock_drift() {
+    let mut pacer = PushPacer::default();
+    let start = Instant::now();
+    assert_eq!(pacer.remaining(start), Duration::ZERO);
+    pacer.acknowledged(start);
+    assert_eq!(pacer.remaining(start), Duration::from_secs(12));
+    assert_eq!(
+        pacer.remaining(start + Duration::from_secs(5)),
+        Duration::from_secs(7)
+    );
+    assert_eq!(
+        pacer.remaining(start + Duration::from_secs(12)),
+        Duration::ZERO
+    );
+    assert_eq!(
+        pacer.remaining(start + Duration::from_secs(90)),
+        Duration::ZERO
+    );
+    // Measure from completion, including slow requests. A long Git request
+    // cannot cause following pushes to bunch up while catching up to a schedule.
+    pacer.acknowledged(start + Duration::from_secs(90));
+    assert_eq!(
+        pacer.remaining(start + Duration::from_secs(90)),
+        Duration::from_secs(12)
+    );
+    assert_eq!(
+        pacer.remaining(start + Duration::from_secs(102)),
+        Duration::ZERO
+    );
+}
+
+#[test]
+fn git_failure_categories_never_expose_credentials_or_arbitrary_remote_output() {
+    for (stderr, expected) in [
+        (
+            "remote: Too many requests https://SECRET@github.com/repo",
+            "remote throttling/rate limit",
+        ),
+        (
+            "RPC failed; HTTP 429 Authorization: Bearer SECRET",
+            "remote throttling/rate limit",
+        ),
+        (
+            "[rejected] branch -> branch (non-fast-forward) SECRET",
+            "remote ref changed",
+        ),
+        (
+            "remote: error: GH013: protected branch; SECRET",
+            "remote branch protection",
+        ),
+        (
+            "Authentication failed for https://SECRET@github.com/repo",
+            "origin authentication or permissions",
+        ),
+        (
+            "The requested URL returned error: 503 SECRET",
+            "remote server error",
+        ),
+        (
+            "fatal: unable to access https://SECRET@github.com: Connection reset by peer",
+            "network/connection failure",
+        ),
+        ("custom hook output contains SECRET", "unclassified error"),
+    ] {
+        let reason = git_failure_category(stderr.as_bytes());
+        assert!(reason.starts_with(expected), "{reason}");
+        assert!(!reason.contains("SECRET"));
+        assert!(!reason.contains("github.com"));
+    }
+}
+
+#[test]
+fn original_checkpoint_failure_survives_final_health_check() {
+    let root = std::env::temp_dir().join(format!(
+        "spinitron-journal-error-test-{}",
+        uuid::Uuid::new_v4()
+    ));
+    fs::create_dir(&root).unwrap();
+    let mut journal = CreationJournal::for_test(&root.join("journal.json"), "owner");
+    journal.fail_after(0);
+    let original = journal.record("KALX:1", &entry()).unwrap_err();
+    let final_error = journal.check_health().unwrap_err().to_string();
+    assert!(final_error.contains(&original.to_string()));
+    assert!(final_error.contains("restart from the remote"));
+    fs::remove_dir_all(root).unwrap();
 }

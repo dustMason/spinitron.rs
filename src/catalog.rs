@@ -223,14 +223,16 @@ impl Catalog {
     }
 
     fn checkpoint_creation(&mut self, path: &Path, key: &str) -> Result<()> {
+        // Save returned IDs before any network/pacing wait so the workflow's
+        // recovery artifact can retain them even if the runner is interrupted.
+        let saved = self.save(path);
         let acknowledged = self
             .journal
             .as_mut()
             .context("Creation journal is required for archiving")?
             .record(key, &self.entries[key]);
-        // Even when the remote acknowledgement is lost, preserve any returned
-        // ID locally for the workflow's catalog push/recovery artifact.
-        let saved = self.save(path);
+        // Both writes are attempted. A local filesystem failure must not stop
+        // us from recording a known ID remotely, but either failure stops work.
         acknowledged?;
         saved
     }
@@ -565,6 +567,7 @@ impl Catalog {
                     // silently authorize another attempt in a scheduled run.
                     self.entries.get_mut(&key).unwrap().state = State::Creating;
                     self.checkpoint_creation(path, &key)?;
+                    self.journal.as_ref().unwrap().pace_creation()?;
                     let name = self.entries[&key].listing["name"]
                         .as_str()
                         .context("Missing archive name")?;

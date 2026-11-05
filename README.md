@@ -364,6 +364,14 @@ never treated as an empty library. A manual retry forces a fresh scan.
 
 Journal pushes use ordinary fast-forward updates with unique commit IDs so two
 writers starting from the same revision cannot both acknowledge the same claim.
+Journal pushes wait at least 12 seconds after the preceding acknowledged push,
+keeping archive traffic below [GitHub's recommended six pushes per minute](https://docs.github.com/en/repositories/creating-and-managing-repositories/repository-limits#activity).
+The wait before the ID checkpoint happens before playlist creation, so returned
+IDs can be pushed promptly. Allow roughly 36 seconds per new broadcast for the
+three journal checkpoints, plus Spotify work; large recoveries take longer than
+ordinary daily imports. Git errors retain a credential-safe failure category in
+the final workflow error rather than losing the original cause.
+
 A rejected or uncertain journal push stops further archive writes. Returned IDs
 are also saved in the local catalog for the workflow's recovery artifact. On
 restart, acknowledged journal state is restored before new work; conflicting IDs,
