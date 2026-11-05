@@ -68,7 +68,7 @@
           "start_time": "2026-11-02T17:00:00-0800",
           "end_time": "2026-11-02T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0vp1lG6gSreilmCrrU4hg8",
         "desired_uris": [
@@ -82,8 +82,95 @@
           "spotify:track:3kiu9rIqYFfk8TEVlIl4zf"
         ],
         "listing": {
+          "broadcast_end": "2026-11-02T18:00:00-0800",
+          "broadcast_start": "2026-11-02T17:00:00-0800",
+          "imported_at": "2026-11-05T23:15:10.082898183+00:00",
+          "last_updated": "2026-11-05 23:15 UTC",
           "name": "KALX - Take Five - 2026-11-02",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Charlie Haden",
+                "Carla Bley",
+                "Don Cherry",
+                "Sharon Freeman",
+                "Mick Goodrick",
+                "Jack Jeffers",
+                "Michael Mantler",
+                "Paul Motian",
+                "Jim Pepper",
+                "Dewey Redman",
+                "Steve Slagle",
+                "Gary Valente"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c88876d2bc8c964fc84094b5",
+              "name": "Introduction To People"
+            },
+            {
+              "artists": [
+                "Charlie Haden",
+                "Carla Bley",
+                "Don Cherry",
+                "Sharon Freeman",
+                "Mick Goodrick",
+                "Jack Jeffers",
+                "Michael Mantler",
+                "Paul Motian",
+                "Jim Pepper",
+                "Dewey Redman",
+                "Steve Slagle",
+                "Gary Valente"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c88876d2bc8c964fc84094b5",
+              "name": "The People United Will Never Be Defeated"
+            },
+            {
+              "artists": [
+                "Dorothy Ashby"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273375f3b7b1e2a3e4fe4704596",
+              "name": "Afro-Harping"
+            },
+            {
+              "artists": [
+                "Emily Remler"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739c834c27d50423d21af263ab",
+              "name": "Blues For Herb"
+            },
+            {
+              "artists": [
+                "Paul Chambers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b079fcd0a1a963f4973182f",
+              "name": "Chamber Mates - Rudy Van Gelder Edition / Remastered 2007"
+            },
+            {
+              "artists": [
+                "Lee Morgan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736bfa1a9a7e2670b05eeacf17",
+              "name": "Speedball - 2007 Digital Remaster"
+            },
+            {
+              "artists": [
+                "Booker Little"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d2b82deff0394dbd28b3905c",
+              "name": "Sweet And Lovely"
+            },
+            {
+              "artists": [
+                "Herbie Nichols Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737e6c4464fa31e5c830a888c3",
+              "name": "Terpsichore"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23242322/Take-Five",
+          "station": "KALX",
+          "track_count": 8,
+          "url": "https://open.spotify.com/playlist/0vp1lG6gSreilmCrrU4hg8"
         }
       },
       "needs_reconciliation": false
