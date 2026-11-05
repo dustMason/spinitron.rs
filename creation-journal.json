@@ -6056,7 +6056,7 @@
           "start_time": "2026-11-03T16:00:00-0800",
           "end_time": "2026-11-03T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3OnaUvptnr04pryj6Yx9Q4",
         "desired_uris": [
@@ -6070,8 +6070,77 @@
           "spotify:track:6OUVx2iyvWzScIdGQCNDNP"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T18:00:00-0800",
+          "broadcast_start": "2026-11-03T16:00:00-0800",
+          "imported_at": "2026-11-05T23:53:36.622921652+00:00",
+          "last_updated": "2026-11-05 23:53 UTC",
           "name": "KPOO - Wake Up Everybody - 2026-11-03",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Art Pepper"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737114b62ee72c932150630be4",
+              "name": "Here's That Rainy Day - Live At Keystone Korner, San Francisco, CA / 1977"
+            },
+            {
+              "artists": [
+                "Roy Haynes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f5349983aefc42de46fb1d5",
+              "name": "Equinox"
+            },
+            {
+              "artists": [
+                "Roy Haynes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f5349983aefc42de46fb1d5",
+              "name": "Green Chimneys"
+            },
+            {
+              "artists": [
+                "Joshua Redman",
+                "Brad Mehldau"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d27a73ce6053be2c990dbf8",
+              "name": "The Nearness of You"
+            },
+            {
+              "artists": [
+                "Joshua Redman Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738dedc054f03949f7f201d792",
+              "name": "Herbs and Roots - Live"
+            },
+            {
+              "artists": [
+                "Joshua Redman Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738dedc054f03949f7f201d792",
+              "name": "My One and Only Love - Live"
+            },
+            {
+              "artists": [
+                "Jackie McLean",
+                "Kenny Drew",
+                "Niels-Henning Ørsted Pedersen",
+                "Alex Riel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27384a7deee639dd89c45df41c6",
+              "name": "Jack's Tune - Live"
+            },
+            {
+              "artists": [
+                "Jackie McLean"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2ef53b720ac3e6736c0d3c8",
+              "name": "Rhythm of the Earth"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23283759/Wake-Up-Everybody",
+          "station": "KPOO",
+          "track_count": 8,
+          "url": "https://open.spotify.com/playlist/3OnaUvptnr04pryj6Yx9Q4"
         }
       },
       "needs_reconciliation": false
