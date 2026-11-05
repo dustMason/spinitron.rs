@@ -3685,15 +3685,31 @@
           "start_time": "2026-11-04T20:00:00-0800",
           "end_time": "2026-11-04T21:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2rBf4USgLCnAmQvf41z9fT",
         "desired_uris": [
           "spotify:track:2JuwftA5IQL1sUpSiMintR"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T21:30:00-0800",
+          "broadcast_start": "2026-11-04T20:00:00-0800",
+          "imported_at": "2026-11-05T23:42:18.388113301+00:00",
+          "last_updated": "2026-11-05 23:42 UTC",
           "name": "KALX - FREEFORM - 2026-11-04 8:00pm -0800 [KALX:23290111]",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sweeping Promises"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27352c56d50dc6fbbfe651af838",
+              "name": "Walk in Place"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23290111/FREEFORM",
+          "station": "KALX",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/2rBf4USgLCnAmQvf41z9fT"
         }
       },
       "needs_reconciliation": false
