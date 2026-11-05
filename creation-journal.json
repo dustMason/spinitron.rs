@@ -1700,7 +1700,7 @@
           "start_time": "2026-11-05T07:00:00-0800",
           "end_time": "2026-11-05T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5nPECV3UaBO3pnyGGgsXtI",
         "desired_uris": [
@@ -1719,8 +1719,102 @@
           "spotify:track:0tYsFLROWchUco4i58rUZm"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T09:00:00-0800",
+          "broadcast_start": "2026-11-05T07:00:00-0800",
+          "imported_at": "2026-11-05T22:58:13.969831611+00:00",
+          "last_updated": "2026-11-05 22:58 UTC",
           "name": "KALX - The Garden of Kalx - 2026-11-05",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sylvain Chauveau"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737091a8c18d01e6f28d033774",
+              "name": "Le Zen Dans L'Art Du Tir À L'Arc"
+            },
+            {
+              "artists": [
+                "Joseph Dee Bradshaw"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbee419768871efdecf7420d",
+              "name": "The Unforeseen (1)"
+            },
+            {
+              "artists": [
+                "Popol Vuh"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27353b0c9ba07549746c33d9094",
+              "name": "Engel der gegenwart"
+            },
+            {
+              "artists": [
+                "Bahodur Nematov",
+                "Gulshan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273351a0b37d310e27beb044725",
+              "name": "Dunyo Javoni"
+            },
+            {
+              "artists": [
+                "El Búho"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5cd59314bcef42f02e8dc25",
+              "name": "Kairos"
+            },
+            {
+              "artists": [
+                "Steeleye Span"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273083f1f9bbc4c82c4ab400822",
+              "name": "Fighting For Strangers - 2010 Remaster"
+            },
+            {
+              "artists": [
+                "Your Old Droog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ebdc39927bb96d2fdf0d849a",
+              "name": "Bread & Butter"
+            },
+            {
+              "artists": [
+                "Chip Wickham"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273445f5713a8411ead8c6a5df1",
+              "name": "Blue to Red"
+            },
+            {
+              "artists": [
+                "Pooja Goswami Pavan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe5b8cabc68ca77bbe588ef8",
+              "name": "I Won’t Come or Go"
+            },
+            {
+              "artists": [
+                "Lorna Dune"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6bf62b044074723a2a957f0",
+              "name": "Synaptic Circuits"
+            },
+            {
+              "artists": [
+                "Hiss Golden Messenger"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273265c5b2460945c59b18a0a15",
+              "name": "In the Middle of It"
+            },
+            {
+              "artists": [
+                "Pete Sinfield"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e716deca70beaed1a33e0c8",
+              "name": "Under the Sky - The Album Mix"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23292236/The-Garden-of-Kalx",
+          "station": "KALX",
+          "track_count": 13,
+          "url": "https://open.spotify.com/playlist/5nPECV3UaBO3pnyGGgsXtI"
         }
       },
       "needs_reconciliation": false
