@@ -3862,7 +3862,7 @@
           "start_time": "2026-11-04T22:00:00-0800",
           "end_time": "2026-11-05T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1SwdGOvRiCJnId5dgx28En",
         "desired_uris": [
@@ -3899,8 +3899,102 @@
           "spotify:track:3CSqir2cSslY3rWkPBGCQe"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T00:00:00-0800",
+          "broadcast_start": "2026-11-04T22:00:00-0800",
+          "imported_at": "2026-11-05T23:43:38.363937955+00:00",
+          "last_updated": "2026-11-05 23:43 UTC",
           "name": "KALX - There must be something - 2026-11-04",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "LA LOM"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273090236b12edab5243d5ded32",
+              "name": "Ooo Baby Baby - Live At Thalia Hall"
+            },
+            {
+              "artists": [
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273980e10b54d5d0143ae565c61",
+              "name": "There Must Be Something"
+            },
+            {
+              "artists": [
+                "The Delfonics"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d2d0d066ea72663ec8486064",
+              "name": "Ready or Not Here I Come"
+            },
+            {
+              "artists": [
+                "Jalen Ngonda"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736cc735f0ee718f70c785b79f",
+              "name": "Burning Temptation"
+            },
+            {
+              "artists": [
+                "KAMAUU"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273797ccd1cb9b43e265deb0dae",
+              "name": "Far Rockaway"
+            },
+            {
+              "artists": [
+                "Kelly Finnigan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f7e0360d5ff053109f6f7655",
+              "name": "Since I Don’t Have You Anymore"
+            },
+            {
+              "artists": [
+                "Monster Rally"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738c0fd9906d4a7c67651af77b",
+              "name": "Orchids"
+            },
+            {
+              "artists": [
+                "Tokyo Tea Room"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273627db594ecacb8ab84125d84",
+              "name": "There's a Place"
+            },
+            {
+              "artists": [
+                "Mexican Institute Of Sound",
+                "Meridian Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27370ddaea002796dfe4d92e53a",
+              "name": "El campeón (Bienes funerarios)"
+            },
+            {
+              "artists": [
+                "Holger Czukay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273332e13b4f973aec4be8c8eac",
+              "name": "Persian Love"
+            },
+            {
+              "artists": [
+                "Sosyete '25"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739d20e59a7ebff5d0ebecfae8",
+              "name": "İnat"
+            },
+            {
+              "artists": [
+                "Takeshi's Cashew"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736ca817d5d8a781745d7f9f50",
+              "name": "A Rogue's Tale"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23290282/There-must-be-something",
+          "station": "KALX",
+          "track_count": 31,
+          "url": "https://open.spotify.com/playlist/1SwdGOvRiCJnId5dgx28En"
         }
       },
       "needs_reconciliation": false
