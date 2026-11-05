@@ -4009,15 +4009,31 @@
           "start_time": "2026-11-04T21:30:00-0800",
           "end_time": "2026-11-04T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2T3Yvrp6DQmuOyYUnOYtkW",
         "desired_uris": [
           "spotify:track:4DMKwE2E2iYDKY01C335Uw"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T22:00:00-0800",
+          "broadcast_start": "2026-11-04T21:30:00-0800",
+          "imported_at": "2026-11-05T23:44:18.450252348+00:00",
+          "last_updated": "2026-11-05 23:44 UTC",
           "name": "KALX - Bear Talk - 2026-11-04",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Kansas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731be40e44db112e123e5e8b51",
+              "name": "Carry on Wayward Son"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23290526/Bear-Talk",
+          "station": "KALX",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/2T3Yvrp6DQmuOyYUnOYtkW"
         }
       },
       "needs_reconciliation": false
