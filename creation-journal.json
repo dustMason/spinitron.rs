@@ -3724,7 +3724,7 @@
           "start_time": "2026-11-04T20:00:00-0800",
           "end_time": "2026-11-04T21:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0nbC4lphQIWXCZ3z4H315H",
         "desired_uris": [
@@ -3751,8 +3751,103 @@
           "spotify:track:7excHp6cIvcqJwiKkyBVAJ"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T21:30:00-0800",
+          "broadcast_start": "2026-11-04T20:00:00-0800",
+          "imported_at": "2026-11-05T23:42:58.079728733+00:00",
+          "last_updated": "2026-11-05 23:42 UTC",
           "name": "KALX - FREEFORM - 2026-11-04 8:00pm -0800 [KALX:23290175]",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sweeping Promises"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27352c56d50dc6fbbfe651af838",
+              "name": "Walk in Place"
+            },
+            {
+              "artists": [
+                "Girl Saint"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27314f7c8c9821579fd4d638c67",
+              "name": "Past Lives"
+            },
+            {
+              "artists": [
+                "Rehash Neu Klang"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e64457f7927f233c0c49dd04",
+              "name": "'Für ihre Zukunft'"
+            },
+            {
+              "artists": [
+                "LNZNDRF"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273522cf05d2e94081cb930d1f4",
+              "name": "Beneath the Black Sea"
+            },
+            {
+              "artists": [
+                "Elf Power"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f95876d12145fc2078aa3378",
+              "name": "The Concrete and the Walls"
+            },
+            {
+              "artists": [
+                "Elf Power"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f95876d12145fc2078aa3378",
+              "name": "The Taking Under"
+            },
+            {
+              "artists": [
+                "The Cords"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738090ab05272c4e91fe682a39",
+              "name": "Fabulist"
+            },
+            {
+              "artists": [
+                "No. 2"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a0625ef79f3c10d50ff7ee9b",
+              "name": "I'm On A Mission"
+            },
+            {
+              "artists": [
+                "J.WLSN",
+                "Liam Keenan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c23d0e286ec28a6b8c9badd2",
+              "name": "Teflon Blues I"
+            },
+            {
+              "artists": [
+                "Mega Bog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a597815e1de7bda733c1d1fe",
+              "name": "The Clown"
+            },
+            {
+              "artists": [
+                "Visible Cloaks",
+                "Componium Ensemble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c2d419750ae6691b9a6b7301",
+              "name": "System"
+            },
+            {
+              "artists": [
+                "Majical Cloudz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b93ba44b12c9a1acadef3a75",
+              "name": "Downtown"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23290175/FREEFORM",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/0nbC4lphQIWXCZ3z4H315H"
         }
       },
       "needs_reconciliation": false
