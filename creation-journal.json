@@ -4919,7 +4919,7 @@
           "start_time": "2026-11-02T15:00:00-0800",
           "end_time": "2026-11-02T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3jkFpwzX3A3xcWkaKmHid6",
         "desired_uris": [
@@ -4953,8 +4953,102 @@
           "spotify:track:3oDfNPDyck6ejYTWA0rDu7"
         ],
         "listing": {
+          "broadcast_end": "2026-11-02T18:00:00-0800",
+          "broadcast_start": "2026-11-02T15:00:00-0800",
+          "imported_at": "2026-11-05T23:48:18.176419632+00:00",
+          "last_updated": "2026-11-05 23:48 UTC",
           "name": "KPOO - Gramophoney Baloney - 2026-11-02",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Burning Spear"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735d25009a89b1dd59cb1364fa",
+              "name": "Marcus Children Suffer"
+            },
+            {
+              "artists": [
+                "David Gómez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27390ca61362e890acfd2af3dd2",
+              "name": "La Nuit de Déborah"
+            },
+            {
+              "artists": [
+                "Stovepipe No.1",
+                "David Crockett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c795a5eacfe126f73299c461",
+              "name": "A Chicken Can Waltz the Gravy Around"
+            },
+            {
+              "artists": [
+                "Cuartetto Iberia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273992d6b24dc99b9bc0adb228f",
+              "name": "Zacataque"
+            },
+            {
+              "artists": [
+                "Whistler & His Jug Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b8334e587c427e7c0dfb9f5",
+              "name": "The Jug Band Special"
+            },
+            {
+              "artists": [
+                "Sexteto Occidente"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c4abe9376f5a08c4637c5a9",
+              "name": "Candela, Zayas-Bazan (Give 'Em Hell, Zayas-Bazan)"
+            },
+            {
+              "artists": [
+                "Don Byas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da1318d3e9c8fe2301b90116",
+              "name": "Dark Eyes"
+            },
+            {
+              "artists": [
+                "Canário y su grupo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736ce2f4700b092604dba32714",
+              "name": "Que viv'o"
+            },
+            {
+              "artists": [
+                "Memphis Minnie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736fce6ccb960839ca836db59a",
+              "name": "Too Late"
+            },
+            {
+              "artists": [
+                "Laurel and Hardy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273457ec13c58cff854773772bc",
+              "name": "Fresh Fish"
+            },
+            {
+              "artists": [
+                "Kendon Grupi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fd4bed766547ca9e5b1f9830",
+              "name": "O Ju Male Me Debore"
+            },
+            {
+              "artists": [
+                "Various Artists"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b2fa6b4e1ba4fb204825760a",
+              "name": "Saint-Saens Carnival Of The Animals - Aquarium"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23278060/Gramophoney-Baloney",
+          "station": "KPOO",
+          "track_count": 28,
+          "url": "https://open.spotify.com/playlist/3jkFpwzX3A3xcWkaKmHid6"
         }
       },
       "needs_reconciliation": false
