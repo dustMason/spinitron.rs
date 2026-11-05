@@ -628,7 +628,7 @@
           "start_time": "2026-11-02T15:00:00-0800",
           "end_time": "2026-11-02T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3GtzxEs2P96AAOPYFzYy8w",
         "desired_uris": [
@@ -654,8 +654,103 @@
           "spotify:track:14X7pbediCFpxA1HOOsCgU"
         ],
         "listing": {
+          "broadcast_end": "2026-11-02T17:00:00-0800",
+          "broadcast_start": "2026-11-02T15:00:00-0800",
+          "imported_at": "2026-11-05T23:15:25.885106492+00:00",
+          "last_updated": "2026-11-05 23:15 UTC",
           "name": "KALX - No Motion Picture - 2026-11-02",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Michael Marcus Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dd526ad7e2af8f0be811c837",
+              "name": "Next Stop Down!"
+            },
+            {
+              "artists": [
+                "MIAOU"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27326a4ad4d27701506dc6e55d7",
+              "name": "Reach For Tomorrow"
+            },
+            {
+              "artists": [
+                "Phil Woods"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27329fc90e0cce1165a00f50c4e",
+              "name": "The Day When the World"
+            },
+            {
+              "artists": [
+                "Hans P. Kjorstad"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734ba4b26bc10c22bcecae7235",
+              "name": "Gan"
+            },
+            {
+              "artists": [
+                "17 Pygmies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731b8a94630b949cd34baf338e",
+              "name": "Vows"
+            },
+            {
+              "artists": [
+                "The Durutti Column"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27306863efd26b96b3d1b7e43eb",
+              "name": "For Friends Everywhere"
+            },
+            {
+              "artists": [
+                "Marco Benevento"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f4a70717c8795494e03b0eb",
+              "name": "Crema"
+            },
+            {
+              "artists": [
+                "Antônio Carlos Jobim"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c634d4769c1fb60221cdc021",
+              "name": "The Red Blouse"
+            },
+            {
+              "artists": [
+                "Karin Krog",
+                "Dexter Gordon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cb39c7e9f6bebc2040394ac8",
+              "name": "Shiny Stockings"
+            },
+            {
+              "artists": [
+                "Paul Chambers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273414f6f90c6785b23d8d73629",
+              "name": "Whims Of Chambers - Remastered 2003"
+            },
+            {
+              "artists": [
+                "Steve Reich",
+                "Pat Metheny"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da4aecd17db14b6dd2228668",
+              "name": "Electric Counterpoint: III. Fast"
+            },
+            {
+              "artists": [
+                "Traffic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27342e2ef73391504cb40c95fd6",
+              "name": "Freedom Rider - Remastered 2010"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23277974/No-Motion-Picture",
+          "station": "KALX",
+          "track_count": 20,
+          "url": "https://open.spotify.com/playlist/3GtzxEs2P96AAOPYFzYy8w"
         }
       },
       "needs_reconciliation": false
