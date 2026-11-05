@@ -483,7 +483,7 @@
           "start_time": "2026-11-02T12:00:00-0800",
           "end_time": "2026-11-02T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0wUuDRhNU6x3PGtihkgJoJ",
         "desired_uris": [
@@ -517,8 +517,103 @@
           "spotify:track:6NowyvBNiF3nYc0SXMdA2v"
         ],
         "listing": {
+          "broadcast_end": "2026-11-02T15:00:00-0800",
+          "broadcast_start": "2026-11-02T12:00:00-0800",
+          "imported_at": "2026-11-05T23:15:20.452069227+00:00",
+          "last_updated": "2026-11-05 23:15 UTC",
           "name": "KALX - Hot, Rare, Lasagna (w/ guest Rare Earth) - 2026-11-02",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Larry Coryell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db3f0041d1b07eb22cfe762c",
+              "name": "Foreplay"
+            },
+            {
+              "artists": [
+                "William Onyeabor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27374fd7d668c314b3dc616a4b5",
+              "name": "I Need You All Life"
+            },
+            {
+              "artists": [
+                "The Flying Hats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273172798acb57b380de9fc5614",
+              "name": "Pinball"
+            },
+            {
+              "artists": [
+                "Ronald Langestraat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e6b38ecf9c0e35b86abcfc6",
+              "name": "Working Every Day"
+            },
+            {
+              "artists": [
+                "Eugene Evans"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ca709ec81b6ce44247906fde",
+              "name": "Too Much Pain"
+            },
+            {
+              "artists": [
+                "Andy Bey"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ad57564e8c8bba7141cca5ee",
+              "name": "The Power of My Mind"
+            },
+            {
+              "artists": [
+                "Brenda Lee"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf5b93a3d26d56eeec26fbd2",
+              "name": "Coming On Strong"
+            },
+            {
+              "artists": [
+                "The Echocentrics",
+                "Adrian Quesada"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27347d68a542a2dd915a6e371d3",
+              "name": "Echo Hotel"
+            },
+            {
+              "artists": [
+                "Allah-Las"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fe822f5868d8a310d28d4e0",
+              "name": "Thrill of the Bill"
+            },
+            {
+              "artists": [
+                "The Landlords"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27309deb72c7544def70e6eff09",
+              "name": "I'm Through with You"
+            },
+            {
+              "artists": [
+                "Twisted Teens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b70d5388afd345b4a00010af",
+              "name": "Wild Connection"
+            },
+            {
+              "artists": [
+                "Thee Oh Sees",
+                "Osees"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273066cdfb629270b54955ed098",
+              "name": "THE BRUTE ON HIS KNEES"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23277335/Hot-Rare-Lasagna-w-guest-Rare-Earth",
+          "station": "KALX",
+          "track_count": 28,
+          "url": "https://open.spotify.com/playlist/0wUuDRhNU6x3PGtihkgJoJ"
         }
       },
       "needs_reconciliation": false
