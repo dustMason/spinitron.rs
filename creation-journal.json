@@ -6683,7 +6683,7 @@
           "start_time": "2026-11-04T09:00:00-0800",
           "end_time": "2026-11-04T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5Q6H4nRUx3rjom0UvT8YMz",
         "desired_uris": [
@@ -6732,8 +6732,102 @@
           "spotify:track:2ULJ2oZvI7j1md2uRB22Yk"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T12:00:00-0800",
+          "broadcast_start": "2026-11-04T09:00:00-0800",
+          "imported_at": "2026-11-05T23:57:03.336942942+00:00",
+          "last_updated": "2026-11-05 23:57 UTC",
           "name": "KPOO - Tia Carroll's Awesome Radio Show - 2026-11-04",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Whispers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273171ab1db54af92904b8d2103",
+              "name": "Rock Steady - 12\" Mix"
+            },
+            {
+              "artists": [
+                "The O'Jays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737b2f767a6c6cecb1dfe1ff33",
+              "name": "Use Ta Be My Girl"
+            },
+            {
+              "artists": [
+                "Rick James"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27329323dd47b2b6b50e793ece5",
+              "name": "You And I - Single Version"
+            },
+            {
+              "artists": [
+                "Tiny Legs Tim"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737239ecb2c92c4b8b1920c1d4",
+              "name": "Love Come Knocking"
+            },
+            {
+              "artists": [
+                "Nora Jean Wallace"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731246e20ce3b7f3111baef03e",
+              "name": "Rag and Bucket"
+            },
+            {
+              "artists": [
+                "Carl Carlton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d33cf0f26efdf538bfd6864e",
+              "name": "She's A Bad Mama Jama (She's Built, She's Stacked)"
+            },
+            {
+              "artists": [
+                "The Miracles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730e6d387b91f2bf0dde0fadf9",
+              "name": "You've Really Got A Hold On Me"
+            },
+            {
+              "artists": [
+                "The Isley Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e78e5115b648f9899d2c0742",
+              "name": "Live It Up, Pts. 1 & 2"
+            },
+            {
+              "artists": [
+                "Marvin Gaye"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273be2a24c5667e20b2105b4020",
+              "name": "How Sweet It Is (To Be Loved By You)"
+            },
+            {
+              "artists": [
+                "Four Tops"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d1fd264af3cc702830dc6d35",
+              "name": "Shake Me, Wake Me (When It's Over) - Single Version / Mono"
+            },
+            {
+              "artists": [
+                "Sam & Dave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734ced784d910a4590dd60f0d8",
+              "name": "Wrap It Up"
+            },
+            {
+              "artists": [
+                "Marvin Gaye",
+                "Kim Weston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320348a11890200cfec8f0592",
+              "name": "It Takes Two"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23287398/Tia-Carroll-s-Awesome-Radio-Show",
+          "station": "KPOO",
+          "track_count": 43,
+          "url": "https://open.spotify.com/playlist/5Q6H4nRUx3rjom0UvT8YMz"
         }
       },
       "needs_reconciliation": false
