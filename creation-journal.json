@@ -6155,7 +6155,7 @@
           "start_time": "2026-11-03T18:00:00-0800",
           "end_time": "2026-11-03T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2TJ5D8pVojP3t77htMrJDI",
         "desired_uris": [
@@ -6168,8 +6168,72 @@
           "spotify:track:4eGDT1LdcwjtrJuAkgDj9g"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T20:00:00-0800",
+          "broadcast_start": "2026-11-03T18:00:00-0800",
+          "imported_at": "2026-11-05T23:54:16.458064885+00:00",
+          "last_updated": "2026-11-05 23:54 UTC",
           "name": "KPOO - On The Spot - 2026-11-03",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Jackie McLean"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2ef53b720ac3e6736c0d3c8",
+              "name": "Osyris Returns"
+            },
+            {
+              "artists": [
+                "Bill Evans Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737470b2e6751e5f77de46dc4c",
+              "name": "Solar - Live At The Village Vanguard, 1961"
+            },
+            {
+              "artists": [
+                "Bill Evans Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dcc761b16eb9b3689cd0cfe2",
+              "name": "Detour Ahead - Live / Take 1"
+            },
+            {
+              "artists": [
+                "Bill Evans Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dcc761b16eb9b3689cd0cfe2",
+              "name": "Alice In Wonderland - Live At The Village Vanguard, 1961 / Take 1"
+            },
+            {
+              "artists": [
+                "Idrees Sulieman",
+                "John Coltrane",
+                "Kenny Burrell",
+                "Tommy Flanagan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273443a91ec84504b893d3030ff",
+              "name": "Solacium"
+            },
+            {
+              "artists": [
+                "Idrees Sulieman",
+                "John Coltrane",
+                "Kenny Burrell",
+                "Tommy Flanagan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273443a91ec84504b893d3030ff",
+              "name": "Tommy's Time"
+            },
+            {
+              "artists": [
+                "Rahsaan Roland Kirk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273372f680df7875af6c3a00203",
+              "name": "Bright Moments Song"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23284311/On-The-Spot",
+          "station": "KPOO",
+          "track_count": 7,
+          "url": "https://open.spotify.com/playlist/2TJ5D8pVojP3t77htMrJDI"
         }
       },
       "needs_reconciliation": false
