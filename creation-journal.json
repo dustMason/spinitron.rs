@@ -6526,7 +6526,7 @@
           "start_time": "2026-11-04T06:00:00-0800",
           "end_time": "2026-11-04T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7ygOedcMhscFOvPZyxSzgf",
         "desired_uris": [
@@ -6574,8 +6574,101 @@
           "spotify:track:2AQj7ThRAgcSXVT5ssWy5O"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T09:00:00-0800",
+          "broadcast_start": "2026-11-04T06:00:00-0800",
+          "imported_at": "2026-11-05T23:56:23.515424928+00:00",
+          "last_updated": "2026-11-05 23:56 UTC",
           "name": "KPOO - Wayback Wednesday D.j Marcus 6:00 AM PST to 8:00 AM West Coast Gospel Wednesday - 2026-11-04",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Stylistics"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273525f1e2d408b9fff2a1fc6bf",
+              "name": "Mine All Mine"
+            },
+            {
+              "artists": [
+                "Stevie Wonder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365002ad6883a338d395f74e7",
+              "name": "So What The Fuss - Radio Edit"
+            },
+            {
+              "artists": [
+                "George Benson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739877c2b01fca3367809f9e27",
+              "name": "Give Me the Night"
+            },
+            {
+              "artists": [
+                "Patrice Rushen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ade19168eeeab5c32301e17c",
+              "name": "Haven't You Heard - 12\" Version"
+            },
+            {
+              "artists": [
+                "Aaliyah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27373d34bd8b04b23227139232b",
+              "name": "Are You That Somebody?"
+            },
+            {
+              "artists": [
+                "Earth, Wind & Fire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733198748d60857d3248fbb6ba",
+              "name": "Sing a Song"
+            },
+            {
+              "artists": [
+                "Switch"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f57e131e13a671a4e1c22db8",
+              "name": "There'll Never Be"
+            },
+            {
+              "artists": [
+                "Michael Jackson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bf4cf0f48b94d0c8297b751a",
+              "name": "Remember the Time"
+            },
+            {
+              "artists": [
+                "Klymaxx"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308c1e6bf49f37031dea3b907",
+              "name": "Meeting In The Ladies Room - Radio Edit"
+            },
+            {
+              "artists": [
+                "Midnight Star"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd5d22ca878a7c4c8536e3aa",
+              "name": "Curious"
+            },
+            {
+              "artists": [
+                "Vanessa Williams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa6653339b2b6a646ef8f6db",
+              "name": "Dreamin'"
+            },
+            {
+              "artists": [
+                "Kool & The Gang"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27391c2388ebb79a41fe4590240",
+              "name": "Joanna - Single Version"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23286628/Wayback-Wednesday-D-j-Marcus-6-00-AM-PST-to-8-00-AM-West-Coast-Gospel-Wednesday-8-00-AM-PST-to-9-00",
+          "station": "KPOO",
+          "track_count": 42,
+          "url": "https://open.spotify.com/playlist/7ygOedcMhscFOvPZyxSzgf"
         }
       },
       "needs_reconciliation": false
