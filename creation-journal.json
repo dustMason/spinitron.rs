@@ -7220,7 +7220,7 @@
           "start_time": "2026-11-04T20:00:00-0800",
           "end_time": "2026-11-05T00:00:00-0800"
         },
-        "state": "prepared",
+        "state": "creating",
         "owner_id": "dustmason",
         "desired_uris": [
           "spotify:track:57dTPx3MCNvQ0QIs9zbI2t",
