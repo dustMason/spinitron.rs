@@ -949,7 +949,7 @@
           "start_time": "2026-11-02T20:00:00-0800",
           "end_time": "2026-11-02T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3UpI19KpYvB1istAYNDxaE",
         "desired_uris": [
@@ -970,8 +970,102 @@
           "spotify:track:0XHf6Pm3PmOkhQmZpRcPxP"
         ],
         "listing": {
+          "broadcast_end": "2026-11-02T22:00:00-0800",
+          "broadcast_start": "2026-11-02T20:00:00-0800",
+          "imported_at": "2026-11-05T23:15:41.266060396+00:00",
+          "last_updated": "2026-11-05 23:15 UTC",
           "name": "KALX - FREEFORM - 2026-11-02 8:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Headache",
+                "Vegyn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e71ede183a1fd981b6d231f",
+              "name": "Wholesale Anthem"
+            },
+            {
+              "artists": [
+                "The Field"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27355c7c16763d3f179521afa1f",
+              "name": "The Little Heart Beats So Fast"
+            },
+            {
+              "artists": [
+                "Headache"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737aff06f42c0db5496bf0c2b1",
+              "name": "The Party that Never Ends"
+            },
+            {
+              "artists": [
+                "Charles Dodge"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4bf68961f6c35b057c9c9d4",
+              "name": ".........When I Am With You"
+            },
+            {
+              "artists": [
+                "Vegyn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f79a58a50609f0a3b3320316",
+              "name": "Makeshift Tourniquet"
+            },
+            {
+              "artists": [
+                "CFCF"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27332cdbcd913a2cafc6e08882f",
+              "name": "Life is Perfecto"
+            },
+            {
+              "artists": [
+                "Joshua Chuquimia Crampton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fcbc3af8b3f252e76491dde2",
+              "name": "Taqini (Juntxs)"
+            },
+            {
+              "artists": [
+                "Holidays in United States"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fb2483ce77c0edaab8aec9eb",
+              "name": "Girl Problems"
+            },
+            {
+              "artists": [
+                "mary in the junkyard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737642addd573054269cb9a577",
+              "name": "Blood"
+            },
+            {
+              "artists": [
+                "Racecourse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c42dd0add3f578b0799e066d",
+              "name": "A Sport and a Passtime"
+            },
+            {
+              "artists": [
+                "what is your name?"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bd042283898fb6e5523cda54",
+              "name": "Mirror + Candle"
+            },
+            {
+              "artists": [
+                "Sophia Stel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27344a4c9a4310ee9410655caef",
+              "name": "I Do"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23279238/FREEFORM",
+          "station": "KALX",
+          "track_count": 15,
+          "url": "https://open.spotify.com/playlist/3UpI19KpYvB1istAYNDxaE"
         }
       },
       "needs_reconciliation": false
