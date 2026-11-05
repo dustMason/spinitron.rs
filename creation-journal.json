@@ -5619,7 +5619,7 @@
           "start_time": "2026-11-03T07:00:00-0800",
           "end_time": "2026-11-03T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4qwSFCNvuUpSpKbBC2BLAX",
         "desired_uris": [
@@ -5638,8 +5638,101 @@
           "spotify:track:3KNWFeDgleBNe6YW8dLWRz"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T09:00:00-0800",
+          "broadcast_start": "2026-11-03T07:00:00-0800",
+          "imported_at": "2026-11-05T23:51:37.170456524+00:00",
+          "last_updated": "2026-11-05 23:51 UTC",
           "name": "KPOO - 70's and 60's Soul for Breakfast - 2026-11-03",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Major Harris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e1756b260751cb473e80c974",
+              "name": "Love Won't Let Me Wait"
+            },
+            {
+              "artists": [
+                "James Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273818c45ca29446e7352ba187f",
+              "name": "My Thang"
+            },
+            {
+              "artists": [
+                "The Chi-Lites"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27333fa33772577046bd03d301d",
+              "name": "Stoned Out Of My Mind"
+            },
+            {
+              "artists": [
+                "The Temprees"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730c43e374a4ad86dc20db5895",
+              "name": "Love...Can Be So Wonderful"
+            },
+            {
+              "artists": [
+                "Isaac Hayes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273170bd148fa43505359078001",
+              "name": "Hyperbolicsyllabicsesquedalymistic"
+            },
+            {
+              "artists": [
+                "Sly & The Family Stone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ecc9f5a32087adfc8214541d",
+              "name": "Sex Machine"
+            },
+            {
+              "artists": [
+                "The Diplomats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27341e379e3bc789f514051946a",
+              "name": "Here's a Heart"
+            },
+            {
+              "artists": [
+                "Eddie Floyd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734bfd672408943a990ee50974",
+              "name": "Knock on Wood"
+            },
+            {
+              "artists": [
+                "O.V. Wright"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a9cdaf333842dd167ae1f4ae",
+              "name": "Eight Men And Four Women - Single Version"
+            },
+            {
+              "artists": [
+                "Koko Taylor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735d1b0da990230c0805e61791",
+              "name": "What Kind Of Man Is That?"
+            },
+            {
+              "artists": [
+                "Howlin' Wolf"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b35e834af126be64d5be7f07",
+              "name": "Built For Comfort"
+            },
+            {
+              "artists": [
+                "Frankie Valli & The Four Seasons"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27378b61a8ac95e0f48922b6990",
+              "name": "Big Girls Don't Cry"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23281554/70-s-and-60-s-Soul-for-Breakfast",
+          "station": "KPOO",
+          "track_count": 13,
+          "url": "https://open.spotify.com/playlist/4qwSFCNvuUpSpKbBC2BLAX"
         }
       },
       "needs_reconciliation": false
