@@ -6381,7 +6381,7 @@
           "start_time": "2026-11-04T00:00:00-0800",
           "end_time": "2026-11-04T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4bCQkh5PalDrgz1gpSZDaV",
         "desired_uris": [
@@ -6415,8 +6415,103 @@
           "spotify:track:2bIfM0ZOF4gxK1BeqH3Djm"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T06:00:00-0800",
+          "broadcast_start": "2026-11-04T00:00:00-0800",
+          "imported_at": "2026-11-05T23:55:43.778525448+00:00",
+          "last_updated": "2026-11-05 23:55 UTC",
           "name": "KPOO - Over Nite Sounds - 2026-11-04",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Don Pullen Quartet",
+                "George Adams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b134476b5b60d28b83fe165",
+              "name": "Mingus Metamorphosis"
+            },
+            {
+              "artists": [
+                "George Adams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27387fb7e449516399aa01880a3",
+              "name": "Imani's Dance"
+            },
+            {
+              "artists": [
+                "Hank Mobley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27395793252be579777b793a123",
+              "name": "Roll Call - Rudy Van Gelder Edition"
+            },
+            {
+              "artists": [
+                "Art Blakey"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27314c2bcaba5cba5d47ec4c18e",
+              "name": "The Feast - Remastered"
+            },
+            {
+              "artists": [
+                "Art Blakey"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27314c2bcaba5cba5d47ec4c18e",
+              "name": "Reflection - Remastered"
+            },
+            {
+              "artists": [
+                "Sonny Clark"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d4eee1a7255e0d64c5c2ba1",
+              "name": "Blues Blue"
+            },
+            {
+              "artists": [
+                "Sonny Clark"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d4eee1a7255e0d64c5c2ba1",
+              "name": "Some Clark Bars"
+            },
+            {
+              "artists": [
+                "Sonny Clark"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d4eee1a7255e0d64c5c2ba1",
+              "name": "My Conception"
+            },
+            {
+              "artists": [
+                "Sonny Clark",
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db84e1a22d7877526197b350",
+              "name": "News For Lulu - Remastered 1998"
+            },
+            {
+              "artists": [
+                "Booker Ervin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273de40d6a5dc4f49a23f400505",
+              "name": "Bass-IX"
+            },
+            {
+              "artists": [
+                "The Stan Tracey Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27347b59adbe31599c9e28d109f",
+              "name": "January's Child"
+            },
+            {
+              "artists": [
+                "Bobby Hutcherson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d0d072194479b5cab3e9113c",
+              "name": "Medina"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23285680/Over-Nite-Sounds",
+          "station": "KPOO",
+          "track_count": 28,
+          "url": "https://open.spotify.com/playlist/4bCQkh5PalDrgz1gpSZDaV"
         }
       },
       "needs_reconciliation": false
