@@ -5063,7 +5063,7 @@
           "start_time": "2026-11-02T18:00:00-0800",
           "end_time": "2026-11-02T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7pdDmBfbG0TNhT7Qwa34Aw",
         "desired_uris": [
@@ -5097,8 +5097,104 @@
           "spotify:track:2MpvyTQg3micUo7S6gHE6j"
         ],
         "listing": {
+          "broadcast_end": "2026-11-02T21:00:00-0800",
+          "broadcast_start": "2026-11-02T18:00:00-0800",
+          "imported_at": "2026-11-05T23:48:57.573081316+00:00",
+          "last_updated": "2026-11-05 23:48 UTC",
           "name": "KPOO - Wheels - 2026-11-02",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "B.B. King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735ef0f9ad1fd0ad208a8000be",
+              "name": "Sweet Sixteen - Pts. 1 & 2 / Live At The International Club, Chicago, 1966"
+            },
+            {
+              "artists": [
+                "B.B. King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e080a606d640e4379222a592",
+              "name": "Sweet Sixteen"
+            },
+            {
+              "artists": [
+                "The Otis Rush Blues Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c97055808997bebfd2e92095",
+              "name": "It's A Mean Old World"
+            },
+            {
+              "artists": [
+                "Sonny Rhodes",
+                "Sonny Rhodes & The Texas Twisters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731c449c7d23b82e0afd39d045",
+              "name": "Cigarette Blues"
+            },
+            {
+              "artists": [
+                "Clarence Carter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27332a2d4beb2fd15779088c9f3",
+              "name": "Strokin' (Long And Dirty)"
+            },
+            {
+              "artists": [
+                "Jeannie Cheatham",
+                "Jimmy Cheatham"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf19d458c409dce2ceae73c3",
+              "name": "Meet Me With Your Black Drawers On"
+            },
+            {
+              "artists": [
+                "Lady Bianca"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734d34cc5bc7505576d0d884b8",
+              "name": "Wake Up Baby"
+            },
+            {
+              "artists": [
+                "Big Time Sarah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735e9e2cc8b3271328873881a0",
+              "name": "Don't Make Me Pay"
+            },
+            {
+              "artists": [
+                "Marvin Sease"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e5fa3e86fd6987d8fce443d4",
+              "name": "Gone On"
+            },
+            {
+              "artists": [
+                "Grant Green Jr",
+                "Reuben Wilson & Leo Gandelman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dabf99be578cb99cfd783d8a",
+              "name": "Cantaloupe Women"
+            },
+            {
+              "artists": [
+                "The Silver Fox"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735aa1251e802f55bb932274b1",
+              "name": "Honey Bee"
+            },
+            {
+              "artists": [
+                "Koko Taylor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738202c8abddf0ea5487dac9a0",
+              "name": "I Can Love You Like A Woman (Or I Can Fight You Like A Man)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23278817/Wheels",
+          "station": "KPOO",
+          "track_count": 28,
+          "url": "https://open.spotify.com/playlist/7pdDmBfbG0TNhT7Qwa34Aw"
         }
       },
       "needs_reconciliation": false
