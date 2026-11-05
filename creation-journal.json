@@ -7115,7 +7115,7 @@
           "start_time": "2026-11-04T18:00:00-0800",
           "end_time": "2026-11-04T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2pMVwvlowy398Xq8b9dQEC",
         "desired_uris": [
@@ -7130,8 +7130,82 @@
           "spotify:track:3krVqif8Ny356vD6PUscyW"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T20:00:00-0800",
+          "broadcast_start": "2026-11-04T18:00:00-0800",
+          "imported_at": "2026-11-05T23:59:42.139736896+00:00",
+          "last_updated": "2026-11-05 23:59 UTC",
           "name": "KPOO - Voices of the Native Nations - 2026-11-04",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Cybotron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738dd20b28ae3024c85a74dac9",
+              "name": "Maintain"
+            },
+            {
+              "artists": [
+                "Ed Kelly Ensemble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735c43f131e8d5d45eb4bf6114",
+              "name": "Samba"
+            },
+            {
+              "artists": [
+                "Ed Kelly",
+                "Pharoah Sanders"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737ddcb005a8c2cc39a3999b6f",
+              "name": "Pippin"
+            },
+            {
+              "artists": [
+                "Ed Kelly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dae51f49f6188f9b54d6d44f",
+              "name": "Ring Shout Ballet"
+            },
+            {
+              "artists": [
+                "Cybotron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c5c701dac63bcbaaecde5463",
+              "name": "Techno City - 12\" Instrumental"
+            },
+            {
+              "artists": [
+                "Ed Kelly",
+                "Pharoah Sanders"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737ddcb005a8c2cc39a3999b6f",
+              "name": "You've Got To Have Freedom"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "James Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6100147c4c87f2fecefe81f",
+              "name": "Ain't It Funky Now - Pt. 1"
+            },
+            {
+              "artists": [
+                "James Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273940050377c3d71ce35d5b118",
+              "name": "Funky Drummer - Instrumental / The Original Tambourine Mix"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23289588/Voices-of-the-Native-Nations",
+          "station": "KPOO",
+          "track_count": 9,
+          "url": "https://open.spotify.com/playlist/2pMVwvlowy398Xq8b9dQEC"
         }
       },
       "needs_reconciliation": false
