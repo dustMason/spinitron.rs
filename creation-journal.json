@@ -1966,7 +1966,7 @@
           "start_time": "2026-11-03T17:00:00-0800",
           "end_time": "2026-11-03T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2CzOGKupd7YQHnuBm3v7GW",
         "desired_uris": [
@@ -1988,8 +1988,101 @@
           "spotify:track:1QGy4rzK5p8N7OYYn5kWSt"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T18:00:00-0800",
+          "broadcast_start": "2026-11-03T17:00:00-0800",
+          "imported_at": "2026-11-05T23:16:19.054228034+00:00",
+          "last_updated": "2026-11-05 23:16 UTC",
           "name": "KALX - Americana, Folk, and Roots - 2026-11-03",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "James Cotton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4f5a4a8a256744b8a7d812d",
+              "name": "Here I Am (Knocking At Your Door) - Live"
+            },
+            {
+              "artists": [
+                "Little Milton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273343069c7e2e700814bfc6658",
+              "name": "Ain't No Big Deal On You"
+            },
+            {
+              "artists": [
+                "Big Time Sarah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735e9e2cc8b3271328873881a0",
+              "name": "Train I Ride"
+            },
+            {
+              "artists": [
+                "Otis Rush"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4141ca5d53542662b9d7c07",
+              "name": "I Can't Quit You Baby - Alternate Version"
+            },
+            {
+              "artists": [
+                "Little Walter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fb54afb203c1985076c847d0",
+              "name": "Key To The Highway"
+            },
+            {
+              "artists": [
+                "Sonny Boy Williamson II"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b48c81a7d103f5aedd0b8cb2",
+              "name": "Somebody Help Me - Mono Version"
+            },
+            {
+              "artists": [
+                "Elmore James"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f2e938979b82c88dbff23764",
+              "name": "Rollin' and Tumblin'"
+            },
+            {
+              "artists": [
+                "Muddy Waters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f961bcc3e202a14cafe8ee7c",
+              "name": "I Can't Be Satisfied"
+            },
+            {
+              "artists": [
+                "Koko Taylor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273067705454562cd3ac9798289",
+              "name": "Never Trust A Man"
+            },
+            {
+              "artists": [
+                "Howlin' Wolf"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736181b1ed45a906d5b2c89af3",
+              "name": "Forty Four"
+            },
+            {
+              "artists": [
+                "Washboard Sam"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fb6338149cb63778d5082422",
+              "name": "No. 1 Drunkard"
+            },
+            {
+              "artists": [
+                "Son Seals"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f9bc7740986b47a3cfb69bb5",
+              "name": "I Can't Hold Out - Live"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23283848/Americana-Folk-and-Roots",
+          "station": "KALX",
+          "track_count": 16,
+          "url": "https://open.spotify.com/playlist/2CzOGKupd7YQHnuBm3v7GW"
         }
       },
       "needs_reconciliation": false
