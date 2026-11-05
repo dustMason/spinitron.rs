@@ -3399,7 +3399,7 @@
           "start_time": "2026-11-04T17:00:00-0800",
           "end_time": "2026-11-04T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3nMxj62ECo7QMXWxglJsIv",
         "desired_uris": [
@@ -3416,8 +3416,94 @@
           "spotify:track:1QGy4rzK5p8N7OYYn5kWSt"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T18:00:00-0800",
+          "broadcast_start": "2026-11-04T17:00:00-0800",
+          "imported_at": "2026-11-05T23:40:19.265611267+00:00",
+          "last_updated": "2026-11-05 23:40 UTC",
           "name": "KALX - Radio Dunya - 2026-11-04",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Birds Of A Feather"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273575f4b1e9cc78f1c6678c1cd",
+              "name": "Come on Up"
+            },
+            {
+              "artists": [
+                "Hot Water"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27381f5e6354221ee61e29448a1",
+              "name": "Bushfire"
+            },
+            {
+              "artists": [
+                "Kabasa"
+              ],
+              "image_url": "",
+              "name": "Unga Pfula A Chi Pfalo"
+            },
+            {
+              "artists": [
+                "Amanaz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731a3e9f74688b6c8f7fe97751",
+              "name": "I Am Very Far"
+            },
+            {
+              "artists": [
+                "B.Lo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b21325caf0f6b5a80ed084b4",
+              "name": "Mind Walk"
+            },
+            {
+              "artists": [
+                "The Lulus Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739b7e853a58333a8c31772422",
+              "name": "I Can Feel It"
+            },
+            {
+              "artists": [
+                "WITCH"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273764eb99053d9ab1cf53910cb",
+              "name": "By The Time You Realize"
+            },
+            {
+              "artists": [
+                "The Hoochie Coochies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27357b3507bf5dd92c3a3f02fbc",
+              "name": "I'm A Boy"
+            },
+            {
+              "artists": [
+                "The Mombasa Vikings"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e98480fba2590c906432fdea",
+              "name": "Mama Matotoya"
+            },
+            {
+              "artists": [
+                "The Psychedelic Aliens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f805d7d2814301e7f6101f1a",
+              "name": "Hijacking"
+            },
+            {
+              "artists": [
+                "Nujabes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273878ed741b8e1342d58a332ca",
+              "name": "sanctuary ship"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23289476/Radio-Dunya",
+          "station": "KALX",
+          "track_count": 11,
+          "url": "https://open.spotify.com/playlist/3nMxj62ECo7QMXWxglJsIv"
         }
       },
       "needs_reconciliation": false
