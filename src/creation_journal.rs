@@ -13,10 +13,45 @@ use std::{
     io::Write,
     path::{Path, PathBuf},
     process::{Command, Stdio},
+    time::{Duration, Instant},
 };
 
 const BRANCH: &str = "spinitron-creation-journal";
 const FILE: &str = "creation-journal.json";
+
+/// GitHub recommends at most six pushes/minute/repository. Leave twelve
+/// seconds after each acknowledged push, including between playlist stages.
+/// The workflow's concurrency group serializes archive writers.
+#[derive(Debug)]
+struct PushPacer {
+    interval: Duration,
+    next_push: Option<Instant>,
+}
+
+impl Default for PushPacer {
+    fn default() -> Self {
+        Self {
+            interval: Duration::from_secs(12),
+            next_push: None,
+        }
+    }
+}
+
+impl PushPacer {
+    fn remaining(&self, now: Instant) -> Duration {
+        self.next_push
+            .map(|next| next.saturating_duration_since(now))
+            .unwrap_or_default()
+    }
+
+    fn wait(&self) {
+        std::thread::sleep(self.remaining(Instant::now()));
+    }
+
+    fn acknowledged(&mut self, now: Instant) {
+        self.next_push = Some(now + self.interval);
+    }
+}
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Record {
@@ -37,7 +72,7 @@ pub struct CreationJournal {
     data: Data,
     store: Store,
     initialized: bool,
-    failed: bool,
+    failure: Option<String>,
 }
 
 #[derive(Debug)]
@@ -45,6 +80,7 @@ enum Store {
     Git {
         repo: PathBuf,
         head: Option<String>,
+        pacer: PushPacer,
     },
     #[cfg(test)]
     File {
@@ -101,8 +137,9 @@ impl CreationJournal {
             store: Store::Git {
                 repo: repo.into(),
                 head,
+                pacer: PushPacer::default(),
             },
-            failed: false,
+            failure: None,
         })
     }
 
@@ -111,8 +148,8 @@ impl CreationJournal {
     }
 
     pub fn check_health(&self) -> Result<()> {
-        if self.failed {
-            bail!("Creation journal checkpoint failed; restart from the remote before further Spotify writes");
+        if let Some(reason) = &self.failure {
+            bail!("Creation journal checkpoint failed: {reason}; restart from the remote before further Spotify writes");
         }
         Ok(())
     }
@@ -122,6 +159,18 @@ impl CreationJournal {
             .records
             .get(key)
             .is_none_or(|r| r.needs_reconciliation)
+    }
+
+    /// Spend the pacing wait before POST so the returned ID can be pushed
+    /// immediately, without deliberately extending the lost-response window.
+    pub fn pace_creation(&self) -> Result<()> {
+        self.check_health()?;
+        match &self.store {
+            Store::Git { pacer, .. } => pacer.wait(),
+            #[cfg(test)]
+            Store::File { .. } => (),
+        }
+        Ok(())
     }
 
     /// Register legacy pending work and retain any IDs/completions that reached
@@ -174,7 +223,7 @@ impl CreationJournal {
         self.check_health()?;
         let bytes = serde_json::to_vec_pretty(&self.data)?;
         let result = match &mut self.store {
-            Store::Git { repo, head } => (|| {
+            Store::Git { repo, head, pacer } => (|| {
                 let blob = git(repo, &["hash-object", "-w", "--stdin"], Some(&bytes))?;
                 let tree = git(
                     repo,
@@ -201,8 +250,10 @@ impl CreationJournal {
                     args.extend(["-p", parent]);
                 }
                 let commit = git(repo, &args, None)?.trim().to_owned();
+                pacer.wait();
                 git(repo, &["push", "origin", &format!("{commit}:refs/heads/{BRANCH}")], None)
-                    .context("Creation journal push was not acknowledged (possible concurrent writer); no further Spotify writes are allowed")?;
+                    .context("Creation journal push was not acknowledged; no further Spotify writes are allowed")?;
+                pacer.acknowledged(Instant::now());
                 *head = Some(commit);
                 Ok(())
             })(),
@@ -225,8 +276,10 @@ impl CreationJournal {
                 }
             }
         };
-        if result.is_err() {
-            self.failed = true;
+        if let Err(error) = &result {
+            // Keep the original sanitized cause: the archive's final health
+            // check must not replace it with an uninformative generic error.
+            self.failure = Some(format!("{error:#}"));
         } else {
             self.initialized = true;
         }
@@ -248,7 +301,7 @@ impl CreationJournal {
         Self {
             data,
             initialized,
-            failed: false,
+            failure: None,
             store: Store::File {
                 path: path.into(),
                 writes_left: None,
@@ -344,9 +397,90 @@ fn git(repo: &Path, args: &[&str], input: Option<&[u8]>) -> Result<String> {
     if !result.status.success() {
         // Git diagnostics can contain credential-bearing remote URLs. Keep the
         // error actionable without echoing config, URLs, stderr or HTTP headers.
-        bail!("Creation journal Git operation failed (exit {:?}); check origin access and concurrent writers", result.status.code());
+        let operation = args
+            .iter()
+            .find(|arg| {
+                matches!(
+                    **arg,
+                    "ls-remote"
+                        | "fetch"
+                        | "show"
+                        | "rev-parse"
+                        | "hash-object"
+                        | "mktree"
+                        | "commit-tree"
+                        | "push"
+                )
+            })
+            .copied()
+            .unwrap_or("operation");
+        bail!(
+            "Creation journal Git {operation} failed (exit {:?}): {}",
+            result.status.code(),
+            git_failure_category(&result.stderr)
+        );
     }
     String::from_utf8(result.stdout).context("Invalid UTF-8 in creation journal Git output")
+}
+
+/// Classify known failure signatures without printing credential-bearing URLs,
+/// HTTP headers, or arbitrary hook/server output.
+fn git_failure_category(stderr: &[u8]) -> &'static str {
+    let text = String::from_utf8_lossy(stderr).to_ascii_lowercase();
+    if [
+        "too many requests",
+        "rate limit",
+        "throttl",
+        "http 429",
+        "error: 429",
+        "abuse",
+    ]
+    .iter()
+    .any(|s| text.contains(s))
+    {
+        "remote throttling/rate limit; allow a cooldown before restarting"
+    } else if ["non-fast-forward", "fetch first", "cannot lock ref"]
+        .iter()
+        .any(|s| text.contains(s))
+    {
+        "remote ref changed; reload journal state before restarting"
+    } else if ["protected branch", "gh006", "gh013"]
+        .iter()
+        .any(|s| text.contains(s))
+    {
+        "remote branch protection rejected the update"
+    } else if [
+        "authentication failed",
+        "permission denied",
+        "http 401",
+        "http 403",
+        "error: 401",
+        "error: 403",
+    ]
+    .iter()
+    .any(|s| text.contains(s))
+    {
+        "origin authentication or permissions rejected the operation"
+    } else if (500..=599).any(|status| {
+        text.contains(&format!("http {status}")) || text.contains(&format!("error: {status}"))
+    }) || text.contains("internal server error")
+    {
+        "remote server error"
+    } else if [
+        "could not resolve host",
+        "failed to connect",
+        "connection reset",
+        "timed out",
+        "unexpected disconnect",
+        "remote end hung up",
+    ]
+    .iter()
+    .any(|s| text.contains(s))
+    {
+        "network/connection failure"
+    } else {
+        "unclassified error (raw output withheld to protect credentials)"
+    }
 }
 
 #[cfg(test)]
