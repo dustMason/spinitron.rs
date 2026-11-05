@@ -2831,7 +2831,7 @@
           "start_time": "2026-11-04T07:00:00-0800",
           "end_time": "2026-11-04T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4OJ8aqQJC8Jxn33VQtwgMc",
         "desired_uris": [
@@ -2860,8 +2860,104 @@
           "spotify:track:4hexzNdmmp7NpBCnUHOad5"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T09:00:00-0800",
+          "broadcast_start": "2026-11-04T07:00:00-0800",
+          "imported_at": "2026-11-05T23:37:40.370295187+00:00",
+          "last_updated": "2026-11-05 23:37 UTC",
           "name": "KALX - the Calm Before Your 9 to 5.3 - 2026-11-04",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Hans P. Kjorstad"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734ba4b26bc10c22bcecae7235",
+              "name": "Rif"
+            },
+            {
+              "artists": [
+                "Ellen Fullman",
+                "The Living Earth Show"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cdd972e07ca911805df86e5b",
+              "name": "Environmental Memory"
+            },
+            {
+              "artists": [
+                "Klara Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4c9254994758b20941278f7",
+              "name": "Hardcore"
+            },
+            {
+              "artists": [
+                "Tom Skinner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273759bd3e78801c76f0af08dd1",
+              "name": "There's Nothing To Be Scared Of"
+            },
+            {
+              "artists": [
+                "Funky Times",
+                "Philip Lassiter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ab4d4019b37a4071c84ae695",
+              "name": "Duct Tape"
+            },
+            {
+              "artists": [
+                "Wayne Phoenix",
+                "CrystalXulu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738ac3783e588778cda960f4d3",
+              "name": "One Man Island"
+            },
+            {
+              "artists": [
+                "Barnt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365b4f6221f684f488ba7fe87",
+              "name": "Emi"
+            },
+            {
+              "artists": [
+                "Semiratruth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273266e3ff47090ffec38f2781d",
+              "name": "Blood Moon Eclipse"
+            },
+            {
+              "artists": [
+                "Triumph"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fc453a0c725f20d5b31a1d90",
+              "name": "Fight The Good Fight"
+            },
+            {
+              "artists": [
+                "⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27302c4e76b6017ba6091d58e11",
+              "name": "☼⃝☼⃝◉ ҉⃝O◉◖ƪ❍⊁◞..◟⊀ ̟̞̝̜̙̘̗̖҉̵̴̨̧̢̡̼̻̺̹̳̲̱̰̯̮̭̬̫̪̩̦̥̤̣̠҈͈͇͉͍͎͓͔͕͖͙͚͜͢͢͢͢͢͢͢͢͢͢͢͢͢͢ͅ ⦁ ⦁ ⦁ ❍|◗щ (*ㅇ△ Φ☆)ノ☼⃝⊖☼⃝☼⃝❁ ҉⃝☼⃝☼⃝ ⃝͢ ̢⃝͜ ☼⃝☼⃝______oOo___________+-_.:._-*\"+-_.:._-*\"+-_.:._-*\"+-_.:._-*\"+-_.:._-*\"+-_.:._-*\""
+            },
+            {
+              "artists": [
+                "Arushi Jain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b937a3581560fea782347c8",
+              "name": "A Portal To Silver Linings"
+            },
+            {
+              "artists": [
+                "Salamanda"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365494501546c0ed085bfd4d0",
+              "name": "Paper Labyrinth"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23286951/the-Calm-Before-Your-9-to-5-3",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/4OJ8aqQJC8Jxn33VQtwgMc"
         }
       },
       "needs_reconciliation": false
