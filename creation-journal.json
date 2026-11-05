@@ -5524,7 +5524,7 @@
           "start_time": "2026-11-03T06:00:00-0800",
           "end_time": "2026-11-03T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5XFBTbSUjjULYPBXZMPxYW",
         "desired_uris": [
@@ -5538,8 +5538,73 @@
           "spotify:track:0lN3CCQxTSg8hxFHKhuL0B"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T07:00:00-0800",
+          "broadcast_start": "2026-11-03T06:00:00-0800",
+          "imported_at": "2026-11-05T23:50:57.680560770+00:00",
+          "last_updated": "2026-11-05 23:50 UTC",
           "name": "KPOO - More Overnight - 2026-11-03",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Whispers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bf07f8fd074d386d6e22a921",
+              "name": "Walk With Me"
+            },
+            {
+              "artists": [
+                "D.Anthony"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736b2464fb8a8bdaac2b4f4922",
+              "name": "I Feel Good Today"
+            },
+            {
+              "artists": [
+                "The Dells"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737fdbebcea0af7e3f4ee3021e",
+              "name": "The Love We Had (Stays On My Mind)"
+            },
+            {
+              "artists": [
+                "Aretha Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733443b2f12a45d9a05b0d7c33",
+              "name": "You and Me"
+            },
+            {
+              "artists": [
+                "The Friends Of Distinction"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fcb1ced5b679054093f3dfbe",
+              "name": "Love Or Let Me Be Lonely - Digitally Mastered - May - June, 1988"
+            },
+            {
+              "artists": [
+                "Harold Melvin & The Blue Notes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365cfa1e7a63acbc7a5ddbe86",
+              "name": "If You Don't Know Me By Now"
+            },
+            {
+              "artists": [
+                "The Isley Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ff024e27ef949d0361611cb3",
+              "name": "For the Love of You, Pts. 1 & 2"
+            },
+            {
+              "artists": [
+                "Natalie Cole"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27379e5e2b1860079d662a9bb76",
+              "name": "Inseparable"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23281363/More-Overnight",
+          "station": "KPOO",
+          "track_count": 8,
+          "url": "https://open.spotify.com/playlist/5XFBTbSUjjULYPBXZMPxYW"
         }
       },
       "needs_reconciliation": false
