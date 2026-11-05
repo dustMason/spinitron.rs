@@ -55,6 +55,52 @@
       },
       "needs_reconciliation": true
     },
+    "KALX:23276431": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23276431,
+          "title": "The Lysergic Listen",
+          "url": "https://spinitron.com/KALX/pl/23276431/The-Lysergic-Listen",
+          "start_time": "2026-11-05T09:00:00-0800",
+          "end_time": "2026-11-05T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5c5F0rVz812oUbgRUq5HcR",
+          "spotify:track:0IT7BrbD2duM6ywDoOWQuD",
+          "spotify:track:4jt3hgslUs6k4An5gDpZ4T",
+          "spotify:track:6XOC4Omx2nMYiafP4aO3yI",
+          "spotify:track:5Y8UiubzdqX1tqYpnUgjaw",
+          "spotify:track:3FBXqwkeoFbUilXp8PW0he",
+          "spotify:track:00redmR41ypLVd6LwI1xOh",
+          "spotify:track:2BA3OxBtieKn7A0lTFhnxM",
+          "spotify:track:1H98BjxPPXXSG2SjrvKJby",
+          "spotify:track:7wF663l2y1iiP8QFjB9KLJ",
+          "spotify:track:2KxertHdWb8REWgFJkIwCO",
+          "spotify:track:1ao1wmWdhd9MRJyGUPodbT",
+          "spotify:track:17zgDzEjXZD8jeS61s1l99",
+          "spotify:track:2BLVAXTxZGfa2isBoonUJZ",
+          "spotify:track:1K0LgEiUYjQECku9aLNbrE",
+          "spotify:track:0D7HkLSyFvAb6NXCPF9eYM",
+          "spotify:track:1oRSvQ98Uake6pL6BfcpgU",
+          "spotify:track:44u8TNTKl3CbrVqmPvRr08",
+          "spotify:track:28vRQKgva8oqOcsCSiHyXD",
+          "spotify:track:4isoVoM0fKN0WryUt7MIfG",
+          "spotify:track:21ymhzJL2TKylKkFfwzMq2",
+          "spotify:track:2DHZqNg9WM1NYATvPYGDjA",
+          "spotify:track:39DPy7HQzepfCdxTy9KD18",
+          "spotify:track:3HGlaKMMFsTEaat5TZ9vJF",
+          "spotify:track:7zN04jljWDxlINSTn5l09g"
+        ],
+        "listing": {
+          "name": "KALX - The Lysergic Listen - 2026-11-05",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23276641": {
       "entry": {
         "station": "KALX",
