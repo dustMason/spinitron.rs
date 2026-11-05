@@ -5908,7 +5908,7 @@
           "start_time": "2026-11-03T12:00:00-0800",
           "end_time": "2026-11-03T16:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4AZ3xs6kGpWjlQLkaTDIcs",
         "desired_uris": [
@@ -5938,8 +5938,110 @@
           "spotify:track:2jW6ckg37oN5yRSONh93DC"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T16:00:00-0800",
+          "broadcast_start": "2026-11-03T12:00:00-0800",
+          "imported_at": "2026-11-05T23:52:57.205263809+00:00",
+          "last_updated": "2026-11-05 23:52 UTC",
           "name": "KPOO - Uplift Show - 2026-11-03",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "John Coltrane Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732f7617fc50c129c50a61b1c6",
+              "name": "A Love Supreme, Pt. 1: Acknowledgement - Live"
+            },
+            {
+              "artists": [
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbfb71a2f5cca531f145ca85",
+              "name": "Blue Train - Remastered 2003/Rudy Van Gelder Edition"
+            },
+            {
+              "artists": [
+                "The Cannonball Adderley Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735c51da1488fd80a43a61685a",
+              "name": "Limehouse Blues"
+            },
+            {
+              "artists": [
+                "Wilbur Harden",
+                "John Coltrane",
+                "Curtis Fuller",
+                "Tommy Flanagan",
+                "Ali Jackson",
+                "Art Taylor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a018ab3d217288fdafb9eb9d",
+              "name": "Gold Coast"
+            },
+            {
+              "artists": [
+                "Ahmad Jamal Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732eceabbc54b316b88e0bd8e7",
+              "name": "Stolen Moments"
+            },
+            {
+              "artists": [
+                "Duke Ellington",
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732def9ef3f6a82c8d6fd8c143",
+              "name": "The Feeling Of Jazz"
+            },
+            {
+              "artists": [
+                "John Coltrane",
+                "Paul Quinichette"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d32671533fa64136138c125",
+              "name": "Vodka"
+            },
+            {
+              "artists": [
+                "Miles Davis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ebc17239b6b18ba88cfb8ca",
+              "name": "Love For Sale"
+            },
+            {
+              "artists": [
+                "Ahmad Jamal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273437d1bf28f631203edba1cbb",
+              "name": "What Is This Thing Called Love - Live At The Alhambra/1961"
+            },
+            {
+              "artists": [
+                "Billie Holiday",
+                "Teddy Wilson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738091898c12b924f574ea6297",
+              "name": "What a Little Moonlight Can Do (with Teddy Wilson & His Orchestra)"
+            },
+            {
+              "artists": [
+                "Charlie Parker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e50f3136ae244b7ed781ddf",
+              "name": "A Night in Tunisia"
+            },
+            {
+              "artists": [
+                "Duke Ellington",
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732def9ef3f6a82c8d6fd8c143",
+              "name": "Angelica"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23282792/Uplift-Show",
+          "station": "KPOO",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/4AZ3xs6kGpWjlQLkaTDIcs"
         }
       },
       "needs_reconciliation": false
