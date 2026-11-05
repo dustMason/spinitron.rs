@@ -1690,6 +1690,40 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23292236": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23292236,
+          "title": "The Garden of Kalx",
+          "url": "https://spinitron.com/KALX/pl/23292236/The-Garden-of-Kalx",
+          "start_time": "2026-11-05T07:00:00-0800",
+          "end_time": "2026-11-05T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1MeO1TDXi8pHspnzeIIzPp",
+          "spotify:track:19pWHLR4ms9hD5ENlx22Aw",
+          "spotify:track:7DGynlj3vdtXlsRAOJMv75",
+          "spotify:track:6AC2VDhh56DlkOMYjYs4Tg",
+          "spotify:track:41FloGomAs2h1hccRp2OfV",
+          "spotify:track:2ulu7mMxQrsTUZvy07EMLY",
+          "spotify:track:2VyYCJOZdubKqIzqRMdZxG",
+          "spotify:track:1EhT1KWjv9SBvewdJIxbXA",
+          "spotify:track:6eCbJJDlHDOpWMojf9Jpxw",
+          "spotify:track:5owAolGQ0AhJb9tP8y1UcV",
+          "spotify:track:7hZUlbdkawpMvh54ZMyFGF",
+          "spotify:track:6m4hahmBzHSn6s2q6aScB3",
+          "spotify:track:0tYsFLROWchUco4i58rUZm"
+        ],
+        "listing": {
+          "name": "KALX - The Garden of Kalx - 2026-11-05",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
