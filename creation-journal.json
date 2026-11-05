@@ -2972,7 +2972,7 @@
           "start_time": "2026-11-04T09:00:00-0800",
           "end_time": "2026-11-04T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3JVVjxjeN1vpbxFxnyMEJQ",
         "desired_uris": [
@@ -3004,8 +3004,102 @@
           "spotify:track:71aFFXinLL8OuDs63IjnNG"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T12:00:00-0800",
+          "broadcast_start": "2026-11-04T09:00:00-0800",
+          "imported_at": "2026-11-05T23:38:19.974700964+00:00",
+          "last_updated": "2026-11-05 23:38 UTC",
           "name": "KALX - (Sex14s, presented by The Flipside) - 2026-11-04",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Brian Eno"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736fd383a32ba6ad8379a43fd4",
+              "name": "Slow Water - Remastered 2005"
+            },
+            {
+              "artists": [
+                "Matt Alber"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27398724a13de2fae390c00b061",
+              "name": "Beotia"
+            },
+            {
+              "artists": [
+                "Active Child"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738cc331644a5f59f3907dd72c",
+              "name": "Ivy"
+            },
+            {
+              "artists": [
+                "Here We Go Magic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ffd8949775327f28f7847320",
+              "name": "Over The Ocean"
+            },
+            {
+              "artists": [
+                "Harry Belafonte",
+                "Miriam Makeba"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f1d2e69053b2285e3e9aa36a",
+              "name": "My Angel (Malaika)"
+            },
+            {
+              "artists": [
+                "Sidi Touré"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273232081952848a7b39e0d7ba1",
+              "name": "Euzo"
+            },
+            {
+              "artists": [
+                "Miles Davis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c769471ffba73eb702583722",
+              "name": "Red China Blues"
+            },
+            {
+              "artists": [
+                "Idris Muhammad"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f70afd78bedfd16a53508f2",
+              "name": "Super Bad"
+            },
+            {
+              "artists": [
+                "The Brothers Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730193845f12369c0088f49d12",
+              "name": "Mista' Cool"
+            },
+            {
+              "artists": [
+                "Jungle Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a537285ac9065a8d25beba8f",
+              "name": "Get Down"
+            },
+            {
+              "artists": [
+                "Salt-N-Pepa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aef8ef4e8a0a91ec9ff0cc8c",
+              "name": "Expression"
+            },
+            {
+              "artists": [
+                "The Isley Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739bb871321432d6d067c03573",
+              "name": "Who's That Lady"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23287189/Sex14s-presented-by-The-Flipside",
+          "station": "KALX",
+          "track_count": 26,
+          "url": "https://open.spotify.com/playlist/3JVVjxjeN1vpbxFxnyMEJQ"
         }
       },
       "needs_reconciliation": false
