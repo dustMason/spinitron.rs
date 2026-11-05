@@ -1531,7 +1531,7 @@
           "start_time": "2026-11-03T09:30:00-0800",
           "end_time": "2026-11-03T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3om2sDwtImsN7kD49nFTYu",
         "desired_uris": [
@@ -1562,8 +1562,101 @@
           "spotify:track:666c286mls0pVjU2U4GNgY"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T12:00:00-0800",
+          "broadcast_start": "2026-11-03T09:30:00-0800",
+          "imported_at": "2026-11-05T23:16:02.648027750+00:00",
+          "last_updated": "2026-11-05 23:16 UTC",
           "name": "KALX - FREEFORM - 2026-11-03 9:30am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Ravi Shankar"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730a0be1ec6e0f33f6d6e07f64",
+              "name": "Raga Ahir Bhairav"
+            },
+            {
+              "artists": [
+                "Mon Rovîa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273465d728693ac3b617b28b554",
+              "name": "Rust."
+            },
+            {
+              "artists": [
+                "Neal Casal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e10bc528eb090b95f8707b99",
+              "name": "Muscatine"
+            },
+            {
+              "artists": [
+                "Margo Cilker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e1dc97d3e053d87467b4115",
+              "name": "State Line"
+            },
+            {
+              "artists": [
+                "Todd Snider"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27370890eb8e8ead3ea4f7a9816",
+              "name": "My Second Rodeo"
+            },
+            {
+              "artists": [
+                "Margo Price"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b55af9d0c3ac049860a31f9",
+              "name": "Oval Room"
+            },
+            {
+              "artists": [
+                "Willie Nelson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c2323bb6cea977725abd3657",
+              "name": "Vote 'Em Out"
+            },
+            {
+              "artists": [
+                "Ry Cooder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27300dd75ae375df84916e7c982",
+              "name": "Take Your Hands off It"
+            },
+            {
+              "artists": [
+                "Jesse Welles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273618b5f9480d3def24f3328f9",
+              "name": "Domestic Error"
+            },
+            {
+              "artists": [
+                "Parliament"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273044fbdcb779b28e9ff94ee58",
+              "name": "Up For The Down Stroke"
+            },
+            {
+              "artists": [
+                "Rufus Thomas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736ea3bd1dca26886437ac9934",
+              "name": "Sixty Minute Man"
+            },
+            {
+              "artists": [
+                "Martha Reeves & The Vandellas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736654595492e00643f9dba83d",
+              "name": "Nowhere To Run - Single Version / Mono"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23282096/FREEFORM",
+          "station": "KALX",
+          "track_count": 25,
+          "url": "https://open.spotify.com/playlist/3om2sDwtImsN7kD49nFTYu"
         }
       },
       "needs_reconciliation": false
