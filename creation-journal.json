@@ -12,7 +12,7 @@
           "start_time": "2026-11-03T00:00:00-0800",
           "end_time": "2026-11-03T01:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5bBtN9qg3BfTpwvhPs7V7M",
         "desired_uris": [
@@ -21,8 +21,39 @@
           "spotify:track:6HfmH1Rh3QtIDbpvsxNRuJ"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T01:00:00-0800",
+          "broadcast_start": "2026-11-03T00:00:00-0800",
+          "imported_at": "2026-11-05T23:15:05.157414521+00:00",
+          "last_updated": "2026-11-05 23:15 UTC",
           "name": "KALX - Information Overload - 2026-11-03",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Uri Geller"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d11b643fe3fc68146e04666c",
+              "name": "Mood"
+            },
+            {
+              "artists": [
+                "Patricia B. McGarry (Harleman)"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273af6c3059884f878304783771",
+              "name": "This Fever"
+            },
+            {
+              "artists": [
+                "Emma Topping",
+                "Khalil Gibran"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d8b188a17c5826052eb1f25b",
+              "name": "The Prophet: The Coming of the Ship"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/22932317/Information-Overload",
+          "station": "KALX",
+          "track_count": 3,
+          "url": "https://open.spotify.com/playlist/5bBtN9qg3BfTpwvhPs7V7M"
         }
       },
       "needs_reconciliation": false
