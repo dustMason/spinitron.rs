@@ -332,7 +332,7 @@
           "start_time": "2026-11-02T09:00:00-0800",
           "end_time": "2026-11-02T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4BEBAhbDn6AhP7Wu8SgBUa",
         "desired_uris": [
@@ -373,8 +373,102 @@
           "spotify:track:7vfYUQiOFsan7YJZ3pm3VO"
         ],
         "listing": {
+          "broadcast_end": "2026-11-02T12:00:00-0800",
+          "broadcast_start": "2026-11-02T09:00:00-0800",
+          "imported_at": "2026-11-05T23:15:15.133838889+00:00",
+          "last_updated": "2026-11-05 23:15 UTC",
           "name": "KALX - FREEFORM - 2026-11-02 9:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Television"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27318b36d985b0ae01163ca9cf6",
+              "name": "Marquee Moon"
+            },
+            {
+              "artists": [
+                "Judee Sill"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273701ae899c4b514abf4b15e68",
+              "name": "Jesus Was a Cross Maker"
+            },
+            {
+              "artists": [
+                "Linda Ronstadt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273990fc9c1cfe30d5c2ea77393",
+              "name": "Prisoner in Disguise"
+            },
+            {
+              "artists": [
+                "Bobby \"Blue\" Bland"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c7f46ab4f8aac0bd83fc6262",
+              "name": "I Wouldn't Treat A Dog (The Way You Treated Me)"
+            },
+            {
+              "artists": [
+                "Parlor Greens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d775127dbc0d8372bd600473",
+              "name": "Driptorch"
+            },
+            {
+              "artists": [
+                "April & Monroe Grisman The Beautiful Hang Gang"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273672f273eb89cbe7fe1b953bf",
+              "name": "Yellow Brick Road"
+            },
+            {
+              "artists": [
+                "The Linda Lindas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27310fb1010838a88051010df10",
+              "name": "High Horse"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "Six Shot Morning"
+            },
+            {
+              "artists": [
+                "Southern Culture on the Skids"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739489a4a0b8368896a7691e5c",
+              "name": "Banana Puddin'"
+            },
+            {
+              "artists": [
+                "Culture"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d0a9c035dd29dc853b536df3",
+              "name": "Jah Rastafari"
+            },
+            {
+              "artists": [
+                "Margo Price",
+                "Memphis Mariachi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b55af9d0c3ac049860a31f9",
+              "name": "De Colores [Feat. Memphis Mariachi]"
+            },
+            {
+              "artists": [
+                "Parlor Greens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d775127dbc0d8372bd600473",
+              "name": "West Memphis"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23276641/FREEFORM",
+          "station": "KALX",
+          "track_count": 35,
+          "url": "https://open.spotify.com/playlist/4BEBAhbDn6AhP7Wu8SgBUa"
         }
       },
       "needs_reconciliation": false
