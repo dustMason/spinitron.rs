@@ -2511,7 +2511,7 @@
           "start_time": "2026-11-04T00:00:00-0800",
           "end_time": "2026-11-04T03:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5bdnOTG5U6OzUTPURovSlN",
         "desired_uris": [
@@ -2544,8 +2544,104 @@
           "spotify:track:26aKrhcuHmm5gRXoXmh6Ek"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T03:00:00-0800",
+          "broadcast_start": "2026-11-04T00:00:00-0800",
+          "imported_at": "2026-11-05T23:36:20.617763773+00:00",
+          "last_updated": "2026-11-05 23:36 UTC",
           "name": "KALX - SNOT ROCK RADIO - 2026-11-04",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "DARKSIDE"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732edcea789eb8a672979dde90",
+              "name": "Golden Arrow"
+            },
+            {
+              "artists": [
+                "Actress"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6f7b357a1dcf5b14298aa0c",
+              "name": "Paris"
+            },
+            {
+              "artists": [
+                "Alex Cameron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a9f9f499d82111f429413264",
+              "name": "Politics of Love"
+            },
+            {
+              "artists": [
+                "Discovery Zone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bcdfa1526d4c917047f67521",
+              "name": "Supernatural - Planetarium Mix"
+            },
+            {
+              "artists": [
+                "Com Truise"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273374fe097b3963bc69e57a064",
+              "name": "Flightwave"
+            },
+            {
+              "artists": [
+                "Floating Points",
+                "San Francisco Ballet Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d29699a86f26f0e1df161d16",
+              "name": "Movement 14 - Nowhere to Land"
+            },
+            {
+              "artists": [
+                "Alewya"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731ee28f525d2cbe7813e242d2",
+              "name": "Cairo FM"
+            },
+            {
+              "artists": [
+                "Alias",
+                "Tarsier"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a401440ff79b4a08f2aea3f1",
+              "name": "Picking the Same Lock"
+            },
+            {
+              "artists": [
+                "Ezra Collective"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d02e8be17bfe4eb4afb2141",
+              "name": "El Corazón"
+            },
+            {
+              "artists": [
+                "BADBADNOTGOOD"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dc45454c404601fa10ad8536",
+              "name": "Kaleidoscope"
+            },
+            {
+              "artists": [
+                "Ana Tijoux",
+                "Dj Dacel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27357b21cbf7eac805988f0b97a",
+              "name": "APAGON"
+            },
+            {
+              "artists": [
+                "Def Jef"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e6cf2bddbec32f5f7f23723b",
+              "name": "On The Real Tip"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23285529/SNOT-ROCK-RADIO",
+          "station": "KALX",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/5bdnOTG5U6OzUTPURovSlN"
         }
       },
       "needs_reconciliation": false
