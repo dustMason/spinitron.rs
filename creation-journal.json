@@ -1392,7 +1392,7 @@
           "start_time": "2026-11-03T07:00:00-0800",
           "end_time": "2026-11-03T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3vkDs54Z8CftbjlSK3QoI2",
         "desired_uris": [
@@ -1420,8 +1420,103 @@
           "spotify:track:7BaDRi8gmRnOducT6KaOfc"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T09:00:00-0800",
+          "broadcast_start": "2026-11-03T07:00:00-0800",
+          "imported_at": "2026-11-05T23:15:57.660173194+00:00",
+          "last_updated": "2026-11-05 23:15 UTC",
           "name": "KALX - The Rare Earth Show - 2026-11-03",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "This Is Lorelei"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c456875e0df6d8195f4b5545",
+              "name": "And I Haven't Seen My Love in Quite a While"
+            },
+            {
+              "artists": [
+                "Thee Sinseers",
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cea5e810a36bf0e912d4bcab",
+              "name": "Let's Fall In Love (Again)"
+            },
+            {
+              "artists": [
+                "Beach House"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730af2276ae66a42e73eb07683",
+              "name": "Drunk In LA"
+            },
+            {
+              "artists": [
+                "Terry Callier"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738906380a5c17f94608dd93b3",
+              "name": "What Color Is Love"
+            },
+            {
+              "artists": [
+                "Death Cab for Cutie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731356b24d48cbabc44384e753",
+              "name": "Trap Door"
+            },
+            {
+              "artists": [
+                "Raskovich",
+                "Braen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736748265bcbfd4cf4b38efa0d",
+              "name": "Meditazioni"
+            },
+            {
+              "artists": [
+                "Andrew Bird"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a70ad1f5c807f4d0410f5ce0",
+              "name": "Lull"
+            },
+            {
+              "artists": [
+                "Interpol"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a9d4720ac4088a6c58960235",
+              "name": "Iron City"
+            },
+            {
+              "artists": [
+                "Twisted Teens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5c07e77538b5f44bc649491",
+              "name": "When We First Met"
+            },
+            {
+              "artists": [
+                "Babe Rainbow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273727dfede767d13b22241bfd2",
+              "name": "Acid and Honey"
+            },
+            {
+              "artists": [
+                "David Liska"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730e66b09719d68321adb9fd31",
+              "name": "Raindog"
+            },
+            {
+              "artists": [
+                "abracadabra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd22ee8e5d1f0ca90bba6ee7",
+              "name": "into the pail"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23281388/The-Rare-Earth-Show",
+          "station": "KALX",
+          "track_count": 22,
+          "url": "https://open.spotify.com/playlist/3vkDs54Z8CftbjlSK3QoI2"
         }
       },
       "needs_reconciliation": false
