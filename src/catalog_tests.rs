@@ -19,6 +19,8 @@ struct FakeSpotify {
     fail_resolve: bool,
     fail_inventory: bool,
     fresh_inventories: usize,
+    inventories: usize,
+    journal_path: Option<PathBuf>,
 }
 
 impl ArchiveSpotify for FakeSpotify {
@@ -42,6 +44,7 @@ impl ArchiveSpotify for FakeSpotify {
         marker: &str,
         refresh: bool,
     ) -> Result<Option<RemotePlaylist>> {
+        self.inventories += 1;
         if refresh {
             self.fresh_inventories += 1;
         }
@@ -59,6 +62,19 @@ impl ArchiveSpotify for FakeSpotify {
         Ok(matches.first().map(|(p, _)| p.clone()))
     }
     async fn create_archive(&mut self, name: &str, description: &str) -> Result<RemotePlaylist> {
+        if let Some(path) = &self.journal_path {
+            let journal: Value = serde_json::from_slice(&fs::read(path).unwrap()).unwrap();
+            let key = description
+                .split(" | ")
+                .next()
+                .unwrap()
+                .strip_prefix("Spinitron archive: ")
+                .unwrap();
+            assert_eq!(journal["records"][key]["entry"]["state"], "creating");
+            assert!(journal["records"][key]["entry"]
+                .get("playlist_id")
+                .is_none());
+        }
         self.creates += 1;
         if description.contains(['\n', '\r']) {
             return Err(CreationRejected(
@@ -89,6 +105,14 @@ impl ArchiveSpotify for FakeSpotify {
         Ok(p)
     }
     async fn replace_draft(&self, id: &str, uris: &[String]) -> Result<()> {
+        if let Some(path) = &self.journal_path {
+            let journal: Value = serde_json::from_slice(&fs::read(path).unwrap()).unwrap();
+            assert!(journal["records"]
+                .as_object()
+                .unwrap()
+                .values()
+                .any(|r| r["entry"]["state"] == "filling" && r["entry"]["playlist_id"] == id));
+        }
         self.fills.set(self.fills.get() + 1);
         self.playlists.borrow_mut().get_mut(id).unwrap().1 = uris.to_vec();
         if self.fail_fill.replace(false) {
@@ -133,15 +157,26 @@ impl Fixture {
         let root =
             std::env::temp_dir().join(format!("spinitron-catalog-test-{}", uuid::Uuid::new_v4()));
         fs::create_dir(&root).unwrap();
-        let fixture = Self {
+        let mut fixture = Self {
             root,
             catalog: Catalog {
                 version: 1,
+                journal: None,
                 entries: BTreeMap::new(),
             },
         };
         fixture.catalog.save(&fixture.path()).unwrap();
+        fixture.reload();
         fixture
+    }
+    fn reload(&mut self) {
+        self.catalog = Catalog::load(&self.path()).unwrap();
+        self.catalog
+            .attach_journal(
+                &self.path(),
+                CreationJournal::for_test(&self.root.join("journal.json"), "owner"),
+            )
+            .unwrap();
     }
     fn path(&self) -> PathBuf {
         self.root.join("catalog.json")
@@ -306,7 +341,7 @@ async fn name_migration_is_bounded_reconciles_lost_response_and_preserves_custom
         .sync_archive_names(&f.path(), &spotify, 1, pause)
         .await
         .is_err());
-    f.catalog = Catalog::load(&f.path()).unwrap();
+    f.reload();
     assert_eq!(
         f.catalog
             .sync_archive_names(&f.path(), &spotify, 1, pause)
@@ -394,7 +429,7 @@ async fn archives_stay_saved_and_historical_removal_states_remain_readable() {
     f.catalog.entries.get_mut("KALX:3").unwrap().state = State::ReleaseAttempted;
     spotify.library.borrow_mut().remove("p2");
     f.catalog.save(&f.path()).unwrap();
-    f.catalog = Catalog::load(&f.path()).unwrap();
+    f.reload();
     for id in 1..=3 {
         assert!(!f
             .catalog
@@ -443,7 +478,7 @@ async fn partial_draft_recovers_without_creating_another_playlist() {
         .await
         .is_err());
     assert!(f.catalog.listings().unwrap().is_empty());
-    f.catalog = Catalog::load(&f.path()).unwrap();
+    f.reload();
     f.catalog
         .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
         .await
@@ -464,7 +499,7 @@ async fn uncertain_creation_is_adopted_by_exact_marker() {
         .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
         .await
         .is_err());
-    f.catalog = Catalog::load(&f.path()).unwrap();
+    f.reload();
     f.catalog
         .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
         .await
@@ -485,7 +520,7 @@ async fn rejected_creation_is_persisted_as_prepared_and_can_be_retried() {
         .await
         .unwrap_err();
     assert!(error.is::<CreationRejected>());
-    f.catalog = Catalog::load(&f.path()).unwrap();
+    f.reload();
     assert_eq!(f.catalog.entries["KALX:1"].state, State::Prepared);
     assert!(f.catalog.entries["KALX:1"].playlist_id.is_none());
     assert!(spotify.playlists.borrow().is_empty());
@@ -543,7 +578,7 @@ async fn manual_recovery_retries_only_the_named_missing_creation_and_preserves_t
             .is_err());
     }
     spotify.playlists.borrow_mut().clear();
-    f.catalog = Catalog::load(&f.path()).unwrap();
+    f.reload();
     let desired = f.catalog.entries["KALX:1"].desired_uris.clone();
     let results = f
         .catalog
@@ -665,7 +700,7 @@ async fn manual_recovery_permission_does_not_survive_another_lost_response() {
     assert!(results[0].1.is_err());
     assert_eq!(spotify.creates, 2);
     spotify.playlists.borrow_mut().clear();
-    f.catalog = Catalog::load(&f.path()).unwrap();
+    f.reload();
     assert_eq!(f.catalog.entries["KALX:1"].state, State::Creating);
     let results = f
         .catalog
@@ -696,7 +731,7 @@ async fn manual_recovery_can_resume_population_after_a_partial_fill() {
         .await
         .unwrap();
     assert!(results[0].1.is_err());
-    f.catalog = Catalog::load(&f.path()).unwrap();
+    f.reload();
     assert_eq!(f.catalog.entries["KALX:1"].state, State::Filling);
     let results = f
         .catalog
@@ -897,4 +932,313 @@ fn recovery_markers_accept_both_formats_but_not_prefix_collisions() {
         };
         assert!(!playlist.matches_marker("Spinitron archive: KALX:1"));
     }
+}
+
+#[tokio::test]
+async fn new_broadcasts_checkpoint_intent_and_id_without_any_library_scan() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify {
+        fail_inventory: true,
+        journal_path: Some(f.root.join("journal.json")),
+        ..Default::default()
+    };
+    f.catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .unwrap();
+    assert_eq!(spotify.inventories, 0);
+    assert_eq!(spotify.creates, 1);
+    assert_eq!(spotify.fills.get(), 1);
+    // The runner/catalog can disappear after success. Its acknowledged Ready
+    // record restores the completed broadcast without touching Spotify again.
+    fs::write(f.path(), r#"{"version":1,"entries":{}}"#).unwrap();
+    f.reload();
+    assert!(!f
+        .catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .unwrap());
+    assert_eq!(spotify.inventories, 0);
+    assert_eq!(spotify.creates, 1);
+    assert_eq!(spotify.fills.get(), 1);
+}
+
+#[tokio::test]
+async fn unacknowledged_intent_prevents_post_and_stops_other_creations() {
+    let mut f = Fixture::new();
+    f.catalog.journal.as_mut().unwrap().fail_after(0);
+    let mut spotify = FakeSpotify::default();
+    for id in [1, 2] {
+        assert!(f
+            .catalog
+            .archive(&f.path(), &mut spotify, "KALX", &show(id), &tracks())
+            .await
+            .is_err());
+    }
+    assert_eq!(spotify.creates, 0);
+    assert_eq!(spotify.inventories, 0);
+    assert_eq!(spotify.fills.get(), 0);
+}
+
+#[tokio::test]
+async fn unacknowledged_id_stops_filling_but_preserves_id_for_recovery() {
+    let mut f = Fixture::new();
+    f.catalog.journal.as_mut().unwrap().fail_after(1);
+    let mut spotify = FakeSpotify {
+        fail_inventory: true,
+        ..Default::default()
+    };
+    assert!(f
+        .catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .is_err());
+    assert_eq!(spotify.creates, 1);
+    assert_eq!(spotify.fills.get(), 0);
+    assert_eq!(
+        Catalog::load(&f.path()).unwrap().entries["KALX:1"]
+            .playlist_id
+            .as_deref(),
+        Some("p1")
+    );
+    f.reload();
+    f.catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .unwrap();
+    assert_eq!(spotify.creates, 1);
+    assert_eq!(spotify.fills.get(), 1);
+    assert_eq!(spotify.inventories, 0);
+}
+
+#[tokio::test]
+async fn acknowledged_id_recovers_after_runner_loss_without_inventory() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify {
+        fail_inventory: true,
+        ..Default::default()
+    };
+    spotify.fail_fill.set(true);
+    assert!(f
+        .catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .is_err());
+    fs::write(f.path(), r#"{"version":1,"entries":{}}"#).unwrap();
+    f.reload();
+    assert_eq!(f.catalog.entries["KALX:1"].state, State::Filling);
+    f.catalog
+        .resume_pending(&f.path(), &mut spotify, None)
+        .await
+        .unwrap()
+        .pop()
+        .unwrap()
+        .1
+        .unwrap();
+    assert_eq!(spotify.creates, 1);
+    assert_eq!(spotify.inventories, 0);
+    assert_eq!(spotify.track_uris("p1").await.unwrap().len(), 3);
+}
+
+#[tokio::test]
+async fn lost_response_and_lost_runner_only_scan_for_the_uncertain_broadcast() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify {
+        uncertain_create: true,
+        ..Default::default()
+    };
+    assert!(f
+        .catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .is_err());
+    fs::write(f.path(), r#"{"version":1,"entries":{}}"#).unwrap();
+    f.reload();
+    assert_eq!(f.catalog.entries["KALX:1"].state, State::Creating);
+    spotify.fail_inventory = true;
+    let results = f
+        .catalog
+        .resume_pending(&f.path(), &mut spotify, None)
+        .await
+        .unwrap();
+    assert!(results[0].1.is_err());
+    f.catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(2), &tracks())
+        .await
+        .unwrap();
+    assert_eq!(spotify.creates, 2);
+    assert_eq!(spotify.inventories, 1);
+    spotify.fail_inventory = false;
+    f.reload();
+    f.catalog
+        .resume_pending(&f.path(), &mut spotify, None)
+        .await
+        .unwrap()
+        .pop()
+        .unwrap()
+        .1
+        .unwrap();
+    assert_eq!(spotify.creates, 2);
+    assert_eq!(spotify.inventories, 2);
+}
+
+#[tokio::test]
+async fn acknowledged_rejection_restores_prepared_state_and_retries_without_a_scan() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify {
+        reject_create: true,
+        fail_inventory: true,
+        ..Default::default()
+    };
+    assert!(f
+        .catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .is_err());
+    // Simulate losing the local reset after the journal acknowledged rejection.
+    f.catalog.entries.get_mut("KALX:1").unwrap().state = State::Creating;
+    f.catalog.save(&f.path()).unwrap();
+    f.reload();
+    assert_eq!(f.catalog.entries["KALX:1"].state, State::Prepared);
+    f.catalog
+        .resume_pending(&f.path(), &mut spotify, None)
+        .await
+        .unwrap()
+        .pop()
+        .unwrap()
+        .1
+        .unwrap();
+    assert_eq!(spotify.creates, 2);
+    assert_eq!(spotify.inventories, 0);
+}
+
+#[tokio::test]
+async fn old_prepared_records_require_reconciliation_but_do_not_block_new_broadcasts() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify {
+        reject_create: true,
+        ..Default::default()
+    };
+    assert!(f
+        .catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .is_err());
+    // Reconstruct a pre-journal deployment containing a Prepared record.
+    fs::remove_file(f.root.join("journal.json")).unwrap();
+    f.reload();
+    spotify.fail_inventory = true;
+    let results = f
+        .catalog
+        .resume_pending(&f.path(), &mut spotify, None)
+        .await
+        .unwrap();
+    assert!(results[0].1.is_err());
+    assert_eq!(spotify.creates, 1);
+    f.catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(2), &tracks())
+        .await
+        .unwrap();
+    assert_eq!(spotify.creates, 2);
+    assert_eq!(spotify.inventories, 1);
+    // A later complete inventory can reconcile and create the old record.
+    spotify.fail_inventory = false;
+    f.reload();
+    f.catalog
+        .resume_pending(&f.path(), &mut spotify, None)
+        .await
+        .unwrap()
+        .pop()
+        .unwrap()
+        .1
+        .unwrap();
+    assert_eq!(spotify.creates, 3);
+    assert_eq!(spotify.inventories, 2);
+}
+
+#[tokio::test]
+async fn journal_restore_rejects_conflicting_ids_and_does_not_overwrite_catalog() {
+    let mut f = Fixture::new();
+    let mut spotify = FakeSpotify::default();
+    f.catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .unwrap();
+    f.catalog.entries.get_mut("KALX:1").unwrap().playlist_id = Some("different".into());
+    f.catalog.save(&f.path()).unwrap();
+    let before = fs::read(f.path()).unwrap();
+    let mut catalog = Catalog::load(&f.path()).unwrap();
+    assert!(catalog
+        .attach_journal(
+            &f.path(),
+            CreationJournal::for_test(&f.root.join("journal.json"), "owner")
+        )
+        .is_err());
+    assert_eq!(fs::read(f.path()).unwrap(), before);
+}
+
+#[tokio::test]
+async fn lost_push_acknowledgements_recover_from_remote_without_repeating_creation() {
+    for successful_checkpoints in 0..=2 {
+        let mut f = Fixture::new();
+        f.catalog
+            .journal
+            .as_mut()
+            .unwrap()
+            .lose_ack_after(successful_checkpoints);
+        let mut spotify = FakeSpotify {
+            fail_inventory: true,
+            ..Default::default()
+        };
+        assert!(f
+            .catalog
+            .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+            .await
+            .is_err());
+        assert!(f.catalog.check_journal_health().is_err());
+        assert_eq!(spotify.creates, usize::from(successful_checkpoints > 0));
+        assert_eq!(spotify.fills.get(), usize::from(successful_checkpoints > 1));
+        // Even the local fallback disappears; only the remote record remains.
+        fs::write(f.path(), r#"{"version":1,"entries":{}}"#).unwrap();
+        f.reload();
+        let results = f
+            .catalog
+            .resume_pending(&f.path(), &mut spotify, None)
+            .await
+            .unwrap();
+        match successful_checkpoints {
+            0 => {
+                assert!(results[0].1.is_err());
+                assert_eq!(spotify.creates, 0);
+                assert_eq!(spotify.inventories, 1);
+            }
+            1 => {
+                assert!(results[0].1.is_ok());
+                assert_eq!(spotify.creates, 1);
+                assert_eq!(spotify.fills.get(), 1);
+                assert_eq!(spotify.inventories, 0);
+            }
+            2 => {
+                assert!(results.is_empty());
+                assert_eq!(spotify.creates, 1);
+                assert_eq!(spotify.fills.get(), 1);
+                assert_eq!(spotify.inventories, 0);
+            }
+            _ => unreachable!(),
+        }
+    }
+}
+
+#[tokio::test]
+async fn archiving_without_attaching_journal_stops_before_spotify_requests() {
+    let f = Fixture::new();
+    let mut catalog = Catalog::load(&f.path()).unwrap();
+    let mut spotify = FakeSpotify::default();
+    assert!(catalog
+        .archive(&f.path(), &mut spotify, "KALX", &show(1), &tracks())
+        .await
+        .is_err());
+    assert_eq!(spotify.creates, 0);
+    assert_eq!(spotify.inventories, 0);
+    assert_eq!(spotify.fills.get(), 0);
 }

@@ -8,6 +8,7 @@ use serde::{Deserialize, Serialize};
 use serde_json::Value;
 use std::{collections::BTreeMap, fs, path::Path};
 
+use crate::creation_journal::CreationJournal;
 use crate::models::{Show, Track};
 
 pub fn broadcast_time(value: &str) -> Result<DateTime<chrono::FixedOffset>> {
@@ -56,6 +57,8 @@ pub struct Entry {
 pub struct Catalog {
     version: u32,
     pub entries: BTreeMap<String, Entry>,
+    #[serde(skip)]
+    journal: Option<CreationJournal>,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -169,6 +172,74 @@ impl Catalog {
 
     pub fn save(&self, path: &Path) -> Result<()> {
         atomic_json(path, self)
+    }
+
+    /// Restore acknowledged writes before considering any new Spotify writes.
+    /// The journal wins over stale pending catalog entries, but never rewinds a
+    /// completed broadcast or discards an ID already recovered into the catalog.
+    pub fn attach_journal(&mut self, path: &Path, mut journal: CreationJournal) -> Result<()> {
+        let mut entries = self.entries.clone();
+        for (key, record) in journal.records() {
+            if let Some(local) = entries.get(key) {
+                if local.owner_id != record.entry.owner_id
+                    || local.station != record.entry.station
+                    || local.broadcast.as_ref().map(|s| s.id)
+                        != record.entry.broadcast.as_ref().map(|s| s.id)
+                    || local.desired_uris != record.entry.desired_uris
+                    || (local.playlist_id.is_some()
+                        && record.entry.playlist_id.is_some()
+                        && local.playlist_id != record.entry.playlist_id)
+                {
+                    bail!("Catalog and creation journal disagree for {key}; reconcile before archiving");
+                }
+                let local_finished = !matches!(
+                    local.state,
+                    State::Prepared | State::Creating | State::Filling
+                );
+                let journal_finished = !matches!(
+                    record.entry.state,
+                    State::Prepared | State::Creating | State::Filling
+                );
+                if local_finished || (local.playlist_id.is_some() && !journal_finished) {
+                    continue;
+                }
+            }
+            entries.insert(key.clone(), record.entry.clone());
+        }
+        let mut ids = std::collections::HashSet::new();
+        for entry in entries.values() {
+            if let Some(id) = &entry.playlist_id {
+                if !ids.insert(id) {
+                    bail!("Creation journal restore would duplicate Spotify ID {id}");
+                }
+            }
+        }
+        // Seed old pending records explicitly as untracked: their old runner
+        // could have died after a POST but before publishing its catalog.
+        journal.reconcile_catalog(&entries)?;
+        self.entries = entries;
+        self.journal = Some(journal);
+        self.save(path)
+    }
+
+    fn checkpoint_creation(&mut self, path: &Path, key: &str) -> Result<()> {
+        let acknowledged = self
+            .journal
+            .as_mut()
+            .context("Creation journal is required for archiving")?
+            .record(key, &self.entries[key]);
+        // Even when the remote acknowledgement is lost, preserve any returned
+        // ID locally for the workflow's catalog push/recovery artifact.
+        let saved = self.save(path);
+        acknowledged?;
+        saved
+    }
+
+    pub fn check_journal_health(&self) -> Result<()> {
+        self.journal
+            .as_ref()
+            .context("Creation journal is required for archiving")?
+            .check_health()
     }
 
     pub fn key(station: &str, show: &Show) -> String {
@@ -415,6 +486,7 @@ impl Catalog {
         tracks: &[Track],
         retry_creation: bool,
     ) -> Result<bool> {
+        self.check_journal_health()?;
         let key = Self::key(station, show);
         if self.finished(&key) {
             return Ok(false);
@@ -459,15 +531,27 @@ impl Catalog {
                 .remove(&key)
                 .context("Missing archive name")?;
             self.entries.get_mut(&key).unwrap().listing["name"] = name.into();
-            self.save(path)?;
+            // New work first reaches disk with its journaled Creating intent.
+            // A crash before that point can safely rediscover the broadcast.
+            if recovering {
+                self.save(path)?;
+            }
         }
         if self.entries[&key].owner_id.as_deref() != Some(spotify.owner_id()) {
             bail!("Catalog belongs to a different Spotify account");
         }
         if self.entries[&key].playlist_id.is_none() {
-            // Recovery can adopt an owned, precisely marked creation, but never
-            // blindly repeats an uncertain POST and creates another playlist.
-            let remote = match spotify.find_archive(&marker, retry_creation).await? {
+            // Brand-new broadcasts and durably rejected requests need no
+            // library inventory. Only old/untracked or uncertain writes do.
+            let needs_recovery = recovering
+                && (self.entries[&key].state == State::Creating
+                    || self.journal.as_ref().unwrap().needs_recovery(&key));
+            let recovered = if needs_recovery {
+                spotify.find_archive(&marker, retry_creation).await?
+            } else {
+                None
+            };
+            let remote = match recovered {
                 Some(found) => found,
                 None if self.entries[&key].state == State::Creating && !retry_creation => bail!(
                     "Creation of {key} is uncertain; inspect the library, then use the manual workflow retry_creation input '{key}' (CLI: --archive --retry-creation {key}) if creation should be retried"
@@ -480,7 +564,7 @@ impl Catalog {
                     // on disk before the POST, so another lost response cannot
                     // silently authorize another attempt in a scheduled run.
                     self.entries.get_mut(&key).unwrap().state = State::Creating;
-                    self.save(path)?;
+                    self.checkpoint_creation(path, &key)?;
                     let name = self.entries[&key].listing["name"]
                         .as_str()
                         .context("Missing archive name")?;
@@ -494,7 +578,7 @@ impl Catalog {
                         // An explicit rejection can be retried on a later run.
                         // Lost responses remain Creating to prevent duplicates.
                         self.entries.get_mut(&key).unwrap().state = State::Prepared;
-                        self.save(path)?;
+                        self.checkpoint_creation(path, &key)?;
                     }
                     result?
                 }
@@ -505,12 +589,15 @@ impl Catalog {
             let entry = self.entries.get_mut(&key).unwrap();
             entry.playlist_id = Some(remote.id);
             entry.state = State::Filling;
-            self.save(path)?;
+            self.checkpoint_creation(path, &key)?;
         }
         let entry = &self.entries[&key];
         let id = entry.playlist_id.as_deref().unwrap();
         let remote = spotify.inspect(id).await?;
-        if remote.owner_id != spotify.owner_id() || !remote.matches_marker(&marker) {
+        if remote.id != *id
+            || remote.owner_id != spotify.owner_id()
+            || !remote.matches_marker(&marker)
+        {
             bail!("Refusing to populate a playlist with unexpected owner or archive marker");
         }
         // Only unfinished drafts can be replaced. Completed broadcasts are immutable.
@@ -544,7 +631,7 @@ impl Catalog {
         let entry = self.entries.get_mut(&key).unwrap();
         entry.listing = listing;
         entry.state = State::Ready;
-        self.save(path)?;
+        self.checkpoint_creation(path, &key)?;
         Ok(true)
     }
 }

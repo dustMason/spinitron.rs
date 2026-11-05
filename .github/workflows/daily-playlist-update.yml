@@ -9,6 +9,10 @@ on:
         description: 'Only verify Spotify authentication'
         type: boolean
         default: false
+      initialize_creation_journal:
+        description: 'First deployment only: create the durable journal branch; never use to replace a lost journal'
+        type: boolean
+        default: false
       retry_creation:
         description: 'Optional: retry one uncertain creation after checking the library (STATION:ID)'
         type: string
@@ -67,11 +71,15 @@ jobs:
         continue-on-error: true
         env:
           RETRY_CREATION: ${{ inputs.retry_creation }}
+          INITIALIZE_CREATION_JOURNAL: ${{ inputs.initialize_creation_journal }}
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
         run: |
           args=(--archive)
+          if [ "$INITIALIZE_CREATION_JOURNAL" = true ]; then
+            args+=(--initialize-creation-journal)
+          fi
           if [ -n "$RETRY_CREATION" ]; then
             args+=(--retry-creation "$RETRY_CREATION")
           fi

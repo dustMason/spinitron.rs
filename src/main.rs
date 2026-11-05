@@ -5,6 +5,7 @@ use std::path::PathBuf;
 
 mod catalog;
 mod config;
+mod creation_journal;
 mod models;
 mod scraper;
 mod spotify;
@@ -54,6 +55,10 @@ struct Args {
     /// Allow one uncertain creation to be retried after a fresh library check (STATION:ID)
     #[arg(long, requires = "archive")]
     retry_creation: Option<String>,
+
+    /// Initialize the durable Git journal once (never use to replace a lost journal)
+    #[arg(long, requires = "archive")]
+    initialize_creation_journal: bool,
 
     /// Durable catalog, independent of the Spotify library
     #[arg(long, default_value = "data/catalog.json")]
@@ -179,6 +184,7 @@ async fn main() -> Result<()> {
             start_date,
             end_date,
             args.retry_creation.as_deref(),
+            args.initialize_creation_journal,
         )
         .await;
     }
@@ -364,9 +370,16 @@ async fn archive_broadcasts(
     start: NaiveDate,
     end: NaiveDate,
     retry_creation: Option<&str>,
+    initialize_creation_journal: bool,
 ) -> Result<()> {
     let mut catalog = Catalog::load(catalog_path)?;
     let mut spotify = SpotifyClient::new().await?;
+    let journal = creation_journal::CreationJournal::open(
+        std::path::Path::new("."),
+        catalog::ArchiveSpotify::owner_id(&spotify),
+        initialize_creation_journal,
+    )?;
+    catalog.attach_journal(catalog_path, journal)?;
     let scraper = scraper::SpinitronClient::new();
     let mut failures = Vec::new();
     let mut created = 0;
@@ -385,6 +398,7 @@ async fn archive_broadcasts(
             Err(error) => failures.push(format!("{key}: {error}")),
         }
     }
+    catalog.check_journal_health()?;
     for (station, settings) in &config.stations {
         let mut date = start;
         while date <= end {
@@ -421,6 +435,7 @@ async fn archive_broadcasts(
                             Ok(false) => (),
                             Err(error) => failures.push(format!("{station}:{}: {error}", show.id)),
                         }
+                        catalog.check_journal_health()?;
                     }
                 }
                 Err(error) => failures.push(format!("{station} {date}: {error}")),
