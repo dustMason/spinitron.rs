@@ -2097,7 +2097,7 @@
           "start_time": "2026-11-03T18:15:00-0800",
           "end_time": "2026-11-03T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0G6vnyXfebTrHnvCbda6Pj",
         "desired_uris": [
@@ -2126,8 +2126,103 @@
           "spotify:track:4wKeNIhXHTMFpxTcnbtgs4"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T20:00:00-0800",
+          "broadcast_start": "2026-11-03T18:15:00-0800",
+          "imported_at": "2026-11-05T23:34:21.326816219+00:00",
+          "last_updated": "2026-11-05 23:34 UTC",
           "name": "KALX - BUZZ - 2026-11-03",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Rhiannon Giddens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273761c1892de7bd7c94b987eac",
+              "name": "Cluck Old Hen"
+            },
+            {
+              "artists": [
+                "Mavis Staples"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6cb47411d878464471ad6be",
+              "name": "Eyes On The Prize"
+            },
+            {
+              "artists": [
+                "Emerson, Lake & Palmer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730134e07cf27d2cb5a1eaddcc",
+              "name": "From the Beginning"
+            },
+            {
+              "artists": [
+                "Otis Redding"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27380b3ea64b9f7dc7a6b457638",
+              "name": "Day Tripper - Alternate Take"
+            },
+            {
+              "artists": [
+                "Alice Cooper"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ee62778dda6926b3bcb9eb6",
+              "name": "Elected"
+            },
+            {
+              "artists": [
+                "Slippers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734e62a671684ce8d79adf1ca8",
+              "name": "Blueberry Peel (Reprise)"
+            },
+            {
+              "artists": [
+                "Leonard Cohen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736f3c5c45adb4e06e87ace79f",
+              "name": "Democracy"
+            },
+            {
+              "artists": [
+                "Styrofoam Winos"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736ca4b6271c017b6cf1e3e3c9",
+              "name": "Swimminin"
+            },
+            {
+              "artists": [
+                "Wolf Alice"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c862cc1f43cdec8a8c7c2445",
+              "name": "Bloom Baby Bloom"
+            },
+            {
+              "artists": [
+                "Frank Zappa",
+                "Moon Zappa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735d7a80d58c024299930a5fac",
+              "name": "Valley Girl"
+            },
+            {
+              "artists": [
+                "Sunday Mourners"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27390d7058bd4f657fb8e638af6",
+              "name": "Careers In Acting"
+            },
+            {
+              "artists": [
+                "Helen Sung Big Band",
+                "Helen Sung"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735a9a78f4b822d9bd4e2801b0",
+              "name": "Samba Da Gumz"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23284251/BUZZ",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/0G6vnyXfebTrHnvCbda6Pj"
         }
       },
       "needs_reconciliation": false
