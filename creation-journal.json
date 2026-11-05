@@ -65,7 +65,7 @@
           "start_time": "2026-11-05T09:00:00-0800",
           "end_time": "2026-11-05T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0aj42sKnyE59EEEVNRFcD3",
         "desired_uris": [
@@ -96,8 +96,108 @@
           "spotify:track:7zN04jljWDxlINSTn5l09g"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T12:00:00-0800",
+          "broadcast_start": "2026-11-05T09:00:00-0800",
+          "imported_at": "2026-11-05T22:57:50.163797904+00:00",
+          "last_updated": "2026-11-05 22:57 UTC",
           "name": "KALX - The Lysergic Listen - 2026-11-05",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Herbie Hancock"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27314253f911a761dbae0d91949",
+              "name": "Rain Dance"
+            },
+            {
+              "artists": [
+                "Josh Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273121900e35de11b940ff2759a",
+              "name": "Jazz Chord Possession"
+            },
+            {
+              "artists": [
+                "Rich Ruth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273915eb590992d4ce2069ff9e0",
+              "name": "Heavy And Earthbound"
+            },
+            {
+              "artists": [
+                "Mali Obomsawin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731def830a10f5628fc087f89f",
+              "name": "Automatic"
+            },
+            {
+              "artists": [
+                "Chrome Chasm"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273911754803837f348a7d6852c",
+              "name": "Gabriella"
+            },
+            {
+              "artists": [
+                "Gnod"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273889eb60f4867a9b1b8d4c4b0",
+              "name": "Old Gold"
+            },
+            {
+              "artists": [
+                "Joe Lovano",
+                "Marilyn Crispell",
+                "Carmen Castaldi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273491ad45a8413a50b7739deb2",
+              "name": "Garden of Expression"
+            },
+            {
+              "artists": [
+                "Haruomi Hosono"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733af48613b19da7eb6758d587",
+              "name": "Figlio Perduto"
+            },
+            {
+              "artists": [
+                "Johann Sebastian Bach",
+                "Víkingur Ólafsson",
+                "Siggi String Quartet",
+                "Xun Yang"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735a6c51698b94c5648cdf60ab",
+              "name": "Keyboard Concerto in F Minor, BWV 1056: II. Largo"
+            },
+            {
+              "artists": [
+                "Floating Points",
+                "San Francisco Ballet Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d29699a86f26f0e1df161d16",
+              "name": "Movement 14 - Nowhere to Land"
+            },
+            {
+              "artists": [
+                "Jesca Hoop"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273913e47462cc37fbe5aa3f182",
+              "name": "Now The Ash"
+            },
+            {
+              "artists": [
+                "Miss Murgatroid",
+                "Petra Haden"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736e2d6f732da5fcd49c60c0f7",
+              "name": "Fade Away"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23276431/The-Lysergic-Listen",
+          "station": "KALX",
+          "track_count": 25,
+          "url": "https://open.spotify.com/playlist/0aj42sKnyE59EEEVNRFcD3"
         }
       },
       "needs_reconciliation": false
