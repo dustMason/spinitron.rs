@@ -6842,7 +6842,7 @@
           "start_time": "2026-11-04T12:00:00-0800",
           "end_time": "2026-11-04T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7vpwufbjWZ5lSk4oSyPsnL",
         "desired_uris": [
@@ -6869,8 +6869,102 @@
           "spotify:track:1mkMbiUOub7imzKFcLfvBx"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T15:00:00-0800",
+          "broadcast_start": "2026-11-04T12:00:00-0800",
+          "imported_at": "2026-11-05T23:57:42.954300310+00:00",
+          "last_updated": "2026-11-05 23:57 UTC",
           "name": "KPOO - THE MUSIC FILL SHOW - 2026-11-04",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Rodney Kendrick"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b30a4eabc8f65c58bea754ba",
+              "name": "Rhythm A Ning"
+            },
+            {
+              "artists": [
+                "Dave Holland Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27358dd8af10d79d4f104ee71e1",
+              "name": "Billows Of Rhythm"
+            },
+            {
+              "artists": [
+                "Natalia M. King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27341c7e90695bbb8b9add69536",
+              "name": "Traces in the Sand"
+            },
+            {
+              "artists": [
+                "Eddie Harris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ed955a797446d694ed056376",
+              "name": "Chicago Serenade"
+            },
+            {
+              "artists": [
+                "Bob Kindred"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ccd64678409bab1479a089ac",
+              "name": "Mr. Magoo"
+            },
+            {
+              "artists": [
+                "Billie Holiday",
+                "Teddy Wilson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738091898c12b924f574ea6297",
+              "name": "What a Little Moonlight Can Do (with Teddy Wilson & His Orchestra)"
+            },
+            {
+              "artists": [
+                "Miles Davis Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c2d2e0b48952a4d88af90697",
+              "name": "The Theme"
+            },
+            {
+              "artists": [
+                "Doug Carn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a1414c6555a05d781c3b74d",
+              "name": "Passion Dance"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "Herbie Hancock"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e28676c1f28d20e23ed42376",
+              "name": "Eye of the Hurricane"
+            },
+            {
+              "artists": [
+                "Miles Davis Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c2d2e0b48952a4d88af90697",
+              "name": "The Theme"
+            },
+            {
+              "artists": [
+                "Joice Walton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cff99b75834fb118e05fbf48",
+              "name": "Be Anything but Darling Be Mine"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23288177/THE-MUSIC-FILL-SHOW",
+          "station": "KPOO",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/7vpwufbjWZ5lSk4oSyPsnL"
         }
       },
       "needs_reconciliation": false
