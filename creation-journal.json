@@ -4571,7 +4571,7 @@
           "start_time": "2026-11-02T09:00:00-0800",
           "end_time": "2026-11-02T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "25ByJMJwcpjvMmkdkZss5G",
         "desired_uris": [
@@ -4618,8 +4618,105 @@
           "spotify:track:2TAb0MYiC6ADy6pYunLZiP"
         ],
         "listing": {
+          "broadcast_end": "2026-11-02T12:00:00-0800",
+          "broadcast_start": "2026-11-02T09:00:00-0800",
+          "imported_at": "2026-11-05T23:46:18.592467450+00:00",
+          "last_updated": "2026-11-05 23:46 UTC",
           "name": "KPOO - The Power of Blues Compels You - 2026-11-02",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Ike & Tina Turner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a70f1ebc6bee4161880a699c",
+              "name": "I Smell Trouble"
+            },
+            {
+              "artists": [
+                "James Brown & The Famous Flames"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c813101657895c26f990b719",
+              "name": "I Can't Help It (I Just Do-Do-Do)"
+            },
+            {
+              "artists": [
+                "Bobby \"Blue\" Bland"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738f690b12fd4e8808b11c357d",
+              "name": "I Can't Put You Down Baby"
+            },
+            {
+              "artists": [
+                "Albert King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273111531c81cc167ea463e279e",
+              "name": "(I Love) Lucy"
+            },
+            {
+              "artists": [
+                "Jimmy Reed"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730a1b1e77f4636fc48815606d",
+              "name": "I Ain't Got You"
+            },
+            {
+              "artists": [
+                "Ruth Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730e38164195912b0077abf42b",
+              "name": "I Can't Hear a Word You Say"
+            },
+            {
+              "artists": [
+                "Howlin' Wolf",
+                "Eric Clapton",
+                "Steve Winwood",
+                "Ringo Starr",
+                "Bill Wyman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738486530de7b90693af0976cd",
+              "name": "I Ain't Superstitious"
+            },
+            {
+              "artists": [
+                "Muddy Waters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736091ce945becd494d03ded37",
+              "name": "I Can't Be Satisfied"
+            },
+            {
+              "artists": [
+                "Smokey Hogg"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a726795732380569b28f5528",
+              "name": "I Want A Roller"
+            },
+            {
+              "artists": [
+                "Bessie Smith"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b006133a38a533530c157b9e",
+              "name": "I Want Every Bit of It"
+            },
+            {
+              "artists": [
+                "Etta Jones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b3a70d78efb04a33d0ed2785",
+              "name": "I Wonder"
+            },
+            {
+              "artists": [
+                "The Staple Singers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27318a83569e8583afdd0008eb0",
+              "name": "Wish I Had Answered"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23276672/The-Power-of-Blues-Compels-You",
+          "station": "KPOO",
+          "track_count": 41,
+          "url": "https://open.spotify.com/playlist/25ByJMJwcpjvMmkdkZss5G"
         }
       },
       "needs_reconciliation": false
