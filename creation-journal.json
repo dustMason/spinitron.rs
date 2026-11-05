@@ -4048,7 +4048,7 @@
           "start_time": "2026-11-05T00:00:00-0800",
           "end_time": "2026-11-05T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2AO1heHJ7axEafcMbWcfhp",
         "desired_uris": [
@@ -4076,8 +4076,102 @@
           "spotify:track:1Qp0SFCmiNWYGz1dxr7ZrT"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T02:00:00-0800",
+          "broadcast_start": "2026-11-05T00:00:00-0800",
+          "imported_at": "2026-11-05T23:44:58.393187450+00:00",
+          "last_updated": "2026-11-05 23:44 UTC",
           "name": "KALX - FREEFORM - 2026-11-05",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Exploding Zones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f9c8f803df31ec43b9504e7",
+              "name": "Portal"
+            },
+            {
+              "artists": [
+                "Her Space Holiday"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273164d1dbd12b4960f9ef59af6",
+              "name": "Promised A Flight"
+            },
+            {
+              "artists": [
+                "Vivebeat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c6b05db0de584e8c16c6b313",
+              "name": "I Know Your Room"
+            },
+            {
+              "artists": [
+                "Blonde Redhead"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27316ad1c823b08122acd3bbe13",
+              "name": "Astro Boy"
+            },
+            {
+              "artists": [
+                "Fontaines D.C.",
+                "ROSALÍA"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273912db68812b0772fa5c1b4b8",
+              "name": "Where Is Gone?"
+            },
+            {
+              "artists": [
+                "Julee Cruise"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6212adb4de364a1c633582a",
+              "name": "Mysteries Of Love"
+            },
+            {
+              "artists": [
+                "Portishead"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732529c50c11cb07f6f9e3ab29",
+              "name": "The Rip"
+            },
+            {
+              "artists": [
+                "King Krule"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731fd868fb45d4f7715bfb3a7b",
+              "name": "Empty Stomach Space Cadet"
+            },
+            {
+              "artists": [
+                "Beach House"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ea27a9e38db1ec66119356af",
+              "name": "Another Go Around"
+            },
+            {
+              "artists": [
+                "Pearl Sisters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273328bbe781766216db375e1f3",
+              "name": "I Will Leave Even If Is Sad"
+            },
+            {
+              "artists": [
+                "Dry Cleaning"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f206f7d3727972b3b7268faa",
+              "name": "Her Hippo"
+            },
+            {
+              "artists": [
+                "The Velvet Underground"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739a2c40b6a1af4a92aac991c5",
+              "name": "The Murder Mystery"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23290928/FREEFORM",
+          "station": "KALX",
+          "track_count": 22,
+          "url": "https://open.spotify.com/playlist/2AO1heHJ7axEafcMbWcfhp"
         }
       },
       "needs_reconciliation": false
