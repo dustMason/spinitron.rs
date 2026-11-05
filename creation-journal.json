@@ -5524,7 +5524,7 @@
           "start_time": "2026-11-03T06:00:00-0800",
           "end_time": "2026-11-03T07:00:00-0800"
         },
-        "state": "prepared",
+        "state": "creating",
         "owner_id": "dustmason",
         "desired_uris": [
           "spotify:track:2xYQYtmTfVrtuWsR22nfiu",
