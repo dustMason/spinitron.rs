@@ -4186,7 +4186,7 @@
           "start_time": "2026-11-05T02:00:00-0800",
           "end_time": "2026-11-05T03:00:00-0800"
         },
-        "state": "prepared",
+        "state": "creating",
         "owner_id": "dustmason",
         "desired_uris": [
           "spotify:track:7FX95AnVLITDrsHJ43xnxX",
@@ -4200,7 +4200,7 @@
           "spotify:track:1a6IYbbBSZiiNZoUwZjPIa"
         ],
         "listing": {
-          "name": "KALX - OVERNIGHTS - 2026-11-05",
+          "name": "KALX - OVERNIGHTS - 2026-11-05 2:00am",
           "station": "KALX"
         }
       },
