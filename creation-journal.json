@@ -4731,7 +4731,7 @@
           "start_time": "2026-11-02T12:00:00-0800",
           "end_time": "2026-11-02T13:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7AgT5zwCLyiY4h83pkFKRB",
         "desired_uris": [
@@ -4739,8 +4739,31 @@
           "spotify:track:2nMIbw9NAjPGzkZa7c8Bre"
         ],
         "listing": {
+          "broadcast_end": "2026-11-02T13:00:00-0800",
+          "broadcast_start": "2026-11-02T12:00:00-0800",
+          "imported_at": "2026-11-05T23:46:58.225404044+00:00",
+          "last_updated": "2026-11-05 23:46 UTC",
           "name": "KPOO - Let Me Touch Your Mind - 2026-11-02",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Arsenio Rodríguez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27312609acef07b4e6610816eee",
+              "name": "Devuélveme la Ilusión"
+            },
+            {
+              "artists": [
+                "Fats Waller"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733169bf80e62237b5d014900d",
+              "name": "All That Meat And No Potatoes"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23277453/Let-Me-Touch-Your-Mind",
+          "station": "KPOO",
+          "track_count": 2,
+          "url": "https://open.spotify.com/playlist/7AgT5zwCLyiY4h83pkFKRB"
         }
       },
       "needs_reconciliation": false
