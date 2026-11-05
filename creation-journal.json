@@ -812,7 +812,7 @@
           "start_time": "2026-11-02T18:15:00-0800",
           "end_time": "2026-11-02T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6GKONrRzzqLIH6j8dPApEP",
         "desired_uris": [
@@ -838,8 +838,103 @@
           "spotify:track:0mXU4e7OW0pl1Gkch9sX1s"
         ],
         "listing": {
+          "broadcast_end": "2026-11-02T20:00:00-0800",
+          "broadcast_start": "2026-11-02T18:15:00-0800",
+          "imported_at": "2026-11-05T23:15:36.289478699+00:00",
+          "last_updated": "2026-11-05 23:15 UTC",
           "name": "KALX - FREEFORM - 2026-11-02 6:15pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Allison De Groot",
+                "Rich Ruth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731eb0c9068659226f8e9e0fec",
+              "name": "Nervion"
+            },
+            {
+              "artists": [
+                "Magdalena Bay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273789ca193393779d266e2b084",
+              "name": "Death & Romance"
+            },
+            {
+              "artists": [
+                "A. G. Cook"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f695084b3bb9d261ba792590",
+              "name": "Beautiful - 2023 Edit"
+            },
+            {
+              "artists": [
+                "Sam Flax"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27321bfa65c6a235d971d25ff52",
+              "name": "Another Day"
+            },
+            {
+              "artists": [
+                "Twisted Teens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b70d5388afd345b4a00010af",
+              "name": "Wild Connection"
+            },
+            {
+              "artists": [
+                "Geese"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738af65a82cdd9104f19e4047b",
+              "name": "2122"
+            },
+            {
+              "artists": [
+                "Sunday Mourners"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27390d7058bd4f657fb8e638af6",
+              "name": "Careers In Acting"
+            },
+            {
+              "artists": [
+                "Flare as Ken Ishii"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730640b95f32da878351a80d05",
+              "name": "Curved Sunburst"
+            },
+            {
+              "artists": [
+                "Barnt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fa9df821632aec0928898ea0",
+              "name": "Ax^2"
+            },
+            {
+              "artists": [
+                "Semiratruth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273266e3ff47090ffec38f2781d",
+              "name": "poppers n limerance"
+            },
+            {
+              "artists": [
+                "Rob Smith aka RSD",
+                "Fats Comet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e0bd587aa6db3af62530b2d7",
+              "name": "Big Time AKA Rockchester - Dub"
+            },
+            {
+              "artists": [
+                "The Avalanches"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734cc65c5ce55234c548a79d9d",
+              "name": "Live At Dominoes"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23278931/FREEFORM",
+          "station": "KALX",
+          "track_count": 20,
+          "url": "https://open.spotify.com/playlist/6GKONrRzzqLIH6j8dPApEP"
         }
       },
       "needs_reconciliation": false
