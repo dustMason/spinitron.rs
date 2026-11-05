@@ -3518,7 +3518,7 @@
           "start_time": "2026-11-04T18:15:00-0800",
           "end_time": "2026-11-04T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4LocKlqwketr2yr0vGwy7E",
         "desired_uris": [
@@ -3535,8 +3535,95 @@
           "spotify:track:3P3OSAFdMcA1AZpUQ8FiUm"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T20:00:00-0800",
+          "broadcast_start": "2026-11-04T18:15:00-0800",
+          "imported_at": "2026-11-05T23:40:58.425612598+00:00",
+          "last_updated": "2026-11-05 23:40 UTC",
           "name": "KALX - Chensanity with Petra Core & Last Will - 2026-11-04",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f20a531889eaf52380c061a8",
+              "name": "The Father And The Son And The Holy Ghost"
+            },
+            {
+              "artists": [
+                "Ibelisse Guardia Ferragutti",
+                "Frank Rosaly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737e3e922cc724e3d1374b6623",
+              "name": "18°14'46.3\"N 65°47'08.3\"W"
+            },
+            {
+              "artists": [
+                "Hans P. Kjorstad"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d70a5ca573a4f2f9c590f6d1",
+              "name": "Dis"
+            },
+            {
+              "artists": [
+                "Cybotron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c5c701dac63bcbaaecde5463",
+              "name": "Cosmic Cars"
+            },
+            {
+              "artists": [
+                "Grandmaster Flash & The Furious Five"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273525defbb92c251c359b4cfed",
+              "name": "Scorpio"
+            },
+            {
+              "artists": [
+                "Klara Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4c9254994758b20941278f7",
+              "name": "City"
+            },
+            {
+              "artists": [
+                "Barnt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738c290662390a6416aced6d34",
+              "name": "0221 490Y-26"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736b19866ab237c96a1e87a8b5",
+              "name": "Marianne"
+            },
+            {
+              "artists": [
+                "Stereolab"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27358e07f45dcb6d29a6d0ec7a1",
+              "name": "Avant Garde M.O.R."
+            },
+            {
+              "artists": [
+                "The Curtains"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27341f2bd6dadf4834b70132593",
+              "name": "Middle World"
+            },
+            {
+              "artists": [
+                "Flipper"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738064364342d30c895f5af1e6",
+              "name": "Brainwash - 7\""
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23289555/Chensanity-with-Petra-Core-Last-Will",
+          "station": "KALX",
+          "track_count": 11,
+          "url": "https://open.spotify.com/playlist/4LocKlqwketr2yr0vGwy7E"
         }
       },
       "needs_reconciliation": false
