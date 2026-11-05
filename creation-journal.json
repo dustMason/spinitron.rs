@@ -5209,7 +5209,7 @@
           "start_time": "2026-11-02T21:00:00-0800",
           "end_time": "2026-11-03T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0EE5ksWAoxnxid57SIErVA",
         "desired_uris": [
@@ -5236,8 +5236,101 @@
           "spotify:track:0jHhCSwho154BN4Afal81D"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T00:00:00-0800",
+          "broadcast_start": "2026-11-02T21:00:00-0800",
+          "imported_at": "2026-11-05T23:49:37.490560982+00:00",
+          "last_updated": "2026-11-05 23:49 UTC",
           "name": "KPOO - Grinders Grooveyard - 2026-11-02",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Little Anthony"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738475b8b67052922073187e38",
+              "name": "You'll Never Know (How Much I Love You)"
+            },
+            {
+              "artists": [
+                "The Larks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f9eb2d5c2b3a3866dab71ee8",
+              "name": "Eyesight To the Blind"
+            },
+            {
+              "artists": [
+                "Four Vagabonds"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735ec27d22036c76a89aa0c759",
+              "name": "P.S. I Love You"
+            },
+            {
+              "artists": [
+                "Dinah Washington"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db820abc85bea58b0fe6d457",
+              "name": "Blues For A Day"
+            },
+            {
+              "artists": [
+                "The \"5\" Royales"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27389b2cde165ec53e399a624ea",
+              "name": "Baby, Don't Do It"
+            },
+            {
+              "artists": [
+                "The Larks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f9eb2d5c2b3a3866dab71ee8",
+              "name": "My Reverie"
+            },
+            {
+              "artists": [
+                "The \"5\" Royales"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27389b2cde165ec53e399a624ea",
+              "name": "Crazy Crazy Crazy"
+            },
+            {
+              "artists": [
+                "The Larks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f9eb2d5c2b3a3866dab71ee8",
+              "name": "Little Side Car"
+            },
+            {
+              "artists": [
+                "Panama Francis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730fce524d94e6dd6e792da6fb",
+              "name": "Darkness of the Delta"
+            },
+            {
+              "artists": [
+                "King Curtis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273efbcf894a88936f4efa3c25b",
+              "name": "Dynamite at Midnight"
+            },
+            {
+              "artists": [
+                "The Cellos"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f93311e1cf2e9312e6597a3f",
+              "name": "Rang Tang Ding Dong (Unreleased Version)"
+            },
+            {
+              "artists": [
+                "The Cellos"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f93311e1cf2e9312e6597a3f",
+              "name": "You Took My Love"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23279653/Grinders-Grooveyard",
+          "station": "KPOO",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/0EE5ksWAoxnxid57SIErVA"
         }
       },
       "needs_reconciliation": false
