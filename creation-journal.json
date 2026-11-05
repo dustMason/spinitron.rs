@@ -3258,7 +3258,7 @@
           "start_time": "2026-11-04T15:00:00-0800",
           "end_time": "2026-11-04T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3qQVDYJI2cmCVLwl7SAfZm",
         "desired_uris": [
@@ -3290,8 +3290,101 @@
           "spotify:track:2ootF2UJur5t9d5yiWPKHm"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T17:00:00-0800",
+          "broadcast_start": "2026-11-04T15:00:00-0800",
+          "imported_at": "2026-11-05T23:39:39.410494524+00:00",
+          "last_updated": "2026-11-05 23:39 UTC",
           "name": "KALX - FREEFORM - 2026-11-04 3:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Wolfhounds"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fd6da349a6c0bebdeec95cc3",
+              "name": "Disgusted E7"
+            },
+            {
+              "artists": [
+                "Yea-Ming and The Rumours"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27361054fd101ec0b02f39ff15f",
+              "name": "Forever Blue"
+            },
+            {
+              "artists": [
+                "George Gershwin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27340a45064b8f94281b27adeb5",
+              "name": "Rhapsody in Blue"
+            },
+            {
+              "artists": [
+                "The Three Johns"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273afdcfcffb73bf844da56fa33",
+              "name": "Rooster Blue"
+            },
+            {
+              "artists": [
+                "Zoh Amba"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ffc837d884b1bb360254aff",
+              "name": "Blueberry Thorn"
+            },
+            {
+              "artists": [
+                "Joseph Dee Bradshaw"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbee419768871efdecf7420d",
+              "name": "Nothing Blue Anymore"
+            },
+            {
+              "artists": [
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27301ffa1c7915624b95b9065e0",
+              "name": "Blue Train - Remastered 2003/Rudy Van Gelder Edition"
+            },
+            {
+              "artists": [
+                "Alt Jazz Ark Corpus X Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27328fead4163ad60050ce07897",
+              "name": "Blue Choice"
+            },
+            {
+              "artists": [
+                "Hüsker Dü"
+              ],
+              "image_url": "https://i.scdn.co/image/8a403ef64b2939cd2775a7e907a9415e7d0f18c8",
+              "name": "Pink Turns to Blue"
+            },
+            {
+              "artists": [
+                "Blue Orchids"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27381852eb77f2bfc1dbbd363c1",
+              "name": "No Looking Back (1982 Session Version) - 1982 Radio Session"
+            },
+            {
+              "artists": [
+                "Miles Davis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731b4c2d9661ff102ee1ad5a04",
+              "name": "Blue in Green"
+            },
+            {
+              "artists": [
+                "The Fall"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27311bd2617bfb429ccc38c9c96",
+              "name": "Totally Wired"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23288776/FREEFORM",
+          "station": "KALX",
+          "track_count": 26,
+          "url": "https://open.spotify.com/playlist/3qQVDYJI2cmCVLwl7SAfZm"
         }
       },
       "needs_reconciliation": false
