@@ -4778,7 +4778,7 @@
           "start_time": "2026-11-02T13:00:00-0800",
           "end_time": "2026-11-02T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7wwb97eMgKDB0SUNCGU7sm",
         "desired_uris": [
@@ -4809,8 +4809,102 @@
           "spotify:track:3AIKlMw7NcJNRQpPb70YaH"
         ],
         "listing": {
+          "broadcast_end": "2026-11-02T15:00:00-0800",
+          "broadcast_start": "2026-11-02T13:00:00-0800",
+          "imported_at": "2026-11-05T23:47:38.012963909+00:00",
+          "last_updated": "2026-11-05 23:47 UTC",
           "name": "KPOO - Soul Explosion - 2026-11-02",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Aaron Frazer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f1111b4b0a9f611b0838053b",
+              "name": "Girl on the Phone"
+            },
+            {
+              "artists": [
+                "Tommy Good"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27342c9af519f537370a84e4718",
+              "name": "Baby I Miss You - Mono Version"
+            },
+            {
+              "artists": [
+                "Brenda Holloway"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f3d39085402981a3861fd2bf",
+              "name": "I've Been Good To You"
+            },
+            {
+              "artists": [
+                "Magic Sam",
+                "Eddie Shaw"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a3d7d4982e1779cd2d3c32b",
+              "name": "I Just Want a Little Bit - Alternate"
+            },
+            {
+              "artists": [
+                "Bob & Earl"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f256a7c36a395a8c7e20e8e9",
+              "name": "Harlem Shuffle"
+            },
+            {
+              "artists": [
+                "Big Mama Thornton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273797e51a364c3b0882732238d",
+              "name": "Ball N' Chain"
+            },
+            {
+              "artists": [
+                "Billy Stewart"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735839561e262d9a0847e4e09b",
+              "name": "Cross My Heart"
+            },
+            {
+              "artists": [
+                "Nina Simone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273284331b5fd05578799693917",
+              "name": "House of the Rising Sun - Live at the Village Gate"
+            },
+            {
+              "artists": [
+                "John Gary Williams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273650ea8de982c95551da4958a",
+              "name": "In Love With You"
+            },
+            {
+              "artists": [
+                "Don & Dewey"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273045a0dbe59b776e1b689a2cf",
+              "name": "Justine"
+            },
+            {
+              "artists": [
+                "Albert Collins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27311112397d5ba1c525773c12e",
+              "name": "Frosty"
+            },
+            {
+              "artists": [
+                "Gil Scott-Heron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733ecd34777d8dd32a91b6d150",
+              "name": "No Knock"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23277525/Soul-Explosion",
+          "station": "KPOO",
+          "track_count": 25,
+          "url": "https://open.spotify.com/playlist/7wwb97eMgKDB0SUNCGU7sm"
         }
       },
       "needs_reconciliation": false
