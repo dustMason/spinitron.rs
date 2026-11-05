@@ -483,7 +483,7 @@
           "start_time": "2026-11-02T12:00:00-0800",
           "end_time": "2026-11-02T15:00:00-0800"
         },
-        "state": "prepared",
+        "state": "creating",
         "owner_id": "dustmason",
         "desired_uris": [
           "spotify:track:2Zge4Ca03jM16XhjX4Vwcc",
