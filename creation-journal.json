@@ -2424,7 +2424,7 @@
           "start_time": "2026-11-05T09:00:00-0800",
           "end_time": "2026-11-05T11:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4z6eVmLygZvrNy4tPUrKuu",
         "desired_uris": [
@@ -2451,8 +2451,101 @@
           "spotify:track:1WkjwrkilljSUQm70854pW"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T11:00:00-0800",
+          "broadcast_start": "2026-11-05T09:00:00-0800",
+          "imported_at": "2026-11-05T22:57:33.433750240+00:00",
+          "last_updated": "2026-11-05 22:57 UTC",
           "name": "KPOO - JIVIN' AROUND - 2026-11-05",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Buster Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ce2b458dad2530a0e73a72df",
+              "name": "Don't Dog Your Woman"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "James Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b1486d43d71743f453696e6a",
+              "name": "Shout And Shimmy"
+            },
+            {
+              "artists": [
+                "Big Joe Turner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da7d1d4e55f0c922dc898e3d",
+              "name": "Shake, Rattle and Roll"
+            },
+            {
+              "artists": [
+                "Curtis Mayfield"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273578367df97286ca60f9b8b3b",
+              "name": "Move on Up - 2019 Remaster"
+            },
+            {
+              "artists": [
+                "Chuck Jackson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273def8c427332a0f9c6f38f15a",
+              "name": "Any Day Now"
+            },
+            {
+              "artists": [
+                "Ben E. King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732755e7d5092e6ba5c3a78204",
+              "name": "Supernatural Thing Parts 1 & 2"
+            },
+            {
+              "artists": [
+                "Bo Diddley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ce626968471538e447b77422",
+              "name": "Ooh Baby"
+            },
+            {
+              "artists": [
+                "The Manhattans"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731e0e1be1af9b770db02fd611",
+              "name": "Follow Your Heart"
+            },
+            {
+              "artists": [
+                "Shorty Long"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e51ac1eddb97803c1b4e552f",
+              "name": "Function At The Junction"
+            },
+            {
+              "artists": [
+                "Gene Chandler"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e16b7845359690fdda3f2979",
+              "name": "Just Be True"
+            },
+            {
+              "artists": [
+                "Chuck Willis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736f9d584dd8ac315238ea6392",
+              "name": "Betty and Dupree"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23292878/JIVIN-AROUND",
+          "station": "KPOO",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/4z6eVmLygZvrNy4tPUrKuu"
         }
       },
       "needs_reconciliation": false
