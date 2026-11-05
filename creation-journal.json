@@ -2374,7 +2374,7 @@
           "start_time": "2026-11-03T22:00:00-0800",
           "end_time": "2026-11-04T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5ZCDsyPLqS0WROec5wCuCW",
         "desired_uris": [
@@ -2400,8 +2400,103 @@
           "spotify:track:1GyARRNXYM9xepZMMPegok"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T00:00:00-0800",
+          "broadcast_start": "2026-11-03T22:00:00-0800",
+          "imported_at": "2026-11-05T23:35:40.810907809+00:00",
+          "last_updated": "2026-11-05 23:35 UTC",
           "name": "KALX - FREEFORM - 2026-11-03 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Dolly Parton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6b59b662ca7c409822302e9",
+              "name": "You Are"
+            },
+            {
+              "artists": [
+                "Neko Case"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e47e462498547a988b6ec067",
+              "name": "Star Witness"
+            },
+            {
+              "artists": [
+                "Angela Autumn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739b85760c1bed1bea6c5fc6d4",
+              "name": "Believer"
+            },
+            {
+              "artists": [
+                "Timber Timbre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e17997b5e006fa2a01de51e1",
+              "name": "No Bold Villain"
+            },
+            {
+              "artists": [
+                "Allison De Groot",
+                "Rich Ruth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731eb0c9068659226f8e9e0fec",
+              "name": "Distance From Then"
+            },
+            {
+              "artists": [
+                "Sharon Van Etten"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738c73ffae872bd99100e51cdb",
+              "name": "One Day"
+            },
+            {
+              "artists": [
+                "Attic Abasement"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273145a2ff3671d7fc62821f1e5",
+              "name": "Summer Coat"
+            },
+            {
+              "artists": [
+                "Angel Olsen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f7ab493ccab101b239a3d1f4",
+              "name": "Shut Up Kiss Me"
+            },
+            {
+              "artists": [
+                "Liz Phair"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27361463562d02947c062695887",
+              "name": "Jealousy"
+            },
+            {
+              "artists": [
+                "Swapmeet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bd093a776b0ddf5d8bd8083e",
+              "name": "I Know!"
+            },
+            {
+              "artists": [
+                "Death Cab for Cutie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731356b24d48cbabc44384e753",
+              "name": "Envy the Birds"
+            },
+            {
+              "artists": [
+                "Fontaines D.C.",
+                "ROSALÍA"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273912db68812b0772fa5c1b4b8",
+              "name": "Where Is Gone?"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23285044/FREEFORM",
+          "station": "KALX",
+          "track_count": 20,
+          "url": "https://open.spotify.com/playlist/5ZCDsyPLqS0WROec5wCuCW"
         }
       },
       "needs_reconciliation": false
