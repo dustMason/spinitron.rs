@@ -2656,7 +2656,7 @@
           "start_time": "2026-11-04T03:00:00-0800",
           "end_time": "2026-11-04T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0cI8sI83lCf6r1pPAJ1MYD",
         "desired_uris": [
@@ -2722,8 +2722,101 @@
           "spotify:track:2f1vKTCC7yY0HkPq28cfJ1"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T07:00:00-0800",
+          "broadcast_start": "2026-11-04T03:00:00-0800",
+          "imported_at": "2026-11-05T23:37:00.159912326+00:00",
+          "last_updated": "2026-11-05 23:37 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-04",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Necro Deathmort"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aab71fb483583bff8936764c",
+              "name": "Pecklyn"
+            },
+            {
+              "artists": [
+                "Simon Scott"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737988a30c69c17db5a017e5fc",
+              "name": "Repulse"
+            },
+            {
+              "artists": [
+                "Cruel Diagonals"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27318b5541da257b8bb95220d66",
+              "name": "Embrasure"
+            },
+            {
+              "artists": [
+                "J. Zunz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27338629f78615e62a9db5a5652",
+              "name": "Imago"
+            },
+            {
+              "artists": [
+                "Belief Defect"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ae772c82ef75038e5468e1c6",
+              "name": "Fake Disciples"
+            },
+            {
+              "artists": [
+                "Experimental Audio Research"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e0df0981365084fd47a70fed",
+              "name": "Three"
+            },
+            {
+              "artists": [
+                "Courtesy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27335bbb7b0df24143206de54ce",
+              "name": "Nite Nite"
+            },
+            {
+              "artists": [
+                "Bruno Nicolai"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731421da360e5854eceeca2031",
+              "name": "Oppressione"
+            },
+            {
+              "artists": [
+                "Ivor Slaney"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730588927a0acc2806e0d8ded5",
+              "name": "'Prey' Main Title/Kator Has Landed"
+            },
+            {
+              "artists": [
+                "Why Bother?"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273afbc3f0084494ceb9a58770b",
+              "name": "Monstrosity"
+            },
+            {
+              "artists": [
+                "Fumaça Preta"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738ee1c74fb5e1f28ffa2d6109",
+              "name": "El Mismo Abismo"
+            },
+            {
+              "artists": [
+                "Jóhann Jóhannsson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c51dbf5e4422620c4c08ef8c",
+              "name": "Forging the Beast"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23286041/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 60,
+          "url": "https://open.spotify.com/playlist/0cI8sI83lCf6r1pPAJ1MYD"
         }
       },
       "needs_reconciliation": false
