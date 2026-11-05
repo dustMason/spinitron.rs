@@ -1547,7 +1547,7 @@
           "start_time": "2026-11-05T03:00:00-0800",
           "end_time": "2026-11-05T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3n3lnzQDpzzJra1RkVBqLF",
         "desired_uris": [
@@ -1589,8 +1589,103 @@
           "spotify:track:5utSZ0qbibLj0kZXyTWdmd"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T07:00:00-0800",
+          "broadcast_start": "2026-11-05T03:00:00-0800",
+          "imported_at": "2026-11-05T22:58:05.835668789+00:00",
+          "last_updated": "2026-11-05 22:58 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-05 3:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Operating Theatre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733956f58b6f11badcd3605ac2",
+              "name": "Positive Disintegration"
+            },
+            {
+              "artists": [
+                "Bullion"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a1e6a4e8682ac791e3c809f8",
+              "name": "Ok Parsley"
+            },
+            {
+              "artists": [
+                "This Mortal Coil"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273201a9af6d3296d20a205adb5",
+              "name": "Fyt - Remastered"
+            },
+            {
+              "artists": [
+                "Cluster"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273753c3f9c59bbc1cac95fc60b",
+              "name": "Halwa"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "You Miss Me"
+            },
+            {
+              "artists": [
+                "Robert Palmer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db72f7db65a838e53505503c",
+              "name": "Les Planches"
+            },
+            {
+              "artists": [
+                "Barnt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738c290662390a6416aced6d34",
+              "name": "1Swerves"
+            },
+            {
+              "artists": [
+                "Twisted Wires"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bf7ea38245458fcf63254f0f",
+              "name": "One Night At The Raw Deal"
+            },
+            {
+              "artists": [
+                "Alchemist Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27303ae944a3d27d0e7476a5fe8",
+              "name": "Ghost Radio"
+            },
+            {
+              "artists": [
+                "Mexican Institute Of Sound",
+                "Meridian Brothers",
+                "Beck"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6a51df3861f2ed688091681",
+              "name": "Ritmo Babilonia"
+            },
+            {
+              "artists": [
+                "Habibi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732fc9fbc103763bb4bbd2af10",
+              "name": "Interlude"
+            },
+            {
+              "artists": [
+                "Tipsy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a6928835f2a3628f75c5926f",
+              "name": "Mr. Excitement"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23291598/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 36,
+          "url": "https://open.spotify.com/playlist/3n3lnzQDpzzJra1RkVBqLF"
         }
       },
       "needs_reconciliation": false
