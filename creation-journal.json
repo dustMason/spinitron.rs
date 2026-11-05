@@ -7059,7 +7059,7 @@
           "start_time": "2026-11-04T17:30:00-0800",
           "end_time": "2026-11-04T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1MLdqeFGiFtFFOi5mMPXes",
         "desired_uris": [
@@ -7068,8 +7068,39 @@
           "spotify:track:5oCAtxlB0Hn6rXUp9lXybu"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T18:00:00-0800",
+          "broadcast_start": "2026-11-04T17:30:00-0800",
+          "imported_at": "2026-11-05T23:59:02.227113713+00:00",
+          "last_updated": "2026-11-05 23:59 UTC",
           "name": "KPOO - KPOO Community News - 2026-11-04",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Dick Hyman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348cd73746936dbd8f68b430a",
+              "name": "Peacherine Rag"
+            },
+            {
+              "artists": [
+                "John Coltrane",
+                "Eric Dolphy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27378de45792d9fd6b7f8d250e0",
+              "name": "My Favorite Things (feat. Eric Dolphy) - Live"
+            },
+            {
+              "artists": [
+                "Carmen Lundy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27377e302500fafc6ca1f673e01",
+              "name": "A Time for Peace"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23289519/KPOO-Community-News",
+          "station": "KPOO",
+          "track_count": 3,
+          "url": "https://open.spotify.com/playlist/1MLdqeFGiFtFFOi5mMPXes"
         }
       },
       "needs_reconciliation": false
