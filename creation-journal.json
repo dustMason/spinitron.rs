@@ -3114,7 +3114,7 @@
           "start_time": "2026-11-04T12:00:00-0800",
           "end_time": "2026-11-04T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4NqGs3jUxs5UwUGxtjQykl",
         "desired_uris": [
@@ -3144,8 +3144,106 @@
           "spotify:track:7AOloXJzylUy7VxBPpCHaF"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T15:00:00-0800",
+          "broadcast_start": "2026-11-04T12:00:00-0800",
+          "imported_at": "2026-11-05T23:38:59.781832188+00:00",
+          "last_updated": "2026-11-05 23:38 UTC",
           "name": "KALX - Minute Intervals - 2026-11-04",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Skyminds"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c908a599a22f35d95e4d03aa",
+              "name": "Meditation I"
+            },
+            {
+              "artists": [
+                "Shearwater"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733329aaf3098be832ee7fef71",
+              "name": "The High Ranges"
+            },
+            {
+              "artists": [
+                "Loma"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d69dc50c534c5b36f93f0c0d",
+              "name": "Given a Sign"
+            },
+            {
+              "artists": [
+                "Cybotron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27322527ee328b1f87789d474ff",
+              "name": "Cosmic Raindance"
+            },
+            {
+              "artists": [
+                "Los Pingüinos Del Norte"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27380916d35216b68a7346846c5",
+              "name": "El Chocolate (The Horse, Chocolate)"
+            },
+            {
+              "artists": [
+                "Los Texmaniacs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f3e2ed8bb5a8e3d022e394f",
+              "name": "El porrón (The Slow Mover)"
+            },
+            {
+              "artists": [
+                "The Soul Seven",
+                "Soultex",
+                "Eddie Purrell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f4e557ed62b5aac771ef45c4",
+              "name": "I Feels It (Vocal Version)"
+            },
+            {
+              "artists": [
+                "Sir Douglas Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b23298399a8b86de084b5588",
+              "name": "She's About A Mover"
+            },
+            {
+              "artists": [
+                "The Blue Ridge Playboys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c010fa48bb887c573beebdb7",
+              "name": "Give Me My Money"
+            },
+            {
+              "artists": [
+                "Hermanos Gutiérrez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f3a9cedd778597ac88c73e5",
+              "name": "Los Ojos Del Cóndor"
+            },
+            {
+              "artists": [
+                "Salah Ragab",
+                "The Cairo Jazz Band",
+                "Zaky Osman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730de43a4df738ca4a9543f94d",
+              "name": "Latino in Cairo"
+            },
+            {
+              "artists": [
+                "Orquesta Akokán",
+                "Kiko Ruiz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273515e239648537ec6810e8a7e",
+              "name": "Me Tienes Sin Cuidado"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23288005/Minute-Intervals",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/4NqGs3jUxs5UwUGxtjQykl"
         }
       },
       "needs_reconciliation": false
