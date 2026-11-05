@@ -1822,7 +1822,7 @@
           "start_time": "2026-11-03T15:00:00-0800",
           "end_time": "2026-11-03T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7yg3780kOZqWYu46JdNJ9Z",
         "desired_uris": [
@@ -1857,8 +1857,101 @@
           "spotify:track:07Igpe0qgwlSoqwpUOoCXz"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T17:00:00-0800",
+          "broadcast_start": "2026-11-03T15:00:00-0800",
+          "imported_at": "2026-11-05T23:16:13.793291381+00:00",
+          "last_updated": "2026-11-05 23:16 UTC",
           "name": "KALX - queen of the cowbell. - 2026-11-03",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "CIA Debutante"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ade4151d4f5ea30380daeb4d",
+              "name": "Nagoya"
+            },
+            {
+              "artists": [
+                "Robert Fripp"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d590c6197d7f87281d80df04",
+              "name": "Under Heavy Manners"
+            },
+            {
+              "artists": [
+                "NEU!"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c4dafea59399470cce454c3",
+              "name": "Negativland"
+            },
+            {
+              "artists": [
+                "Television Personalities"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348ad82f492a28df05b9e94f5",
+              "name": "Jackanory Stories"
+            },
+            {
+              "artists": [
+                "The Catburgers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b99e40139426ee2449c8b46b",
+              "name": "I've Got a Friend"
+            },
+            {
+              "artists": [
+                "Jesse Garon and the Desperadoes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27344e36687d11c244ec49d31af",
+              "name": "You'll Never Be That Young Again"
+            },
+            {
+              "artists": [
+                "Sunday Mourners"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27390d7058bd4f657fb8e638af6",
+              "name": "Careers In Acting"
+            },
+            {
+              "artists": [
+                "Casper & The Cookies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c48f7fb2ec6ed8919497664",
+              "name": "Nagoya"
+            },
+            {
+              "artists": [
+                "The Flying Hats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273172798acb57b380de9fc5614",
+              "name": "Lightning Bottle"
+            },
+            {
+              "artists": [
+                "Hermanos Gutiérrez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f3a9cedd778597ac88c73e5",
+              "name": "Los Ojos Del Cóndor"
+            },
+            {
+              "artists": [
+                "Mali Obomsawin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731def830a10f5628fc087f89f",
+              "name": "Automatic"
+            },
+            {
+              "artists": [
+                "The Chats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27341db2d21a9c85abc676663f1",
+              "name": "Off It"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23283473/queen-of-the-cowbell",
+          "station": "KALX",
+          "track_count": 29,
+          "url": "https://open.spotify.com/playlist/7yg3780kOZqWYu46JdNJ9Z"
         }
       },
       "needs_reconciliation": false
