@@ -5345,7 +5345,7 @@
           "start_time": "2026-11-02T23:00:00-0800",
           "end_time": "2026-11-03T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5VCet59vOiWalXbu1fgszb",
         "desired_uris": [
@@ -5415,8 +5415,101 @@
           "spotify:track:3TBaUPhzWTidBz6AFXbj6p"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T06:00:00-0800",
+          "broadcast_start": "2026-11-02T23:00:00-0800",
+          "imported_at": "2026-11-05T23:50:18.103584100+00:00",
+          "last_updated": "2026-11-05 23:50 UTC",
           "name": "KPOO - Over Nite Sounds - 2026-11-02",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Barrett Strong"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738133c389b5a5ce1fc4fdd477",
+              "name": "Oh I Apologize - Single Version / Mono"
+            },
+            {
+              "artists": [
+                "Ray Charles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27386f82fb042656bda9b2ce811",
+              "name": "I Believe to My Soul"
+            },
+            {
+              "artists": [
+                "The Drifters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27346472dd335d2ad282e434205",
+              "name": "I Count the Tears"
+            },
+            {
+              "artists": [
+                "Billy Stewart"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733d02a54aa59797e7f42ddd58",
+              "name": "I Do Love You"
+            },
+            {
+              "artists": [
+                "Josephine Taylor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f4ee7708022020157192b2c9",
+              "name": "I Want a Man - Previously Unreleased"
+            },
+            {
+              "artists": [
+                "Joseph Moore"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f4ee7708022020157192b2c9",
+              "name": "I Still Can't Get You"
+            },
+            {
+              "artists": [
+                "Baby Miracles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f4ee7708022020157192b2c9",
+              "name": "I Feel Good All Over - Previously Unreleased"
+            },
+            {
+              "artists": [
+                "Wilson Pickett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d625f8136cd2f6b9e9543f4",
+              "name": "I Found a True Love - 2006 Remaster; Single Version"
+            },
+            {
+              "artists": [
+                "Sam & Dave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a709999604555ddd4171ca44",
+              "name": "I Got a Thing Going On"
+            },
+            {
+              "artists": [
+                "James Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cef82dc1b7fc24ffec550e9e",
+              "name": "I Got The Feelin' - Single Version"
+            },
+            {
+              "artists": [
+                "Brook Benton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eb88df00faf2bded7992dbdd",
+              "name": "I Got What I Wanted"
+            },
+            {
+              "artists": [
+                "The Miracles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730c0d30360d3d4df889b5b2ae",
+              "name": "I Gotta Dance To Keep From Crying"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23280197/Over-Nite-Sounds",
+          "station": "KPOO",
+          "track_count": 64,
+          "url": "https://open.spotify.com/playlist/5VCet59vOiWalXbu1fgszb"
         }
       },
       "needs_reconciliation": false
