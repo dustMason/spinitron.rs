@@ -1220,7 +1220,7 @@
           "start_time": "2026-11-03T01:00:00-0800",
           "end_time": "2026-11-03T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5nlo0AG5s1cwUjJJCBEQhQ",
         "desired_uris": [
@@ -1280,8 +1280,104 @@
           "spotify:track:4htbbiZrPVPQkealy8EsoO"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T07:00:00-0800",
+          "broadcast_start": "2026-11-03T01:00:00-0800",
+          "imported_at": "2026-11-05T23:15:52.352528729+00:00",
+          "last_updated": "2026-11-05 23:15 UTC",
           "name": "KALX - FREEFORM - 2026-11-03 1:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "New Monsoon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337645011fef61a95329d4517",
+              "name": "Song for Marie"
+            },
+            {
+              "artists": [
+                "Sarah Davachi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273633eec77538dc204a829a0c1",
+              "name": "Canto Solo"
+            },
+            {
+              "artists": [
+                "Floating Points",
+                "Miriam Adefris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a26089b59c611a79782ef056",
+              "name": "Movement 10 - Her Gift"
+            },
+            {
+              "artists": [
+                "Kerem Gerdenzeri"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c3c61058b548cc3f89f07d60",
+              "name": "Heseno Lawo"
+            },
+            {
+              "artists": [
+                "Red Spirit Singers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739bed524b3129f91f8ecbf6e1",
+              "name": "Left Awaiting (bonus track)"
+            },
+            {
+              "artists": [
+                "Frenk Dublin",
+                "Tenor Love",
+                "SND & RTN"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b5d0a2974f21237842fda19",
+              "name": "I Love Music - SND & RTN Version"
+            },
+            {
+              "artists": [
+                "Lambert, Hendricks & Ross"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b42600448633e61af40fe729",
+              "name": "Halloween Spooks"
+            },
+            {
+              "artists": [
+                "Juha Mäki-Patola"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f3786488c330b006ca1a5fc1",
+              "name": "Moment 3"
+            },
+            {
+              "artists": [
+                "Blind Yeo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee644b0ff70758b48bade741",
+              "name": "Right side of the round"
+            },
+            {
+              "artists": [
+                "African Head Charge"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273942ef6fc624412cab7e60324",
+              "name": "Microdosing"
+            },
+            {
+              "artists": [
+                "Ibibio Sound Machine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738377ac5fbafebad9549413c8",
+              "name": "Menso"
+            },
+            {
+              "artists": [
+                "Colomach"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27366a32b06d4dfaabe1cd4a0de",
+              "name": "Kassa Kpa Sama Kpa"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23280405/FREEFORM",
+          "station": "KALX",
+          "track_count": 54,
+          "url": "https://open.spotify.com/playlist/5nlo0AG5s1cwUjJJCBEQhQ"
         }
       },
       "needs_reconciliation": false
