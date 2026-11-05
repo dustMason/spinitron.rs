@@ -1671,7 +1671,7 @@
           "start_time": "2026-11-03T12:00:00-0800",
           "end_time": "2026-11-03T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3iMjsFm4qN3omiFmvFPpXb",
         "desired_uris": [
@@ -1712,8 +1712,102 @@
           "spotify:track:32wcgD2iId0smNDyjUNvd8"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T15:00:00-0800",
+          "broadcast_start": "2026-11-03T12:00:00-0800",
+          "imported_at": "2026-11-05T23:16:07.691753939+00:00",
+          "last_updated": "2026-11-05 23:16 UTC",
           "name": "KALX - Deep Vote - 2026-11-03",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Lizzy Mercier Descloux"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320ebb31165b3e2e4ec0ae792",
+              "name": "Mission Impossible"
+            },
+            {
+              "artists": [
+                "Patti Smith"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733763d1cb36a0f79d7a198a0a",
+              "name": "People Have the Power"
+            },
+            {
+              "artists": [
+                "Kittyhawk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273706b93d4afddc17c45051a35",
+              "name": "Big City (Live)"
+            },
+            {
+              "artists": [
+                "Deep Purple"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737f42bf4082dd9d4a77bfa130",
+              "name": "Help - Alternate Take"
+            },
+            {
+              "artists": [
+                "Leonard Cohen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da5964a913e8034b6f63b869",
+              "name": "Democracy"
+            },
+            {
+              "artists": [
+                "Leonard Cohen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738fc857633a3804cd2786f923",
+              "name": "First We Take Manhattan"
+            },
+            {
+              "artists": [
+                "Ezra Collective",
+                "Libianca"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d02e8be17bfe4eb4afb2141",
+              "name": "Most High (feat. Libianca)"
+            },
+            {
+              "artists": [
+                "Yoshida Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737058de0dd047405bf1bed62b",
+              "name": "疾風"
+            },
+            {
+              "artists": [
+                "Sean Griffin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734fc214513450861c82ac00d7",
+              "name": "People Are Mad"
+            },
+            {
+              "artists": [
+                "Adam Brodsky"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273561c3007008ccc4bb10456f7",
+              "name": "New World Order"
+            },
+            {
+              "artists": [
+                "DEVO"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c3c27591c5ad40116f9ce6b3",
+              "name": "Dogs Of Democracy"
+            },
+            {
+              "artists": [
+                "Aki Kumar"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db6d9d85c26d9f699272ddbf",
+              "name": "Dilruba"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23282703/Deep-Vote",
+          "station": "KALX",
+          "track_count": 35,
+          "url": "https://open.spotify.com/playlist/3iMjsFm4qN3omiFmvFPpXb"
         }
       },
       "needs_reconciliation": false
