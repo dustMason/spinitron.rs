@@ -1080,7 +1080,7 @@
           "start_time": "2026-11-02T22:00:00-0800",
           "end_time": "2026-11-03T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4TnAAfrygtPl3YjsRvLY91",
         "desired_uris": [
@@ -1110,8 +1110,102 @@
           "spotify:track:4AdY2eRIHaZgPnZVHG6LoI"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T00:00:00-0800",
+          "broadcast_start": "2026-11-02T22:00:00-0800",
+          "imported_at": "2026-11-05T23:15:46.493390703+00:00",
+          "last_updated": "2026-11-05 23:15 UTC",
           "name": "KALX - . - 2026-11-02",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Glenn Miller",
+                "Ray Eberle"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738579380aebaa1d7ff31d631e",
+              "name": "Moonlight Cocktail"
+            },
+            {
+              "artists": [
+                "Hoyt Axton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27300a0e31ca0d493f37c1920ec",
+              "name": "Bring Your Lovin' When You Come"
+            },
+            {
+              "artists": [
+                "The Kingston Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273716eefe293995fc9c4bc6827",
+              "name": "Greenback Dollar"
+            },
+            {
+              "artists": [
+                "The Dils"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273408fc506c7898e77887da39a",
+              "name": "I Hate The Rich"
+            },
+            {
+              "artists": [
+                "Dead Moon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c45c392899f31f622b2802e7",
+              "name": "Cast Will Change"
+            },
+            {
+              "artists": [
+                "Emperor X"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732c0fc430f58b1c53bf343073",
+              "name": "Line Go Up Line Go Down"
+            },
+            {
+              "artists": [
+                "The Radiants"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d560ef0c3f2a02606a489a63",
+              "name": "Voice Your Choice"
+            },
+            {
+              "artists": [
+                "Blind Yeo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee644b0ff70758b48bade741",
+              "name": "Today / Tomorrow"
+            },
+            {
+              "artists": [
+                "Swervedriver"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27344246a531a6466b0078830da",
+              "name": "Son Of Mustang Ford"
+            },
+            {
+              "artists": [
+                "Sweeping Promises"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731202a359bc1c2774bc1eb704",
+              "name": "My Friend's An Entomologist"
+            },
+            {
+              "artists": [
+                "Non Plus Temps"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731231dfe75a101bbc0125649c",
+              "name": "DeChirico Desert"
+            },
+            {
+              "artists": [
+                "That Petrol Emotion"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c86bf4920f673abf8ecb608d",
+              "name": "Cellophane"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23279769/-",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/4TnAAfrygtPl3YjsRvLY91"
         }
       },
       "needs_reconciliation": false
