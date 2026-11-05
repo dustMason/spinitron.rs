@@ -6979,7 +6979,7 @@
           "start_time": "2026-11-04T15:00:00-0800",
           "end_time": "2026-11-04T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1pA3QPQznC8qIvstbpsH5k",
         "desired_uris": [
@@ -6991,8 +6991,60 @@
           "spotify:track:7k7syXYFuHNfY06Z2rftoh"
         ],
         "listing": {
+          "broadcast_end": "2026-11-04T17:30:00-0800",
+          "broadcast_start": "2026-11-04T15:00:00-0800",
+          "imported_at": "2026-11-05T23:58:22.360687558+00:00",
+          "last_updated": "2026-11-05 23:58 UTC",
           "name": "KPOO - Wake The Town - 2026-11-04",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Kingstonians"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27393e86df21038d494071e6bda",
+              "name": "The Clip"
+            },
+            {
+              "artists": [
+                "Derrick Harriott",
+                "The Revolutionaries"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273083623954a0b19f28eb5e3aa",
+              "name": "Do I Worry"
+            },
+            {
+              "artists": [
+                "Derrick Harriott"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27367104c3832b0691df6da29ac",
+              "name": "Walk the Streets"
+            },
+            {
+              "artists": [
+                "Lloyd & Glen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d7525dd3ee187407eb072b54",
+              "name": "That Girl"
+            },
+            {
+              "artists": [
+                "Bobby Ellis & Desmond Miles Seven"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730275e542879e513c9b4ba9e4",
+              "name": "Step Softly"
+            },
+            {
+              "artists": [
+                "Ernest Ranglin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27391097c0e8accb1443e612b9c",
+              "name": "Surfin'"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23288858/Wake-The-Town",
+          "station": "KPOO",
+          "track_count": 6,
+          "url": "https://open.spotify.com/playlist/1pA3QPQznC8qIvstbpsH5k"
         }
       },
       "needs_reconciliation": false
