@@ -5747,7 +5747,7 @@
           "start_time": "2026-11-03T09:00:00-0800",
           "end_time": "2026-11-03T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1UmwahqcUsoaIzgCejERxA",
         "desired_uris": [
@@ -5798,8 +5798,102 @@
           "spotify:track:6eZfLDInqkFsD8I7NYrO9l"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T12:00:00-0800",
+          "broadcast_start": "2026-11-03T09:00:00-0800",
+          "imported_at": "2026-11-05T23:52:16.991460810+00:00",
+          "last_updated": "2026-11-05 23:52 UTC",
           "name": "KPOO - Grown Folks Music - 2026-11-03",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Herbie Hancock"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e28676c1f28d20e23ed42376",
+              "name": "Eye of the Hurricane"
+            },
+            {
+              "artists": [
+                "Stanley Turrentine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736fd2e6aaa0a47ad9cc978340",
+              "name": "That's The Way Of The World"
+            },
+            {
+              "artists": [
+                "NMR Digital"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f48aac917122341d12f494b0",
+              "name": "Walk On By"
+            },
+            {
+              "artists": [
+                "Gloria Lynne"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ab9342357a16c7c4316704a0",
+              "name": "I Wish You Love"
+            },
+            {
+              "artists": [
+                "Neil Sedaka"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27305ab46dbaf585da6622cca5e",
+              "name": "Laughter In The Rain"
+            },
+            {
+              "artists": [
+                "Carpenters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27375fc0e961ba2028df4787966",
+              "name": "I Won't Last A Day Without You"
+            },
+            {
+              "artists": [
+                "Len Barry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732f7ccff7b9bbcef9a9709c59",
+              "name": "1-2-3"
+            },
+            {
+              "artists": [
+                "Frank Chacksfield & His Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27324be6e4134a06ce96d11f046",
+              "name": "Wives And Lovers"
+            },
+            {
+              "artists": [
+                "Arthur Prysock"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27398c8350ae1745ab5c027f7a5",
+              "name": "There Will Never Be Another You"
+            },
+            {
+              "artists": [
+                "Dionne Warwick"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733fc995f08272fdcb7e97cdd2",
+              "name": "This Girl's in Love with You"
+            },
+            {
+              "artists": [
+                "Frank Sinatra",
+                "Count Basie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cb81eb3c1238c60f2bbfd3b5",
+              "name": "I Only Have Eyes For You"
+            },
+            {
+              "artists": [
+                "Sarah Vaughan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731b831e62ca60cb6e679a5d14",
+              "name": "And I Love Her"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23281957/Grown-Folks-Music",
+          "station": "KPOO",
+          "track_count": 45,
+          "url": "https://open.spotify.com/playlist/1UmwahqcUsoaIzgCejERxA"
         }
       },
       "needs_reconciliation": false
