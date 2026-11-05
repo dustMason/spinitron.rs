@@ -2237,7 +2237,7 @@
           "start_time": "2026-11-03T20:00:00-0800",
           "end_time": "2026-11-03T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3dIUJ2AlO6XEsHDMYIPqHN",
         "desired_uris": [
@@ -2264,8 +2264,102 @@
           "spotify:track:5BZJftQewA6XEIZ2TZ94As"
         ],
         "listing": {
+          "broadcast_end": "2026-11-03T22:00:00-0800",
+          "broadcast_start": "2026-11-03T20:00:00-0800",
+          "imported_at": "2026-11-05T23:35:00.987174942+00:00",
+          "last_updated": "2026-11-05 23:35 UTC",
           "name": "KALX - Helaciousness - 2026-11-03",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "El Khat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736be138d40af7d4eb990096ca",
+              "name": "Balagh Al Achbaab"
+            },
+            {
+              "artists": [
+                "Pooja Goswami Pavan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe5b8cabc68ca77bbe588ef8",
+              "name": "In the Cave of the Sky"
+            },
+            {
+              "artists": [
+                "Abronia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27302c0c297c131908ee3b1048e",
+              "name": "New Imposition"
+            },
+            {
+              "artists": [
+                "Radiohead"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856",
+              "name": "Electioneering"
+            },
+            {
+              "artists": [
+                "The Mob"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a9e87b15c431f3403a999a48",
+              "name": "Witch Hunt - 7\" Version"
+            },
+            {
+              "artists": [
+                "Dropkick Murphys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27324c423326c43d693e8caaca1",
+              "name": "Mob Mentalilty"
+            },
+            {
+              "artists": [
+                "Bill Noertker",
+                "Oliver Kogod"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee98ba5ab69914ec634be829",
+              "name": "Redolent"
+            },
+            {
+              "artists": [
+                "aja monet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e3c87fb12f6627713cab7da",
+              "name": "withness"
+            },
+            {
+              "artists": [
+                "Coup Dur"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27339a83ed711e85de15348b74f",
+              "name": "Tu Dis Des Choses"
+            },
+            {
+              "artists": [
+                "Velocity Girl"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d998b5a4bb3f3591ca8482d5",
+              "name": "I Don't Care If You Go"
+            },
+            {
+              "artists": [
+                "Femi Kuti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a484fb91b0f669d7d5d94ed9",
+              "name": "Dem Militarize Democracy"
+            },
+            {
+              "artists": [
+                "Fela Kuti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733f75d8b129917a7c6b937e14",
+              "name": "Zombie"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23284597/Helaciousness",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/3dIUJ2AlO6XEsHDMYIPqHN"
         }
       },
       "needs_reconciliation": false
