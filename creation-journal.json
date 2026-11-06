@@ -7374,7 +7374,7 @@
           "start_time": "2026-11-04T23:00:00-0800",
           "end_time": "2026-11-05T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7gVk8qimpghHUNsLby56CF",
         "desired_uris": [
@@ -7402,8 +7402,103 @@
           "spotify:track:00nna4dUDStmpwY2OoLwVz"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T02:00:00-0800",
+          "broadcast_start": "2026-11-04T23:00:00-0800",
+          "imported_at": "2026-11-06T00:01:02.168879731+00:00",
+          "last_updated": "2026-11-06 00:01 UTC",
           "name": "KPOO - Lover's Lounge - 2026-11-04",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Harold Melvin & The Blue Notes",
+                "Teddy Pendergrass"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27332140dac935b95f7e4628a7b",
+              "name": "Wake Up Everybody (feat. Teddy Pendergrass)"
+            },
+            {
+              "artists": [
+                "Rufus",
+                "Chaka Khan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa3363d587232b8f388da0e5",
+              "name": "Sweet Thing"
+            },
+            {
+              "artists": [
+                "The Brothers Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273537ebc1940f248ab6f1b42f3",
+              "name": "I'll Be Good To You"
+            },
+            {
+              "artists": [
+                "Ohio Players"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b8f3e1eb33992b778f94bcf8",
+              "name": "Who'd She Coo?"
+            },
+            {
+              "artists": [
+                "Norman Connors"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cb4e2f5c3b4af81b81f37e0a",
+              "name": "You Are My Starship"
+            },
+            {
+              "artists": [
+                "Brick"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27371624e7e3edf05c197f8f560",
+              "name": "Dazz - Single Version"
+            },
+            {
+              "artists": [
+                "William Bell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730d8b85a78ab75150fe643326",
+              "name": "Tryin' To Love Two"
+            },
+            {
+              "artists": [
+                "The Emotions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c5a010463c2b450902e57599",
+              "name": "Best of My Love"
+            },
+            {
+              "artists": [
+                "James Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739b11a313b58c52f32945e7de",
+              "name": "Sex Machine (Part 1 And 2)"
+            },
+            {
+              "artists": [
+                "100 Proof Aged In Soul"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273790822e5a1e9733a5e7ce39e",
+              "name": "Everything Good Is Bad"
+            },
+            {
+              "artists": [
+                "The Temptations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c5fab7e361544acaf60c414",
+              "name": "Take A Stroll Thru Your Mind"
+            },
+            {
+              "artists": [
+                "Isaac Hayes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273518e8f3314611ffd4a056edb",
+              "name": "I Stand Accused"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23291040/Lover-s-Lounge",
+          "station": "KPOO",
+          "track_count": 22,
+          "url": "https://open.spotify.com/playlist/7gVk8qimpghHUNsLby56CF"
         }
       },
       "needs_reconciliation": false
