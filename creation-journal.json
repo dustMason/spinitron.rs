@@ -9208,7 +9208,7 @@
           "start_time": "2026-11-05T18:00:00-0800",
           "end_time": "2026-11-05T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3vcb8eh1ic0BkgNzhAkmbl",
         "desired_uris": [
@@ -9226,8 +9226,104 @@
           "spotify:track:6pth3bATSmXG4nKCDPvKak"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T20:00:00-0800",
+          "broadcast_start": "2026-11-05T18:00:00-0800",
+          "imported_at": "2026-11-06T13:58:20.010334053+00:00",
+          "last_updated": "2026-11-06 13:58 UTC",
           "name": "KPOO - Pajaro Latinoamericano - 2026-11-05",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Sones de Mexico Ensemble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ecf54039d105ae29afe2c20d",
+              "name": "Esta Tierra Es Tuya (This Land Is Your Land)"
+            },
+            {
+              "artists": [
+                "Quilapayún"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273892d166eaa02dfdd7c944e93",
+              "name": "El pueblo unido jamás será vencido"
+            },
+            {
+              "artists": [
+                "Leonard Cohen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738fc857633a3804cd2786f923",
+              "name": "First We Take Manhattan"
+            },
+            {
+              "artists": [
+                "Doctor Krápula"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cddb5d3766f1b1c995c94a6f",
+              "name": "Viva el Planeta"
+            },
+            {
+              "artists": [
+                "Jose Victoria"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27306ad5584dc540712b82749ab",
+              "name": "Inmigrante"
+            },
+            {
+              "artists": [
+                "Makrú"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27397a6681a99f4166e659b10e9",
+              "name": "Afinaos Con el Planeta"
+            },
+            {
+              "artists": [
+                "Mercedes Sosa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273763ea4e7cf76eefc1c3d3bf8",
+              "name": "Soy Pan, Soy Paz, Soy Más - En Directo"
+            },
+            {
+              "artists": [
+                "Chambao",
+                "Amir-John Haddad",
+                "Amparanoia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731e7069ac5c3b2483c5b1f460",
+              "name": "Papeles Mojados - En Directo"
+            },
+            {
+              "artists": [
+                "Natalia Lafourcade",
+                "Los Macorinos"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730fe864cc5162c51ab11f4492",
+              "name": "La Llorona (feat. Los Macorinos)"
+            },
+            {
+              "artists": [
+                "Jack Costanzo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27362843ce783e1cec41cd0afd8",
+              "name": "Jive Samba"
+            },
+            {
+              "artists": [
+                "Jack Costanzo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27362843ce783e1cec41cd0afd8",
+              "name": "La La La"
+            },
+            {
+              "artists": [
+                "Jack Costanzo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27362843ce783e1cec41cd0afd8",
+              "name": "Jack's Back"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23294991/Pajaro-Latinoamericano",
+          "station": "KPOO",
+          "track_count": 12,
+          "url": "https://open.spotify.com/playlist/3vcb8eh1ic0BkgNzhAkmbl"
         }
       },
       "needs_reconciliation": false
