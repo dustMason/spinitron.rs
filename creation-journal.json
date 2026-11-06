@@ -4711,7 +4711,7 @@
           "start_time": "2026-11-05T14:00:00-0800",
           "end_time": "2026-11-05T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2cupt06WnEYlUOZkItJ6Rc",
         "desired_uris": [
@@ -4728,8 +4728,96 @@
           "spotify:track:1gOMZJYQF5MFSraztZAROs"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T15:00:00-0800",
+          "broadcast_start": "2026-11-05T14:00:00-0800",
+          "imported_at": "2026-11-06T00:02:21.656780995+00:00",
+          "last_updated": "2026-11-06 00:02 UTC",
           "name": "KALX - Ian Brennan Interview Part 2 - 2026-11-05",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Red Spirit Singers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739bed524b3129f91f8ecbf6e1",
+              "name": "Echoes"
+            },
+            {
+              "artists": [
+                "Chicago Gunfire Survivors"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732f97dd247a8bfc1709309d27",
+              "name": "Violence Is Like An Infectious Disease"
+            },
+            {
+              "artists": [
+                "Red Spirit Singers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739bed524b3129f91f8ecbf6e1",
+              "name": "Life Must Go On"
+            },
+            {
+              "artists": [
+                "Shearwater"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733329aaf3098be832ee7fef71",
+              "name": "Even Song"
+            },
+            {
+              "artists": [
+                "Terry Callier"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273656c25894320e8e77061c259",
+              "name": "Spin, Spin, Spin - Remastered 2025"
+            },
+            {
+              "artists": [
+                "Ane Brun"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27362733d1d69c4dd6cb7676ac5",
+              "name": "Orphan Girl"
+            },
+            {
+              "artists": [
+                "Natalie Merchant",
+                "Chicago Symphony Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eb8d2d4086838a8445067a74",
+              "name": "Rhyming Town"
+            },
+            {
+              "artists": [
+                "Sarah Lancaster",
+                "Anonymous 4"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2424f0325d2f72841028f78",
+              "name": "I'm on my Journey Home"
+            },
+            {
+              "artists": [
+                "Tristan Allen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec79b6fcc00ed6742a89bcdd",
+              "name": "Act I: Garden"
+            },
+            {
+              "artists": [
+                "Tujiko Noriko"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308974d5807d9f4a6813bc074",
+              "name": "Boku Wa Obake"
+            },
+            {
+              "artists": [
+                "A Produce"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ddcf94e5c257723b9653b959",
+              "name": "It Comes In Waves (extended version)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23293599/Ian-Brennan-Interview-Part-2",
+          "station": "KALX",
+          "track_count": 11,
+          "url": "https://open.spotify.com/playlist/2cupt06WnEYlUOZkItJ6Rc"
         }
       },
       "needs_reconciliation": false
