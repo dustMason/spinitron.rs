@@ -4962,6 +4962,42 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23294654": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23294654,
+          "title": "Dealer's Choice - Rain Songs",
+          "url": "https://spinitron.com/KALX/pl/23294654/Dealer-s-Choice-Rain-Songs",
+          "start_time": "2026-11-05T17:00:00-0800",
+          "end_time": "2026-11-05T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6nsfIgSpb6O6KAeszg3Wj1",
+          "spotify:track:51yk7Be5VPaKOIFrWXWnvf",
+          "spotify:track:1Z1eIcXUNw8X2uAOkJryVb",
+          "spotify:track:2einAJpDo9XgJ9M1wdkEoU",
+          "spotify:track:0fGRfdmnxn3PfAzCI70nw2",
+          "spotify:track:0CcL4kSHKIEwF3IW0BGgb6",
+          "spotify:track:7EqPTfkpzAw4wiUab0VPTh",
+          "spotify:track:3Q1eI4jsHBEivhsX7OxRFH",
+          "spotify:track:6pKkm4Nm195wamPdBDOze6",
+          "spotify:track:1DJEuChgFet6auEWhzCKQH",
+          "spotify:track:7MJPH9KJ0dCpHFMnDViuiu",
+          "spotify:track:12C6nz8NxA7Jaz7xL6i3vt",
+          "spotify:track:1osscqZWqTxmIYOCigc6z1",
+          "spotify:track:20lPX0g0lacr7c72M8A0OR",
+          "spotify:track:2uRVPeQbsEpRQD0DKr1WTo"
+        ],
+        "listing": {
+          "name": "KALX - Dealer's Choice - Rain Songs - 2026-11-05",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
