@@ -9161,7 +9161,7 @@
           "start_time": "2026-11-05T17:30:00-0800",
           "end_time": "2026-11-05T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6BSHZ28s1vF5aI6RQN5k3l",
         "desired_uris": [
@@ -9169,8 +9169,31 @@
           "spotify:track:4txomw95FOSeXJxBpsfLD4"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T18:00:00-0800",
+          "broadcast_start": "2026-11-05T17:30:00-0800",
+          "imported_at": "2026-11-06T13:57:41.938632487+00:00",
+          "last_updated": "2026-11-06 13:57 UTC",
           "name": "KPOO - KPOO Community News - 2026-11-05",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Cuban Roots"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27328ef2a2cf0cec15aec4180de",
+              "name": "Just Another Guajira"
+            },
+            {
+              "artists": [
+                "Bobby Matos"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739eb69c76dad5092932dde5aa",
+              "name": "Kimbisia"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23294901/KPOO-Community-News",
+          "station": "KPOO",
+          "track_count": 2,
+          "url": "https://open.spotify.com/playlist/6BSHZ28s1vF5aI6RQN5k3l"
         }
       },
       "needs_reconciliation": false
