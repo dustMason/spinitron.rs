@@ -4571,7 +4571,7 @@
           "start_time": "2026-11-05T12:30:00-0800",
           "end_time": "2026-11-05T14:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "09Nu9eNU1wMuc6DQ2Pi7Xg",
         "desired_uris": [
@@ -4601,8 +4601,102 @@
           "spotify:track:4nYxKqroPIRDCRuYtEZ5Ee"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T14:00:00-0800",
+          "broadcast_start": "2026-11-05T12:30:00-0800",
+          "imported_at": "2026-11-06T00:01:42.709701666+00:00",
+          "last_updated": "2026-11-06 00:01 UTC",
           "name": "KALX - Thursday Thursday Thursday - 2026-11-05",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Kasey Lansdale"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fff21b8658e93e05347c98af",
+              "name": "Good Girl"
+            },
+            {
+              "artists": [
+                "Bill Callahan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736172648d29acadc71f725e35",
+              "name": "Computer"
+            },
+            {
+              "artists": [
+                "Margo Cilker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738924f50cc4f311ce2be287ee",
+              "name": "Little White Cross"
+            },
+            {
+              "artists": [
+                "Sera Cahoone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27378e44e5319ce456beb38afb0",
+              "name": "High and Low"
+            },
+            {
+              "artists": [
+                "Julia Jacklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27311cac66f5d62c8eced7a021b",
+              "name": "Get Away From Me (I Think I'll Love You Soon)"
+            },
+            {
+              "artists": [
+                "The Linda Lindas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27310fb1010838a88051010df10",
+              "name": "Okay"
+            },
+            {
+              "artists": [
+                "The Muffs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27380af1f218901b556d4656440",
+              "name": "Oh Nina"
+            },
+            {
+              "artists": [
+                "Pussy Riot"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c2d605a42565e8f7542b10c",
+              "name": "NOTHING TO LOSE"
+            },
+            {
+              "artists": [
+                "LE SSERAFIM",
+                "Nile Rodgers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308afa023781dc4841319f3fc",
+              "name": "UNFORGIVEN (feat. Nile Rodgers)"
+            },
+            {
+              "artists": [
+                "Chloé Caillet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273803b15a805f41210bae8d90e",
+              "name": "Bad Bara"
+            },
+            {
+              "artists": [
+                "Oran Ray"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273509d3d3c92029b8773816fbb",
+              "name": "Jungles Roof"
+            },
+            {
+              "artists": [
+                "µ-Ziq"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735eb831d44d1bbf78264c7569",
+              "name": "Autumn Acid"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23293595/Thursday-Thursday-Thursday",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/09Nu9eNU1wMuc6DQ2Pi7Xg"
         }
       },
       "needs_reconciliation": false
