@@ -7910,7 +7910,7 @@
           "start_time": "2026-11-05T11:00:00-0800",
           "end_time": "2026-11-05T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4pyHC75Z6rF3te99ct6Rtr",
         "desired_uris": [
@@ -7923,8 +7923,66 @@
           "spotify:track:0wjJOIBxHZEnNcddunu3u6"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T15:00:00-0800",
+          "broadcast_start": "2026-11-05T11:00:00-0800",
+          "imported_at": "2026-11-06T00:03:01.473054261+00:00",
+          "last_updated": "2026-11-06 00:03 UTC",
           "name": "KPOO - KPOO Public Affairs Programming - 2026-11-05",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Tom Morello: the Nightwatchman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273623368f45d47277c6e04f307",
+              "name": "Union Town"
+            },
+            {
+              "artists": [
+                "David Rovics"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e5d58b3ecc9190e160c243f",
+              "name": "We Are Everywhere"
+            },
+            {
+              "artists": [
+                "Bensound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ea21cd53b7cf22433dd722c1",
+              "name": "Adventure"
+            },
+            {
+              "artists": [
+                "Tom Morello: the Nightwatchman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273623368f45d47277c6e04f307",
+              "name": "Union Town"
+            },
+            {
+              "artists": [
+                "Maher Zain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a3912e760c63515cffdd0d6d",
+              "name": "Free Palestine"
+            },
+            {
+              "artists": [
+                "Bensound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ea21cd53b7cf22433dd722c1",
+              "name": "Adventure"
+            },
+            {
+              "artists": [
+                "The Hueys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e70c7a0fc4476c65453babb",
+              "name": "Coo Coo Over You"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23293471/KPOO-Public-Affairs-Programming",
+          "station": "KPOO",
+          "track_count": 7,
+          "url": "https://open.spotify.com/playlist/4pyHC75Z6rF3te99ct6Rtr"
         }
       },
       "needs_reconciliation": false
