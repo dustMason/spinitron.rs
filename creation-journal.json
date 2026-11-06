@@ -4832,7 +4832,7 @@
           "start_time": "2026-11-05T15:00:00-0800",
           "end_time": "2026-11-05T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1DXLP9BOoRg4vaCIm6N6lz",
         "desired_uris": [
@@ -4861,8 +4861,103 @@
           "spotify:track:02kTd6gB8IsBwPygDTHE4c"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T17:00:00-0800",
+          "broadcast_start": "2026-11-05T15:00:00-0800",
+          "imported_at": "2026-11-06T13:51:36.782072038+00:00",
+          "last_updated": "2026-11-06 13:51 UTC",
           "name": "KALX - BLOOM & DOOM (+ An Interview With Flower Face!) - 2026-11-05",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Cate Le Bon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27361ea5f5dad6699eafd00b71f",
+              "name": "French Boys"
+            },
+            {
+              "artists": [
+                "Eartheater"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c22b071b85b6599997b7bb6",
+              "name": "Heels over Head"
+            },
+            {
+              "artists": [
+                "FKA twigs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27376145ad3656598254528d446",
+              "name": "Perfect Stranger"
+            },
+            {
+              "artists": [
+                "Ninajirachi",
+                "Porter Robinson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4cd3b67b8747f787068b366",
+              "name": "WannaCry"
+            },
+            {
+              "artists": [
+                "Boy Harsher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a30ac42529d47e0abeebfc94",
+              "name": "Ice Pick (Walk Away)"
+            },
+            {
+              "artists": [
+                "Pussy Riot"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c2d605a42565e8f7542b10c",
+              "name": "GODS LEFT"
+            },
+            {
+              "artists": [
+                "SOFIA ISELLA"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c5d6649897e64b06b586fb6b",
+              "name": "Orchestrated, Wet, Verboten"
+            },
+            {
+              "artists": [
+                "Sleater-Kinney"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27328cfae5c410a23a1c407ac14",
+              "name": "The Center Won’t Hold"
+            },
+            {
+              "artists": [
+                "St. Vincent"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273721ec8e8dfb11746e14f3c98",
+              "name": "Broken Man"
+            },
+            {
+              "artists": [
+                "Mhaol"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dd49f749d6eca3337f2234a7",
+              "name": "IBS"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "Mimesis"
+            },
+            {
+              "artists": [
+                "The Linda Lindas",
+                "Hayley Williams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cea8d0bdc47ad3639544df15",
+              "name": "Closer"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23294175/BLOOM-DOOM-An-Interview-With-Flower-Face",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/1DXLP9BOoRg4vaCIm6N6lz"
         }
       },
       "needs_reconciliation": false
