@@ -4701,6 +4701,38 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23293599": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23293599,
+          "title": "Ian Brennan Interview Part 2",
+          "url": "https://spinitron.com/KALX/pl/23293599/Ian-Brennan-Interview-Part-2",
+          "start_time": "2026-11-05T14:00:00-0800",
+          "end_time": "2026-11-05T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6gCTzgLYeAWe0i084au3Cq",
+          "spotify:track:273mTFOFzbjq4l5DQKAEEe",
+          "spotify:track:17mGHxUvqKXE28mIyvF0n9",
+          "spotify:track:4OlSLdSjibd9af4EnmlClH",
+          "spotify:track:3wydOFwnE4CdLBMqraymZu",
+          "spotify:track:3vdYN81bfWUR52dNPiQWHR",
+          "spotify:track:0ejTtY7LCgymxhB91LvW4G",
+          "spotify:track:6WSbIVb26keJnwccptm0CI",
+          "spotify:track:3YgtYTY8hUvSwNwpIs5Hlb",
+          "spotify:track:0iNfgOPZsR6YviAfm96lxa",
+          "spotify:track:1gOMZJYQF5MFSraztZAROs"
+        ],
+        "listing": {
+          "name": "KALX - Ian Brennan Interview Part 2 - 2026-11-05",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
