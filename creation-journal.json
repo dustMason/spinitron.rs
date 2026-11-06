@@ -5695,6 +5695,52 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23296451": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23296451,
+          "title": "Tribute to Larry Hoffman- Legendary WHFR (Henry Ford Community College) DJ from 1991-1999",
+          "url": "https://spinitron.com/KALX/pl/23296451/Tribute-to-Larry-Hoffman-Legendary-WHFR-Henry-Ford-Community-College-DJ-from-1991-1999",
+          "start_time": "2026-11-06T00:00:00-0800",
+          "end_time": "2026-11-06T03:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5TcgFF2A6lxgbyDhlUph7p",
+          "spotify:track:40PBA7wf6yiwgiKs8zLfud",
+          "spotify:track:69HaD7n48kAfbdeRfKpsJ3",
+          "spotify:track:4EoI2LJyjjExrxFFiTUpID",
+          "spotify:track:149dh0f3qcRVeTWSymFZVR",
+          "spotify:track:6OFZwo97EITXvJZVpXgHBc",
+          "spotify:track:2abHVy0DbjOzmAs4ppAQ8A",
+          "spotify:track:4e13hAFzDDqLaBJFrag48k",
+          "spotify:track:2Kxr93flTe6PuWynXz06j2",
+          "spotify:track:2JDYNDcTJVpkuqKiJrIghn",
+          "spotify:track:5yAgtpfvAtekJGH1isKQRv",
+          "spotify:track:5owAolGQ0AhJb9tP8y1UcV",
+          "spotify:track:3nKhnU9IYG8y52LKJ1YI1g",
+          "spotify:track:0nLkVbVlIYIPsCTUYYiOuu",
+          "spotify:track:22Aub8cCnnRi7deZsY1dqT",
+          "spotify:track:0Spudho8EwncalWZ4rBUwr",
+          "spotify:track:55La99sbM3dEeqmFVW1X6E",
+          "spotify:track:4a1N28WWevkWuXOTSZKHLq",
+          "spotify:track:6fw1b1bCVNY5EVurncxIss",
+          "spotify:track:36JrOSxL8WwxJGsbP4BE13",
+          "spotify:track:4UQH52FfgGpzDShKDbBvEA",
+          "spotify:track:0Vo6lTSLTKovIgeRcwdhRu",
+          "spotify:track:6duF3dx2wIxwwLgE8VOCZS",
+          "spotify:track:5AwG43cXD6vehK8UYhK4Q9",
+          "spotify:track:2XXnH6y4FGVxK8q6yj16Tj"
+        ],
+        "listing": {
+          "name": "KALX - Tribute to Larry Hoffman- Legendary WHFR (Henry Ford Community College) DJ from - 2026-11-06",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
