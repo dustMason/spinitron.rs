@@ -5279,6 +5279,54 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23295490": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23295490,
+          "title": "Aliens in Our Midst",
+          "url": "https://spinitron.com/KALX/pl/23295490/Aliens-in-Our-Midst",
+          "start_time": "2026-11-05T20:00:00-0800",
+          "end_time": "2026-11-05T22:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2NHNRUbEK9MAFh2vdtv1rY",
+          "spotify:track:1AzgWYnDupWJ9E5hKes3N8",
+          "spotify:track:1AJpZtYHY7MD21Tkcg9wlE",
+          "spotify:track:1xC9uoqCsRaNMceegNUndx",
+          "spotify:track:7JGGG95PN8E7DMsfZbxJY8",
+          "spotify:track:1Nue4Ngb6OpQhx7Mnlm0wK",
+          "spotify:track:1JbGrH4B9GNh7hY5SZlvgx",
+          "spotify:track:18dPJKqaRgvqU1uHVgnW06",
+          "spotify:track:4gqvrmvONwD7auNX7G5GhK",
+          "spotify:track:4apvSu3M6EsIhUgrYJ2Za2",
+          "spotify:track:0gIvz0LnX1JwpQ2lKkUpCY",
+          "spotify:track:67j9Xl0M9iNksjUoSbGfXB",
+          "spotify:track:6kjvuh5XliYcxZfhv8lKah",
+          "spotify:track:1gvmZz1j8FjzEIypHwyy7k",
+          "spotify:track:3ea8UIRwr1ibv76kJi72tv",
+          "spotify:track:0wGcvqNGBrjVCvngCpB4b5",
+          "spotify:track:4ZA1C0aYfNfXA7v0ONtqlt",
+          "spotify:track:1klDZObTOxhRBAlUfwEJbp",
+          "spotify:track:64YYJ0ehpfG6DUwz2ZV94V",
+          "spotify:track:2IhIGDpmyyYWUKHdp4G6FI",
+          "spotify:track:55iVsZNIycQCCJUE4IbI4X",
+          "spotify:track:7DOLFaXJEAIvyNynzJexyY",
+          "spotify:track:6AS7rbXQIE2cSCtNXg3RPm",
+          "spotify:track:1ypyADOvHW7DfC6REYlm56",
+          "spotify:track:6jTyJuJJgES5FnjE5hxWwD",
+          "spotify:track:0NlaIa4gtvUxSzPqVZCRxL",
+          "spotify:track:5i7jikbSNQZvhitG47IOkd"
+        ],
+        "listing": {
+          "name": "KALX - Aliens in Our Midst - 2026-11-05",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
