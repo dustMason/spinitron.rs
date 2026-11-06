@@ -5705,7 +5705,7 @@
           "start_time": "2026-11-06T00:00:00-0800",
           "end_time": "2026-11-06T03:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7CNVzlpWT4qW37EpRGjZzt",
         "desired_uris": [
@@ -5736,8 +5736,101 @@
           "spotify:track:2XXnH6y4FGVxK8q6yj16Tj"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T03:00:00-0800",
+          "broadcast_start": "2026-11-06T00:00:00-0800",
+          "imported_at": "2026-11-06T13:56:17.137818307+00:00",
+          "last_updated": "2026-11-06 13:56 UTC",
           "name": "KALX - Tribute to Larry Hoffman- Legendary WHFR (Henry Ford Community College) DJ from - 2026-11-06",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Rooftop Singers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d4c29627143435154cb86d3",
+              "name": "Walk Right In"
+            },
+            {
+              "artists": [
+                "Barnt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365b4f6221f684f488ba7fe87",
+              "name": "Emi"
+            },
+            {
+              "artists": [
+                "Ned's Atomic Dustbin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f7e7bfd6274ffc0a98aea41b",
+              "name": "Less Than Useful"
+            },
+            {
+              "artists": [
+                "Luka Bloom"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27347dd139412f88a065f21bd38",
+              "name": "The Acoustic Motorbike"
+            },
+            {
+              "artists": [
+                "The Womack Sisters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273afa44cba895ec03a35a27778",
+              "name": "Laughter and Tears"
+            },
+            {
+              "artists": [
+                "Gazing Into Space"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27363eabd65f3044c3d3e8b7a51",
+              "name": "Mirage"
+            },
+            {
+              "artists": [
+                "Getaway Cruiser"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273af8f402fe49780731dd811ba",
+              "name": "Not Yet Gone"
+            },
+            {
+              "artists": [
+                "Pooja Goswami Pavan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe5b8cabc68ca77bbe588ef8",
+              "name": "In the Cave of the Sky"
+            },
+            {
+              "artists": [
+                "Jeff Sova"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a77f05e0491769cb1b29da57",
+              "name": "A New Day"
+            },
+            {
+              "artists": [
+                "Drab Majesty"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273332bd2fc90d69a5c86834ce0",
+              "name": "Dot in the Sky"
+            },
+            {
+              "artists": [
+                "Chevreuil"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e60018bbad3b502f2dfc5792",
+              "name": "Profundis"
+            },
+            {
+              "artists": [
+                "Lorna Dune"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6bf62b044074723a2a957f0",
+              "name": "Synaptic Circuits"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23296451/Tribute-to-Larry-Hoffman-Legendary-WHFR-Henry-Ford-Community-College-DJ-from-1991-1999",
+          "station": "KALX",
+          "track_count": 25,
+          "url": "https://open.spotify.com/playlist/7CNVzlpWT4qW37EpRGjZzt"
         }
       },
       "needs_reconciliation": false
