@@ -5576,7 +5576,7 @@
           "start_time": "2026-11-05T22:00:00-0800",
           "end_time": "2026-11-06T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5bMpSIh08GqsH3xDcOlUMr",
         "desired_uris": [
@@ -5594,8 +5594,103 @@
           "spotify:track:28jODyd6EuYoERN2jaeUk7"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T00:00:00-0800",
+          "broadcast_start": "2026-11-05T22:00:00-0800",
+          "imported_at": "2026-11-06T13:55:37.292238241+00:00",
+          "last_updated": "2026-11-06 13:55 UTC",
           "name": "KALX - FREEFORM - 2026-11-05 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Bala Zaaku"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b3272f7e0c805ba73d47b233",
+              "name": "Sama Noli Remix"
+            },
+            {
+              "artists": [
+                "Fly Anakin",
+                "Domo Genesis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ff7319b0dc47c89a426b6ba9",
+              "name": "Sandwich Bag Boys"
+            },
+            {
+              "artists": [
+                "Klara Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4c9254994758b20941278f7",
+              "name": "Opening"
+            },
+            {
+              "artists": [
+                "Jaffa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273238dd663de97f31c85fce941",
+              "name": "Elevator"
+            },
+            {
+              "artists": [
+                "Alwin Nikolais"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd2e0dacfa202136fcd80a2b",
+              "name": "MEHCANICAL ORGAN: Dance 4"
+            },
+            {
+              "artists": [
+                "The Foundations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273663fe218f7d98306c533af10",
+              "name": "Baby Now That I've Found You - Mono"
+            },
+            {
+              "artists": [
+                "Thee Sinseers",
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cea5e810a36bf0e912d4bcab",
+              "name": "There She Goes"
+            },
+            {
+              "artists": [
+                "Jaffa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273238dd663de97f31c85fce941",
+              "name": "Elevator"
+            },
+            {
+              "artists": [
+                "Hermanos Gutiérrez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f3a9cedd778597ac88c73e5",
+              "name": "Los Ojos Del Cóndor"
+            },
+            {
+              "artists": [
+                "Joe Bataan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fa69d45afd826e4df9e6b1be",
+              "name": "Muchacho Ordinario"
+            },
+            {
+              "artists": [
+                "Jaffa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273238dd663de97f31c85fce941",
+              "name": "Elevator"
+            },
+            {
+              "artists": [
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273980e10b54d5d0143ae565c61",
+              "name": "One More Night"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23296193/FREEFORM",
+          "station": "KALX",
+          "track_count": 12,
+          "url": "https://open.spotify.com/playlist/5bMpSIh08GqsH3xDcOlUMr"
         }
       },
       "needs_reconciliation": false
