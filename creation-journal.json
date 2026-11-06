@@ -7220,7 +7220,7 @@
           "start_time": "2026-11-04T20:00:00-0800",
           "end_time": "2026-11-05T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1CaavZCsKoVF450sjiKN8j",
         "desired_uris": [
@@ -7265,8 +7265,101 @@
           "spotify:track:4dk6boaKpHvN4VyHc3Pegr"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T00:00:00-0800",
+          "broadcast_start": "2026-11-04T20:00:00-0800",
+          "imported_at": "2026-11-06T00:00:22.194962313+00:00",
+          "last_updated": "2026-11-06 00:00 UTC",
           "name": "KPOO - LBD - 2026-11-04",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Grupo Afrocuba de Matanzas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c4acbf814cedb23ee46df9ae",
+              "name": "África"
+            },
+            {
+              "artists": [
+                "Gyedu-Blay Ambolley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ad2a59cbc550fa62fc3bd7e9",
+              "name": "All Blues"
+            },
+            {
+              "artists": [
+                "Carmen Lundy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27377e302500fafc6ca1f673e01",
+              "name": "A Time for Peace"
+            },
+            {
+              "artists": [
+                "Keith Jarrett Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d3fffb941cd75d01e24a1795",
+              "name": "Butch And Butch"
+            },
+            {
+              "artists": [
+                "Jack Costanzo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27328ef2a2cf0cec15aec4180de",
+              "name": "Bemba Colora"
+            },
+            {
+              "artists": [
+                "Jack Costanzo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736fcbcac6e169fb90f05f0d89",
+              "name": "Bop Mambo"
+            },
+            {
+              "artists": [
+                "Herbie Hancock"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e28676c1f28d20e23ed42376",
+              "name": "Eye of the Hurricane"
+            },
+            {
+              "artists": [
+                "Miles Davis Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c2d2e0b48952a4d88af90697",
+              "name": "The Theme"
+            },
+            {
+              "artists": [
+                "Joice Walton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cff99b75834fb118e05fbf48",
+              "name": "Be Anything but Darling Be Mine"
+            },
+            {
+              "artists": [
+                "SFJAZZ Collective"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732839f2c376ce073362ae21c1",
+              "name": "A Felicidade - Live"
+            },
+            {
+              "artists": [
+                "Palmetto All Stars"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739b9ac2bad09cbe594e3df9ec",
+              "name": "Fleurette Africaine"
+            },
+            {
+              "artists": [
+                "Sonny Rollins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273233cb613eefd330f8e8aefc6",
+              "name": "I'm an Old Cowhand"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23290249/LBD",
+          "station": "KPOO",
+          "track_count": 39,
+          "url": "https://open.spotify.com/playlist/1CaavZCsKoVF450sjiKN8j"
         }
       },
       "needs_reconciliation": false
