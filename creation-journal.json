@@ -9327,6 +9327,41 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23295552": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23295552,
+          "title": "Da Madd Houze",
+          "url": "https://spinitron.com/KPOO/pl/23295552/Da-Madd-Houze",
+          "start_time": "2026-11-05T20:00:00-0800",
+          "end_time": "2026-11-05T22:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2RPl2HMZE0ycVf1UdlpUkA",
+          "spotify:track:0LNSX5PMUSw60RWly2TY9K",
+          "spotify:track:2M4Dcg0WrGyygEFJVhygna",
+          "spotify:track:4SVkemXHPfvM8UesmppaC9",
+          "spotify:track:3Fq1Dm20FgRQmb3rK4NBSE",
+          "spotify:track:7FYH5AW3bVfZHJIQpq3UOA",
+          "spotify:track:3yIFc1RaLQAsJsxJsBiwYP",
+          "spotify:track:0GI0FJR82LYHS9fNnIpcjv",
+          "spotify:track:2EBcOZuSYlxIMx5uX1wEsz",
+          "spotify:track:18lR4BzEs7e3qzc0KVkTpU",
+          "spotify:track:2PLWnWqI0pm9ek0sUUTlTj",
+          "spotify:track:2UmxvjGvO98SDXUOawiM3K",
+          "spotify:track:63aj87TQG6F3RVO5nbG2VQ",
+          "spotify:track:49Sk8XC2ILmivLbdPUADmA"
+        ],
+        "listing": {
+          "name": "KPOO - Da Madd Houze - 2026-11-05",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
