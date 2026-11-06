@@ -4972,7 +4972,7 @@
           "start_time": "2026-11-05T17:00:00-0800",
           "end_time": "2026-11-05T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7wc2W9GiIXi8dnseFOvb8b",
         "desired_uris": [
@@ -4993,8 +4993,101 @@
           "spotify:track:2uRVPeQbsEpRQD0DKr1WTo"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T18:00:00-0800",
+          "broadcast_start": "2026-11-05T17:00:00-0800",
+          "imported_at": "2026-11-06T13:52:16.630474087+00:00",
+          "last_updated": "2026-11-06 13:52 UTC",
           "name": "KALX - Dealer's Choice - Rain Songs - 2026-11-05",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Lee Dorsey"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eda2f0596fca412a7d93af1f",
+              "name": "Rain Rain Go Away"
+            },
+            {
+              "artists": [
+                "Tomorrow's Children"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fce365f2246f2634cd04a4a2",
+              "name": "Rain (Rock Steady)"
+            },
+            {
+              "artists": [
+                "Harry Nilsson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d7e08d65b2f3ab20bc32550b",
+              "name": "Rainmaker"
+            },
+            {
+              "artists": [
+                "Gordon Lightfoot"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735d9a0b8542731805ecfcc744",
+              "name": "Early Morning Rain"
+            },
+            {
+              "artists": [
+                "Parliament"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b18d31a9b2616e51ed77e3cf",
+              "name": "Come In Out Of The Rain"
+            },
+            {
+              "artists": [
+                "Ann Peebles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273943b4cc92b7af0f22190eaef",
+              "name": "I Can't Stand the Rain"
+            },
+            {
+              "artists": [
+                "Kilby Snow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bad82605abbc5497ab4a7a5e",
+              "name": "Wind and Rain"
+            },
+            {
+              "artists": [
+                "Blind Willie Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27326b458c6a64e11474883e28b",
+              "name": "The Rain Don't Fall On Me"
+            },
+            {
+              "artists": [
+                "Fairport Convention"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273234be365781c415e1541cbeb",
+              "name": "Eastern Rain"
+            },
+            {
+              "artists": [
+                "Traffic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27335f303dac15ef3f9d3a48d00",
+              "name": "Rainmaker"
+            },
+            {
+              "artists": [
+                "The Ronettes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b298efc29df3b69ec3f0d675",
+              "name": "Walking In the Rain"
+            },
+            {
+              "artists": [
+                "Johnnie Ray"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27377328db21da6fe35d42d7366",
+              "name": "Just Walkin' in the Rain"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23294654/Dealer-s-Choice-Rain-Songs",
+          "station": "KALX",
+          "track_count": 15,
+          "url": "https://open.spotify.com/playlist/7wc2W9GiIXi8dnseFOvb8b"
         }
       },
       "needs_reconciliation": false
