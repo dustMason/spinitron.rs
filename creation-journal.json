@@ -5149,7 +5149,7 @@
           "start_time": "2026-11-05T18:15:00-0800",
           "end_time": "2026-11-05T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7aHGtjV1EK4DLkI54RbQ5h",
         "desired_uris": [
@@ -5176,8 +5176,105 @@
           "spotify:track:1DZq3ntqpIeBJYXugfeoUx"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T20:00:00-0800",
+          "broadcast_start": "2026-11-05T18:15:00-0800",
+          "imported_at": "2026-11-06T13:53:37.018302697+00:00",
+          "last_updated": "2026-11-06 13:53 UTC",
           "name": "KALX - FREEFORM - 2026-11-05 6:15pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Ray Charles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273edb3ba8cca2a9c45ca61126b",
+              "name": "Georgia on My Mind"
+            },
+            {
+              "artists": [
+                "Stevie Wonder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273af70b0767bf1aa44e3890171",
+              "name": "Never In Your Sun"
+            },
+            {
+              "artists": [
+                "Anita Baker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733f9595913b31c6e8c89f119f",
+              "name": "Angel"
+            },
+            {
+              "artists": [
+                "Babe Rainbow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27317f839370b6035d0e7ed858c",
+              "name": "Waterfall"
+            },
+            {
+              "artists": [
+                "Charli xcx",
+                "Troye Sivan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4ad09abe4e62f88e8238471",
+              "name": "1999"
+            },
+            {
+              "artists": [
+                "Helado Tropical",
+                "Helado Negro",
+                "Reyna Tropical"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739429c615c7dbc16046474a19",
+              "name": "Sensación"
+            },
+            {
+              "artists": [
+                "Milton Nascimento"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27370c82a0a7d7b102a34433be2",
+              "name": "Tudo O Que Você Podia Ser"
+            },
+            {
+              "artists": [
+                "Che Noir"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f1db40f1601c0637e922845",
+              "name": "Grandma's Cookies"
+            },
+            {
+              "artists": [
+                "Fly Anakin",
+                "Nogum Hundo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733a4c128f4a528e214ba77d8f",
+              "name": "Sayless"
+            },
+            {
+              "artists": [
+                "underscores"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730d37a146a369bd1fa1fd76cb",
+              "name": "Tell Me (U Want It)"
+            },
+            {
+              "artists": [
+                "Brian Eno"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733cbe8135e5ebcf651f932f67",
+              "name": "Deep Blue Day - From \"Trainspotting\""
+            },
+            {
+              "artists": [
+                "Vangelis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dc5cd149f1cdbec4cfedb234",
+              "name": "Main Titles"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23295114/FREEFORM",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/7aHGtjV1EK4DLkI54RbQ5h"
         }
       },
       "needs_reconciliation": false
