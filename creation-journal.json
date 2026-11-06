@@ -9010,7 +9010,7 @@
           "start_time": "2026-11-05T15:00:00-0800",
           "end_time": "2026-11-05T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0mSAhmQtwyqvdmazkyOrLt",
         "desired_uris": [
@@ -9051,8 +9051,102 @@
           "spotify:track:4I4thAJqRL7vefyIpBvNVe"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T17:30:00-0800",
+          "broadcast_start": "2026-11-05T15:00:00-0800",
+          "imported_at": "2026-11-06T13:57:00.403259139+00:00",
+          "last_updated": "2026-11-06 13:57 UTC",
           "name": "KPOO - Blues and Oldies - 2026-11-05",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Dells"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730a534ab83428629e28ef6a49",
+              "name": "The Change We Go Thru (For Love)"
+            },
+            {
+              "artists": [
+                "The Jackson 5"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27316aaf05fe82237576a7d0e38",
+              "name": "You've Changed"
+            },
+            {
+              "artists": [
+                "The Doors"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27300d037dd3dfb578da4692088",
+              "name": "Twentieth Century Fox"
+            },
+            {
+              "artists": [
+                "Roy Orbison"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e7bcd589a21786ca9761d2e",
+              "name": "Candy Man"
+            },
+            {
+              "artists": [
+                "Dion"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d494aae8b856a3d9b344504d",
+              "name": "I Got The Blues"
+            },
+            {
+              "artists": [
+                "Elvis Presley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e93d2246d92c8dd3e3edef7f",
+              "name": "One-Sided Love Affair"
+            },
+            {
+              "artists": [
+                "Dion"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d494aae8b856a3d9b344504d",
+              "name": "I Got The Blues"
+            },
+            {
+              "artists": [
+                "The Dominoes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c9a71689beb67c4dbd766162",
+              "name": "Stop! You're Sending Me"
+            },
+            {
+              "artists": [
+                "Charley Crockett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273741da0a2d038811c9ebf96d1",
+              "name": "The Race is On"
+            },
+            {
+              "artists": [
+                "Thee Sinseers",
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cea5e810a36bf0e912d4bcab",
+              "name": "Did Ya Know?"
+            },
+            {
+              "artists": [
+                "The Young Rascals"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733cab81a95e70dcaa0a7d7e01",
+              "name": "It's Wonderful (Single Version)"
+            },
+            {
+              "artists": [
+                "Peppermint Harris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27346218f052749ecbc3dbb4f74",
+              "name": "Hey Little Schoolgirl"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23294246/Blues-and-Oldies",
+          "station": "KPOO",
+          "track_count": 35,
+          "url": "https://open.spotify.com/playlist/0mSAhmQtwyqvdmazkyOrLt"
         }
       },
       "needs_reconciliation": false
