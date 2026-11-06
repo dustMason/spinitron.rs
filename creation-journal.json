@@ -5433,7 +5433,7 @@
           "start_time": "2026-11-05T22:00:00-0800",
           "end_time": "2026-11-05T23:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6CMkxsqXmVz0vth9ZdGhFF",
         "desired_uris": [
@@ -5466,8 +5466,102 @@
           "spotify:track:1l2PAx0hlP2y0aI9M6twdu"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T23:00:00-0800",
+          "broadcast_start": "2026-11-05T22:00:00-0800",
+          "imported_at": "2026-11-06T13:54:56.913267961+00:00",
+          "last_updated": "2026-11-06 13:54 UTC",
           "name": "KALX - SHOW #7 WOOOO - 2026-11-05",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Jaffa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273238dd663de97f31c85fce941",
+              "name": "Elevator"
+            },
+            {
+              "artists": [
+                "Ketty Lester"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736848f86845198ef5aee4aff5",
+              "name": "Love Letters"
+            },
+            {
+              "artists": [
+                "Chet Baker Quartet",
+                "Russ Freeman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ebb357b8606d271ee5b993d6",
+              "name": "I Fall In Love Too Easily - 1953 Version"
+            },
+            {
+              "artists": [
+                "Bert Kaempfert"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f749c680c8578836218d3e0e",
+              "name": "Beddy Bye (Strangers in the Night)"
+            },
+            {
+              "artists": [
+                "Jaffa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273238dd663de97f31c85fce941",
+              "name": "Elevator"
+            },
+            {
+              "artists": [
+                "Ella Fitzgerald"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f74e86ccf584b1fb56d3889",
+              "name": "Stompin’ At The Savoy - Live At The Crescendo"
+            },
+            {
+              "artists": [
+                "Nat King Cole"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a3591d246047e74331d4baef",
+              "name": "You Leave Me Breathless - Live At The Sands/1960/Remastered 2002"
+            },
+            {
+              "artists": [
+                "Jaffa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273238dd663de97f31c85fce941",
+              "name": "Elevator"
+            },
+            {
+              "artists": [
+                "Black Marble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c86efc8dcb2d511254b6ff96",
+              "name": "Sonny Boy"
+            },
+            {
+              "artists": [
+                "Nat King Cole"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a3591d246047e74331d4baef",
+              "name": "You Leave Me Breathless - Live At The Sands/1960/Remastered 2002"
+            },
+            {
+              "artists": [
+                "Bye Parula"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273825b1134b4819fd0f6cefd87",
+              "name": "I'm getting ready"
+            },
+            {
+              "artists": [
+                "saoirse dream"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c236c3a6c8e96f9dd535214",
+              "name": "onlooker - From HOW TO FIND A CAREER THAT LOVES YOU BACK"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23295860/SHOW-7-WOOOO",
+          "station": "KALX",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/6CMkxsqXmVz0vth9ZdGhFF"
         }
       },
       "needs_reconciliation": false
