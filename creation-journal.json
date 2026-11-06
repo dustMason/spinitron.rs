@@ -9338,7 +9338,7 @@
           "start_time": "2026-11-05T20:00:00-0800",
           "end_time": "2026-11-05T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0yXJO8RVAUeRRXZEcOplCU",
         "desired_uris": [
@@ -9358,8 +9358,109 @@
           "spotify:track:49Sk8XC2ILmivLbdPUADmA"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T22:00:00-0800",
+          "broadcast_start": "2026-11-05T20:00:00-0800",
+          "imported_at": "2026-11-06T13:59:00.074385380+00:00",
+          "last_updated": "2026-11-06 13:59 UTC",
           "name": "KPOO - Da Madd Houze - 2026-11-05",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Too $hort"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d248e4d59f2e454927af36f5",
+              "name": "Blow the Whistle"
+            },
+            {
+              "artists": [
+                "DJ Khaled",
+                "Drake"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ad2c4ada64d7ddd068544c5",
+              "name": "For Free (feat. Drake)"
+            },
+            {
+              "artists": [
+                "Lil MC"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27349e12858e40fcf0b963c172d",
+              "name": "Energia Cabrona"
+            },
+            {
+              "artists": [
+                "Murder One",
+                "Anthonie",
+                "Wash-off"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737af7d33b895cba080090604d",
+              "name": "Hood Element"
+            },
+            {
+              "artists": [
+                "LAKEY INSPIRED"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cda2f0966af1e368c7ea3bae",
+              "name": "Arcade"
+            },
+            {
+              "artists": [
+                "Big Sean",
+                "E-40"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27350192d5f728fea13fb3af203",
+              "name": "I Don't Fuck With You"
+            },
+            {
+              "artists": [
+                "Saweetie",
+                "Stefflon Don",
+                "Doja Cat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f7cd27c1fe06332ecda8b2f",
+              "name": "Best Friend (feat. Doja Cat & Stefflon Don) [Remix]"
+            },
+            {
+              "artists": [
+                "D Sloan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737135a98329fd9deae8871235",
+              "name": "Doin' My Thang"
+            },
+            {
+              "artists": [
+                "Okim",
+                "Tori Stylez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27323d7543248dc2d3dff3d2189",
+              "name": "Pardon My Fancy (feat. Tori Stylez)"
+            },
+            {
+              "artists": [
+                "Linkin Park"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736e996745f2c7b8036abef213",
+              "name": "What I've Done"
+            },
+            {
+              "artists": [
+                "Diversity of O.N.E."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732504427be0353f339a1f08a4",
+              "name": "Blowout Burnout"
+            },
+            {
+              "artists": [
+                "Roden",
+                "FREDDY"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27356da24ad6b88706d8571bbe7",
+              "name": "ART SYNDROME (feat. FREDDY)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23295552/Da-Madd-Houze",
+          "station": "KPOO",
+          "track_count": 14,
+          "url": "https://open.spotify.com/playlist/0yXJO8RVAUeRRXZEcOplCU"
         }
       },
       "needs_reconciliation": false
