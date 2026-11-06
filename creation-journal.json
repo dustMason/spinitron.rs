@@ -9010,8 +9010,9 @@
           "start_time": "2026-11-05T15:00:00-0800",
           "end_time": "2026-11-05T17:30:00-0800"
         },
-        "state": "creating",
+        "state": "filling",
         "owner_id": "dustmason",
+        "playlist_id": "0mSAhmQtwyqvdmazkyOrLt",
         "desired_uris": [
           "spotify:track:5cqj97ThMRSgo9nWIcyy7b",
           "spotify:track:5mgEMsdO30tknEBsqTzuxN",
