@@ -5289,7 +5289,7 @@
           "start_time": "2026-11-05T20:00:00-0800",
           "end_time": "2026-11-05T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4ILra4knfrjyZUI2fYcULs",
         "desired_uris": [
@@ -5322,8 +5322,103 @@
           "spotify:track:5i7jikbSNQZvhitG47IOkd"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T22:00:00-0800",
+          "broadcast_start": "2026-11-05T20:00:00-0800",
+          "imported_at": "2026-11-06T13:54:16.941551429+00:00",
+          "last_updated": "2026-11-06 13:54 UTC",
           "name": "KALX - Aliens in Our Midst - 2026-11-05",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Flying Hats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273172798acb57b380de9fc5614",
+              "name": "Stout"
+            },
+            {
+              "artists": [
+                "Mahmoud Ahmed"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735bc194886356822ed98847d6",
+              "name": "Antchiye"
+            },
+            {
+              "artists": [
+                "Ofege"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273744e90b638204b120a4b6b31",
+              "name": "It's Not Easy"
+            },
+            {
+              "artists": [
+                "Bossa Nostra",
+                "Vicki Anderson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735b8fe26761371db529342d7b",
+              "name": "The Message From The Soul Sisters - The Vespa 2000 Session"
+            },
+            {
+              "artists": [
+                "Os Brazoes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736ceaf92becb524a7b400527c",
+              "name": "Pega A Voga Cabeludo"
+            },
+            {
+              "artists": [
+                "Andy Boay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27379ef7acda9f7dc02447e5ee6",
+              "name": "Child"
+            },
+            {
+              "artists": [
+                "Van Duren"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eee17cabdd0e2722723e99a2",
+              "name": "Stupid Enough"
+            },
+            {
+              "artists": [
+                "Coup Dur"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27339a83ed711e85de15348b74f",
+              "name": "J'avais Pas Pensé à Ça"
+            },
+            {
+              "artists": [
+                "My Favorite"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f16278eb6c78e1ec5aaf85c3",
+              "name": "Working Class Jacket"
+            },
+            {
+              "artists": [
+                "Marbles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732250678371bee43e8cdd97a5",
+              "name": "Go Marilee"
+            },
+            {
+              "artists": [
+                "The Pastels",
+                "Tenniscoats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b5cf43ad6c2cc679a0a8710f",
+              "name": "Vivid Youth"
+            },
+            {
+              "artists": [
+                "Hans P. Kjorstad"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734ba4b26bc10c22bcecae7235",
+              "name": "Ost"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23295490/Aliens-in-Our-Midst",
+          "station": "KALX",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/4ILra4knfrjyZUI2fYcULs"
         }
       },
       "needs_reconciliation": false
