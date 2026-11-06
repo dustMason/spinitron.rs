@@ -5102,7 +5102,7 @@
           "start_time": "2026-11-05T18:00:00-0800",
           "end_time": "2026-11-05T18:15:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4mKSmbA3myZVgE8jJhZTKv",
         "desired_uris": [
@@ -5110,8 +5110,31 @@
           "spotify:track:7qkv79RK1ESgjeEgUdcGj8"
         ],
         "listing": {
+          "broadcast_end": "2026-11-05T18:15:00-0800",
+          "broadcast_start": "2026-11-05T18:00:00-0800",
+          "imported_at": "2026-11-06T13:52:56.569075701+00:00",
+          "last_updated": "2026-11-06 13:52 UTC",
           "name": "KALX - NEWS - 2026-11-05",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Nujabes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273878ed741b8e1342d58a332ca",
+              "name": "sanctuary ship"
+            },
+            {
+              "artists": [
+                "Mark Mothersbaugh"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273769806907c94f115020e0100",
+              "name": "Ping Island/Lightning Strike Rescue Op"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23294952/NEWS",
+          "station": "KALX",
+          "track_count": 2,
+          "url": "https://open.spotify.com/playlist/4mKSmbA3myZVgE8jJhZTKv"
         }
       },
       "needs_reconciliation": false
