@@ -4561,6 +4561,51 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23293595": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23293595,
+          "title": "Thursday Thursday Thursday",
+          "url": "https://spinitron.com/KALX/pl/23293595/Thursday-Thursday-Thursday",
+          "start_time": "2026-11-05T12:30:00-0800",
+          "end_time": "2026-11-05T14:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0kHOZV1toFJuqjKuQZgxdq",
+          "spotify:track:63QPNnL1dsH4yvG1pjtoUF",
+          "spotify:track:1uCws3lKIeD6lip2CbFY2h",
+          "spotify:track:6eL07iuKkoaChkob3j15uk",
+          "spotify:track:1p8OXp7kbrcgPQ0h2ccaQS",
+          "spotify:track:6SSHRrdez3PVJndzxYkH3B",
+          "spotify:track:6ipchpEd2qj362S7RHEiBw",
+          "spotify:track:6vGlVKD9gabYDLldubGOcm",
+          "spotify:track:51vRumtqbkNW9wrKfESwfu",
+          "spotify:track:4ZzGKf107MZ9vc2RPGqLHE",
+          "spotify:track:4qLtECT5WpNe15WiheikZx",
+          "spotify:track:6udnrhFSzhfVWhYMebRWcO",
+          "spotify:track:3YyHZVPdRXgSsqT98FK7Vs",
+          "spotify:track:20V4CFEQdAgLU9ZiMUx6nf",
+          "spotify:track:5M2ymhJdeOnx4dCGbYWM7U",
+          "spotify:track:4gZmuZ7u3C2pSQzDXyTH7Z",
+          "spotify:track:7xZy7AFZKAFKPB6swJRcig",
+          "spotify:track:5uridwOjgAq1BM1bW6bVho",
+          "spotify:track:4to8z82XK31AAr7stIU1wx",
+          "spotify:track:0yTEqA1wMWC23vAQXT6bO8",
+          "spotify:track:16btHa9Y26TmipkWLdccHW",
+          "spotify:track:0ilZ7oUP9WaySwnJASgZQs",
+          "spotify:track:7jAi6e10fUeo67RyIB8LmW",
+          "spotify:track:4nYxKqroPIRDCRuYtEZ5Ee"
+        ],
+        "listing": {
+          "name": "KALX - Thursday Thursday Thursday - 2026-11-05",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
