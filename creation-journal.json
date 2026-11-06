@@ -4822,6 +4822,50 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23294175": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23294175,
+          "title": "BLOOM & DOOM (+ An Interview With Flower Face!)",
+          "url": "https://spinitron.com/KALX/pl/23294175/BLOOM-DOOM-An-Interview-With-Flower-Face",
+          "start_time": "2026-11-05T15:00:00-0800",
+          "end_time": "2026-11-05T17:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:7zXftbPAB1ElWfqOnokwYm",
+          "spotify:track:2zDQXbr4ZZvikgrGXaJh73",
+          "spotify:track:5ZLfgxU8yDwwMQXA2OSFlb",
+          "spotify:track:7JW8FRWVCOQDs40IjEXdPi",
+          "spotify:track:0mckaPr96LQTfFpddaiA7G",
+          "spotify:track:1fPpjfV2kdKcxcIOa6djCt",
+          "spotify:track:6J4Br7jZmRUGOvvpiAyqPo",
+          "spotify:track:7JjwoY5W4Fc8ZfoIQfIVMO",
+          "spotify:track:7ClwnN5j16cc6i5MqWFgHK",
+          "spotify:track:3NIZC3h3ziCRR2UJzaTVTl",
+          "spotify:track:0nLkVbVlIYIPsCTUYYiOuu",
+          "spotify:track:0OgIjOcARxnYgm5iL5P6AA",
+          "spotify:track:42ukSFBIxq0rzMIZpOSQCL",
+          "spotify:track:6GxnwNFdXTKbD8EB9usJfy",
+          "spotify:track:4WlGgwoZdNI96WPwsW6Nz5",
+          "spotify:track:0cuN6BXfyEp21EhOlOcKqi",
+          "spotify:track:3W4zImas4jXwf3M0CVVB6V",
+          "spotify:track:2EPxhPbZczxce6wHbuOlQ6",
+          "spotify:track:4WggnU7ZsbuYKiGHPEQYxI",
+          "spotify:track:3vNFsxBbA4dPkymPF5Jm1b",
+          "spotify:track:7BaxYnTazocAOK3istsW1z",
+          "spotify:track:5u6DducJEBRF4K4ty9O5RX",
+          "spotify:track:02kTd6gB8IsBwPygDTHE4c"
+        ],
+        "listing": {
+          "name": "KALX - BLOOM & DOOM (+ An Interview With Flower Face!) - 2026-11-05",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
