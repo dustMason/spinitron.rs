@@ -7899,6 +7899,34 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23293471": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23293471,
+          "title": "KPOO Public Affairs Programming",
+          "url": "https://spinitron.com/KPOO/pl/23293471/KPOO-Public-Affairs-Programming",
+          "start_time": "2026-11-05T11:00:00-0800",
+          "end_time": "2026-11-05T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6gyKgaPHaciNbXJJZRYzH6",
+          "spotify:track:0mupq2EyvKC51MfCKi4tNf",
+          "spotify:track:37IXywlInusno9ef2kYjPc",
+          "spotify:track:6gyKgaPHaciNbXJJZRYzH6",
+          "spotify:track:1IF8kcFynnZ7v33M1lIxwq",
+          "spotify:track:37IXywlInusno9ef2kYjPc",
+          "spotify:track:0wjJOIBxHZEnNcddunu3u6"
+        ],
+        "listing": {
+          "name": "KPOO - KPOO Public Affairs Programming - 2026-11-05",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
