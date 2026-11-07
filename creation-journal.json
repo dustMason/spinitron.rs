@@ -6309,7 +6309,7 @@
           "start_time": "2026-11-06T12:00:00-0800",
           "end_time": "2026-11-06T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1K66fgrLlE29Nv62yWfah9",
         "desired_uris": [
@@ -6353,8 +6353,107 @@
           "spotify:track:5zrKi3K4zVq3hivIlxEwRe"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T15:00:00-0800",
+          "broadcast_start": "2026-11-06T12:00:00-0800",
+          "imported_at": "2026-11-07T12:37:38.467813055+00:00",
+          "last_updated": "2026-11-07 12:37 UTC",
           "name": "KALX - FREEFORM - 2026-11-06",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Bright Eyes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cebb8cb446f5c460538d763b",
+              "name": "Clairaudients (Kill or Be Killed)"
+            },
+            {
+              "artists": [
+                "Greg Freeman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a900283332c7e44e8959ece3",
+              "name": "Culture"
+            },
+            {
+              "artists": [
+                "Houston Person"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325da9c6ee5720dc7bf1d4478",
+              "name": "Wish You Were Here"
+            },
+            {
+              "artists": [
+                "Deee-Lite"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cbcb5083c56df2a557625bca",
+              "name": "Groove Is in the Heart"
+            },
+            {
+              "artists": [
+                "Black Eyed Peas",
+                "James Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c6710b4a52539506c30e5354",
+              "name": "They Don't Want Music"
+            },
+            {
+              "artists": [
+                "Donna Summer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a1331447bd02b5c91c3ae726",
+              "name": "Hot Stuff"
+            },
+            {
+              "artists": [
+                "Henry Threadgill",
+                "Vijay Iyer",
+                "Dafnis Prieto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273895ca849663e51b4f2e1d940",
+              "name": "Last Night"
+            },
+            {
+              "artists": [
+                "BASIC",
+                "Chris Forsyth",
+                "Douglas McCombs",
+                "Mikel Patrick Avery"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737dc13f6495f644e3ae9c3046",
+              "name": "Brutalist With Filigree"
+            },
+            {
+              "artists": [
+                "Tsunami"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27358ee36be1d3952bdd435ef0c",
+              "name": "Kidding On The Square"
+            },
+            {
+              "artists": [
+                "Sloan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273418148324d02301a33049bee",
+              "name": "Capitol Cooler"
+            },
+            {
+              "artists": [
+                "Alanis Morissette"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273242e643ea07118ecf677a6ef",
+              "name": "Ironic - 2015 Remaster"
+            },
+            {
+              "artists": [
+                "Dead Moon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738733dd608b3e69c0040250cf",
+              "name": "Don't Burn the Fires"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23298930/FREEFORM",
+          "station": "KALX",
+          "track_count": 38,
+          "url": "https://open.spotify.com/playlist/1K66fgrLlE29Nv62yWfah9"
         }
       },
       "needs_reconciliation": false
