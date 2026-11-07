@@ -6875,7 +6875,7 @@
           "start_time": "2026-11-06T18:15:00-0800",
           "end_time": "2026-11-06T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2lEWjkM955W7HVuT1eAPes",
         "desired_uris": [
@@ -6898,8 +6898,102 @@
           "spotify:track:7oumQgdVWXNUvYeDCvjqK4"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T20:00:00-0800",
+          "broadcast_start": "2026-11-06T18:15:00-0800",
+          "imported_at": "2026-11-07T12:40:18.696574186+00:00",
+          "last_updated": "2026-11-07 12:40 UTC",
           "name": "KALX - FREEFORM - 2026-11-06 6:15pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Watersons"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe1c12af12e1f72500349b86",
+              "name": "Stormy Winds"
+            },
+            {
+              "artists": [
+                "Shirley Collins & Albion Country Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734025fecdd74e081931cc54e8",
+              "name": "Poor Murdered Woman"
+            },
+            {
+              "artists": [
+                "Elanor Moss"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d76339289f137c23fd7bb2c8",
+              "name": "Improvisation"
+            },
+            {
+              "artists": [
+                "Paul Giovanni",
+                "Magnet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732b9c3b586e9f27f3af0432b6",
+              "name": "Willow's Song"
+            },
+            {
+              "artists": [
+                "Laura Cannell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27369bb3f156ab6982d76c48d13",
+              "name": "O Ignee Spiritus"
+            },
+            {
+              "artists": [
+                "Black Tape For A Blue Girl"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733b8d7ce97b939c76f53b1519",
+              "name": "a teardrop left behind - 1986 early mix"
+            },
+            {
+              "artists": [
+                "Angelo Badalamenti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6212adb4de364a1c633582a",
+              "name": "Organ (Version 3) / Mysteries Of Love"
+            },
+            {
+              "artists": [
+                "Jean-Michel Jarre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27346486bb8b36e64728c339040",
+              "name": "Ethnicolor II - 2024 Remaster"
+            },
+            {
+              "artists": [
+                "Gazing Into Space"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa2a1c70d1200b36a18d347b",
+              "name": "No Sun for Weeks"
+            },
+            {
+              "artists": [
+                "Fetisch Park"
+              ],
+              "image_url": "https://i.scdn.co/image/ef41e1068aafe807b7baf19f9df81c652379c346",
+              "name": "Off Line"
+            },
+            {
+              "artists": [
+                "Semiratruth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273266e3ff47090ffec38f2781d",
+              "name": "Blood Moon Eclipse"
+            },
+            {
+              "artists": [
+                "Psychic TV"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c3d706358b171eb451fb2350",
+              "name": "OV Power"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23300396/FREEFORM",
+          "station": "KALX",
+          "track_count": 17,
+          "url": "https://open.spotify.com/playlist/2lEWjkM955W7HVuT1eAPes"
         }
       },
       "needs_reconciliation": false
