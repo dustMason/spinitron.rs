@@ -7203,7 +7203,7 @@
           "start_time": "2026-11-06T22:00:00-0800",
           "end_time": "2026-11-07T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "69TVYKnqjLIgifJ6JLF7QJ",
         "desired_uris": [
@@ -7231,8 +7231,101 @@
           "spotify:track:6WZD0PM1XApPjSgwtb7VFK"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T00:00:00-0800",
+          "broadcast_start": "2026-11-06T22:00:00-0800",
+          "imported_at": "2026-11-07T12:42:18.346855285+00:00",
+          "last_updated": "2026-11-07 12:42 UTC",
           "name": "KALX - FREEFORM - 2026-11-06 10:00pm -0800 [KALX:23301267]",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Fischerspooner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27315c45b1baea0a58141fb5032",
+              "name": "Emerge"
+            },
+            {
+              "artists": [
+                "Barnt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738c290662390a6416aced6d34",
+              "name": "Over 5"
+            },
+            {
+              "artists": [
+                "Orchestral Manoeuvres In The Dark"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27346c913077ad733cf423eab13",
+              "name": "Joan Of Arc (Maid Of Orleans)"
+            },
+            {
+              "artists": [
+                "Ramsey Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273edb870b70edfabccf695b92a",
+              "name": "Sun Goddess"
+            },
+            {
+              "artists": [
+                "The 5th Dimension"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fd41f639c5cc81b9c8e8e70",
+              "name": "California Soul"
+            },
+            {
+              "artists": [
+                "Herbie Hancock"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739a50126eb59cb071e3cb9284",
+              "name": "Heartbeat"
+            },
+            {
+              "artists": [
+                "The Flying Hats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273172798acb57b380de9fc5614",
+              "name": "Lightning Bottle"
+            },
+            {
+              "artists": [
+                "The Budos Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27322d3841748f932b54f94dfdc",
+              "name": "Scorpion"
+            },
+            {
+              "artists": [
+                "El Búho"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5cd59314bcef42f02e8dc25",
+              "name": "Kairos"
+            },
+            {
+              "artists": [
+                "Richard Thompson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4d507b75e9e2bd01ac1341a",
+              "name": "She Burns It All"
+            },
+            {
+              "artists": [
+                "Black Sabbath"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27336ecc104d9cf43bc75ef6d3d",
+              "name": "Supernaut - 2014 Remaster"
+            },
+            {
+              "artists": [
+                "Buzzcocks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273409373691d3c2025c7d5f846",
+              "name": "Ever Fallen in Love (With Someone You Shouldn't've?) - 1996 Remastered Version"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23301267/FREEFORM",
+          "station": "KALX",
+          "track_count": 22,
+          "url": "https://open.spotify.com/playlist/69TVYKnqjLIgifJ6JLF7QJ"
         }
       },
       "needs_reconciliation": false
