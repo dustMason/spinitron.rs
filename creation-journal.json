@@ -5999,6 +5999,54 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23297710": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23297710,
+          "title": "ROBO - PLACEHOLDER",
+          "url": "https://spinitron.com/KALX/pl/23297710/ROBO-PLACEHOLDER",
+          "start_time": "2026-11-06T07:00:00-0800",
+          "end_time": "2026-11-06T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3MebYJnEDK4XdnCj3VMLjL",
+          "spotify:track:1mQ9pMKMYlgLRKT71QBcfL",
+          "spotify:track:2oNOFOz8Eg0qJ3yHVeefUB",
+          "spotify:track:3Lr2qUCslQTh5uWNkPueYo",
+          "spotify:track:03YNTeueMWYntPMdgsrynT",
+          "spotify:track:7dfKrqvN9GDE6pzsrdI9uN",
+          "spotify:track:0yEnLfU4zDnbxCeI21xO8I",
+          "spotify:track:1appKZZwq0t8cBeovLBPKi",
+          "spotify:track:23wxRXtDh9aTzhvJnHXnn2",
+          "spotify:track:5PQTSIApye1OFBXLgVTH7n",
+          "spotify:track:0Beb3aFUCO4I1pXXexHq7l",
+          "spotify:track:60QLLec3yKDwloXCyummPy",
+          "spotify:track:2jtUGFsqanQ82zqDlhiKIp",
+          "spotify:track:4a0qb8NmTmXzjjQz7l5Dof",
+          "spotify:track:5YOLnsggRFxlK17sF8YPpA",
+          "spotify:track:4vLy2S2GMx6XuPADFb0weQ",
+          "spotify:track:26rZOUdU1tvf7lnxQU1VWG",
+          "spotify:track:5Z5Q8C5jkPaKAuukODHLqP",
+          "spotify:track:7i2h7RrW6nijW4iIkn7kdf",
+          "spotify:track:5nS6BtEhLefEja2DFH4yoe",
+          "spotify:track:2mYaBnXit6gtVjR4CMp0C5",
+          "spotify:track:3An8pZKbueWLfVUuMjYdj5",
+          "spotify:track:7GRka62MgphGVLbNVDdrKt",
+          "spotify:track:4R1Vdh6ou0g9xjm78NqJj8",
+          "spotify:track:4AASdZnFGq0GJ29IHgxMG5",
+          "spotify:track:2vIXNjKLk04Qr5PTkSQJrG",
+          "spotify:track:5pMMyQyob7rjYO9y8lD7Ey"
+        ],
+        "listing": {
+          "name": "KALX - ROBO - PLACEHOLDER - 2026-11-06",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
