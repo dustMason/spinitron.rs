@@ -11806,7 +11806,7 @@
           "start_time": "2026-11-06T18:00:00-0800",
           "end_time": "2026-11-06T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "79SJpNBtqSKeSZVsqo1Vpa",
         "desired_uris": [
@@ -11840,8 +11840,101 @@
           "spotify:track:5Hv7cEggxE2tvhUrSIpBKN"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T21:00:00-0800",
+          "broadcast_start": "2026-11-06T18:00:00-0800",
+          "imported_at": "2026-11-07T12:47:12.115712228+00:00",
+          "last_updated": "2026-11-07 12:47 UTC",
           "name": "KPOO - Beats Me - 2026-11-06",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "War"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27362f7c579da4d8219a0f81bf1",
+              "name": "The World Is A Ghetto"
+            },
+            {
+              "artists": [
+                "Curtis Mayfield"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273177fea3fc7f8075fdb40f167",
+              "name": "Freddie's Dead"
+            },
+            {
+              "artists": [
+                "Redbone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739664387d422959620c0bbb53",
+              "name": "Come and Get Your Love"
+            },
+            {
+              "artists": [
+                "The Coasters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273195072460ce4f8505d218b32",
+              "name": "Down in Mexico"
+            },
+            {
+              "artists": [
+                "The Champs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27339cbd37b54526c3328840edf",
+              "name": "Tequila"
+            },
+            {
+              "artists": [
+                "War"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735dba63ffe84961fde2c7d1ee",
+              "name": "The Cisco Kid"
+            },
+            {
+              "artists": [
+                "El Chicano"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a867c542db2fbe2c788fa99b",
+              "name": "Cha Chita"
+            },
+            {
+              "artists": [
+                "Santana"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273af4ae126f7756a043be587ce",
+              "name": "Black Magic Woman - Live at Osaka Kosei Nenkin Kaikan, Osaka, Japan - July 1973"
+            },
+            {
+              "artists": [
+                "War"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a07cc88003498f7559787673",
+              "name": "Low Rider"
+            },
+            {
+              "artists": [
+                "Santana"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c6abdd4f54d7dcef9f4bd649",
+              "name": "Evil Ways"
+            },
+            {
+              "artists": [
+                "Brick"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27371624e7e3edf05c197f8f560",
+              "name": "Dazz - Single Version"
+            },
+            {
+              "artists": [
+                "One Way"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308c1e6bf49f37031dea3b907",
+              "name": "Cutie Pie"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23300432/Beats-Me",
+          "station": "KPOO",
+          "track_count": 28,
+          "url": "https://open.spotify.com/playlist/79SJpNBtqSKeSZVsqo1Vpa"
         }
       },
       "needs_reconciliation": false
