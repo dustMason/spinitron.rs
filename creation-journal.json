@@ -6160,7 +6160,7 @@
           "start_time": "2026-11-06T09:30:00-0800",
           "end_time": "2026-11-06T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2YIDZzdJYDV7eaxNFtG1Pk",
         "desired_uris": [
@@ -6196,8 +6196,105 @@
           "spotify:track:2mHicflJn3N6uhQvTbuUfs"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T12:00:00-0800",
+          "broadcast_start": "2026-11-06T09:30:00-0800",
+          "imported_at": "2026-11-07T12:36:58.540333523+00:00",
+          "last_updated": "2026-11-07 12:36 UTC",
           "name": "KALX - All Cats Are Beautiful - 2026-11-06",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Underground Resistance"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c6499626929f37f4a534f7d7",
+              "name": "Kill My Radio Station"
+            },
+            {
+              "artists": [
+                "Marcus Mixx"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273173a5b0d324f9161c9a3ab23",
+              "name": "Without Makeup (Ron Hardy Mix)"
+            },
+            {
+              "artists": [
+                "mHz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ac39e29bc858c22308f2776b",
+              "name": "Quintuplets"
+            },
+            {
+              "artists": [
+                "Ancient Methods"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c914215b463334229c9bdb21",
+              "name": "Cache la misère"
+            },
+            {
+              "artists": [
+                "Klara Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4c9254994758b20941278f7",
+              "name": "Vaknar"
+            },
+            {
+              "artists": [
+                "Gil Trythall"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27398911b0b8dcd71e33ee04dd1",
+              "name": "Folsom Prison Blues"
+            },
+            {
+              "artists": [
+                "DJ Spooky"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273308f2879da60f58de7b5dfc4",
+              "name": "The Terran Invasion Of Alpha Centauri Year 2794"
+            },
+            {
+              "artists": [
+                "Hadley Caliman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273be8b5b93e15f229299aa51d7",
+              "name": "Dee’s Glee"
+            },
+            {
+              "artists": [
+                "Ryoji Ikeda"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27307d7292bf6b86230eb16a543",
+              "name": "ultratronics 05"
+            },
+            {
+              "artists": [
+                "Björk",
+                "Arca"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733b3afa694cf2220048b21cee",
+              "name": "Body Memory"
+            },
+            {
+              "artists": [
+                "Brian Eno",
+                "Robert Wyatt",
+                "Rhett Davies",
+                "Bang On A Can All-Stars"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732d1ac95816133e10213b2eed",
+              "name": "2/1"
+            },
+            {
+              "artists": [
+                "People Like Us"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273148f5cbf040c333179347a61",
+              "name": "The Sound Of The End Of Music"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23298269/All-Cats-Are-Beautiful",
+          "station": "KALX",
+          "track_count": 30,
+          "url": "https://open.spotify.com/playlist/2YIDZzdJYDV7eaxNFtG1Pk"
         }
       },
       "needs_reconciliation": false
