@@ -11256,7 +11256,7 @@
           "start_time": "2026-11-05T22:00:00-0800",
           "end_time": "2026-11-06T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5eWv7cwsYLvKla4HVyaIOe",
         "desired_uris": [
@@ -11347,8 +11347,112 @@
           "spotify:track:67J6NR2Tdl0h2epWHcCBBN"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T06:00:00-0800",
+          "broadcast_start": "2026-11-05T22:00:00-0800",
+          "imported_at": "2026-11-07T12:44:33.091861390+00:00",
+          "last_updated": "2026-11-07 12:44 UTC",
           "name": "KPOO - Thursday-Friday Night Sounds - 2026-11-05",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Charly Black"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733f91f134df202620a3a1bddf",
+              "name": "Indian Girl"
+            },
+            {
+              "artists": [
+                "YG Marley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e64dfe3a0308d716878ce464",
+              "name": "Praise Jah In The Moonlight"
+            },
+            {
+              "artists": [
+                "Shaggy",
+                "Teejay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273399e67c305ac94edbab2e89a",
+              "name": "Gyal Dem Time (feat. Teejay)"
+            },
+            {
+              "artists": [
+                "Mihali",
+                "Surfer Girl",
+                "Johnny Cosmic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bd4c2dde478e4e79e9917f3f",
+              "name": "Sunshine Daze (with Surfer Girl)"
+            },
+            {
+              "artists": [
+                "Dre Island"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731e309c67aa285c4227dc5c9c",
+              "name": "Nice Again"
+            },
+            {
+              "artists": [
+                "Khalia",
+                "Natural High Music"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dca6c802edd78bd60b95bece",
+              "name": "Miracle"
+            },
+            {
+              "artists": [
+                "Pliers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e96f7d50dc6c990e5ea91d78",
+              "name": "Bam Bam"
+            },
+            {
+              "artists": [
+                "Skip Marley",
+                "H.E.R.",
+                "Davido",
+                "Oxlade",
+                "P2J"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27343bed6d4a85c6de5e2241ea4",
+              "name": "Slow Down (feat. H.E.R., DaVido, & Oxlade) - P2J Remix"
+            },
+            {
+              "artists": [
+                "Tarrus Riley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27390673e3ae0eba78478aebb85",
+              "name": "She's Royal"
+            },
+            {
+              "artists": [
+                "Ruff & Tuff",
+                "Razor B"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f91e8d238d50fbae24b370d",
+              "name": "Low Di Machine"
+            },
+            {
+              "artists": [
+                "Karate Boogaloo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab6742d3000053b74a0429ad01aa83d863f25353",
+              "name": "Booger's Bounce of Joy - Live"
+            },
+            {
+              "artists": [
+                "Bunji Garlin",
+                "Stadic",
+                "Jonny Blaze"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738342f590250434a2f218a670",
+              "name": "Trini Lingo"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23296001/Thursday-Friday-Night-Sounds",
+          "station": "KPOO",
+          "track_count": 85,
+          "url": "https://open.spotify.com/playlist/5eWv7cwsYLvKla4HVyaIOe"
         }
       },
       "needs_reconciliation": false
