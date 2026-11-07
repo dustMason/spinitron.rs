@@ -7055,7 +7055,7 @@
           "start_time": "2026-11-06T20:00:00-0800",
           "end_time": "2026-11-06T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5y8vSSlIJ6Mmq6JcgbFIJD",
         "desired_uris": [
@@ -7094,8 +7094,101 @@
           "spotify:track:4aVD4rQe8RpQxpmYl6Weca"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T22:00:00-0800",
+          "broadcast_start": "2026-11-06T20:00:00-0800",
+          "imported_at": "2026-11-07T12:41:38.574893806+00:00",
+          "last_updated": "2026-11-07 12:41 UTC",
           "name": "KALX - FREEFORM - 2026-11-06 8:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Ruby Suns"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cc483662a27448d2c0b2aaa8",
+              "name": "Oh, Mojave"
+            },
+            {
+              "artists": [
+                "Han Dae Su"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27392bac79445f7ddca85674554",
+              "name": "물 좀 주소"
+            },
+            {
+              "artists": [
+                "Ros Serey Sothea"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735b98e35c3da1ce13b96b3258",
+              "name": "រំពឹង រំពឹង"
+            },
+            {
+              "artists": [
+                "Barnt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738c290662390a6416aced6d34",
+              "name": "Kliff"
+            },
+            {
+              "artists": [
+                "The Hobknobs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ca8ff76e4ed2f6a0b66dbf76",
+              "name": "Around The Bend"
+            },
+            {
+              "artists": [
+                "Nina Winder-Lind"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27326d5753c5db30d8c069ff284",
+              "name": "You're not an Angel"
+            },
+            {
+              "artists": [
+                "Tonstartssbandht"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735ed6e54fc1fce62b0d99f2b1",
+              "name": "Mimi Vari"
+            },
+            {
+              "artists": [
+                "Tod Dockstader"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27318517bb291eecd4439278b8d",
+              "name": "Quatermass: Second Song"
+            },
+            {
+              "artists": [
+                "Tonstartssbandht"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735ed6e54fc1fce62b0d99f2b1",
+              "name": "Hasenheide Four"
+            },
+            {
+              "artists": [
+                "Animal Collective"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27302ed9d8a9c8d138641861c1b",
+              "name": "Sweet Road"
+            },
+            {
+              "artists": [
+                "mary in the junkyard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737642addd573054269cb9a577",
+              "name": "Thou Shalt Sprout"
+            },
+            {
+              "artists": [
+                "Janelle Monáe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273120a1366324c2ae1728e17e5",
+              "name": "Suite II Overture"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23300892/FREEFORM",
+          "station": "KALX",
+          "track_count": 33,
+          "url": "https://open.spotify.com/playlist/5y8vSSlIJ6Mmq6JcgbFIJD"
         }
       },
       "needs_reconciliation": false
