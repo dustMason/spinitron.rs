@@ -7340,7 +7340,7 @@
           "start_time": "2026-11-07T00:00:00-0800",
           "end_time": "2026-11-07T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5VgC6K1ixl9XrCZDvHRuBO",
         "desired_uris": [
@@ -7368,8 +7368,103 @@
           "spotify:track:3tTbvkjYXSAmvAA545MHwc"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T02:00:00-0800",
+          "broadcast_start": "2026-11-07T00:00:00-0800",
+          "imported_at": "2026-11-07T12:42:58.359620241+00:00",
+          "last_updated": "2026-11-07 12:42 UTC",
           "name": "KALX - FREEFORM - 2026-11-07",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Gorillaz",
+                "Miho Hatori",
+                "Tina Weymouth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e64af6953d2f6c2843c87e09",
+              "name": "19-2000"
+            },
+            {
+              "artists": [
+                "Portraits Of Tracy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273588603e17ec61c5462a0ca9c",
+              "name": "Caught In A Jam"
+            },
+            {
+              "artists": [
+                "Magdalena Bay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273789ca193393779d266e2b084",
+              "name": "Death & Romance"
+            },
+            {
+              "artists": [
+                "Nasiba Abdullaeva"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273351a0b37d310e27beb044725",
+              "name": "Ona (Mother)"
+            },
+            {
+              "artists": [
+                "Azia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273351a0b37d310e27beb044725",
+              "name": "Navo Desam Kam"
+            },
+            {
+              "artists": [
+                "Tia Blake"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ccdb8e452a061106c4ad3dd9",
+              "name": "Plastic Jesus"
+            },
+            {
+              "artists": [
+                "Barbara Dane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e739f82757e17499f68845d",
+              "name": "Salty Dog Blues"
+            },
+            {
+              "artists": [
+                "Paper Wings"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27359a88c78abb5a798bfa9e8e0",
+              "name": "Morning Again"
+            },
+            {
+              "artists": [
+                "Jean Ritchie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d4da716d034ac4befcfdd0bf",
+              "name": "The L and N Don't Stop Here Anymore - Remastered"
+            },
+            {
+              "artists": [
+                "Woody Guthrie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bb38abd67edf7e690aac0eed",
+              "name": "This Land is Your Land"
+            },
+            {
+              "artists": [
+                "Andy Boay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27379ef7acda9f7dc02447e5ee6",
+              "name": "Around The Eyes"
+            },
+            {
+              "artists": [
+                "The Mamas & The Papas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273138e26241224ace1b89d1608",
+              "name": "Dedicated To The One I Love"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23301601/FREEFORM",
+          "station": "KALX",
+          "track_count": 22,
+          "url": "https://open.spotify.com/playlist/5VgC6K1ixl9XrCZDvHRuBO"
         }
       },
       "needs_reconciliation": false
