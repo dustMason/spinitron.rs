@@ -6753,7 +6753,7 @@
           "start_time": "2026-11-06T17:00:00-0800",
           "end_time": "2026-11-06T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1VV031Zk3YwHNbI2Img1bv",
         "desired_uris": [
@@ -6770,8 +6770,97 @@
           "spotify:track:3zZCK9CqutoHe93hYO7Ksa"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T18:00:00-0800",
+          "broadcast_start": "2026-11-06T17:00:00-0800",
+          "imported_at": "2026-11-07T12:39:38.140552152+00:00",
+          "last_updated": "2026-11-07 12:39 UTC",
           "name": "KALX - Shortrave - 2026-11-06",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Batu",
+                "Donato Dozzy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27351f2a02bb40ba1e94eda591f",
+              "name": "Exhale"
+            },
+            {
+              "artists": [
+                "Dj Smokey"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730b0149d18c51730fb3f270aa",
+              "name": "nuked out dance party intro"
+            },
+            {
+              "artists": [
+                "Machine Girl"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739c601e82d216f5f054d9d340",
+              "name": "Ionic Funk (20xx Battle Music)"
+            },
+            {
+              "artists": [
+                "Underworld"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cecee5e7eadad0efb6facbb3",
+              "name": "Moaner"
+            },
+            {
+              "artists": [
+                "Joyce Muniz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273450a8bcf8d4982f410edf7ee",
+              "name": "Nostalgia 92 - Dub"
+            },
+            {
+              "artists": [
+                "Ninajirachi",
+                "Dylan Brady"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27303fc93b63571371be80b6a7b",
+              "name": "CSIRAC - Dylan Brady Remix"
+            },
+            {
+              "artists": [
+                "Sakura Tsuruta"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d4575cb73a575be9af5ac18a",
+              "name": "Euphorique"
+            },
+            {
+              "artists": [
+                "MIMIDEATH"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730cd58f458526b51d08c4dda4",
+              "name": "wat it feels like to get trepanned"
+            },
+            {
+              "artists": [
+                "100 gecs",
+                "99jakes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27304f13ed4aa2399b28b5ee336",
+              "name": "xXXi_wud_nvrstøp_ÜXXx (99jakes Remix)"
+            },
+            {
+              "artists": [
+                "femtanyl"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b2932fc2d4c8f8621b13f375",
+              "name": "SHOWS YOU THE WAY TO THE HIWAY"
+            },
+            {
+              "artists": [
+                "Robert Miles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273234200e2e3f111af59bd3d4e",
+              "name": "Children - Dream Version"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23300184/Shortrave",
+          "station": "KALX",
+          "track_count": 11,
+          "url": "https://open.spotify.com/playlist/1VV031Zk3YwHNbI2Img1bv"
         }
       },
       "needs_reconciliation": false
