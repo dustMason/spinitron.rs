@@ -11751,7 +11751,7 @@
           "start_time": "2026-11-06T17:30:00-0800",
           "end_time": "2026-11-06T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2rJNpTiDtMjCToI2WJdXRV",
         "desired_uris": [
@@ -11760,8 +11760,38 @@
           "spotify:track:6NF8MZ2trxckVBr82pyyPt"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T18:00:00-0800",
+          "broadcast_start": "2026-11-06T17:30:00-0800",
+          "imported_at": "2026-11-07T12:46:32.326327711+00:00",
+          "last_updated": "2026-11-07 12:46 UTC",
           "name": "KPOO - KPOO Community News - 2026-11-06",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Wunmi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273361618252cf40d5266d23b89",
+              "name": "Greedy Body"
+            },
+            {
+              "artists": [
+                "The Spinners"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730fcfb3dfff6952e93f06c9a9",
+              "name": "Mighty Love"
+            },
+            {
+              "artists": [
+                "Cannonball Adderley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27385827d636962ea87b858ab32",
+              "name": "Mercy, Mercy, Mercy"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23300280/KPOO-Community-News",
+          "station": "KPOO",
+          "track_count": 3,
+          "url": "https://open.spotify.com/playlist/2rJNpTiDtMjCToI2WJdXRV"
         }
       },
       "needs_reconciliation": false
