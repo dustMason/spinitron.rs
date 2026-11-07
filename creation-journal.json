@@ -11795,6 +11795,55 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23300432": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23300432,
+          "title": "Beats Me",
+          "url": "https://spinitron.com/KPOO/pl/23300432/Beats-Me",
+          "start_time": "2026-11-06T18:00:00-0800",
+          "end_time": "2026-11-06T21:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2oMXvopfDLGmXaUK0LkkEy",
+          "spotify:track:2ouFIPC3O1HNBcVTw1d9AN",
+          "spotify:track:5519RhpzObr9Mn3iqoeodJ",
+          "spotify:track:719WUtEfzXXsrSllLqfSOn",
+          "spotify:track:5gJKsGij5oGt5H5RSFYXPa",
+          "spotify:track:5GyZzxBrCjH64pEg2SrLK0",
+          "spotify:track:23MGV9z6pydMvIA6Gmfuh1",
+          "spotify:track:74zciW0H0y3fOGSyuDkWGq",
+          "spotify:track:7Bz8yww6UMbTgTVLG6zbI4",
+          "spotify:track:0kk4q5pI27ErcCwYowqekd",
+          "spotify:track:5gQCUf4lfy6GpuhdPzxQ6B",
+          "spotify:track:4bH4V6scr0RXTEX492Yzwc",
+          "spotify:track:0XzJdvWQ3Pyp9rlryCmvyH",
+          "spotify:track:3iRcwzyx4g9uue2PeG8hql",
+          "spotify:track:5yR9u8QiOt8hJaddv32oo7",
+          "spotify:track:6eSrt3loKYFBCK38iZUD63",
+          "spotify:track:3JsG5lLvDChBIDQjTwsy96",
+          "spotify:track:3sRCesHh424gmCji7Fz9Gm",
+          "spotify:track:38BsjxUJSgzmbaFeNvHOua",
+          "spotify:track:6FpwicSpM0ghUZYjpVTDxa",
+          "spotify:track:5bAYlqojCiretR2ZO1Y3xZ",
+          "spotify:track:3J0fCfzJqAtcc8L4PH6N0d",
+          "spotify:track:5cfCiy2vEqsInb0m2SCJd9",
+          "spotify:track:6Zs3F2lrr3L3kugrniFG5R",
+          "spotify:track:63DTXKZi7YdJ4tzGti1Dtr",
+          "spotify:track:15Gm7k9jCSlkWRk1KDw7Kp",
+          "spotify:track:2XzIrBKGf41Udmrvqm9pNv",
+          "spotify:track:5Hv7cEggxE2tvhUrSIpBKN"
+        ],
+        "listing": {
+          "name": "KPOO - Beats Me - 2026-11-06",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
