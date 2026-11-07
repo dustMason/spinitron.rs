@@ -5695,6 +5695,57 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23296297": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23296297,
+          "title": "FREEFORM",
+          "url": "https://spinitron.com/KALX/pl/23296297/FREEFORM",
+          "start_time": "2026-11-06T22:00:00-0800",
+          "end_time": "2026-11-07T01:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1RYVoYkZQ8nviHVATNNLWa",
+          "spotify:track:72ijYUJLBjCBcE5vrODvjW",
+          "spotify:track:69HaD7n48kAfbdeRfKpsJ3",
+          "spotify:track:1DHw8NJg53rSkH1kLrexAY",
+          "spotify:track:149dh0f3qcRVeTWSymFZVR",
+          "spotify:track:42v9DPENTcVOBmIPo9B6SI",
+          "spotify:track:2abHVy0DbjOzmAs4ppAQ8A",
+          "spotify:track:4e13hAFzDDqLaBJFrag48k",
+          "spotify:track:2Kxr93flTe6PuWynXz06j2",
+          "spotify:track:3qwgtmbhYaOfvSJQpWkEjY",
+          "spotify:track:7curo07jY1ldDTWP4ih86I",
+          "spotify:track:2JDYNDcTJVpkuqKiJrIghn",
+          "spotify:track:5yAgtpfvAtekJGH1isKQRv",
+          "spotify:track:18NztlTlFZ5yFuHecx9ECH",
+          "spotify:track:5owAolGQ0AhJb9tP8y1UcV",
+          "spotify:track:3dY5LWWS0gqGPB81JY2fRh",
+          "spotify:track:0nLkVbVlIYIPsCTUYYiOuu",
+          "spotify:track:22Aub8cCnnRi7deZsY1dqT",
+          "spotify:track:0Spudho8EwncalWZ4rBUwr",
+          "spotify:track:7ki4AYyAkLCopklkAmg6Ie",
+          "spotify:track:2OhFSdtBSatztfmo5GBJB7",
+          "spotify:track:4a1N28WWevkWuXOTSZKHLq",
+          "spotify:track:4ISR8jbfn5x4deKzPflL6B",
+          "spotify:track:7veOIgyV1wcp0y9cyMaSS6",
+          "spotify:track:21kJGwv7xInD7NQnimiHC3",
+          "spotify:track:6Jithpe0HyTUq2sI4ulpzr",
+          "spotify:track:0Vo6lTSLTKovIgeRcwdhRu",
+          "spotify:track:6duF3dx2wIxwwLgE8VOCZS",
+          "spotify:track:5AwG43cXD6vehK8UYhK4Q9",
+          "spotify:track:2XXnH6y4FGVxK8q6yj16Tj"
+        ],
+        "listing": {
+          "name": "KALX - FREEFORM - 2026-11-06 10:00pm",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23296451": {
       "entry": {
         "station": "KALX",
