@@ -11467,7 +11467,7 @@
           "start_time": "2026-11-06T12:00:00-0800",
           "end_time": "2026-11-06T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5jZDeIcgUdQQXFAdsBQFHq",
         "desired_uris": [
@@ -11491,8 +11491,106 @@
           "spotify:track:6m1kQG5aU9NLu7s2prTWNO"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T15:00:00-0800",
+          "broadcast_start": "2026-11-06T12:00:00-0800",
+          "imported_at": "2026-11-07T12:45:12.866363361+00:00",
+          "last_updated": "2026-11-07 12:45 UTC",
           "name": "KPOO - La Verdad Musical (The Musical Truth) - 2026-11-06",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Richard Bona"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c2e65c19600d8e88ae0635e0",
+              "name": "Kurumalete"
+            },
+            {
+              "artists": [
+                "Calypso Rose"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a411ea0987dd598d09b1767f",
+              "name": "Calypso Queen"
+            },
+            {
+              "artists": [
+                "Riddim Doctors",
+                "Sikiru Adepoju",
+                "Saminu Adepoju",
+                "Peter Fujii",
+                "Femi Ojetunde",
+                "Douglas Val Serrant"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d63190ca6c080627586af12a",
+              "name": "Palm Wine"
+            },
+            {
+              "artists": [
+                "Les Frères Déjean"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e9f1f83c0dd93e5fb15e971e",
+              "name": "L'univers"
+            },
+            {
+              "artists": [
+                "Ras Mo Moses"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273adb55a0fa9ef0fb60009bf26",
+              "name": "Pa Ni Poblem"
+            },
+            {
+              "artists": [
+                "The Ali Ryerson Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27373cdc8d1f658b125dfed5498",
+              "name": "Começar de Novo (The Island)"
+            },
+            {
+              "artists": [
+                "Antonio Lizana"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738509cf43b42aab868ebb0549",
+              "name": "La Semilla"
+            },
+            {
+              "artists": [
+                "Andrea Brachfeld"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eada9bf37242b0f727f558c7",
+              "name": "Mambo Yo"
+            },
+            {
+              "artists": [
+                "Jackie Ryan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273354b99a135e07bf07bf9c76f",
+              "name": "Siboney"
+            },
+            {
+              "artists": [
+                "Susana Baca"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737f756c12339f552121237cc6",
+              "name": "Los Gallinazos"
+            },
+            {
+              "artists": [
+                "Steve Guasch & One"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27388b9f4de46727b490e2f9163",
+              "name": "Rise Now"
+            },
+            {
+              "artists": [
+                "Paoli Mejias"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f3729a03a197da1f5ef81db7",
+              "name": "Jibarology"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23298918/La-Verdad-Musical-The-Musical-Truth",
+          "station": "KPOO",
+          "track_count": 18,
+          "url": "https://open.spotify.com/playlist/5jZDeIcgUdQQXFAdsBQFHq"
         }
       },
       "needs_reconciliation": false
