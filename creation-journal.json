@@ -6458,6 +6458,52 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23299589": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23299589,
+          "title": "gentle hands",
+          "url": "https://spinitron.com/KALX/pl/23299589/gentle-hands",
+          "start_time": "2026-11-06T15:00:00-0800",
+          "end_time": "2026-11-06T17:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0iVBRdKhKKrX4PZwmXDset",
+          "spotify:track:6m2O1S9wEc8zX86f7lB1qA",
+          "spotify:track:1BPxStWlzNU6xQrDUTUaPR",
+          "spotify:track:24ifWf75zkTyZ7fPMWl6iD",
+          "spotify:track:5tAjQ1an0nQmezG7cQoy57",
+          "spotify:track:6pkmfPkNwOtucanO7JF9Q6",
+          "spotify:track:4AWMXwhsyAnPlMt8dM1YQK",
+          "spotify:track:2xjv06k7zfnHV9zanSLRdI",
+          "spotify:track:0gXzWoMLtkiXMM5ORUO3go",
+          "spotify:track:5xLQI9lHC3lZzA7xVLJuIW",
+          "spotify:track:02w94vLayINXQjwPUKhJGP",
+          "spotify:track:3NOHpyNcaBnFWBwmLiuasu",
+          "spotify:track:0pid20sSwOaaYTJh6oFnSM",
+          "spotify:track:5iNjsOGoipKweHUtrf8MoV",
+          "spotify:track:5hBN8ZIdox5C9iuhuDELjJ",
+          "spotify:track:7h4LJTN00tRBNVMxC8o2nQ",
+          "spotify:track:1lhOZl0SqRvHB9THiaqfgC",
+          "spotify:track:2jymt1GBsUjaFNNOYDfRDo",
+          "spotify:track:2NSijx3ZNX1Lt80w0K850B",
+          "spotify:track:79Jh0HuTe1p2jSKWNYo7tm",
+          "spotify:track:7rle27B9Ov2HxtjnycgMhn",
+          "spotify:track:6982qnnOQjrzhYflf019F7",
+          "spotify:track:1MgxrUqmSVs4atYN6lWs86",
+          "spotify:track:53LCxaIGdppdYfRfdsdQwn",
+          "spotify:track:22m6BocmDlBBScE4xsFhFp"
+        ],
+        "listing": {
+          "name": "KALX - gentle hands - 2026-11-06",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
