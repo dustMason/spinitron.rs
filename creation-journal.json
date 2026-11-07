@@ -9289,7 +9289,7 @@
           "start_time": "2026-11-06T09:00:00-0800",
           "end_time": "2026-11-06T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3JiA9Rn23XGtDBpqUEP12C",
         "desired_uris": [
@@ -9327,8 +9327,101 @@
           "spotify:track:1qAU6tXwn1mP8b7Bf1gbdF"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T12:00:00-0800",
+          "broadcast_start": "2026-11-06T09:00:00-0800",
+          "imported_at": "2026-11-07T12:43:40.879486872+00:00",
+          "last_updated": "2026-11-07 12:43 UTC",
           "name": "KPOO - Cuba Canta - 2026-11-06",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Noro Morales"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf31c18bdf0eb42d917ba7eb",
+              "name": "Montuno in A Flat"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "Spanish Harlem Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735966279461f844324715db18",
+              "name": "Escucha El Ritmo"
+            },
+            {
+              "artists": [
+                "Spanish Harlem Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735966279461f844324715db18",
+              "name": "Escucha El Ritmo"
+            },
+            {
+              "artists": [
+                "Jose Mangual, Jr."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273882cb542beb95141825cc857",
+              "name": "El Jibarito"
+            },
+            {
+              "artists": [
+                "Son Boricua"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734119157a599f7abee1510a5a",
+              "name": "El Jibarito"
+            },
+            {
+              "artists": [
+                "Jimmy Bosch"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f49bf6f7d796219b0328613",
+              "name": "Speak No Evil"
+            },
+            {
+              "artists": [
+                "Ralph Irizarry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273926be3a1e9214fc4358e7c9a",
+              "name": "No Puede Haber"
+            },
+            {
+              "artists": [
+                "The John Santos Sextet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27314f3dc5344ae0cf8d7bef991",
+              "name": "Tumbao de corazón (Rhythm of the Heart)"
+            },
+            {
+              "artists": [
+                "Grupo Abbilona"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b85e0ac8355c50152419f653",
+              "name": "Toques a los orichas III"
+            },
+            {
+              "artists": [
+                "Abbilona, Tambor Yoruba"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2884d1430497032a23466ea",
+              "name": "Opening: Orun Seco"
+            },
+            {
+              "artists": [
+                "Abbilona y Tambor Yoruba"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273353e5b49a9181a8a981b23ad",
+              "name": "Orun Igbodu (Seco)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23285255/Cuba-Canta",
+          "station": "KPOO",
+          "track_count": 32,
+          "url": "https://open.spotify.com/playlist/3JiA9Rn23XGtDBpqUEP12C"
         }
       },
       "needs_reconciliation": false
