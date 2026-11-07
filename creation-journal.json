@@ -6468,7 +6468,7 @@
           "start_time": "2026-11-06T15:00:00-0800",
           "end_time": "2026-11-06T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4OEEiadbavf8n08S3qYgXv",
         "desired_uris": [
@@ -6499,8 +6499,101 @@
           "spotify:track:22m6BocmDlBBScE4xsFhFp"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T17:00:00-0800",
+          "broadcast_start": "2026-11-06T15:00:00-0800",
+          "imported_at": "2026-11-07T12:38:18.417815458+00:00",
+          "last_updated": "2026-11-07 12:38 UTC",
           "name": "KALX - gentle hands - 2026-11-06",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "HYUKOH"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273061686fac23cf6da46a04568",
+              "name": "Help"
+            },
+            {
+              "artists": [
+                "International Music System"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a405012632514304cacedece",
+              "name": "Mojave"
+            },
+            {
+              "artists": [
+                "Spacemoth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273caaa6dd8839deca760d28f43",
+              "name": "Telepathic Butterflies"
+            },
+            {
+              "artists": [
+                "Fad Gadget"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b124b46725e9c4fc939af82",
+              "name": "Love Parasite"
+            },
+            {
+              "artists": [
+                "Carol Rich"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27338f273c855f1b09769191fb4",
+              "name": "Computered Love"
+            },
+            {
+              "artists": [
+                "Bernard Wright"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b1b95b4a9cc9b67732dca8eb",
+              "name": "Haboglabotribin'"
+            },
+            {
+              "artists": [
+                "Josefa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dbecc1a33a41c7795f7bc0b6",
+              "name": "Mi Chulita"
+            },
+            {
+              "artists": [
+                "Labi Siffre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f6f29e2eb6055e6451e042e",
+              "name": "Watch Me"
+            },
+            {
+              "artists": [
+                "The Cleaners From Venus"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5dc07a84f96a89f63d850a6",
+              "name": "I Can't Stop (Holding On)"
+            },
+            {
+              "artists": [
+                "Richie Woods"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273de871f65b0c297e6b3bdb6de",
+              "name": "Flavortown"
+            },
+            {
+              "artists": [
+                "Part Time"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b86650804c5c9c12c02d005",
+              "name": "It's Alright with Me"
+            },
+            {
+              "artists": [
+                "Sylvain Chauveau"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e9b9e67613ebb7009e1badd8",
+              "name": "The Guitar Piece I Wrote for Masumi"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23299589/gentle-hands",
+          "station": "KALX",
+          "track_count": 25,
+          "url": "https://open.spotify.com/playlist/4OEEiadbavf8n08S3qYgXv"
         }
       },
       "needs_reconciliation": false
