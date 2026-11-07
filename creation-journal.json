@@ -11605,7 +11605,7 @@
           "start_time": "2026-11-06T15:00:00-0800",
           "end_time": "2026-11-06T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "14ExU5i6pbLnbN3Dx7L9cA",
         "desired_uris": [
@@ -11641,8 +11641,102 @@
           "spotify:track:416aqb7C2LzjBCkwxvFlp9"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T17:30:00-0800",
+          "broadcast_start": "2026-11-06T15:00:00-0800",
+          "imported_at": "2026-11-07T12:45:52.654899008+00:00",
+          "last_updated": "2026-11-07 12:45 UTC",
           "name": "KPOO - Living For the Weekend - 2026-11-06",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The O'Jays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730fd8d46f383c047c85405592",
+              "name": "Livin' For The Weekend - Previously released material"
+            },
+            {
+              "artists": [
+                "The Stylistics"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a6062f1bbdc4fbe536f47885",
+              "name": "You'll Never Get To Heaven (If You Break My Heart)"
+            },
+            {
+              "artists": [
+                "Johnny Mathis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d36967d6ee88aaf88767fed2",
+              "name": "I'm Stone In Love with You"
+            },
+            {
+              "artists": [
+                "Marilyn McCoo",
+                "Billy Davis Jr."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fdc8881cbc909a8d3a464a12",
+              "name": "You Don't Have to Be a Star (To Be In My Show)"
+            },
+            {
+              "artists": [
+                "Paul Anka"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732d62935d67829e2e2c21d900",
+              "name": "Don't Ever Leave Me"
+            },
+            {
+              "artists": [
+                "The Manhattans"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730454e8dda607461e79c2307e",
+              "name": "It Feels so Good to Be Loved so Bad"
+            },
+            {
+              "artists": [
+                "Commodores"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27300595c776c351cc124f6946d",
+              "name": "Three Times A Lady - Single Version"
+            },
+            {
+              "artists": [
+                "Delegation"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27376858369f08ec31eb3b36209",
+              "name": "Oh Honey"
+            },
+            {
+              "artists": [
+                "Earth, Wind & Fire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27386f744ce16c45aa005d84fb6",
+              "name": "Fantasy"
+            },
+            {
+              "artists": [
+                "The O'Jays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e6c680adf202206ff644ee7",
+              "name": "Livin' for the Weekend"
+            },
+            {
+              "artists": [
+                "Ben E. King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732755e7d5092e6ba5c3a78204",
+              "name": "Supernatural Thing Parts 1 & 2"
+            },
+            {
+              "artists": [
+                "Barry White"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa3252b7843a8a3426cc34bf",
+              "name": "You're The First, The Last, My Everything"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23299670/Living-For-the-Weekend",
+          "station": "KPOO",
+          "track_count": 30,
+          "url": "https://open.spotify.com/playlist/14ExU5i6pbLnbN3Dx7L9cA"
         }
       },
       "needs_reconciliation": false
