@@ -5705,7 +5705,7 @@
           "start_time": "2026-11-06T22:00:00-0800",
           "end_time": "2026-11-07T01:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7ptwDltM5YKhzX3wAtw0Ts",
         "desired_uris": [
@@ -5741,8 +5741,101 @@
           "spotify:track:2XXnH6y4FGVxK8q6yj16Tj"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T01:00:00-0800",
+          "broadcast_start": "2026-11-06T22:00:00-0800",
+          "imported_at": "2026-11-07T12:38:58.231113340+00:00",
+          "last_updated": "2026-11-07 12:38 UTC",
           "name": "KALX - FREEFORM - 2026-11-06 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Angel Dust"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273021d741df9ae3e928ec9f12f",
+              "name": "Marching for Revenge"
+            },
+            {
+              "artists": [
+                "Barnt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738c290662390a6416aced6d34",
+              "name": "Emi"
+            },
+            {
+              "artists": [
+                "Ned's Atomic Dustbin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f7e7bfd6274ffc0a98aea41b",
+              "name": "Less Than Useful"
+            },
+            {
+              "artists": [
+                "Spiritual Exit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337fbfced52563ac327441d33",
+              "name": "Low Tide"
+            },
+            {
+              "artists": [
+                "The Womack Sisters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273afa44cba895ec03a35a27778",
+              "name": "Laughter and Tears"
+            },
+            {
+              "artists": [
+                "Gazing Into Space"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d2782bcddfc763d78fffddba",
+              "name": "Mirage"
+            },
+            {
+              "artists": [
+                "Getaway Cruiser"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273af8f402fe49780731dd811ba",
+              "name": "Not Yet Gone"
+            },
+            {
+              "artists": [
+                "Pooja Goswami Pavan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe5b8cabc68ca77bbe588ef8",
+              "name": "In the Cave of the Sky"
+            },
+            {
+              "artists": [
+                "Jeff Sova"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a77f05e0491769cb1b29da57",
+              "name": "A New Day"
+            },
+            {
+              "artists": [
+                "All Natural Lemon & Lime Flavors"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a85b006777f01cdf4d22fd96",
+              "name": "You Can Never Tell"
+            },
+            {
+              "artists": [
+                "Drab Majesty"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273332bd2fc90d69a5c86834ce0",
+              "name": "Induction"
+            },
+            {
+              "artists": [
+                "Drab Majesty"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273332bd2fc90d69a5c86834ce0",
+              "name": "Dot in the Sky"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23296297/FREEFORM",
+          "station": "KALX",
+          "track_count": 30,
+          "url": "https://open.spotify.com/playlist/7ptwDltM5YKhzX3wAtw0Ts"
         }
       },
       "needs_reconciliation": false
