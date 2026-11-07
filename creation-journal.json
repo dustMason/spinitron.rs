@@ -11938,6 +11938,56 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23301318": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23301318,
+          "title": "GHETTO GUMBO",
+          "url": "https://spinitron.com/KPOO/pl/23301318/GHETTO-GUMBO",
+          "start_time": "2026-11-06T22:00:00-0800",
+          "end_time": "2026-11-07T02:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0B5Y2nwP9Bb8rnktvb56qi",
+          "spotify:track:1krJQDrcijvkcxhGLMxJS3",
+          "spotify:track:2RTGZO0X6bvAqUND6ZdMwn",
+          "spotify:track:6kwKzY0R2bbXo0tKB4Uzaq",
+          "spotify:track:2UUkPWWvnJQFNBimLWvpoL",
+          "spotify:track:4iuNZTcvT9diFySSzVsnVS",
+          "spotify:track:6t2eIONH4Sax3R21QWiKNp",
+          "spotify:track:6Tsu3OsuMz4KEGKbOYd6A0",
+          "spotify:track:2vPNudNPvPXQIRIcPa0fMq",
+          "spotify:track:5IDwiSA5RALU1QQ14Xth2c",
+          "spotify:track:3EDLcIQHnBUZB0HaI0Tomh",
+          "spotify:track:0HfW7zmRUpsrwg3nVWn7GC",
+          "spotify:track:1WKSkdkkmMM4IKOadmCDqb",
+          "spotify:track:2g3psWtXN8VmlmlvsFZghX",
+          "spotify:track:2CTDGszmxdWFHZpESSyfBB",
+          "spotify:track:3dn3BNeHGpQaf8WHjFUwLC",
+          "spotify:track:3PnckYvuHsltvHt1mctmMw",
+          "spotify:track:65szTRYPqRfLCBo5Is2qET",
+          "spotify:track:2zkuHTTT5qG3wQwDUWPSgZ",
+          "spotify:track:3orlmQugAqkT9fjCCvYoN3",
+          "spotify:track:3LmXcbAdQKZ1nVssGvObsr",
+          "spotify:track:3t80P1HxhaGPXHA4b7ZFXE",
+          "spotify:track:5sxGnHUEpryqigTe3cJf5P",
+          "spotify:track:08Ni4ieP9L3ueBbiZRnwhy",
+          "spotify:track:20JaYw8y1AbgBgUhUOxOaP",
+          "spotify:track:5dRCujBQZQq6dlkCaGDMV0",
+          "spotify:track:1deMBTP5ZZkyykhhaX0HXK",
+          "spotify:track:0mtbzu1k9ZFuR2hBpzshIP",
+          "spotify:track:7hzj2RqJydKSIXPR2s2kfH"
+        ],
+        "listing": {
+          "name": "KPOO - GHETTO GUMBO - 2026-11-06",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
