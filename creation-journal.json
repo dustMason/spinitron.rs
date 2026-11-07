@@ -11949,7 +11949,7 @@
           "start_time": "2026-11-06T22:00:00-0800",
           "end_time": "2026-11-07T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5bsYDiwAlGs2lDwoaW9Qin",
         "desired_uris": [
@@ -11984,8 +11984,111 @@
           "spotify:track:7hzj2RqJydKSIXPR2s2kfH"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T02:00:00-0800",
+          "broadcast_start": "2026-11-06T22:00:00-0800",
+          "imported_at": "2026-11-07T12:47:51.738370682+00:00",
+          "last_updated": "2026-11-07 12:47 UTC",
           "name": "KPOO - GHETTO GUMBO - 2026-11-06",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Public Enemy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d02c39324013df3ac089863c",
+              "name": "Either We Together Or We Ain't (S1W Stepstrumental)"
+            },
+            {
+              "artists": [
+                "Bone Thugs-N-Harmony",
+                "DJ Kay Slay",
+                "Busta Rhymes",
+                "Twista",
+                "Jaz-O"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c9957808e9de736ba8e0d8af",
+              "name": "60 Seconds"
+            },
+            {
+              "artists": [
+                "Beneficence",
+                "AG of D.I.T.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273712c9f379e24b470d6819730",
+              "name": "All Real (feat. A.G.)"
+            },
+            {
+              "artists": [
+                "Dom Dirtee",
+                "Lil Fame",
+                "Teflon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fef6c04b7474c4132094ba4d",
+              "name": "Kill Switch"
+            },
+            {
+              "artists": [
+                "MF DOOM",
+                "The Prof."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e6a76f0dc1285ac766da9763",
+              "name": "My Favorite Ladies"
+            },
+            {
+              "artists": [
+                "Fantasia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737412ce365912333f423f7254",
+              "name": "When I See U"
+            },
+            {
+              "artists": [
+                "Lil Wayne",
+                "Drake"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a097c007351b6dc514af10fc",
+              "name": "Believe Me"
+            },
+            {
+              "artists": [
+                "The Notorious B.I.G."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273639fea4197e676cfe9512e04",
+              "name": "Hypnotize - 2007 Remaster"
+            },
+            {
+              "artists": [
+                "Jacquees",
+                "JUVENILE"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cc89b2a923507bae7c01996e",
+              "name": "Lick Back (feat. JUVENILE)"
+            },
+            {
+              "artists": [
+                "Dick Hyman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348cd73746936dbd8f68b430a",
+              "name": "Peacherine Rag"
+            },
+            {
+              "artists": [
+                "Rachid Taha"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736472673c1cca3bd562fa9eeb",
+              "name": "Ya Rayah"
+            },
+            {
+              "artists": [
+                "Stanley Turrentine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f27dc359770c63c0abfb3247",
+              "name": "Pieces Of Dreams"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23301318/GHETTO-GUMBO",
+          "station": "KPOO",
+          "track_count": 29,
+          "url": "https://open.spotify.com/playlist/5bsYDiwAlGs2lDwoaW9Qin"
         }
       },
       "needs_reconciliation": false
