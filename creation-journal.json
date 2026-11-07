@@ -6160,8 +6160,9 @@
           "start_time": "2026-11-06T09:30:00-0800",
           "end_time": "2026-11-06T12:00:00-0800"
         },
-        "state": "creating",
+        "state": "filling",
         "owner_id": "dustmason",
+        "playlist_id": "2YIDZzdJYDV7eaxNFtG1Pk",
         "desired_uris": [
           "spotify:track:4znmnLpL9hrCDRViN58zsr",
           "spotify:track:6Xz47P6Fm1iQCWuQtbl6Qu",
