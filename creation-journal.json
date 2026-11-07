@@ -5845,7 +5845,7 @@
           "start_time": "2026-11-06T03:00:00-0800",
           "end_time": "2026-11-06T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2oJLzUG5UfyCseIXiZTlbs",
         "desired_uris": [
@@ -5896,8 +5896,105 @@
           "spotify:track:0nuNl8d8i7zyThbntpAUpm"
         ],
         "listing": {
+          "broadcast_end": "2026-11-06T07:00:00-0800",
+          "broadcast_start": "2026-11-06T03:00:00-0800",
+          "imported_at": "2026-11-07T12:35:38.811261856+00:00",
+          "last_updated": "2026-11-07 12:35 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-06",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Floating Points",
+                "San Francisco Ballet Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d29699a86f26f0e1df161d16",
+              "name": "Movement 8 - Falling to Earth"
+            },
+            {
+              "artists": [
+                "Jeff Mills"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e76c006e5d3d794af12407ec",
+              "name": "It's"
+            },
+            {
+              "artists": [
+                "Junior Cook",
+                "Louis Hayes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731a86fbae37c682676e48cf0f",
+              "name": "Ichi Ban (Number One)"
+            },
+            {
+              "artists": [
+                "Minyo Crusaders",
+                "朝倉さや"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273824565be4bddbb316579b1df",
+              "name": "Shigesa Bushi"
+            },
+            {
+              "artists": [
+                "Goldfrapp"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27336c6241aaef11862a89d0798",
+              "name": "Clowns"
+            },
+            {
+              "artists": [
+                "Agnes Obel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cb65064d02c0eddb780fbd55",
+              "name": "Laymelli"
+            },
+            {
+              "artists": [
+                "Hermanos Gutiérrez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f3a9cedd778597ac88c73e5",
+              "name": "Los Ojos Del Cóndor"
+            },
+            {
+              "artists": [
+                "Ana Lua Caiano"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c1a6a65cb7d5778e75655d71",
+              "name": "Vou Ficar Neste Quadrado"
+            },
+            {
+              "artists": [
+                "El Búho"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5cd59314bcef42f02e8dc25",
+              "name": "Que El Viento Lleve Mi Dolor"
+            },
+            {
+              "artists": [
+                "X.Y.R."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734094633ed12b06bce30d7fba",
+              "name": "happy thoughts"
+            },
+            {
+              "artists": [
+                "Lambert, Hendricks & Ross"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b42600448633e61af40fe729",
+              "name": "Halloween Spooks"
+            },
+            {
+              "artists": [
+                "Bill Orcutt",
+                "Mabe Fratti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27378b9a524f5f90f84c5abffbf",
+              "name": "Todo puede ser error"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23296872/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 45,
+          "url": "https://open.spotify.com/playlist/2oJLzUG5UfyCseIXiZTlbs"
         }
       },
       "needs_reconciliation": false
