@@ -8205,6 +8205,52 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23304674": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23304674,
+          "title": "Mocktail Hour",
+          "url": "https://spinitron.com/KALX/pl/23304674/Mocktail-Hour",
+          "start_time": "2026-11-07T15:00:00-0800",
+          "end_time": "2026-11-07T17:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1jhD8VkbGaMLadfe9swzpA",
+          "spotify:track:4cCQhrjuMQAQ4uoH0EI9Hx",
+          "spotify:track:7ihwogQbwsUQpb1B7NUXrm",
+          "spotify:track:26sX3N250iZAe8NRZnodBg",
+          "spotify:track:43a2QfozgRvIZ9BPdG5Pyy",
+          "spotify:track:4AdLEdHSOlTRM2nu0MIent",
+          "spotify:track:59A0u1IsRg78YvNbGML6Ur",
+          "spotify:track:3GOOBbC0uedCdUQZfSrwOp",
+          "spotify:track:5hLJGCAnXpDyjh9VxYeIKJ",
+          "spotify:track:2IXBov2s1TxPfLS16l87uk",
+          "spotify:track:1PpODh3GDSFoG7EGOekVu2",
+          "spotify:track:23rcMbTChRPIwtCycyb3E4",
+          "spotify:track:5yuiRlr0AEa0GFllf7pMAh",
+          "spotify:track:13d4q2UJbIruxL5gCcAbL8",
+          "spotify:track:1FctCxuCttff0Du3Ewk0w7",
+          "spotify:track:7n6EdtbndNawCoGJgP7D0L",
+          "spotify:track:2VNz8Wv2QDO6upbClxEV2A",
+          "spotify:track:2HJhwLhMZMR9retWaUTmgN",
+          "spotify:track:1r7mKWfuGQm2NMRKsgVL5c",
+          "spotify:track:5UX4bBIPN8HqVPR9KkBOo5",
+          "spotify:track:0ZtyUgz04f7xzIHOkaPglr",
+          "spotify:track:1tPypjwOFQYqnQyKVy2K7j",
+          "spotify:track:3POeP7JhwS1HljSN3Lfvgc",
+          "spotify:track:4y7wap6VvV5O3cdT33thd7",
+          "spotify:track:7oumQgdVWXNUvYeDCvjqK4"
+        ],
+        "listing": {
+          "name": "KALX - Mocktail Hour - 2026-11-07",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
