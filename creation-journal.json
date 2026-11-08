@@ -12726,6 +12726,31 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23305042": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23305042,
+          "title": "#SaturdayAfternoonReggaeShow",
+          "url": "https://spinitron.com/KPOO/pl/23305042/SaturdayAfternoonReggaeShow",
+          "start_time": "2026-11-07T16:00:00-0800",
+          "end_time": "2026-11-07T19:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1fSmO3YYDAOrvcRtepUxow",
+          "spotify:track:54cMaPPTAoC57ZgnMTJKHM",
+          "spotify:track:0INtJm8gCJKtNaAYQNVlpZ",
+          "spotify:track:0QSpm9D61ncQtoDjKNemBK"
+        ],
+        "listing": {
+          "name": "KPOO - #SaturdayAfternoonReggaeShow - 2026-11-07",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
