@@ -8062,7 +8062,7 @@
           "start_time": "2026-11-07T12:00:00-0800",
           "end_time": "2026-11-07T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5HHEiyDayrBGioMwVF9ImK",
         "desired_uris": [
@@ -8099,8 +8099,108 @@
           "spotify:track:7FO7BolIZsl1o8DDSjeOph"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T15:00:00-0800",
+          "broadcast_start": "2026-11-07T12:00:00-0800",
+          "imported_at": "2026-11-08T13:02:59.591296196+00:00",
+          "last_updated": "2026-11-08 13:02 UTC",
           "name": "KALX - FREEFORM - 2026-11-07 12:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Thugs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c10af806930efbc9ac6e847c",
+              "name": "Looking For A Lair"
+            },
+            {
+              "artists": [
+                "Congotronics International",
+                "Deerhoof",
+                "Juana Molina",
+                "Kasai Allstars",
+                "Konono N°1",
+                "Wildbirds & Peacedrums",
+                "Skeletons"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730196bb22373c9537cc387a53",
+              "name": "Kule Kule Redux"
+            },
+            {
+              "artists": [
+                "Lee \"Scratch\" Perry",
+                "Mouse On Mars"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db7bf6b6361bc3940021568f",
+              "name": "Economic Train"
+            },
+            {
+              "artists": [
+                "Sisters of Mercy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dac24075fab9fb2096108616",
+              "name": "1969"
+            },
+            {
+              "artists": [
+                "Basement 5"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337bfb357f195d244b3c652c8",
+              "name": "Last White Christmas"
+            },
+            {
+              "artists": [
+                "The Black Angels"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734802f7ff7480d1074ea0a11b",
+              "name": "Manipulation"
+            },
+            {
+              "artists": [
+                "Velocity Girl"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27376ab88e3874371740ac22dd6",
+              "name": "I Don't Care If You Go"
+            },
+            {
+              "artists": [
+                "Echo & the Bunnymen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27368bd6aaa6e1bf0efcdb43ba8",
+              "name": "Over Your Shoulder"
+            },
+            {
+              "artists": [
+                "Cul De Sac"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739523c581cc35bf6572a6c81b",
+              "name": "Etaoin Without Shrdlu"
+            },
+            {
+              "artists": [
+                "Pink Floyd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736fd72ac446114fa935dd86eb",
+              "name": "Let There Be More Light"
+            },
+            {
+              "artists": [
+                "Peter Murphy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fa617c554ac424180bd2042e",
+              "name": "I Spit Roses"
+            },
+            {
+              "artists": [
+                "Love and Rockets"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27354ec006da311fc592e0cff77",
+              "name": "Here On Earth"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23304046/FREEFORM",
+          "station": "KALX",
+          "track_count": 31,
+          "url": "https://open.spotify.com/playlist/5HHEiyDayrBGioMwVF9ImK"
         }
       },
       "needs_reconciliation": false
