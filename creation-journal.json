@@ -12288,7 +12288,7 @@
           "start_time": "2026-11-07T08:00:00-0800",
           "end_time": "2026-11-07T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4LTimcckSpEfhFkosR3Yza",
         "desired_uris": [
@@ -12321,8 +12321,104 @@
           "spotify:track:6eZfLDInqkFsD8I7NYrO9l"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T12:00:00-0800",
+          "broadcast_start": "2026-11-07T08:00:00-0800",
+          "imported_at": "2026-11-08T12:54:24.786797617+00:00",
+          "last_updated": "2026-11-08 12:54 UTC",
           "name": "KPOO - Saturday Morning in Real Time - 2026-11-07",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Persian"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27342f6b95e1c72ca0101b98367",
+              "name": "We Should Shout - Jungle Dub"
+            },
+            {
+              "artists": [
+                "Erykah Badu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b5e18a80757ba2f787213d21",
+              "name": "Other Side Of The Game"
+            },
+            {
+              "artists": [
+                "Erykah Badu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b5e18a80757ba2f787213d21",
+              "name": "Rim Shot - Outro"
+            },
+            {
+              "artists": [
+                "Kaylenzo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d6f36e8de787d8c12555a7f",
+              "name": "Perfect"
+            },
+            {
+              "artists": [
+                "Alex Isley",
+                "Jack Dine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273737cd4d6b741a474cb7b6d3f",
+              "name": "Wait"
+            },
+            {
+              "artists": [
+                "Alex Isley",
+                "Jack Dine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731103338f04a8ed58b7c5f0e8",
+              "name": "Love Again"
+            },
+            {
+              "artists": [
+                "D'Angelo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732b3dc336a7a69293c25d9ade",
+              "name": "Send It On"
+            },
+            {
+              "artists": [
+                "Luther Vandross"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27354eea4859c463dc41f2b1724",
+              "name": "Make Me a Believer"
+            },
+            {
+              "artists": [
+                "Ari Elle"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733ca67acf00d9d51b8cec8e8d",
+              "name": "skylight"
+            },
+            {
+              "artists": [
+                "Mio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d6e3b51bc926f46540e750e4",
+              "name": "AM I READY..?"
+            },
+            {
+              "artists": [
+                "Peabo Bryson",
+                "Roberta Flack"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27313616956edb080463ab20d38",
+              "name": "Born To Love"
+            },
+            {
+              "artists": [
+                "Major Lance"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e87dce922ccce2407734d85d",
+              "name": "Um, Um, Um, Um, Um, Um"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23303259/Saturday-Morning-in-Real-Time",
+          "station": "KPOO",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/4LTimcckSpEfhFkosR3Yza"
         }
       },
       "needs_reconciliation": false
