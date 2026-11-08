@@ -7762,6 +7762,54 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23303044": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23303044,
+          "title": "Pink Entries",
+          "url": "https://spinitron.com/KALX/pl/23303044/Pink-Entries",
+          "start_time": "2026-11-07T18:30:00-0800",
+          "end_time": "2026-11-07T21:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6ddszDHOGF5F9NhBGbrIOl",
+          "spotify:track:73bHlSaOEYODgZbku3RAYo",
+          "spotify:track:1ov3LQ1iQJgkN4KvgIs6lI",
+          "spotify:track:6BKpU7hRPo5ZYwXXkgo2NN",
+          "spotify:track:53nIiuawnBN0h7iWCqBzAU",
+          "spotify:track:4M1V4BhFLybLuUsACdAIxN",
+          "spotify:track:4t18Py5qQvK6DriDoPkPrO",
+          "spotify:track:5sbvSKdYsgQ6Hci0wycj1I",
+          "spotify:track:4w2GLmK2wnioVnb5CPQeex",
+          "spotify:track:2nqChcNFEKA3dz47RuggX3",
+          "spotify:track:2XGJUQGZQXr5pHH11AL9oG",
+          "spotify:track:2ewocDbr6rwPtNMsyVNLy7",
+          "spotify:track:4jLzG9tZZGTbc3p2VWjF7r",
+          "spotify:track:3FqKdwir4e0D7Y6UJyiMgn",
+          "spotify:track:43YTcLcs3iwCyCjIthH4E1",
+          "spotify:track:186gZj9OxIMd2IT1LJtpUB",
+          "spotify:track:0LcmoKYXXjO1uzJCK0wDzr",
+          "spotify:track:0ZMaEIbZDAQP2iE4r5OxlN",
+          "spotify:track:0il7LJ828XyPqyvNx9cF5S",
+          "spotify:track:0DO7AUeYAx9oUG7gyrbdTD",
+          "spotify:track:2kPNkJrJkC056BiLZ7nRWK",
+          "spotify:track:4E3Dxu9VzZypgW0m79kBGF",
+          "spotify:track:6aPyaYf38q8ULSRHXjDcwN",
+          "spotify:track:7Fcig3cwilbkZwgZozN3bB",
+          "spotify:track:3DHdrtnyImRQ8uA1a10790",
+          "spotify:track:4kzAFfDqXzTD5AJzTjPtPf",
+          "spotify:track:6ddszDHOGF5F9NhBGbrIOl"
+        ],
+        "listing": {
+          "name": "KALX - Pink Entries - 2026-11-07",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23303233": {
       "entry": {
         "station": "KALX",
