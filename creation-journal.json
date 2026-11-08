@@ -8546,6 +8546,30 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23306087": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23306087,
+          "title": "KALX LIVE!",
+          "url": "https://spinitron.com/KALX/pl/23306087/KALX-LIVE",
+          "start_time": "2026-11-07T21:00:00-0800",
+          "end_time": "2026-11-08T00:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2hHYFo8l6a7WZd8NHTek9V",
+          "spotify:track:421Gp1eSmOIcD6alTWowFR",
+          "spotify:track:70u3Gfnip6s8dY4utHYeYG"
+        ],
+        "listing": {
+          "name": "KALX - KALX LIVE! - 2026-11-07",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
