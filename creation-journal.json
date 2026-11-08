@@ -12737,7 +12737,7 @@
           "start_time": "2026-11-07T16:00:00-0800",
           "end_time": "2026-11-07T19:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3zEcX5RPdnxKk7J6oSEaX3",
         "desired_uris": [
@@ -12747,8 +12747,46 @@
           "spotify:track:0QSpm9D61ncQtoDjKNemBK"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T19:00:00-0800",
+          "broadcast_start": "2026-11-07T16:00:00-0800",
+          "imported_at": "2026-11-08T12:57:03.327332266+00:00",
+          "last_updated": "2026-11-08 12:57 UTC",
           "name": "KPOO - #SaturdayAfternoonReggaeShow - 2026-11-07",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Brother Culture",
+                "Derrick Sound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a430f33c1f9214ad1dfd056b",
+              "name": "Dreadlocks Thing"
+            },
+            {
+              "artists": [
+                "Steel Pulse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737295b6d6af8460330c46d778",
+              "name": "Handsworth Revolution"
+            },
+            {
+              "artists": [
+                "Dawn Penn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733260aeb9dbc740c568a86017",
+              "name": "You Don't Love Me (No, No, No) - Extended Mix"
+            },
+            {
+              "artists": [
+                "Lila Iké"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c565327abf2ec83631d35bab",
+              "name": "Dinero"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23305042/SaturdayAfternoonReggaeShow",
+          "station": "KPOO",
+          "track_count": 4,
+          "url": "https://open.spotify.com/playlist/3zEcX5RPdnxKk7J6oSEaX3"
         }
       },
       "needs_reconciliation": false
