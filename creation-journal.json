@@ -12961,7 +12961,7 @@
           "start_time": "2026-11-07T19:00:00-0800",
           "end_time": "2026-11-07T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4t5SyroWzFcVzGtSNibJ2M",
         "desired_uris": [
@@ -13014,8 +13014,103 @@
           "spotify:track:0yJBY3c00ZgOnWvG4xMkAX"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T22:00:00-0800",
+          "broadcast_start": "2026-11-07T19:00:00-0800",
+          "imported_at": "2026-11-08T12:58:22.999933126+00:00",
+          "last_updated": "2026-11-08 12:58 UTC",
           "name": "KPOO - THE SOUL OF R&B - 2026-11-07",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "R. Kelly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f06ed757791f7aa92ffa254b",
+              "name": "Feelin' Single"
+            },
+            {
+              "artists": [
+                "Jenevieve"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735039ba5ca4d71c1965bfb6d1",
+              "name": "Résumé"
+            },
+            {
+              "artists": [
+                "Ari Lennox"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ae0e4f8f23556658c997d8c7",
+              "name": "Twin Flame"
+            },
+            {
+              "artists": [
+                "Ama",
+                "Brent Faiyaz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738c58c6cd9165b3b380c56dac",
+              "name": "Need it Bad (feat. Brent Faiyaz)"
+            },
+            {
+              "artists": [
+                "LaTocha"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733f0b46e135a19de5b10c1a0f",
+              "name": "Love Changes"
+            },
+            {
+              "artists": [
+                "Jenevieve"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735039ba5ca4d71c1965bfb6d1",
+              "name": "Mellow Eyes"
+            },
+            {
+              "artists": [
+                "Tamar Braxton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f110f962f579c75f0be8c3a3",
+              "name": "Changed"
+            },
+            {
+              "artists": [
+                "Ella Mai"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dca9a648e27c1e8d6dedf31c",
+              "name": "Hearts On Deck"
+            },
+            {
+              "artists": [
+                "Ellis Blè"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27342b0423fb2c4040ee4bd65ea",
+              "name": "Trap Niggas"
+            },
+            {
+              "artists": [
+                "T-Rell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c77b6186bb78757bfa31171",
+              "name": "So in Love"
+            },
+            {
+              "artists": [
+                "Summer Walker",
+                "Chris Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d88f4f99acd011dd8776040",
+              "name": "Baby (with Chris Brown)"
+            },
+            {
+              "artists": [
+                "T Royal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cbb0b1c01d32a18c18be6f9f",
+              "name": "Piece of My Lovin"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23305620/THE-SOUL-OF-R-B",
+          "station": "KPOO",
+          "track_count": 47,
+          "url": "https://open.spotify.com/playlist/4t5SyroWzFcVzGtSNibJ2M"
         }
       },
       "needs_reconciliation": false
