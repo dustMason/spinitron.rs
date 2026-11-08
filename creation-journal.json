@@ -13125,7 +13125,7 @@
           "start_time": "2026-11-07T22:00:00-0800",
           "end_time": "2026-11-08T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "39uAvFNf1SUoGfUILGcGMO",
         "desired_uris": [
@@ -13150,8 +13150,101 @@
           "spotify:track:1Ll4ifsjyeSysiY5ZM5vRA"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T00:00:00-0800",
+          "broadcast_start": "2026-11-07T22:00:00-0800",
+          "imported_at": "2026-11-08T12:59:02.576997419+00:00",
+          "last_updated": "2026-11-08 12:59 UTC",
           "name": "KPOO - Cruising Through the 70's - 2026-11-07",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Lakeside"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273efbb4b44baed97a0232960c3",
+              "name": "It's All the Way Live"
+            },
+            {
+              "artists": [
+                "Chocolate Milk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733fabe48fd3d1c18d1bcd7e8c",
+              "name": "Girl Callin'"
+            },
+            {
+              "artists": [
+                "Ohio Players"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b8f3e1eb33992b778f94bcf8",
+              "name": "Who'd She Coo?"
+            },
+            {
+              "artists": [
+                "Ben E. King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732755e7d5092e6ba5c3a78204",
+              "name": "Supernatural Thing Parts 1 & 2"
+            },
+            {
+              "artists": [
+                "Barry White"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320fdad72e4cdea8e2bad6943",
+              "name": "Honey Please, Can't Ya See - Instrumental"
+            },
+            {
+              "artists": [
+                "The Temptations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dabb260cf41a2fbb2c842787",
+              "name": "Ball Of Confusion (That's What The World Is Today) - Single Version/Mono"
+            },
+            {
+              "artists": [
+                "Earth, Wind & Fire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b746efe2ded2685b7e337f6d",
+              "name": "Mighty Mighty"
+            },
+            {
+              "artists": [
+                "Michael Jackson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ce8a6540a14a1d8e528a7b3d",
+              "name": "Just A Little Bit Of You"
+            },
+            {
+              "artists": [
+                "The Isley Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739d3cb0eff7ba768ff7aa1f3e",
+              "name": "Livin' in the Life / Go for Your Guns - 12\" Disco Medley"
+            },
+            {
+              "artists": [
+                "Cheryl Lynn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273980caf4dd525a15f08f8cb87",
+              "name": "Got To Be Real - Single Version"
+            },
+            {
+              "artists": [
+                "Enchantment"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27387c3e32637a1cec2623e53b8",
+              "name": "Future Gonna Get You"
+            },
+            {
+              "artists": [
+                "Enchantment"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738554ce11659eea20406d919c",
+              "name": "Where Do We Go from Here"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23306361/Cruising-Through-the-70-s",
+          "station": "KPOO",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/39uAvFNf1SUoGfUILGcGMO"
         }
       },
       "needs_reconciliation": false
