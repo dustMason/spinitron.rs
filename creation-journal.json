@@ -12433,7 +12433,7 @@
           "start_time": "2026-11-07T12:00:00-0800",
           "end_time": "2026-11-07T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0NTMC0PeTCfw5l2aRcLu9a",
         "desired_uris": [
@@ -12441,8 +12441,31 @@
           "spotify:track:4whPKDlf4kPdz7VXSJzKLa"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T15:00:00-0800",
+          "broadcast_start": "2026-11-07T12:00:00-0800",
+          "imported_at": "2026-11-08T12:55:03.911818254+00:00",
+          "last_updated": "2026-11-08 12:55 UTC",
           "name": "KPOO - En Clave - 2026-11-07",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Rachid Taha"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736472673c1cca3bd562fa9eeb",
+              "name": "Ya Rayah"
+            },
+            {
+              "artists": [
+                "Plena Libre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c253b2c6c88548cdbeaebc8",
+              "name": "Lluvia Con Nieve"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23304012/En-Clave",
+          "station": "KPOO",
+          "track_count": 2,
+          "url": "https://open.spotify.com/playlist/0NTMC0PeTCfw5l2aRcLu9a"
         }
       },
       "needs_reconciliation": false
