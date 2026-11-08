@@ -13259,7 +13259,7 @@
           "start_time": "2026-11-08T00:00:00-0800",
           "end_time": "2026-11-08T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "28OTzSnsvS1WWmtuo41gl0",
         "desired_uris": [
@@ -13288,8 +13288,101 @@
           "spotify:track:615rVnX4mV9K6JiuRIP0kU"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T02:00:00-0800",
+          "broadcast_start": "2026-11-08T00:00:00-0800",
+          "imported_at": "2026-11-08T12:59:41.587495855+00:00",
+          "last_updated": "2026-11-08 12:59 UTC",
           "name": "KPOO - JJ's Vintage Soul Sounds The 60's - 2026-11-08",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Don Covay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731c795bccb11e7be8c42208e2",
+              "name": "See Saw"
+            },
+            {
+              "artists": [
+                "Sam & Dave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a709999604555ddd4171ca44",
+              "name": "You Ain't No Big Thing Baby"
+            },
+            {
+              "artists": [
+                "Ike & Tina Turner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b13638dae7ef5838ddbcd23",
+              "name": "It's Gonna Work Out Fine"
+            },
+            {
+              "artists": [
+                "Barbara Lynn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f5a36d13348370c3605130a1",
+              "name": "Second Fiddle Girl"
+            },
+            {
+              "artists": [
+                "Sam Cooke"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27379da8fe0f500d7e86453898f",
+              "name": "Frankie And Johnny - Live"
+            },
+            {
+              "artists": [
+                "The Impressions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27363dcbe930dedaacf83f16199",
+              "name": "Keep On Pushing"
+            },
+            {
+              "artists": [
+                "The Marvelettes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f697e73f0e322d4f8a27ecfd",
+              "name": "Don't Mess With Bill - Single Version"
+            },
+            {
+              "artists": [
+                "The O'Jays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ddfbe350c35de5813361c8a4",
+              "name": "I'll Never Forget You"
+            },
+            {
+              "artists": [
+                "Freddie Scott"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d6e536f3be3a2fed637bdeb5",
+              "name": "Are You Lonely For Me Baby"
+            },
+            {
+              "artists": [
+                "The Fantastic Four"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5c1b600d922fa9c0456ff6b",
+              "name": "Just Another Lonely Night - Single Version"
+            },
+            {
+              "artists": [
+                "The Emotions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27354905e62641f8c8f4c80d1ec",
+              "name": "So I Can Love You"
+            },
+            {
+              "artists": [
+                "The Temptations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273812aa5daf1640a93b8cd40a2",
+              "name": "Get Ready"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23306721/JJ-s-Vintage-Soul-Sounds-The-60-s",
+          "station": "KPOO",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/28OTzSnsvS1WWmtuo41gl0"
         }
       },
       "needs_reconciliation": false
