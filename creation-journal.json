@@ -12621,7 +12621,7 @@
           "start_time": "2026-11-07T15:00:00-0800",
           "end_time": "2026-11-07T16:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4xKe82DEr09zclmEiLDuIL",
         "desired_uris": [
@@ -12637,8 +12637,92 @@
           "spotify:track:2NrmiC7IpTXJrWPvueZMzX"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T16:00:00-0800",
+          "broadcast_start": "2026-11-07T15:00:00-0800",
+          "imported_at": "2026-11-08T12:56:22.647017157+00:00",
+          "last_updated": "2026-11-08 12:56 UTC",
           "name": "KPOO - Andanzas - 2026-11-07",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Charlie Musselwhite"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27367f01204ae670177307b8b28",
+              "name": "Siboney"
+            },
+            {
+              "artists": [
+                "Septeto Nacional de Ignacio Piñeiro"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273340087c917904bc510c4fb6b",
+              "name": "Se Me Fue La Montuna"
+            },
+            {
+              "artists": [
+                "Septeto Nacional de Ignacio Piñeiro",
+                "Yumurí"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273289ac854e93a7cb8981b6d46",
+              "name": "El Menú"
+            },
+            {
+              "artists": [
+                "Viento De Agua"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273776a41aa4020a926c4096c95",
+              "name": "Lo Que Le Gusta A La Genta"
+            },
+            {
+              "artists": [
+                "Gilberto Santa Rosa",
+                "Tito Nieves"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd5cf483cd02e345b7955391",
+              "name": "La Familia"
+            },
+            {
+              "artists": [
+                "Gilberto Santa Rosa",
+                "José Madera",
+                "Orquesta Filarmónica Arturo Somohano"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ae6f77579a30d2f958cba12b",
+              "name": "La Puerta"
+            },
+            {
+              "artists": [
+                "Little Johnny Rivero"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d44a6dbf1125c28cf73fa2c1",
+              "name": "Alambique"
+            },
+            {
+              "artists": [
+                "Grupo Danson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731bdf6876611d5312cdc0e695",
+              "name": "Camina Y Prende El Fogón"
+            },
+            {
+              "artists": [
+                "Roberto Fonseca",
+                "Ibrahim Maalouf"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d6ee590db732582aa801c101",
+              "name": "Kachucha"
+            },
+            {
+              "artists": [
+                "Mortimer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f46d0d9609f75f2e52145f88",
+              "name": "Lightning"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23304703/Andanzas",
+          "station": "KPOO",
+          "track_count": 10,
+          "url": "https://open.spotify.com/playlist/4xKe82DEr09zclmEiLDuIL"
         }
       },
       "needs_reconciliation": false
