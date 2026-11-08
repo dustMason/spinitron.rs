@@ -12469,6 +12469,51 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23304119": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23304119,
+          "title": "En Clave",
+          "url": "https://spinitron.com/KPOO/pl/23304119/En-Clave",
+          "start_time": "2026-11-07T12:00:00-0800",
+          "end_time": "2026-11-07T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4whPKDlf4kPdz7VXSJzKLa",
+          "spotify:track:7Jx4B35rXxYqbbSpOoNT7n",
+          "spotify:track:3EHh1VX0olY6Ya0Rp3JkAq",
+          "spotify:track:2gSBCkfwVzCUfmv6C5ryB4",
+          "spotify:track:2huDbSEBY9sV6mDr8D8okB",
+          "spotify:track:34at23wgrNrO6iRhaQHoKe",
+          "spotify:track:0iAl61OmA7fIidLcamD7M9",
+          "spotify:track:6yiRyavF9wPxuDBOYuZFKM",
+          "spotify:track:6xCD7qeWUZU21W6FkpqOJV",
+          "spotify:track:40z3hjVUQvuh7Oh1KS92E5",
+          "spotify:track:49sEaNT8I7ArooL0aor4eT",
+          "spotify:track:6yiRyavF9wPxuDBOYuZFKM",
+          "spotify:track:71xqjnN7BFP45cGIjmf9UN",
+          "spotify:track:1sceZZcdLI8T4EDhUeKZkh",
+          "spotify:track:4oHL47abl5wOzKCQuWr96i",
+          "spotify:track:7qLK3KAxATUqsSoxzman0U",
+          "spotify:track:3A40IKTUnBaAFE7TZUOjH0",
+          "spotify:track:60IxwbmHNSliGE12i1uYoR",
+          "spotify:track:3v0KqFUYxAMUY2iBxrNfSo",
+          "spotify:track:00QI86RP6jMEEe39S6sxuv",
+          "spotify:track:2UslkWMrr3bzZxtDdiYsOD",
+          "spotify:track:1KgVYvzhkuaqX9k0fmHvaP",
+          "spotify:track:2W7mLuAViYufTxoQwnecoq",
+          "spotify:track:6mL2bZ7MnXOR84BQuCul8O"
+        ],
+        "listing": {
+          "name": "KPOO - En Clave - 2026-11-07 12:00pm -0800 [KPOO:23304119]",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
