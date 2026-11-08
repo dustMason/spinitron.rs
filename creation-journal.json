@@ -8501,7 +8501,7 @@
           "start_time": "2026-11-07T17:30:00-0800",
           "end_time": "2026-11-07T18:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3wfDrP969hLPKbq6j3LVXe",
         "desired_uris": [
@@ -8510,8 +8510,38 @@
           "spotify:track:2oANFmwGY7hxC3W1SqfcbE"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T18:30:00-0800",
+          "broadcast_start": "2026-11-07T17:30:00-0800",
+          "imported_at": "2026-11-08T13:04:57.344934879+00:00",
+          "last_updated": "2026-11-08 13:04 UTC",
           "name": "KALX - Film Close Ups - 2026-11-07",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Duke Ellington"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27372c6eda3eb7ed3d1190210b4",
+              "name": "Black and Tan Fantasy - Live"
+            },
+            {
+              "artists": [
+                "Joe Hisaishi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a3cd062a05a0df88713cd0d",
+              "name": "The Princess Who Loves Insects"
+            },
+            {
+              "artists": [
+                "Duke Ellington"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27372c6eda3eb7ed3d1190210b4",
+              "name": "Take the \"A\" Train - Live"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23305303/Film-Close-Ups",
+          "station": "KALX",
+          "track_count": 3,
+          "url": "https://open.spotify.com/playlist/3wfDrP969hLPKbq6j3LVXe"
         }
       },
       "needs_reconciliation": false
