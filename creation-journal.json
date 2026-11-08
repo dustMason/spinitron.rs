@@ -7772,7 +7772,7 @@
           "start_time": "2026-11-07T08:00:00-0800",
           "end_time": "2026-11-07T10:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4tyjqAItwSG4RFgyl5KgpN",
         "desired_uris": [
@@ -7803,8 +7803,108 @@
           "spotify:track:1W2ku0QYGdcgGQOx2flFjM"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T10:00:00-0800",
+          "broadcast_start": "2026-11-07T08:00:00-0800",
+          "imported_at": "2026-11-08T13:01:41.588174198+00:00",
+          "last_updated": "2026-11-08 13:01 UTC",
           "name": "KALX - FREEFORM - 2026-11-07 8:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Ali Akbar Khan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273170a928cf7cc59881feca22e",
+              "name": "Raga Basant Mookhari (Morning Raga) - Alap"
+            },
+            {
+              "artists": [
+                "Cornelius",
+                "Sean Ono Lennon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730afb241db30e1f4f4ff14ec6",
+              "name": "Aeons"
+            },
+            {
+              "artists": [
+                "Barbara Morgenstern"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27338a0cd7a0e71e0641794cfbb",
+              "name": "The Operator"
+            },
+            {
+              "artists": [
+                "Too $hort"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d248e4d59f2e454927af36f5",
+              "name": "Blow the Whistle"
+            },
+            {
+              "artists": [
+                "Doseone",
+                "Wino Willy",
+                "Zetroc",
+                "Agent-X"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27392f492b89269b76552d92576",
+              "name": "Last Match"
+            },
+            {
+              "artists": [
+                "Clinic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c4890aa77f74980d7db76c3",
+              "name": "Wild In The Streets"
+            },
+            {
+              "artists": [
+                "National Institute of Design",
+                "S.C. Sharma"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27331d2843318df6c2499510896",
+              "name": "After the War"
+            },
+            {
+              "artists": [
+                "Dry Cleaning"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f206f7d3727972b3b7268faa",
+              "name": "Scratchcard Lanyard"
+            },
+            {
+              "artists": [
+                "mars kumari",
+                "Del The Funky Homosapien",
+                "Umamifunk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273159677ae3ab43d84da46dde8",
+              "name": "Precipice"
+            },
+            {
+              "artists": [
+                "ear"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e1794dbc0e960dcc8d5ebc7b",
+              "name": "Nerves"
+            },
+            {
+              "artists": [
+                "Nation of Language"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27322fc15995c49b4f06ba98f73",
+              "name": "Automobile"
+            },
+            {
+              "artists": [
+                "MX LONELY"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27328c095e2848e066aec335837",
+              "name": "Shape Of An Angel"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23303233/FREEFORM",
+          "station": "KALX",
+          "track_count": 25,
+          "url": "https://open.spotify.com/playlist/4tyjqAItwSG4RFgyl5KgpN"
         }
       },
       "needs_reconciliation": false
