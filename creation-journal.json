@@ -12480,7 +12480,7 @@
           "start_time": "2026-11-07T12:00:00-0800",
           "end_time": "2026-11-07T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4yskEmqUy5ZwbA1gPxNVEx",
         "desired_uris": [
@@ -12510,8 +12510,103 @@
           "spotify:track:6mL2bZ7MnXOR84BQuCul8O"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T15:00:00-0800",
+          "broadcast_start": "2026-11-07T12:00:00-0800",
+          "imported_at": "2026-11-08T12:55:43.453069887+00:00",
+          "last_updated": "2026-11-08 12:55 UTC",
           "name": "KPOO - En Clave - 2026-11-07 12:00pm -0800 [KPOO:23304119]",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Plena Libre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c253b2c6c88548cdbeaebc8",
+              "name": "Lluvia Con Nieve"
+            },
+            {
+              "artists": [
+                "Eddie Palmieri"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734de8a92102fb7db94a77f392",
+              "name": "Malaguena Salerosa"
+            },
+            {
+              "artists": [
+                "Isidro Infante",
+                "\"Tiburón\" Morales"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27351ce6f41c60b5984a62e479b",
+              "name": "Fuego a la la Jicotea"
+            },
+            {
+              "artists": [
+                "Chan Junior"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734ea524cdc3b6e1acab7cc93a",
+              "name": "Asi es la humanidad"
+            },
+            {
+              "artists": [
+                "Nils Fischer & Timbazo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27389ed230396f69497b2e5bb9e",
+              "name": "Bochinchosa"
+            },
+            {
+              "artists": [
+                "Manana Club"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e5d4db4054f01ce85e6047f",
+              "name": "Soy tu Son"
+            },
+            {
+              "artists": [
+                "Adalberto Álvarez y su Son"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737be9181251bd4ef6d5b62fd6",
+              "name": "Medley: Los Caminos de Ifá / Respeto Pá los Mayores"
+            },
+            {
+              "artists": [
+                "Niño Rivera"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a84edcb60833efaa4180d52",
+              "name": "Montuno Guajiro"
+            },
+            {
+              "artists": [
+                "Paracumbé",
+                "Nelie Lebron Robles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eccab43dbff4e7b0461f2c22",
+              "name": "Mamá, cuídame a Belén"
+            },
+            {
+              "artists": [
+                "Los Pleneros de la Cresta"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a2aa408f5bb57ba93c389f0",
+              "name": "Los de la Isla"
+            },
+            {
+              "artists": [
+                "Eddie Palmieri"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734de8a92102fb7db94a77f392",
+              "name": "Oiga Mi Guaguanco"
+            },
+            {
+              "artists": [
+                "Niño Rivera"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a84edcb60833efaa4180d52",
+              "name": "Montuno Guajiro"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23304119/En-Clave",
+          "station": "KPOO",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/4yskEmqUy5ZwbA1gPxNVEx"
         }
       },
       "needs_reconciliation": false
