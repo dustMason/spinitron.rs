@@ -12277,6 +12277,54 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23303259": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23303259,
+          "title": "Saturday Morning in Real Time",
+          "url": "https://spinitron.com/KPOO/pl/23303259/Saturday-Morning-in-Real-Time",
+          "start_time": "2026-11-07T08:00:00-0800",
+          "end_time": "2026-11-07T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3sd3ELuZFPWFr2fvdcGP4C",
+          "spotify:track:6s4xndGKUhW0xXPYvFlwcL",
+          "spotify:track:6zCrBt20u3gcyXxDdSHDyo",
+          "spotify:track:7DMiUS92vVohVnFl2SouxQ",
+          "spotify:track:6qo7YZ6yD73cT29LspLaM7",
+          "spotify:track:6ZwNOYjJ06J77YF1ggXtaT",
+          "spotify:track:5LIwaG8Wl9LfExcmiRQm7J",
+          "spotify:track:1GwsrKwWdhU7iUpaB4eaIn",
+          "spotify:track:7fwArXWh6Sm2p7NoCnv7En",
+          "spotify:track:02bWIFvaECWHAa31wQrIG4",
+          "spotify:track:6dkMihhL3iPhjtNYb3kdP1",
+          "spotify:track:39FS8GMCTRPAgHOyaNnUSl",
+          "spotify:track:5UG7EI4QRxDfHRCa7Gpz1Y",
+          "spotify:track:3TDm7E8XnE74tKV6pn5VO8",
+          "spotify:track:4OQwIQjC5PIiosSjnDgg6q",
+          "spotify:track:4g5jveZCitpFDfzwgN24qD",
+          "spotify:track:3TBrDO99YtUSSe1cXuGSG2",
+          "spotify:track:7aRHFNmc5zkCHJHb512CLy",
+          "spotify:track:2opYXRDbOFcvu0UCw7PseC",
+          "spotify:track:6iKSa5mLx4fSoU73MTlQIG",
+          "spotify:track:4rB7QMm4UbOoZ8bs86e8C9",
+          "spotify:track:1gpEppwXYSCbtNp7uzQmQK",
+          "spotify:track:0fLwKttkpqaQDqDy8JH8Ul",
+          "spotify:track:6U0Z0QmBuo2Du2zoEeYzUv",
+          "spotify:track:0UCynwF0ZUwRTFK1DxvkOd",
+          "spotify:track:0LKoE5cIyNMv8QZbpmQRN7",
+          "spotify:track:6eZfLDInqkFsD8I7NYrO9l"
+        ],
+        "listing": {
+          "name": "KPOO - Saturday Morning in Real Time - 2026-11-07",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
