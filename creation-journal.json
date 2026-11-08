@@ -7479,7 +7479,7 @@
           "start_time": "2026-11-07T02:00:00-0800",
           "end_time": "2026-11-07T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6fqPsskdtSWzDzwQK2j8p2",
         "desired_uris": [
@@ -7522,8 +7522,102 @@
           "spotify:track:0A7G0VG5sLdIet3VK8BxwZ"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T06:00:00-0800",
+          "broadcast_start": "2026-11-07T02:00:00-0800",
+          "imported_at": "2026-11-08T13:00:22.721945475+00:00",
+          "last_updated": "2026-11-08 13:00 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-07",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Losses"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27349f150e3325d8a4c2bc57a0b",
+              "name": "World Is Down In The Dumps"
+            },
+            {
+              "artists": [
+                "Lambert, Hendricks & Ross"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b42600448633e61af40fe729",
+              "name": "Halloween Spooks"
+            },
+            {
+              "artists": [
+                "Haute & Freddy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27397b524279bd4b3fef25f495d",
+              "name": "Touch Touch"
+            },
+            {
+              "artists": [
+                "Black Swan Lane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27387be3900ea165cfdeb1c8e12",
+              "name": "Crash"
+            },
+            {
+              "artists": [
+                "Zoë Blade"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737b16a986492d0407a794559b",
+              "name": "Sarabande"
+            },
+            {
+              "artists": [
+                "hey, nothing"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27307f235cee26c0beeed5c1898",
+              "name": "i haunt ur dreams"
+            },
+            {
+              "artists": [
+                "Carhop"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739142dd383e544bffbe726abc",
+              "name": "Moon Beach"
+            },
+            {
+              "artists": [
+                "abracadabra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e33833d94d88fbfbf50442e8",
+              "name": "face card"
+            },
+            {
+              "artists": [
+                "Soccer Mommy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735b3865880c7946fd6283db25",
+              "name": "Last Girl"
+            },
+            {
+              "artists": [
+                "NUMAH"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d885f1fddc309bc57b937e94",
+              "name": "L'odeur de clope"
+            },
+            {
+              "artists": [
+                "Tim Curry",
+                "The Rocky Horror Picture Show"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b39d677166c52a79db62d306",
+              "name": "Sweet Transvestite"
+            },
+            {
+              "artists": [
+                "Valencia Grace"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b00180a0169ca3fb1215274e",
+              "name": "Touch-A, Touch-A, Touch Me"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23302055/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 37,
+          "url": "https://open.spotify.com/playlist/6fqPsskdtSWzDzwQK2j8p2"
         }
       },
       "needs_reconciliation": false
