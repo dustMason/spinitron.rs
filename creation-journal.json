@@ -8556,7 +8556,7 @@
           "start_time": "2026-11-07T21:00:00-0800",
           "end_time": "2026-11-08T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "51SThqF8Y54b4g8xpodV2L",
         "desired_uris": [
@@ -8565,8 +8565,38 @@
           "spotify:track:70u3Gfnip6s8dY4utHYeYG"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T00:00:00-0800",
+          "broadcast_start": "2026-11-07T21:00:00-0800",
+          "imported_at": "2026-11-08T13:05:36.810199299+00:00",
+          "last_updated": "2026-11-08 13:05 UTC",
           "name": "KALX - KALX LIVE! - 2026-11-07",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Esplendor Geométrico"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273871633532fd15cae8215c2f8",
+              "name": "Trybuna Robotnicza II"
+            },
+            {
+              "artists": [
+                "Laurie Anderson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273588b07fde7427a6b8e2614fe",
+              "name": "O Superman"
+            },
+            {
+              "artists": [
+                "Cibo Matto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dd95cdf7371a3eb8ccca3799",
+              "name": "Clouds"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23306087/KALX-LIVE",
+          "station": "KALX",
+          "track_count": 3,
+          "url": "https://open.spotify.com/playlist/51SThqF8Y54b4g8xpodV2L"
         }
       },
       "needs_reconciliation": false
