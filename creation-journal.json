@@ -8215,7 +8215,7 @@
           "start_time": "2026-11-07T15:00:00-0800",
           "end_time": "2026-11-07T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3Xep7WFH9MtXAXtYjVSsDh",
         "desired_uris": [
@@ -8246,8 +8246,102 @@
           "spotify:track:7oumQgdVWXNUvYeDCvjqK4"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T17:30:00-0800",
+          "broadcast_start": "2026-11-07T15:00:00-0800",
+          "imported_at": "2026-11-08T13:03:38.893542241+00:00",
+          "last_updated": "2026-11-08 13:03 UTC",
           "name": "KALX - Mocktail Hour - 2026-11-07",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Angelo Badalamenti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6212adb4de364a1c633582a",
+              "name": "Mysteries Of Love - Instrumental"
+            },
+            {
+              "artists": [
+                "The Almighty Easter Bunny"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a00167c0ef1de77b8f96f6fb",
+              "name": "We Are Energy, Sentient And Cycling"
+            },
+            {
+              "artists": [
+                "Various Artists"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f07fddcfe090621422a5fd4",
+              "name": "Protocol"
+            },
+            {
+              "artists": [
+                "Donna Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e962eb03beb3507c3c2b68f3",
+              "name": "I Love You Always Forever - Philly Remix"
+            },
+            {
+              "artists": [
+                "Juan Atkins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27302f8a42f0d88038a1b84ba19",
+              "name": "I Love You"
+            },
+            {
+              "artists": [
+                "Railcard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27313187b3b48cba0fc3ddb1fb7",
+              "name": "Unstable Neighbour"
+            },
+            {
+              "artists": [
+                "Ceremony"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735800c8fb5dce70d020d01258",
+              "name": "Into The Wayside Part I/Sick"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "Six Shot Morning"
+            },
+            {
+              "artists": [
+                "The Clog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db34562fa365670f7c7fe57d",
+              "name": "Bring Me (Lounge Version)"
+            },
+            {
+              "artists": [
+                "@"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27393c812017763535bb202b703",
+              "name": "I'm Not In Pain"
+            },
+            {
+              "artists": [
+                "Kelela",
+                "PinkPantheress"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27315c00fa655da7d2b186a470c",
+              "name": "the bridge"
+            },
+            {
+              "artists": [
+                "XG"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273446b3f62b36c753960907b23",
+              "name": "DEPENDS"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23304674/Mocktail-Hour",
+          "station": "KALX",
+          "track_count": 25,
+          "url": "https://open.spotify.com/playlist/3Xep7WFH9MtXAXtYjVSsDh"
         }
       },
       "needs_reconciliation": false
