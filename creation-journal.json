@@ -7919,7 +7919,7 @@
           "start_time": "2026-11-07T10:00:00-0800",
           "end_time": "2026-11-07T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0CdzCTCi4wyTaezDz5x7jj",
         "desired_uris": [
@@ -7952,8 +7952,102 @@
           "spotify:track:515Cc83pMWAspYZzBH3oDr"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T12:00:00-0800",
+          "broadcast_start": "2026-11-07T10:00:00-0800",
+          "imported_at": "2026-11-08T13:02:20.463556864+00:00",
+          "last_updated": "2026-11-08 13:02 UTC",
           "name": "KALX - FREEFORM - 2026-11-07 10:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "Japan"
+            },
+            {
+              "artists": [
+                "Julia Jacklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273abcc78bde47062a55232f6ae",
+              "name": "The Hardest Thing"
+            },
+            {
+              "artists": [
+                "Héctor Lavoe",
+                "Willie Colón"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f87fa607e589b5ba0b7a1bbb",
+              "name": "Te Conozco"
+            },
+            {
+              "artists": [
+                "Baby Rose"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731d1bd14e251142f2f9b06171",
+              "name": "Dressed In Metal"
+            },
+            {
+              "artists": [
+                "Nourished by Time"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a3aa51a22f09990bad35633c",
+              "name": "When The War Is Over"
+            },
+            {
+              "artists": [
+                "P.M. Dawn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735423456a99eaf4218893d20a",
+              "name": "Paper Doll"
+            },
+            {
+              "artists": [
+                "Allah-Las"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735bf01f0875de94587a31c230",
+              "name": "Ultramarine"
+            },
+            {
+              "artists": [
+                "Sampha"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273346df35d7111add480ba2aa4",
+              "name": "Spirit 2.0"
+            },
+            {
+              "artists": [
+                "Nala Sinephro"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27399e60c06162fd5cb1ff6d0b8",
+              "name": "Space 2"
+            },
+            {
+              "artists": [
+                "L'Rain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ea5a26ce4370090fc6698f4",
+              "name": "birthday"
+            },
+            {
+              "artists": [
+                "Sade"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ad27e16c5f844ea1ad6797cd",
+              "name": "Cherry Pie"
+            },
+            {
+              "artists": [
+                "Gil Scott-Heron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27356e3173e3c9b0a6c1715a57e",
+              "name": "Grandma's Hands"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23303524/FREEFORM",
+          "station": "KALX",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/0CdzCTCi4wyTaezDz5x7jj"
         }
       },
       "needs_reconciliation": false
