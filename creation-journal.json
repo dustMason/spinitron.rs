@@ -12801,7 +12801,7 @@
           "start_time": "2026-11-07T16:00:00-0800",
           "end_time": "2026-11-07T19:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6MaECrn3nb5hWFQ1zUGqCY",
         "desired_uris": [
@@ -12847,8 +12847,106 @@
           "spotify:track:2IzSkDIN1K29Mpxm8T5PfF"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T19:00:00-0800",
+          "broadcast_start": "2026-11-07T16:00:00-0800",
+          "imported_at": "2026-11-08T12:57:43.335977087+00:00",
+          "last_updated": "2026-11-08 12:57 UTC",
           "name": "KPOO - #SaturdayAfternoonReggaeShow - 2026-11-07 4:00pm -0800 [KPOO:23305073]",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Mortimer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f46d0d9609f75f2e52145f88",
+              "name": "Lightning"
+            },
+            {
+              "artists": [
+                "Brother Culture",
+                "Derrick Sound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a430f33c1f9214ad1dfd056b",
+              "name": "Dreadlocks Thing"
+            },
+            {
+              "artists": [
+                "Steel Pulse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737295b6d6af8460330c46d778",
+              "name": "Handsworth Revolution"
+            },
+            {
+              "artists": [
+                "Dawn Penn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738528e197df6e5545d940d137",
+              "name": "No No No"
+            },
+            {
+              "artists": [
+                "Lila Iké"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c565327abf2ec83631d35bab",
+              "name": "Dinero"
+            },
+            {
+              "artists": [
+                "Popcaan",
+                "Damage Musiq"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27363cb942c135bd69c293817ee",
+              "name": "Immortal Life"
+            },
+            {
+              "artists": [
+                "Bani Fyah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c04c8240f4cb4b5c16995072",
+              "name": "Anytime"
+            },
+            {
+              "artists": [
+                "Friends Only",
+                "Jesse Royal",
+                "MediSun",
+                "Beres Hammond"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273adac066171a202315eaf690b",
+              "name": "Born in Jamaica"
+            },
+            {
+              "artists": [
+                "Beenie Man"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27313eb52f0b713ef65ab322d1d",
+              "name": "Come Again"
+            },
+            {
+              "artists": [
+                "Jah Device"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733de2c80c2985952fbf42e604",
+              "name": "30 Pieces of Silver"
+            },
+            {
+              "artists": [
+                "Bob Marley & The Wailers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273387799441ba867649dfbb702",
+              "name": "Is This Love"
+            },
+            {
+              "artists": [
+                "Clinton Fearon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27307aff5de594d507251040436",
+              "name": "Poor Nana"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23305073/SaturdayAfternoonReggaeShow",
+          "station": "KPOO",
+          "track_count": 40,
+          "url": "https://open.spotify.com/playlist/6MaECrn3nb5hWFQ1zUGqCY"
         }
       },
       "needs_reconciliation": false
