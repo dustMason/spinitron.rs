@@ -8611,7 +8611,7 @@
           "start_time": "2026-11-08T00:00:00-0800",
           "end_time": "2026-11-08T03:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0mWmGVWDOGitVtrW3cfghD",
         "desired_uris": [
@@ -8653,8 +8653,103 @@
           "spotify:track:2nX5CreJh8YMyYtoYVAVxY"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T03:00:00-0800",
+          "broadcast_start": "2026-11-08T00:00:00-0800",
+          "imported_at": "2026-11-08T13:06:16.482105493+00:00",
+          "last_updated": "2026-11-08 13:06 UTC",
           "name": "KALX - . - 2026-11-08",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Bob Dylan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dce1de982105d276e8e975a1",
+              "name": "Tonight I'll Be Staying Here with You"
+            },
+            {
+              "artists": [
+                "Lorraine Ellison"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c08dc88babb36a7f31778fae",
+              "name": "Stay with Me"
+            },
+            {
+              "artists": [
+                "Molly Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a285dd1d25c40fe7de90be31",
+              "name": "Oceanic Feeling"
+            },
+            {
+              "artists": [
+                "X Minus One"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a852178899a73945d689314f",
+              "name": "Colony"
+            },
+            {
+              "artists": [
+                "The Thugs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c10af806930efbc9ac6e847c",
+              "name": "The Dawn Of A New Struggle"
+            },
+            {
+              "artists": [
+                "Meshell Ndegeocello",
+                "Robert Glasper",
+                "Nick Hakim"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736cd4a28c470b59f3d07cba39",
+              "name": "Don’t Stop The Music (with Nick Hakim, Robert Glasper)"
+            },
+            {
+              "artists": [
+                "Bootsy Collins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308ddaf1f71e82214f7f95e27",
+              "name": "Stretchin' Out (In a Rubber Band)"
+            },
+            {
+              "artists": [
+                "The Jaggerz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27370a546a8521e5bde34ef5781",
+              "name": "At My Window"
+            },
+            {
+              "artists": [
+                "Love Affair"
+              ],
+              "image_url": "https://i.scdn.co/image/ab6742d3000053b7a1c70470ef8c6725e03acfe4",
+              "name": "Everlasting Love"
+            },
+            {
+              "artists": [
+                "Spiritual Exit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337fbfced52563ac327441d33",
+              "name": "September"
+            },
+            {
+              "artists": [
+                "X Minus One"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a852178899a73945d689314f",
+              "name": "Colony"
+            },
+            {
+              "artists": [
+                "Screamin' Jay Hawkins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736efc2f0600165009fe78276f",
+              "name": "Not Anymore"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23306568/-",
+          "station": "KALX",
+          "track_count": 36,
+          "url": "https://open.spotify.com/playlist/0mWmGVWDOGitVtrW3cfghD"
         }
       },
       "needs_reconciliation": false
