@@ -12610,6 +12610,37 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23304703": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23304703,
+          "title": "Andanzas ",
+          "url": "https://spinitron.com/KPOO/pl/23304703/Andanzas",
+          "start_time": "2026-11-07T15:00:00-0800",
+          "end_time": "2026-11-07T16:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0GjCb8hY9KtxMg4IeFNn7s",
+          "spotify:track:6Plh4livsNnCKQ96n5Kp43",
+          "spotify:track:3XWNLQpghRRSlGOiKKlfjH",
+          "spotify:track:64CyNsrWGVhXZPLePYpnYz",
+          "spotify:track:0t0OGxDxq7ew0YV0WRxCbZ",
+          "spotify:track:54boAh4kcGhKk3A2lJoH4n",
+          "spotify:track:3aecPMwwiwwVbSVjyqz1HH",
+          "spotify:track:0bFIea8AwbNHO7gzBrNsq7",
+          "spotify:track:3CiPpk67d4ouVERIpqPfh9",
+          "spotify:track:2NrmiC7IpTXJrWPvueZMzX"
+        ],
+        "listing": {
+          "name": "KPOO - Andanzas - 2026-11-07",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
