@@ -7772,7 +7772,7 @@
           "start_time": "2026-11-07T18:30:00-0800",
           "end_time": "2026-11-07T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3HjFgENxycPUIh1bLBI97V",
         "desired_uris": [
@@ -7805,8 +7805,104 @@
           "spotify:track:6ddszDHOGF5F9NhBGbrIOl"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T21:00:00-0800",
+          "broadcast_start": "2026-11-07T18:30:00-0800",
+          "imported_at": "2026-11-08T13:04:18.356817205+00:00",
+          "last_updated": "2026-11-08 13:04 UTC",
           "name": "KALX - Pink Entries - 2026-11-07",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Angelo Badalamenti",
+                "Kid Moxie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27330e426008f24977cfa3c39dd",
+              "name": "Mysteries of Love"
+            },
+            {
+              "artists": [
+                "Joe Strummer",
+                "The Mescaleros"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d75b1543927f0443ae38820e",
+              "name": "Redemption Song"
+            },
+            {
+              "artists": [
+                "Jefferson Airplane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733039b37473adcbcbf0c5a5b5",
+              "name": "Volunteers"
+            },
+            {
+              "artists": [
+                "Love and Rockets"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ecf6d3a7a229704e2eda4af1",
+              "name": "Kundalini Express"
+            },
+            {
+              "artists": [
+                "Anna Calvi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273060d38e745bae97531e187eb",
+              "name": "Blackout"
+            },
+            {
+              "artists": [
+                "Arlo Parks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732484ff82a37d8d94d21a0f4b",
+              "name": "Nightswimming"
+            },
+            {
+              "artists": [
+                "Janelle Monáe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273120a1366324c2ae1728e17e5",
+              "name": "Dance or Die (feat. Saul Williams)"
+            },
+            {
+              "artists": [
+                "Lizzo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27364824fdd18eb99ef46095b82",
+              "name": "Like a Girl"
+            },
+            {
+              "artists": [
+                "Charli xcx"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f88b43d15fd14e9525338b59",
+              "name": "360"
+            },
+            {
+              "artists": [
+                "Ana Tijoux",
+                "Dj Dacel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27357b21cbf7eac805988f0b97a",
+              "name": "APAGON"
+            },
+            {
+              "artists": [
+                "Ninajirachi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733b9b742c5c525af6e6767d87",
+              "name": "Battery Death"
+            },
+            {
+              "artists": [
+                "Bella Hayes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737e24578a39161afdbe253d52",
+              "name": "Sweet & Slow"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23303044/Pink-Entries",
+          "station": "KALX",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/3HjFgENxycPUIh1bLBI97V"
         }
       },
       "needs_reconciliation": false
