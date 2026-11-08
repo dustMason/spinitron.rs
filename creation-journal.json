@@ -8491,6 +8491,30 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23305303": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23305303,
+          "title": "Film Close Ups",
+          "url": "https://spinitron.com/KALX/pl/23305303/Film-Close-Ups",
+          "start_time": "2026-11-07T17:30:00-0800",
+          "end_time": "2026-11-07T18:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5yIscg6bbcmXqPpwc5Ky1W",
+          "spotify:track:7q8PDTNnWO6SQuxmazUF45",
+          "spotify:track:2oANFmwGY7hxC3W1SqfcbE"
+        ],
+        "listing": {
+          "name": "KALX - Film Close Ups - 2026-11-07",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
