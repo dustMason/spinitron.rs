@@ -7632,7 +7632,7 @@
           "start_time": "2026-11-07T06:00:00-0800",
           "end_time": "2026-11-07T08:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4mWfoVl3n4kHfAA1jJ4lc9",
         "desired_uris": [
@@ -7663,8 +7663,101 @@
           "spotify:track:6h7DPrcfIkit77UgPCWjnD"
         ],
         "listing": {
+          "broadcast_end": "2026-11-07T08:00:00-0800",
+          "broadcast_start": "2026-11-07T06:00:00-0800",
+          "imported_at": "2026-11-08T13:01:02.072537760+00:00",
+          "last_updated": "2026-11-08 13:01 UTC",
           "name": "KALX - FREEFORM - 2026-11-07 6:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Booker Ervin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736cb89f3de656c4cec5d44f6a",
+              "name": "Sweet Pea - 1997 - Remaster"
+            },
+            {
+              "artists": [
+                "UNDERGROUND SPIRITUAL GAME"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27370a25ed08c83dc256bfe0b10",
+              "name": "Above Ground"
+            },
+            {
+              "artists": [
+                "The Flying Hats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273172798acb57b380de9fc5614",
+              "name": "Double Up"
+            },
+            {
+              "artists": [
+                "The Aggrolites"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320dedbb60b3e54124a0bc99b",
+              "name": "3I Atlas"
+            },
+            {
+              "artists": [
+                "The Aggrolites"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320dedbb60b3e54124a0bc99b",
+              "name": "Back Lock Tight"
+            },
+            {
+              "artists": [
+                "ACTORS"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273884d8f2329949236d8607453",
+              "name": "Bad Boys (Don't Go to Heaven)"
+            },
+            {
+              "artists": [
+                "Bow Wow Wow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27372b5c57712ff32406687f499",
+              "name": "Golly! Golly! Go Buddy!"
+            },
+            {
+              "artists": [
+                "Doug and the Slugs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273619052d5b0c0b864a5a3157c",
+              "name": "Cover of Love"
+            },
+            {
+              "artists": [
+                "Klara Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4c9254994758b20941278f7",
+              "name": "Vaknar"
+            },
+            {
+              "artists": [
+                "my bloody valentine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730222c0b380a726b620cd7e4e",
+              "name": "No More Sorry"
+            },
+            {
+              "artists": [
+                "Agnes Obel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c34bf09fe2f2369180efd46",
+              "name": "Tangerine"
+            },
+            {
+              "artists": [
+                "Hermanos Gutiérrez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f3a9cedd778597ac88c73e5",
+              "name": "Los Ojos Del Cóndor"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23302751/FREEFORM",
+          "station": "KALX",
+          "track_count": 25,
+          "url": "https://open.spotify.com/playlist/4mWfoVl3n4kHfAA1jJ4lc9"
         }
       },
       "needs_reconciliation": false
