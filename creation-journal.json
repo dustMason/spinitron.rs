@@ -9307,6 +9307,57 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23309125": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23309125,
+          "title": "Maltodextrin's Fantastic Contraption",
+          "url": "https://spinitron.com/KALX/pl/23309125/Maltodextrin-s-Fantastic-Contraption",
+          "start_time": "2026-11-08T12:00:00-0800",
+          "end_time": "2026-11-08T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1rCBHqzOBXKgBjlOJJUh3f",
+          "spotify:track:128TanrD0sY8Y6T5MO6Udd",
+          "spotify:track:5q67fsJhw2zCQ69MVFukPs",
+          "spotify:track:5Tjcs1bm7WdyHsV8HqP76B",
+          "spotify:track:1Bc6P1xvMclkRAVLngUSOb",
+          "spotify:track:0HDWqbquOe8KnuwjtGpqBj",
+          "spotify:track:6iFqrbfnFSGzmVJRiivDR3",
+          "spotify:track:52bFEZWiTDB1RLXxTFbshc",
+          "spotify:track:2lgz2YhebbFovaYw5obMzZ",
+          "spotify:track:3Rbdqz5Ow9hkjpWsbvaj9h",
+          "spotify:track:7Izv79UWDt0Vtn5nisAObO",
+          "spotify:track:6e9Q5F0WH78NVcOM2B4OhH",
+          "spotify:track:3deWAzuynhfIq8dBvlFMla",
+          "spotify:track:6OQlq7DpVZQB6rVRZMGKRV",
+          "spotify:track:6WuadFTrB2xGnAUUNvboDU",
+          "spotify:track:7ppyui0vRULhvlSp0hMCpw",
+          "spotify:track:2hxS3aq7DXfWAy412037dK",
+          "spotify:track:07YMY7bJEcXGp9N7TEipY3",
+          "spotify:track:0Ftil0fEuaimZKkMjKa0cd",
+          "spotify:track:18iEt4N9EHtSG1I1cgeQmX",
+          "spotify:track:5fla2ejHLTYCdgwNs2DuEU",
+          "spotify:track:0x3bKSLBHnMgG5u4WhZbLS",
+          "spotify:track:6Tn6jxPXJlUPslBQFrU6Ai",
+          "spotify:track:4GxR7vjoRWiQZFqVDRb30D",
+          "spotify:track:78mFnroPMxrjKpTP3SOEpF",
+          "spotify:track:1Uf5lCYKoIigcA6Spasbch",
+          "spotify:track:2tLZ1ejqMGcMwGtYkTk466",
+          "spotify:track:56CEUZxGwtfB0g2RgoCySf",
+          "spotify:track:77Ndv39YbD78Q3WO8Xz0cB",
+          "spotify:track:1PG8c4tOAX7AuUAxnNmQH3"
+        ],
+        "listing": {
+          "name": "KALX - Maltodextrin's Fantastic Contraption - 2026-11-08",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
