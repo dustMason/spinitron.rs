@@ -16106,7 +16106,7 @@
           "start_time": "2026-11-08T12:00:00-0800",
           "end_time": "2026-11-08T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4vb6JKABpQF0YKjz9M220N",
         "desired_uris": [
@@ -16146,8 +16146,107 @@
           "spotify:track:5IDwiSA5RALU1QQ14Xth2c"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T15:00:00-0800",
+          "broadcast_start": "2026-11-08T12:00:00-0800",
+          "imported_at": "2026-11-09T15:30:47.251062606+00:00",
+          "last_updated": "2026-11-09 15:30 UTC",
           "name": "KPOO - Hip Hop For The People - 2026-11-08",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Loove Moore"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe874f9dfa01c1c8c5a975e2",
+              "name": "IM FROM THE YADADA"
+            },
+            {
+              "artists": [
+                "Wagon Cookin'",
+                "Melina Jones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273606abb61138cb58b636cccd8",
+              "name": "Nicest Aligned (feat. Melina Jones)"
+            },
+            {
+              "artists": [
+                "Otayo Dubb",
+                "Elcamino"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e9935833c2bbd21420d9c12",
+              "name": "Ol School"
+            },
+            {
+              "artists": [
+                "Otayo Dubb",
+                "Bambu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e9935833c2bbd21420d9c12",
+              "name": "Gotta Eat"
+            },
+            {
+              "artists": [
+                "Pep Love"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27369ac6b6ca88a4ff47dfe4ae6",
+              "name": "Inner Conflict"
+            },
+            {
+              "artists": [
+                "Prozack Turner",
+                "Richie Cunning"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27333edd125ed1f2ea48bc1a5f4",
+              "name": "Gold Chain"
+            },
+            {
+              "artists": [
+                "Liyah Dalani"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee1060715ed5add69117d35f",
+              "name": "Stargaze"
+            },
+            {
+              "artists": [
+                "Northcliffe Records"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730bfb155668358cfcd249321f",
+              "name": "Limits (Jody4 feat King Styne)"
+            },
+            {
+              "artists": [
+                "Rocky Rivera"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730720c7a5abdc8053ffd66b97",
+              "name": "Find My Way"
+            },
+            {
+              "artists": [
+                "Xynic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739dddd74af2908fba7393ea27",
+              "name": "Shmoke"
+            },
+            {
+              "artists": [
+                "TREAD SOUNDS CREW"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27385d8de10af100577eb5b9d93",
+              "name": "listen up"
+            },
+            {
+              "artists": [
+                "Seneca",
+                "Cav3",
+                "Joe Con"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d0fd4af2a512cd8773b9ab98",
+              "name": "Monopoly"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23309175/Hip-Hop-For-The-People",
+          "station": "KPOO",
+          "track_count": 34,
+          "url": "https://open.spotify.com/playlist/4vb6JKABpQF0YKjz9M220N"
         }
       },
       "needs_reconciliation": false
