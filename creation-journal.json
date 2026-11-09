@@ -16250,6 +16250,64 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23309910": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23309910,
+          "title": "Weekend Soul sounds",
+          "url": "https://spinitron.com/KPOO/pl/23309910/Weekend-Soul-sounds",
+          "start_time": "2026-11-08T15:00:00-0800",
+          "end_time": "2026-11-08T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0RqjLvqgoncsPR3ahEPQES",
+          "spotify:track:5uuJruktM9fMdN9Va0DUMl",
+          "spotify:track:2lNVUJIRhWgCMjxD49txL2",
+          "spotify:track:1e74PEk5pur3ts5YmjsQ83",
+          "spotify:track:0PQFPcSK1gnBGlbV4CZCG0",
+          "spotify:track:2BY7ALEWdloFHgQZG6VMLA",
+          "spotify:track:4PLDCPnxz4duALtJwdlqE9",
+          "spotify:track:79UiJ3Zbtv8tOcTFosyD8Z",
+          "spotify:track:0DcrhZ12WcCqruCs8ibXSf",
+          "spotify:track:29LIf2FsVAVDmVK6UxzTvn",
+          "spotify:track:3gsCAGsWr6pUm1Vy7CPPob",
+          "spotify:track:7MF7QAodbGzNYav5ZfIhAY",
+          "spotify:track:0n2pjCIMKwHSXoYfEbYMfX",
+          "spotify:track:0GjEhVFGZW8afUYGChu3Rr",
+          "spotify:track:1k1Bqnv2R0uJXQN4u6LKYt",
+          "spotify:track:0rwmxAht1fk7QuSiCmIhGV",
+          "spotify:track:5HQEmiV2lKnSO6qa2fsR7x",
+          "spotify:track:5dFvprlP5JS7gxeaMhMOWS",
+          "spotify:track:0KZodeWxqxd88F9wY1cqgs",
+          "spotify:track:0Dak6Pn4FQk6FhxnxlLXfv",
+          "spotify:track:1qjrYozGqc7upUgfN776lZ",
+          "spotify:track:5Wj1rJnCLpMHdLaxsFtJLs",
+          "spotify:track:4yFfBbqzaLasA4QCX0vJJT",
+          "spotify:track:05zCw24BdvZKGeC5NXowVe",
+          "spotify:track:0enoIVYtLAjaPmjBN6Nvs0",
+          "spotify:track:12q3V8ShACq2PSWINMc2rC",
+          "spotify:track:6iXQrhhgBisdfvS34EMTZ3",
+          "spotify:track:5tcR6nVpY1JRDyDcK0K60f",
+          "spotify:track:4q3G4EHtbDH8In7A5u1xhx",
+          "spotify:track:1v1PV2wERHiMPesMWX0qmO",
+          "spotify:track:2DnJjbjNTV9Nd5NOa1KGba",
+          "spotify:track:4f3u4Oy0JqJRIhMmTqRcxj",
+          "spotify:track:2LawezPeJhN4AWuSB0GtAU",
+          "spotify:track:23hrvdvkIi1X1voQG2bJH9",
+          "spotify:track:1jlQVF87LtsXujRwtIMGU3",
+          "spotify:track:7Bz8yww6UMbTgTVLG6zbI4",
+          "spotify:track:5VJjhHyG8NZ5xdgG6uTb3P"
+        ],
+        "listing": {
+          "name": "KPOO - Weekend Soul sounds - 2026-11-08",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
