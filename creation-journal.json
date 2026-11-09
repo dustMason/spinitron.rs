@@ -68,7 +68,7 @@
           "start_time": "2026-11-09T00:00:00-0800",
           "end_time": "2026-11-09T01:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1lBR5TOgyGhAkrznhPTeeg",
         "desired_uris": [
@@ -87,8 +87,107 @@
           "spotify:track:5KapB9KJnRsZrprzIAXycW"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T01:00:00-0800",
+          "broadcast_start": "2026-11-09T00:00:00-0800",
+          "imported_at": "2026-11-09T15:28:07.677233990+00:00",
+          "last_updated": "2026-11-09 15:28 UTC",
           "name": "KALX - Yo! KALX Raps - 2026-11-09",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "DIS N' DAT"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273abc066af48eee5591d0b6534",
+              "name": "Party"
+            },
+            {
+              "artists": [
+                "B-Rock & The Bizz"
+              ],
+              "image_url": "https://i.scdn.co/image/d8e7ace0aa84893ff7b0392b91290f111e585548",
+              "name": "MyBabyDaddy"
+            },
+            {
+              "artists": [
+                "Aceyalone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733b468e9989a41c4142dd4a68",
+              "name": "Annalillia"
+            },
+            {
+              "artists": [
+                "Rakim"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eb88083b1a63ce56619a9cf2",
+              "name": "Flow Forever - Album Version (Edited)"
+            },
+            {
+              "artists": [
+                "De La Soul",
+                "Snoop Dogg"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736e977ebdbdc079ce6bb6d096",
+              "name": "Pain"
+            },
+            {
+              "artists": [
+                "Paul Nice",
+                "A.G.",
+                "Gennessee",
+                "Babu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27339e9dd64e32a25d10819033d",
+              "name": "Definition of Nice (feat. Ag, DJ Babu, And Gennessee)"
+            },
+            {
+              "artists": [
+                "Big L"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734813e605e023db122f0adf5e",
+              "name": "Ebonics (Criminal Slang)"
+            },
+            {
+              "artists": [
+                "Janet Jackson",
+                "Armand Van Helden for X-Mix Productions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273724724a69063c116c820fb23",
+              "name": "Got 'Til It's Gone - Armand Van Helden Bonus Beats"
+            },
+            {
+              "artists": [
+                "Dilated Peoples"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f1302519815933be3d085d9",
+              "name": "Trade Money"
+            },
+            {
+              "artists": [
+                "Aesop Rock"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b2d96f72ee674876cef7de09",
+              "name": "6B Panorama"
+            },
+            {
+              "artists": [
+                "Too $hort",
+                "Parliament Funkadelic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27339abdab31997fcb39b773670",
+              "name": "Gettin' It (feat. Parliament Funkadelic)"
+            },
+            {
+              "artists": [
+                "Blue Iverson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec08f8c5b00b4bd3ad740f8a",
+              "name": "Soulseek"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23178298/Yo-KALX-Raps",
+          "station": "KALX",
+          "track_count": 13,
+          "url": "https://open.spotify.com/playlist/1lBR5TOgyGhAkrznhPTeeg"
         }
       },
       "needs_reconciliation": false
