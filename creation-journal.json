@@ -58,6 +58,40 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23178298": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23178298,
+          "title": "Yo! KALX Raps",
+          "url": "https://spinitron.com/KALX/pl/23178298/Yo-KALX-Raps",
+          "start_time": "2026-11-09T00:00:00-0800",
+          "end_time": "2026-11-09T01:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2LcpPjyGkMb3Hrgya26uuI",
+          "spotify:track:3sFOja0FKurzewYUvySXRT",
+          "spotify:track:5RvZGtwXV40ywtE2hCBVPa",
+          "spotify:track:54P0fsto5chpGA3ieXQ63s",
+          "spotify:track:6eLSYGoJhXsR6ZhQEtTC3o",
+          "spotify:track:1IgouDTq14w58fUt7xCYGC",
+          "spotify:track:7tdVuvf3bFIWADewXfTtK5",
+          "spotify:track:2ObUgA2UjhmdNblcqDlwrS",
+          "spotify:track:0ujyoFs9CGftA1QOkQIy1o",
+          "spotify:track:2OZ4i8BQ56PDh9ZxRjQfJC",
+          "spotify:track:5K5dQsYdSdo2LKdepxbYAd",
+          "spotify:track:4y3milmiHjMEX3XwOSirB2",
+          "spotify:track:5KapB9KJnRsZrprzIAXycW"
+        ],
+        "listing": {
+          "name": "KALX - Yo! KALX Raps - 2026-11-09",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23242322": {
       "entry": {
         "station": "KALX",
