@@ -9885,7 +9885,7 @@
           "start_time": "2026-11-08T21:00:00-0800",
           "end_time": "2026-11-09T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "30tP0SPsp03CdmVYxjyEzF",
         "desired_uris": [
@@ -9926,8 +9926,103 @@
           "spotify:track:6AC2VDhh56DlkOMYjYs4Tg"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T00:00:00-0800",
+          "broadcast_start": "2026-11-08T21:00:00-0800",
+          "imported_at": "2026-11-09T15:29:27.531966986+00:00",
+          "last_updated": "2026-11-09 15:29 UTC",
           "name": "KALX - Office Hours - 2026-11-08",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Karen y Los Remedios"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f1bd3c1e7cec5e0feedf0602",
+              "name": "Satanás"
+            },
+            {
+              "artists": [
+                "Jimmy Somerville"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b70e13dad508127f771f2fff",
+              "name": "Eve"
+            },
+            {
+              "artists": [
+                "Adrian Quesada",
+                "Angelica Garcia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27323cb89003b8fce1234a4ac2a",
+              "name": "Ídolo"
+            },
+            {
+              "artists": [
+                "Lana Del Rey"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736b55c2ee78c5a47393ff8e7a",
+              "name": "West Coast"
+            },
+            {
+              "artists": [
+                "Bandwave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273517b01fccce9eb290b8bd220",
+              "name": "Pleasure"
+            },
+            {
+              "artists": [
+                "Steve Cropper"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27380b3ea64b9f7dc7a6b457638",
+              "name": "With A Little Help From My Friends"
+            },
+            {
+              "artists": [
+                "Ted Lucas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5f6592d8e30ab732004c55d",
+              "name": "It Is So Nice To Get Stoned"
+            },
+            {
+              "artists": [
+                "Songs: Ohia",
+                "Jason Molina"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27389b54a2385458cbe68bc35c6",
+              "name": "I've Been Riding With the Ghost"
+            },
+            {
+              "artists": [
+                "Bijoux Cone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27344be42cd6dc6199620b571f4",
+              "name": "Don't"
+            },
+            {
+              "artists": [
+                "ACTORS"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273884d8f2329949236d8607453",
+              "name": "Bad Boys (Don't Go to Heaven)"
+            },
+            {
+              "artists": [
+                "Lllyric?"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27397cbca5861221114c814e209",
+              "name": "A Girl Is A Gun"
+            },
+            {
+              "artists": [
+                "Pelados"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739b7c54ad0e208c157b85d03d",
+              "name": "mommy empresta o carro"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23311298/Office-Hours",
+          "station": "KALX",
+          "track_count": 35,
+          "url": "https://open.spotify.com/playlist/30tP0SPsp03CdmVYxjyEzF"
         }
       },
       "needs_reconciliation": false
