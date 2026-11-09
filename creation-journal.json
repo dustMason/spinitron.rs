@@ -8764,7 +8764,7 @@
           "start_time": "2026-11-08T03:00:00-0800",
           "end_time": "2026-11-08T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0ia1FiECpkKPCTmnxHfl6f",
         "desired_uris": [
@@ -8809,8 +8809,102 @@
           "spotify:track:2KF39N1u2ObKwLi1XgINcx"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T06:00:00-0800",
+          "broadcast_start": "2026-11-08T03:00:00-0800",
+          "imported_at": "2026-11-09T15:23:28.626956187+00:00",
+          "last_updated": "2026-11-09 15:23 UTC",
           "name": "KALX - FREEFORM - 2026-11-08",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "upsammy",
+                "Valentina Magaletti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27338159d4e18e0242c157241a0",
+              "name": "It Comes To An End"
+            },
+            {
+              "artists": [
+                "Velocity Girl"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27376ab88e3874371740ac22dd6",
+              "name": "Clock"
+            },
+            {
+              "artists": [
+                "The Weather Station"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b21d797800e56bcdbee20476",
+              "name": "Kept It All to Myself"
+            },
+            {
+              "artists": [
+                "Tortoise"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0ab8d3ff9f76a2aab54ebfa",
+              "name": "TNT"
+            },
+            {
+              "artists": [
+                "Superpitcher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273681ed14028c0fb38b4d09308",
+              "name": "People"
+            },
+            {
+              "artists": [
+                "Allah-Las"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fe822f5868d8a310d28d4e0",
+              "name": "Pasiphaé"
+            },
+            {
+              "artists": [
+                "Sweeping Promises"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731202a359bc1c2774bc1eb704",
+              "name": "Shooting Shadows"
+            },
+            {
+              "artists": [
+                "Ibibio Sound Machine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738377ac5fbafebad9549413c8",
+              "name": "Burning in Lagos"
+            },
+            {
+              "artists": [
+                "St. Vincent"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c5819ccc3fbcd68e3fe0ebd2",
+              "name": "Masseduction"
+            },
+            {
+              "artists": [
+                "Venetian Snares"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27386ccebf4d7d2e4a5895cd988",
+              "name": "Hajnal"
+            },
+            {
+              "artists": [
+                "Southern Culture on the Skids"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec5279e69acf743f902f4509",
+              "name": "Funnel of Love"
+            },
+            {
+              "artists": [
+                "Southern Culture on the Skids"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733f37fedf6575ce1e9a087961",
+              "name": "Zombified"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23307246/FREEFORM",
+          "station": "KALX",
+          "track_count": 39,
+          "url": "https://open.spotify.com/playlist/0ia1FiECpkKPCTmnxHfl6f"
         }
       },
       "needs_reconciliation": false
