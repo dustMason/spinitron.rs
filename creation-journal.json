@@ -9178,7 +9178,7 @@
           "start_time": "2026-11-08T10:00:00-0800",
           "end_time": "2026-11-08T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2e2ySMj2ravE5WcjF1QeZ5",
         "desired_uris": [
@@ -9208,8 +9208,101 @@
           "spotify:track:4TuCBGo0v5z3RvsJtUVWTK"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T12:00:00-0800",
+          "broadcast_start": "2026-11-08T10:00:00-0800",
+          "imported_at": "2026-11-09T15:26:08.233749343+00:00",
+          "last_updated": "2026-11-09 15:26 UTC",
           "name": "KALX - FREEFORM - 2026-11-08 10:00am -0800 [KALX:23308798]",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "American Football"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f9c6c2c9e047a2963aae3565",
+              "name": "Honestly?"
+            },
+            {
+              "artists": [
+                "The Jesus and Mary Chain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273756f4c523014a3068937e83a",
+              "name": "Wish I Could"
+            },
+            {
+              "artists": [
+                "TRÍADA"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e5c311d72ee73e4ca16dc716",
+              "name": "Un Veneno"
+            },
+            {
+              "artists": [
+                "The American Analog Set"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27399615cbfd790a2860d67bd85",
+              "name": "Magnificent Seventies"
+            },
+            {
+              "artists": [
+                "Alvvays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c026df4196939fd87a2dc6d8",
+              "name": "Next of Kin"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "One Man"
+            },
+            {
+              "artists": [
+                "Kristin Hersh"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739393ff5495048605ce1daee6",
+              "name": "Dark Eyed Junco"
+            },
+            {
+              "artists": [
+                "MX LONELY"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27328c095e2848e066aec335837",
+              "name": "Shape Of An Angel"
+            },
+            {
+              "artists": [
+                "Francis of Delirium"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273978ddc98145b2d3c5ac640d3",
+              "name": "Sucker Punch"
+            },
+            {
+              "artists": [
+                "Mitski"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e90db8983ebd43b776694179",
+              "name": "Francis Forever"
+            },
+            {
+              "artists": [
+                "Julee Cruise"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6212adb4de364a1c633582a",
+              "name": "Mysteries Of Love"
+            },
+            {
+              "artists": [
+                "Lau Ro"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27303257114b4009621243355ad",
+              "name": "Mito do Fim"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23308798/FREEFORM",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/2e2ySMj2ravE5WcjF1QeZ5"
         }
       },
       "needs_reconciliation": false
