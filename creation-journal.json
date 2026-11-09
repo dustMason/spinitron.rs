@@ -8988,6 +8988,52 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23308127": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23308127,
+          "title": "Off the Dome",
+          "url": "https://spinitron.com/KALX/pl/23308127/Off-the-Dome",
+          "start_time": "2026-11-08T08:00:00-0800",
+          "end_time": "2026-11-08T10:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4dLlWnoItyU3FmgGNLSiSR",
+          "spotify:track:65WjfiXt497MwwYBj8piAR",
+          "spotify:track:2NS6hrdXcZhn8gngFNYzpa",
+          "spotify:track:7zbCMkW3u8u0JdQlrBbcdV",
+          "spotify:track:0Vo6lTSLTKovIgeRcwdhRu",
+          "spotify:track:0P9seQkC9SPt7gapdEHEFk",
+          "spotify:track:0m3AQncb4gLkb1VYUn2Cks",
+          "spotify:track:46B7rq3gnfMVGWuQM1zIHy",
+          "spotify:track:7sp3k8WSl4RXTFyar0bSL7",
+          "spotify:track:7fbAaS7adpPr43urP0stLk",
+          "spotify:track:2TqCFVvJlre0EFmrOFOQt9",
+          "spotify:track:2IOj6y0FKzTolT93EpjAVl",
+          "spotify:track:4dCKeG3vvagf47b9xiqAME",
+          "spotify:track:61ZtsKvM5TO8Y5i9EIwCBz",
+          "spotify:track:77cxdNXjwX5F1tjcDlsmMr",
+          "spotify:track:72vS97B8BkskLPlz7fAFk8",
+          "spotify:track:2FKjb8WJcB6iwuBROiP8x6",
+          "spotify:track:1Flo00mGdXRdRB9Fotbjb4",
+          "spotify:track:42F9Ja2gGXfksahdMVHinI",
+          "spotify:track:5mHVLwmYNSR0rc71ZOnV0N",
+          "spotify:track:62239NWnmxDvMTmlHydqU0",
+          "spotify:track:4I2N2AOuElA94pY65SIEzZ",
+          "spotify:track:3YViNy3i8DVARuKK3LKQKb",
+          "spotify:track:6yWuzRcmkXNnAVA6doP2SK",
+          "spotify:track:5Hl6ocIzwK3R5OSPA4VQSJ"
+        ],
+        "listing": {
+          "name": "KALX - Off the Dome - 2026-11-08",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
