@@ -9139,15 +9139,31 @@
           "start_time": "2026-11-08T10:00:00-0800",
           "end_time": "2026-11-08T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1uDw20e3G3NZaD4evTDumQ",
         "desired_uris": [
           "spotify:track:0QNdEegC3Q9AVoAMmd8MEL"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T12:00:00-0800",
+          "broadcast_start": "2026-11-08T10:00:00-0800",
+          "imported_at": "2026-11-09T15:25:28.572940851+00:00",
+          "last_updated": "2026-11-09 15:25 UTC",
           "name": "KALX - FREEFORM - 2026-11-08 10:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "American Football"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731e734783a00588087331a0b4",
+              "name": "Honestly?"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23308700/FREEFORM",
+          "station": "KALX",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/1uDw20e3G3NZaD4evTDumQ"
         }
       },
       "needs_reconciliation": false
