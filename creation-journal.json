@@ -8919,7 +8919,7 @@
           "start_time": "2026-11-08T06:00:00-0800",
           "end_time": "2026-11-08T08:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6CwKjtCMJ56lP7JwnKL9n5",
         "desired_uris": [
@@ -8931,8 +8931,59 @@
           "spotify:track:0b71S13IdjsBYU3pijQOZ1"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T08:00:00-0800",
+          "broadcast_start": "2026-11-08T06:00:00-0800",
+          "imported_at": "2026-11-09T15:24:08.277300788+00:00",
+          "last_updated": "2026-11-09 15:24 UTC",
           "name": "KALX - FREEFORM - 2026-11-08 6:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Dead Can Dance"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d71ea31cd26f3d9ad8f9476",
+              "name": "Black Sun"
+            },
+            {
+              "artists": [
+                "Downtown Boys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308ed3c7432ca4c2b0fc1e5f9",
+              "name": "You're a Ghost"
+            },
+            {
+              "artists": [
+                "Marianne Faithfull"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27349d4042500197eb13970854f",
+              "name": "Ghost Dance"
+            },
+            {
+              "artists": [
+                "Barnt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735ea9f767454f6c9f8a87e2ed",
+              "name": "Lack of worldliness"
+            },
+            {
+              "artists": [
+                "Vincent"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e2e35afcd17e4c446b3257f",
+              "name": "The Plan"
+            },
+            {
+              "artists": [
+                "Bazooka"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d1674c05c92d0b10a0832b4",
+              "name": "Frankenstein"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23307892/FREEFORM",
+          "station": "KALX",
+          "track_count": 6,
+          "url": "https://open.spotify.com/playlist/6CwKjtCMJ56lP7JwnKL9n5"
         }
       },
       "needs_reconciliation": false
