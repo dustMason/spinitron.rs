@@ -16743,7 +16743,7 @@
           "start_time": "2026-11-09T02:00:00-0800",
           "end_time": "2026-11-09T05:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0v4nh0N4T0BehctcwMC6kB",
         "desired_uris": [
@@ -16799,8 +16799,102 @@
           "spotify:track:5zjPJFoCo4fpdCXEzrE30T"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T05:00:00-0800",
+          "broadcast_start": "2026-11-09T02:00:00-0800",
+          "imported_at": "2026-11-09T15:33:31.538989357+00:00",
+          "last_updated": "2026-11-09 15:33 UTC",
           "name": "KPOO - Music Variety - 2026-11-09",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Otis Redding"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734fe0f6e0b5eada67731838a2",
+              "name": "Try A Little Tenderness [London]"
+            },
+            {
+              "artists": [
+                "The Uniques",
+                "The Caltone Studio Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730a07799b57eb9db7cce0484d",
+              "name": "Do Me Good"
+            },
+            {
+              "artists": [
+                "Otis Redding"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f89245f8778bc6b8e7b63078",
+              "name": "I’ve Been Loving You Too Long - Live / Set 2 / Friday, April 8, 1966"
+            },
+            {
+              "artists": [
+                "Dionne Warwick"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732370e989004163dfae73952d",
+              "name": "Hasbrook Heights"
+            },
+            {
+              "artists": [
+                "Betty Everett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e54973d07a9ab53e13959263",
+              "name": "Getting Mighty Crowded"
+            },
+            {
+              "artists": [
+                "The Volumes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b1edc0f9db649d98341bbcab",
+              "name": "I Love You - Gary"
+            },
+            {
+              "artists": [
+                "The Showmen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737a19f3b1c8c56edb3cf436dc",
+              "name": "The Wrong Girl"
+            },
+            {
+              "artists": [
+                "The Primettes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c0037dca31691d82609b6f22",
+              "name": "Pretty Baby - Mono Single Version"
+            },
+            {
+              "artists": [
+                "Erma Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27398d2785a2b17a1f9b0b8d2cb",
+              "name": "Piece of My Heart"
+            },
+            {
+              "artists": [
+                "Bobby Hebb"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273104dd939c10a2ef4fde1f1df",
+              "name": "Love, Love, Love"
+            },
+            {
+              "artists": [
+                "Tony Clarke"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735eb34a6967c1dee028e76a4d",
+              "name": "Landslide"
+            },
+            {
+              "artists": [
+                "Dana Valery"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732b48f8a6d1e432214c3d213c",
+              "name": "You Don't Know Where Your Interest Lies - Single Version"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23312334/Music-Variety",
+          "station": "KPOO",
+          "track_count": 50,
+          "url": "https://open.spotify.com/playlist/0v4nh0N4T0BehctcwMC6kB"
         }
       },
       "needs_reconciliation": false
