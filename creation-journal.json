@@ -15955,7 +15955,7 @@
           "start_time": "2026-11-08T02:00:00-0800",
           "end_time": "2026-11-08T05:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3bmYOoOUZ8kmG8hej1xEmP",
         "desired_uris": [
@@ -15996,8 +15996,102 @@
           "spotify:track:79XFwU18CHfKGCuqtJduIH"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T05:00:00-0800",
+          "broadcast_start": "2026-11-08T02:00:00-0800",
+          "imported_at": "2026-11-09T15:30:07.653847947+00:00",
+          "last_updated": "2026-11-09 15:30 UTC",
           "name": "KPOO - BLUES TIL SUNRISE - 2026-11-08",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "R. Kelly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f06ed757791f7aa92ffa254b",
+              "name": "Feelin' Single"
+            },
+            {
+              "artists": [
+                "Cameo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27366b0c67292a1a899e48b87a2",
+              "name": "Pretty Girls"
+            },
+            {
+              "artists": [
+                "Bobby Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27374b2cbd097790fc24e2af982",
+              "name": "That's The Way Love Is - Single Version"
+            },
+            {
+              "artists": [
+                "Rene & Angela"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273800774df7bd240a3f0937092",
+              "name": "I'll Be Good - 12\" Mix"
+            },
+            {
+              "artists": [
+                "Pebbles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b57e22593e77a4578d12e19",
+              "name": "Say A Prayer For Me"
+            },
+            {
+              "artists": [
+                "Jermaine Jackson",
+                "Michael Jackson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bd4d1a9adfb6d6fe515a8118",
+              "name": "Tell Me I'm Not Dreaming (Too Good to Be True) (with Michael Jackson)"
+            },
+            {
+              "artists": [
+                "Xscape"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27311484556cede4a9eda744e4a",
+              "name": "Do You Want To"
+            },
+            {
+              "artists": [
+                "Alfonzo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736b99c11e4bb49a4fc68a8eaa",
+              "name": "Girl, You Are The One"
+            },
+            {
+              "artists": [
+                "Sade"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735e25e034e25258b356774c79",
+              "name": "Smooth Operator - Single Version"
+            },
+            {
+              "artists": [
+                "Isaac Hayes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733e3922177a338f2164580cac",
+              "name": "Hung Up On My Baby"
+            },
+            {
+              "artists": [
+                "Whitney Houston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27396a7cfeb4684f97e41135b79",
+              "name": "Saving All My Love for You"
+            },
+            {
+              "artists": [
+                "Kashif"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273777db10bcdfa8e8164cbfa9e",
+              "name": "Baby Don't Break Your Baby's Heart - Digitally Remastered 1998"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23307068/BLUES-TIL-SUNRISE",
+          "station": "KPOO",
+          "track_count": 35,
+          "url": "https://open.spotify.com/playlist/3bmYOoOUZ8kmG8hej1xEmP"
         }
       },
       "needs_reconciliation": false
