@@ -8998,7 +8998,7 @@
           "start_time": "2026-11-08T08:00:00-0800",
           "end_time": "2026-11-08T10:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2bu8mcHF9Ne5oYaGih9Rmn",
         "desired_uris": [
@@ -9029,8 +9029,102 @@
           "spotify:track:5Hl6ocIzwK3R5OSPA4VQSJ"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T10:00:00-0800",
+          "broadcast_start": "2026-11-08T08:00:00-0800",
+          "imported_at": "2026-11-09T15:24:48.948237317+00:00",
+          "last_updated": "2026-11-09 15:24 UTC",
           "name": "KALX - Off the Dome - 2026-11-08",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "A Produce"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27385aee66feb6c732c63c0493a",
+              "name": "It Comes In Waves - Extended"
+            },
+            {
+              "artists": [
+                "Juha Mäki-Patola"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f3786488c330b006ca1a5fc1",
+              "name": "Moment 1"
+            },
+            {
+              "artists": [
+                "A Produce"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ddcf94e5c257723b9653b959",
+              "name": "The Far Shore"
+            },
+            {
+              "artists": [
+                "Pan-American"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273acbc40696ad4eb8b04172aa8",
+              "name": "Golden Gate, Silver City"
+            },
+            {
+              "artists": [
+                "Gigi Masin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27301f282bbb221e09ee67fa8dc",
+              "name": "Bed on Mars"
+            },
+            {
+              "artists": [
+                "Klara Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4c9254994758b20941278f7",
+              "name": "Ta Min Hand"
+            },
+            {
+              "artists": [
+                "Gazing Into Space"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa2a1c70d1200b36a18d347b",
+              "name": "Across Valleys Filled with Water"
+            },
+            {
+              "artists": [
+                "Jóhann Jóhannsson",
+                "Alice Sara Ott"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c014b086c27054afc5482a01",
+              "name": "Linda & Walter (From \"Personal Effects\")"
+            },
+            {
+              "artists": [
+                "A Produce"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ddcf94e5c257723b9653b959",
+              "name": "Land Of A Thousand Trances"
+            },
+            {
+              "artists": [
+                "Larrison"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273558b9b38aafd9e4c33acd82f",
+              "name": "Swarm"
+            },
+            {
+              "artists": [
+                "AVA RABIAT"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735bcb57b5d5eb41cef42055b1",
+              "name": "Akt Numer Dwa"
+            },
+            {
+              "artists": [
+                "Ava Rasti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b5b265f6b33b00f872f0d40",
+              "name": "No One Knows How Wild The Wind Blows"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23308127/Off-the-Dome",
+          "station": "KALX",
+          "track_count": 25,
+          "url": "https://open.spotify.com/playlist/2bu8mcHF9Ne5oYaGih9Rmn"
         }
       },
       "needs_reconciliation": false
