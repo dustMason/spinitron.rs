@@ -16261,7 +16261,7 @@
           "start_time": "2026-11-08T15:00:00-0800",
           "end_time": "2026-11-08T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1uJ0LSRimiQEcrDCzFiazF",
         "desired_uris": [
@@ -16304,8 +16304,102 @@
           "spotify:track:5VJjhHyG8NZ5xdgG6uTb3P"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T18:00:00-0800",
+          "broadcast_start": "2026-11-08T15:00:00-0800",
+          "imported_at": "2026-11-09T15:31:27.255059980+00:00",
+          "last_updated": "2026-11-09 15:31 UTC",
           "name": "KPOO - Weekend Soul sounds - 2026-11-08",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Lighter Shade Of Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27316c64c43d760dd3a21bd0061",
+              "name": "On A Sunday Afternoon"
+            },
+            {
+              "artists": [
+                "Wild Cherry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d419ed4f1e89669ce14bd369",
+              "name": "Play That Funky Music"
+            },
+            {
+              "artists": [
+                "Frankie Valli & The Four Seasons"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cfaea6dfa9398c7f8adea199",
+              "name": "December, 1963 (Oh What a Night!)"
+            },
+            {
+              "artists": [
+                "Tower Of Power"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b8dd62ef363ac64fecac5802",
+              "name": "So Very Hard to Go - Remastered"
+            },
+            {
+              "artists": [
+                "CHIC"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273966507d369a0de6da093d5f1",
+              "name": "Good Times"
+            },
+            {
+              "artists": [
+                "Looking Glass"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d12d6d8dcffd1594123b3bd",
+              "name": "Brandy (You're a Fine Girl)"
+            },
+            {
+              "artists": [
+                "Blue Swede",
+                "Björn Skifs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731b7be99eeee6e7bffaf5ee50",
+              "name": "Hooked On A Feeling"
+            },
+            {
+              "artists": [
+                "Led Zeppelin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730b79e7da3d434a44145ae179",
+              "name": "Immigrant Song"
+            },
+            {
+              "artists": [
+                "Johnny Nash"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273702689066bc17ee67203c2bc",
+              "name": "I Can See Clearly Now - Edit"
+            },
+            {
+              "artists": [
+                "Carpenters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c84bd71d337d7c4675d73a2d",
+              "name": "We've Only Just Begun"
+            },
+            {
+              "artists": [
+                "Roberta Flack"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bc161bb58763f72fc71a3a01",
+              "name": "Killing Me Softly With His Song"
+            },
+            {
+              "artists": [
+                "Gladys Knight & The Pips"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27305eb9ae04c8a69ef2371189b",
+              "name": "Midnight Train to Georgia"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23309910/Weekend-Soul-sounds",
+          "station": "KPOO",
+          "track_count": 37,
+          "url": "https://open.spotify.com/playlist/1uJ0LSRimiQEcrDCzFiazF"
         }
       },
       "needs_reconciliation": false
