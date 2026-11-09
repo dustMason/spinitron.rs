@@ -16403,6 +16403,40 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23310815": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23310815,
+          "title": "Sounds of the City",
+          "url": "https://spinitron.com/KPOO/pl/23310815/Sounds-of-the-City",
+          "start_time": "2026-11-08T19:00:00-0800",
+          "end_time": "2026-11-08T22:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5Al4biQxtWuzwFlZWmaqyp",
+          "spotify:track:2AgeIpuXAnESWdRbF3QNui",
+          "spotify:track:0u0nEzqLtXkz4RaQrQbP0Z",
+          "spotify:track:6eZfLDInqkFsD8I7NYrO9l",
+          "spotify:track:0Hqw4h5tPL6yizgVF428PJ",
+          "spotify:track:4scWmSmVbH06ZnC74JGsMx",
+          "spotify:track:5vuO0kqbC72Q9ENLhSdUlx",
+          "spotify:track:54WMYwIf4vOM8lHmFY5WZ2",
+          "spotify:track:53DRIsstLMAlUt2DeGgq01",
+          "spotify:track:373sSIOff9QdJWPkq3NwGT",
+          "spotify:track:5jm6K9dgyQjjngty9DhdCx",
+          "spotify:track:2ehCxciRKErfHCx3pDb5zE",
+          "spotify:track:43PnuPY9gRcaBgBXqn5wK8"
+        ],
+        "listing": {
+          "name": "KPOO - Sounds of the City - 2026-11-08",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
