@@ -9463,7 +9463,7 @@
           "start_time": "2026-11-08T15:00:00-0800",
           "end_time": "2026-11-08T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3rzitcIql1xhsunTXfmFe0",
         "desired_uris": [
@@ -9495,8 +9495,101 @@
           "spotify:track:3eWB35Wu4zZ0whrBiAkyZm"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T18:00:00-0800",
+          "broadcast_start": "2026-11-08T15:00:00-0800",
+          "imported_at": "2026-11-09T15:27:27.431076711+00:00",
+          "last_updated": "2026-11-09 15:27 UTC",
           "name": "KALX - FREEFORM - 2026-11-08 3:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Holy Wave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f29f40fb43dac2c3288fac09",
+              "name": "s33.u.in/HAL"
+            },
+            {
+              "artists": [
+                "Fake Fruit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c8fec53a85f4f07a0dd10044",
+              "name": "Swing and a Miss"
+            },
+            {
+              "artists": [
+                "Angine de Poitrine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ea5142aaaa1bc63e7ec7f715",
+              "name": "Fabienk"
+            },
+            {
+              "artists": [
+                "Silver Apples"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e6bb019b738ae7c3673f3a72",
+              "name": "I Have Known Love"
+            },
+            {
+              "artists": [
+                "Angel Rada"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731e6f9a7033ca56a24fbdddc9",
+              "name": "Panico A Las 5am"
+            },
+            {
+              "artists": [
+                "Ibibio Sound Machine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738377ac5fbafebad9549413c8",
+              "name": "Concept of Love"
+            },
+            {
+              "artists": [
+                "Brown Angel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27349d9b0ca5909321cd95e00e3",
+              "name": "Dame Más"
+            },
+            {
+              "artists": [
+                "LAHORKA"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ec630b54921cc5a9df7c9d8",
+              "name": "Movimientos"
+            },
+            {
+              "artists": [
+                "Tuxedomoon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273510628832de2f1306963e4bf",
+              "name": "What Use"
+            },
+            {
+              "artists": [
+                "Edgar"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730dd35fa735bccd352ec6b205",
+              "name": "Otra Agua"
+            },
+            {
+              "artists": [
+                "Voice Farm"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27396e1ee6d9ae67b12bc868aa0",
+              "name": "Lost Adults"
+            },
+            {
+              "artists": [
+                "Boy Harsher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a30ac42529d47e0abeebfc94",
+              "name": "Ice Pick (Walk Away)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23309806/FREEFORM",
+          "station": "KALX",
+          "track_count": 26,
+          "url": "https://open.spotify.com/playlist/3rzitcIql1xhsunTXfmFe0"
         }
       },
       "needs_reconciliation": false
