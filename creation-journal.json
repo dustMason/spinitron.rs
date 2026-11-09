@@ -16568,7 +16568,7 @@
           "start_time": "2026-11-08T22:00:00-0800",
           "end_time": "2026-11-09T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7Dyl0nfHVUJPFq8E5gaFNI",
         "desired_uris": [
@@ -16633,8 +16633,102 @@
           "spotify:track:45UJig4kk7g6Fum18rQQgy"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T02:00:00-0800",
+          "broadcast_start": "2026-11-08T22:00:00-0800",
+          "imported_at": "2026-11-09T15:32:47.552601689+00:00",
+          "last_updated": "2026-11-09 15:32 UTC",
           "name": "KPOO - From The Vaults Record Shop Oldies - 2026-11-08",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Lee Morgan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c077b515c9a2dce456636f26",
+              "name": "I Remember Britt - Live (Saturday, July 11, 1970 – Set 2)"
+            },
+            {
+              "artists": [
+                "Chuck Berry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a496dc8c33ca6d10668b3157",
+              "name": "Sweet Little Rock 'N' Roller"
+            },
+            {
+              "artists": [
+                "Marshall Royal",
+                "Maxwell Davis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273adf3ab1c8639e056d04d8590",
+              "name": "Little White Lies"
+            },
+            {
+              "artists": [
+                "Ike & Tina Turner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27376169a6d263c1077c3079efd",
+              "name": "The Groove"
+            },
+            {
+              "artists": [
+                "J.J. Jackson and the Jackals"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a38403f0397dc754721e21a7",
+              "name": "Ring Telephone"
+            },
+            {
+              "artists": [
+                "Jay & The Americans"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734db618cc5d6d094022c0e480",
+              "name": "She Cried"
+            },
+            {
+              "artists": [
+                "The Jive Five"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320be1de8fed7d01b1c511105",
+              "name": "My True Story"
+            },
+            {
+              "artists": [
+                "The Platters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735e3b143a43c2a65158a59a94",
+              "name": "On My Word Of Honor"
+            },
+            {
+              "artists": [
+                "Wade Flemons"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe19d5502c78d77b441d87fd",
+              "name": "Here I Stand"
+            },
+            {
+              "artists": [
+                "Jay & The Americans"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737b81e9fe5e4b5886a927c907",
+              "name": "Come A Little Bit Closer"
+            },
+            {
+              "artists": [
+                "Johnny Rivers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273280ab24794508b9eacc979d6",
+              "name": "Carpet Man"
+            },
+            {
+              "artists": [
+                "Ike & Tina Turner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ce95321eee2f10a7580dae6",
+              "name": "A Fool in Love"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23311636/From-The-Vaults-Record-Shop-Oldies",
+          "station": "KPOO",
+          "track_count": 59,
+          "url": "https://open.spotify.com/playlist/7Dyl0nfHVUJPFq8E5gaFNI"
         }
       },
       "needs_reconciliation": false
