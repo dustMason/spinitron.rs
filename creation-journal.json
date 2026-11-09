@@ -9738,7 +9738,7 @@
           "start_time": "2026-11-08T18:00:00-0800",
           "end_time": "2026-11-08T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1ZetgQTHl1ThJN3PricL99",
         "desired_uris": [
@@ -9775,8 +9775,102 @@
           "spotify:track:525vGLj61tNqCToVJ9cPzp"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T21:00:00-0800",
+          "broadcast_start": "2026-11-08T18:00:00-0800",
+          "imported_at": "2026-11-09T15:28:47.589040420+00:00",
+          "last_updated": "2026-11-09 15:28 UTC",
           "name": "KALX - curses come in three - 2026-11-08",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Duran Duran"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e04073b032c85a72cd489aea",
+              "name": "Planet Earth - Single Version"
+            },
+            {
+              "artists": [
+                "Television"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736a1ac718258250891123771d",
+              "name": "Call Mr. Lee"
+            },
+            {
+              "artists": [
+                "Veruca Salt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27380d0a4548d430c84888ef1cc",
+              "name": "One Last Time"
+            },
+            {
+              "artists": [
+                "Sweeping Promises"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731202a359bc1c2774bc1eb704",
+              "name": "Cocoon"
+            },
+            {
+              "artists": [
+                "Portraits Of Tracy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273588603e17ec61c5462a0ca9c",
+              "name": "Caught In A Jam"
+            },
+            {
+              "artists": [
+                "Paramore"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735cab62839794c2cc3d6a135b",
+              "name": "Never Let This Go"
+            },
+            {
+              "artists": [
+                "Mazzy Star"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273696bceaee71bf3637f1f6c9d",
+              "name": "In the Kingdom"
+            },
+            {
+              "artists": [
+                "Squirrel Flower"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273550c76724e65d8693ba07f78",
+              "name": "Reelin"
+            },
+            {
+              "artists": [
+                "Phoebe Bridgers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325a647ace83ba32770ab5d0f",
+              "name": "I Can’t Wait"
+            },
+            {
+              "artists": [
+                "Nilüfer Yanya"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739eb260d4d6c9fb02e543d401",
+              "name": "Mutations"
+            },
+            {
+              "artists": [
+                "Bonobo",
+                "Nilüfer Yanya"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dd6e0f2e911f3d04f576aba9",
+              "name": "Youth’s Fountain"
+            },
+            {
+              "artists": [
+                "Kelela"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a511e3cc8b8f2034f891b44a",
+              "name": "idea 1"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23310520/curses-come-in-three",
+          "station": "KALX",
+          "track_count": 31,
+          "url": "https://open.spotify.com/playlist/1ZetgQTHl1ThJN3PricL99"
         }
       },
       "needs_reconciliation": false
