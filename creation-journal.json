@@ -9728,6 +9728,58 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23310520": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23310520,
+          "title": "curses come in three",
+          "url": "https://spinitron.com/KALX/pl/23310520/curses-come-in-three",
+          "start_time": "2026-11-08T18:00:00-0800",
+          "end_time": "2026-11-08T21:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5DQqJz3ATtfbD8WN3PrrET",
+          "spotify:track:7xjOrA5czMOJjBMPjs7ZFG",
+          "spotify:track:3gaKhrlgZmY2RVz28bLP0S",
+          "spotify:track:6og81LrlCOqxFL2yyvc1xZ",
+          "spotify:track:67aVjLV3z4QqlXMBrGoOOJ",
+          "spotify:track:2itu79WbZhUCHX4jg0fyAd",
+          "spotify:track:0hCjDPhl5JbFpYbrlebXvB",
+          "spotify:track:2IUAGDffoWoasAGUPu5sM5",
+          "spotify:track:5s50vIGQHK8FG8LfSdHC5q",
+          "spotify:track:24GfpnI0qKieLnsXZS1wyE",
+          "spotify:track:57rqH0ceGjerSdSBrDqhCX",
+          "spotify:track:3ZTKg748vW7Zrll3wzwjJy",
+          "spotify:track:6cOD4NsMsC3xykBHA3j5b6",
+          "spotify:track:3ayRcYGcNKyuVCAMNPPeAP",
+          "spotify:track:74wiS51Xagi78GpoStA7hr",
+          "spotify:track:3bWGaqVeYKMlLss40mPgNn",
+          "spotify:track:0yfNXxlyXdmP0ue1iJijx1",
+          "spotify:track:0iydK1X00Knz6XRd3jDSFl",
+          "spotify:track:5AMrnF761nziCWUfjBgRUI",
+          "spotify:track:5WLyTdKPldPGy25lTpmURT",
+          "spotify:track:2DwjENs3MJCa7mgwTVeDLu",
+          "spotify:track:7uv632EkfwYhXoqf8rhYrg",
+          "spotify:track:2Ix4XIxz7O5mTDkCSpgOjm",
+          "spotify:track:7BPFGUUcPiIaj89HeQjhdx",
+          "spotify:track:0Wl2RALqRacaIJhnlRHK8J",
+          "spotify:track:24r2S3WZOB5WjqMWB2HJ1u",
+          "spotify:track:1cT0wyzl7hPZpqmZMpLqGO",
+          "spotify:track:0sYt0AjgEYVRsLWvDSExT1",
+          "spotify:track:3oxFVT3NByUX7qeQZGivGF",
+          "spotify:track:3JTW7cI63IXKBeSkCSYmA7",
+          "spotify:track:525vGLj61tNqCToVJ9cPzp"
+        ],
+        "listing": {
+          "name": "KALX - curses come in three - 2026-11-08",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
