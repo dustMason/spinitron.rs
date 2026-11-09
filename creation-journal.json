@@ -16095,6 +16095,61 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23309175": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23309175,
+          "title": "Hip Hop For The People",
+          "url": "https://spinitron.com/KPOO/pl/23309175/Hip-Hop-For-The-People",
+          "start_time": "2026-11-08T12:00:00-0800",
+          "end_time": "2026-11-08T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5TaQNOjFGcqbmcHdBVzhjB",
+          "spotify:track:0NMSQvAZ8n6509Cu9Al8L1",
+          "spotify:track:4rcx6TvWsSxIVErfpjcjJC",
+          "spotify:track:2OoJt3MGVH8p8tjGor0RTH",
+          "spotify:track:5sqjolRnhwXyh7ksvZbJsJ",
+          "spotify:track:2HiZBTA6nM0cwZCWwkTV3x",
+          "spotify:track:17yEvtUBtLJZw8JqGj80u8",
+          "spotify:track:4VQg4h9KSEV5kBuX3YTPtr",
+          "spotify:track:4B2tPBgeHJrvZndGWcvAql",
+          "spotify:track:5Mokal5OqR1gL7YjASli3r",
+          "spotify:track:3kXUEtgQlkPzvqLPrvhqBJ",
+          "spotify:track:4x6iuBbqkKV4a4SjaUIjuE",
+          "spotify:track:0m1cdBBD190AlegOopmXDP",
+          "spotify:track:2zO4tORsvzObeP7B8A8bIB",
+          "spotify:track:0WRiHeWmroSiKg0WNeI2ro",
+          "spotify:track:0cTsTknRRDWFQ00jCwT1iz",
+          "spotify:track:1WjL4qnMyEK3x4WP4bxjqb",
+          "spotify:track:57siqIhZ2n4NllKTk58sIN",
+          "spotify:track:7LuKTjpD7ykP6RU1EZIqHM",
+          "spotify:track:1mn5RACaBDyCRmp8f6X6sT",
+          "spotify:track:14HPYHUs9IfVic7F5FFz3M",
+          "spotify:track:7v4c3wzJ70acGDaFkEYhgP",
+          "spotify:track:5SLIFUbgVNlG4ZZodiRtpb",
+          "spotify:track:5UcuN1KP9g4bh7EVO7Yp6y",
+          "spotify:track:2Dlo3MHqNxgRKOX6KAmWWO",
+          "spotify:track:3aXzG7HPC9EepOS49sp8WY",
+          "spotify:track:5UDb1n4iXf1uuFIDlH1n8M",
+          "spotify:track:67CSuzDRRQEDODw9T8PZgv",
+          "spotify:track:4rWfs3rNTYXuh9NMo7f1uT",
+          "spotify:track:5pvCEjon9UY5YgLqbRYQyt",
+          "spotify:track:5BrjP4IH7LwuuFVIe5IYl0",
+          "spotify:track:5jlcCqsD7yJdwhZYAhoCFY",
+          "spotify:track:15P4MrjhwrwqKdiZhtNR0m",
+          "spotify:track:5IDwiSA5RALU1QQ14Xth2c"
+        ],
+        "listing": {
+          "name": "KPOO - Hip Hop For The People - 2026-11-08",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
