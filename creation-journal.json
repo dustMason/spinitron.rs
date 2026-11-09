@@ -16414,7 +16414,7 @@
           "start_time": "2026-11-08T19:00:00-0800",
           "end_time": "2026-11-08T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3Fz8HrDMraR4e4d6fMbtdm",
         "desired_uris": [
@@ -16433,8 +16433,127 @@
           "spotify:track:43PnuPY9gRcaBgBXqn5wK8"
         ],
         "listing": {
+          "broadcast_end": "2026-11-08T22:00:00-0800",
+          "broadcast_start": "2026-11-08T19:00:00-0800",
+          "imported_at": "2026-11-09T15:32:07.094728739+00:00",
+          "last_updated": "2026-11-09 15:32 UTC",
           "name": "KPOO - Sounds of the City - 2026-11-08",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Charles Mingus"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ed205df0a37cfd8d127c299d",
+              "name": "Pithecanthropus Erectus"
+            },
+            {
+              "artists": [
+                "Freddie Hubbard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273967adffef95c8316812a7f08",
+              "name": "Spacetrack"
+            },
+            {
+              "artists": [
+                "Charles Mingus",
+                "Eric Dolphy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27367d1873cfe8813311de23b45",
+              "name": "So Long Eric"
+            },
+            {
+              "artists": [
+                "John Coltrane Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273051da334fcb7ed4b42b85c4a",
+              "name": "Out Of This World"
+            },
+            {
+              "artists": [
+                "Herlin Riley",
+                "Ryan Kisor",
+                "Wycliffe Gordon",
+                "Victor Goines",
+                "Farid Barron",
+                "Rodney Whitaker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f696cfeea5d55fad41f350e7",
+              "name": "New York Walk"
+            },
+            {
+              "artists": [
+                "Herlin Riley",
+                "Ryan Kisor",
+                "Wycliffe Gordon",
+                "Victor Goines",
+                "Farid Barron",
+                "Rodney Whitaker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f696cfeea5d55fad41f350e7",
+              "name": "Myrosa's Mirage"
+            },
+            {
+              "artists": [
+                "Herlin Riley",
+                "Ryan Kisor",
+                "Wycliffe Gordon",
+                "Victor Goines",
+                "Farid Barron",
+                "Rodney Whitaker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f696cfeea5d55fad41f350e7",
+              "name": "Watch What You're Doing"
+            },
+            {
+              "artists": [
+                "Keith Jarrett",
+                "Charlie Haden",
+                "Paul Motian"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27349bb702dd19341a5d41af652",
+              "name": "Song for Che - Live"
+            },
+            {
+              "artists": [
+                "Keith Jarrett",
+                "Charlie Haden",
+                "Paul Motian"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27349bb702dd19341a5d41af652",
+              "name": "Piece for Ornette - Live"
+            },
+            {
+              "artists": [
+                "Keith Jarrett",
+                "Charlie Haden",
+                "Paul Motian"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27349bb702dd19341a5d41af652",
+              "name": "Rainbow - Live"
+            },
+            {
+              "artists": [
+                "McCoy Tyner",
+                "Charnett Moffett",
+                "Al Foster"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27354d5dd20a8b9002eae6c639f",
+              "name": "One Upon a Time"
+            },
+            {
+              "artists": [
+                "McCoy Tyner",
+                "Charnett Moffett",
+                "Al Foster"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27354d5dd20a8b9002eae6c639f",
+              "name": "In the Tradition Off"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23310815/Sounds-of-the-City",
+          "station": "KPOO",
+          "track_count": 13,
+          "url": "https://open.spotify.com/playlist/3Fz8HrDMraR4e4d6fMbtdm"
         }
       },
       "needs_reconciliation": false
