@@ -10656,7 +10656,7 @@
           "start_time": "2026-11-09T15:00:00-0800",
           "end_time": "2026-11-09T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2EePpxNxDilltvAjHoyC0a",
         "desired_uris": [
@@ -10680,8 +10680,104 @@
           "spotify:track:2GxyZD9EqGsecQxK5Fpcre"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T17:00:00-0800",
+          "broadcast_start": "2026-11-09T15:00:00-0800",
+          "imported_at": "2026-11-10T14:30:58.154460454+00:00",
+          "last_updated": "2026-11-10 14:30 UTC",
           "name": "KALX - No Motion Picture - 2026-11-09",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Billy Cobham"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27332d529973649d63b1033dc56",
+              "name": "Heather"
+            },
+            {
+              "artists": [
+                "Ebi Soda"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e43b7abc5ae19c009dd903eb",
+              "name": "Pseudocreme"
+            },
+            {
+              "artists": [
+                "Bria Skonberg"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27317e6cecb6fcbc0293a7d8cf2",
+              "name": "Dolly Jones"
+            },
+            {
+              "artists": [
+                "Frank Sinatra",
+                "Count Basie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f78751d5c0c49d4c91d24eb",
+              "name": "I Wanna Be Around"
+            },
+            {
+              "artists": [
+                "Stereolab",
+                "Herbie Mann"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733e06d4cab51653934ee6c664",
+              "name": "One Note Samba / Surfboard"
+            },
+            {
+              "artists": [
+                "Carl Stone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b3e68c91f4cf7ecd18de545",
+              "name": "Han Yan - Arr. Fischl"
+            },
+            {
+              "artists": [
+                "Pink Floyd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273606fd1bee21c7863689e0487",
+              "name": "Summer '68"
+            },
+            {
+              "artists": [
+                "Komeda"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e2bbb92d9d498536b8ea0cdb",
+              "name": "Vackra kristaller"
+            },
+            {
+              "artists": [
+                "sachi's mirror"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273833e3c513c27589d493f16c2",
+              "name": "Douse the flame of memory"
+            },
+            {
+              "artists": [
+                "Art Blakey",
+                "The Jazz Messengers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e16a4e25a2c4a745bd1fb2a1",
+              "name": "One By One"
+            },
+            {
+              "artists": [
+                "Immortal Onion"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325beaaab32605efd67099146",
+              "name": "Zu Hause"
+            },
+            {
+              "artists": [
+                "Resavoir"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273763725716304cadbf068e255",
+              "name": "Altostratus"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23315225/No-Motion-Picture",
+          "station": "KALX",
+          "track_count": 18,
+          "url": "https://open.spotify.com/playlist/2EePpxNxDilltvAjHoyC0a"
         }
       },
       "needs_reconciliation": false
