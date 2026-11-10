@@ -18785,7 +18785,7 @@
           "start_time": "2026-11-09T13:00:00-0800",
           "end_time": "2026-11-09T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2Udo9kHJPZg5JoeCF5EgH0",
         "desired_uris": [
@@ -18814,8 +18814,101 @@
           "spotify:track:4jDmnZvVcwdSgrclIVHTsk"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T15:00:00-0800",
+          "broadcast_start": "2026-11-09T13:00:00-0800",
+          "imported_at": "2026-11-10T14:38:41.771153377+00:00",
+          "last_updated": "2026-11-10 14:38 UTC",
           "name": "KPOO - Soul Explosion - 2026-11-09",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Aaron Frazer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f1111b4b0a9f611b0838053b",
+              "name": "You Don't Wanna Be My Baby"
+            },
+            {
+              "artists": [
+                "Billy Stewart"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735839561e262d9a0847e4e09b",
+              "name": "Cross My Heart"
+            },
+            {
+              "artists": [
+                "Ice-O-Matic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d60f7d83185e54b62e997d69",
+              "name": "Bein' Nice"
+            },
+            {
+              "artists": [
+                "Ruth Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27396289e096f101106eacf698b",
+              "name": "I Hope We Meet - On the Road Some Day"
+            },
+            {
+              "artists": [
+                "Big Maybelle"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b77944c90bf32d28104fc04",
+              "name": "Candy"
+            },
+            {
+              "artists": [
+                "Aretha Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737f4155e9adc511ae854cfe21",
+              "name": "Ain't Nobody (Gonna Turn Me Around)"
+            },
+            {
+              "artists": [
+                "Esther Phillips"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737969e922508a89fed5f9926c",
+              "name": "Cupid Boogie"
+            },
+            {
+              "artists": [
+                "Ike & Tina Turner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27318a511b4fb9e643ed9c6e6c3",
+              "name": "Honest I Do"
+            },
+            {
+              "artists": [
+                "The \"5\" Royales"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739d74dc825449b425984cda4b",
+              "name": "Not Going to Cry"
+            },
+            {
+              "artists": [
+                "The Windjammers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c99b3c6f4815a5f201efb4f",
+              "name": "Poor Sad Child Part 1"
+            },
+            {
+              "artists": [
+                "Willie Dixon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27311573516d2600deda068a4a5",
+              "name": "29 Ways"
+            },
+            {
+              "artists": [
+                "Art Neville"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273368ec83b2d6dc7fe44885269",
+              "name": "Arabian Love Call"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23314768/Soul-Explosion",
+          "station": "KPOO",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/2Udo9kHJPZg5JoeCF5EgH0"
         }
       },
       "needs_reconciliation": false
