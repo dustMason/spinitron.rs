@@ -19213,7 +19213,7 @@
           "start_time": "2026-11-09T21:00:00-0800",
           "end_time": "2026-11-10T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "43XvrSzBskH9AxZxNxNiIt",
         "desired_uris": [
@@ -19249,8 +19249,107 @@
           "spotify:track:3Nc6fVfrORav6B7Ol9zbia"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T00:00:00-0800",
+          "broadcast_start": "2026-11-09T21:00:00-0800",
+          "imported_at": "2026-11-10T14:40:46.329922426+00:00",
+          "last_updated": "2026-11-10 14:40 UTC",
           "name": "KPOO - Grinders Grooveyard - 2026-11-09",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Sonny Rollins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d1ae6a07bffdef38fde0c372",
+              "name": "I've Found A New Baby - Alternate Take"
+            },
+            {
+              "artists": [
+                "Hampton Hawes Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273622281583f5aeb3e23b4b026",
+              "name": "I Got Rhythm"
+            },
+            {
+              "artists": [
+                "Art Pepper"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ce3b0a3986498eb2e5d05b67",
+              "name": "You'd Be So Nice to Come Home To"
+            },
+            {
+              "artists": [
+                "Shelly Manne And His Friends",
+                "Shelly Manne",
+                "André Previn",
+                "Leroy Vinnegar"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730154fbe492d7c977675f4955",
+              "name": "Get Me To The Church On Time - Instrumental"
+            },
+            {
+              "artists": [
+                "Barney Kessel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27342a986a75e0d3c1d125c6874",
+              "name": "Begin The Blues"
+            },
+            {
+              "artists": [
+                "Phineas Newborn Jr."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c82fff5b21ec87f42920c1f",
+              "name": "Stella by Starlight"
+            },
+            {
+              "artists": [
+                "Barney Kessel",
+                "Ray Brown",
+                "Shelly Manne"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325cd9c39dd7294a54d9bd25c",
+              "name": "Jordu"
+            },
+            {
+              "artists": [
+                "Ray Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273218769a889d5c619d43288c7",
+              "name": "Ojos De Rojo"
+            },
+            {
+              "artists": [
+                "Hampton Hawes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27321c7a76417120bde4cee77a3",
+              "name": "Billy Boy"
+            },
+            {
+              "artists": [
+                "Ethnic Heritage Ensemble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e89e48e1abdccfc680a6f5f9",
+              "name": "Major to Minor"
+            },
+            {
+              "artists": [
+                "Betty Carter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733351fc940af6db0d74b8c80c",
+              "name": "The Love We Had Yesterday"
+            },
+            {
+              "artists": [
+                "Yves François",
+                "Fran Jackson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735ce68d82091c341bf2445d64",
+              "name": "Lester Leaps In"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23316839/Grinders-Grooveyard",
+          "station": "KPOO",
+          "track_count": 30,
+          "url": "https://open.spotify.com/playlist/43XvrSzBskH9AxZxNxNiIt"
         }
       },
       "needs_reconciliation": false
