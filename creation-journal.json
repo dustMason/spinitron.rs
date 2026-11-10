@@ -10355,7 +10355,7 @@
           "start_time": "2026-11-09T09:00:00-0800",
           "end_time": "2026-11-09T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4Se3q9jszUVi9Qdbdr5v9x",
         "desired_uris": [
@@ -10400,8 +10400,102 @@
           "spotify:track:51RKHT7gR0koE3QQmIe2ik"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T12:00:00-0800",
+          "broadcast_start": "2026-11-09T09:00:00-0800",
+          "imported_at": "2026-11-10T14:29:36.442668400+00:00",
+          "last_updated": "2026-11-10 14:29 UTC",
           "name": "KALX - The Rare Earth Show - 2026-11-09",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Angelo Badalamenti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d8723510475d373971877247",
+              "name": "Main Title"
+            },
+            {
+              "artists": [
+                "Brigid Dawson and The Mothers Network"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c2d47b99438c1df4b29cd67",
+              "name": "Heartbreak Jazz"
+            },
+            {
+              "artists": [
+                "Television"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bab52055e904f0d8a91c8c72",
+              "name": "Carried Away - 2003 Remaster"
+            },
+            {
+              "artists": [
+                "Waylon Jennings"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fb8cb55be47677d7daca6923",
+              "name": "We Had It All"
+            },
+            {
+              "artists": [
+                "Neil Young",
+                "Crazy Horse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273adc7646ec2dc90fc12477818",
+              "name": "Lookin' for a Love - 2016 Remaster"
+            },
+            {
+              "artists": [
+                "The Rolling Stones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732af30c881bb23cfb82a8cf99",
+              "name": "You Can't Always Get What You Want"
+            },
+            {
+              "artists": [
+                "Twisted Teens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739d3cb1617c4102f951a24e8b",
+              "name": "When We First Met"
+            },
+            {
+              "artists": [
+                "This Is Lorelei"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c456875e0df6d8195f4b5545",
+              "name": "Don't You Cry in Lonesomeness"
+            },
+            {
+              "artists": [
+                "Interpol"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a9d4720ac4088a6c58960235",
+              "name": "Iron City"
+            },
+            {
+              "artists": [
+                "Atlas Sound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4f18f3f4c82b4192d1562e7",
+              "name": "Octoberland"
+            },
+            {
+              "artists": [
+                "Lael Neale"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0c137c26cb699c5c2b785d1",
+              "name": "Picasso’s Wife"
+            },
+            {
+              "artists": [
+                "Tennis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27389021e91f38a2ffd00ea2efd",
+              "name": "Wounded Heart"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23313677/The-Rare-Earth-Show",
+          "station": "KALX",
+          "track_count": 39,
+          "url": "https://open.spotify.com/playlist/4Se3q9jszUVi9Qdbdr5v9x"
         }
       },
       "needs_reconciliation": false
