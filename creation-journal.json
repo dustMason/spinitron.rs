@@ -18923,7 +18923,7 @@
           "start_time": "2026-11-09T15:00:00-0800",
           "end_time": "2026-11-09T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4lM5LPEWTl7lRzDcVtahnY",
         "desired_uris": [
@@ -18962,8 +18962,105 @@
           "spotify:track:2k6qOVD2zsuJLYcYvLLsA1"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T18:00:00-0800",
+          "broadcast_start": "2026-11-09T15:00:00-0800",
+          "imported_at": "2026-11-10T14:39:24.251666780+00:00",
+          "last_updated": "2026-11-10 14:39 UTC",
           "name": "KPOO - Gramophoney Baloney - 2026-11-09",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The El Dorados"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737b0b925390b04de370d70480",
+              "name": "At My Front Door"
+            },
+            {
+              "artists": [
+                "The Penguins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27392cc902ee2ae8f881c8a7c0e",
+              "name": "Earth Angel"
+            },
+            {
+              "artists": [
+                "Screamin' Jay Hawkins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733cbaa7ae6e428ef21a7ac7fc",
+              "name": "What's Gonna Happen on the 8th Day"
+            },
+            {
+              "artists": [
+                "Elizabeth Bishop"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f9924d6945b04af5d39480bd",
+              "name": "Anaphora"
+            },
+            {
+              "artists": [
+                "Frank Churchill",
+                "The Tabernacle Choir at Temple Square",
+                "Jerold D. Ottley",
+                "Columbia Symphony Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4fff6293031f8ab29991363",
+              "name": "Medley from Snow White and the Seven Dwarfs: Whistle While You Work; Heigh-Ho"
+            },
+            {
+              "artists": [
+                "Comoriens Anjouanais"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d75f506a991790897dfd9944",
+              "name": "Majunga (Solo et choeur d'hommes, viole, tambour, cymbales, cliquettes)"
+            },
+            {
+              "artists": [
+                "Robert Wilkins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731862779ab3aea322de53f524",
+              "name": "I'll Go With Her Blues"
+            },
+            {
+              "artists": [
+                "Kitsos Harisiadis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27302991fb51096c53d482c0062",
+              "name": "Potamia"
+            },
+            {
+              "artists": [
+                "Sidney Bechet & His French Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731560f9b8ef18c9645896bf4c",
+              "name": "High Society"
+            },
+            {
+              "artists": [
+                "Elders McIntorsh & Edwards with Bessie Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27352085ee3b9659b4c61ca6232",
+              "name": "The 1927 Flood"
+            },
+            {
+              "artists": [
+                "Coleman Hawkins",
+                "Billy Byers and His Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273377ccc2696dfc8560f9d86ed",
+              "name": "The Day You Came Along (with Billy Byers and His Orchestra) - 2001 Remastered"
+            },
+            {
+              "artists": [
+                "Blind Willie McTell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733ef0ef04149cd53e89c25f5b",
+              "name": "Lord, Send Me an Angel"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23315248/Gramophoney-Baloney",
+          "station": "KPOO",
+          "track_count": 33,
+          "url": "https://open.spotify.com/playlist/4lM5LPEWTl7lRzDcVtahnY"
         }
       },
       "needs_reconciliation": false
