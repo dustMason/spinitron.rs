@@ -11084,6 +11084,49 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23316166": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23316166,
+          "title": "FREEFORM",
+          "url": "https://spinitron.com/KALX/pl/23316166/FREEFORM",
+          "start_time": "2026-11-09T18:15:00-0800",
+          "end_time": "2026-11-09T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6ZH1yeWUf3Xp2XO0EZk91i",
+          "spotify:track:03pNV6wcTyK2vaLywbIXEp",
+          "spotify:track:7FliRCF6uIPowaVntELNVD",
+          "spotify:track:2Gjs56G1GEZHR87E1HqPKp",
+          "spotify:track:7Aq21eOscjwHoU2a0wgtyv",
+          "spotify:track:3PgzTRmp9FXW54DWbMMOzc",
+          "spotify:track:6U7K9uHqcWbzwWeqIZjrF9",
+          "spotify:track:6013M4LbENtvDpt6aNYOqD",
+          "spotify:track:15TJ2zvv0Dzf3LcM3ccW9n",
+          "spotify:track:0SzjAqm4oxuuZtfwrmYEai",
+          "spotify:track:4OBZyffhh3BLWFsejAwxnu",
+          "spotify:track:6pLlzFUxxR1tLvpMwcAtP0",
+          "spotify:track:5TNqSTLoOqIMBquCtFNV1E",
+          "spotify:track:1oFiPGBafH9Woo9AMwgBSl",
+          "spotify:track:60QgWtlPpGwOztcpiBqY8v",
+          "spotify:track:3fIxDH7ydT2yCUsdj0ehhy",
+          "spotify:track:2W1NZwVBN77hf2CEKFKsig",
+          "spotify:track:2IXBov2s1TxPfLS16l87uk",
+          "spotify:track:4UXwfhy8RTOcH0QWJF8SMg",
+          "spotify:track:1ngbCM8cVBEcE3yCFdelAU",
+          "spotify:track:2ldSnoKqkt9sTRN7lCqyKI",
+          "spotify:track:6pQ5LfcxRJETWkNKQzy23j"
+        ],
+        "listing": {
+          "name": "KALX - FREEFORM - 2026-11-09 6:15pm",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
