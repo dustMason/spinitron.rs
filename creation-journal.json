@@ -68,7 +68,7 @@
           "start_time": "2026-11-10T00:00:00-0800",
           "end_time": "2026-11-10T01:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3zhYKiJXsnrdT4YWs3f2H7",
         "desired_uris": [
@@ -80,8 +80,59 @@
           "spotify:track:1MTJic4Wc83vkKdiAEqbv9"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T01:00:00-0800",
+          "broadcast_start": "2026-11-10T00:00:00-0800",
+          "imported_at": "2026-11-10T14:31:39.555380681+00:00",
+          "last_updated": "2026-11-10 14:31 UTC",
           "name": "KALX - Information Overload - 2026-11-10",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Phallus Dei"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fd30dc1cf0a8d9bafba735ca",
+              "name": "Revelations (O Sacrum Convivium 1996)"
+            },
+            {
+              "artists": [
+                "Deutsch Nepal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c3cd957e801a2d77a5496e7",
+              "name": "Benevolence (Of The Fittest God)"
+            },
+            {
+              "artists": [
+                "Band Of Pain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c053a208c3562e3a915ab191",
+              "name": "A Multitude of Sins"
+            },
+            {
+              "artists": [
+                "perverts in white shirts"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27368a18912046326d91cc3b9fc",
+              "name": "You'll Fall In Love With Me (RRR edit)"
+            },
+            {
+              "artists": [
+                "Pussyfinger"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fc3cb41d153e9fd6348e81d3",
+              "name": "Pussyfinger"
+            },
+            {
+              "artists": [
+                "Tomoroh Hidari"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273158899e7b732b32c161291ea",
+              "name": "Black Star #1"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23043221/Information-Overload",
+          "station": "KALX",
+          "track_count": 6,
+          "url": "https://open.spotify.com/playlist/3zhYKiJXsnrdT4YWs3f2H7"
         }
       },
       "needs_reconciliation": false
