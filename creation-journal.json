@@ -18718,6 +18718,30 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23314493": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23314493,
+          "title": "Let Me Touch Your Mind",
+          "url": "https://spinitron.com/KPOO/pl/23314493/Let-Me-Touch-Your-Mind",
+          "start_time": "2026-11-09T12:00:00-0800",
+          "end_time": "2026-11-09T13:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2TAb0MYiC6ADy6pYunLZiP",
+          "spotify:track:1qXyDQJ5gRKNvqzNTBzZv6",
+          "spotify:track:72S9CSLyfSnBUV1VS2F9V3"
+        ],
+        "listing": {
+          "name": "KPOO - Let Me Touch Your Mind - 2026-11-09",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
