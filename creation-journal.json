@@ -18729,7 +18729,7 @@
           "start_time": "2026-11-09T12:00:00-0800",
           "end_time": "2026-11-09T13:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2sXSSuhUW3WwrsvuH89Gg1",
         "desired_uris": [
@@ -18738,8 +18738,39 @@
           "spotify:track:72S9CSLyfSnBUV1VS2F9V3"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T13:00:00-0800",
+          "broadcast_start": "2026-11-09T12:00:00-0800",
+          "imported_at": "2026-11-10T14:38:01.261799243+00:00",
+          "last_updated": "2026-11-10 14:38 UTC",
           "name": "KPOO - Let Me Touch Your Mind - 2026-11-09",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Ike & Tina Turner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739415ef0c87009c80f09053e6",
+              "name": "Let Me Touch Your Mind"
+            },
+            {
+              "artists": [
+                "Nat Adderley",
+                "Nat Adderley Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739178e38b0b290c795f64c57f",
+              "name": "Book's Bossa"
+            },
+            {
+              "artists": [
+                "Dinah Washington"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a7794c8d4b2a5be387405fd2",
+              "name": "I Could Write A Book"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23314493/Let-Me-Touch-Your-Mind",
+          "station": "KPOO",
+          "track_count": 3,
+          "url": "https://open.spotify.com/playlist/2sXSSuhUW3WwrsvuH89Gg1"
         }
       },
       "needs_reconciliation": false
