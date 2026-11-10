@@ -11233,7 +11233,7 @@
           "start_time": "2026-11-09T20:00:00-0800",
           "end_time": "2026-11-09T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3FfqQ61MDOyZb35dQkOddM",
         "desired_uris": [
@@ -11261,8 +11261,106 @@
           "spotify:track:1nDlFgDg3b4kYGWr8wEaUV"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T22:00:00-0800",
+          "broadcast_start": "2026-11-09T20:00:00-0800",
+          "imported_at": "2026-11-10T14:35:01.620287784+00:00",
+          "last_updated": "2026-11-10 14:35 UTC",
           "name": "KALX - FREEFORM - 2026-11-09 8:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Los Campesinos!"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273338787fb2b8b8233872e7861",
+              "name": "You! Me! Dancing! - Remastered"
+            },
+            {
+              "artists": [
+                "!!!"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0ad936b9ecaf694340d691d",
+              "name": "R Rated Pictures"
+            },
+            {
+              "artists": [
+                "Sean Nicholas Savage"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27371c448352f13e4eea54392cc",
+              "name": "Metro Phenomenon"
+            },
+            {
+              "artists": [
+                "Frank LoCrasto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739a575f86d66170ba0e33ddfa",
+              "name": "Montego"
+            },
+            {
+              "artists": [
+                "Sophia Stel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ecea0b801529bb4c9cf4dadc",
+              "name": "Molly In The Club"
+            },
+            {
+              "artists": [
+                "Coco & Clair Clair"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273de3368e68ceb81ceed0caf75",
+              "name": "Wishy Washy"
+            },
+            {
+              "artists": [
+                "Devendra Banhart",
+                "Helado Negro"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf210135f6314ca8bf71864e",
+              "name": "Love Song - Helado Negro Remix"
+            },
+            {
+              "artists": [
+                "Welcome Strawberry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e155480c2229a9c9bb98db0",
+              "name": "fragrance net"
+            },
+            {
+              "artists": [
+                "Daft Punk",
+                "Chilly Gonzales"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273662ca2ebec199607ebf37ce0",
+              "name": "Too Long - Gonzales Version"
+            },
+            {
+              "artists": [
+                "Jurassic 5"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365d93a3d0c7bbbae90d0150f",
+              "name": "Gotta Understand"
+            },
+            {
+              "artists": [
+                "Your Old Droog",
+                "A-Reece",
+                "Masta Ace",
+                "DJ Harrison"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e45666693ae8f9ceacb09f3a",
+              "name": "Pavlovian Effect"
+            },
+            {
+              "artists": [
+                "above me"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736de01736c40c2c7c90ee2b86",
+              "name": "pin won't prick"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23316588/FREEFORM",
+          "station": "KALX",
+          "track_count": 22,
+          "url": "https://open.spotify.com/playlist/3FfqQ61MDOyZb35dQkOddM"
         }
       },
       "needs_reconciliation": false
