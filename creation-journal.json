@@ -10206,6 +10206,50 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23312783": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23312783,
+          "title": "Sweet Drams",
+          "url": "https://spinitron.com/KALX/pl/23312783/Sweet-Drams",
+          "start_time": "2026-11-09T07:00:00-0800",
+          "end_time": "2026-11-09T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4x5CX8Nco5vZVvmxsRTEn6",
+          "spotify:track:6zvJGalGtYc2H2dTtbC8xN",
+          "spotify:track:3298Ix0AkKdP1ZpxSjZSlq",
+          "spotify:track:3xsXIpK2ame9B5ZBNvpsH9",
+          "spotify:track:05z0sYrCjLhUwbbk03rdIL",
+          "spotify:track:03CWzFAsRHxQBjGR1gLZcY",
+          "spotify:track:7w7O16CLWbP1pzwNts4r8N",
+          "spotify:track:6YLcAFME1ZpF8s5GlYkQan",
+          "spotify:track:7ABTw0347lzzTUTSSknwvs",
+          "spotify:track:0a0CQL74VBmF8SvQl48SCt",
+          "spotify:track:0SKKlio7alRSWggNTn07HA",
+          "spotify:track:3ZQ4QqEuwNvNW78bQsAsYg",
+          "spotify:track:11K4yY7BPJOS5fynuBmKxa",
+          "spotify:track:34UHJYtdQh5S6TcV1hf0ys",
+          "spotify:track:6hZdggGfSprglPq3iIVFml",
+          "spotify:track:6dGe7FscVABuEPV2RLl7nr",
+          "spotify:track:6Ptdz6JkyCr6GjgGyc9ABM",
+          "spotify:track:5FgE5qTWSohzwqW0Ml2YNp",
+          "spotify:track:2DZHC9282DHx3mVKyoxrXH",
+          "spotify:track:10W5ibmv8u4AD8XiMhala5",
+          "spotify:track:5YQDt3BbJobJPsiJKEBscO",
+          "spotify:track:29BWy6gecsOgMNzAUMVYTu",
+          "spotify:track:4XxCBaFpmLEWVCd3TiKp4x"
+        ],
+        "listing": {
+          "name": "KALX - Sweet Drams - 2026-11-09",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
