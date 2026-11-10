@@ -18386,7 +18386,7 @@
           "start_time": "2026-11-09T05:00:00-0800",
           "end_time": "2026-11-09T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0GK9ndKf1rFqYTkypYPCm8",
         "desired_uris": [
@@ -18458,8 +18458,101 @@
           "spotify:track:1dPUQhlNGEaDm9Qi1vcL7I"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T09:00:00-0800",
+          "broadcast_start": "2026-11-09T05:00:00-0800",
+          "imported_at": "2026-11-10T14:36:36.887395140+00:00",
+          "last_updated": "2026-11-10 14:36 UTC",
           "name": "KPOO - Record Shop Oldies - Variety Oldies - 2026-11-09",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Dionne Warwick"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eaa0aecce000bb2569ea9864",
+              "name": "Oh Lord, What Are You Doing to Me"
+            },
+            {
+              "artists": [
+                "The Olympics"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d02e1052f6fbd4f0ae8ee441",
+              "name": "Dance by the Light of the Moon"
+            },
+            {
+              "artists": [
+                "Petula Clark"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730d80c1b703e1c8b711c1a2ee",
+              "name": "You're the One (Un Mal Pour Un Bien)"
+            },
+            {
+              "artists": [
+                "Frank Virture and The Virtues"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733176a8b8d6be35a13fb89cc1",
+              "name": "Guitar Boogie Shuffle"
+            },
+            {
+              "artists": [
+                "The Cookies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27317357b2d3e221b8a94b66a27",
+              "name": "Down By the River"
+            },
+            {
+              "artists": [
+                "Clyde McPhatter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273140ecdc59c9f4d0fc03e0b90",
+              "name": "When The Right Time Comes Along"
+            },
+            {
+              "artists": [
+                "Robert & Johnny"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273827925b61709a21516134eda",
+              "name": "You're Mine"
+            },
+            {
+              "artists": [
+                "The Five Satins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733a5b7b2ebb2912237feb3662",
+              "name": "Wonderful Girl"
+            },
+            {
+              "artists": [
+                "Bill Doggett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e073f31fa6d8177021f74ffd",
+              "name": "Slow Walk"
+            },
+            {
+              "artists": [
+                "Benny Carter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27346248f3abc5678bfde307c68",
+              "name": "You Belong to Me"
+            },
+            {
+              "artists": [
+                "Timi Yuro"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273510a40bbb9a08f26084b2a1d",
+              "name": "What's A Matter Baby (Is It Hurting You)"
+            },
+            {
+              "artists": [
+                "Peter, Paul and Mary"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27331716dd0328f835ea0559450",
+              "name": "If I Had a Hammer - 2004 Remaster"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23312855/Record-Shop-Oldies-Variety-Oldies",
+          "station": "KPOO",
+          "track_count": 66,
+          "url": "https://open.spotify.com/playlist/0GK9ndKf1rFqYTkypYPCm8"
         }
       },
       "needs_reconciliation": false
