@@ -19075,7 +19075,7 @@
           "start_time": "2026-11-09T18:00:00-0800",
           "end_time": "2026-11-09T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "69lsmqsz5eRBIOjzZU0edy",
         "desired_uris": [
@@ -19102,8 +19102,103 @@
           "spotify:track:7fGvNaZhPn6i0xTqO44mbm"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T21:00:00-0800",
+          "broadcast_start": "2026-11-09T18:00:00-0800",
+          "imported_at": "2026-11-10T14:40:05.876996849+00:00",
+          "last_updated": "2026-11-10 14:40 UTC",
           "name": "KPOO - Wheels - 2026-11-09",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Pharoah Sanders"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27330cb5dc5fb8405984e4b50f7",
+              "name": "Hum Allah Hum Allah Hum Allah"
+            },
+            {
+              "artists": [
+                "Tom Tom Club"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27340f5a8e88ef8bf4782eaa595",
+              "name": "Genius of Love"
+            },
+            {
+              "artists": [
+                "Bette Midler"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735ca34e45e467be619eb8b093",
+              "name": "Laughing Matters"
+            },
+            {
+              "artists": [
+                "Brenda Russell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27343a853be0a906c38e6d8c905",
+              "name": "Piano In The Dark"
+            },
+            {
+              "artists": [
+                "Circus Maximus"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273acd199298bf665b51d3fb338",
+              "name": "Wind"
+            },
+            {
+              "artists": [
+                "Norma Tanega"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273403586d28bb6aab788e9104b",
+              "name": "Walkin' My Cat Named Dog"
+            },
+            {
+              "artists": [
+                "Mort Garson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ca132a13590640a254bed85",
+              "name": "Big Sur"
+            },
+            {
+              "artists": [
+                "Jonathan & Darlene Edwards"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b49dcb955c4495f86752f678",
+              "name": "Stayin' Alive"
+            },
+            {
+              "artists": [
+                "Linda Tillery",
+                "The Cultural Heritage Choir"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e2ef66a9d0737096a6b918e7",
+              "name": "Lift Ev'ry Voice And Sing - Live"
+            },
+            {
+              "artists": [
+                "Linda Tillery",
+                "The Cultural Heritage Choir"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e2ef66a9d0737096a6b918e7",
+              "name": "Jaime Moreno's Jam - Live"
+            },
+            {
+              "artists": [
+                "Eric Bibb"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cb62796d6d16f408d9af6aa1",
+              "name": "Don't Ever Let Nobody Drag Your Spirit Down"
+            },
+            {
+              "artists": [
+                "Jimi Hendrix"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273522088789d49e216d9818292",
+              "name": "All Along the Watchtower"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23316096/Wheels",
+          "station": "KPOO",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/69lsmqsz5eRBIOjzZU0edy"
         }
       },
       "needs_reconciliation": false
