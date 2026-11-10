@@ -11365,6 +11365,50 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23316958": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23316958,
+          "title": "The Far From Perfect Cha-Cha",
+          "url": "https://spinitron.com/KALX/pl/23316958/The-Far-From-Perfect-Cha-Cha",
+          "start_time": "2026-11-09T22:00:00-0800",
+          "end_time": "2026-11-10T00:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6tpy5WZZyY8R0h5MdgvMMm",
+          "spotify:track:4oUU05qko4HFy6XV6KSmwj",
+          "spotify:track:1JzolcwsWAcwC6cQpQmUzX",
+          "spotify:track:7pdCDKs0i05N8ag4tAC5u5",
+          "spotify:track:0mj2fHHXIkw6n7ekV6tFsG",
+          "spotify:track:4yaqbyliyuRcn9cTFPb0Qg",
+          "spotify:track:11xoyfcxPa4oFqC7LRvraG",
+          "spotify:track:4L1JyD9K4dbnbIbwjj4TNs",
+          "spotify:track:6l5shPEg84qzJcojS0zMrV",
+          "spotify:track:1HESxoCQrPd0g2v9iyRrpu",
+          "spotify:track:6h1nkNQ3j2P2FKVZSlcLVt",
+          "spotify:track:3zVAGaQx4HHgQUUb6MxIkI",
+          "spotify:track:3OZWcOwcaNoglyeUhXmvll",
+          "spotify:track:6X94FteA5Jcbkj34qwzU4I",
+          "spotify:track:1Eolhana7nKHYpcYpdVcT5",
+          "spotify:track:0lQcnAlFn0iw7RwdaVcUuZ",
+          "spotify:track:1wnC7GvKGFneUPDdByt2nN",
+          "spotify:track:3wtkvBhXOSkDCutGZd78Iq",
+          "spotify:track:7no0rjXkqR90o7xUROSrh4",
+          "spotify:track:0rUZpqm9KyKBZmAGn2A5sl",
+          "spotify:track:0T9W0AaPh2RRiELB5YrfAh",
+          "spotify:track:7ibY5Yov1KhuEtmRprS421",
+          "spotify:track:1pimWzwUERYZbAFr5tL0Xl"
+        ],
+        "listing": {
+          "name": "KALX - The Far From Perfect Cha-Cha - 2026-11-09",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
