@@ -10942,7 +10942,7 @@
           "start_time": "2026-11-09T17:00:00-0800",
           "end_time": "2026-11-09T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5TtAENk8E31cVh2b4tymj6",
         "desired_uris": [
@@ -10957,8 +10957,82 @@
           "spotify:track:5xfzusX1UDsSGseOeOBOgG"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T18:00:00-0800",
+          "broadcast_start": "2026-11-09T17:00:00-0800",
+          "imported_at": "2026-11-10T14:33:00.862884199+00:00",
+          "last_updated": "2026-11-10 14:33 UTC",
           "name": "KALX - Take Five - 2026-11-09",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Bill Evans",
+                "Tony Bennett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739a89f156fb89a3d9fbd9cacf",
+              "name": "My Foolish Heart"
+            },
+            {
+              "artists": [
+                "McCoy Tyner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27323fb34466ce40ddf667742e4",
+              "name": "Indo-Serenade"
+            },
+            {
+              "artists": [
+                "Sonny Rollins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c95a2d76d99ece9b32228da6",
+              "name": "Duke Of Iron"
+            },
+            {
+              "artists": [
+                "Wes Montgomery"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27326aadbb501ab600a292df00b",
+              "name": "Full House - Album Version / Live At Tsubo / 1962"
+            },
+            {
+              "artists": [
+                "Cal Tjader",
+                "Charlie Byrd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27333242bfdff9b99fad4554385",
+              "name": "Tambu (Tombo In 7/4)"
+            },
+            {
+              "artists": [
+                "Flora Purim"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734d303c58f6aff00b4c8114b1",
+              "name": "Light As A Feather"
+            },
+            {
+              "artists": [
+                "Richard Beirach"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732f625c4b19c318dfc13119fb",
+              "name": "On Green Dolphin Street - Live At Maybeck Recital Hall, Berkeley, CA / January 5, 1992"
+            },
+            {
+              "artists": [
+                "The Cannonball Adderley Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eecf6a11c48155be127124c5",
+              "name": "Inner Journey"
+            },
+            {
+              "artists": [
+                "Cal Tjader"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732379223345d0d1a88d9b4faf",
+              "name": "Charisma (She's Got)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23315825/Take-Five",
+          "station": "KALX",
+          "track_count": 9,
+          "url": "https://open.spotify.com/playlist/5TtAENk8E31cVh2b4tymj6"
         }
       },
       "needs_reconciliation": false
