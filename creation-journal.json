@@ -18556,6 +18556,72 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23313732": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23313732,
+          "title": "The Power of Blues Compels You",
+          "url": "https://spinitron.com/KPOO/pl/23313732/The-Power-of-Blues-Compels-You",
+          "start_time": "2026-11-09T09:00:00-0800",
+          "end_time": "2026-11-09T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:7JphQokwTosr5Di8OIN030",
+          "spotify:track:0cppqPO5sjvWNTVlge0GkA",
+          "spotify:track:4EY9tpd2vvkT4UGoem1y5w",
+          "spotify:track:4KAFWWN78iTBlF8D1m2pkq",
+          "spotify:track:3ZCfi7iN4ZGxFY6T7VKOJD",
+          "spotify:track:4XRoRhnrc4wAgNnSA1Nzru",
+          "spotify:track:40i0eOCo5W76xPacbVkhna",
+          "spotify:track:6TqGT0sOp4ug7bclOsumON",
+          "spotify:track:1PaPKY48QZNpMoOc1myETe",
+          "spotify:track:1h56yDbYPyJe1vwFKAvbkt",
+          "spotify:track:7sxVCN2Iz63lUW1E3YRi4q",
+          "spotify:track:2fHj3KpIKKJUDaAUzWR40m",
+          "spotify:track:3DJ4FAwzYu1chxUqhoePXl",
+          "spotify:track:7Beqwrv1yvhA3QpxvYXGuC",
+          "spotify:track:3ywtJA47aw7I56dtSXbW6D",
+          "spotify:track:270guq76BC67EWsmaCa3WL",
+          "spotify:track:1VZd0qfypIDhvcD2V2c4Rh",
+          "spotify:track:3pZ8Zl63RsPXcSizLVen2q",
+          "spotify:track:41dEip3M7Em1FXDcnmJHG9",
+          "spotify:track:29b2LocJQuSM9IQLBJNPXb",
+          "spotify:track:1BroJTUNzDb5IEFjyxLHVQ",
+          "spotify:track:6ufwTwYTIkVkRWQg0SJpUK",
+          "spotify:track:4Sls72PPvFTGAgb81YLeuC",
+          "spotify:track:3RMU1viepNtWcPmrDuayc1",
+          "spotify:track:7hSISnhWp8wgF3cqUqgAUe",
+          "spotify:track:7sYvLenvOyP9RJQFlnuWG0",
+          "spotify:track:2ds6jmFzuwTKWSt7KbgKbv",
+          "spotify:track:6w98x2aPkTtWCBxJ9bmT8Q",
+          "spotify:track:27GayqijfIHVAUW2PlNPw9",
+          "spotify:track:2cyZbGA9DQCMzvyHAWzF8J",
+          "spotify:track:1T7hYTdwyqweVLbHLRdopp",
+          "spotify:track:72n7dWZSYNFDigrnUK61nx",
+          "spotify:track:4MUzJ1dKt2JEMSdT1UUkiT",
+          "spotify:track:7khETEkOwIV062HHvd9uom",
+          "spotify:track:5Win3Kn10lkr4e8KC44bay",
+          "spotify:track:5YYBkYeXBfymENS1J1y5GS",
+          "spotify:track:5rKL4oLuyZaslJeNDSSaH5",
+          "spotify:track:7MuMALGZV3KhVA9AS9TFup",
+          "spotify:track:7m6ZT1KYrt70hUhBDXPX5C",
+          "spotify:track:3ZZPEbX4WIWU6DRqkmVJvw",
+          "spotify:track:5tcSgZw0sixSKTlamaPyqY",
+          "spotify:track:0sf4rhH6yGEtmoVlU4BoQz",
+          "spotify:track:5qJnCqShjcOe8wCx1n6mmv",
+          "spotify:track:6sYvbgUyb31nEKD0c0rAb2",
+          "spotify:track:1qsjIhYcJPqJXYKNeBb9QA"
+        ],
+        "listing": {
+          "name": "KPOO - The Power of Blues Compels You - 2026-11-09",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
