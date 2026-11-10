@@ -10216,7 +10216,7 @@
           "start_time": "2026-11-09T07:00:00-0800",
           "end_time": "2026-11-09T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "62QIh1OEfu2wgDhdwk4ruh",
         "desired_uris": [
@@ -10245,8 +10245,102 @@
           "spotify:track:4XxCBaFpmLEWVCd3TiKp4x"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T09:00:00-0800",
+          "broadcast_start": "2026-11-09T07:00:00-0800",
+          "imported_at": "2026-11-10T14:28:56.392387058+00:00",
+          "last_updated": "2026-11-10 14:28 UTC",
           "name": "KALX - Sweet Drams - 2026-11-09",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Feon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734937eef0c9c0f568d5c8c018",
+              "name": "The Burial Of The Sun"
+            },
+            {
+              "artists": [
+                "OWA"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d03a3591bc7d8fc89d657333",
+              "name": "Return To Derangement"
+            },
+            {
+              "artists": [
+                "Tara Clerkin Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eca1b78d8aa6be72c94ba0a8",
+              "name": "There Was A Nice Sunset"
+            },
+            {
+              "artists": [
+                "Dechirico"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273027bf8f5ef54ccf08442759d",
+              "name": "Running Inside the Machine, Pt. III"
+            },
+            {
+              "artists": [
+                "Charles Dodge"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e90fa58bc2fad2300c1df1e3",
+              "name": "The Story of Our Lives: III. This Morning I Woke and Believed"
+            },
+            {
+              "artists": [
+                "Doug Gillard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731fc8038a9a3f528f61ded117",
+              "name": "Without This Light"
+            },
+            {
+              "artists": [
+                "Alan Tew"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c90f4c20358dbe3f4d89c8d4",
+              "name": "Surveillance"
+            },
+            {
+              "artists": [
+                "John Cale"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273869c35a31b09949f22a36dbd",
+              "name": "Leaving It Up To You"
+            },
+            {
+              "artists": [
+                "Haruomi Hosono"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733af48613b19da7eb6758d587",
+              "name": "Humming “Dream of Love”"
+            },
+            {
+              "artists": [
+                "Thee Sinseers",
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cea5e810a36bf0e912d4bcab",
+              "name": "While You Were Sleeping"
+            },
+            {
+              "artists": [
+                "Holy Wave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f11f6c94926271a0ea651275",
+              "name": "to the other"
+            },
+            {
+              "artists": [
+                "Shackleton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732353529274e70fcc1f3d7368",
+              "name": "When Memory Ceases"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23312783/Sweet-Drams",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/62QIh1OEfu2wgDhdwk4ruh"
         }
       },
       "needs_reconciliation": false
