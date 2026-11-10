@@ -10646,6 +10646,45 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23315225": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23315225,
+          "title": "No Motion Picture",
+          "url": "https://spinitron.com/KALX/pl/23315225/No-Motion-Picture",
+          "start_time": "2026-11-09T15:00:00-0800",
+          "end_time": "2026-11-09T17:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4mraRJO2iZA5WQ5dxlSQx9",
+          "spotify:track:0HT9UkofEhIiRuxGL4XZyK",
+          "spotify:track:5YJdGUJXAvhm5wgLhckZfm",
+          "spotify:track:62KrKdIK5YF1I1hXQ9UBHN",
+          "spotify:track:59qLHTHXovYNDMZsNF9RGQ",
+          "spotify:track:0VKo44gFxD6wLb43pz3Bqy",
+          "spotify:track:5MZALWjwQRX0RsZt31HlNP",
+          "spotify:track:3nF2lrs7gCKHCIZjXFkNC5",
+          "spotify:track:3A0yBAw85MnypPVhORzf45",
+          "spotify:track:117fV8pV7AMHPIaCCuK3ww",
+          "spotify:track:0KmDDcvkSSKSCLkoujLMUY",
+          "spotify:track:4sIjW1uFyoXojjvXrE3g1x",
+          "spotify:track:4Z8bTRGBl3liCD25LaSNq4",
+          "spotify:track:6zGUhFzT3GJ5n1EpXYJpZu",
+          "spotify:track:6DL2DNCbzQiqQ8DhKqgRrf",
+          "spotify:track:23etoZoHhlThdIj2VDCzvl",
+          "spotify:track:1Gsv64xKs8hYI3qNhFn3HO",
+          "spotify:track:2GxyZD9EqGsecQxK5Fpcre"
+        ],
+        "listing": {
+          "name": "KALX - No Motion Picture - 2026-11-09",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
