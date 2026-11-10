@@ -11375,7 +11375,7 @@
           "start_time": "2026-11-09T22:00:00-0800",
           "end_time": "2026-11-10T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2uUTNDmROJWxH9DccVh29W",
         "desired_uris": [
@@ -11404,8 +11404,102 @@
           "spotify:track:1pimWzwUERYZbAFr5tL0Xl"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T00:00:00-0800",
+          "broadcast_start": "2026-11-09T22:00:00-0800",
+          "imported_at": "2026-11-10T14:35:42.853858002+00:00",
+          "last_updated": "2026-11-10 14:35 UTC",
           "name": "KALX - The Far From Perfect Cha-Cha - 2026-11-09",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Gert Wilden & Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273873d3f6e5c43bd1eda8398bd",
+              "name": "Follow Me (Was Männer Nicht Für Möglich Halten)"
+            },
+            {
+              "artists": [
+                "Sybris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733893232f9e7d5a27f313c1f2",
+              "name": "Dance"
+            },
+            {
+              "artists": [
+                "The Corner Laughers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273927d4726472ef4f36df34ac8",
+              "name": "Larkspur Landing"
+            },
+            {
+              "artists": [
+                "Jorge Ben Jor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a3e351bbab659d55a2fadec",
+              "name": "Taj Mahal"
+            },
+            {
+              "artists": [
+                "Faces"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f3b07d17992714fd8d7110ae",
+              "name": "Silicone Grown"
+            },
+            {
+              "artists": [
+                "Kacy & Clayton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735946167744c7e1217e1d482e",
+              "name": "A Certain Kind Of Memory"
+            },
+            {
+              "artists": [
+                "Michael Stipe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738af5c582ccfefcba8f7a938f",
+              "name": "L'Hôtel"
+            },
+            {
+              "artists": [
+                "Joel Cusumano"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27399aaf3d72afef007ecd3d505",
+              "name": "Stigmata"
+            },
+            {
+              "artists": [
+                "Westside Cowboy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27359b4c22ba76349483371d480",
+              "name": "Kick Stones (The Boys)"
+            },
+            {
+              "artists": [
+                "Fake Fruit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735a6c0baaaffce9c7005d1232",
+              "name": "Ponies"
+            },
+            {
+              "artists": [
+                "Isobel Campbell",
+                "Mark Lanegan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c6a9063b89ec40128347698a",
+              "name": "Deus Ibi Est"
+            },
+            {
+              "artists": [
+                "Jade"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27397af810745a696a3455b0136",
+              "name": "Mrs Adams"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23316958/The-Far-From-Perfect-Cha-Cha",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/2uUTNDmROJWxH9DccVh29W"
         }
       },
       "needs_reconciliation": false
