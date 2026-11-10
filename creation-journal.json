@@ -10510,7 +10510,7 @@
           "start_time": "2026-11-09T12:00:00-0800",
           "end_time": "2026-11-09T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7ijgIRo5qp4oVcRNZCEgZo",
         "desired_uris": [
@@ -10544,8 +10544,104 @@
           "spotify:track:34DBr8CO4BDpoigLzKYlrg"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T15:00:00-0800",
+          "broadcast_start": "2026-11-09T12:00:00-0800",
+          "imported_at": "2026-11-10T14:30:16.808303109+00:00",
+          "last_updated": "2026-11-10 14:30 UTC",
           "name": "KALX - Hot Lasagna - 2026-11-09",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Broadcast"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273237803b061c3ff31f333c280",
+              "name": "According To No Plan"
+            },
+            {
+              "artists": [
+                "Phillip Golub"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731b0e33375966a3e8d2cec626",
+              "name": "interlude (adorn)"
+            },
+            {
+              "artists": [
+                "Gang Gang Dance"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736cc6cfa7136a154da009398a",
+              "name": "Chinese High"
+            },
+            {
+              "artists": [
+                "Josh Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273219dd9288c57381ec35b36e4",
+              "name": "High Step"
+            },
+            {
+              "artists": [
+                "Gyedu-Blay Ambolley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733ee2fcd7a5f011543f831731",
+              "name": "'Cause I Love You"
+            },
+            {
+              "artists": [
+                "SPACE"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320ba134dfb582be3a3684c7c",
+              "name": "Aurora"
+            },
+            {
+              "artists": [
+                "La Funk Mob",
+                "Boombass"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273184a5abfb426c39624e63416",
+              "name": "La doctoresse"
+            },
+            {
+              "artists": [
+                "The Echocentrics",
+                "Adrian Quesada"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27347d68a542a2dd915a6e371d3",
+              "name": "The Organizer"
+            },
+            {
+              "artists": [
+                "Jeremiah Chiu",
+                "Ben Lumsdaine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3",
+              "name": "Interfaces"
+            },
+            {
+              "artists": [
+                "The Mystery Lights"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273879446387aa24a6b3ab7c542",
+              "name": "Memories"
+            },
+            {
+              "artists": [
+                "Diego Garcia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739307270e404f508e85e3f02d",
+              "name": "Stay"
+            },
+            {
+              "artists": [
+                "Shearwater"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733329aaf3098be832ee7fef71",
+              "name": "A Mink in the Dusk"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23314446/Hot-Lasagna",
+          "station": "KALX",
+          "track_count": 28,
+          "url": "https://open.spotify.com/playlist/7ijgIRo5qp4oVcRNZCEgZo"
         }
       },
       "needs_reconciliation": false
