@@ -10500,6 +10500,55 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23314446": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23314446,
+          "title": "Hot Lasagna",
+          "url": "https://spinitron.com/KALX/pl/23314446/Hot-Lasagna",
+          "start_time": "2026-11-09T12:00:00-0800",
+          "end_time": "2026-11-09T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0dWdvtQMarrAyDcnkxC9fu",
+          "spotify:track:4bsRwI7NmpUwYbcNgullaS",
+          "spotify:track:38l1wGSIf2UaBlErxuYnEX",
+          "spotify:track:1h88MjkBYL4y6Vpd92GRHZ",
+          "spotify:track:0zvLIvXxsIf5gpPtITlPfo",
+          "spotify:track:1My8ZX1MZ1mUrbtmLGp5QA",
+          "spotify:track:7DbNOjppqEy6GuNB1ZLhN4",
+          "spotify:track:7KJ1d66tvX0hEGtjgVQPws",
+          "spotify:track:4UJX3aRUi6zJ6Gxm5Iv4yP",
+          "spotify:track:324qPwL4aWTMyM9dPwjrFh",
+          "spotify:track:5jtn5VtKifxX1i3tUkOwAF",
+          "spotify:track:4IhBdfMZX1TmZ7UKn2B2K9",
+          "spotify:track:0SKtdOaMh2CupYQicJz8r4",
+          "spotify:track:0sAYNARKWZNALH8GnvKFER",
+          "spotify:track:1Aq7Ss2G2zGEkeeLxvXTkv",
+          "spotify:track:6gNZiPceo74LGVgtFFG0AF",
+          "spotify:track:1Flo00mGdXRdRB9Fotbjb4",
+          "spotify:track:6cPkyuKy0E9k4RpbEzuBMU",
+          "spotify:track:1st5PcSutcDrvavgNdJcIX",
+          "spotify:track:4ieES9TKrNg7FU0okuggj8",
+          "spotify:track:3OThWhQiPVQAZ58s5TK5Bx",
+          "spotify:track:2yB9fmHdQvB7hTseEkRsDo",
+          "spotify:track:65VS7PMbjwMPilyRvEbMqY",
+          "spotify:track:41fwDH649hNkaQNOivMost",
+          "spotify:track:3YF4aMyDnV8QjUS9RFS22r",
+          "spotify:track:3Bg9LUiCdrVPgMCV63dCkv",
+          "spotify:track:3E8wDLAW6u8mqZ5slhMgP6",
+          "spotify:track:34DBr8CO4BDpoigLzKYlrg"
+        ],
+        "listing": {
+          "name": "KALX - Hot Lasagna - 2026-11-09",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
