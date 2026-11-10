@@ -18912,6 +18912,60 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23315248": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23315248,
+          "title": "Gramophoney Baloney",
+          "url": "https://spinitron.com/KPOO/pl/23315248/Gramophoney-Baloney",
+          "start_time": "2026-11-09T15:00:00-0800",
+          "end_time": "2026-11-09T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:39J4fonR8sQR8dPmMXYGNX",
+          "spotify:track:2Wa4sD5foIE7xnPFuUdQaJ",
+          "spotify:track:1S6aFCl2Ifdoqc4L6sl97U",
+          "spotify:track:6cjXCrgjif0xnrqSyorlot",
+          "spotify:track:0FxNTOHoeCN1CFQmpwNZZ4",
+          "spotify:track:4sZy3v4Ghe1e20YME3ApgJ",
+          "spotify:track:3wCuH9S0YGxfSIyHjZHsl4",
+          "spotify:track:2hmywjXMBI5IkoR8UCalgP",
+          "spotify:track:0cRZuFiy5SnLlFwZDAfTuh",
+          "spotify:track:2bsKRSndEo9d0c7Pxmvlr6",
+          "spotify:track:4n2Viv2djHsP3VRYIUatbH",
+          "spotify:track:1rNxpM26ynD46IoJVX83uK",
+          "spotify:track:2tsfqdJV9EOOu4fg9QIUnV",
+          "spotify:track:1MPqpMZfZ9U53quXXBeneF",
+          "spotify:track:6ZK3CnmsdwqlmQYfBeIcdW",
+          "spotify:track:7HyZgt5ZUqMkzhV25jaXtC",
+          "spotify:track:2xsjkFW1wr0V4693x2vhGb",
+          "spotify:track:5EBPYAnUF7nSF0q9PehVsT",
+          "spotify:track:5zoUI3I3eWhdx7lYy0IaPs",
+          "spotify:track:4555wupIGGGkEuJ30CIkNR",
+          "spotify:track:6owKAhwpi38LoaYk9Zy1MJ",
+          "spotify:track:50yKf1FXQfeUuPNMHTQQem",
+          "spotify:track:1SjEwGW0MKZX3DiAlBC9qv",
+          "spotify:track:230q9vxyUlecfZJvtjlIgX",
+          "spotify:track:3jJrcTXYOkjgk4k4M1sE9i",
+          "spotify:track:6Fo6BBqDKwjjd8kzXiNGo3",
+          "spotify:track:0pLzP2lJnGllP2NRfe8PhR",
+          "spotify:track:0OEd9gT7ijcd1GxxNQGlaI",
+          "spotify:track:2za7VJTYAvvW81MnlfxXXL",
+          "spotify:track:6TOsxsr72ZYfQDbuUpfWju",
+          "spotify:track:1OdlprYhHzkLPlfr6BkLwg",
+          "spotify:track:16sx6BTOSBT5HWs5ZXUvzM",
+          "spotify:track:2k6qOVD2zsuJLYcYvLLsA1"
+        ],
+        "listing": {
+          "name": "KPOO - Gramophoney Baloney - 2026-11-09",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
