@@ -10345,6 +10345,66 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23313677": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23313677,
+          "title": "The Rare Earth Show",
+          "url": "https://spinitron.com/KALX/pl/23313677/The-Rare-Earth-Show",
+          "start_time": "2026-11-09T09:00:00-0800",
+          "end_time": "2026-11-09T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3Dwmggfw8VvvlnjYgvJQgb",
+          "spotify:track:4wi9X9NfqcxafZuMRvwo9Z",
+          "spotify:track:4t87dWb7q5e7TtWMFeV0Z8",
+          "spotify:track:7qkOOFVUU9OgBemy12PFd3",
+          "spotify:track:1Ds0yJgmcX5HeuGtqjqx2D",
+          "spotify:track:6lFZbCc7pn6Lme1NP7qQqQ",
+          "spotify:track:0IZidc7QyEhI3OLvxYinJM",
+          "spotify:track:7o5kbXak0XlnP1hDsBATUR",
+          "spotify:track:58N4hiH9cKYLkHEhzAdIP1",
+          "spotify:track:1iSjmjc3knyvW6d1eUxya8",
+          "spotify:track:5fevMASln9banSX5QkCP8Q",
+          "spotify:track:1hM00JJgnzM9QzUp3nLBzk",
+          "spotify:track:33D8MzAdAmCSKPpK9BPzIY",
+          "spotify:track:2NSijx3ZNX1Lt80w0K850B",
+          "spotify:track:076591eI7uEFyExFwpPKf3",
+          "spotify:track:3i6XXmZbngE8HwZW3A1yjs",
+          "spotify:track:6omKuJwfiJGXv6mUAyAeuL",
+          "spotify:track:6OciU5g0hekPBP9MqbCKFs",
+          "spotify:track:1u2tyMNIqJQ9jbQxmGI9lo",
+          "spotify:track:2XxzsDD2zlnGz8T6hDWN7L",
+          "spotify:track:4o2oGWMEURiNFDj2zRH0Zu",
+          "spotify:track:3RdZNq9Rt230mfhjHkFwcx",
+          "spotify:track:2qfQBwnIDUjfWa4B8Uysav",
+          "spotify:track:3r1Aq1piYZFEZWVcagpmSx",
+          "spotify:track:4Y3gLYlV5rD3fhirhWKtei",
+          "spotify:track:5PfhxckjrOB6qt1wNYw8CX",
+          "spotify:track:2Tccb1DyLeJwkNk9WSzbc5",
+          "spotify:track:6tLjTxkUQjCOuPSYdTld0l",
+          "spotify:track:3ABAJj57o7rt7Fa1J2ksgG",
+          "spotify:track:5JWfCWyeCjHwlAuj601YjZ",
+          "spotify:track:6qgPDsYQu5PwJ3Uha5MfjG",
+          "spotify:track:2FdlazENi4Cz960NQP8vQF",
+          "spotify:track:7ddNWgSn3ANq32JmkFOecm",
+          "spotify:track:7nrGPwcnDFzC8vadHo27IT",
+          "spotify:track:6xlbgR7hpGfCdMW1XTs81e",
+          "spotify:track:0v0BMYE3RHQI8vANQRCGd6",
+          "spotify:track:4wbDALtjwuwBxtMgjuumoi",
+          "spotify:track:5txiSsUabBGJHSWWU2Veum",
+          "spotify:track:51RKHT7gR0koE3QQmIe2ik"
+        ],
+        "listing": {
+          "name": "KALX - The Rare Earth Show - 2026-11-09",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
