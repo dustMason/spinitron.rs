@@ -18567,7 +18567,7 @@
           "start_time": "2026-11-09T09:00:00-0800",
           "end_time": "2026-11-09T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4l4qH7C5sLZLLYjL5oxTsA",
         "desired_uris": [
@@ -18618,8 +18618,103 @@
           "spotify:track:1qsjIhYcJPqJXYKNeBb9QA"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T12:00:00-0800",
+          "broadcast_start": "2026-11-09T09:00:00-0800",
+          "imported_at": "2026-11-10T14:37:21.515037926+00:00",
+          "last_updated": "2026-11-10 14:37 UTC",
           "name": "KPOO - The Power of Blues Compels You - 2026-11-09",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Georgia White"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739c4231abec44cabcff7a3122",
+              "name": "The Stuff Is Here"
+            },
+            {
+              "artists": [
+                "Whistling Bob Howe",
+                "Frankie Griggs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733241a7ef8eb73d229980b933",
+              "name": "The Hottest Stuff In Town"
+            },
+            {
+              "artists": [
+                "Lucille Bogan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27340e9e373bc32c384aff26d4b",
+              "name": "Struttin' My Stuff"
+            },
+            {
+              "artists": [
+                "Lester Williams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a726795732380569b28f5528",
+              "name": "I Can't Lose With The Stuff I Use"
+            },
+            {
+              "artists": [
+                "Isabel Sykes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cc740c1eff0d0b883b54207c",
+              "name": "In Here With Your Heavy Stuff"
+            },
+            {
+              "artists": [
+                "Stuff Smith"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731b4484ec83492b34d7338782",
+              "name": "Here Comes the Man with the Jive"
+            },
+            {
+              "artists": [
+                "The Cats & The Fiddle"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27396ba83ccaa0a14d1d84f166c",
+              "name": "Killin' Jive"
+            },
+            {
+              "artists": [
+                "Andy Kirk & His Twelve Clouds Of Joy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd45e527188c797bc8bc15b8",
+              "name": "All The Jive Is Gone"
+            },
+            {
+              "artists": [
+                "Roy Milton & His Solid Senders"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f5b820e9805ae735cea2c2d",
+              "name": "Junior Jives"
+            },
+            {
+              "artists": [
+                "Carlos Zialcita",
+                "Johnny Otis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273edc7c50a0df1c0e70f1ad82b",
+              "name": "Jive N' Rhumba"
+            },
+            {
+              "artists": [
+                "Original Cast Recording"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27321952af95cb8167a30082a6e",
+              "name": "A Fable Of Rage In The Key Of Jive (Set to the music of \"Apple Honey\")"
+            },
+            {
+              "artists": [
+                "Big Joe Turner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cac221a640585abe73b2fba3",
+              "name": "Cherry Red"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23313732/The-Power-of-Blues-Compels-You",
+          "station": "KPOO",
+          "track_count": 45,
+          "url": "https://open.spotify.com/playlist/4l4qH7C5sLZLLYjL5oxTsA"
         }
       },
       "needs_reconciliation": false
