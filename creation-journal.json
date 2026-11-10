@@ -11094,7 +11094,7 @@
           "start_time": "2026-11-09T18:15:00-0800",
           "end_time": "2026-11-09T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6K3ELbTi5k7Ghn0uj0nTcf",
         "desired_uris": [
@@ -11122,8 +11122,103 @@
           "spotify:track:6pQ5LfcxRJETWkNKQzy23j"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T20:00:00-0800",
+          "broadcast_start": "2026-11-09T18:15:00-0800",
+          "imported_at": "2026-11-10T14:34:21.231562961+00:00",
+          "last_updated": "2026-11-10 14:34 UTC",
           "name": "KALX - FREEFORM - 2026-11-09 6:15pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Fontaines D.C.",
+                "ROSALÍA"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273912db68812b0772fa5c1b4b8",
+              "name": "Where Is Gone?"
+            },
+            {
+              "artists": [
+                "Jejune"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733882d7e20092ed6169c59015",
+              "name": "This Afternoons Malady"
+            },
+            {
+              "artists": [
+                "Holidays in United States"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fb2483ce77c0edaab8aec9eb",
+              "name": "If The Shoe Doesn’t Fit..."
+            },
+            {
+              "artists": [
+                "Jeanines"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b80bf9205c4cfd9cf9e4fed6",
+              "name": "You Can't Get It Back"
+            },
+            {
+              "artists": [
+                "Sunday Mourners"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273667333f3eabedf725b19985b",
+              "name": "Darling"
+            },
+            {
+              "artists": [
+                "Hannah Jadagu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730805aeec89c7cc9a4e2ca857",
+              "name": "Explanation"
+            },
+            {
+              "artists": [
+                "SAULT"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27304e86aa52cf087896593ecc4",
+              "name": "Pray up Stay Up"
+            },
+            {
+              "artists": [
+                "Coup Dur"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27339a83ed711e85de15348b74f",
+              "name": "Tu Dis Des Choses"
+            },
+            {
+              "artists": [
+                "El Búho",
+                "Pita Amor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5cd59314bcef42f02e8dc25",
+              "name": "Cumbia De Polvo"
+            },
+            {
+              "artists": [
+                "Antônio Carlos Jobim"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e6d9351591a7750a3c0641a3",
+              "name": "Aguas De Marco"
+            },
+            {
+              "artists": [
+                "Miles Davis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273013d36a7a652a86c9940adee",
+              "name": "Shout"
+            },
+            {
+              "artists": [
+                "Amy Winehouse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fb01094cec77087399c721f",
+              "name": "I'm No Good - You Know I'm No Good / Original Demo"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23316166/FREEFORM",
+          "station": "KALX",
+          "track_count": 22,
+          "url": "https://open.spotify.com/playlist/6K3ELbTi5k7Ghn0uj0nTcf"
         }
       },
       "needs_reconciliation": false
