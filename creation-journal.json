@@ -10037,7 +10037,7 @@
           "start_time": "2026-11-09T01:00:00-0800",
           "end_time": "2026-11-09T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6XWhJaOk3rZP4i7VBYxkmJ",
         "desired_uris": [
@@ -10107,8 +10107,101 @@
           "spotify:track:0XHf6Pm3PmOkhQmZpRcPxP"
         ],
         "listing": {
+          "broadcast_end": "2026-11-09T07:00:00-0800",
+          "broadcast_start": "2026-11-09T01:00:00-0800",
+          "imported_at": "2026-11-10T14:28:15.983026144+00:00",
+          "last_updated": "2026-11-10 14:28 UTC",
           "name": "KALX - FREEFORM - 2026-11-09",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Television"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27318b36d985b0ae01163ca9cf6",
+              "name": "Marquee Moon"
+            },
+            {
+              "artists": [
+                "Tom Waits"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e06e346c1c99e600eded13f1",
+              "name": "Hang On St. Christopher"
+            },
+            {
+              "artists": [
+                "Parlor Greens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d775127dbc0d8372bd600473",
+              "name": "Driptorch"
+            },
+            {
+              "artists": [
+                "April & Monroe Grisman The Beautiful Hang Gang"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273672f273eb89cbe7fe1b953bf",
+              "name": "Yellow Brick Road"
+            },
+            {
+              "artists": [
+                "Quasi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e8814af53304c11f1c90b01b",
+              "name": "It's Raining"
+            },
+            {
+              "artists": [
+                "Parlor Greens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d775127dbc0d8372bd600473",
+              "name": "In Green We Dream"
+            },
+            {
+              "artists": [
+                "The Linda Lindas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27310fb1010838a88051010df10",
+              "name": "High Horse"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "Six Shot Morning"
+            },
+            {
+              "artists": [
+                "Southern Culture on the Skids"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec5279e69acf743f902f4509",
+              "name": "Funnel of Love"
+            },
+            {
+              "artists": [
+                "Southern Culture on the Skids"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733f37fedf6575ce1e9a087961",
+              "name": "Zombified"
+            },
+            {
+              "artists": [
+                "Southern Culture on the Skids"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739489a4a0b8368896a7691e5c",
+              "name": "Banana Puddin'"
+            },
+            {
+              "artists": [
+                "Parlor Greens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d775127dbc0d8372bd600473",
+              "name": "In Green We Dream"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23312171/FREEFORM",
+          "station": "KALX",
+          "track_count": 64,
+          "url": "https://open.spotify.com/playlist/6XWhJaOk3rZP4i7VBYxkmJ"
         }
       },
       "needs_reconciliation": false
