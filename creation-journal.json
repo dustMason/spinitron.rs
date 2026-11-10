@@ -137,6 +137,32 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23099026": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23099026,
+          "title": "Information Overload",
+          "url": "https://spinitron.com/KALX/pl/23099026/Information-Overload",
+          "start_time": "2026-11-10T00:00:00-0800",
+          "end_time": "2026-11-10T01:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1wxRjdnT80RzFskgG0F7eX",
+          "spotify:track:0vs8tPxJE6eNJwuuQ2CqZp",
+          "spotify:track:4WztmroD4W6s9nsOvXD89U",
+          "spotify:track:26VmaIVnkd541XmHK11Reh",
+          "spotify:track:1MTJic4Wc83vkKdiAEqbv9"
+        ],
+        "listing": {
+          "name": "KALX - Information Overload - 2026-11-10 12:00am -0800 [KALX:23099026]",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23178298": {
       "entry": {
         "station": "KALX",
