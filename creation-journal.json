@@ -21734,7 +21734,7 @@
           "start_time": "2026-11-10T16:00:00-0800",
           "end_time": "2026-11-10T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "19ggM196umQuPkjPX1VrxF",
         "desired_uris": [
@@ -21744,8 +21744,45 @@
           "spotify:track:2YiCMmONQcoMPX2bV1LxE0"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T18:00:00-0800",
+          "broadcast_start": "2026-11-10T16:00:00-0800",
+          "imported_at": "2026-11-11T13:54:04.088325149+00:00",
+          "last_updated": "2026-11-11 13:54 UTC",
           "name": "KPOO - Wake Up Everybody - 2026-11-10",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Jimmy McGriff"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bb646d7163d6ec0cd5fe621b",
+              "name": "All About My Girl"
+            },
+            {
+              "artists": [
+                "Edwin Starr"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f1dc87f3fafc7d3ff962903",
+              "name": "War"
+            },
+            {
+              "artists": [
+                "The Chambers Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737463c06fdeccf298cb0f0cd4",
+              "name": "Time Has Come Today"
+            },
+            {
+              "artists": [
+                "Tears For Fears"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735e12c35cb4c848a927ef4b69",
+              "name": "Everybody Wants To Rule The World"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23321116/Wake-Up-Everybody",
+          "station": "KPOO",
+          "track_count": 4,
+          "url": "https://open.spotify.com/playlist/19ggM196umQuPkjPX1VrxF"
         }
       },
       "needs_reconciliation": false
