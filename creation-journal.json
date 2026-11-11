@@ -21205,7 +21205,7 @@
           "start_time": "2026-11-10T06:00:00-0800",
           "end_time": "2026-11-10T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7lNSvvoQjpi8RZtM3RCu6J",
         "desired_uris": [
@@ -21219,8 +21219,73 @@
           "spotify:track:3HqkZQP8zPRathO94XQLCC"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T07:00:00-0800",
+          "broadcast_start": "2026-11-10T06:00:00-0800",
+          "imported_at": "2026-11-11T13:51:25.163890221+00:00",
+          "last_updated": "2026-11-11 13:51 UTC",
           "name": "KPOO - More Overnight - 2026-11-10",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Harold Land"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e683fa39d14bcaba5cd3273",
+              "name": "Damisi"
+            },
+            {
+              "artists": [
+                "Harold Land"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a65e16c6ef8ee3dd9d86cc3c",
+              "name": "Mtume"
+            },
+            {
+              "artists": [
+                "Harold Land"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a65e16c6ef8ee3dd9d86cc3c",
+              "name": "Ode To Angela"
+            },
+            {
+              "artists": [
+                "Max Roach"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273719d03703c075316a2acaed4",
+              "name": "Pay Not Play Not"
+            },
+            {
+              "artists": [
+                "Max Roach"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273719d03703c075316a2acaed4",
+              "name": "Din-Ka Street"
+            },
+            {
+              "artists": [
+                "Max Roach"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273719d03703c075316a2acaed4",
+              "name": "Three-Four vs. Six-Eight Four-Four Ways"
+            },
+            {
+              "artists": [
+                "Max Roach"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d1127a8923edc0a3d4ddf326",
+              "name": "Equipoise"
+            },
+            {
+              "artists": [
+                "Max Roach"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d1127a8923edc0a3d4ddf326",
+              "name": "Effi"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23318658/More-Overnight",
+          "station": "KPOO",
+          "track_count": 8,
+          "url": "https://open.spotify.com/playlist/7lNSvvoQjpi8RZtM3RCu6J"
         }
       },
       "needs_reconciliation": false
