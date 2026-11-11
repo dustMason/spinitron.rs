@@ -11698,7 +11698,7 @@
           "start_time": "2026-11-10T07:00:00-0800",
           "end_time": "2026-11-10T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6Ky1DBdKsU4OypWUa2N9kc",
         "desired_uris": [
@@ -11735,8 +11735,101 @@
           "spotify:track:2akeQPk9w9ubCgMh4MP0L9"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T09:00:00-0800",
+          "broadcast_start": "2026-11-10T07:00:00-0800",
+          "imported_at": "2026-11-11T13:43:26.515702492+00:00",
+          "last_updated": "2026-11-11 13:43 UTC",
           "name": "KALX - FREEFORM - 2026-11-10 7:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Angine de Poitrine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ea5142aaaa1bc63e7ec7f715",
+              "name": "Fabienk"
+            },
+            {
+              "artists": [
+                "Built To Spill"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a3ff11ef1deb4625704162bc",
+              "name": "Comes a Day"
+            },
+            {
+              "artists": [
+                "Modest Mouse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ed8a70a92499e619895646e8",
+              "name": "March Into the Sea"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "Mimesis"
+            },
+            {
+              "artists": [
+                "Cage The Elephant"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e4800c920780ac18d4ab6730",
+              "name": "Ain't No Rest for the Wicked"
+            },
+            {
+              "artists": [
+                "Cameron Winter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734738aa171569052376f162fe",
+              "name": "Cancer of the Skull"
+            },
+            {
+              "artists": [
+                "Everyone Asked About You"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27339338f840c1a365eecb7c6d0",
+              "name": "Handsome, Beautiful"
+            },
+            {
+              "artists": [
+                "First Day Back"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27395be210d3b58d0796e577798",
+              "name": "Wait, Do You Hear That?"
+            },
+            {
+              "artists": [
+                "This Is Lorelei"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e915b6783a2821b146ed5f4c",
+              "name": "Billy Came Back"
+            },
+            {
+              "artists": [
+                "Dinosaur Jr."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a17e39798523ee1aaed20d9",
+              "name": "No Friends"
+            },
+            {
+              "artists": [
+                "Elliott Smith"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b46d1c138ed05574c6449ca",
+              "name": "Clementine"
+            },
+            {
+              "artists": [
+                "Red House Painters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738f52984b462aefbbc5c0111d",
+              "name": "Sundays and Holidays"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23318691/FREEFORM",
+          "station": "KALX",
+          "track_count": 31,
+          "url": "https://open.spotify.com/playlist/6Ky1DBdKsU4OypWUa2N9kc"
         }
       },
       "needs_reconciliation": false
