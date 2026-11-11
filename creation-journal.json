@@ -12459,7 +12459,7 @@
           "start_time": "2026-11-10T18:15:00-0800",
           "end_time": "2026-11-10T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1MOPklLw2uYxv5JZEVQpuf",
         "desired_uris": [
@@ -12484,8 +12484,109 @@
           "spotify:track:5RjGivASWUXD6ObHK8ThN5"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T20:00:00-0800",
+          "broadcast_start": "2026-11-10T18:15:00-0800",
+          "imported_at": "2026-11-11T13:47:23.942587379+00:00",
+          "last_updated": "2026-11-11 13:47 UTC",
           "name": "KALX - 𓇢𓆸 CRAWLSPACE🌫️😶‍🌫️°⋆.ೃ࿔*:･☁️ - 2026-11-10",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Space Ghost"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c531dd30d5267737664b5a08",
+              "name": "Dare To Dream"
+            },
+            {
+              "artists": [
+                "Visible Cloaks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c2d419750ae6691b9a6b7301",
+              "name": "Capgras"
+            },
+            {
+              "artists": [
+                "YL Hooi",
+                "Ulla"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273048fe7c310ce516470cab24f",
+              "name": "Running Around (83) - Ulla Version"
+            },
+            {
+              "artists": [
+                "Jon Hassell",
+                "Gregg Arreguin",
+                "Jamie Muhoberac",
+                "Peter Freeman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27363cfe48a199007e7f933d99d",
+              "name": "Amsterdam Blue"
+            },
+            {
+              "artists": [
+                "DJ Python",
+                "Tony Bontana"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27388b05293c3f2ddcb794ff08a",
+              "name": "Forgetful Angel"
+            },
+            {
+              "artists": [
+                "YankaNoi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e2e4df00a93d5b35bd48a20a",
+              "name": "binary star"
+            },
+            {
+              "artists": [
+                "Tristan Allen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec79b6fcc00ed6742a89bcdd",
+              "name": "Osni Closing"
+            },
+            {
+              "artists": [
+                "Calibre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732d9573130d41a0e55924a15a",
+              "name": "Drinnahilly"
+            },
+            {
+              "artists": [
+                "K Wata"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273457907cbed3d7d46602be0a6",
+              "name": "Whisper Dub"
+            },
+            {
+              "artists": [
+                "Lost Girls",
+                "Jenny Hval",
+                "Håvard Volden"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e033fc1941ea81d2cad7ca88",
+              "name": "Love, Lovers"
+            },
+            {
+              "artists": [
+                "Felicia Atkinson",
+                "Christina Vantzou"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f47b2cbda0f690a5cc74baac",
+              "name": "Amour, a liquid state"
+            },
+            {
+              "artists": [
+                "Siete Catorce"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a599bf79c95b5b3a5738d2fc",
+              "name": "Pánico"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23321620/%F0%93%87%A2%F0%93%86%B8-CRAWLSPACE",
+          "station": "KALX",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/1MOPklLw2uYxv5JZEVQpuf"
         }
       },
       "needs_reconciliation": false
