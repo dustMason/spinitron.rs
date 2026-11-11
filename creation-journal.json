@@ -21580,6 +21580,50 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23320073": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23320073,
+          "title": "Uplift Show",
+          "url": "https://spinitron.com/KPOO/pl/23320073/Uplift-Show",
+          "start_time": "2026-11-10T12:00:00-0800",
+          "end_time": "2026-11-10T16:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:75U4z8ixS53GoJZonAgSZm",
+          "spotify:track:6aNnVdpAQu8R0qGq5NMXyZ",
+          "spotify:track:5IZoaa0HoOotCQyIeCDc9f",
+          "spotify:track:5Dmy8NMxUun0zA4qjVjWtt",
+          "spotify:track:5K1a18qizvihYy9YVWYv55",
+          "spotify:track:6Wh6j6OftyZqvbmhx2MseS",
+          "spotify:track:3cinu1fuiEoGRJH6YD8uRE",
+          "spotify:track:4J7bs5mFu1zBa5UHP6rlq5",
+          "spotify:track:09r0mRDV2p40r2vZaOJJSN",
+          "spotify:track:4LR0YTXW4IpzGnZzMQokQs",
+          "spotify:track:6TkWxMXsEkeShyQaXe8Z4h",
+          "spotify:track:5z161QQZMgQxSILnv3QoJk",
+          "spotify:track:5khCvVYdtxqDG3v60e0zjn",
+          "spotify:track:2MZedJkke0CJmgHVwGIvbs",
+          "spotify:track:5QblyNjAyOs0AJBQHJQkrn",
+          "spotify:track:1qeO0T3LIqlUvrELz3Gngk",
+          "spotify:track:7A1UgsY87h3i14TeYpg6HL",
+          "spotify:track:5O56v4OrSJn7tbKjydbuFF",
+          "spotify:track:4m16y4HrVSk9N60oHNZBqI",
+          "spotify:track:5QblyNjAyOs0AJBQHJQkrn",
+          "spotify:track:1qeO0T3LIqlUvrELz3Gngk",
+          "spotify:track:7A1UgsY87h3i14TeYpg6HL",
+          "spotify:track:3eObNJP8wKy5E7q6wNT6nj"
+        ],
+        "listing": {
+          "name": "KPOO - Uplift Show - 2026-11-10",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
