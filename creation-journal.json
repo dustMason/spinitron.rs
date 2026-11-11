@@ -21938,7 +21938,7 @@
           "start_time": "2026-11-10T20:00:00-0800",
           "end_time": "2026-11-11T01:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5VwMcqZWb4zvhdW97OLnHN",
         "desired_uris": [
@@ -21987,8 +21987,105 @@
           "spotify:track:3fdq4gGlSwdsj3JW9Pkw3m"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T01:00:00-0800",
+          "broadcast_start": "2026-11-10T20:00:00-0800",
+          "imported_at": "2026-11-11T13:55:24.768319125+00:00",
+          "last_updated": "2026-11-11 13:55 UTC",
           "name": "KPOO - Fingersnaps Salon...Music & Conversation - 2026-11-10",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Double Exposure",
+                "Ken Lou"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c87436c53419d5d328f80a2b",
+              "name": "Ten Percent (Ken Lou Mix)"
+            },
+            {
+              "artists": [
+                "Gwen McCrae"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b71f1099fa292977d42db8c8",
+              "name": "Keep the Fire Burning"
+            },
+            {
+              "artists": [
+                "South Street Player"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27352b5e13db69e79bd8db332e2",
+              "name": "(Who?) Keeps Changing Your Mind? - The Club Mix"
+            },
+            {
+              "artists": [
+                "Kathy Sledge"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273745b0f39fe8445b799ced977",
+              "name": "Another Star - Classic 12' Mix"
+            },
+            {
+              "artists": [
+                "Ron Carroll",
+                "Mazi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733dfa82d087ee70520d407c5a",
+              "name": "Soundz - Mazi's Groove Parlor Mix"
+            },
+            {
+              "artists": [
+                "Crystal Waters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf507937eaa2e453c7544e0a",
+              "name": "What I Need - Basement Boys Remix"
+            },
+            {
+              "artists": [
+                "Beyoncé"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27369a3c061676c2020adfe8315",
+              "name": "COZY"
+            },
+            {
+              "artists": [
+                "John Legend"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273658ab4a422774b3cea5fc23a",
+              "name": "Daylight"
+            },
+            {
+              "artists": [
+                "Pockets ",
+                "Dave 'Love' Lee"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a883f7d49531f1392bfcae94",
+              "name": "Come Go With Me - Dave Lee's Found a Place Mix"
+            },
+            {
+              "artists": [
+                "Made In U.S.A."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a303d90da07ba29f1bff3142",
+              "name": "Melodies - 12\" Mix"
+            },
+            {
+              "artists": [
+                "KAYTRANADA",
+                "Little Dragon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b2f893f4215f2930e7320355",
+              "name": "BULLETS"
+            },
+            {
+              "artists": [
+                "Diana Ross"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739a2b94aa80fdbdf671f14f9e",
+              "name": "Let's Do It"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23322104/Fingersnaps-Salon-Music-Conversation",
+          "station": "KPOO",
+          "track_count": 43,
+          "url": "https://open.spotify.com/playlist/5VwMcqZWb4zvhdW97OLnHN"
         }
       },
       "needs_reconciliation": false
