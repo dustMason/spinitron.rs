@@ -12601,7 +12601,7 @@
           "start_time": "2026-11-10T20:00:00-0800",
           "end_time": "2026-11-10T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0T4ofvNmru34WiLmrhxVSq",
         "desired_uris": [
@@ -12628,8 +12628,102 @@
           "spotify:track:2WxqpVkUEkJ1PgxI5ptOTV"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T22:00:00-0800",
+          "broadcast_start": "2026-11-10T20:00:00-0800",
+          "imported_at": "2026-11-11T13:48:03.366778764+00:00",
+          "last_updated": "2026-11-11 13:48 UTC",
           "name": "KALX - FREEFORM - 2026-11-10 8:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Lolina"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27374ec39c2eb247822c199984f",
+              "name": "Monopoly of Mistakes"
+            },
+            {
+              "artists": [
+                "Sofia Kourtesis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c8e34fd2577f2788000fd61",
+              "name": "Texas Changing"
+            },
+            {
+              "artists": [
+                "Jessie Ware"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27317625df7e95814d90cbcf3cb",
+              "name": "Adore You"
+            },
+            {
+              "artists": [
+                "Madonna"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aaa9d84415623c1e790cd07b",
+              "name": "Get Together"
+            },
+            {
+              "artists": [
+                "Katy B"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732ff1f1e4e1a2777c6ccaa588",
+              "name": "Katy on a Mission"
+            },
+            {
+              "artists": [
+                "FKA twigs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736089c0f46246e83c090eb0ad",
+              "name": "Sushi"
+            },
+            {
+              "artists": [
+                "Carly Rae Jepsen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273554f127136aa7945ce442617",
+              "name": "Warm Blood"
+            },
+            {
+              "artists": [
+                "Annie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b88b6ccd86190b8f9fbb9178",
+              "name": "Chewing Gum - Vocal Mix"
+            },
+            {
+              "artists": [
+                "SOPHIE"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e77ecae9169e22bbe544e479",
+              "name": "HARD"
+            },
+            {
+              "artists": [
+                "L'Rain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ea5a26ce4370090fc6698f4",
+              "name": "elmyra"
+            },
+            {
+              "artists": [
+                "Kelela",
+                "PinkPantheress"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27315c00fa655da7d2b186a470c",
+              "name": "the bridge"
+            },
+            {
+              "artists": [
+                "Beyoncé"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738db37bc9a58543471bee78c5",
+              "name": "Pray You Catch Me"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23321954/FREEFORM",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/0T4ofvNmru34WiLmrhxVSq"
         }
       },
       "needs_reconciliation": false
