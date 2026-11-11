@@ -11984,7 +11984,7 @@
           "start_time": "2026-11-10T12:00:00-0800",
           "end_time": "2026-11-10T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3TjVaNH3qGUkl8qjy9uHMy",
         "desired_uris": [
@@ -12025,8 +12025,103 @@
           "spotify:track:5e9Y1VL45zCKIJusObj8Pw"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T15:00:00-0800",
+          "broadcast_start": "2026-11-10T12:00:00-0800",
+          "imported_at": "2026-11-11T13:44:45.759807204+00:00",
+          "last_updated": "2026-11-11 13:44 UTC",
           "name": "KALX - Deep Vets - 2026-11-10",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Rev. Sister Mary M. Nelson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27352085ee3b9659b4c61ca6232",
+              "name": "Isaiah-LV"
+            },
+            {
+              "artists": [
+                "Lizzy Mercier Descloux"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320ebb31165b3e2e4ec0ae792",
+              "name": "Mission Impossible"
+            },
+            {
+              "artists": [
+                "Tony Rice"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ab5413d66a9564a08f7df65",
+              "name": "Wreck Of The Edmund Fitzgerald"
+            },
+            {
+              "artists": [
+                "Bye Parula"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273825b1134b4819fd0f6cefd87",
+              "name": "Something Out Of Nothing"
+            },
+            {
+              "artists": [
+                "The Doors"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e3213d2798644a5935b6dce3",
+              "name": "The Unknown Soldier"
+            },
+            {
+              "artists": [
+                "Emerson, Lake & Palmer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273243e50a2b19ee327b90c00cc",
+              "name": "Tarkus - i. Eruption / ii. Stones of Years / iii. Iconoclast / iv. Mass / v. Manticore / vi. Battlefield / vii. Aquatarkus - 2012 Remaster"
+            },
+            {
+              "artists": [
+                "Little Brother Montgomery"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273189b229d47e7923cc8cb04b7",
+              "name": "Vicksburg Blues"
+            },
+            {
+              "artists": [
+                "Charlie Barnet & His Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733aba0d2f1a6fa832c09c90ec",
+              "name": "Cherokee"
+            },
+            {
+              "artists": [
+                "Richard Thompson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4d507b75e9e2bd01ac1341a",
+              "name": "Stringer"
+            },
+            {
+              "artists": [
+                "Gangstagrass",
+                "Dan Whitener",
+                "Soul Khan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736087263c48d336e47b7d8ff4",
+              "name": "John Henry"
+            },
+            {
+              "artists": [
+                "Emerson, Lake & Palmer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273243e50a2b19ee327b90c00cc",
+              "name": "Tarkus - i. Eruption / ii. Stones of Years / iii. Iconoclast / iv. Mass / v. Manticore / vi. Battlefield / vii. Aquatarkus - 2012 Remaster"
+            },
+            {
+              "artists": [
+                "Seth James"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737f35f1e7f7ccc47a4ead4442",
+              "name": "Lonely Avenue"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23319937/Deep-Vets",
+          "station": "KALX",
+          "track_count": 35,
+          "url": "https://open.spotify.com/playlist/3TjVaNH3qGUkl8qjy9uHMy"
         }
       },
       "needs_reconciliation": false
