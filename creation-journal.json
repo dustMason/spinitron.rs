@@ -11834,6 +11834,48 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23319396": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23319396,
+          "title": "Minute Intervals",
+          "url": "https://spinitron.com/KALX/pl/23319396/Minute-Intervals",
+          "start_time": "2026-11-10T09:30:00-0800",
+          "end_time": "2026-11-10T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2QpKtdyqtWlH0u6X1CR0KM",
+          "spotify:track:3KQtOdQnPsVCibfNm1tV5c",
+          "spotify:track:4vfTIX8YZsQZnKR1Zu0eK9",
+          "spotify:track:4zkfx5Cj1lczyo80PDlzpP",
+          "spotify:track:5YYzRF44K1NxPnTwdfGmPR",
+          "spotify:track:1S85QvY4IIhDHs4zF9SGTE",
+          "spotify:track:3AedV4g7mAhaCPPJuWbgTW",
+          "spotify:track:5FoZQYvj3zys8RiDh8FZR4",
+          "spotify:track:4jLzG9tZZGTbc3p2VWjF7r",
+          "spotify:track:08ffqCfwy3YeTW0SM4LDpz",
+          "spotify:track:5lzeCmd4wvvUksT8PyMA2e",
+          "spotify:track:1mQdmdURkjEleaupjBaRb4",
+          "spotify:track:6BE0jeBho94oFSeF3a3nmP",
+          "spotify:track:5KDGafzGdMdEtUHc9Wu1QK",
+          "spotify:track:3JJkrFZCKjpXA3tFDn8wnE",
+          "spotify:track:6Zs4KcviHrxfjjoDSMlvhE",
+          "spotify:track:6Pv48Rm8SZlk2SPbO90sd3",
+          "spotify:track:3tU9zSfEL0N0aLXAeRaK1M",
+          "spotify:track:5Sx7nme4uPeI6Ebe1DNm4o",
+          "spotify:track:4UJX3aRUi6zJ6Gxm5Iv4yP",
+          "spotify:track:12XuSDj4iLnR1lgONfXae4"
+        ],
+        "listing": {
+          "name": "KALX - Minute Intervals - 2026-11-10",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
