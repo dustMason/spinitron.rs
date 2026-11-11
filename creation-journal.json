@@ -13011,6 +13011,55 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23322955": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23322955,
+          "title": "Sound Dusting",
+          "url": "https://spinitron.com/KALX/pl/23322955/Sound-Dusting",
+          "start_time": "2026-11-11T00:00:00-0800",
+          "end_time": "2026-11-11T03:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:7lRsrT9rpJO0oOsriiVfHv",
+          "spotify:track:2siWQUmrnPEjrUzRf8zjCI",
+          "spotify:track:5KPOQYqcVp7Maj923g8nDW",
+          "spotify:track:6DLID8Ud4OCsKuPKdP54da",
+          "spotify:track:4rGaciqHXk0SQAfd41jBDU",
+          "spotify:track:10VunE1vcyuo2KZ0VOmkKJ",
+          "spotify:track:62fKZbi5kAxd3fL0ZOoGQm",
+          "spotify:track:3Vl64lCHAzbWx1z3jLFkL7",
+          "spotify:track:2uZX20tnMioRQLZssRzTBt",
+          "spotify:track:018bxhRLe8si8PVYiPgnvY",
+          "spotify:track:0Vd8cDLuYwNNtCi7OmgoRD",
+          "spotify:track:6o9YhJHVfjEikv4lHAt8ef",
+          "spotify:track:4yrsG2XizFVney2UWrBMiJ",
+          "spotify:track:6VZlNQuwqPBE5C6NlDMkpz",
+          "spotify:track:2EEdJeHNxLrJoPTdKNNi5A",
+          "spotify:track:4Wg4xC0dkNIBbI1YIVvm30",
+          "spotify:track:7FJ93IR3AjV1vimi5Shpi6",
+          "spotify:track:7r8jbJvbDgZbyOs5hct9Ds",
+          "spotify:track:7gtRfBtNgat1RFIgMgjSkk",
+          "spotify:track:1BPxStWlzNU6xQrDUTUaPR",
+          "spotify:track:0K9LcTYGKqsRkdoGEUJsWb",
+          "spotify:track:5PE9c9ubXE1TeU4S2DlTZ5",
+          "spotify:track:2xMfl0cAptcq1y7kSTPwF4",
+          "spotify:track:25hadd25PQz7Cdx66AyTeB",
+          "spotify:track:18ygj82F39Tnh2z3dV0wZq",
+          "spotify:track:0BgriljLaP0Fe3PNXdbLLK",
+          "spotify:track:2HjWB3CXEKg3i6ANT2v97m",
+          "spotify:track:4tXs6JVQfwl9fyPlwVM2dc"
+        ],
+        "listing": {
+          "name": "KALX - Sound Dusting - 2026-11-11",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
