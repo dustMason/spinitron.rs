@@ -68,7 +68,7 @@
           "start_time": "2026-11-10T17:00:00-0800",
           "end_time": "2026-11-10T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6tMHhyPqviPLh5BCmEYhfj",
         "desired_uris": [
@@ -90,8 +90,102 @@
           "spotify:track:5sj197xVLlMuwxgSCXYEkU"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T18:00:00-0800",
+          "broadcast_start": "2026-11-10T17:00:00-0800",
+          "imported_at": "2026-11-11T13:46:05.052292471+00:00",
+          "last_updated": "2026-11-11 13:46 UTC",
           "name": "KALX - Americana, Folk, and Roots - 2026-11-10",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Marty Stuart And His Fabulous Superlatives"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273422c5a830181eb6af83d7645",
+              "name": "Time Don't Wait"
+            },
+            {
+              "artists": [
+                "Sweet Sally"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27368f2ce5e2749f5fd0cbfd18b",
+              "name": "Wasted Time"
+            },
+            {
+              "artists": [
+                "Chris Hillman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e7d3b62a5bc8a3d985069b6e",
+              "name": "Bidin’ My Time"
+            },
+            {
+              "artists": [
+                "Great Speckled Bird"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27329c5c95d14850b8b6434fa36",
+              "name": "Long Long Time To Get Old"
+            },
+            {
+              "artists": [
+                "Odetta"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27391a9e5832ceb532fe57bb459",
+              "name": "Tomorrow Is a Long Time"
+            },
+            {
+              "artists": [
+                "Justin Townes Earle"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f18f93a0949ae325f41b2f9e",
+              "name": "Won't Be The Last Time"
+            },
+            {
+              "artists": [
+                "Rachel Drew",
+                "the Bitter Roots"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27377b827a9e455ea5089801553",
+              "name": "Jealous All the Time"
+            },
+            {
+              "artists": [
+                "Danny Schmidt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273292424181edd6ff938bda57c",
+              "name": "Happy All the Time"
+            },
+            {
+              "artists": [
+                "Dwight Yoakam"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27386d89c54777229544b78f6f2",
+              "name": "This Time"
+            },
+            {
+              "artists": [
+                "Elena Loper"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273146bcc7d28d4049882fd9b20",
+              "name": "Eva Green Time Machine (Queer Waltz)"
+            },
+            {
+              "artists": [
+                "Don Williams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dc818eefac30b87902131b72",
+              "name": "Tulsa Time"
+            },
+            {
+              "artists": [
+                "Kate York"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a16ee1dee8e85d13af88dd8",
+              "name": "Comes a Time"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23005728/Americana-Folk-and-Roots",
+          "station": "KALX",
+          "track_count": 16,
+          "url": "https://open.spotify.com/playlist/6tMHhyPqviPLh5BCmEYhfj"
         }
       },
       "needs_reconciliation": false
