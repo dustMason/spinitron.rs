@@ -21016,7 +21016,7 @@
           "start_time": "2026-11-09T23:00:00-0800",
           "end_time": "2026-11-10T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4NCG9FUKxX77gf2eklyIZv",
         "desired_uris": [
@@ -21083,8 +21083,114 @@
           "spotify:track:2oUjAwwVHMubHcsj0WzAaM"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T06:00:00-0800",
+          "broadcast_start": "2026-11-09T23:00:00-0800",
+          "imported_at": "2026-11-11T13:50:45.439990478+00:00",
+          "last_updated": "2026-11-11 13:50 UTC",
           "name": "KPOO - Over Nite Sounds - 2026-11-09",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Little Milton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aff4de26f8174adc281a2a42",
+              "name": "The Blues Is Alright"
+            },
+            {
+              "artists": [
+                "Eddie Burns",
+                "Eddie Burns Blues Band",
+                "Eddie Burns, guitar, harmonica, vocal",
+                "Joe Hunter, piano",
+                "Frank Bryant, bass",
+                "Bobby Welch, drums"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ff4f2b749ead495c100d833b",
+              "name": "Orange Driver"
+            },
+            {
+              "artists": [
+                "Eddie Shaw",
+                "Melvin Taylor",
+                "Ken Saydak",
+                "Harlan Terson",
+                "Merle Perkins",
+                "Eddie \"Cleanhead\" Vinson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27368e8dc63b14cc17c00004f3c",
+              "name": "My Baby and Me"
+            },
+            {
+              "artists": [
+                "Melvin Taylor",
+                "Lucky Peterson",
+                "Titus Williams",
+                "Ray \"Killer\" Allison"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dea25f327a8ae1257b7ace4f",
+              "name": "Talking to Anna-Mae, Pt. 1"
+            },
+            {
+              "artists": [
+                "Eddie Kirkland"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27347ef2039b75aa77b4d4bd97a",
+              "name": "Young Man Young Woman Blues"
+            },
+            {
+              "artists": [
+                "Buster Benton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273201c743e2028200ce98d78a0",
+              "name": "That's Your Thing"
+            },
+            {
+              "artists": [
+                "Jimmy Dawkins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa421a6c856d2127ac2c7af0",
+              "name": "Off Business"
+            },
+            {
+              "artists": [
+                "Sonny Terry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d7e986f07c56030ab4eb1cde",
+              "name": "Old Jabo"
+            },
+            {
+              "artists": [
+                "Big Bill Broonzy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27364c91b2ad80033d52d2d7826",
+              "name": "Mule-Ridin' Blues"
+            },
+            {
+              "artists": [
+                "Memphis Slim"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734416278bb678fa305232c88e",
+              "name": "Joogie Boogie"
+            },
+            {
+              "artists": [
+                "Vera Hall"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273189b229d47e7923cc8cb04b7",
+              "name": "Black Woman"
+            },
+            {
+              "artists": [
+                "K.C. Douglas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273189b229d47e7923cc8cb04b7",
+              "name": "Mercury Blues"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23317426/Over-Nite-Sounds",
+          "station": "KPOO",
+          "track_count": 61,
+          "url": "https://open.spotify.com/playlist/4NCG9FUKxX77gf2eklyIZv"
         }
       },
       "needs_reconciliation": false
