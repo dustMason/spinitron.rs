@@ -21797,7 +21797,7 @@
           "start_time": "2026-11-10T18:00:00-0800",
           "end_time": "2026-11-10T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4AHIfs1JU72WnIVoMwPiqb",
         "desired_uris": [
@@ -21826,8 +21826,104 @@
           "spotify:track:6Lk5eBfrVTvyrDbqTmJBo3"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T20:00:00-0800",
+          "broadcast_start": "2026-11-10T18:00:00-0800",
+          "imported_at": "2026-11-11T13:54:43.474630127+00:00",
+          "last_updated": "2026-11-11 13:54 UTC",
           "name": "KPOO - On The Spot - 2026-11-10",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Sonny Rollins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d1ae6a07bffdef38fde0c372",
+              "name": "I've Found A New Baby - Alternate Take"
+            },
+            {
+              "artists": [
+                "Hampton Hawes Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273622281583f5aeb3e23b4b026",
+              "name": "I Got Rhythm"
+            },
+            {
+              "artists": [
+                "Shelly Manne"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27386d67b78a2a5a117ced600ed",
+              "name": "Get Me to the Church On Time"
+            },
+            {
+              "artists": [
+                "Barney Kessel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27342a986a75e0d3c1d125c6874",
+              "name": "Begin The Blues"
+            },
+            {
+              "artists": [
+                "Phineas Newborn Jr."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c82fff5b21ec87f42920c1f",
+              "name": "Stella by Starlight"
+            },
+            {
+              "artists": [
+                "Barney Kessel",
+                "Ray Brown",
+                "Shelly Manne"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325cd9c39dd7294a54d9bd25c",
+              "name": "Jordu"
+            },
+            {
+              "artists": [
+                "Ray Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273218769a889d5c619d43288c7",
+              "name": "Ojos De Rojo"
+            },
+            {
+              "artists": [
+                "Hampton Hawes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27321c7a76417120bde4cee77a3",
+              "name": "Billy Boy"
+            },
+            {
+              "artists": [
+                "Ethnic Heritage Ensemble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e89e48e1abdccfc680a6f5f9",
+              "name": "Major to Minor"
+            },
+            {
+              "artists": [
+                "Betty Carter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733351fc940af6db0d74b8c80c",
+              "name": "The Love We Had Yesterday"
+            },
+            {
+              "artists": [
+                "Yves François",
+                "Fran Jackson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735ce68d82091c341bf2445d64",
+              "name": "Lester Leaps In"
+            },
+            {
+              "artists": [
+                "Deep Blue Organ Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ab2f99edb1ac4536e7642545",
+              "name": "Goin' To Town"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23321515/On-The-Spot",
+          "station": "KPOO",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/4AHIfs1JU72WnIVoMwPiqb"
         }
       },
       "needs_reconciliation": false
