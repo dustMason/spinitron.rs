@@ -58,6 +58,43 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23005728": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23005728,
+          "title": "Americana, Folk, and Roots",
+          "url": "https://spinitron.com/KALX/pl/23005728/Americana-Folk-and-Roots",
+          "start_time": "2026-11-10T17:00:00-0800",
+          "end_time": "2026-11-10T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3aUKSHhlwMKwVd9LvzoFeT",
+          "spotify:track:4ZX0GyAUs15W4yi2rLCNJJ",
+          "spotify:track:6AmqeGfu3zvkWfYVPBhLkx",
+          "spotify:track:30t1Ka5QI3PRassMorcerx",
+          "spotify:track:03f95cczYGlSHf1UfnVRkp",
+          "spotify:track:04C5VUvuNERn4FneVeQOuo",
+          "spotify:track:4wr3u5k54pKVydXKhtKy9K",
+          "spotify:track:5b7u95IqXYRlDDKmgjqSAk",
+          "spotify:track:230X3FvKaHbUHboOgXlAWw",
+          "spotify:track:07TaCtWE9589bB9k5QiD6W",
+          "spotify:track:0cThXovxrvU68JuzYUXhJT",
+          "spotify:track:5lH0SaQ5ds83jw9zleRVNr",
+          "spotify:track:4hSS38bFmO35tmMLnfi1MS",
+          "spotify:track:1jSiaEUSIaWVCrOoEo9lOQ",
+          "spotify:track:194FyNxZMekPzN8ZWiGZsI",
+          "spotify:track:5sj197xVLlMuwxgSCXYEkU"
+        ],
+        "listing": {
+          "name": "KALX - Americana, Folk, and Roots - 2026-11-10",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23043221": {
       "entry": {
         "station": "KALX",
