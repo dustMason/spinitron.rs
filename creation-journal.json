@@ -12867,6 +12867,52 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23322519": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23322519,
+          "title": "FREEFORM",
+          "url": "https://spinitron.com/KALX/pl/23322519/FREEFORM",
+          "start_time": "2026-11-10T22:00:00-0800",
+          "end_time": "2026-11-11T00:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:47VeRNihVNoV91prYHFbN7",
+          "spotify:track:1TgaIHb4ROfGLtpowjzHkQ",
+          "spotify:track:5iQMgBwQmFid99I40DS91U",
+          "spotify:track:5Fe46RaFj0ujeYeRUSG4Jz",
+          "spotify:track:4rCZk8Tm78StKVSrRn3bki",
+          "spotify:track:1bGmWtMiXU0G5UwCMgyFsI",
+          "spotify:track:7IQAuxUG4VczKl85gVcPaX",
+          "spotify:track:2eIxzcGQjIRCs8qNEzd5Cu",
+          "spotify:track:0jKLxkfWkaz6Pfz0lI8hMU",
+          "spotify:track:1Snko28yJOihcRVXs9dAo9",
+          "spotify:track:1DWZUa5Mzf2BwzpHtgbHPY",
+          "spotify:track:0aBXUYZnPGercCeyjriEtl",
+          "spotify:track:4uE5vqzJng3O76mLi722Nk",
+          "spotify:track:0wpkq7qG0GHxNd3AdOVbKp",
+          "spotify:track:5ke5vHuqKwVm4aLNWXsTIS",
+          "spotify:track:2FDoqLr91k1SpVcZpHIJA8",
+          "spotify:track:2sB4yeOCODLSkTBRVCtbdQ",
+          "spotify:track:3VkouzQwSp4fa7mbhkQgGR",
+          "spotify:track:3XOapyiO6vB1v6k9KqHz2O",
+          "spotify:track:0tUToEm7GecduAC880L80F",
+          "spotify:track:5PgCzwGLoo9QZkQ2WWbxYC",
+          "spotify:track:1HrmcwesB6EmMAxexiKm8M",
+          "spotify:track:2EPxhPbZczxce6wHbuOlQ6",
+          "spotify:track:7DkiYfmTCB1Rv2uvdPuxBQ",
+          "spotify:track:6mfeMz98JP6CUuCi4FvWg6"
+        ],
+        "listing": {
+          "name": "KALX - FREEFORM - 2026-11-10 10:00pm -0800 [KALX:23322519]",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
