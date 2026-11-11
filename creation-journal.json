@@ -21433,7 +21433,7 @@
           "start_time": "2026-11-10T09:00:00-0800",
           "end_time": "2026-11-10T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7tx8aGal1mN2FQdYZ2keFl",
         "desired_uris": [
@@ -21482,8 +21482,101 @@
           "spotify:track:3eYuhiV3IvV4mofl5HjX8O"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T12:00:00-0800",
+          "broadcast_start": "2026-11-10T09:00:00-0800",
+          "imported_at": "2026-11-11T13:52:45.604745129+00:00",
+          "last_updated": "2026-11-11 13:52 UTC",
           "name": "KPOO - Grown Folks Music - 2026-11-10",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Peter White"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273368a5d143ef11b834e489c86",
+              "name": "Don't Want To Be a Fool"
+            },
+            {
+              "artists": [
+                "The Jazz Crusaders"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365e3d5f86729d4c234274680",
+              "name": "Rainy Night In Georgia"
+            },
+            {
+              "artists": [
+                "Sammy Davis Jr."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c117dee920b624316aeb2349",
+              "name": "The Shelter of Your Arms"
+            },
+            {
+              "artists": [
+                "Jamie Davis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27361e159dd3a8b0047297364e3",
+              "name": "Fragile"
+            },
+            {
+              "artists": [
+                "Lou Rawls"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ab2d6d54a24b44f3c89ea1be",
+              "name": "Autumn Leaves"
+            },
+            {
+              "artists": [
+                "Frank Chacksfield & His Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27324be6e4134a06ce96d11f046",
+              "name": "Raindrops Keep Falling On My Head"
+            },
+            {
+              "artists": [
+                "Brook Benton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27362c93ff7e8b9297f1b2e88f7",
+              "name": "Thank You Pretty Baby"
+            },
+            {
+              "artists": [
+                "Johnny Mathis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27344ff5966d0b28718483702b4",
+              "name": "Go Away Little Girl"
+            },
+            {
+              "artists": [
+                "Esther Phillips"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273be4347046516416514bd4e8b",
+              "name": "And I Love Him"
+            },
+            {
+              "artists": [
+                "Aretha Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736aa9314b7ddfbd8f036ba3ac",
+              "name": "Don't Let Me Lose This Dream"
+            },
+            {
+              "artists": [
+                "Dionne Warwick"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f881362541025be2ec0ffb20",
+              "name": "I Say a Little Prayer"
+            },
+            {
+              "artists": [
+                "Nat King Cole"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738daeb3002870ebba8e8d1387",
+              "name": "More"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23319334/Grown-Folks-Music",
+          "station": "KPOO",
+          "track_count": 43,
+          "url": "https://open.spotify.com/playlist/7tx8aGal1mN2FQdYZ2keFl"
         }
       },
       "needs_reconciliation": false
