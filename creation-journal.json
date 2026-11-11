@@ -21300,7 +21300,7 @@
           "start_time": "2026-11-10T07:00:00-0800",
           "end_time": "2026-11-10T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "60rg7XVmytzPP9Pz2GB8o9",
         "desired_uris": [
@@ -21323,8 +21323,102 @@
           "spotify:track:6PAXlZK7wylmRmkYyCA99z"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T09:00:00-0800",
+          "broadcast_start": "2026-11-10T07:00:00-0800",
+          "imported_at": "2026-11-11T13:52:04.252167920+00:00",
+          "last_updated": "2026-11-11 13:52 UTC",
           "name": "KPOO - 70's and 60's Soul for Breakfast - 2026-11-10",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Max Roach"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d1127a8923edc0a3d4ddf326",
+              "name": "Absolutions"
+            },
+            {
+              "artists": [
+                "Ray Drummond",
+                "John Scofield"
+              ],
+              "image_url": "https://i.scdn.co/image/e39deb680bd1833a09631700cc0516983882644d",
+              "name": "Equipoise"
+            },
+            {
+              "artists": [
+                "Booker T. & the M.G.'s"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732353268ef27f04c5121a8f65",
+              "name": "Melting Pot"
+            },
+            {
+              "artists": [
+                "Tower Of Power"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273865f9e2f935a9a7dd553b192",
+              "name": "Squib Cakes"
+            },
+            {
+              "artists": [
+                "The Temptations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c5fab7e361544acaf60c414",
+              "name": "Take A Stroll Thru Your Mind"
+            },
+            {
+              "artists": [
+                "The Temptations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733be56fc968ce12e07f4caae6",
+              "name": "Smiling Faces Sometimes"
+            },
+            {
+              "artists": [
+                "Whitney Houston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273456c0b5d0316a80dc600802e",
+              "name": "I Will Always Love You"
+            },
+            {
+              "artists": [
+                "TLC"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b594fab6dd50595563adc50b",
+              "name": "Waterfalls - No Rap Radio Edit"
+            },
+            {
+              "artists": [
+                "Tony! Toni! Toné!"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27319d70a0d9bd346ae0f837c3d",
+              "name": "Thinking Of You"
+            },
+            {
+              "artists": [
+                "B.T. Express"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ba26eb049d2d04f971ec0104",
+              "name": "Express"
+            },
+            {
+              "artists": [
+                "James Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27373ff0735e70a50644d5b0e41",
+              "name": "Lowdown Popcorn"
+            },
+            {
+              "artists": [
+                "James Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6100147c4c87f2fecefe81f",
+              "name": "Ain't It Funky Now - Pt. 1"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23318880/70-s-and-60-s-Soul-for-Breakfast",
+          "station": "KPOO",
+          "track_count": 17,
+          "url": "https://open.spotify.com/playlist/60rg7XVmytzPP9Pz2GB8o9"
         }
       },
       "needs_reconciliation": false
