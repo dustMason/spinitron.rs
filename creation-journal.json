@@ -13021,7 +13021,7 @@
           "start_time": "2026-11-11T00:00:00-0800",
           "end_time": "2026-11-11T03:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4w0xX7Kpd3mtmgmyBThgUJ",
         "desired_uris": [
@@ -13055,8 +13055,103 @@
           "spotify:track:4tXs6JVQfwl9fyPlwVM2dc"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T03:00:00-0800",
+          "broadcast_start": "2026-11-11T00:00:00-0800",
+          "imported_at": "2026-11-11T13:50:02.368953304+00:00",
+          "last_updated": "2026-11-11 13:50 UTC",
           "name": "KALX - Sound Dusting - 2026-11-11",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Blind Yeo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee644b0ff70758b48bade741",
+              "name": "Today / Tomorrow"
+            },
+            {
+              "artists": [
+                "Stereolab"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c29518c2946401001fb6760",
+              "name": "Blue Milk"
+            },
+            {
+              "artists": [
+                "Andy Bell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733d62f5381ee6ecfc450a0f0f",
+              "name": "music concrete"
+            },
+            {
+              "artists": [
+                "Destroyer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27321b1e6379434fb18e04a396e",
+              "name": "Savage Night at the Opera"
+            },
+            {
+              "artists": [
+                "Allah-Las"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fe822f5868d8a310d28d4e0",
+              "name": "Snakes of Hydra"
+            },
+            {
+              "artists": [
+                "Say She She"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e4f53d2a2cb5cfcce1f37fe7",
+              "name": "Silver"
+            },
+            {
+              "artists": [
+                "Lael Neale"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737ebe3194e817d1280bc0d33d",
+              "name": "Slip Away"
+            },
+            {
+              "artists": [
+                "Lumerians"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c8add5331b8bc9f546d08ac3",
+              "name": "XuluX"
+            },
+            {
+              "artists": [
+                "Non Plus Temps"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731231dfe75a101bbc0125649c",
+              "name": "Desire Trails"
+            },
+            {
+              "artists": [
+                "Salami Rose Joe Louis",
+                "Brijean"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273831d33510cd02195223f6ba6",
+              "name": "Propaganda"
+            },
+            {
+              "artists": [
+                "Love and Rockets"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ecf6d3a7a229704e2eda4af1",
+              "name": "All in My Mind"
+            },
+            {
+              "artists": [
+                "Joan As Police Woman",
+                "Iggy Pop"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27349fa0cda452cef6a926a01b1",
+              "name": "Save Me"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23322955/Sound-Dusting",
+          "station": "KALX",
+          "track_count": 28,
+          "url": "https://open.spotify.com/playlist/4w0xX7Kpd3mtmgmyBThgUJ"
         }
       },
       "needs_reconciliation": false
