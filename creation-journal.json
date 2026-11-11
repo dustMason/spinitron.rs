@@ -11514,7 +11514,7 @@
           "start_time": "2026-11-10T01:00:00-0800",
           "end_time": "2026-11-10T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "00HC1maC8TG1kdK4zN7Rhk",
         "desired_uris": [
@@ -11587,8 +11587,103 @@
           "spotify:track:106Ms9a44SNx7yrOxVqcgd"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T07:00:00-0800",
+          "broadcast_start": "2026-11-10T01:00:00-0800",
+          "imported_at": "2026-11-11T13:42:46.687615189+00:00",
+          "last_updated": "2026-11-11 13:42 UTC",
           "name": "KALX - FREEFORM - 2026-11-10",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "R.L. Burnside"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a103d6e1b14344bd3339c96d",
+              "name": "Highway 7"
+            },
+            {
+              "artists": [
+                "Margo Price"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b55af9d0c3ac049860a31f9",
+              "name": "Oval Room"
+            },
+            {
+              "artists": [
+                "Willie Nelson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c2323bb6cea977725abd3657",
+              "name": "Vote 'Em Out"
+            },
+            {
+              "artists": [
+                "Ry Cooder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27300dd75ae375df84916e7c982",
+              "name": "Take Your Hands off It"
+            },
+            {
+              "artists": [
+                "Jesse Welles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e58dfb2e4d349d4798dfe913",
+              "name": "Domestic Error"
+            },
+            {
+              "artists": [
+                "Parliament"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733cca209676a65fe52f95e8eb",
+              "name": "Up For The Down Stroke"
+            },
+            {
+              "artists": [
+                "Rufus Thomas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736ea3bd1dca26886437ac9934",
+              "name": "Sixty Minute Man"
+            },
+            {
+              "artists": [
+                "Martha Reeves & The Vandellas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736654595492e00643f9dba83d",
+              "name": "Nowhere To Run - Single Version / Mono"
+            },
+            {
+              "artists": [
+                "Faye Carol",
+                "Taj Mahal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733e83eccf053daa7b66d3f0fe",
+              "name": "Woke Up This Morning"
+            },
+            {
+              "artists": [
+                "Big Mama Thornton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735eb4baa09e9c830c410e4e8d",
+              "name": "Little Red Rooster"
+            },
+            {
+              "artists": [
+                "The Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27313fec6abc8b16b53bce2a14e",
+              "name": "Same Thing"
+            },
+            {
+              "artists": [
+                "Howlin Rain",
+                "Chris Robinson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ce43301d51b52f6c7d647900",
+              "name": "Silver Paper"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23317589/FREEFORM",
+          "station": "KALX",
+          "track_count": 67,
+          "url": "https://open.spotify.com/playlist/00HC1maC8TG1kdK4zN7Rhk"
         }
       },
       "needs_reconciliation": false
