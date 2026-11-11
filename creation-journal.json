@@ -12412,7 +12412,7 @@
           "start_time": "2026-11-10T18:00:00-0800",
           "end_time": "2026-11-10T18:15:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4zip3WnJKPAH9McukLdirz",
         "desired_uris": [
@@ -12420,8 +12420,31 @@
           "spotify:track:0FsPNhSiPerI7Vhs0ocuMZ"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T18:15:00-0800",
+          "broadcast_start": "2026-11-10T18:00:00-0800",
+          "imported_at": "2026-11-11T13:46:44.144304105+00:00",
+          "last_updated": "2026-11-11 13:46 UTC",
           "name": "KALX - NEWS - 2026-11-10",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Nujabes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273878ed741b8e1342d58a332ca",
+              "name": "sanctuary ship"
+            },
+            {
+              "artists": [
+                "Space Ghost"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730a1c26c3496bb3c275c0c47c",
+              "name": "Back From Reality"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23321510/NEWS",
+          "station": "KALX",
+          "track_count": 2,
+          "url": "https://open.spotify.com/playlist/4zip3WnJKPAH9McukLdirz"
         }
       },
       "needs_reconciliation": false
