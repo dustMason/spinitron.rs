@@ -12126,6 +12126,55 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23320800": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23320800,
+          "title": "queen of the cowbell.",
+          "url": "https://spinitron.com/KALX/pl/23320800/queen-of-the-cowbell",
+          "start_time": "2026-11-10T15:00:00-0800",
+          "end_time": "2026-11-10T17:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5e9Y1VL45zCKIJusObj8Pw",
+          "spotify:track:7ivVbeOwzzTEh6XYWZ3Ac5",
+          "spotify:track:4Oks5i3EOL0z1O2ZBAEiDd",
+          "spotify:track:3agqBL5ff5zUc5DfehlS7F",
+          "spotify:track:0vaa0zeSnob4MW94rxFQxe",
+          "spotify:track:4UJX3aRUi6zJ6Gxm5Iv4yP",
+          "spotify:track:2APyZJAxuQ87Zvogx1Mrsp",
+          "spotify:track:2OaXmeYBJ0hcTmS3kxjJOx",
+          "spotify:track:5V9fNw0fO0jmdeee2m1qnf",
+          "spotify:track:5iy4pdzFzH3CwXcWsRe2Ux",
+          "spotify:track:6MsoqkGPF1InOLjptdm4I7",
+          "spotify:track:7ijCvg6LsLuH18OgSpUNOX",
+          "spotify:track:4EoI2LJyjjExrxFFiTUpID",
+          "spotify:track:1MIvq6tMFGKI4mNjHwUcHg",
+          "spotify:track:2WJkwdvKDAiCi8SL0Njq3M",
+          "spotify:track:4L5exQWqXpzBy7Bhy2nrEk",
+          "spotify:track:5qxkkQtRam7a6ktD1gl4ZZ",
+          "spotify:track:4ispn33wO2FwdixhsMCTpA",
+          "spotify:track:74zqpiez3oc3S1Bx4oK3Vk",
+          "spotify:track:3AWRD1eEZ4noeIDH2w5gtc",
+          "spotify:track:3dS2pJxdGvqTW4g5inn3JZ",
+          "spotify:track:0KjU8jb6m0oH4fGTCUMLxJ",
+          "spotify:track:4aFguJzpSvDaSVBGu3e4Jc",
+          "spotify:track:1QVp9XzqSx2c3xRKGLOWsQ",
+          "spotify:track:5XVwLmLJEmYAYsIHIYCE38",
+          "spotify:track:1GyAagsfqUSPf5DdO3bBBe",
+          "spotify:track:25qqwHoxdDXWEdeimDJIvA",
+          "spotify:track:40AdQX0dczURnkjxTp4Y01"
+        ],
+        "listing": {
+          "name": "KALX - queen of the cowbell. - 2026-11-10",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
