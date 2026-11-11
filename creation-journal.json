@@ -11844,7 +11844,7 @@
           "start_time": "2026-11-10T09:30:00-0800",
           "end_time": "2026-11-10T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1n1nEo6BeHHonsNFYLcKmz",
         "desired_uris": [
@@ -11871,8 +11871,105 @@
           "spotify:track:12XuSDj4iLnR1lgONfXae4"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T12:00:00-0800",
+          "broadcast_start": "2026-11-10T09:30:00-0800",
+          "imported_at": "2026-11-11T13:44:06.330190691+00:00",
+          "last_updated": "2026-11-11 13:44 UTC",
           "name": "KALX - Minute Intervals - 2026-11-10",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Josh Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f20e0c445b6d0e550d11eb35",
+              "name": "Upstairs 2021"
+            },
+            {
+              "artists": [
+                "EBONEE-WEBB"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bce5bb13e857c0838e76c734",
+              "name": "安里屋ユンタ(沖縄県民謡)"
+            },
+            {
+              "artists": [
+                "Yagya"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ae847b0281b5ec014c55d14f",
+              "name": "Finite Permutations"
+            },
+            {
+              "artists": [
+                "Orquesta Akokán",
+                "Miriam Elhajli"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273515e239648537ec6810e8a7e",
+              "name": "Nadie Me Toca Igual"
+            },
+            {
+              "artists": [
+                "Debo Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27369e3729387529ad2126470c9",
+              "name": "And Lay"
+            },
+            {
+              "artists": [
+                "Esther's Mood Ring"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27343cf765bde6bb9349d86b25e",
+              "name": "Rosy Maple Moth"
+            },
+            {
+              "artists": [
+                "Allison Russell",
+                "Kyshona",
+                "Sara Watkins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273484006dc742a9b43b1cab3d1",
+              "name": "Chaos Theory (ft. Kyshona & Sara Watkins)"
+            },
+            {
+              "artists": [
+                "X.Y.R."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734094633ed12b06bce30d7fba",
+              "name": "happy thoughts"
+            },
+            {
+              "artists": [
+                "Rhiannon Giddens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273761c1892de7bd7c94b987eac",
+              "name": "Hope Is the Thing with Feathers"
+            },
+            {
+              "artists": [
+                "Shearwater"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733329aaf3098be832ee7fef71",
+              "name": "Daydream Unbeliever"
+            },
+            {
+              "artists": [
+                "Tor",
+                "Blockhead"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5e550ec51f40bfab71263fa",
+              "name": "Sunyata - Blockhead Remix"
+            },
+            {
+              "artists": [
+                "Grace Chang"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734723fb6c1af3c8fa865f6d47",
+              "name": "月朦朧 (電影[星星.月亮.太陽]插曲)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23319396/Minute-Intervals",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/1n1nEo6BeHHonsNFYLcKmz"
         }
       },
       "needs_reconciliation": false
