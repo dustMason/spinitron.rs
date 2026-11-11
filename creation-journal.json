@@ -11974,6 +11974,62 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23319937": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23319937,
+          "title": "Deep Vets",
+          "url": "https://spinitron.com/KALX/pl/23319937/Deep-Vets",
+          "start_time": "2026-11-10T12:00:00-0800",
+          "end_time": "2026-11-10T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2dT65e9yp9CR1ADk8BhKJo",
+          "spotify:track:7iBggOLgXiScPJUAKFG3ah",
+          "spotify:track:0KCDc92lGfmhYXWo0zTlxT",
+          "spotify:track:1SpUMOyvEtvjWa4xWqFlAv",
+          "spotify:track:78JYtz4yOPqAEgZZc3SBLT",
+          "spotify:track:7fLEJNwcW60W74XehVmR5p",
+          "spotify:track:4EsQOJs7PRS8zVrHPr4Lzb",
+          "spotify:track:6qBWGg5fEMUJXkLS8DpP7X",
+          "spotify:track:5rHgvw34eS45OOyPPNVxbw",
+          "spotify:track:4oA6hLAxKf9byFeKBVJWe1",
+          "spotify:track:7fLEJNwcW60W74XehVmR5p",
+          "spotify:track:2ki0JZmvcY1peB2UYSNLaX",
+          "spotify:track:1XSxvVYmXyJj5RrVoI5TdE",
+          "spotify:track:4qaRCCmOSSD0U9OqyX5kkA",
+          "spotify:track:3DjkGlNoH6DxLDT8HQWgq2",
+          "spotify:track:2GDRBF1UXtHMUuBHxHBGCq",
+          "spotify:track:0XdUe4zn7Epx7DpBd3RrsW",
+          "spotify:track:3oSGLmKWk42vrsENM0oceg",
+          "spotify:track:1YzqPS19J1IfJXGlnCWKRu",
+          "spotify:track:07pBUKttg4kL08LGExv3iL",
+          "spotify:track:46fqdEnmXMgUwtbVrXktm5",
+          "spotify:track:3c0LKucNXSYtmbuHUtiNPf",
+          "spotify:track:629JWgEOxox7AR5KA92j6s",
+          "spotify:track:6gkoSrBrtEr3GPtlpeDUZf",
+          "spotify:track:6pLlzFUxxR1tLvpMwcAtP0",
+          "spotify:track:5cC2UF83e5fFANABVP2Hht",
+          "spotify:track:0Cm8o78P2O431oGDsOBsoW",
+          "spotify:track:2IXBov2s1TxPfLS16l87uk",
+          "spotify:track:35cFGgyF1siW8PNUJfIJ0H",
+          "spotify:track:2Fmtix58EzzmcQVDreE6to",
+          "spotify:track:7mSIEkxLoUP7DtycjpHpQT",
+          "spotify:track:5sbCqST9M4Q1sRSJM6L6oT",
+          "spotify:track:138INo5H11Og7NA6sGmxEj",
+          "spotify:track:4rQASxA9c67hApwZUpbwfI",
+          "spotify:track:5e9Y1VL45zCKIJusObj8Pw"
+        ],
+        "listing": {
+          "name": "KALX - Deep Vets - 2026-11-10",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
