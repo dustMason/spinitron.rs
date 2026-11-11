@@ -12449,6 +12449,46 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23321620": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23321620,
+          "title": "𓇢𓆸 CRAWLSPACE🌫️😶‍🌫️°⋆.ೃ࿔*:･☁️",
+          "url": "https://spinitron.com/KALX/pl/23321620/%F0%93%87%A2%F0%93%86%B8-CRAWLSPACE",
+          "start_time": "2026-11-10T18:15:00-0800",
+          "end_time": "2026-11-10T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:37iT9AzEWRDC3hIyZ94Xe7",
+          "spotify:track:3GOZt20KiMvhlnZuU9y7sQ",
+          "spotify:track:7KMtkqG5fKGldXRqoOfsJK",
+          "spotify:track:718TYrpVu69StJUaZZs3j3",
+          "spotify:track:5DswW6DJY5ahdWFcvAG8KS",
+          "spotify:track:4GOmr9ESANFgfz18Q0cTV1",
+          "spotify:track:4iNN62yAXObWZXckEhAMau",
+          "spotify:track:7Eni6YpcOEZfa177EaVxFr",
+          "spotify:track:6E2TNzGKaI8oBAJPYBJsK9",
+          "spotify:track:5WUa1wIg8lAtpgPdvmJHXL",
+          "spotify:track:314lwa5x8khiqqWnzrWHF9",
+          "spotify:track:4hSUd2fXB1ZiOe0ANV5hwr",
+          "spotify:track:0G44eTC0LwudDAmBiM26vz",
+          "spotify:track:0mcNGr0NXIuygzT16BbRkY",
+          "spotify:track:5fla2ejHLTYCdgwNs2DuEU",
+          "spotify:track:1IsRzR3iZyJYwTIHxhHFLK",
+          "spotify:track:2dod9gsrBJRkUPhlFdcXom",
+          "spotify:track:7zHLu9GQxyKoSgplGyXxt9",
+          "spotify:track:5RjGivASWUXD6ObHK8ThN5"
+        ],
+        "listing": {
+          "name": "KALX - 𓇢𓆸 CRAWLSPACE🌫️😶‍🌫️°⋆.ೃ࿔*:･☁️ - 2026-11-10",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
