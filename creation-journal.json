@@ -12738,7 +12738,7 @@
           "start_time": "2026-11-10T22:00:00-0800",
           "end_time": "2026-11-11T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5gNAH80mospnH6ce5MPhpX",
         "desired_uris": [
@@ -12767,8 +12767,102 @@
           "spotify:track:6mfeMz98JP6CUuCi4FvWg6"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T00:00:00-0800",
+          "broadcast_start": "2026-11-10T22:00:00-0800",
+          "imported_at": "2026-11-11T13:48:42.802226307+00:00",
+          "last_updated": "2026-11-11 13:48 UTC",
           "name": "KALX - FREEFORM - 2026-11-10 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Eels"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dd53c12646fd7cae04e94662",
+              "name": "What It Isn't"
+            },
+            {
+              "artists": [
+                "The Catburgers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d381bc7e70b4db753b197f5",
+              "name": "I'm Leaving on the 7:52"
+            },
+            {
+              "artists": [
+                "Eric's Trip"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5ce54a963b33a76053a2636",
+              "name": "Frame"
+            },
+            {
+              "artists": [
+                "Railcard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273752338925dd73fc80bd5d526",
+              "name": "Railcard"
+            },
+            {
+              "artists": [
+                "The Pastels",
+                "Cornelius"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27384517e0648588aba07e7129f",
+              "name": "Windy Hill - Cornelius Remix"
+            },
+            {
+              "artists": [
+                "Electrelane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27300e4decab546af050b8ded05",
+              "name": "Love Builds Up"
+            },
+            {
+              "artists": [
+                "The Sea and Cake"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2ad64e1cecd9b02c6e03f79",
+              "name": "Sound & Vision"
+            },
+            {
+              "artists": [
+                "Nina Simone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e61aa18bbda3f9c5dbb499b7",
+              "name": "O-o-h Child"
+            },
+            {
+              "artists": [
+                "Doug Gillard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731fc8038a9a3f528f61ded117",
+              "name": "Time is Nigh"
+            },
+            {
+              "artists": [
+                "Mac DeMarco"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b221f2ccf777ae0d4b0db50",
+              "name": "Chamber Of Reflection"
+            },
+            {
+              "artists": [
+                "Mac Miller"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d9d8f1a08476cd347fbea313",
+              "name": "Good News"
+            },
+            {
+              "artists": [
+                "Eje Eje"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273968eb67cd409bfd62f37042a",
+              "name": "Phantom Love"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23322409/FREEFORM",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/5gNAH80mospnH6ce5MPhpX"
         }
       },
       "needs_reconciliation": false
