@@ -21591,7 +21591,7 @@
           "start_time": "2026-11-10T12:00:00-0800",
           "end_time": "2026-11-10T16:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6SKtRRwE5Dfk1CxM1Fw4i7",
         "desired_uris": [
@@ -21620,8 +21620,106 @@
           "spotify:track:3eObNJP8wKy5E7q6wNT6nj"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T16:00:00-0800",
+          "broadcast_start": "2026-11-10T12:00:00-0800",
+          "imported_at": "2026-11-11T13:53:24.802582336+00:00",
+          "last_updated": "2026-11-11 13:53 UTC",
           "name": "KPOO - Uplift Show - 2026-11-10",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "John Coltrane Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732f7617fc50c129c50a61b1c6",
+              "name": "A Love Supreme, Pt. 1: Acknowledgement - Live"
+            },
+            {
+              "artists": [
+                "Duke Ellington",
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732def9ef3f6a82c8d6fd8c143",
+              "name": "Take The Coltrane"
+            },
+            {
+              "artists": [
+                "Paul Chambers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b079fcd0a1a963f4973182f",
+              "name": "You'd Be So Nice To Come Home To - Rudy Van Gelder Edition / Remastered 2007"
+            },
+            {
+              "artists": [
+                "Charlie Parker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dd49b4442da731b4bb8575c2",
+              "name": "Stella By Starlight"
+            },
+            {
+              "artists": [
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732c9fc4adf253e72555132785",
+              "name": "Wabash"
+            },
+            {
+              "artists": [
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273439961e87d83c03874244c5b",
+              "name": "Slowtrane"
+            },
+            {
+              "artists": [
+                "Miles Davis",
+                "John Coltrane",
+                "Cannonball Adderley",
+                "Bill Evans"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348713eebe44a437d9cb7a452",
+              "name": "On Green Dolphin Street (feat. John Coltrane, Cannonball Adderley & Bill Evans)"
+            },
+            {
+              "artists": [
+                "John Coltrane",
+                "Wilbur Harden"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e40103a69297d0f11f4162fc",
+              "name": "B.J. - Master Take"
+            },
+            {
+              "artists": [
+                "John Coltrane Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4cb9728986bf805f04e7634",
+              "name": "Nature Boy"
+            },
+            {
+              "artists": [
+                "Alice Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273632c8ea383e8848aff4bc315",
+              "name": "This Train"
+            },
+            {
+              "artists": [
+                "J.J. Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273395659f32445579579340994",
+              "name": "What Is This Thing Called Love?"
+            },
+            {
+              "artists": [
+                "Sarah Vaughan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738784c5715d403295be3acc1c",
+              "name": "Lullaby Of Birdland"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23320073/Uplift-Show",
+          "station": "KPOO",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/6SKtRRwE5Dfk1CxM1Fw4i7"
         }
       },
       "needs_reconciliation": false
