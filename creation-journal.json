@@ -21723,6 +21723,31 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23321116": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23321116,
+          "title": "Wake Up Everybody",
+          "url": "https://spinitron.com/KPOO/pl/23321116/Wake-Up-Everybody",
+          "start_time": "2026-11-10T16:00:00-0800",
+          "end_time": "2026-11-10T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5E5DAnBo631u4QZqgKWequ",
+          "spotify:track:4BpPvEi38kvfLKA1qBBX5J",
+          "spotify:track:6E1MuzutdHHkJv3KX6gf54",
+          "spotify:track:2YiCMmONQcoMPX2bV1LxE0"
+        ],
+        "listing": {
+          "name": "KPOO - Wake Up Everybody - 2026-11-10",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
