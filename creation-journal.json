@@ -21289,6 +21289,44 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23318880": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23318880,
+          "title": "70's and 60's Soul for Breakfast",
+          "url": "https://spinitron.com/KPOO/pl/23318880/70-s-and-60-s-Soul-for-Breakfast",
+          "start_time": "2026-11-10T07:00:00-0800",
+          "end_time": "2026-11-10T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2C3gN84NVsPpFyJOSpdSTX",
+          "spotify:track:1d2kQLKn7a35UZb9vFGyAf",
+          "spotify:track:7iZDMyTRODgGnJ0y6K1ZIf",
+          "spotify:track:6AzVzSSQ6Wd2ep2SEeqB9V",
+          "spotify:track:6CdW16NElE80iXYYQdEZLq",
+          "spotify:track:6DUyvCabZW8YLFBKLWXyLX",
+          "spotify:track:4eHbdreAnSOrDDsFfc4Fpm",
+          "spotify:track:4wyXAYfJyE04Kx0aICYk9y",
+          "spotify:track:2kp0HkwA1v8WcmCwYqm7DO",
+          "spotify:track:7aUA2QLuPtuaBgnxLSAbnZ",
+          "spotify:track:4ZuODMZPjTLAExyuRSmAs6",
+          "spotify:track:6aG9x9dFwg7MnA4hDHu4s7",
+          "spotify:track:73lzOeqHJSH8ddRls5GonC",
+          "spotify:track:0YEC3pNS0uIKvZb5u4lgsu",
+          "spotify:track:792UwI6utk5DMQUT1KXa5E",
+          "spotify:track:32X0tTPXoWYNld9y1RRbFI",
+          "spotify:track:6PAXlZK7wylmRmkYyCA99z"
+        ],
+        "listing": {
+          "name": "KPOO - 70's and 60's Soul for Breakfast - 2026-11-10",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
