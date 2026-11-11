@@ -12136,7 +12136,7 @@
           "start_time": "2026-11-10T15:00:00-0800",
           "end_time": "2026-11-10T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7ERDQfG98Mr1GUfkSrt0wG",
         "desired_uris": [
@@ -12170,8 +12170,102 @@
           "spotify:track:40AdQX0dczURnkjxTp4Y01"
         ],
         "listing": {
+          "broadcast_end": "2026-11-10T17:00:00-0800",
+          "broadcast_start": "2026-11-10T15:00:00-0800",
+          "imported_at": "2026-11-11T13:45:25.368694843+00:00",
+          "last_updated": "2026-11-11 13:45 UTC",
           "name": "KALX - queen of the cowbell. - 2026-11-10",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "TRÍADA"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e5c311d72ee73e4ca16dc716",
+              "name": "Silencio"
+            },
+            {
+              "artists": [
+                "Cinder Well"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e12ef13e882ee6240b34eb1f",
+              "name": "The Wise Man's Song (Original Theme from Small Prophets)"
+            },
+            {
+              "artists": [
+                "Angela Autumn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739b85760c1bed1bea6c5fc6d4",
+              "name": "I Don't Think About You At All"
+            },
+            {
+              "artists": [
+                "Lost Animal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27366af9f851249477a11f45d5e",
+              "name": "Sex Wounds"
+            },
+            {
+              "artists": [
+                "Nina Nastasia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db4947da649a140fd1da29bd",
+              "name": "This Is What It Is"
+            },
+            {
+              "artists": [
+                "Jeremiah Chiu",
+                "Ben Lumsdaine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3",
+              "name": "Interfaces"
+            },
+            {
+              "artists": [
+                "Cornelius"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735b7ba65d73f083ce260f0f49",
+              "name": "Mirrors"
+            },
+            {
+              "artists": [
+                "Television"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27318b36d985b0ae01163ca9cf6",
+              "name": "See No Evil"
+            },
+            {
+              "artists": [
+                "Richard Lloyd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730785ccf4f5168f66b663ba67",
+              "name": "Number Nine"
+            },
+            {
+              "artists": [
+                "Rocket From The Tombs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735ca2d16913f0a58a9d8dce02",
+              "name": "Muckraker - Live"
+            },
+            {
+              "artists": [
+                "Matthew Sweet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27395cff1dd1dd53202a416575d",
+              "name": "Giving It Back"
+            },
+            {
+              "artists": [
+                "Richard Lloyd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739125401ec4a2282ee2eb5f7c",
+              "name": "Submarine"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23320800/queen-of-the-cowbell",
+          "station": "KALX",
+          "track_count": 28,
+          "url": "https://open.spotify.com/playlist/7ERDQfG98Mr1GUfkSrt0wG"
         }
       },
       "needs_reconciliation": false
