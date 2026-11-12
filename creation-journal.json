@@ -12268,7 +12268,7 @@
           "start_time": "2026-11-11T09:00:00-0800",
           "end_time": "2026-11-11T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3FBNdAAbIhjmtyp4RamGzU",
         "desired_uris": [
@@ -12308,8 +12308,105 @@
           "spotify:track:3CSqir2cSslY3rWkPBGCQe"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T12:00:00-0800",
+          "broadcast_start": "2026-11-11T09:00:00-0800",
+          "imported_at": "2026-11-12T14:45:44.898646539+00:00",
+          "last_updated": "2026-11-12 14:45 UTC",
           "name": "KALX - What the Flip?! - 2026-11-11",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Peter Knight",
+                "Jannis Anastasakis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f43320b1f2c8395cf114ed09",
+              "name": "Feather III"
+            },
+            {
+              "artists": [
+                "Jeremiah Chiu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3",
+              "name": "A Floral Pattern"
+            },
+            {
+              "artists": [
+                "Loma"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273359a23c5ec9c76c6cc2eba1b",
+              "name": "Broken Doorbell"
+            },
+            {
+              "artists": [
+                "Resavoir"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735445a405a35653876705a9b9",
+              "name": "Stratosphere"
+            },
+            {
+              "artists": [
+                "BASIC",
+                "Chris Forsyth",
+                "Douglas McCombs",
+                "Mikel Patrick Avery"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737dc13f6495f644e3ae9c3046",
+              "name": "Brutalist With Filigree"
+            },
+            {
+              "artists": [
+                "Setting"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27313e5b75604f9e9f8595fc142",
+              "name": "Derring-do"
+            },
+            {
+              "artists": [
+                "Mali Obomsawin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27363584094ba1ac9b4204ad15d",
+              "name": "Malian"
+            },
+            {
+              "artists": [
+                "Anthony Calonico"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cbc7c5ba1e7614b805c9e4c0",
+              "name": "Who Am I"
+            },
+            {
+              "artists": [
+                "Kiln"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ff28f8786780b893eb62abf",
+              "name": "Roil"
+            },
+            {
+              "artists": [
+                "Dark Dark Dark"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273309d62d18f8c49dabca11bd3",
+              "name": "It's a Secret"
+            },
+            {
+              "artists": [
+                "Elanor Moss"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d76339289f137c23fd7bb2c8",
+              "name": "Improvisation"
+            },
+            {
+              "artists": [
+                "Neutral Milk Hotel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bc1e41eed3ddbdfff6f2d74b",
+              "name": "Two-Headed Boy Pt. 2"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23320193/What-the-Flip",
+          "station": "KALX",
+          "track_count": 34,
+          "url": "https://open.spotify.com/playlist/3FBNdAAbIhjmtyp4RamGzU"
         }
       },
       "needs_reconciliation": false
