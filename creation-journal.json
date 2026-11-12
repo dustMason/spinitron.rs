@@ -14117,7 +14117,7 @@
           "start_time": "2026-11-11T20:00:00-0800",
           "end_time": "2026-11-11T21:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4BX7twxRktd4b6tYVfUIcg",
         "desired_uris": [
@@ -14138,8 +14138,103 @@
           "spotify:track:1Nq08q5FLReuiTLlWad9D1"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T21:30:00-0800",
+          "broadcast_start": "2026-11-11T20:00:00-0800",
+          "imported_at": "2026-11-12T14:51:10.425206284+00:00",
+          "last_updated": "2026-11-12 14:51 UTC",
           "name": "KALX - Swirls Of Whimsy - 2026-11-11",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Chuck Berry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a496dc8c33ca6d10668b3157",
+              "name": "Blues For Hawaiians"
+            },
+            {
+              "artists": [
+                "los frankies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738ec59bee3fc2ab24dad4b7ec",
+              "name": "Death To The King"
+            },
+            {
+              "artists": [
+                "The dB's"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c2ba77bd61754aa9ec55f6f1",
+              "name": "I Feel Good (Today) - 2024 Remaster"
+            },
+            {
+              "artists": [
+                "Orquesta Akokán",
+                "Kiko Ruiz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273515e239648537ec6810e8a7e",
+              "name": "Me Tienes Sin Cuidado"
+            },
+            {
+              "artists": [
+                "Calexico",
+                "Iron & Wine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731b49199e0ea33f089911175a",
+              "name": "He Lays In The Reins"
+            },
+            {
+              "artists": [
+                "Los Cenzontles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27353d1792f6b9d44ab500f8fa0",
+              "name": "When You Were Young"
+            },
+            {
+              "artists": [
+                "Kurt Vile"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736fc26b002a2cf7d25f90cd72",
+              "name": "Rock o’ Stone"
+            },
+            {
+              "artists": [
+                "David Thomas & Two Pale Boys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273803de02bbe082c46ad53c654",
+              "name": "Planet of Fools"
+            },
+            {
+              "artists": [
+                "New Gunk Space Funk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273466329c4e1000f7f302fb0e1",
+              "name": "Dr. Gunkenstein"
+            },
+            {
+              "artists": [
+                "Leaf Hound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27300d74b6e31c6f7c07ea0bdb5",
+              "name": "Freelance Fiend - Remastered"
+            },
+            {
+              "artists": [
+                "Spacemoth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273caaa6dd8839deca760d28f43",
+              "name": "Flower Memory"
+            },
+            {
+              "artists": [
+                "Richard Thompson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4d507b75e9e2bd01ac1341a",
+              "name": "Make Believe You Don’t Know Me"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23327416/Swirls-Of-Whimsy",
+          "station": "KALX",
+          "track_count": 15,
+          "url": "https://open.spotify.com/playlist/4BX7twxRktd4b6tYVfUIcg"
         }
       },
       "needs_reconciliation": false
