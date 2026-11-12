@@ -14107,6 +14107,42 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23327416": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23327416,
+          "title": "Swirls Of Whimsy",
+          "url": "https://spinitron.com/KALX/pl/23327416/Swirls-Of-Whimsy",
+          "start_time": "2026-11-11T20:00:00-0800",
+          "end_time": "2026-11-11T21:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0FvO7DbDxOr5LKyKhMAwe9",
+          "spotify:track:4Ptu2rvnqnyux0uYDBnUq1",
+          "spotify:track:2tGj3kTEa92kCZnjHR2q2R",
+          "spotify:track:1IfAofeT93fy4lgpsgkkmW",
+          "spotify:track:06KMxCt6MwBqgivE20KDC4",
+          "spotify:track:1JB3vq8IHnRQipWtuzzZ1L",
+          "spotify:track:21CU5fG0Pp0LUbXRDG1d48",
+          "spotify:track:555wt24qRXzRkmL3kglL20",
+          "spotify:track:0vgnZTCUCwzoLGj36bRw7v",
+          "spotify:track:1eTbmbY0UiZe3GbgrddIUV",
+          "spotify:track:1Uf5lCYKoIigcA6Spasbch",
+          "spotify:track:6nvOuLiiMwWvqPMgsGi1vh",
+          "spotify:track:0xIR7Lq8zPvhP6ZDob3hSR",
+          "spotify:track:0olXYw3rPAH2GlcKGgSBv3",
+          "spotify:track:1Nq08q5FLReuiTLlWad9D1"
+        ],
+        "listing": {
+          "name": "KALX - Swirls Of Whimsy - 2026-11-11",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23328280": {
       "entry": {
         "station": "KALX",
