@@ -23895,7 +23895,7 @@
           "start_time": "2026-11-11T09:00:00-0800",
           "end_time": "2026-11-11T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0FTVSkljl6tPmHvLCQ4B6o",
         "desired_uris": [
@@ -23936,8 +23936,101 @@
           "spotify:track:3S5x9E59b3DplOU5Djmghm"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T12:00:00-0800",
+          "broadcast_start": "2026-11-11T09:00:00-0800",
+          "imported_at": "2026-11-12T14:54:49.219538634+00:00",
+          "last_updated": "2026-11-12 14:54 UTC",
           "name": "KPOO - Tia Carroll's Awesome Radio Show - 2026-11-11",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Tia Carroll"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730868b1cfd72a0a6df5f78e5e",
+              "name": "Ain't Nobody Worryin'"
+            },
+            {
+              "artists": [
+                "BTS"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273240447f2da1433d8f4303596",
+              "name": "Butter"
+            },
+            {
+              "artists": [
+                "Michael Jackson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273681794b3786180ac45627c3d",
+              "name": "Rockin' Robin"
+            },
+            {
+              "artists": [
+                "MC Hammer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c49d79653037213b012c680e",
+              "name": "Addams Groove"
+            },
+            {
+              "artists": [
+                "Jeanette Harris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e7e797c3180635ec7718c37d",
+              "name": "All I Do"
+            },
+            {
+              "artists": [
+                "Teena Marie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27329323dd47b2b6b50e793ece5",
+              "name": "Square Biz"
+            },
+            {
+              "artists": [
+                "Charles Wright & The Watts 103rd Street Rhythm Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d6a182bca1a5520b06455ea",
+              "name": "Express Yourself - Remastered Version"
+            },
+            {
+              "artists": [
+                "George Benson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733a3c381f6910a4fe51c2640b",
+              "name": "Turn Your Love Around"
+            },
+            {
+              "artists": [
+                "Marvin Gaye"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27346e859872ed30a898160aeb2",
+              "name": "Sexual Healing"
+            },
+            {
+              "artists": [
+                "Luther Vandross"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273102bebc4807fc0952a754d0f",
+              "name": "Never Too Much"
+            },
+            {
+              "artists": [
+                "Ike & Tina Turner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a70f1ebc6bee4161880a699c",
+              "name": "I Smell Trouble"
+            },
+            {
+              "artists": [
+                "Ronnie K. Stewart"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273adaf68ddc34626b659ad33bc",
+              "name": "Russell City Hop"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23324811/Tia-Carroll-s-Awesome-Radio-Show",
+          "station": "KPOO",
+          "track_count": 35,
+          "url": "https://open.spotify.com/playlist/0FTVSkljl6tPmHvLCQ4B6o"
         }
       },
       "needs_reconciliation": false
