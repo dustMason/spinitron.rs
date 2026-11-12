@@ -13319,7 +13319,7 @@
           "start_time": "2026-11-11T03:00:00-0800",
           "end_time": "2026-11-11T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4RoHW06u7Iuk5aJXoe6xYx",
         "desired_uris": [
@@ -13368,8 +13368,104 @@
           "spotify:track:09kOTF4dvOED18rYA44k5Z"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T07:00:00-0800",
+          "broadcast_start": "2026-11-11T03:00:00-0800",
+          "imported_at": "2026-11-12T14:46:27.869498760+00:00",
+          "last_updated": "2026-11-12 14:46 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-11",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Hans P. Kjorstad"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734ba4b26bc10c22bcecae7235",
+              "name": "Rif"
+            },
+            {
+              "artists": [
+                "Ellen Fullman",
+                "The Living Earth Show"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cdd972e07ca911805df86e5b",
+              "name": "Environmental Memory"
+            },
+            {
+              "artists": [
+                "Klara Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4c9254994758b20941278f7",
+              "name": "Hardcore"
+            },
+            {
+              "artists": [
+                "Tom Skinner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273759bd3e78801c76f0af08dd1",
+              "name": "There's Nothing To Be Scared Of"
+            },
+            {
+              "artists": [
+                "Wayne Phoenix",
+                "CrystalXulu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738ac3783e588778cda960f4d3",
+              "name": "One Man Island"
+            },
+            {
+              "artists": [
+                "Barnt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365b4f6221f684f488ba7fe87",
+              "name": "Emi"
+            },
+            {
+              "artists": [
+                "Semiratruth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273266e3ff47090ffec38f2781d",
+              "name": "Blood Moon Eclipse"
+            },
+            {
+              "artists": [
+                "Triumph"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27352902092bc63ee72792598fc",
+              "name": "Fight The Good Fight"
+            },
+            {
+              "artists": [
+                "Arushi Jain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b937a3581560fea782347c8",
+              "name": "A Portal To Silver Linings"
+            },
+            {
+              "artists": [
+                "Salamanda"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365494501546c0ed085bfd4d0",
+              "name": "Paper Labyrinth"
+            },
+            {
+              "artists": [
+                "Ibelisse Guardia Ferragutti",
+                "Frank Rosaly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737e3e922cc724e3d1374b6623",
+              "name": "Liberta"
+            },
+            {
+              "artists": [
+                "Hermanos Gutiérrez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f3a9cedd778597ac88c73e5",
+              "name": "Los Ojos Del Cóndor"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23323479/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 43,
+          "url": "https://open.spotify.com/playlist/4RoHW06u7Iuk5aJXoe6xYx"
         }
       },
       "needs_reconciliation": false
