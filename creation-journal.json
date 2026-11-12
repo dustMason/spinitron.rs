@@ -24045,7 +24045,7 @@
           "start_time": "2026-11-11T12:00:00-0800",
           "end_time": "2026-11-11T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "631pvBWLHgKeiVznGT1rGR",
         "desired_uris": [
@@ -24075,8 +24075,102 @@
           "spotify:track:5P9HFY2hkZjuLHEudoEa28"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T15:00:00-0800",
+          "broadcast_start": "2026-11-11T12:00:00-0800",
+          "imported_at": "2026-11-12T14:55:29.274664111+00:00",
+          "last_updated": "2026-11-12 14:55 UTC",
           "name": "KPOO - THE MUSIC FILL SHOW - 2026-11-11",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Smokie Norful"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273526c750b6a31469adb2ae75c",
+              "name": "I Understand"
+            },
+            {
+              "artists": [
+                "Zeke Locke & The NuXperience"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ac811cd22fdeb0e1aa52d32",
+              "name": "I'm Walking"
+            },
+            {
+              "artists": [
+                "Rev. Milton Brunson",
+                "The Thompson Community Singers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e6e3b3e887981fb95d446a53",
+              "name": "My Mind Is Made Up"
+            },
+            {
+              "artists": [
+                "Marlena Shaw"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c925139455d0480681315f02",
+              "name": "Woman Of The Ghetto"
+            },
+            {
+              "artists": [
+                "Syl Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f27673e7ab2296640df2355",
+              "name": "Is It Because I'm Black"
+            },
+            {
+              "artists": [
+                "Marvin Gaye"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273554460de620d4e9ccda4f552",
+              "name": "Save The Children"
+            },
+            {
+              "artists": [
+                "Kim Weston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27335d20648ce64da79cf5ebd87",
+              "name": "Lift Every Voice and Sing"
+            },
+            {
+              "artists": [
+                "Stevie Wonder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a14b08b9a6616e121df5e8b0",
+              "name": "Big Brother"
+            },
+            {
+              "artists": [
+                "Stevie Wonder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e447b59bd3e2cbefaa31d91",
+              "name": "Living For The City"
+            },
+            {
+              "artists": [
+                "The Temptations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c5fab7e361544acaf60c414",
+              "name": "Take A Stroll Thru Your Mind"
+            },
+            {
+              "artists": [
+                "Ernest Dawkins' - New Horizons Ensemble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e2a11d51ad048bb3d3341455",
+              "name": "Jo'burg Jump"
+            },
+            {
+              "artists": [
+                "Dee Dee Bridgewater"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e6c0cd40327c3ad33f5f695a",
+              "name": "Permit Me To Introduce You To Yourself"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23325433/THE-MUSIC-FILL-SHOW",
+          "station": "KPOO",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/631pvBWLHgKeiVznGT1rGR"
         }
       },
       "needs_reconciliation": false
