@@ -14672,7 +14672,7 @@
           "start_time": "2026-11-12T02:00:00-0800",
           "end_time": "2026-11-12T03:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "51HSpDvEXMuuZLqZYd5jFK",
         "desired_uris": [
@@ -14689,8 +14689,95 @@
           "spotify:track:4XrlgBREcw2wZr09qnRsA2"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T03:00:00-0800",
+          "broadcast_start": "2026-11-12T02:00:00-0800",
+          "imported_at": "2026-11-12T14:53:12.581304452+00:00",
+          "last_updated": "2026-11-12 14:53 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-12",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sylvain Chauveau"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737091a8c18d01e6f28d033774",
+              "name": "Le Zen Dans L'Art Du Tir À L'Arc"
+            },
+            {
+              "artists": [
+                "Dan Gibson's Solitudes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e409be56e8d6c91025e66323",
+              "name": "Windchimes"
+            },
+            {
+              "artists": [
+                "Popol Vuh"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27353b0c9ba07549746c33d9094",
+              "name": "Engel der gegenwart"
+            },
+            {
+              "artists": [
+                "Dan Gibson's Solitudes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c64cb75ce20a6b8015e6a8f0",
+              "name": "Garden Tranquility"
+            },
+            {
+              "artists": [
+                "Dan Gibson's Solitudes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e409be56e8d6c91025e66323",
+              "name": "Windchimes"
+            },
+            {
+              "artists": [
+                "Bahodur Nematov",
+                "Gulshan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273351a0b37d310e27beb044725",
+              "name": "Dunyo Javoni"
+            },
+            {
+              "artists": [
+                "El Búho"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c1ceff3aaa3f2d664d2cf9c8",
+              "name": "Kairos"
+            },
+            {
+              "artists": [
+                "Your Old Droog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ebdc39927bb96d2fdf0d849a",
+              "name": "Bread & Butter"
+            },
+            {
+              "artists": [
+                "Chip Wickham"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273445f5713a8411ead8c6a5df1",
+              "name": "Blue to Red"
+            },
+            {
+              "artists": [
+                "Dan Gibson's Solitudes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e409be56e8d6c91025e66323",
+              "name": "Windchimes"
+            },
+            {
+              "artists": [
+                "Dan Gibson's Solitudes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c64cb75ce20a6b8015e6a8f0",
+              "name": "Garden Tranquility"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23328700/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 11,
+          "url": "https://open.spotify.com/playlist/51HSpDvEXMuuZLqZYd5jFK"
         }
       },
       "needs_reconciliation": false
