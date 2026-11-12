@@ -13758,7 +13758,7 @@
           "start_time": "2026-11-11T15:00:00-0800",
           "end_time": "2026-11-11T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3R44fYAz6FIlSeB2Mi24S2",
         "desired_uris": [
@@ -13784,8 +13784,101 @@
           "spotify:track:74KfHpkVhvnHfQhDXzB2Dp"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T17:00:00-0800",
+          "broadcast_start": "2026-11-11T15:00:00-0800",
+          "imported_at": "2026-11-12T14:48:28.483757052+00:00",
+          "last_updated": "2026-11-12 14:48 UTC",
           "name": "KALX - FREEFORM - 2026-11-11",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Black Pumas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d4aa79800afc08c96ede2969",
+              "name": "Red Rover - Live from Capitol Studio A"
+            },
+            {
+              "artists": [
+                "Age Of Chance"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0bb51d8720ec6056f60d5cd",
+              "name": "Motorcity"
+            },
+            {
+              "artists": [
+                "Mars"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c686bc92ceebb3a730fa13d5",
+              "name": "Don't Be So Sensitive - Live at the Village Gate 1977"
+            },
+            {
+              "artists": [
+                "La Sécurité"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dc0b8258cea307dea3d16aa9",
+              "name": "Ketchup"
+            },
+            {
+              "artists": [
+                "Phillip Boa And The Voodooclub"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737bd11e4582883f1cfd08e301",
+              "name": "Lunatics Over Brighton"
+            },
+            {
+              "artists": [
+                "Buzzcocks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27345a78f3ca206afc1c142b119",
+              "name": "Why She's a Girl from the Chainstore"
+            },
+            {
+              "artists": [
+                "sachi's mirror"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273263ed6acf32e497aa7eaa4d7",
+              "name": "Out loud"
+            },
+            {
+              "artists": [
+                "Andy Shauf"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ef4fdf038aa1af178d75fddf",
+              "name": "Satan"
+            },
+            {
+              "artists": [
+                "Ennio Morricone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273104de2109b880801819751ae",
+              "name": "Queimada - Seconda"
+            },
+            {
+              "artists": [
+                "XTC"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eaa71fe9c71d643584107f0f",
+              "name": "Jason And The Argonauts - 2001 Remaster"
+            },
+            {
+              "artists": [
+                "Richard Thompson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4d507b75e9e2bd01ac1341a",
+              "name": "She Burns It All"
+            },
+            {
+              "artists": [
+                "Vanishing Twin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737375b29160c27829a26dc2a9",
+              "name": "Bring Me the Axe"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23326157/FREEFORM",
+          "station": "KALX",
+          "track_count": 20,
+          "url": "https://open.spotify.com/playlist/3R44fYAz6FIlSeB2Mi24S2"
         }
       },
       "needs_reconciliation": false
