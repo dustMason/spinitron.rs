@@ -12258,6 +12258,61 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23320193": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23320193,
+          "title": "What the Flip?!",
+          "url": "https://spinitron.com/KALX/pl/23320193/What-the-Flip",
+          "start_time": "2026-11-11T09:00:00-0800",
+          "end_time": "2026-11-11T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0QdvlisUf5Cc30dr3vI4ER",
+          "spotify:track:2Zmto3RurZWF5QTudzpvRH",
+          "spotify:track:14dEAeXPWngsRk24V4QjJ0",
+          "spotify:track:1bJQNRuCj8YApsvpwq2tTH",
+          "spotify:track:1tDZzakYdFcnYUi8hEXMrY",
+          "spotify:track:76EO27A4oT5CQnIaHXlNDq",
+          "spotify:track:4dy3LxxUlfH4GXjiOhPIjl",
+          "spotify:track:5WqUnAtvLDzELcwdMyyon2",
+          "spotify:track:4sDtPGx411x4zA32cz04ST",
+          "spotify:track:4bHftwziRIvvoq1Ef7yunt",
+          "spotify:track:4nYxKqroPIRDCRuYtEZ5Ee",
+          "spotify:track:1CZ9A2t1ZLOYZSchV1k3LR",
+          "spotify:track:6tZmlIPQzvCMPn3bohhwK3",
+          "spotify:track:7h0GkCUIfELuVl52nvhJdW",
+          "spotify:track:2ZkrbHjwQHKIxCQ31ZB60O",
+          "spotify:track:5ogiZp5msMsGInySi2oE5R",
+          "spotify:track:44fl7kl9dmODPjhet1k4Qc",
+          "spotify:track:4LHF7lmjy9bmap895FaH7U",
+          "spotify:track:3YViNy3i8DVARuKK3LKQKb",
+          "spotify:track:3b9bkYbuP7CmLLQNh2z5iN",
+          "spotify:track:0iJROqzmTpPNiNuvwYNbi7",
+          "spotify:track:6khiDADsAHYoudR2ydcCIr",
+          "spotify:track:0QCaqi2DJAPrAeh0THVGh7",
+          "spotify:track:0Dmnb3C3GaGdyjlyWaWLDr",
+          "spotify:track:5tuhnUBDVsvEb8VtGreJKJ",
+          "spotify:track:1BxJRAUpQ7TDctqXzBj1jw",
+          "spotify:track:20wFrPxUgRaxdoo8l9pk1n",
+          "spotify:track:3N5psPhFSkykr6SJJq9WYD",
+          "spotify:track:19IDST555fbb8rpVqeebYw",
+          "spotify:track:6Pv48Rm8SZlk2SPbO90sd3",
+          "spotify:track:6OUSYM6XrDe63S7RFTstRP",
+          "spotify:track:3D37FsVAqvQFAddR3JcJ3e",
+          "spotify:track:1DStisE6zxO9RT5ZZ80QQb",
+          "spotify:track:3CSqir2cSslY3rWkPBGCQe"
+        ],
+        "listing": {
+          "name": "KALX - What the Flip?! - 2026-11-11",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23320800": {
       "entry": {
         "station": "KALX",
