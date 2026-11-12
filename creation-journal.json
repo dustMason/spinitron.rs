@@ -23726,7 +23726,7 @@
           "start_time": "2026-11-11T00:00:00-0800",
           "end_time": "2026-11-11T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "10B483bkfk1Dp5GumRx8Fg",
         "desired_uris": [
@@ -23782,8 +23782,105 @@
           "spotify:track:2c4q2w6pQliLWI0Nbit2z2"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T06:00:00-0800",
+          "broadcast_start": "2026-11-11T00:00:00-0800",
+          "imported_at": "2026-11-12T14:54:06.587541314+00:00",
+          "last_updated": "2026-11-12 14:54 UTC",
           "name": "KPOO - Over Nite Sounds - 2026-11-11",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Shannon Chambers",
+                "Kwesi Bless",
+                "Emmaculate"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739d1130380673d54d65c618c9",
+              "name": "Feel The Magic - Emmaculate Remix"
+            },
+            {
+              "artists": [
+                "Dick Hyman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348cd73746936dbd8f68b430a",
+              "name": "Peacherine Rag"
+            },
+            {
+              "artists": [
+                "Kathy Sledge"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273745b0f39fe8445b799ced977",
+              "name": "Another Star - Classic 12' Mix"
+            },
+            {
+              "artists": [
+                "Jovonn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735fe3ee338bcd12196861192f",
+              "name": "Everybody Reach"
+            },
+            {
+              "artists": [
+                "Sebb Junior"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273edf19dd83ae6ba033a44e258",
+              "name": "U Got 2 - Original Mix"
+            },
+            {
+              "artists": [
+                "James Blake"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273559bd53b0292ed01f789a0d8",
+              "name": "I Hope My Life - 1-800 Mix"
+            },
+            {
+              "artists": [
+                "Prince Kaybee",
+                "Msaki"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273565353f7c9ff8b3313ca5c95",
+              "name": "Fetch Your Life"
+            },
+            {
+              "artists": [
+                "Dvine Brothers",
+                "Komplexity"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27321792e92e4bfde3e983ea2c2",
+              "name": "Just the Music - TekniQ's Abstract Mood Remix"
+            },
+            {
+              "artists": [
+                "Dick Hyman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348cd73746936dbd8f68b430a",
+              "name": "Peacherine Rag"
+            },
+            {
+              "artists": [
+                "Marc Mac"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d357c36479b7f1ec105e0d78",
+              "name": "What's My Name"
+            },
+            {
+              "artists": [
+                "Dudu Nobre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27352dd6ddc89fe355dff3ebafb",
+              "name": "Meu Drama (Senhora Tentação)"
+            },
+            {
+              "artists": [
+                "Natalie Cole"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a28053be6971c04fa30f654f",
+              "name": "I Wish You Love"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23323095/Over-Nite-Sounds",
+          "station": "KPOO",
+          "track_count": 50,
+          "url": "https://open.spotify.com/playlist/10B483bkfk1Dp5GumRx8Fg"
         }
       },
       "needs_reconciliation": false
