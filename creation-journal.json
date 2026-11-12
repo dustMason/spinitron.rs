@@ -14532,7 +14532,7 @@
           "start_time": "2026-11-12T00:00:00-0800",
           "end_time": "2026-11-12T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "74u9rl93OWdCv7bwLnropd",
         "desired_uris": [
@@ -14558,8 +14558,106 @@
           "spotify:track:1jWY9TJW3xr1XCDx7W8N1k"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T02:00:00-0800",
+          "broadcast_start": "2026-11-12T00:00:00-0800",
+          "imported_at": "2026-11-12T14:52:31.669813574+00:00",
+          "last_updated": "2026-11-12 14:52 UTC",
           "name": "KALX - Around The Bend - 2026-11-12",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Pretty Things"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736acd594c130d56790f39f0e5",
+              "name": "Private Sorrow"
+            },
+            {
+              "artists": [
+                "The Pretty Things"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736acd594c130d56790f39f0e5",
+              "name": "Balloon Burning"
+            },
+            {
+              "artists": [
+                "The Durutti Column",
+                "Lucas Elliott"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27306863efd26b96b3d1b7e43eb",
+              "name": "All They See Is Fire"
+            },
+            {
+              "artists": [
+                "case/lang/veirs",
+                "Neko Case",
+                "k.d. lang",
+                "Laura Veirs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273de6d804825d184e767218a9b",
+              "name": "Why Do We Fight"
+            },
+            {
+              "artists": [
+                "Joan As Police Woman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273093721823576f97d6e2e5583",
+              "name": "Eternal Flame"
+            },
+            {
+              "artists": [
+                "@"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27393c812017763535bb202b703",
+              "name": "Judgement Farmer"
+            },
+            {
+              "artists": [
+                "Kate Bush"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27322cd84bf3376a422b214cf60",
+              "name": "Army Dreamers - 2018 Remaster"
+            },
+            {
+              "artists": [
+                "The Clash"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c60afaf3b4f90b89ceaeca27",
+              "name": "Sean Flynn - Extended 'Marcus Music' Version"
+            },
+            {
+              "artists": [
+                "Jah Wobble",
+                "Tian Qiyi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e5d73048bf7a21a537b4f799",
+              "name": "Strawberry Fields Forever"
+            },
+            {
+              "artists": [
+                "Interpol"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a9d4720ac4088a6c58960235",
+              "name": "Enemy"
+            },
+            {
+              "artists": [
+                "Public Image Ltd."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737ef592bc41636227f7b40796",
+              "name": "Attack"
+            },
+            {
+              "artists": [
+                "Television"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bab52055e904f0d8a91c8c72",
+              "name": "Days - 2003 Remaster"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23328372/Around-The-Bend",
+          "station": "KALX",
+          "track_count": 20,
+          "url": "https://open.spotify.com/playlist/74u9rl93OWdCv7bwLnropd"
         }
       },
       "needs_reconciliation": false
