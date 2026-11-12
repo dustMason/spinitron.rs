@@ -14249,7 +14249,7 @@
           "start_time": "2026-11-11T22:00:00-0800",
           "end_time": "2026-11-12T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2v7U7K37dSLoA64fpIBHN2",
         "desired_uris": [
@@ -14283,8 +14283,101 @@
           "spotify:track:0WuDezVPKeGQwgr64orQ2V"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T00:00:00-0800",
+          "broadcast_start": "2026-11-11T22:00:00-0800",
+          "imported_at": "2026-11-12T14:51:51.396897799+00:00",
+          "last_updated": "2026-11-12 14:51 UTC",
           "name": "KALX - FREEFORM - 2026-11-11 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "This Is Lorelei"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e915b6783a2821b146ed5f4c",
+              "name": "Billy Came Back"
+            },
+            {
+              "artists": [
+                "Daryl Hall & John Oates"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0302cabc362df3517ff7e4c",
+              "name": "When the Morning Comes"
+            },
+            {
+              "artists": [
+                "Marshall Crenshaw"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348c1bbdd08a650736ea7a29d",
+              "name": "Someday Someway"
+            },
+            {
+              "artists": [
+                "R.E.M."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d117381727dc24f19a87fdf8",
+              "name": "Catapult"
+            },
+            {
+              "artists": [
+                "The Chutes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733d3ae2c0201831173c25e332",
+              "name": "Nowhere in Particular"
+            },
+            {
+              "artists": [
+                "The Supremes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c35d5ff66f0ed3254f52b90",
+              "name": "Back In My Arms Again"
+            },
+            {
+              "artists": [
+                "The Creation"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273daf0ab4685be594a36483b0c",
+              "name": "Making Time"
+            },
+            {
+              "artists": [
+                "Velocity Girl"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d998b5a4bb3f3591ca8482d5",
+              "name": "I Don't Care If You Go"
+            },
+            {
+              "artists": [
+                "The Bonniwell Music Machine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273333ca6b11ad313d75cb1dedc",
+              "name": "The Eagle Never Hunts the Fly"
+            },
+            {
+              "artists": [
+                "The Beach Boys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4c1e55432782aad4cfd09fd",
+              "name": "Country Air - Remastered 2001"
+            },
+            {
+              "artists": [
+                "The Veldt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731de01f1a3c45a0d1d97434db",
+              "name": "It's Over"
+            },
+            {
+              "artists": [
+                "Spacemen 3"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734e245335a6d92db425896ca9",
+              "name": "Walkin' With Jesus"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23327883/FREEFORM",
+          "station": "KALX",
+          "track_count": 28,
+          "url": "https://open.spotify.com/playlist/2v7U7K37dSLoA64fpIBHN2"
         }
       },
       "needs_reconciliation": false
