@@ -24456,7 +24456,7 @@
           "start_time": "2026-11-11T20:00:00-0800",
           "end_time": "2026-11-12T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "34wjIw6YPJ1vbAFhuqwqC0",
         "desired_uris": [
@@ -24508,8 +24508,107 @@
           "spotify:track:0RZCg4tUhRNZnVFnMJ9SQQ"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T00:00:00-0800",
+          "broadcast_start": "2026-11-11T20:00:00-0800",
+          "imported_at": "2026-11-12T14:57:38.881138239+00:00",
+          "last_updated": "2026-11-12 14:57 UTC",
           "name": "KPOO - LBD - 2026-11-11",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Ismael Miranda"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273419a2eee67156f25c00e863f",
+              "name": "Asi Se Compone un Son"
+            },
+            {
+              "artists": [
+                "Tommy Olivencia y Su Orquesta",
+                "Chamaco Ramírez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739cb15bec9adf592166f0dbf6",
+              "name": "Planté Bandera"
+            },
+            {
+              "artists": [
+                "Velvet Salsa All Stars",
+                "Andy Montañez",
+                "Maritza Blanco De Puchi",
+                "PABLO ÁLVAREZ"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365799ee888f00b9ca9e5541f",
+              "name": "Sandra Mora"
+            },
+            {
+              "artists": [
+                "Guayacán Orquesta"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a8ccacb0680fb9829b055fae",
+              "name": "Carro de Fuego"
+            },
+            {
+              "artists": [
+                "Orquesta La Conspiración"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27315b5ddd14ed01486ced13fbc",
+              "name": "Magdalena"
+            },
+            {
+              "artists": [
+                "José Alberto \"El Canario\""
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738688850643bdd54003dc4dbf",
+              "name": "Hoy Quiero Confesar"
+            },
+            {
+              "artists": [
+                "Lebrón Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736371595fc4c481e3937644cf",
+              "name": "Llegamos"
+            },
+            {
+              "artists": [
+                "Juan Formell y Los Van Van"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27390d13371ff3f602c9400727d",
+              "name": "Después de todo"
+            },
+            {
+              "artists": [
+                "Marvin Santiago"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27375413353dc367f222b0da2da",
+              "name": "Fuego A La Jicotea"
+            },
+            {
+              "artists": [
+                "Roberto Roena Y Su Apollo Sound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273900a3bd241ed2aa2e62f6e89",
+              "name": "Cui Cui"
+            },
+            {
+              "artists": [
+                "Sonora Ponceña",
+                "Luigui Gomez",
+                "Tito Gómez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d0f07e2deafbedd527818f1b",
+              "name": "Fuego En El 23"
+            },
+            {
+              "artists": [
+                "Tromboranga"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731f28939786586179b316f137",
+              "name": "Agua Que Va Caer"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23327512/LBD",
+          "station": "KPOO",
+          "track_count": 46,
+          "url": "https://open.spotify.com/playlist/34wjIw6YPJ1vbAFhuqwqC0"
         }
       },
       "needs_reconciliation": false
