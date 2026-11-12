@@ -13619,7 +13619,7 @@
           "start_time": "2026-11-11T12:00:00-0800",
           "end_time": "2026-11-11T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0MKIMTNHHq5f7DnudTzwdz",
         "desired_uris": [
@@ -13646,8 +13646,104 @@
           "spotify:track:1HOyES91Wo6IEQO0HfsXhp"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T15:00:00-0800",
+          "broadcast_start": "2026-11-11T12:00:00-0800",
+          "imported_at": "2026-11-12T14:47:48.369850498+00:00",
+          "last_updated": "2026-11-12 14:47 UTC",
           "name": "KALX - Holy Wave Interview & Queasy Listening - 2026-11-11",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Model 500"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f42e51aa60d6682a775dced3",
+              "name": "Encounter"
+            },
+            {
+              "artists": [
+                "Holy Wave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736f7e54021e40096a46e7a440",
+              "name": "Five of Cups"
+            },
+            {
+              "artists": [
+                "Klara Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4c9254994758b20941278f7",
+              "name": "Drip"
+            },
+            {
+              "artists": [
+                "Lustre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27318a99987d94410c480d19d28",
+              "name": "Nice Overalls"
+            },
+            {
+              "artists": [
+                "Tripping Daisy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27384b2b5ee02b691d49f59ac5d",
+              "name": "Trip Along"
+            },
+            {
+              "artists": [
+                "Hermanos Gutiérrez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273336267ef13760f7c7bfd8b21",
+              "name": "Dios De La Paz"
+            },
+            {
+              "artists": [
+                "Okinawa Delays",
+                "Satoko Ishimine",
+                "Lenny Ibizarre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c4545a340b970f4ca20ba229",
+              "name": "Hana - Lenny Ibizarre Flower Power Remix"
+            },
+            {
+              "artists": [
+                "Felicia Atkinson",
+                "Christina Vantzou"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f47b2cbda0f690a5cc74baac",
+              "name": "You are Porous"
+            },
+            {
+              "artists": [
+                "Portraits Of Tracy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273588603e17ec61c5462a0ca9c",
+              "name": "Caught In A Jam"
+            },
+            {
+              "artists": [
+                "Ginger Baker's Air Force"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f29c3220cc0ccc1965504ef",
+              "name": "Da da Man (Live)"
+            },
+            {
+              "artists": [
+                "Alice Cooper"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe855cabc708f3037595a719",
+              "name": "DaDa"
+            },
+            {
+              "artists": [
+                "Real McCoy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27331ff166101b3f1f93919abf0",
+              "name": "Another Night - House Mix"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23325075/Holy-Wave-Interview-Queasy-Listening",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/0MKIMTNHHq5f7DnudTzwdz"
         }
       },
       "needs_reconciliation": false
