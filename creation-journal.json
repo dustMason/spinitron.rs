@@ -24623,7 +24623,7 @@
           "start_time": "2026-11-11T23:00:00-0800",
           "end_time": "2026-11-12T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0S4fz1RisfCQHYfM9tOIOB",
         "desired_uris": [
@@ -24653,8 +24653,104 @@
           "spotify:track:1EvxC6Zb5no4TBtBp65r2l"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T02:00:00-0800",
+          "broadcast_start": "2026-11-11T23:00:00-0800",
+          "imported_at": "2026-11-12T14:58:18.607212397+00:00",
+          "last_updated": "2026-11-12 14:58 UTC",
           "name": "KPOO - Lover's Lounge - 2026-11-11",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Johnny Colon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ab0b9f1f92b710c2ee1e28c1",
+              "name": "Son Montuno"
+            },
+            {
+              "artists": [
+                "Andy Harlow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738628510437e4ab7dbea9a327",
+              "name": "Tin Tin Deo"
+            },
+            {
+              "artists": [
+                "Eddie Palmieri",
+                "Ismael Quintana"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27387ad3dcba30bb4f574d0abf5",
+              "name": "Bilongo"
+            },
+            {
+              "artists": [
+                "Justo Betancourt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d4ac64dc5f5340b9a9857cdf",
+              "name": "De Madrugada - Remastered 2024"
+            },
+            {
+              "artists": [
+                "Héctor Lavoe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27359247dea8375659833b79cfc",
+              "name": "Hacha Y Machete"
+            },
+            {
+              "artists": [
+                "Roberto Roena Y Su Apollo Sound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27385cb0674e6f7ec11241054f4",
+              "name": "Marejada Feliz"
+            },
+            {
+              "artists": [
+                "Jimmy Bosch"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f49bf6f7d796219b0328613",
+              "name": "Un Poquito Más"
+            },
+            {
+              "artists": [
+                "Marvin Santiago"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b3f3ffa07e10ed7485279d59",
+              "name": "Nostalgia"
+            },
+            {
+              "artists": [
+                "Tommy Olivencia y Su Orquesta",
+                "Chamaco Ramírez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27369f73ef0351b2ea486afd441",
+              "name": "Evelio y la Rumba - Remastered 2024"
+            },
+            {
+              "artists": [
+                "Justo Betancourt",
+                "Conjunto Borincuba"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cc02ee6e7647cc83898722e4",
+              "name": "Ella Está En Otra Rumba"
+            },
+            {
+              "artists": [
+                "Ismael Miranda"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736dafd0c5154fba821ed4d516",
+              "name": "Senor Sereno"
+            },
+            {
+              "artists": [
+                "Roberto y Su Nuevo Montuno"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dbd1e09bf74ab04a41cc607d",
+              "name": "El Yerbero Del Barrio"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23328297/Lover-s-Lounge",
+          "station": "KPOO",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/0S4fz1RisfCQHYfM9tOIOB"
         }
       },
       "needs_reconciliation": false
