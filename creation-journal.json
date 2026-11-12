@@ -14522,6 +14522,47 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23328372": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23328372,
+          "title": "Around The Bend",
+          "url": "https://spinitron.com/KALX/pl/23328372/Around-The-Bend",
+          "start_time": "2026-11-12T00:00:00-0800",
+          "end_time": "2026-11-12T02:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6xTQTYLIbzC0TLoSe2H4ve",
+          "spotify:track:4P8D7TXw5MzGNaxSKXuT3e",
+          "spotify:track:27iyqGK5hAB27cs0enlXIC",
+          "spotify:track:3F0HakAUnwOTaDd8Wsm4Xn",
+          "spotify:track:5wuDYXVhlpK9fu6200ycUn",
+          "spotify:track:0kv9EzPg2gaOEvH26d1ufF",
+          "spotify:track:5QYUNHT2dQwoNHorXznygN",
+          "spotify:track:2o5aarf0gokw9nBHaHC3cE",
+          "spotify:track:2Zm3sbOdPevzydt3gRzZMD",
+          "spotify:track:13YIz6TKtAD9EMBM4KJVfk",
+          "spotify:track:33aZC4zerv42n8Us6KOzKJ",
+          "spotify:track:6qK7CuehGu2DVwL8UgaEhV",
+          "spotify:track:2TtYFeENKDH2pHp3Hz1wp4",
+          "spotify:track:6puf7LmDaq4ctcWJTP7WS8",
+          "spotify:track:4dpYPoluzkZe0FzUA79ngN",
+          "spotify:track:0CX3KZyhbqiqzjqAJ63L5B",
+          "spotify:track:2LKGxp64uI1UoUYQ05iMA9",
+          "spotify:track:1r0ou3xxb6VIVJGf73i4sW",
+          "spotify:track:1uTlcKgjVIYtuP9ERLlKPh",
+          "spotify:track:1jWY9TJW3xr1XCDx7W8N1k"
+        ],
+        "listing": {
+          "name": "KALX - Around The Bend - 2026-11-12",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
