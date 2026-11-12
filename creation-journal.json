@@ -13609,6 +13609,48 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23325075": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23325075,
+          "title": "Holy Wave Interview & Queasy Listening",
+          "url": "https://spinitron.com/KALX/pl/23325075/Holy-Wave-Interview-Queasy-Listening",
+          "start_time": "2026-11-11T12:00:00-0800",
+          "end_time": "2026-11-11T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2Al3WWJmBbtGaw2xKxBPtx",
+          "spotify:track:5s7jbXRfy7y6L94g5OTVI6",
+          "spotify:track:0NJOfqGx0MKvgZACf9fkyc",
+          "spotify:track:54Sp5Zsx2chUDAu4hlylRH",
+          "spotify:track:61Ya5uCoIuNSMaj4HY0wPQ",
+          "spotify:track:4v2q06xagy8ujbRKBWd1N8",
+          "spotify:track:4Usp969vsRMwA7Fq5zIiWW",
+          "spotify:track:4bkauGCDXmVKirsrbOCoZp",
+          "spotify:track:67aVjLV3z4QqlXMBrGoOOJ",
+          "spotify:track:2AbTVGdFgGGCgbOAjqVbdj",
+          "spotify:track:2RwwDdbpKgG5aX4wul1F1t",
+          "spotify:track:7wEdjWWX7y9ZJ2jyJAv0Qm",
+          "spotify:track:525xxaaaPzwAOXJwK2mf7V",
+          "spotify:track:28vRQKgva8oqOcsCSiHyXD",
+          "spotify:track:3nsC9HmW8Hs7ERfOv0kKCU",
+          "spotify:track:0p1tcFX4VZ4L0SgpCLnvwP",
+          "spotify:track:1RVCTJM6Y4wBDDSADuzZEJ",
+          "spotify:track:5fla2ejHLTYCdgwNs2DuEU",
+          "spotify:track:41L35GQRueulDryBdjD5C2",
+          "spotify:track:64pGA1wbkGQpV4nor9rSYE",
+          "spotify:track:1HOyES91Wo6IEQO0HfsXhp"
+        ],
+        "listing": {
+          "name": "KALX - Holy Wave Interview & Queasy Listening - 2026-11-11",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
