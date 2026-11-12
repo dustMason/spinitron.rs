@@ -10782,6 +10782,51 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23313929": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23313929,
+          "title": "It's Complicated",
+          "url": "https://spinitron.com/KALX/pl/23313929/It-s-Complicated",
+          "start_time": "2026-11-11T18:00:00-0800",
+          "end_time": "2026-11-11T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0PRu2i4PAfvB0v6JJyakVY",
+          "spotify:track:2IXBov2s1TxPfLS16l87uk",
+          "spotify:track:2c1F8H1n3RQu4Xw0CO6iW5",
+          "spotify:track:5rE9qfo68jyjWXwED6uJnf",
+          "spotify:track:3d8Yon4qPW8HBXBHDwonrp",
+          "spotify:track:57Jb9bUxJO1vFIZk4r1wll",
+          "spotify:track:5bjxDEyYykWQjeIM9hdNXj",
+          "spotify:track:34v5635fB5DofM4DJQ5c5e",
+          "spotify:track:0FNJGR345BxToN9YcCVR9k",
+          "spotify:track:39ZeNweIWO4XcNPY0nmImS",
+          "spotify:track:1VxXJAmuK5bahOICRSBl4i",
+          "spotify:track:6t5XVSW2it2oySKzeYt9Ov",
+          "spotify:track:5T5joexpyaAEOoozyuKucu",
+          "spotify:track:6gqJ9yc0tr5cNFgqEkXEvo",
+          "spotify:track:67aVjLV3z4QqlXMBrGoOOJ",
+          "spotify:track:5zb7npjQqoJ7Kcpq4yD9qn",
+          "spotify:track:6OciU5g0hekPBP9MqbCKFs",
+          "spotify:track:44eMJnb8nkaXZqQ419ZyJJ",
+          "spotify:track:5gFyCfKGOYTxQoRK1VMncR",
+          "spotify:track:2ULJ2oZvI7j1md2uRB22Yk",
+          "spotify:track:69jJtkqDBuF3n6yPnAvRjK",
+          "spotify:track:2RrFd4NMdQ7ffLamWHY5q3",
+          "spotify:track:6QDJRQy38yMDhYUOd2o8UR",
+          "spotify:track:5UV2rKLzS2CqnFAoB6Lr0H"
+        ],
+        "listing": {
+          "name": "KALX - It's Complicated - 2026-11-11",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23314446": {
       "entry": {
         "station": "KALX",
