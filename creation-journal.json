@@ -24612,6 +24612,51 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23328297": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23328297,
+          "title": "Lover's Lounge",
+          "url": "https://spinitron.com/KPOO/pl/23328297/Lover-s-Lounge",
+          "start_time": "2026-11-11T23:00:00-0800",
+          "end_time": "2026-11-12T02:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3QwMRERMI77J9hJo8xUUJT",
+          "spotify:track:3bAZd1zcs8TJu5X8nQwW1V",
+          "spotify:track:0Y7luI0e7RPwFUw81prm0y",
+          "spotify:track:0IRlAi3uqAlXVUemLhQGku",
+          "spotify:track:4s0NyUWYpDcVh9pLjAStiG",
+          "spotify:track:6yntDRxeKQo8eB5cLY9tkm",
+          "spotify:track:7Hp37MXfUpKPESNmrGJZZM",
+          "spotify:track:0zSmOP6PPaquZPmNhzc3mI",
+          "spotify:track:0pJreyUqm9IemO3EYhBDU8",
+          "spotify:track:5R61zVCnogUw7sAjtxznJ0",
+          "spotify:track:4LgCxohYMJaBrJdNTTjU2F",
+          "spotify:track:2f4kuomqS5MZNTHyDk348q",
+          "spotify:track:4pQiqOJWul3rdAZMGfmulV",
+          "spotify:track:6Hb2J7m0fhGiIU4Zx9Pk4C",
+          "spotify:track:4b2EECpP3FOPdXWSFcyj57",
+          "spotify:track:3whuVZkDOwmNxsWvfRGSeL",
+          "spotify:track:0XjUXPgfuiTy0D3eESD0gu",
+          "spotify:track:65L3DxBVGKBJuoR5ct0GLb",
+          "spotify:track:47LBz4yDEESDK4rYbrq5AA",
+          "spotify:track:2s2mhbzxwKRAdMDuVJ7pDm",
+          "spotify:track:0HaTCJ0SmHjD3aGSPx8mfi",
+          "spotify:track:3VJuUK0tGfU7uW4WngzASi",
+          "spotify:track:4MJKJZGhjTiNKLlli5m0L3",
+          "spotify:track:1EvxC6Zb5no4TBtBp65r2l"
+        ],
+        "listing": {
+          "name": "KPOO - Lover's Lounge - 2026-11-11",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
