@@ -24316,6 +24316,39 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23327089": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23327089,
+          "title": "Voices of the Native Nations",
+          "url": "https://spinitron.com/KPOO/pl/23327089/Voices-of-the-Native-Nations",
+          "start_time": "2026-11-11T18:00:00-0800",
+          "end_time": "2026-11-11T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1lH0vr2GRITxvxTf90KD0Y",
+          "spotify:track:009tDZJxqZFc2ivKDMRxDd",
+          "spotify:track:7GHtvx4W5jRGZyxfzUnPEh",
+          "spotify:track:3TuWNUWltDw4HbMHi0sk0i",
+          "spotify:track:4s71VXuqg7JiLUpFm5Q00r",
+          "spotify:track:5IItVoLKsiOGVwSggmKBRg",
+          "spotify:track:2iuaBMd25bm0QP5V4KrWFg",
+          "spotify:track:2KGQek0b0BW76yTH59jF7H",
+          "spotify:track:2kNsSAJVANjFCxdpI4PCsd",
+          "spotify:track:4brviGcDo1ENQyMn07PB0Z",
+          "spotify:track:3ilS0JElAqfSYM077N0cx3",
+          "spotify:track:0U2QDGSuZUvOIVknAkQYsh"
+        ],
+        "listing": {
+          "name": "KPOO - Voices of the Native Nations - 2026-11-11",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
