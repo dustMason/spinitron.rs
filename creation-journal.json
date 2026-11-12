@@ -24445,6 +24445,73 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23327512": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23327512,
+          "title": "LBD",
+          "url": "https://spinitron.com/KPOO/pl/23327512/LBD",
+          "start_time": "2026-11-11T20:00:00-0800",
+          "end_time": "2026-11-12T00:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0Vpe0VeHLGLE4j2EOEtFkY",
+          "spotify:track:27MN81oANimeLuRnJIpgcg",
+          "spotify:track:1Lyg0T9xKFXIyIj3jHpOm8",
+          "spotify:track:4guUX2YppY1kPGpjDaenhQ",
+          "spotify:track:6Sh5qYcUgtlj2OJ6UU8Au9",
+          "spotify:track:28xNqT1rb2xmrZ28N53M1v",
+          "spotify:track:0ts1WwPHshF26Qg1VevKih",
+          "spotify:track:4IDiFHGCutb8eNZYEBxHOV",
+          "spotify:track:6OC9l1o9awJS0HGBZ4vrvc",
+          "spotify:track:6o221EsS11nmxMMPJRIN4N",
+          "spotify:track:7pmzOOG2Z4ljuOjh2nTnk4",
+          "spotify:track:4fZrgC2yPod6nIUvxPJ5aC",
+          "spotify:track:6GRFXhOIdiZmkZiNeGZ9Sm",
+          "spotify:track:5evx5is4W5iLY7A5zv82Ut",
+          "spotify:track:2NhPukGr9bpCJbIzKo6SR2",
+          "spotify:track:0KPajt76dlg67yRg1RlDvC",
+          "spotify:track:5DHgwJnuWjawfgxk3rtBO2",
+          "spotify:track:1i2yBsnCHSanfHCVmw3dE0",
+          "spotify:track:0EBkntTPUGN0hjg7Nzo5f3",
+          "spotify:track:3kWdP01aQOtBun2FumlqTm",
+          "spotify:track:0BGDijO05WJ1kpqVLwUU5d",
+          "spotify:track:1NuZZtaMgOVzVoYAlM5eZN",
+          "spotify:track:1Dkb4SLNv9DzsERxsY5zOH",
+          "spotify:track:7EN7Hl5S3UHMtK3eDUaMFc",
+          "spotify:track:5gmVfMURc9gn5FRNzHJebC",
+          "spotify:track:3zgXrYp3A8bLMsN3hbG4Qk",
+          "spotify:track:0ZMt2FAaHh8kcDSm0cJ4kY",
+          "spotify:track:14EzoWtIRKeX5dpbTjAgrP",
+          "spotify:track:23BdMSin1Kk1jQgx9BgCzl",
+          "spotify:track:3VaeGLGtkUAbRQWJUoqOCE",
+          "spotify:track:41mW3afagMuz7pn3IkpWdm",
+          "spotify:track:1jnDxOeisrXAe0qhKmyKkf",
+          "spotify:track:39pdO8pxIol9IdBVD7zCyR",
+          "spotify:track:3fq3pTQYoWtctngH9C3y0C",
+          "spotify:track:4NusdqxFElMTNdCWvlIB1Z",
+          "spotify:track:7JV7b7XPNWbdWoQkHDObcP",
+          "spotify:track:2BraNoGTcQWcQCNWi1qIYM",
+          "spotify:track:3WtJBJrwPm35VQla2zoXYO",
+          "spotify:track:6lK7DOtcbRJqUJQacDf4wl",
+          "spotify:track:78E1CCxSaqJMFvjB4Wub2z",
+          "spotify:track:5iGFtuoUQL2Ny7OM5YTm9M",
+          "spotify:track:1NmIHiZCe3evXSKg2mOban",
+          "spotify:track:4K13mRhnD4wcbV6I6V5fbF",
+          "spotify:track:0xNPez27In6TEmpeZzlpqa",
+          "spotify:track:52g9wPsHcodO81C7G930BM",
+          "spotify:track:0RZCg4tUhRNZnVFnMJ9SQQ"
+        ],
+        "listing": {
+          "name": "KPOO - LBD - 2026-11-11",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
