@@ -14034,7 +14034,7 @@
           "start_time": "2026-11-11T17:00:00-0800",
           "end_time": "2026-11-11T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "41ZNw8Oh98LYHMWDmKDeop",
         "desired_uris": [
@@ -14046,8 +14046,63 @@
           "spotify:track:1KyDshj00pqYWijVBsHQsV"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T18:00:00-0800",
+          "broadcast_start": "2026-11-11T17:00:00-0800",
+          "imported_at": "2026-11-12T14:50:30.023726207+00:00",
+          "last_updated": "2026-11-12 14:50 UTC",
           "name": "KALX - Radio Dunya - 2026-11-11",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Los Caballeros del Bravo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737bbde8cb56eee6a85ef07916",
+              "name": "No Me Digas Que Me Quieres"
+            },
+            {
+              "artists": [
+                "Little Joe",
+                "The Latinaires",
+                "Jose Maria De Leon Hernandez",
+                "Johnny Hernandez",
+                "Bobby Butler"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27382c481837f057d88ddaf2b2b",
+              "name": "I'm Your Puppet"
+            },
+            {
+              "artists": [
+                "MAZZ"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27356de93d5a6c96d2a64a09eb7",
+              "name": "My Pretty Ballerina"
+            },
+            {
+              "artists": [
+                "Los Rondels"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27341c850c39dea07d637b4bf8b",
+              "name": "La-La Te Amo"
+            },
+            {
+              "artists": [
+                "The Sunglows"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dfa58fe573c1d961b6611df2",
+              "name": "Peanuts"
+            },
+            {
+              "artists": [
+                "Latin Breed"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27315b7c7ce368838605e92dd02",
+              "name": "Latin-Breed Theme"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23326856/Radio-Dunya",
+          "station": "KALX",
+          "track_count": 6,
+          "url": "https://open.spotify.com/playlist/41ZNw8Oh98LYHMWDmKDeop"
         }
       },
       "needs_reconciliation": false
