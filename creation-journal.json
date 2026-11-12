@@ -10792,7 +10792,7 @@
           "start_time": "2026-11-11T18:00:00-0800",
           "end_time": "2026-11-11T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2IYO50wbvFR0HygsldskjL",
         "desired_uris": [
@@ -10822,8 +10822,103 @@
           "spotify:track:5UV2rKLzS2CqnFAoB6Lr0H"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T20:00:00-0800",
+          "broadcast_start": "2026-11-11T18:00:00-0800",
+          "imported_at": "2026-11-12T14:49:49.548946571+00:00",
+          "last_updated": "2026-11-12 14:49 UTC",
           "name": "KALX - It's Complicated - 2026-11-11",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Ghantasala"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27301f4d79237f9d9a9d4cabfc2",
+              "name": "Hello Madam"
+            },
+            {
+              "artists": [
+                "@"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27393c812017763535bb202b703",
+              "name": "I'm Not In Pain"
+            },
+            {
+              "artists": [
+                "Dark Dark Dark"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273309d62d18f8c49dabca11bd3",
+              "name": "Who Needs Who"
+            },
+            {
+              "artists": [
+                "The Decemberists"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c48d53016404efd3fd07ac8",
+              "name": "When The War Came"
+            },
+            {
+              "artists": [
+                "Shawn Lee's Ping Pong Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732bcf97e55f1e1d50d04b67c1",
+              "name": "Parisian Glam Slam"
+            },
+            {
+              "artists": [
+                "Rodrigo y Gabriela"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731b36d79da94a574078be244f",
+              "name": "Monster"
+            },
+            {
+              "artists": [
+                "Gazing Into Space"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa2a1c70d1200b36a18d347b",
+              "name": "No Sun for Weeks"
+            },
+            {
+              "artists": [
+                "Clinic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273506cb425b32b571a8afe1cb7",
+              "name": "Come Into Our Room"
+            },
+            {
+              "artists": [
+                "Tremenda Jauría"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733519f765b8703729a6da12ab",
+              "name": "Mordiendo"
+            },
+            {
+              "artists": [
+                "Charlotte Adigéry",
+                "Bolis Pupul",
+                "Charlotte Adigéry & Bolis Pupul"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27374b450ba1e71dbec048fc625",
+              "name": "Googoo Gaga"
+            },
+            {
+              "artists": [
+                "The Jam"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733aa3f67d16a0b2a57c73eaa4",
+              "name": "In The Midnight Hour"
+            },
+            {
+              "artists": [
+                "Wilson Pickett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e9417411c156207132d4c003",
+              "name": "Barefootin'"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23313929/It-s-Complicated",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/2IYO50wbvFR0HygsldskjL"
         }
       },
       "needs_reconciliation": false
