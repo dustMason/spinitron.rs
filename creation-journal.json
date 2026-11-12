@@ -24174,6 +24174,53 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23326309": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23326309,
+          "title": "Wake The Town",
+          "url": "https://spinitron.com/KPOO/pl/23326309/Wake-The-Town",
+          "start_time": "2026-11-11T15:00:00-0800",
+          "end_time": "2026-11-11T17:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:7Jfi34VHTmCOzSLTiA3vSb",
+          "spotify:track:3cBBZRu9b4F0sYBZqyAb11",
+          "spotify:track:3CUpFZvDjMrclIRATt7s41",
+          "spotify:track:4OwhgD4MfDVL0uEnSPBVZA",
+          "spotify:track:0630HdgrB7bcVogXgRiMUw",
+          "spotify:track:2xisUHFc9mlI0ALF6yPhBW",
+          "spotify:track:6RMFfuUSMcsrAJ921D8kyg",
+          "spotify:track:6iYd6M2qeWCh6oX3g34cyo",
+          "spotify:track:4Gm712TF2PaH9bc79Eew94",
+          "spotify:track:0Sk2KSXVLY02UzOGZuStmx",
+          "spotify:track:4TnsAtAZvbI7BHqCRInhEi",
+          "spotify:track:3xXNFArfxKjT45TnZ30D95",
+          "spotify:track:4MoF4hhPQPX2m1qCzzpFEd",
+          "spotify:track:125TJR0nD4V8F9jAQ5cvB1",
+          "spotify:track:0K1CxBxu7O0uBq5IluMJRq",
+          "spotify:track:1IdyIhbHAlv8uj4AeAAACJ",
+          "spotify:track:1cZvF6RxKVN4CmdSGRpFRp",
+          "spotify:track:7diDWZZmrVQEBLO2Hbs3rn",
+          "spotify:track:2Q5BGw4iJrGMIs06LXgova",
+          "spotify:track:5PhQISMbusHrDsR5wf4Rwt",
+          "spotify:track:3GWiMQXVt4UFnvQ08KXhDb",
+          "spotify:track:2xCeYqAk0oYlher8h0FLge",
+          "spotify:track:37TQHtzcuFka53lZz7zqYE",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x",
+          "spotify:track:1GbBfA4tgiCpNXHIEogoJP",
+          "spotify:track:7k7syXYFuHNfY06Z2rftoh"
+        ],
+        "listing": {
+          "name": "KPOO - Wake The Town - 2026-11-11",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
