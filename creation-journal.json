@@ -24185,7 +24185,7 @@
           "start_time": "2026-11-11T15:00:00-0800",
           "end_time": "2026-11-11T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0fUSRAc9WnRHFkVNbGUjQ6",
         "desired_uris": [
@@ -24217,8 +24217,102 @@
           "spotify:track:7k7syXYFuHNfY06Z2rftoh"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T17:30:00-0800",
+          "broadcast_start": "2026-11-11T15:00:00-0800",
+          "imported_at": "2026-11-12T14:56:10.545864942+00:00",
+          "last_updated": "2026-11-12 14:56 UTC",
           "name": "KPOO - Wake The Town - 2026-11-11",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Jackie Mittoo and The Soul Vendors"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733cd551fd34984c04076d7f0d",
+              "name": "Full Charge"
+            },
+            {
+              "artists": [
+                "Owen Gray"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737fee75bd9ab5144027a2d140",
+              "name": "It Isn´t So"
+            },
+            {
+              "artists": [
+                "The Paragons"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273091815dcb975449394732b5b",
+              "name": "Silver Bird"
+            },
+            {
+              "artists": [
+                "Phil Pratt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a45ddcc1457ab3f739df491f",
+              "name": "Reach Out"
+            },
+            {
+              "artists": [
+                "Lynn Taitt & The Jets"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27305d4363fbf15007db174850a",
+              "name": "Dr. Paul - aka Smokey Place"
+            },
+            {
+              "artists": [
+                "The Melodians"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273be3d7176f5382aa1eb26dbbe",
+              "name": "Sweet Rose"
+            },
+            {
+              "artists": [
+                "The Dynamics",
+                "Lyn Taitt & The Jets"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733ab671a2c4bd1ed55cf509d3",
+              "name": "My Friends - with Lyn Taitt & The Jets"
+            },
+            {
+              "artists": [
+                "The Pioneers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e736bb09d1aafbfc6bf78a72",
+              "name": "Whip Them"
+            },
+            {
+              "artists": [
+                "Lord Creator"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273303dc99621d10a623ddabea3",
+              "name": "Unfaithful Baby"
+            },
+            {
+              "artists": [
+                "Lord Creator"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739df06682505c64606cb52d11",
+              "name": "Kingston Town"
+            },
+            {
+              "artists": [
+                "Glenmore Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735a28e0a7fc3f44c4c10da178",
+              "name": "Love I"
+            },
+            {
+              "artists": [
+                "Delroy Wilson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27355dd1e99eb81d41771472e73",
+              "name": "Gave You My Love"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23326309/Wake-The-Town",
+          "station": "KPOO",
+          "track_count": 26,
+          "url": "https://open.spotify.com/playlist/0fUSRAc9WnRHFkVNbGUjQ6"
         }
       },
       "needs_reconciliation": false
