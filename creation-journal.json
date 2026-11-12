@@ -24327,7 +24327,7 @@
           "start_time": "2026-11-11T18:00:00-0800",
           "end_time": "2026-11-11T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4UsuMUK7NVEFHGN3pCwY2W",
         "desired_uris": [
@@ -24345,8 +24345,103 @@
           "spotify:track:0U2QDGSuZUvOIVknAkQYsh"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T20:00:00-0800",
+          "broadcast_start": "2026-11-11T18:00:00-0800",
+          "imported_at": "2026-11-12T14:56:50.976818900+00:00",
+          "last_updated": "2026-11-12 14:56 UTC",
           "name": "KPOO - Voices of the Native Nations - 2026-11-11",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Lakota Thunder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a9ad21d81511b834fdfd4e11",
+              "name": "Sitting Bull's Memorial Song"
+            },
+            {
+              "artists": [
+                "Lakota Thunder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a9ad21d81511b834fdfd4e11",
+              "name": "Flag Song / WWI Veterans Song"
+            },
+            {
+              "artists": [
+                "Black Lodge"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738eaf58e4f1e7b99871e37bb0",
+              "name": "Honoring Those That Returned"
+            },
+            {
+              "artists": [
+                "Red Scaffold"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b88a7944c7ec817b13c400b4",
+              "name": "Victory Song #3"
+            },
+            {
+              "artists": [
+                "Lakota Thunder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733773bcec2e176932fe8261c8",
+              "name": "They Brought Us A Victory"
+            },
+            {
+              "artists": [
+                "Myron Pyawasit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d1100d8c0cfda2279537e596",
+              "name": "Brave Man Song"
+            },
+            {
+              "artists": [
+                "Joy Harjo",
+                "Mike McCready"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a19d1b0463a6afbd8a110585",
+              "name": "Allay Na Lee No"
+            },
+            {
+              "artists": [
+                "Joy Harjo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f2dc0517a29f1b62a9017399",
+              "name": "Goin' home"
+            },
+            {
+              "artists": [
+                "Austin Markham"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273de418cb73c2f8024cef2c320",
+              "name": "Osdawidigalisda (Goin' Be Alright)"
+            },
+            {
+              "artists": [
+                "Robbie Robertson",
+                "The Red Road Ensemble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cebd5aee9f406a11e922c9b7",
+              "name": "Words Of Fire, Deeds Of Blood"
+            },
+            {
+              "artists": [
+                "Jon Orens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27392eff7fe1484641d0a511dda",
+              "name": "Veteran's Song 2"
+            },
+            {
+              "artists": [
+                "Sacred Spirit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739556b3134bd8ceeb6d5ce931",
+              "name": "Heya-Hee (Intertribal Song To Stop The Rain)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23327089/Voices-of-the-Native-Nations",
+          "station": "KPOO",
+          "track_count": 12,
+          "url": "https://open.spotify.com/playlist/4UsuMUK7NVEFHGN3pCwY2W"
         }
       },
       "needs_reconciliation": false
