@@ -13893,7 +13893,7 @@
           "start_time": "2026-11-11T11:00:00-0800",
           "end_time": "2026-11-11T14:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6x9E4lFkiRVyB7Yhbk2jgH",
         "desired_uris": [
@@ -13919,8 +13919,106 @@
           "spotify:track:5BAc66Ol21UkKT5OjReKqB"
         ],
         "listing": {
+          "broadcast_end": "2026-11-11T14:00:00-0800",
+          "broadcast_start": "2026-11-11T11:00:00-0800",
+          "imported_at": "2026-11-12T14:49:09.091226111+00:00",
+          "last_updated": "2026-11-12 14:49 UTC",
           "name": "KALX - Around The Bend - 2026-11-11",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Durutti Column",
+                "Lucas Elliott"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27306863efd26b96b3d1b7e43eb",
+              "name": "All They See Is Fire"
+            },
+            {
+              "artists": [
+                "case/lang/veirs",
+                "Neko Case",
+                "k.d. lang",
+                "Laura Veirs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273de6d804825d184e767218a9b",
+              "name": "Why Do We Fight"
+            },
+            {
+              "artists": [
+                "Joan As Police Woman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273978cf0dcef367e8fa68f39df",
+              "name": "Eternal Flame"
+            },
+            {
+              "artists": [
+                "@"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27393c812017763535bb202b703",
+              "name": "Judgement Farmer"
+            },
+            {
+              "artists": [
+                "Kate Bush"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738135bea532f6949921a41d42",
+              "name": "Army Dreamers"
+            },
+            {
+              "artists": [
+                "The Clash"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273280b72ca76b4734debfc190e",
+              "name": "Sean Flynn - Remastered"
+            },
+            {
+              "artists": [
+                "Jah Wobble",
+                "Tian Qiyi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e5d73048bf7a21a537b4f799",
+              "name": "Strawberry Fields Forever"
+            },
+            {
+              "artists": [
+                "Interpol"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a9d4720ac4088a6c58960235",
+              "name": "Enemy"
+            },
+            {
+              "artists": [
+                "Public Image Ltd."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737ef592bc41636227f7b40796",
+              "name": "Attack"
+            },
+            {
+              "artists": [
+                "Television"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bab52055e904f0d8a91c8c72",
+              "name": "Days - 2003 Remaster"
+            },
+            {
+              "artists": [
+                "The Go-Go's"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27315dbc0a42ca95b069e1d9087",
+              "name": "Our Lips Are Sealed"
+            },
+            {
+              "artists": [
+                "Nasiba Abdullaeva"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273351a0b37d310e27beb044725",
+              "name": "Ona (Mother)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23328280/Around-The-Bend",
+          "station": "KALX",
+          "track_count": 20,
+          "url": "https://open.spotify.com/playlist/6x9E4lFkiRVyB7Yhbk2jgH"
         }
       },
       "needs_reconciliation": false
