@@ -13309,6 +13309,70 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23323479": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23323479,
+          "title": "OVERNIGHTS",
+          "url": "https://spinitron.com/KALX/pl/23323479/OVERNIGHTS",
+          "start_time": "2026-11-11T03:00:00-0800",
+          "end_time": "2026-11-11T07:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0ciWPOCTeNlr5gwKb989FH",
+          "spotify:track:0blzTzqrYZVVwkHF3gPyQK",
+          "spotify:track:58HesoqL5N4iPkpH3qn7wf",
+          "spotify:track:0zBalcKf0nGBBN9D69yF8N",
+          "spotify:track:0R2zzcurqC5UpEz1HcZr7Q",
+          "spotify:track:40PBA7wf6yiwgiKs8zLfud",
+          "spotify:track:2VvOS6n9RPgjY1KsapgtON",
+          "spotify:track:27Bj3kIl4HARQ4H5OcoyF1",
+          "spotify:track:1847QMgarVgg8Md0LfK8EJ",
+          "spotify:track:2p3KxJ3OlPqIOHB6ZMwNMi",
+          "spotify:track:77uJNEqPx3kRFmGxda530P",
+          "spotify:track:7kDWwFekRc1ZlzNX0VTjfr",
+          "spotify:track:1eLEGnHQ3K7ctrbCMKA5M4",
+          "spotify:track:15TJ2zvv0Dzf3LcM3ccW9n",
+          "spotify:track:2TwjBJSWbigr10EMUA3SmM",
+          "spotify:track:6hU7Ulx7be3y1SAmQdO9cp",
+          "spotify:track:0166qdontHLT51EGG2z12G",
+          "spotify:track:091lKXOU1GSiPvoR2qZkY2",
+          "spotify:track:4B4qwZCyU0cfdcUbtM1zQG",
+          "spotify:track:4hexzNdmmp7NpBCnUHOad5",
+          "spotify:track:5nrlVx2NrC6OKJfo6U70Kn",
+          "spotify:track:1LeG60f86pyMtRUIlJSEZd",
+          "spotify:track:1jyn7hpjRYUQAaMuOb4U9n",
+          "spotify:track:0K8r1RlDZWrP8oM69JzL5G",
+          "spotify:track:69rHKcrQpYGfToPThOV1UB",
+          "spotify:track:3P3OSAFdMcA1AZpUQ8FiUm",
+          "spotify:track:2JuwftA5IQL1sUpSiMintR",
+          "spotify:track:6zGlUJ2qthTw4Bqc0ZUHCY",
+          "spotify:track:7obB9K57IL4rf4sPHn6zH2",
+          "spotify:track:08JG3EFLfxzxfjB6wEslrl",
+          "spotify:track:1gI1nC5E3ObyMtejdc8crP",
+          "spotify:track:79XQXI2zbeOPjgm6JJWNU3",
+          "spotify:track:015FxQFr3ufXuZjFQ5ag6A",
+          "spotify:track:6tLp8bJJciIRoGibqHGD2h",
+          "spotify:track:1kMkbAJrTbQVmQbYv0FJB4",
+          "spotify:track:3YtETgs3RUKBlFaZiXqgBc",
+          "spotify:track:1hlqhfBlHqWmFkHAHvJvcp",
+          "spotify:track:0xzlyhaCVCDoKKlAjD4VPE",
+          "spotify:track:1IadWAoMRnEbyVvYJXB3nW",
+          "spotify:track:4aCgB6m7DU5UWt7ygnxMFm",
+          "spotify:track:666c286mls0pVjU2U4GNgY",
+          "spotify:track:0HB0UXiIT3HUjDid2OGXH5",
+          "spotify:track:09kOTF4dvOED18rYA44k5Z"
+        ],
+        "listing": {
+          "name": "KALX - OVERNIGHTS - 2026-11-11",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
