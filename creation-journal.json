@@ -16058,6 +16058,54 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23333711": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23333711,
+          "title": "Off the Dome",
+          "url": "https://spinitron.com/KALX/pl/23333711/Off-the-Dome",
+          "start_time": "2026-11-13T00:00:00-0800",
+          "end_time": "2026-11-13T03:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5SJ7mZ4HZWbhFcHpBvHU55",
+          "spotify:track:7dxizz58rFUUPFSnnpNN1C",
+          "spotify:track:6VAlfHaqgjllzqzqBeCdFl",
+          "spotify:track:6xL6ABOyyZj52u1wQvFDqE",
+          "spotify:track:1236C4HqaxBD0xwNgMhnVY",
+          "spotify:track:1hLVZVg8zup72hy3CMRhx6",
+          "spotify:track:1Px1Nyw6cOWB4PEKSAmQP5",
+          "spotify:track:7dQFYUGRY8pvAFUql4vZyy",
+          "spotify:track:7aVPVs8DHIxhFHTti0DLJp",
+          "spotify:track:1jc924VM1q6HhV6hJXGYbu",
+          "spotify:track:2rpvGlQkqqCTSYyixGXalY",
+          "spotify:track:64YesFcTLisRSvGVNWTXvp",
+          "spotify:track:7ibY5Yov1KhuEtmRprS421",
+          "spotify:track:3Qgc62SVBAMTQIJcmRAxBH",
+          "spotify:track:4UJX3aRUi6zJ6Gxm5Iv4yP",
+          "spotify:track:4pohQSsuawfyVzVN1bLEL1",
+          "spotify:track:4WyVRn3L2uXnSUkY762gqN",
+          "spotify:track:0ZFlR1ACYRFEmkL8fQI45d",
+          "spotify:track:525xxaaaPzwAOXJwK2mf7V",
+          "spotify:track:6LfMbKp9siHjBD4JbvvX61",
+          "spotify:track:23Hh0ezx7TxSfEyTFhR5VU",
+          "spotify:track:131IANQaNr53gTr1buNmOC",
+          "spotify:track:0GRBFjza23Im7Xb16c9AaK",
+          "spotify:track:3Dwmggfw8VvvlnjYgvJQgb",
+          "spotify:track:2mYqtZO8FIqX6JVajPNGql",
+          "spotify:track:1ggE0dciJS44ud8nEfLaUO",
+          "spotify:track:6HJw6fRlxXVrzVCgGIxMbI"
+        ],
+        "listing": {
+          "name": "KALX - Off the Dome - 2026-11-13",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
