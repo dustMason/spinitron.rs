@@ -24896,7 +24896,7 @@
           "start_time": "2026-11-12T11:00:00-0800",
           "end_time": "2026-11-12T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "55oYA0xyuOcdY8DN2cMPFe",
         "desired_uris": [
@@ -24909,8 +24909,66 @@
           "spotify:track:2yc9XyzQtHyHVavqYQGXgQ"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T15:00:00-0800",
+          "broadcast_start": "2026-11-12T11:00:00-0800",
+          "imported_at": "2026-11-13T14:03:22.374576092+00:00",
+          "last_updated": "2026-11-13 14:03 UTC",
           "name": "KPOO - KPOO Public Affairs Programming - 2026-11-12",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Lafayette Afro Rock Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d523da01015f2d75319a085b",
+              "name": "Darkest Light - Remastered"
+            },
+            {
+              "artists": [
+                "Tom Morello: the Nightwatchman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273623368f45d47277c6e04f307",
+              "name": "Union Town"
+            },
+            {
+              "artists": [
+                "Apostle B.A Abad"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5e0ed368687b3d00c5558c8",
+              "name": "Strike Music"
+            },
+            {
+              "artists": [
+                "Tom Morello: the Nightwatchman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273623368f45d47277c6e04f307",
+              "name": "Union Town"
+            },
+            {
+              "artists": [
+                "Rage Against The Machine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27354ab617bc2d4974ab6ffbece",
+              "name": "Take The Power Back"
+            },
+            {
+              "artists": [
+                "Bensound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ea21cd53b7cf22433dd722c1",
+              "name": "Adventure"
+            },
+            {
+              "artists": [
+                "LaVern Baker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f7c4ec4ffde48d2cedd77506",
+              "name": "I'm Living My Life for You"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23330803/KPOO-Public-Affairs-Programming",
+          "station": "KPOO",
+          "track_count": 7,
+          "url": "https://open.spotify.com/playlist/55oYA0xyuOcdY8DN2cMPFe"
         }
       },
       "needs_reconciliation": false
