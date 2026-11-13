@@ -15794,7 +15794,7 @@
           "start_time": "2026-11-12T20:00:00-0800",
           "end_time": "2026-11-12T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1SsNgH05cRg3emWNp3kDPb",
         "desired_uris": [
@@ -15822,8 +15822,102 @@
           "spotify:track:2v39z4WyGSpaZIn0KuZbTK"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T22:00:00-0800",
+          "broadcast_start": "2026-11-12T20:00:00-0800",
+          "imported_at": "2026-11-13T14:11:29.982996607+00:00",
+          "last_updated": "2026-11-13 14:11 UTC",
           "name": "KALX - FREEFORM - 2026-11-12",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Allison De Groot",
+                "Rich Ruth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731eb0c9068659226f8e9e0fec",
+              "name": "New Intervention"
+            },
+            {
+              "artists": [
+                "Bauhaus"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734ce25ee455107469e158c5f6",
+              "name": "Exquisite Corpse"
+            },
+            {
+              "artists": [
+                "Dark Dark Dark"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c4e5c01469aa7bdcaa4a4010",
+              "name": "Wild Goose Chase"
+            },
+            {
+              "artists": [
+                "Maisy Owen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c086e300d16769752e8e3d17",
+              "name": "Dark on a Sunny Day"
+            },
+            {
+              "artists": [
+                "The Jesus and Mary Chain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273556aa85358cd423eec95d867",
+              "name": "Happy When it Rains"
+            },
+            {
+              "artists": [
+                "Matthew Schickele"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736bd431cdb5a2974664200c8d",
+              "name": "When You Bathe"
+            },
+            {
+              "artists": [
+                "The Raincoats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734169087baf19507502847c7d",
+              "name": "Rainstorm"
+            },
+            {
+              "artists": [
+                "Ann Peebles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273943b4cc92b7af0f22190eaef",
+              "name": "I Can't Stand the Rain"
+            },
+            {
+              "artists": [
+                "Bill Callahan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736172648d29acadc71f725e35",
+              "name": "West Texas"
+            },
+            {
+              "artists": [
+                "Steve Earle"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c7dcdfeae9f79e771c75d315",
+              "name": "To Live Is to Fly"
+            },
+            {
+              "artists": [
+                "Willie Nelson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f69562f8514d5f91b1d4e086",
+              "name": "House Where Nobody Lives"
+            },
+            {
+              "artists": [
+                "The Mountain Goats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e0b0a101a5934388b4377749",
+              "name": "The Best Ever Death Metal Band in Denton"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23332830/FREEFORM",
+          "station": "KALX",
+          "track_count": 22,
+          "url": "https://open.spotify.com/playlist/1SsNgH05cRg3emWNp3kDPb"
         }
       },
       "needs_reconciliation": false
