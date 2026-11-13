@@ -15391,7 +15391,7 @@
           "start_time": "2026-11-12T15:00:00-0800",
           "end_time": "2026-11-12T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6PweJKj2y3F1ZE5xIEs6SV",
         "desired_uris": [
@@ -15418,8 +15418,101 @@
           "spotify:track:1LpHPFtIWL9krf2L4EhChR"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T17:00:00-0800",
+          "broadcast_start": "2026-11-12T15:00:00-0800",
+          "imported_at": "2026-11-13T14:09:28.907063759+00:00",
+          "last_updated": "2026-11-13 14:09 UTC",
           "name": "KALX - Climb Aboard Your Airwaves - 2026-11-12",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Vanishing Twin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737375b29160c27829a26dc2a9",
+              "name": "Archives"
+            },
+            {
+              "artists": [
+                "U2"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f3a97984c9fb5074f87e938d",
+              "name": "Wire - Remastered 2009"
+            },
+            {
+              "artists": [
+                "Soft Palms"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273046641da8bb1f93c25ff193b",
+              "name": "Radio"
+            },
+            {
+              "artists": [
+                "Siouxsie and the Banshees"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27304272eb83a6af47cc14ccf76",
+              "name": "Hybrid"
+            },
+            {
+              "artists": [
+                "Atlas Sound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4f18f3f4c82b4192d1562e7",
+              "name": "Octoberland"
+            },
+            {
+              "artists": [
+                "Low"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273886ef25208f45d485ece3181",
+              "name": "Fly"
+            },
+            {
+              "artists": [
+                "Sonic Boom"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ece3d4524082131df7f6c67d",
+              "name": "You're the One"
+            },
+            {
+              "artists": [
+                "Spacemoth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273caaa6dd8839deca760d28f43",
+              "name": "Flower Memory"
+            },
+            {
+              "artists": [
+                "Yo La Tengo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731f00d48ee488c62bc46d2418",
+              "name": "Autumn Sweater"
+            },
+            {
+              "artists": [
+                "Dry Cleaning"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c6dd1a016f0caa47e0d044f9",
+              "name": "I Have The Key"
+            },
+            {
+              "artists": [
+                "LEENALCHI"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f504072c7b9423f4a0df2910",
+              "name": "Tiger Is Coming"
+            },
+            {
+              "artists": [
+                "Bow Wow Wow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f8e0f686637960af9519e8a6",
+              "name": "Mile High Club"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23331723/Climb-Aboard-Your-Airwaves",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/6PweJKj2y3F1ZE5xIEs6SV"
         }
       },
       "needs_reconciliation": false
