@@ -15236,6 +15236,56 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23331022": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23331022,
+          "title": "Hear Hear Hear",
+          "url": "https://spinitron.com/KALX/pl/23331022/Hear-Hear-Hear",
+          "start_time": "2026-11-12T12:30:00-0800",
+          "end_time": "2026-11-12T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0BgriljLaP0Fe3PNXdbLLK",
+          "spotify:track:07ZCXIERyfQX2GXi4Xy3xI",
+          "spotify:track:1frimMhNfjgAToON62wFtP",
+          "spotify:track:4xNNdG2SmtnrtcK3NxQghU",
+          "spotify:track:4yd4DoD4ydcIgU4tHeDrm9",
+          "spotify:track:6EUpoblRHjNu7RGlt715o0",
+          "spotify:track:18dPJKqaRgvqU1uHVgnW06",
+          "spotify:track:0DsoghRQqh9Ha78cDKr3jP",
+          "spotify:track:2Id5otljalYq1TLPpvt6YK",
+          "spotify:track:5Sx7nme4uPeI6Ebe1DNm4o",
+          "spotify:track:4vjyqlA9CRFMKD0IT7uYTL",
+          "spotify:track:1B1vmPIvyXXS8MAsZ633Zj",
+          "spotify:track:0HC9JldurINshOMzr1QBtJ",
+          "spotify:track:31HzzNQFrr5hT0Hq5LK4IU",
+          "spotify:track:1FAJVSedheoaTy9J3felbI",
+          "spotify:track:78mFnroPMxrjKpTP3SOEpF",
+          "spotify:track:6XdIwm6ygnAslVuaYEfRwW",
+          "spotify:track:1O1N817wIRglG3SyVPFKgn",
+          "spotify:track:07av7W1ZiEFV6ApN97Jb42",
+          "spotify:track:091T3RnHFHp4kgdphCIKrE",
+          "spotify:track:3vy4sD5vzCAAS2ZwSjExcx",
+          "spotify:track:7ac27zLRDLeHB9sPaUCQvt",
+          "spotify:track:5M2ymhJdeOnx4dCGbYWM7U",
+          "spotify:track:1sVxd8kSqpVwdBKCdX36cr",
+          "spotify:track:6W6UGdmwUn7OHXCxCFqGOZ",
+          "spotify:track:7zv2ojb0PAuMalnaOJd0Qv",
+          "spotify:track:2gACae9pFwgAFKnVxteQv4",
+          "spotify:track:3b1pRPk5JvBzwZPGTpkKgq",
+          "spotify:track:5eyl7h13sSsZXUE2kkSqEu"
+        ],
+        "listing": {
+          "name": "KALX - Hear Hear Hear - 2026-11-12",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
