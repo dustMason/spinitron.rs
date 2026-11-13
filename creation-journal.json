@@ -15932,7 +15932,7 @@
           "start_time": "2026-11-12T22:00:00-0800",
           "end_time": "2026-11-13T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4AhbekapRvdTnslocdKTK5",
         "desired_uris": [
@@ -15959,8 +15959,101 @@
           "spotify:track:5NoA9X9teE0TpGnYf37HwC"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T00:00:00-0800",
+          "broadcast_start": "2026-11-12T22:00:00-0800",
+          "imported_at": "2026-11-13T14:12:10.586724796+00:00",
+          "last_updated": "2026-11-13 14:12 UTC",
           "name": "KALX - FREEFORM - 2026-11-12 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Booker T. & the M.G.'s"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c127ff899a8bb4261793337d",
+              "name": "Chicken Pox"
+            },
+            {
+              "artists": [
+                "The Flying Hats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273172798acb57b380de9fc5614",
+              "name": "Lightning Bottle"
+            },
+            {
+              "artists": [
+                "The Womack Sisters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273daa96ea6d96d900f7d95f2f4",
+              "name": "If I Let You"
+            },
+            {
+              "artists": [
+                "Parliament"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b998486d84d5e65065ec3ac8",
+              "name": "Chocolate City"
+            },
+            {
+              "artists": [
+                "Allah-Las"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fe822f5868d8a310d28d4e0",
+              "name": "Snakes of Hydra"
+            },
+            {
+              "artists": [
+                "BLARF"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273308b6e0f29848474bf8a3d1a",
+              "name": "The Final Shootout"
+            },
+            {
+              "artists": [
+                "Adam & The Ants"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273878d13b847367f83b04960db",
+              "name": "Los Rancheros - Remastered"
+            },
+            {
+              "artists": [
+                "Messer Chups"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734662ba67e6ba5e93be9d6a66",
+              "name": "Wicked Game"
+            },
+            {
+              "artists": [
+                "Child Seat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730d0e88f58f988ab30811b0fe",
+              "name": "Love Drug"
+            },
+            {
+              "artists": [
+                "The Cramps"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27327c337cfb2be8c395b04d61d",
+              "name": "New Kind Of Kick"
+            },
+            {
+              "artists": [
+                "Ibibio Sound Machine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738377ac5fbafebad9549413c8",
+              "name": "Burning in Lagos"
+            },
+            {
+              "artists": [
+                "Cornelius"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735b7ba65d73f083ce260f0f49",
+              "name": "Mirrors"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23333298/FREEFORM",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/4AhbekapRvdTnslocdKTK5"
         }
       },
       "needs_reconciliation": false
