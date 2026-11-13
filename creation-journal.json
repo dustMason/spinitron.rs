@@ -15647,6 +15647,48 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23332333": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23332333,
+          "title": "neutron activation paralysis",
+          "url": "https://spinitron.com/KALX/pl/23332333/neutron-activation-paralysis",
+          "start_time": "2026-11-12T18:00:00-0800",
+          "end_time": "2026-11-12T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6kEZSnCPpurf7XN43jzV9f",
+          "spotify:track:38ry3QbZpaL6ggRTHyYQsv",
+          "spotify:track:5Tjcs1bm7WdyHsV8HqP76B",
+          "spotify:track:5JK0HS59KzfXCgOh14qh6P",
+          "spotify:track:0nLkVbVlIYIPsCTUYYiOuu",
+          "spotify:track:4ddGbSuvryKgVIIBjBqGHo",
+          "spotify:track:41FloGomAs2h1hccRp2OfV",
+          "spotify:track:0o5ZqGrP1hEyCx4VZ5wQIx",
+          "spotify:track:6i18oi8cbvlv9Y2QVBSzkB",
+          "spotify:track:5pom2UrXnOn99ob49csMa0",
+          "spotify:track:41L35GQRueulDryBdjD5C2",
+          "spotify:track:2ddxKTcBjM19FjkQxsaihb",
+          "spotify:track:0y2DyTS7hhrR9j5LAgTldO",
+          "spotify:track:4So4DnM3qDgcy9hYScVjhf",
+          "spotify:track:5Od6X3QYDTVAPk5rpqTQnS",
+          "spotify:track:08ffqCfwy3YeTW0SM4LDpz",
+          "spotify:track:2DFDBlqU1kwvGj9pAzygIa",
+          "spotify:track:5fevMASln9banSX5QkCP8Q",
+          "spotify:track:3Ty7OTBNSigGEpeW2PqcsC",
+          "spotify:track:3lbRRERR7kwx0eYSDNzQ2Y",
+          "spotify:track:1TWjMJQTF95uVoiNifTGE3"
+        ],
+        "listing": {
+          "name": "KALX - neutron activation paralysis - 2026-11-12",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
