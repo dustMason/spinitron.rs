@@ -15083,6 +15083,60 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23330125": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23330125,
+          "title": "Sonic Sounds",
+          "url": "https://spinitron.com/KALX/pl/23330125/Sonic-Sounds",
+          "start_time": "2026-11-12T09:00:00-0800",
+          "end_time": "2026-11-12T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:7E2WrTECMbAWqMXCP8UwkW",
+          "spotify:track:4n6l6DaEV4AmMAxziIm8Vw",
+          "spotify:track:7cCZqA98vVdHQSDnSUWnlY",
+          "spotify:track:4TP5hXx3afrO9hS7pNPKI0",
+          "spotify:track:6KV76B8fXFRhavRjMAB2kB",
+          "spotify:track:6OAXnYA8Wq3UvJiVjP1qak",
+          "spotify:track:22icYT87B5Q1RsvESWy4vQ",
+          "spotify:track:3CeJB6BXhyzOqKGakNFMxy",
+          "spotify:track:2clUduDPdPoW1sAKlGhI1C",
+          "spotify:track:3aN3dLPu676FWfii5iaz9U",
+          "spotify:track:7vKUDcDMTJwqETA5lPFFbi",
+          "spotify:track:6wEEH2zaH7XsQyhBheEtBK",
+          "spotify:track:2vONSQ0XlP98wRRWQwSnoZ",
+          "spotify:track:1za69uXhk44kjHT8uJ1HgW",
+          "spotify:track:2DdkKfo60I8AW8DNq5jSdn",
+          "spotify:track:5hRh2LBYDQAHL8C9cipNsZ",
+          "spotify:track:6aMBB9mD2wWuJOXzHYnS3o",
+          "spotify:track:21JG4W1a177TAQ02DNmWRE",
+          "spotify:track:3HeuVsJsfobPyHmjlwYVdN",
+          "spotify:track:42agmGzcrSAsSTdwbJZUOX",
+          "spotify:track:3Cu3pIILY9sJPbOg4y5mvM",
+          "spotify:track:2y5tcJETkBWicnjvJePNja",
+          "spotify:track:7xZy7AFZKAFKPB6swJRcig",
+          "spotify:track:6KBzBRY8iWpSwol2VBUXwy",
+          "spotify:track:1bK7N8HsOZVQfdfVBH8pwN",
+          "spotify:track:7p0Pk7IJw1c494Qz5lXopE",
+          "spotify:track:091UUMpZNUFUZQhFl8JYP6",
+          "spotify:track:0mXU4e7OW0pl1Gkch9sX1s",
+          "spotify:track:2UG2WPDBg6tQ8nhi1cqJRP",
+          "spotify:track:4IK3wEKh7N9GUe2gmYNPPE",
+          "spotify:track:63Lq2mJbO1Zdi8zL8xhhsz",
+          "spotify:track:21SxxOIgnlcPP8ya7cpmvy",
+          "spotify:track:3EC95H7F5ZpKMhyOGMmfyo"
+        ],
+        "listing": {
+          "name": "KALX - Sonic Sounds - 2026-11-12",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
