@@ -25125,6 +25125,30 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23332312": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23332312,
+          "title": "KPOO  Community News",
+          "url": "https://spinitron.com/KPOO/pl/23332312/KPOO-Community-News",
+          "start_time": "2026-11-12T17:30:00-0800",
+          "end_time": "2026-11-12T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:7w82eXL3CwtrGDIWkPTZZl",
+          "spotify:track:6QJ1F9DrlsRSmKDcdVS0Oy",
+          "spotify:track:2ZSO65g1JGMNiyftPfXO7w"
+        ],
+        "listing": {
+          "name": "KPOO - KPOO Community News - 2026-11-12",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
