@@ -15527,7 +15527,7 @@
           "start_time": "2026-11-12T17:00:00-0800",
           "end_time": "2026-11-12T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3FQ0fBmMYEb2uSmDyyiomD",
         "desired_uris": [
@@ -15548,8 +15548,101 @@
           "spotify:track:2VppbCFGniv58380qH2Ut3"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T18:00:00-0800",
+          "broadcast_start": "2026-11-12T17:00:00-0800",
+          "imported_at": "2026-11-13T14:10:09.199879914+00:00",
+          "last_updated": "2026-11-13 14:10 UTC",
           "name": "KALX - Dealer's Choice: in the doghouse - 2026-11-12",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Stooges"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27305f68ca95a483823a8f5a676",
+              "name": "I Wanna Be Your Dog"
+            },
+            {
+              "artists": [
+                "Sir Chloe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736bd3d0a3b4d53e8fd9e2fb83",
+              "name": "Salivate"
+            },
+            {
+              "artists": [
+                "Amyl and The Sniffers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d3805a3d5ca9a5b6bf7bc3f6",
+              "name": "Some Mutts (Can't Be Muzzled)"
+            },
+            {
+              "artists": [
+                "The Last Dinner Party"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d917013ea0d92401da36d724",
+              "name": "Big Dog"
+            },
+            {
+              "artists": [
+                "Mannequin Pussy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738cfc7993e8b2e72b53ac34e2",
+              "name": "Loud Bark"
+            },
+            {
+              "artists": [
+                "Halsey"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e53476c915af358ba2aac02",
+              "name": "Dog Years"
+            },
+            {
+              "artists": [
+                "Mudhoney"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e31416051c39cc425d52ace2",
+              "name": "Little Dogs"
+            },
+            {
+              "artists": [
+                "Mhaol"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dd49f749d6eca3337f2234a7",
+              "name": "I Miss My Dog"
+            },
+            {
+              "artists": [
+                "FKA twigs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731ea443f7a8512680563ce75d",
+              "name": "24hr Dog"
+            },
+            {
+              "artists": [
+                "Lucy Dacus"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ccd1bacab1dfa5ef5adb1f16",
+              "name": "Triple Dog Dare"
+            },
+            {
+              "artists": [
+                "Mitski"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27342cb382726e956058bf73ed3",
+              "name": "I Bet on Losing Dogs"
+            },
+            {
+              "artists": [
+                "Kate Bush"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ad08f4b38efbff0c0da0f252",
+              "name": "Hounds Of Love"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23332184/Dealer-s-Choice-in-the-doghouse",
+          "station": "KALX",
+          "track_count": 15,
+          "url": "https://open.spotify.com/playlist/3FQ0fBmMYEb2uSmDyyiomD"
         }
       },
       "needs_reconciliation": false
