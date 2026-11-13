@@ -14948,7 +14948,7 @@
           "start_time": "2026-11-12T07:00:00-0800",
           "end_time": "2026-11-12T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7tjQ9MiolG5pjZSxX76W4M",
         "desired_uris": [
@@ -14978,8 +14978,107 @@
           "spotify:track:55CYejsaLcQVtrraOlTZpt"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T09:00:00-0800",
+          "broadcast_start": "2026-11-12T07:00:00-0800",
+          "imported_at": "2026-11-13T14:07:28.642703480+00:00",
+          "last_updated": "2026-11-13 14:07 UTC",
           "name": "KALX - Sonic Travelog - 2026-11-12",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Miguel Atwood-Ferguson",
+                "Azar Lawrence"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735d8d546ecd0987364cb15bfc",
+              "name": "My Favorite Things (feat. Azar Lawrence)"
+            },
+            {
+              "artists": [
+                "Pooja Goswami Pavan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe5b8cabc68ca77bbe588ef8",
+              "name": "I’m Terrified and I’m Laughing"
+            },
+            {
+              "artists": [
+                "Sintez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273351a0b37d310e27beb044725",
+              "name": "Kishlogimizga Keling"
+            },
+            {
+              "artists": [
+                "Aryana Sayeed"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f7e1d057703b5b899d5e926",
+              "name": "Hairanam"
+            },
+            {
+              "artists": [
+                "Bolbec"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c2d72d37edf0e06a20a4fe89",
+              "name": "Le Prof de Gong"
+            },
+            {
+              "artists": [
+                "Arooj Aftab",
+                "James Francies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f211b13912db237ee100ce1d",
+              "name": "Autumn Leaves (feat. James Francies)"
+            },
+            {
+              "artists": [
+                "Willie Dunn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a3b1f192b86b64015f14aafd",
+              "name": "I Pity the Country"
+            },
+            {
+              "artists": [
+                "Margo Price",
+                "Joan Baez",
+                "Memphis Mariachi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f45ae5f33fdabbf012ab6b3e",
+              "name": "Deportee (Plane Wreck At Los Gatos) [Feat. Joan Baez & Memphis Mariachi]"
+            },
+            {
+              "artists": [
+                "Sam Sweeney"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27384b110ec0aa8ba790300937a",
+              "name": "Steppy Downs Road (Unearth Repeat)"
+            },
+            {
+              "artists": [
+                "Mexican Institute Of Sound",
+                "Meridian Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27370ddaea002796dfe4d92e53a",
+              "name": "Ira (IA)"
+            },
+            {
+              "artists": [
+                "Reik",
+                "Maluma"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fa5655f082592103c81d003a",
+              "name": "Amigos Con Derechos"
+            },
+            {
+              "artists": [
+                "Lido Pimienta"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e41d589b756dc4f82bfd4fa3",
+              "name": "No Me Quiero Ir"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23329712/Sonic-Travelog",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/7tjQ9MiolG5pjZSxX76W4M"
         }
       },
       "needs_reconciliation": false
