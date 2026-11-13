@@ -14938,6 +14938,51 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23329712": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23329712,
+          "title": "Sonic Travelog",
+          "url": "https://spinitron.com/KALX/pl/23329712/Sonic-Travelog",
+          "start_time": "2026-11-12T07:00:00-0800",
+          "end_time": "2026-11-12T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4Npdb9FX1wQAhJUbqNuLf2",
+          "spotify:track:2EEdJeHNxLrJoPTdKNNi5A",
+          "spotify:track:2tFpZYErrrkN0xWYtINmDX",
+          "spotify:track:61lOHr5RFFjniHAJkxYApD",
+          "spotify:track:3b9bkYbuP7CmLLQNh2z5iN",
+          "spotify:track:4A4BdAB3MPQhLn7MZZOSmW",
+          "spotify:track:4CBSg68CyAWZt7IzBy1Mym",
+          "spotify:track:6sHiv0apw8SIdIK4pXy2Dw",
+          "spotify:track:6X0yjfKsNSIvR3W7YdNdK6",
+          "spotify:track:0StpH0O2i9pu52526g2pjS",
+          "spotify:track:4yVO0wOhXsZC1RuPgHP524",
+          "spotify:track:7qc512RLBpc3S2D72ipThU",
+          "spotify:track:3g5RCw8zQJX7co0t1i207F",
+          "spotify:track:1Ci5IGarYBBpcq3tAF4tTj",
+          "spotify:track:0M433gqUejjCujkzISWinQ",
+          "spotify:track:13Sv0ULi6JhyKbGtDKlBYJ",
+          "spotify:track:7umZS0zU5ZND8wbakn8GJu",
+          "spotify:track:2CVWc2gNM8YCTMdFXJI8Wg",
+          "spotify:track:2DsQWs3NuGOSSpsiFUbdjO",
+          "spotify:track:5azaQP9aqjy3XYwsuJ0ebJ",
+          "spotify:track:2eIxzcGQjIRCs8qNEzd5Cu",
+          "spotify:track:3uRggMbe2X8gD5KdwTlKrw",
+          "spotify:track:5LU2fZrRl6TqE4jJTZeBNH",
+          "spotify:track:55CYejsaLcQVtrraOlTZpt"
+        ],
+        "listing": {
+          "name": "KALX - Sonic Travelog - 2026-11-12",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
