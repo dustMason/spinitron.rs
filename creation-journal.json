@@ -15381,6 +15381,48 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23331723": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23331723,
+          "title": "Climb Aboard Your Airwaves",
+          "url": "https://spinitron.com/KALX/pl/23331723/Climb-Aboard-Your-Airwaves",
+          "start_time": "2026-11-12T15:00:00-0800",
+          "end_time": "2026-11-12T17:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1DmZDQMgGU6x8sJlyazs1A",
+          "spotify:track:6MJd8qQqVS8ccO570s9QXh",
+          "spotify:track:3eBK0q7TW9LtC9Fw1XjaEj",
+          "spotify:track:1jbgtsFa7MxJEph4Mp0JlZ",
+          "spotify:track:1iSjmjc3knyvW6d1eUxya8",
+          "spotify:track:3PjXnKpQ4wMZRGV03xQtxp",
+          "spotify:track:3g0SHZLQYOfVD823PopHkD",
+          "spotify:track:1Uf5lCYKoIigcA6Spasbch",
+          "spotify:track:19Qi2Cymjh7HDQESDrDBzs",
+          "spotify:track:7ddNWgSn3ANq32JmkFOecm",
+          "spotify:track:6Fcu0gMjP3kETJ5DfZOeIQ",
+          "spotify:track:5PiuSPadiMlefq1fcmLFnO",
+          "spotify:track:2uwnCLDKqedXb4ryaizLKU",
+          "spotify:track:0vDn81gdOuRxjbIwcASuiV",
+          "spotify:track:1OBHKLkJDFSzMTwDlVECOQ",
+          "spotify:track:0kwyeJZlgYPAtPzYharVxD",
+          "spotify:track:4IiAXno0qReuQfsQztt0nD",
+          "spotify:track:6VecBjaKdc1fZBSbgpsxq9",
+          "spotify:track:5fPKsO88t38W7HL7viMFd6",
+          "spotify:track:269DO3q3lVlfkHTsWuLR1B",
+          "spotify:track:1LpHPFtIWL9krf2L4EhChR"
+        ],
+        "listing": {
+          "name": "KALX - Climb Aboard Your Airwaves - 2026-11-12",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
