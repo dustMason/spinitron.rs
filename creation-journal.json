@@ -15517,6 +15517,42 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23332184": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23332184,
+          "title": "Dealer's Choice: in the doghouse",
+          "url": "https://spinitron.com/KALX/pl/23332184/Dealer-s-Choice-in-the-doghouse",
+          "start_time": "2026-11-12T17:00:00-0800",
+          "end_time": "2026-11-12T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:672N8DGGTOLCOgWe0koX5g",
+          "spotify:track:5EATDz5G4QvKMx4qhXziqz",
+          "spotify:track:5PTXSoeCiQXnaRKjURx8m2",
+          "spotify:track:1tj4Kq6N4WKmO04hlI4LzX",
+          "spotify:track:4iaSz388a4iRMNRJZSClVG",
+          "spotify:track:49b44acoxQBi5iRkej8gWK",
+          "spotify:track:4GeDNj43WUAXas2aIZR7xG",
+          "spotify:track:74XlFxvnX6n3ONu4yOPZOP",
+          "spotify:track:3E0FBv982FkyTqfKu8K7AD",
+          "spotify:track:4syD7nYfrd11IFUZ9q4UvM",
+          "spotify:track:2Co0IjcLTSHMtodwD4gzfg",
+          "spotify:track:6jWx7mD5oblxybTaWpiPZN",
+          "spotify:track:48pL4zB6KXWPvd7Ln33ENy",
+          "spotify:track:74uoN2UfgdUAzwVeFaRUE2",
+          "spotify:track:2VppbCFGniv58380qH2Ut3"
+        ],
+        "listing": {
+          "name": "KALX - Dealer's Choice: in the doghouse - 2026-11-12",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
