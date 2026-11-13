@@ -25181,6 +25181,43 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23332422": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23332422,
+          "title": "Pajaro Latinoamericano",
+          "url": "https://spinitron.com/KPOO/pl/23332422/Pajaro-Latinoamericano",
+          "start_time": "2026-11-12T18:00:00-0800",
+          "end_time": "2026-11-12T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3ArgfQhd37JHG4NsQraxQY",
+          "spotify:track:7cew2Lypc38eIfKvXGGmqE",
+          "spotify:track:4qrmFIRYVgp3GdW4FmkyIp",
+          "spotify:track:12eHQ7BF4pbbeImfIhlAps",
+          "spotify:track:3zR3a2Oq62uCHilL7N7ywb",
+          "spotify:track:5zV0wRVd6SNn59aY2CKrVp",
+          "spotify:track:3SVTLjzV0y5PgFFKvtHhNE",
+          "spotify:track:1azNvVythiVf6i00pp13Ou",
+          "spotify:track:1MY13mJ0nQ2VIVQuqZS4Vb",
+          "spotify:track:3GOgw8i00TyY4Ud9rUlYCf",
+          "spotify:track:69CXRVL0lCxB7tVjG1rg1c",
+          "spotify:track:4cOLCrnai5V0D01qZHRV7q",
+          "spotify:track:1xuYajTJZh8zZrPRmUaagf",
+          "spotify:track:0njOsb3y8TnwIJC7GnlWwD",
+          "spotify:track:2LYI5UDADHSBmK1zxcjS8j",
+          "spotify:track:38jXpd3MWsq9HYdJTBCAvT"
+        ],
+        "listing": {
+          "name": "KPOO - Pajaro Latinoamericano - 2026-11-12",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
