@@ -25327,7 +25327,7 @@
           "start_time": "2026-11-12T20:00:00-0800",
           "end_time": "2026-11-12T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6rKPNA4L24g03AgFMBlWB5",
         "desired_uris": [
@@ -25356,8 +25356,112 @@
           "spotify:track:4brcUTQXaQ3PXuobaPzJkq"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T22:00:00-0800",
+          "broadcast_start": "2026-11-12T20:00:00-0800",
+          "imported_at": "2026-11-13T14:06:03.967915781+00:00",
+          "last_updated": "2026-11-13 14:06 UTC",
           "name": "KPOO - Da Madd Houze - 2026-11-12",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Ro3lay",
+                "Mister REY"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731e98600463b1d8977cfe57e7",
+              "name": "Kiss the Sky"
+            },
+            {
+              "artists": [
+                "Xai Beats",
+                "Ellah",
+                "Young Gully"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b10761b91b38b44c4caa2d06",
+              "name": "Can't Relate (feat. Ellah & Young Gully)"
+            },
+            {
+              "artists": [
+                "Cash Campain",
+                "Caleborate"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273202f06f577e2e785e23fb53b",
+              "name": "Holy Matrimony"
+            },
+            {
+              "artists": [
+                "J Meast",
+                "DMO"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731477b5b239af561376155f8a",
+              "name": "Talking About it"
+            },
+            {
+              "artists": [
+                "Ave Grim",
+                "Chuck T"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d1074388810a392208ccb13",
+              "name": "Freaky"
+            },
+            {
+              "artists": [
+                "Xai Beats",
+                "Ellah",
+                "Young Gully"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b10761b91b38b44c4caa2d06",
+              "name": "Can't Relate (feat. Ellah & Young Gully)"
+            },
+            {
+              "artists": [
+                "Buddha Avenue"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731bd22efaa10f1d5ee850a9aa",
+              "name": "Telegraph Flow"
+            },
+            {
+              "artists": [
+                "Big C Style"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273229368cb9be593d2603985d4",
+              "name": "Huggin The Block"
+            },
+            {
+              "artists": [
+                "Tey Yaniis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a945835fe747e8bf520edab",
+              "name": "A Queen's Crown"
+            },
+            {
+              "artists": [
+                "D Sloan",
+                "Au Music"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d79e412153bcbbb65410a196",
+              "name": "Regardless"
+            },
+            {
+              "artists": [
+                "GASHI",
+                "DJ Snake"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735ed9ec5114c2fd44d2fd2bd2",
+              "name": "Safety (feat. DJ Snake)"
+            },
+            {
+              "artists": [
+                "Tinashe",
+                "Offset"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27349f5364b3596be4021a62854",
+              "name": "No Drama (feat. Offset)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23332928/Da-Madd-Houze",
+          "station": "KPOO",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/6rKPNA4L24g03AgFMBlWB5"
         }
       },
       "needs_reconciliation": false
