@@ -15246,7 +15246,7 @@
           "start_time": "2026-11-12T12:30:00-0800",
           "end_time": "2026-11-12T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2J1mst0vZCrGOqmaB94k74",
         "desired_uris": [
@@ -15281,8 +15281,102 @@
           "spotify:track:5eyl7h13sSsZXUE2kkSqEu"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T15:00:00-0800",
+          "broadcast_start": "2026-11-12T12:30:00-0800",
+          "imported_at": "2026-11-13T14:08:49.109484730+00:00",
+          "last_updated": "2026-11-13 14:08 UTC",
           "name": "KALX - Hear Hear Hear - 2026-11-12",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Tamikrest"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c17ebd3df72f4d2456b77a49",
+              "name": "Aiytma"
+            },
+            {
+              "artists": [
+                "Baaba Maal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731082ea8fe73964062709df0c",
+              "name": "Leydi - Ma"
+            },
+            {
+              "artists": [
+                "Janka Nabay and the Bubu Gang"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739158faeddf78c60608b434b2",
+              "name": "Feba"
+            },
+            {
+              "artists": [
+                "Ibibio Sound Machine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738377ac5fbafebad9549413c8",
+              "name": "Menso"
+            },
+            {
+              "artists": [
+                "La Sécurité"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736fbdf7d61ac8325aa44b086a",
+              "name": "Bingo"
+            },
+            {
+              "artists": [
+                "The Honeymoon Killers",
+                "Les tueurs de la lune de miel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273047b4f5827ae2ca9c3ad1fd9",
+              "name": "Laisse tomber les filles"
+            },
+            {
+              "artists": [
+                "Coup Dur"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27339a83ed711e85de15348b74f",
+              "name": "J'avais Pas Pensé à Ça"
+            },
+            {
+              "artists": [
+                "Robert Plant"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734a2027e322ddbec6e3c48d22",
+              "name": "Orphan Girl"
+            },
+            {
+              "artists": [
+                "John R. Miller"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27309d10c692a893616ba27b377",
+              "name": "Static and White Noise"
+            },
+            {
+              "artists": [
+                "Agnes Obel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c34bf09fe2f2369180efd46",
+              "name": "Blood so Red"
+            },
+            {
+              "artists": [
+                "Fredrik"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737f3736fbfd8cb6627396e678",
+              "name": "Chrome Cavities"
+            },
+            {
+              "artists": [
+                "Au Revoir Simone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d38f40bf91c8b1463adc8d85",
+              "name": "A Violent Yet Flammable World"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23331022/Hear-Hear-Hear",
+          "station": "KALX",
+          "track_count": 29,
+          "url": "https://open.spotify.com/playlist/2J1mst0vZCrGOqmaB94k74"
         }
       },
       "needs_reconciliation": false
