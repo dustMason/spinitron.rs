@@ -25136,7 +25136,7 @@
           "start_time": "2026-11-12T17:30:00-0800",
           "end_time": "2026-11-12T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4YyjLJby9DGOIbVqV8TVUV",
         "desired_uris": [
@@ -25145,8 +25145,39 @@
           "spotify:track:2ZSO65g1JGMNiyftPfXO7w"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T18:00:00-0800",
+          "broadcast_start": "2026-11-12T17:30:00-0800",
+          "imported_at": "2026-11-13T14:04:42.965911124+00:00",
+          "last_updated": "2026-11-13 14:04 UTC",
           "name": "KPOO - KPOO Community News - 2026-11-12",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Frankie Ruiz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737268a74133c197834a05d330",
+              "name": "Tú Con Él"
+            },
+            {
+              "artists": [
+                "Oscar D'León",
+                "La Dimensión Latina"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e674cd720ca829ed385d76c",
+              "name": "Lloraras"
+            },
+            {
+              "artists": [
+                "Christian Alicea"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738f6d08136cdd3b812edb1baa",
+              "name": "Sube Tela"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23332312/KPOO-Community-News",
+          "station": "KPOO",
+          "track_count": 3,
+          "url": "https://open.spotify.com/playlist/4YyjLJby9DGOIbVqV8TVUV"
         }
       },
       "needs_reconciliation": false
