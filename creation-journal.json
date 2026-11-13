@@ -24754,6 +24754,43 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23330249": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23330249,
+          "title": "JIVIN' AROUND",
+          "url": "https://spinitron.com/KPOO/pl/23330249/JIVIN-AROUND",
+          "start_time": "2026-11-12T09:00:00-0800",
+          "end_time": "2026-11-12T11:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3UCmuRdeTriWgOZMEJsfqZ",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x",
+          "spotify:track:6eZfLDInqkFsD8I7NYrO9l",
+          "spotify:track:0gKhmpLiJ2awP0WlvPGPSm",
+          "spotify:track:0S0QNeHAIWuwh7IEbzbxso",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x",
+          "spotify:track:4gUDdUr5yK0JGlR49zSRVt",
+          "spotify:track:4bQK5tVTCXUqay1bPDe9Zb",
+          "spotify:track:1nxQPXzxhrMxvcqEZdnLPJ",
+          "spotify:track:4NRQwaks9r58tTDvr4iEyv",
+          "spotify:track:2qhR4aymUGDfacDT6pzWf7",
+          "spotify:track:2mYOqnBfDk2baqoWlmRiwd",
+          "spotify:track:6E7zHFyqTkh1PM2qN8h2vG",
+          "spotify:track:6eZfLDInqkFsD8I7NYrO9l",
+          "spotify:track:5NrVvplBagC29U7FRhO4BA",
+          "spotify:track:1WkjwrkilljSUQm70854pW"
+        ],
+        "listing": {
+          "name": "KPOO - JIVIN' AROUND - 2026-11-12",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
