@@ -16068,7 +16068,7 @@
           "start_time": "2026-11-13T00:00:00-0800",
           "end_time": "2026-11-13T03:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0uDnyyC0ZhqwzkSFeKFR5k",
         "desired_uris": [
@@ -16101,8 +16101,102 @@
           "spotify:track:6HJw6fRlxXVrzVCgGIxMbI"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T03:00:00-0800",
+          "broadcast_start": "2026-11-13T00:00:00-0800",
+          "imported_at": "2026-11-13T14:12:51.018683725+00:00",
+          "last_updated": "2026-11-13 14:12 UTC",
           "name": "KALX - Off the Dome - 2026-11-13",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sneaker Pimps"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bd5b848b692f571fe69541ca",
+              "name": "6 Underground"
+            },
+            {
+              "artists": [
+                "Portraits Of Tracy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ff6d317a03fa16043aa586cf",
+              "name": "Caught In A Jam"
+            },
+            {
+              "artists": [
+                "Edgar"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730dd35fa735bccd352ec6b205",
+              "name": "Teoría"
+            },
+            {
+              "artists": [
+                "Semiratruth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273266e3ff47090ffec38f2781d",
+              "name": "bite!"
+            },
+            {
+              "artists": [
+                "Debit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273caa01a3a7e5107aad4a9148d",
+              "name": "Assimilate"
+            },
+            {
+              "artists": [
+                "Aminu Dakogu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b3272f7e0c805ba73d47b233",
+              "name": "Waa Lebila"
+            },
+            {
+              "artists": [
+                "Dj Helviofox"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27333d3c9ba8d331ce55bb662cf",
+              "name": "ALIEN ON CARCAVELOS BEACH"
+            },
+            {
+              "artists": [
+                "AFK",
+                "Bludwork"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737a2b10cfa63752e50ed5c438",
+              "name": "Akina Memory"
+            },
+            {
+              "artists": [
+                "Pankow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273933ad6d6d1edca6e15e87cd5",
+              "name": "I'm lost, little girl"
+            },
+            {
+              "artists": [
+                "Технология"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e29aea56f827411c59bf10e7",
+              "name": "Холодный след"
+            },
+            {
+              "artists": [
+                "AVA RABIAT"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739de192ebfe440fb37ba30eac",
+              "name": "Znak Zapytania"
+            },
+            {
+              "artists": [
+                "Alwin Nikolais"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd2e0dacfa202136fcd80a2b",
+              "name": "TEN LEGS: Dance 1"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23333711/Off-the-Dome",
+          "station": "KALX",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/0uDnyyC0ZhqwzkSFeKFR5k"
         }
       },
       "needs_reconciliation": false
