@@ -15093,7 +15093,7 @@
           "start_time": "2026-11-12T09:00:00-0800",
           "end_time": "2026-11-12T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4T4ApZgr556U5YHYYJu0Sn",
         "desired_uris": [
@@ -15132,8 +15132,106 @@
           "spotify:track:3EC95H7F5ZpKMhyOGMmfyo"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T12:00:00-0800",
+          "broadcast_start": "2026-11-12T09:00:00-0800",
+          "imported_at": "2026-11-13T14:08:08.914249121+00:00",
+          "last_updated": "2026-11-13 14:08 UTC",
           "name": "KALX - Sonic Sounds - 2026-11-12",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Hawkwind"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c6fa85e501b233488fe3e74a",
+              "name": "Blue Skin"
+            },
+            {
+              "artists": [
+                "Jeff Sova"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a77f05e0491769cb1b29da57",
+              "name": "Blue Zones"
+            },
+            {
+              "artists": [
+                "Dick Dale & His Del-Tones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c5139dc6f84751fa863f4a56",
+              "name": "Tidal Wave"
+            },
+            {
+              "artists": [
+                "Edgar"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730dd35fa735bccd352ec6b205",
+              "name": "Nunca Más"
+            },
+            {
+              "artists": [
+                "Dave Douglas",
+                "Fay Victor",
+                "Camila Meza",
+                "Ryan Keberle",
+                "Jorge Roeder",
+                "Rudy Royston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d415aa68d2cd5fc916b38154",
+              "name": "We Shall Overcome"
+            },
+            {
+              "artists": [
+                "Nat Reeves"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273113b3edc5b1200a1df183838",
+              "name": "The Creator Has a Master Plan"
+            },
+            {
+              "artists": [
+                "Sophia Yau-Weeks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732ece48db06e672bcc584aa9b",
+              "name": "Love is a Garden"
+            },
+            {
+              "artists": [
+                "John Angaiak"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738f0f602bdf3c3cebe7f8470e",
+              "name": "Hey, Hey, Hey Brother"
+            },
+            {
+              "artists": [
+                "Tate Moore"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27339802f9cfb84d8ef5da67c80",
+              "name": "Mountain In Mississippi"
+            },
+            {
+              "artists": [
+                "Roosevelt Holts"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731933cf2aa5d06b679d50b5a4",
+              "name": "Going Up the Country"
+            },
+            {
+              "artists": [
+                "Emitt Rhodes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f50e7870ba2f1df39dce7386",
+              "name": "Farewell To Paradise"
+            },
+            {
+              "artists": [
+                "Rhiannon Giddens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273761c1892de7bd7c94b987eac",
+              "name": "High on a Mountain"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23330125/Sonic-Sounds",
+          "station": "KALX",
+          "track_count": 33,
+          "url": "https://open.spotify.com/playlist/4T4ApZgr556U5YHYYJu0Sn"
         }
       },
       "needs_reconciliation": false
