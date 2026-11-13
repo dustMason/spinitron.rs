@@ -14792,7 +14792,7 @@
           "start_time": "2026-11-12T03:00:00-0800",
           "end_time": "2026-11-12T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0nJnUsCMvl3Qh5bYLjXGPp",
         "desired_uris": [
@@ -14837,8 +14837,103 @@
           "spotify:track:3pyTH5eB97GK7EooRQEQEy"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T07:00:00-0800",
+          "broadcast_start": "2026-11-12T03:00:00-0800",
+          "imported_at": "2026-11-13T14:06:48.174639092+00:00",
+          "last_updated": "2026-11-13 14:06 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-12 3:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Pooja Goswami Pavan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe5b8cabc68ca77bbe588ef8",
+              "name": "I Won’t Come or Go"
+            },
+            {
+              "artists": [
+                "Dan Gibson's Solitudes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e409be56e8d6c91025e66323",
+              "name": "Windchimes"
+            },
+            {
+              "artists": [
+                "Lorna Dune"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6bf62b044074723a2a957f0",
+              "name": "Synaptic Circuits"
+            },
+            {
+              "artists": [
+                "Dan Gibson's Solitudes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e409be56e8d6c91025e66323",
+              "name": "Windchimes"
+            },
+            {
+              "artists": [
+                "Dan Gibson's Solitudes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e409be56e8d6c91025e66323",
+              "name": "Windchimes"
+            },
+            {
+              "artists": [
+                "The Village Stompers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273810666f15e51bdde8b301fa5",
+              "name": "If I Had a Hammer"
+            },
+            {
+              "artists": [
+                "Hiss Golden Messenger"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273265c5b2460945c59b18a0a15",
+              "name": "In the Middle of It"
+            },
+            {
+              "artists": [
+                "Dan Gibson's Solitudes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e409be56e8d6c91025e66323",
+              "name": "Windchimes"
+            },
+            {
+              "artists": [
+                "Pete Sinfield"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e716deca70beaed1a33e0c8",
+              "name": "Under the Sky - The Album Mix"
+            },
+            {
+              "artists": [
+                "Dan Gibson's Solitudes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c64cb75ce20a6b8015e6a8f0",
+              "name": "Garden Tranquility"
+            },
+            {
+              "artists": [
+                "Allison De Groot",
+                "Rich Ruth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731eb0c9068659226f8e9e0fec",
+              "name": "Distance From Then"
+            },
+            {
+              "artists": [
+                "Infiniti",
+                "Juan Atkins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27343e13ed13e42d8e4818ee107",
+              "name": "Moon Beam - Remastered"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23328947/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 39,
+          "url": "https://open.spotify.com/playlist/0nJnUsCMvl3Qh5bYLjXGPp"
         }
       },
       "needs_reconciliation": false
