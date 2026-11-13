@@ -24983,7 +24983,7 @@
           "start_time": "2026-11-12T15:00:00-0800",
           "end_time": "2026-11-12T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1RV1YMGngxILF8qP1xcvYT",
         "desired_uris": [
@@ -25023,8 +25023,105 @@
           "spotify:track:5WiDYbAx2kqcf1QvSGypDX"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T17:30:00-0800",
+          "broadcast_start": "2026-11-12T15:00:00-0800",
+          "imported_at": "2026-11-13T14:04:02.752003199+00:00",
+          "last_updated": "2026-11-13 14:04 UTC",
           "name": "KPOO - Blues and Oldies - 2026-11-12",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Little Willie Littlefield"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27345e9ccc74b3207de281f3600",
+              "name": "K.C. Loving"
+            },
+            {
+              "artists": [
+                "Brenda And The Tabulations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d86b9f8d5ba034898cb52292",
+              "name": "Dry Your Eyes"
+            },
+            {
+              "artists": [
+                "Brenda And The Tabulations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f5f1b7b072a72af8cf1f4ff4",
+              "name": "Don't Make Me Over"
+            },
+            {
+              "artists": [
+                "Jimmy Elledge"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273392d08b32939b4cdea40958d",
+              "name": "Funny How Time Slips Away"
+            },
+            {
+              "artists": [
+                "The Chambers Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308597f977f49e4993b9210d5",
+              "name": "Funky"
+            },
+            {
+              "artists": [
+                "Barbara Dane",
+                "The Chambers Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f881f4297d8dea0d83b3deeb",
+              "name": "Pack up Your Sorrows"
+            },
+            {
+              "artists": [
+                "Peggy Little"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e9de6e1d6425d2f39663890e",
+              "name": "If I Had Wheels"
+            },
+            {
+              "artists": [
+                "Karen Wheeler",
+                "The Gents"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e9de6e1d6425d2f39663890e",
+              "name": "Going to Hold My Baby"
+            },
+            {
+              "artists": [
+                "The Impalas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f30456c2787d0b87d43758ec",
+              "name": "Sorry (I Ran All the Way Home)"
+            },
+            {
+              "artists": [
+                "Elvis Presley",
+                "The Jordanaires"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27353f941c094e3f95ff33034da",
+              "name": "Don't"
+            },
+            {
+              "artists": [
+                "H-Bomb Ferguson",
+                "Varetta Dillard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cc049ee125f36c99a985ca02",
+              "name": "Tortured Love"
+            },
+            {
+              "artists": [
+                "Arthur Conley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273612dbdce7801ebff8da2747a",
+              "name": "Take Me (Just as I Am)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23331690/Blues-and-Oldies",
+          "station": "KPOO",
+          "track_count": 34,
+          "url": "https://open.spotify.com/playlist/1RV1YMGngxILF8qP1xcvYT"
         }
       },
       "needs_reconciliation": false
