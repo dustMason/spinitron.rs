@@ -25316,6 +25316,50 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23332928": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23332928,
+          "title": "Da Madd Houze",
+          "url": "https://spinitron.com/KPOO/pl/23332928/Da-Madd-Houze",
+          "start_time": "2026-11-12T20:00:00-0800",
+          "end_time": "2026-11-12T22:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5bM15Dj8WqtJ6WAcKR7k6y",
+          "spotify:track:66WfQVaoFWqwPf26GWlJyB",
+          "spotify:track:5t2RYFYNIVDSGUTv7Okw6M",
+          "spotify:track:3LJgfFRVT4R8SNPsX1RH6M",
+          "spotify:track:2rxUPaciTqNzbrISapSvFM",
+          "spotify:track:66WfQVaoFWqwPf26GWlJyB",
+          "spotify:track:5c9sppiXK9rHHc2VpnTPrv",
+          "spotify:track:6hFHX33PqJODePoviG2MVA",
+          "spotify:track:1Lc5pMT8WeQWHZmuOgiGtG",
+          "spotify:track:6rtt9G4pdw1kxJaf6D60vO",
+          "spotify:track:26Sw3iKfNsX2i0OnKqKXNi",
+          "spotify:track:3doVAxeH3SgWtlRMqR4eLi",
+          "spotify:track:3Fn7trrqNesi9XixLTNo3b",
+          "spotify:track:3t3aIdUIlzPbBM78lHWYU1",
+          "spotify:track:3doVAxeH3SgWtlRMqR4eLi",
+          "spotify:track:0wUlGPa8He68F9TmLKdcL4",
+          "spotify:track:4VLF9gzIPxGNtevC5ap1Pf",
+          "spotify:track:7IerbGzhfoVaqW54AdS1SO",
+          "spotify:track:1NKpNa3ET2LaMD00w6Vkmd",
+          "spotify:track:3uzfarZhcMJxYDEUeW3Ihb",
+          "spotify:track:1LJ2x844UhG44WtOu9zaYd",
+          "spotify:track:434D5oh1l0g0X4DWTb0rV8",
+          "spotify:track:4brcUTQXaQ3PXuobaPzJkq"
+        ],
+        "listing": {
+          "name": "KPOO - Da Madd Houze - 2026-11-12",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
