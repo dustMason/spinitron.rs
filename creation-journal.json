@@ -24765,7 +24765,7 @@
           "start_time": "2026-11-12T09:00:00-0800",
           "end_time": "2026-11-12T11:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5NDjyqbhPpFAD3hnnfRTC8",
         "desired_uris": [
@@ -24787,8 +24787,101 @@
           "spotify:track:1WkjwrkilljSUQm70854pW"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T11:00:00-0800",
+          "broadcast_start": "2026-11-12T09:00:00-0800",
+          "imported_at": "2026-11-13T14:02:41.858670606+00:00",
+          "last_updated": "2026-11-13 14:02 UTC",
           "name": "KPOO - JIVIN' AROUND - 2026-11-12",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Ben E. King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737edb40e4332b2a7d17004eef",
+              "name": "Spanish Harlem"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "John Coltrane Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273051da334fcb7ed4b42b85c4a",
+              "name": "Out Of This World"
+            },
+            {
+              "artists": [
+                "Sam Cooke"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e1ecfe1d298d52c7e2ae559a",
+              "name": "That's It - I Quit - I'm Movin' On"
+            },
+            {
+              "artists": [
+                "Bobby \"Blue\" Bland"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739199c3208b929f40b718c103",
+              "name": "Gotta Get To Know You - Single Version"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "Phil Phillips & The Twilights"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27323547ad6a1bff03a0d60dd3d",
+              "name": "Sea Of Love"
+            },
+            {
+              "artists": [
+                "Sam & Dave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27362919a7583ee69f9348d194f",
+              "name": "I Thank You"
+            },
+            {
+              "artists": [
+                "Ike & Tina Turner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27318a511b4fb9e643ed9c6e6c3",
+              "name": "Please Love Me"
+            },
+            {
+              "artists": [
+                "Wilson Pickett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732927d543acb7b1d8bcb29e11",
+              "name": "In the Midnight Hour"
+            },
+            {
+              "artists": [
+                "Bobby Womack"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738521692e95d60d4ba9331fe9",
+              "name": "Fly Me To The Moon (In Other Words)"
+            },
+            {
+              "artists": [
+                "Zhané"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e084258c981beb6b968393dc",
+              "name": "Rendez-Vous"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23330249/JIVIN-AROUND",
+          "station": "KPOO",
+          "track_count": 16,
+          "url": "https://open.spotify.com/playlist/5NDjyqbhPpFAD3hnnfRTC8"
         }
       },
       "needs_reconciliation": false
