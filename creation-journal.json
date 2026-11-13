@@ -15657,7 +15657,7 @@
           "start_time": "2026-11-12T18:00:00-0800",
           "end_time": "2026-11-12T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4xbabpQtDpS9ZCIO7NFdSb",
         "desired_uris": [
@@ -15684,8 +15684,102 @@
           "spotify:track:1TWjMJQTF95uVoiNifTGE3"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T20:00:00-0800",
+          "broadcast_start": "2026-11-12T18:00:00-0800",
+          "imported_at": "2026-11-13T14:10:49.764692077+00:00",
+          "last_updated": "2026-11-13 14:10 UTC",
           "name": "KALX - neutron activation paralysis - 2026-11-12",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "King Crimson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27384e82714205cbc8d5a9b7557",
+              "name": "Larks' Tongues In Aspic, Pt. 1 - 2023 Elemental Mix"
+            },
+            {
+              "artists": [
+                "Quadeca",
+                "kmoe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273022501794da0a51a2fcfb81a",
+              "name": "Make you my what"
+            },
+            {
+              "artists": [
+                "@"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27393c812017763535bb202b703",
+              "name": "Love In The Dark"
+            },
+            {
+              "artists": [
+                "Felt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27387b86bce6bbccfc33b8ce2de",
+              "name": "Fortune - Remastered Edition"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "Mimesis"
+            },
+            {
+              "artists": [
+                "Soda Stereo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b755f1b1b4410d404fe21167",
+              "name": "Camaleón - Remasterizado 2007"
+            },
+            {
+              "artists": [
+                "El Búho"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5cd59314bcef42f02e8dc25",
+              "name": "Kairos"
+            },
+            {
+              "artists": [
+                "Cibo Matto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bf6cc78671fcd1f81aefc02b",
+              "name": "Apple"
+            },
+            {
+              "artists": [
+                "Cocteau Twins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe6211303e796f3d5b7a0e02",
+              "name": "Frou-frou Foxes in Midsummer Fires"
+            },
+            {
+              "artists": [
+                "Jerskin Fendrix"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b7791635c1bbd9a5b6b86267",
+              "name": "Manhattan"
+            },
+            {
+              "artists": [
+                "The Clog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db34562fa365670f7c7fe57d",
+              "name": "Fog Devil"
+            },
+            {
+              "artists": [
+                "Boris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273728c73f734bfe4c9204304d0",
+              "name": "Blackout"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23332333/neutron-activation-paralysis",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/4xbabpQtDpS9ZCIO7NFdSb"
         }
       },
       "needs_reconciliation": false
