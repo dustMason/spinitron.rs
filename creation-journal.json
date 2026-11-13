@@ -25192,7 +25192,7 @@
           "start_time": "2026-11-12T18:00:00-0800",
           "end_time": "2026-11-12T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1fy0JbIqWxIUsoFg7hqFdy",
         "desired_uris": [
@@ -25214,8 +25214,105 @@
           "spotify:track:38jXpd3MWsq9HYdJTBCAvT"
         ],
         "listing": {
+          "broadcast_end": "2026-11-12T20:00:00-0800",
+          "broadcast_start": "2026-11-12T18:00:00-0800",
+          "imported_at": "2026-11-13T14:05:23.472618608+00:00",
+          "last_updated": "2026-11-13 14:05 UTC",
           "name": "KPOO - Pajaro Latinoamericano - 2026-11-12",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "León Gieco",
+                "Silvio Rodríguez",
+                "Agarrate Catalina"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27359d3e0d18e7d97ed2e035ec9",
+              "name": "Sueño Con Serpientes"
+            },
+            {
+              "artists": [
+                "Mariana Montalvo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a377967037f5fa4a7416a106",
+              "name": "Miedo"
+            },
+            {
+              "artists": [
+                "Lluis Llach"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734e4e87d8235604e1e78e7e10",
+              "name": "L'estaca"
+            },
+            {
+              "artists": [
+                "Banda Conmoción"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ffb0803a95f544a4764ed4cc",
+              "name": "Mentira"
+            },
+            {
+              "artists": [
+                "Playing For Change"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c0354c51ffe2d9e7b57f7b0",
+              "name": "La Tierra del Olvido"
+            },
+            {
+              "artists": [
+                "Clara Nunes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c71f38cb19190e40d660d961",
+              "name": "Feira De Mangaio"
+            },
+            {
+              "artists": [
+                "Peter, Paul and Mary"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27331716dd0328f835ea0559450",
+              "name": "This Land Is Your Land - 2004 Remaster"
+            },
+            {
+              "artists": [
+                "Elizabeth Morris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738ec53f4a7d89c7e70f4ec208",
+              "name": "A la Deriva"
+            },
+            {
+              "artists": [
+                "León Gieco"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ef945216a15272c4f9c412db",
+              "name": "El Desembarco"
+            },
+            {
+              "artists": [
+                "Los Cumbia Stars",
+                "C4 Trío"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273643f0268f06143c3f04dd4ea",
+              "name": "Raza"
+            },
+            {
+              "artists": [
+                "Doctor Krápula",
+                "Bukahara"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bca95819ed509573d573f651",
+              "name": "No Disparen"
+            },
+            {
+              "artists": [
+                "Víctor Martínez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27334df41f6de42715d42a6b806",
+              "name": "Para Que Florezca"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23332422/Pajaro-Latinoamericano",
+          "station": "KPOO",
+          "track_count": 16,
+          "url": "https://open.spotify.com/playlist/1fy0JbIqWxIUsoFg7hqFdy"
         }
       },
       "needs_reconciliation": false
