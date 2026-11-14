@@ -27619,7 +27619,7 @@
           "start_time": "2026-11-13T17:30:00-0800",
           "end_time": "2026-11-13T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7bCqSjeJQgqJqIhZAll9Hd",
         "desired_uris": [
@@ -27627,8 +27627,31 @@
           "spotify:track:3p1JoOEhVkEnTaa4JzTMSk"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T18:00:00-0800",
+          "broadcast_start": "2026-11-13T17:30:00-0800",
+          "imported_at": "2026-11-14T13:07:15.265340484+00:00",
+          "last_updated": "2026-11-14 13:07 UTC",
           "name": "KPOO - KPOO Community News - 2026-11-13",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "The O'Jays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735abd0f3ff2e38c5a73afbab6",
+              "name": "For the Love of Money"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23337775/KPOO-Community-News",
+          "station": "KPOO",
+          "track_count": 2,
+          "url": "https://open.spotify.com/playlist/7bCqSjeJQgqJqIhZAll9Hd"
         }
       },
       "needs_reconciliation": false
