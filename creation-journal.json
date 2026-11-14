@@ -27310,6 +27310,56 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23336387": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23336387,
+          "title": "La Verdad Musical (The Musical Truth)",
+          "url": "https://spinitron.com/KPOO/pl/23336387/La-Verdad-Musical-The-Musical-Truth",
+          "start_time": "2026-11-13T12:00:00-0800",
+          "end_time": "2026-11-13T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4lk4KFTZnDrIsiG0xli70T",
+          "spotify:track:1l8trPi9gMqSFiV1fvDnIw",
+          "spotify:track:5UjaOsrdoI4shw9gM2eNPC",
+          "spotify:track:6JLCUkT4fgehYOJOiwmUMf",
+          "spotify:track:6hNk3VFfcGFUqJYUus7H5V",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x",
+          "spotify:track:4bXJqga7UwrSVt2mAPY15f",
+          "spotify:track:3RXG6ZxaysuqXzyPsWPcee",
+          "spotify:track:3tDVcfDVbtiD6M66P4wyGk",
+          "spotify:track:5MDo0IW08FF1lVfSEUKcUp",
+          "spotify:track:2op701h7Kd6DaodBnQR6Mf",
+          "spotify:track:2SlUdVngTC71A21VMcg2S3",
+          "spotify:track:5eWl6ahxjX4FckZjoPJcgb",
+          "spotify:track:1CS9Rf1MMN3a3zAd6Bmjyi",
+          "spotify:track:31xccxeeLuiKHve7oDeye5",
+          "spotify:track:2MXDAMqreT3P6nMrS7tTDO",
+          "spotify:track:3pD51BasHmUt2kj3K8Yh4A",
+          "spotify:track:6aQ2601ghBOG40DV2oIJ0U",
+          "spotify:track:1GNm0f0EpQjjpZTSQdNx1N",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x",
+          "spotify:track:0x38lf3UkkglwSZA3nrAfU",
+          "spotify:track:0PW0EMmzPoJI1XDBpqs14b",
+          "spotify:track:1fsHrUkQgr7v7YI0L61JJo",
+          "spotify:track:49TGTnnnvb3lgQ2d9aw05S",
+          "spotify:track:2FjKQXklFK1fBfvv6S2KhK",
+          "spotify:track:6EB5ha895G5jtjWLY9G38l",
+          "spotify:track:4DFLA3ARBEJl4N6H3LPpcO",
+          "spotify:track:12IYeF8jBjXV73LaK8C3j2",
+          "spotify:track:57XdmzaYevYtrDgbZ0kX3P"
+        ],
+        "listing": {
+          "name": "KPOO - La Verdad Musical (The Musical Truth) - 2026-11-13",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
