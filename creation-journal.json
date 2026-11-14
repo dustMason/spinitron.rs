@@ -16828,6 +16828,44 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23337088": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23337088,
+          "title": ".signs//wonders.037",
+          "url": "https://spinitron.com/KALX/pl/23337088/signs-wonders-037",
+          "start_time": "2026-11-13T15:00:00-0800",
+          "end_time": "2026-11-13T17:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4pMvf7vL4FVDVonKcKHEGj",
+          "spotify:track:45zBLdDTajGAtd0tkvRcMg",
+          "spotify:track:0OTRfT6QB5LTDxZH5ammAY",
+          "spotify:track:3Ubzwa9vQ7PKGA7pn9A9nC",
+          "spotify:track:6VecBjaKdc1fZBSbgpsxq9",
+          "spotify:track:7BuTbPftdbM1XBUPO6GHmU",
+          "spotify:track:2GrGZWiwSmOiKvPODi9z2N",
+          "spotify:track:7qsz1VF6KbTHkvv9gLkh34",
+          "spotify:track:7zN04jljWDxlINSTn5l09g",
+          "spotify:track:0gBdSBsblyPKeu86Hmx0NQ",
+          "spotify:track:3JlKiE5sAzHIHOW5uSLfgK",
+          "spotify:track:2A8KUcV16yCGc7wwXYyFz7",
+          "spotify:track:51QG7XDE14AXS554lxYQPt",
+          "spotify:track:35eEkWUzhw1vJV4bd7K2g8",
+          "spotify:track:5Wr3Vl8EiW9HmJ8xhtEO3k",
+          "spotify:track:2k9pgZcaz5UvptFt9RG2bL",
+          "spotify:track:41FloGomAs2h1hccRp2OfV"
+        ],
+        "listing": {
+          "name": "KALX - .signs//wonders.037 - 2026-11-13",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
