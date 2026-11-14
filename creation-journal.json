@@ -27655,6 +27655,61 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23337957": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23337957,
+          "title": "Beats Me",
+          "url": "https://spinitron.com/KPOO/pl/23337957/Beats-Me",
+          "start_time": "2026-11-13T18:00:00-0800",
+          "end_time": "2026-11-13T21:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5Mhf6GA6G6ugP2x7mnAGyY",
+          "spotify:track:53Za5vyGc1x7GxgJVRjRKc",
+          "spotify:track:6WGNKKvCYcM0J7J9Yq8IVj",
+          "spotify:track:2RYQ6GVwDM9QtNOy4fgvAG",
+          "spotify:track:14Zdigity9O3iuDlKifcyr",
+          "spotify:track:2EzE511iwy5L4zA6EogZLE",
+          "spotify:track:17D4ICeSuRfTwC08M6EEfd",
+          "spotify:track:0hzJgMso2kR6z5mx4TIuVk",
+          "spotify:track:3kQFo7hAgXDV1MztfZ24g4",
+          "spotify:track:4Cv6ongCvJy9JfSkWVnb5D",
+          "spotify:track:7vz1xD9DpkzcdwTwrpEwnA",
+          "spotify:track:0Aj8EagrPfDoOe5OlUdrLC",
+          "spotify:track:3QXNBUYJX2aekx6mHQ14GZ",
+          "spotify:track:5lKGVavkvKs4Cz3VxV6vtc",
+          "spotify:track:2BEArHIJsI5fxYEpCZv2sF",
+          "spotify:track:0RgcOUQg4qYAEt9RIdf3oB",
+          "spotify:track:7lgcHiQflpIuUr9APfb9j9",
+          "spotify:track:7Lx7whDrgzbZj6fYjqC3kt",
+          "spotify:track:6LnFAJNFCNgXxHN4u19TVq",
+          "spotify:track:38YyJmWrbPgl0Bc9hJTFsL",
+          "spotify:track:3tMR1swuSiAdCf5joYdOsk",
+          "spotify:track:19Lnqlts4qYpeK5MFpgxbv",
+          "spotify:track:4y4zaGKm7rbACHFDmNKDBI",
+          "spotify:track:20d1MCxXxX2Jdq6RnSbGkW",
+          "spotify:track:4Jt1jHiZ9Fz6P9q1chGDHa",
+          "spotify:track:28idIcQ2029WdhjCm0LINW",
+          "spotify:track:3itM5p4E7GX2aMYanNtVwO",
+          "spotify:track:3wDMJzQbPqYyVuuW8DBJSN",
+          "spotify:track:74LujaXmzGQi5wRZ2HFh0G",
+          "spotify:track:1P5POBnYVBVTapPkPWlU9e",
+          "spotify:track:09EmEP62OJa0anCob6k0pl",
+          "spotify:track:4QHfFzsVXbLewUmI2UMel5",
+          "spotify:track:74Xdx4ezYQQlg8wKswq25T",
+          "spotify:track:0oHU9CmXcB4gNFMiku5Z7L"
+        ],
+        "listing": {
+          "name": "KPOO - Beats Me - 2026-11-13",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
