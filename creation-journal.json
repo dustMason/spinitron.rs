@@ -27666,7 +27666,7 @@
           "start_time": "2026-11-13T18:00:00-0800",
           "end_time": "2026-11-13T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0NnFEJrEFxN2xcche4AsSp",
         "desired_uris": [
@@ -27706,8 +27706,102 @@
           "spotify:track:0oHU9CmXcB4gNFMiku5Z7L"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T21:00:00-0800",
+          "broadcast_start": "2026-11-13T18:00:00-0800",
+          "imported_at": "2026-11-14T13:07:55.133935325+00:00",
+          "last_updated": "2026-11-14 13:07 UTC",
           "name": "KPOO - Beats Me - 2026-11-13",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Rick James"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a1509c9a483365e651ce223e",
+              "name": "You And I"
+            },
+            {
+              "artists": [
+                "Rufus",
+                "Chaka Khan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731ab2a1683ee8b7fcbc997510",
+              "name": "Ain't Nobody"
+            },
+            {
+              "artists": [
+                "Curtis Mayfield"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27312cf02516dc5de81b4815b24",
+              "name": "Eddie You Should Know Better"
+            },
+            {
+              "artists": [
+                "Kleeer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734e37d27f60ec58d822d4cbd4",
+              "name": "Tonight"
+            },
+            {
+              "artists": [
+                "Curtis Mayfield"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e2a3df32f10fdf5546ff15c2",
+              "name": "Pusher Man"
+            },
+            {
+              "artists": [
+                "Funkadelic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bce3047127e61ccedd4e0291",
+              "name": "You'll Like it Too"
+            },
+            {
+              "artists": [
+                "Bobby Byrd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738de45e802e2eff32ce1c9fed",
+              "name": "I Know You Got Soul - Single Version"
+            },
+            {
+              "artists": [
+                "Rufus Wonder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c73091c3bbc052e50d26aee4",
+              "name": "For Self Respect, and Fair Play"
+            },
+            {
+              "artists": [
+                "B.T. Express"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736406e86cb48b308eea58d3bb",
+              "name": "Give up the Funk (Let's Dance)"
+            },
+            {
+              "artists": [
+                "Kool & The Gang"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736ef6ad26898a6eace34a216c",
+              "name": "Get Down On It"
+            },
+            {
+              "artists": [
+                "David McCallum"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273315a535680cbbfd41ca3084b",
+              "name": "The Edge"
+            },
+            {
+              "artists": [
+                "Cameo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273995be721b726637e1b9f8972",
+              "name": "Candy"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23337957/Beats-Me",
+          "station": "KPOO",
+          "track_count": 34,
+          "url": "https://open.spotify.com/playlist/0NnFEJrEFxN2xcche4AsSp"
         }
       },
       "needs_reconciliation": false
