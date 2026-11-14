@@ -27816,7 +27816,7 @@
           "start_time": "2026-11-13T22:00:00-0800",
           "end_time": "2026-11-14T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7aNmiWBznTRIIzZNEDmeWu",
         "desired_uris": [
@@ -27876,8 +27876,112 @@
           "spotify:track:6qg0LGjiebZWb2P3slndfA"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T02:00:00-0800",
+          "broadcast_start": "2026-11-13T22:00:00-0800",
+          "imported_at": "2026-11-14T13:08:36.711870587+00:00",
+          "last_updated": "2026-11-14 13:08 UTC",
           "name": "KPOO - GHETTO GUMBO - 2026-11-13",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Nate Dogg",
+                "Warren G"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273988e48b8e6b5f63391f7ea1c",
+              "name": "Nobody Does It Better"
+            },
+            {
+              "artists": [
+                "Kurupt",
+                "Tray Dee",
+                "Slip Capone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730c46f1a7e2cb5ebfd4714b28",
+              "name": "C-Walk"
+            },
+            {
+              "artists": [
+                "Hitta Slim"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a8b1146abee8602ea42edc16",
+              "name": "Down A Notch"
+            },
+            {
+              "artists": [
+                "San Quinn",
+                "Messy Marv"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a93eff243da829e9ed52c658",
+              "name": "How I Came Up"
+            },
+            {
+              "artists": [
+                "R. Kelly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f06ed757791f7aa92ffa254b",
+              "name": "Feelin' Single"
+            },
+            {
+              "artists": [
+                "The Stonies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f1962ab8bc4aa208b23d6723",
+              "name": "Hello"
+            },
+            {
+              "artists": [
+                "Sage The Gemini",
+                "Justin Bieber",
+                "Iamsu!"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e86422731c4379b0a28ab2c5",
+              "name": "Gas Pedal - Remix"
+            },
+            {
+              "artists": [
+                "Willie Joe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733bc42e9cbeda2e2e418a79d5",
+              "name": "I'm From The Bay Bruh (feat. E-40)"
+            },
+            {
+              "artists": [
+                "Yella Beezy",
+                "Ty Dolla $ign"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737a5ac75155733080a35285d1",
+              "name": "Ay Ya Ya Ya"
+            },
+            {
+              "artists": [
+                "Young Thug",
+                "J. Cole",
+                "Travis Scott"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273137c2d3150118e7157800c5b",
+              "name": "The London (feat. J. Cole & Travis Scott)"
+            },
+            {
+              "artists": [
+                "Chris Brown",
+                "Lil Wayne",
+                "Tyga"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b37e6176a034d4470304d706",
+              "name": "Loyal (feat. Lil Wayne & Tyga)"
+            },
+            {
+              "artists": [
+                "Inayah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735fe426cec1c817d2bf76f946",
+              "name": "Outside"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23338765/GHETTO-GUMBO",
+          "station": "KPOO",
+          "track_count": 54,
+          "url": "https://open.spotify.com/playlist/7aNmiWBznTRIIzZNEDmeWu"
         }
       },
       "needs_reconciliation": false
