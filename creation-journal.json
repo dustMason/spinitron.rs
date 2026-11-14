@@ -16838,7 +16838,7 @@
           "start_time": "2026-11-13T15:00:00-0800",
           "end_time": "2026-11-13T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1LpbQVYeyCMCwa66tviv1i",
         "desired_uris": [
@@ -16861,8 +16861,102 @@
           "spotify:track:41FloGomAs2h1hccRp2OfV"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T17:00:00-0800",
+          "broadcast_start": "2026-11-13T15:00:00-0800",
+          "imported_at": "2026-11-14T13:11:55.170763305+00:00",
+          "last_updated": "2026-11-14 13:11 UTC",
           "name": "KALX - .signs//wonders.037 - 2026-11-13",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "King Ayisoba"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27384b42a846ca1b7f3f8f7b9de",
+              "name": "Property"
+            },
+            {
+              "artists": [
+                "Blind Boy Fuller"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735daab915210cd0548badde6d",
+              "name": "Step It Up and Go"
+            },
+            {
+              "artists": [
+                "Norfolk Jazz And Jubilee Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273894553f98eef7956b094af52",
+              "name": "This Old World Is In Bad Condition"
+            },
+            {
+              "artists": [
+                "Takkyu Ishino"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f400224b5f24b454c85f2d1c",
+              "name": "Polynasia"
+            },
+            {
+              "artists": [
+                "Semiratruth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273266e3ff47090ffec38f2781d",
+              "name": "poppers n limerance"
+            },
+            {
+              "artists": [
+                "mHz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ac39e29bc858c22308f2776b",
+              "name": "Circular"
+            },
+            {
+              "artists": [
+                "AVA RABIAT"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735bcb57b5d5eb41cef42055b1",
+              "name": "Piekło Niebo"
+            },
+            {
+              "artists": [
+                "Sarah Davachi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273633eec77538dc204a829a0c1",
+              "name": "Songs of the Smile's Fig: I. Hours"
+            },
+            {
+              "artists": [
+                "Ibelisse Guardia Ferragutti",
+                "Frank Rosaly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273022083948d30e5114fcceec9",
+              "name": "X"
+            },
+            {
+              "artists": [
+                "Dexter Wansel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c4cbffa50df8d970a891602f",
+              "name": "Latin Love (Let Me Know)"
+            },
+            {
+              "artists": [
+                "Cameo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27366b0c67292a1a899e48b87a2",
+              "name": "Dkwig"
+            },
+            {
+              "artists": [
+                "Patrice Rushen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b6cbd37ed8c51c32a5b56c4b",
+              "name": "The Hump"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23337088/signs-wonders-037",
+          "station": "KALX",
+          "track_count": 17,
+          "url": "https://open.spotify.com/playlist/1LpbQVYeyCMCwa66tviv1i"
         }
       },
       "needs_reconciliation": false
