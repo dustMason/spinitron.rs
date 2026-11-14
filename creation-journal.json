@@ -27056,7 +27056,7 @@
           "start_time": "2026-11-12T22:00:00-0800",
           "end_time": "2026-11-13T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4AJwPpDEdnRPsLZ8Z62cpi",
         "desired_uris": [
@@ -27208,8 +27208,105 @@
           "spotify:track:67J6NR2Tdl0h2epWHcCBBN"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T06:00:00-0800",
+          "broadcast_start": "2026-11-12T22:00:00-0800",
+          "imported_at": "2026-11-14T13:05:17.739302116+00:00",
+          "last_updated": "2026-11-14 13:05 UTC",
           "name": "KPOO - Thursday-Friday Night Sounds - 2026-11-12",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Otis Redding"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273165ce4e9204e41d651b3f651",
+              "name": "That's How Strong My Love Is (Single/LP Version)"
+            },
+            {
+              "artists": [
+                "Otis Redding",
+                "Booker T. & the M.G.'s",
+                "The Mar-Keys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a3088eb158f2e18f2444722",
+              "name": "Shake"
+            },
+            {
+              "artists": [
+                "The Mar-Keys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27394fc3845c1d1e978b2c29bd0",
+              "name": "Philly Dog"
+            },
+            {
+              "artists": [
+                "Otis Redding"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731d8112eb6f8737ba3fc1f5ed",
+              "name": "Gone Again"
+            },
+            {
+              "artists": [
+                "The Meters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27322266bf9a85d29bd1031d0cd",
+              "name": "It Ain't No Use - Live"
+            },
+            {
+              "artists": [
+                "Sharon Jones & The Dap-Kings"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737a2a658a7832ca01c6a25c8f",
+              "name": "There Was a Time - Live at the Apollo"
+            },
+            {
+              "artists": [
+                "Lee Fields & The Expressions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e0952be15d0728f8a4fff70d",
+              "name": "Love Prisoner (Instrumental)"
+            },
+            {
+              "artists": [
+                "Lee Fields & The Expressions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e0952be15d0728f8a4fff70d",
+              "name": "Wake Up (Instrumental)"
+            },
+            {
+              "artists": [
+                "Lee Fields & The Expressions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27394ecfaa75aff2b60389fda76",
+              "name": "Special Night"
+            },
+            {
+              "artists": [
+                "Lee Fields & The Expressions",
+                "Lee Fields"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732789845d006a9fcaf36dc644",
+              "name": "Just Can't Win"
+            },
+            {
+              "artists": [
+                "Charles Bradley",
+                "The Extraordinaires"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b70989606f2cee71c4e81fb8",
+              "name": "Let Love Stand a Chance - Live at the Apollo"
+            },
+            {
+              "artists": [
+                "The Marcus King Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737077a50b64493bf049881216",
+              "name": "Rita Is Gone"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23333395/Thursday-Friday-Night-Sounds",
+          "station": "KPOO",
+          "track_count": 146,
+          "url": "https://open.spotify.com/playlist/4AJwPpDEdnRPsLZ8Z62cpi"
         }
       },
       "needs_reconciliation": false
