@@ -17134,7 +17134,7 @@
           "start_time": "2026-11-13T18:15:00-0800",
           "end_time": "2026-11-13T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5h5v3x7Ywjcbikim3ITXlo",
         "desired_uris": [
@@ -17166,8 +17166,103 @@
           "spotify:track:5Tjcs1bm7WdyHsV8HqP76B"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T20:00:00-0800",
+          "broadcast_start": "2026-11-13T18:15:00-0800",
+          "imported_at": "2026-11-14T13:13:54.205800282+00:00",
+          "last_updated": "2026-11-14 13:13 UTC",
           "name": "KALX - Fanfare in the Garden - 2026-11-13",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Yusef Lateef"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27392ed015b978f0f57987def45",
+              "name": "Technological Homosapien"
+            },
+            {
+              "artists": [
+                "Jeremiah Chiu",
+                "Ben Lumsdaine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3",
+              "name": "Interfaces"
+            },
+            {
+              "artists": [
+                "Eddie Warner",
+                "Roger Roger"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732efcf2099b625b327deff58b",
+              "name": "Shut Up"
+            },
+            {
+              "artists": [
+                "The Autocollants"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273562b378a43b0f3307ad8f4f3",
+              "name": "Every Social Interaction"
+            },
+            {
+              "artists": [
+                "Betty Brite"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e4f927291e2a0037c661d595",
+              "name": "Undone - Demo"
+            },
+            {
+              "artists": [
+                "The West Coast Pop Art Experimental Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27345a5166abef8103b31bc3787",
+              "name": "Eighteen Is over the Hill"
+            },
+            {
+              "artists": [
+                "Haley Heynderickx"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273165741eb843a1a05155c8f65",
+              "name": "Mouth of a Flower"
+            },
+            {
+              "artists": [
+                "Aziz Balouch"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735a0fb173e0dce64cc9a58253",
+              "name": "Malagueña"
+            },
+            {
+              "artists": [
+                "Pardoner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273359850ed9578794c4854dd73",
+              "name": "Don't Slouch"
+            },
+            {
+              "artists": [
+                "Twisted Teens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27380c2f52bea9c3900db0bebf1",
+              "name": "Marionette"
+            },
+            {
+              "artists": [
+                "Chris Spedding"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27369ec7ff6b6e1da2e917bf0cf",
+              "name": "Video Life"
+            },
+            {
+              "artists": [
+                "The Specific Heats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27354a4d7e103742894f419219d",
+              "name": "You and Me Both, Lois"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23337958/Fanfare-in-the-Garden",
+          "station": "KALX",
+          "track_count": 26,
+          "url": "https://open.spotify.com/playlist/5h5v3x7Ywjcbikim3ITXlo"
         }
       },
       "needs_reconciliation": false
