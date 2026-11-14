@@ -16971,7 +16971,7 @@
           "start_time": "2026-11-13T17:00:00-0800",
           "end_time": "2026-11-13T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0kXMR5JwdrRAfruFeCmiOt",
         "desired_uris": [
@@ -16986,8 +16986,85 @@
           "spotify:track:1tLA0ipFQdgSMHyhIGHDZ4"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T18:00:00-0800",
+          "broadcast_start": "2026-11-13T17:00:00-0800",
+          "imported_at": "2026-11-14T13:12:34.775982590+00:00",
+          "last_updated": "2026-11-14 13:12 UTC",
           "name": "KALX - Shortrave - 2026-11-13",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Robert Hood"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735786e1ead9a9dca91357c9bb",
+              "name": "Parade"
+            },
+            {
+              "artists": [
+                "Lords Of Acid",
+                "Richie Hawtin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fb509a2c0580832e6dc81efd",
+              "name": "I Must Increase My Bust (Detroit Hardcore Mix)"
+            },
+            {
+              "artists": [
+                "A Number Of Names"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d0a8438d898efe8bb85d6808",
+              "name": "Shari Vari - Optic Nerve Detroit Mix"
+            },
+            {
+              "artists": [
+                "Model 500"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f42e51aa60d6682a775dced3",
+              "name": "Hi Nrg"
+            },
+            {
+              "artists": [
+                "Moodymann"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a590d768731d01f303c7eada",
+              "name": "Liveinla 1998"
+            },
+            {
+              "artists": [
+                "David Holmes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f8492761115307996ae87b3e",
+              "name": "Minus 61 In Detroit"
+            },
+            {
+              "artists": [
+                "Jeff Mills"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733b3dfaba7f2e4a624a4f1697",
+              "name": "The Bells"
+            },
+            {
+              "artists": [
+                "Laibach",
+                "Phillipp Erb"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736a10878c362289a818838396",
+              "name": "Wirtschaft Ist Tot - Late Night Mix"
+            },
+            {
+              "artists": [
+                "Kevin Saunderson",
+                "Santonio",
+                "Reese",
+                "Reese & Santonio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273367cc1c237bcd65360386a16",
+              "name": "Forcefield"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23337553/Shortrave",
+          "station": "KALX",
+          "track_count": 9,
+          "url": "https://open.spotify.com/playlist/0kXMR5JwdrRAfruFeCmiOt"
         }
       },
       "needs_reconciliation": false
