@@ -17124,6 +17124,53 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23337958": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23337958,
+          "title": "Fanfare in the Garden",
+          "url": "https://spinitron.com/KALX/pl/23337958/Fanfare-in-the-Garden",
+          "start_time": "2026-11-13T18:15:00-0800",
+          "end_time": "2026-11-13T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:28TvydkdlLHLTJKmvGbBrz",
+          "spotify:track:4UJX3aRUi6zJ6Gxm5Iv4yP",
+          "spotify:track:2f65h733IxWemkyihgNUJN",
+          "spotify:track:7LPcQymr3lOl2AcW6KsXNJ",
+          "spotify:track:2Y4fiqB8o8rWYboWi7GEkC",
+          "spotify:track:2hHI4KanprSsWQz6DBbwZz",
+          "spotify:track:0rHsI1XMHFqORFBxjzgDP5",
+          "spotify:track:0CWBUrmjSuvhQyDzZf84ro",
+          "spotify:track:4KkID6cjq7mGrzcck27Px6",
+          "spotify:track:1SDCwgZusOOowUAFOYTcyo",
+          "spotify:track:64bWAl2OJFilKBf8bl5rXx",
+          "spotify:track:0u5JTH0ZJYBIMPa6QM4bsy",
+          "spotify:track:085bGsFI5p0Hzw9W53xvHL",
+          "spotify:track:3EsZPhrSO1OwpMeVEnUKHu",
+          "spotify:track:1q2Sen304cgiIBHbQF0dLN",
+          "spotify:track:6nzwxdwWDNsqBQm6mygZlu",
+          "spotify:track:0SPY4Bnbjh3VXSo9yhLGk5",
+          "spotify:track:6zWkSMhU47nTjHZNqqZDQI",
+          "spotify:track:3F1GoiIaVYGQNqRzWQUcqr",
+          "spotify:track:3E8wDLAW6u8mqZ5slhMgP6",
+          "spotify:track:0qzkgC2AjRM98q20diz3dJ",
+          "spotify:track:20m1QpJJD4KhB1QrEUHG57",
+          "spotify:track:1mZ5I09mmfx5JqCxo4FS8R",
+          "spotify:track:1O0OwGO2YysR8JcBeEmjq1",
+          "spotify:track:1Suuy88A4mTjEmyqZg3jct",
+          "spotify:track:5Tjcs1bm7WdyHsV8HqP76B"
+        ],
+        "listing": {
+          "name": "KALX - Fanfare in the Garden - 2026-11-13",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
