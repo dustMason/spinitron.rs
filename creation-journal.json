@@ -17554,7 +17554,7 @@
           "start_time": "2026-11-14T00:00:00-0800",
           "end_time": "2026-11-14T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2uUKmWbFMcN2TkBmFXBLDQ",
         "desired_uris": [
@@ -17584,8 +17584,102 @@
           "spotify:track:5K2w5TZMGPmbDlgCMeE4Hy"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T02:00:00-0800",
+          "broadcast_start": "2026-11-14T00:00:00-0800",
+          "imported_at": "2026-11-14T13:15:53.824619303+00:00",
+          "last_updated": "2026-11-14 13:15 UTC",
           "name": "KALX - FREEFORM - 2026-11-14",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Stereolab"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ba5401f4d26005dca2533e89",
+              "name": "Black Ants In Sound-dust"
+            },
+            {
+              "artists": [
+                "Spacemoth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273caaa6dd8839deca760d28f43",
+              "name": "North Star"
+            },
+            {
+              "artists": [
+                "Floating Points",
+                "San Francisco Ballet Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d29699a86f26f0e1df161d16",
+              "name": "Movement 4 - Zeus’ Command"
+            },
+            {
+              "artists": [
+                "Dummy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273097c9936af7f5765dd1665c6",
+              "name": "Squeaky Wheel"
+            },
+            {
+              "artists": [
+                "Sylvan Esso"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cb86fe729e5625a8462922e9",
+              "name": "Back Again"
+            },
+            {
+              "artists": [
+                "The Sea and Cake"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2ad64e1cecd9b02c6e03f79",
+              "name": "Sound & Vision"
+            },
+            {
+              "artists": [
+                "Holy Wave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f11f6c94926271a0ea651275",
+              "name": "s33.u.in/HAL"
+            },
+            {
+              "artists": [
+                "King Crimson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ff2d2448a42a43c281b6f556",
+              "name": "Indiscipline"
+            },
+            {
+              "artists": [
+                "Angine de Poitrine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ea5142aaaa1bc63e7ec7f715",
+              "name": "Fabienk"
+            },
+            {
+              "artists": [
+                "Brian Eno"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735bd1d1082e969cc25312e0b2",
+              "name": "Kurt's Rejoinder - 2004 Digital Remaster"
+            },
+            {
+              "artists": [
+                "Dalis Car"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731efbe506b6616f99cbfa7d20",
+              "name": "Artemis"
+            },
+            {
+              "artists": [
+                "Angel Olsen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e7c47bd9b5d6772a6cff972a",
+              "name": "Acrobat"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23339089/FREEFORM",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/2uUKmWbFMcN2TkBmFXBLDQ"
         }
       },
       "needs_reconciliation": false
