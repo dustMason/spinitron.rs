@@ -25135,6 +25135,69 @@
       },
       "needs_reconciliation": false
     },
+    "KPOO:23322633": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23322633,
+          "title": "Cuba Canta",
+          "url": "https://spinitron.com/KPOO/pl/23322633/Cuba-Canta",
+          "start_time": "2026-11-13T09:00:00-0800",
+          "end_time": "2026-11-13T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0msvMajHMbqMLDdyveWEn0",
+          "spotify:track:1E9WiYbi2hhTufTI5dhxDq",
+          "spotify:track:3f7mADpg1LXSvhcfMYsFmd",
+          "spotify:track:1QSELU5itPiDS0UGbgidZL",
+          "spotify:track:2bCt3JV6prVb2Jd0PpmPm0",
+          "spotify:track:1QtPNdWbzQmAcpXjXf9jYC",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x",
+          "spotify:track:75wYMQCuwgiCRt6SBzcVzu",
+          "spotify:track:20NcJfdFiG11rSwanLcce9",
+          "spotify:track:20NcJfdFiG11rSwanLcce9",
+          "spotify:track:5acNG7w8jM8QeLtfO4aoaN",
+          "spotify:track:5acNG7w8jM8QeLtfO4aoaN",
+          "spotify:track:0YV8qD5zfPC8RIbtlRFNPs",
+          "spotify:track:0YV8qD5zfPC8RIbtlRFNPs",
+          "spotify:track:5p4AoIRAoWhGayf33eNPvw",
+          "spotify:track:5p4AoIRAoWhGayf33eNPvw",
+          "spotify:track:5jJBxOR0ngOrwQpApm4vKS",
+          "spotify:track:2e13RtOrhmTtvwZq6ioLTw",
+          "spotify:track:2e13RtOrhmTtvwZq6ioLTw",
+          "spotify:track:0dqEr0bxlGvgsv9GgxYpnw",
+          "spotify:track:4akLanTut4E3rbFt7Cg11Q",
+          "spotify:track:26gN0KfMZ4g70ZGxofSvuE",
+          "spotify:track:3fhbgapJjyAR90GegUgqda",
+          "spotify:track:3fhbgapJjyAR90GegUgqda",
+          "spotify:track:1mIAbKlneAUzCXEQnGozWH",
+          "spotify:track:1mIAbKlneAUzCXEQnGozWH",
+          "spotify:track:7roBVxboLc7UPLS0B1FhKC",
+          "spotify:track:4bSO448XprvZqDthHiQks8",
+          "spotify:track:1NA4EcsMouzwTv99xwrPax",
+          "spotify:track:4YykEdN5EfkqntRfS2IdPt",
+          "spotify:track:4YykEdN5EfkqntRfS2IdPt",
+          "spotify:track:0MBLzk0aQYyuqvvlkk7F9Z",
+          "spotify:track:1Oe6cBr9FdiiNnrQ5LMfZJ",
+          "spotify:track:3orBBIakP7aKcC7s9672Tg",
+          "spotify:track:40HkBwfvOKVtt3Zkhb5L4h",
+          "spotify:track:14gUlaeE6h8OxzNfLoixoh",
+          "spotify:track:14gUlaeE6h8OxzNfLoixoh",
+          "spotify:track:49PcbiL5uN7bdxBBhPPD80",
+          "spotify:track:5RJTWZJC2QeSbjgEG5FTaO",
+          "spotify:track:14ETEShABpf6vKRNeZ8l1u",
+          "spotify:track:6gmehQHHys2piNRAJsE5ma",
+          "spotify:track:3J14rMX1GLHJAys4UI6wOK"
+        ],
+        "listing": {
+          "name": "KPOO - Cuba Canta - 2026-11-13",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23323095": {
       "entry": {
         "station": "KPOO",
