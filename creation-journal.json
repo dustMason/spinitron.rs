@@ -16538,7 +16538,7 @@
           "start_time": "2026-11-13T09:00:00-0800",
           "end_time": "2026-11-13T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4DR61aQE7GYqSR1MjjJdEu",
         "desired_uris": [
@@ -16570,8 +16570,110 @@
           "spotify:track:2BA3OxBtieKn7A0lTFhnxM"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T12:00:00-0800",
+          "broadcast_start": "2026-11-13T09:00:00-0800",
+          "imported_at": "2026-11-14T13:10:36.039406033+00:00",
+          "last_updated": "2026-11-14 13:10 UTC",
           "name": "KALX - All Cats Are Beautiful - 2026-11-13",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Miguel Atwood-Ferguson",
+                "Immanuel Wilkins",
+                "Morgan Guerin",
+                "Brandee Younger",
+                "David Virelles",
+                "Ryoma Takenaga",
+                "Marcus Gilmore",
+                "Andres Renteria"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735d8d546ecd0987364cb15bfc",
+              "name": "Central Park West (feat. Immanuel Wilkins, Morgan Guerin, Brandee Younger, David Virelles, Ryoma Takenaga, Marcus Gilmore, Andres Renteria)"
+            },
+            {
+              "artists": [
+                "Gregory Uhlmann"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736b6aba1434488b32f979955c",
+              "name": "Days"
+            },
+            {
+              "artists": [
+                "Jeremiah Chiu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3",
+              "name": "A Floral Pattern"
+            },
+            {
+              "artists": [
+                "Autechre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738493e15cae763ea7b31ea7bf",
+              "name": "elyc9 7hres"
+            },
+            {
+              "artists": [
+                "The Tape-beatles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27331b92eb842d2e80d7e4a3785",
+              "name": "Really fine yoke of bondage"
+            },
+            {
+              "artists": [
+                "Steve Reich",
+                "The Smith Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ecf9a1a0fb8fbecd898c843e",
+              "name": "Different Trains: After The War"
+            },
+            {
+              "artists": [
+                "David Moore"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27388a0458624876c2a82d551c0",
+              "name": "Rush Creek"
+            },
+            {
+              "artists": [
+                "Panabrite"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739191f61b50d41ceea90c4f27",
+              "name": "Cortex Meridian"
+            },
+            {
+              "artists": [
+                "Sarah Davachi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273633eec77538dc204a829a0c1",
+              "name": "The Rose Dialogues, Part II"
+            },
+            {
+              "artists": [
+                "Radiation 30376"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eb5dd36a4f04e61e996ebf12",
+              "name": "Arka"
+            },
+            {
+              "artists": [
+                "Denis Dufour"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e9f694d7b32f8d5e536da3c4",
+              "name": "1-3 PH 27-80 [2008]: Musiques utopiques"
+            },
+            {
+              "artists": [
+                "H.Takahashi",
+                "David Edren"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273903f66a181d70a99e3c1c14b",
+              "name": "Quiet - David Edren Remix"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23335558/All-Cats-Are-Beautiful",
+          "station": "KALX",
+          "track_count": 26,
+          "url": "https://open.spotify.com/playlist/4DR61aQE7GYqSR1MjjJdEu"
         }
       },
       "needs_reconciliation": false
