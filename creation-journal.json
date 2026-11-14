@@ -16528,6 +16528,53 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23335558": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23335558,
+          "title": "All Cats Are Beautiful",
+          "url": "https://spinitron.com/KALX/pl/23335558/All-Cats-Are-Beautiful",
+          "start_time": "2026-11-13T09:00:00-0800",
+          "end_time": "2026-11-13T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1sRsv548NddrLiNEMNthwh",
+          "spotify:track:6aS5Xayl3O58k3JEeihU1m",
+          "spotify:track:2Zmto3RurZWF5QTudzpvRH",
+          "spotify:track:6B4es72XrVUabnfmzJ1KZN",
+          "spotify:track:37LFLHHCnc0DqNMue7dOEh",
+          "spotify:track:3EKtHDM9mPtnbsh8de5KEd",
+          "spotify:track:29TL80HUf9Gh3rUN1XVg5X",
+          "spotify:track:2hBHYFKa4KDqSJh7BIAuBc",
+          "spotify:track:6xOKzpWwBRqE4m6GKThGcp",
+          "spotify:track:1oQkN83lZwPAMFifXYKA4J",
+          "spotify:track:54AlgAVhsNZYIKA7v2LW01",
+          "spotify:track:7BeSSnfJmaNirbDfmPhGiF",
+          "spotify:track:5YHcKsuavSasFod7ysilCt",
+          "spotify:track:0RUpJPS4Jhgp2df9YO20uO",
+          "spotify:track:6CH28l4PEompCBUSMVSew8",
+          "spotify:track:0p88nnIqJq7aSLPoWR8zSB",
+          "spotify:track:0klcaJQbtkLBZMf1mHSchK",
+          "spotify:track:0QE1YMKkkYXkzH8wE5Amt6",
+          "spotify:track:67SXbwCNCR0QA7GgecuVgx",
+          "spotify:track:7bdhRWCOmifLoHJHeTNFtd",
+          "spotify:track:0Uin7fJDijDyVhMOflq0Zv",
+          "spotify:track:2CuHTDZUBZtvaFMN0cYf3c",
+          "spotify:track:707tJjaCjuhRsIjnxKF0gz",
+          "spotify:track:2L4lu767zSDQjTkt8mwN3j",
+          "spotify:track:4XqNq3QDh5AgeBgMsgZD0p",
+          "spotify:track:2BA3OxBtieKn7A0lTFhnxM"
+        ],
+        "listing": {
+          "name": "KALX - All Cats Are Beautiful - 2026-11-13",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
