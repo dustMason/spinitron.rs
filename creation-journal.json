@@ -16211,7 +16211,7 @@
           "start_time": "2026-11-13T03:00:00-0800",
           "end_time": "2026-11-13T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6llOq8jkRX4QpXc80xBFj4",
         "desired_uris": [
@@ -16273,8 +16273,110 @@
           "spotify:track:22m6BocmDlBBScE4xsFhFp"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T07:00:00-0800",
+          "broadcast_start": "2026-11-13T03:00:00-0800",
+          "imported_at": "2026-11-14T13:09:16.445084081+00:00",
+          "last_updated": "2026-11-14 13:09 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-13",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Gorillaz",
+                "Dennis Hopper",
+                "Ajay Prasanna",
+                "Anoushka Shankar",
+                "Amaan Ali Bangash",
+                "Ayaan Ali Bangash"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eeb01b41f48210d032d1b6a4",
+              "name": "The Mountain (feat. Dennis Hopper, Ajay Prasanna, Anoushka Shankar, Amaan Ali Bangash and Ayaan Ali Bangash)"
+            },
+            {
+              "artists": [
+                "Deerhunter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d309cdaf6a4b22a4d80ef343",
+              "name": "He Would Have Laughed"
+            },
+            {
+              "artists": [
+                "Cliff Martinez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732c8ba8e2fbf531bbb9cd1a48",
+              "name": "He Had a Good Time"
+            },
+            {
+              "artists": [
+                "Fred Astaire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27373d6ac6cfbac165f2f40bdef",
+              "name": "He Loves And She Loves"
+            },
+            {
+              "artists": [
+                "Julia Holter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27382114ac9f984c35724701c73",
+              "name": "He's Running Through My Eyes"
+            },
+            {
+              "artists": [
+                "Level 42"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fb4801042745209e97d16928",
+              "name": "Dance On Heavy Weather"
+            },
+            {
+              "artists": [
+                "Husky Rescue"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273edf9be9ae0242a8bf7be3268",
+              "name": "They Are Coming"
+            },
+            {
+              "artists": [
+                "Ela Minus"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da5bdd458a08bac182e9ecfb",
+              "name": "they told us it was hard, but they were wrong."
+            },
+            {
+              "artists": [
+                "Siouxsie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733ad4641a4e5207acd5a9bcb4",
+              "name": "They Follow You"
+            },
+            {
+              "artists": [
+                "Cole Porter",
+                "Noel d'Amato",
+                "Jack Hylton",
+                "Pat O'Malley",
+                "Jack Hylton Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733b6b293979698a86d77bd988",
+              "name": "They All Fall In Love"
+            },
+            {
+              "artists": [
+                "The Beatles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c94603dcb78ec39322cebb5b",
+              "name": "The Long One - Comprising of ‘You Never Give Me Your Money’, ’Sun King’/’Mean Mr Mustard’, ‘Her Majesty’, ‘Polythene Pam’/’She Came In Through The Bathroom Window’, ’Golden Slumbers’/ ’Carry That Weight’, ’The End’"
+            },
+            {
+              "artists": [
+                "Dave Brubeck"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736ca90aff3927a8b212258770",
+              "name": "Unsquare Dance"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23334287/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 56,
+          "url": "https://open.spotify.com/playlist/6llOq8jkRX4QpXc80xBFj4"
         }
       },
       "needs_reconciliation": false
