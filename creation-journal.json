@@ -27321,7 +27321,7 @@
           "start_time": "2026-11-13T12:00:00-0800",
           "end_time": "2026-11-13T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1qLRTUj5UjNko562CREydv",
         "desired_uris": [
@@ -27356,8 +27356,101 @@
           "spotify:track:57XdmzaYevYtrDgbZ0kX3P"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T15:00:00-0800",
+          "broadcast_start": "2026-11-13T12:00:00-0800",
+          "imported_at": "2026-11-14T13:05:56.403053378+00:00",
+          "last_updated": "2026-11-14 13:05 UTC",
           "name": "KPOO - La Verdad Musical (The Musical Truth) - 2026-11-13",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Jack Costanzo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27328ef2a2cf0cec15aec4180de",
+              "name": "Bemba Colora"
+            },
+            {
+              "artists": [
+                "Jack Costanzo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736fcbcac6e169fb90f05f0d89",
+              "name": "Bop Mambo"
+            },
+            {
+              "artists": [
+                "Buena Vista Social Club"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dc784c3f0767e576a0848b81",
+              "name": "El Cuarto de Tula"
+            },
+            {
+              "artists": [
+                "Buena Vista Social Club"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4d2e132b2682b1f73ada1c7",
+              "name": "La Engañadora - Live"
+            },
+            {
+              "artists": [
+                "Buena Vista Social Club"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dc784c3f0767e576a0848b81",
+              "name": "Buena Vista Social Club"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "Mongo Santamaria"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736cfc46fcb8fb4176fcf20467",
+              "name": "Mambo Terrifico"
+            },
+            {
+              "artists": [
+                "Eddie Palmieri"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d0aa850f3f811e203c5c8c5e",
+              "name": "Ay Que Rico (Oh How Good)"
+            },
+            {
+              "artists": [
+                "Mongo Santamaria"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736cfc46fcb8fb4176fcf20467",
+              "name": "Dulce Sueño"
+            },
+            {
+              "artists": [
+                "Mongo Santamaria"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737ce313ace27e47e3067274bd",
+              "name": "Bluchanga"
+            },
+            {
+              "artists": [
+                "Johnny Ray Salsa Con Clase"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736894058ae4e5b35d449a1985",
+              "name": "Suavecito"
+            },
+            {
+              "artists": [
+                "Mongo Santamaria"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737eb41e8142b073bb881bbfea",
+              "name": "Body And Soul (Remasterizada)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23336387/La-Verdad-Musical-The-Musical-Truth",
+          "station": "KPOO",
+          "track_count": 29,
+          "url": "https://open.spotify.com/playlist/1qLRTUj5UjNko562CREydv"
         }
       },
       "needs_reconciliation": false
