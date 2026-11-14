@@ -27465,7 +27465,7 @@
           "start_time": "2026-11-13T15:00:00-0800",
           "end_time": "2026-11-13T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1p8OggpC7uLtNoSeVYOGOW",
         "desired_uris": [
@@ -27510,8 +27510,101 @@
           "spotify:track:6FxjvmfQuS4DUuUC0yC4bo"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T17:30:00-0800",
+          "broadcast_start": "2026-11-13T15:00:00-0800",
+          "imported_at": "2026-11-14T13:06:36.000531696+00:00",
+          "last_updated": "2026-11-14 13:06 UTC",
           "name": "KPOO - Living For the Weekend - 2026-11-13",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The O'Jays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730fd8d46f383c047c85405592",
+              "name": "Livin' For The Weekend - Previously released material"
+            },
+            {
+              "artists": [
+                "Peaches & Herb"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b25e0056227d071a2c7393b9",
+              "name": "Reunited"
+            },
+            {
+              "artists": [
+                "Con Funk Shun"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4efd3031030d29f06ec5043",
+              "name": "(Let Me Put) Love On Your Mind"
+            },
+            {
+              "artists": [
+                "Keith Barrow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273179bdb72fd2ccd280ecdcc36",
+              "name": "You Know You Want to Be Loved"
+            },
+            {
+              "artists": [
+                "Thelma Houston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a6c14f88a39def98c642dec",
+              "name": "Don't Leave Me This Way"
+            },
+            {
+              "artists": [
+                "The Largent Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273693a08a7390eb6d4f203c971",
+              "name": "I'll Get My Chance to Be with You"
+            },
+            {
+              "artists": [
+                "Eddie Kendricks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ac4be2f64440a6e413ab09e6",
+              "name": "Happy"
+            },
+            {
+              "artists": [
+                "The Main Ingredient"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a50c1a63f9e811f649361f40",
+              "name": "Just Don't Want to Be Lonely"
+            },
+            {
+              "artists": [
+                "The Rance Allen Group"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738297ccf8e8198801b3417f0b",
+              "name": "I Got To Be Myself"
+            },
+            {
+              "artists": [
+                "Isaac Hayes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738f8e1ef4b5901c9fc97e14a8",
+              "name": "Do Your Thing - Remastered 2009"
+            },
+            {
+              "artists": [
+                "Honey Cone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739530e15257d208cfa3c7c92a",
+              "name": "One Monkey Don't Stop No Show Pt. 1"
+            },
+            {
+              "artists": [
+                "Diana Ross"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735efb83257d6be956a8cad4fb",
+              "name": "Ain't No Mountain High Enough - Edit Version"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23337079/Living-For-the-Weekend",
+          "station": "KPOO",
+          "track_count": 39,
+          "url": "https://open.spotify.com/playlist/1p8OggpC7uLtNoSeVYOGOW"
         }
       },
       "needs_reconciliation": false
