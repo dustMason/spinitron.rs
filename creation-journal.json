@@ -17277,7 +17277,7 @@
           "start_time": "2026-11-13T20:00:00-0800",
           "end_time": "2026-11-13T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3jrkN2tTTGHIfrsayKIAGX",
         "desired_uris": [
@@ -17307,8 +17307,103 @@
           "spotify:track:2Zmto3RurZWF5QTudzpvRH"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T22:00:00-0800",
+          "broadcast_start": "2026-11-13T20:00:00-0800",
+          "imported_at": "2026-11-14T13:14:33.911341387+00:00",
+          "last_updated": "2026-11-14 13:14 UTC",
           "name": "KALX - FREEFORM - 2026-11-13 8:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Led to Sea"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf4e476acefac914d7803918",
+              "name": "Your Ghost"
+            },
+            {
+              "artists": [
+                "Agnes Obel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cb65064d02c0eddb780fbd55",
+              "name": "Laymelli"
+            },
+            {
+              "artists": [
+                "Shannon Hayden"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737b1e51170af1a0a383b1c986",
+              "name": "Starshine"
+            },
+            {
+              "artists": [
+                "Mali Obomsawin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731def830a10f5628fc087f89f",
+              "name": "Automatic"
+            },
+            {
+              "artists": [
+                "Jaimie Branch"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b5f261e1c6679577845ab45c",
+              "name": "simple silver surfer"
+            },
+            {
+              "artists": [
+                "Ms.PANIK"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ce6a3d797d5c925f854ef4b7",
+              "name": "Prayers"
+            },
+            {
+              "artists": [
+                "Jake Blount",
+                "Cathy Fink"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ad59739b51811aba0c800290",
+              "name": "When The Angels Call My Name"
+            },
+            {
+              "artists": [
+                "Rhiannon Giddens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273761c1892de7bd7c94b987eac",
+              "name": "Going Home"
+            },
+            {
+              "artists": [
+                "Pura Fé"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ea99755528c46c441244d68b",
+              "name": "Spirit in the sky"
+            },
+            {
+              "artists": [
+                "Animals of Grace"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733cee50191bf5a942609293c1",
+              "name": "Only Until This Cigarette Is Ended"
+            },
+            {
+              "artists": [
+                "El Búho",
+                "Pita Amor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5cd59314bcef42f02e8dc25",
+              "name": "Cumbia De Polvo"
+            },
+            {
+              "artists": [
+                "Ozomatli"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27385c3c85142bc9b7c2de6e061",
+              "name": "Cumbia De Los Muertos"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23338330/FREEFORM",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/3jrkN2tTTGHIfrsayKIAGX"
         }
       },
       "needs_reconciliation": false
