@@ -17418,7 +17418,7 @@
           "start_time": "2026-11-13T22:00:00-0800",
           "end_time": "2026-11-14T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3BpdhrHlVvJsGIIhPAQVai",
         "desired_uris": [
@@ -17443,8 +17443,103 @@
           "spotify:track:0835fczYE7WQy6rQALiwXD"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T00:00:00-0800",
+          "broadcast_start": "2026-11-13T22:00:00-0800",
+          "imported_at": "2026-11-14T13:15:13.906118580+00:00",
+          "last_updated": "2026-11-14 13:15 UTC",
           "name": "KALX - FREEFORM - 2026-11-13 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Kraftwerk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737cf7be893131178035b2a3cb",
+              "name": "Europe Endless - 2009 Remaster"
+            },
+            {
+              "artists": [
+                "Mexican Institute Of Sound",
+                "Meridian Brothers",
+                "Beck"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6a51df3861f2ed688091681",
+              "name": "Ritmo Babilonia"
+            },
+            {
+              "artists": [
+                "Dirty Projectors"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27328f844b0afeeb2492be74022",
+              "name": "Gun Has No Trigger"
+            },
+            {
+              "artists": [
+                "Ethel Cain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737da9ae8f4a4d633772c9513b",
+              "name": "Janie"
+            },
+            {
+              "artists": [
+                "Destroyer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735a9ae48f9c389525886a0449",
+              "name": "Babieca"
+            },
+            {
+              "artists": [
+                "Alphabetical Four"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273717e9e0b66db628565d98a02",
+              "name": "Have You Heard About The World Coming To An End"
+            },
+            {
+              "artists": [
+                "Pixies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5f6ec57c8bce466636f0280",
+              "name": "Wave Of Mutilation - UK Surf"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "Six Shot Morning"
+            },
+            {
+              "artists": [
+                "The Catburgers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d381bc7e70b4db753b197f5",
+              "name": "Nothing to Live For"
+            },
+            {
+              "artists": [
+                "The Velvet Underground"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735816a37263f88929907c2dbd",
+              "name": "Rock & Roll"
+            },
+            {
+              "artists": [
+                "Johnny Cash"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f309441f03e2d625e48bd33",
+              "name": "Mama, You Been on My Mind"
+            },
+            {
+              "artists": [
+                "Bill Callahan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736172648d29acadc71f725e35",
+              "name": "Why Do Men Sing"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23338673/FREEFORM",
+          "station": "KALX",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/3BpdhrHlVvJsGIIhPAQVai"
         }
       },
       "needs_reconciliation": false
