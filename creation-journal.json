@@ -25145,7 +25145,7 @@
           "start_time": "2026-11-13T09:00:00-0800",
           "end_time": "2026-11-13T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1BBr1rm8ICvOWt3bb9rISL",
         "desired_uris": [
@@ -25193,8 +25193,105 @@
           "spotify:track:3J14rMX1GLHJAys4UI6wOK"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T12:00:00-0800",
+          "broadcast_start": "2026-11-13T09:00:00-0800",
+          "imported_at": "2026-11-14T13:04:17.625834984+00:00",
+          "last_updated": "2026-11-14 13:04 UTC",
           "name": "KPOO - Cuba Canta - 2026-11-13",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Chano Pozo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732b0c697b5b54832d6e4fbb1e",
+              "name": "Rumba En Swing"
+            },
+            {
+              "artists": [
+                "James Moody & His Modernists"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27398d156a0717f3cf76335e0c2",
+              "name": "Tropicana"
+            },
+            {
+              "artists": [
+                "Charlie Parker",
+                "Machito Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd8975e35aaf58ba42eaa6ba",
+              "name": "No Noise - Pt. I & II"
+            },
+            {
+              "artists": [
+                "Chano Pozo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0fab7fcec257860ddbc954f",
+              "name": "Cubana-Be, Cubana-Bop - Remastered 2011"
+            },
+            {
+              "artists": [
+                "Dizzy Gillespie",
+                "Luciano Chano Pozo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f23b5f40d1f560ac82015efe",
+              "name": "Cubana Be-Cubana Bop - Remastered 2002"
+            },
+            {
+              "artists": [
+                "Tito Puente"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d85cf7e2365796fa0f2e9eee",
+              "name": "Amanecer Guajira"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "Tito Puente"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308af7ab6ca7e13bed5795445",
+              "name": "Tito On Timbales"
+            },
+            {
+              "artists": [
+                "Dave Valentin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c915bcfd18074b0b46b23b2",
+              "name": "My Favorite Things"
+            },
+            {
+              "artists": [
+                "Dave Valentin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c915bcfd18074b0b46b23b2",
+              "name": "My Favorite Things"
+            },
+            {
+              "artists": [
+                "Jerry Gonzalez",
+                "The Fort Apache Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273174e72f427926eb5310f488e",
+              "name": "Fe Fi Fi Fum"
+            },
+            {
+              "artists": [
+                "Jerry Gonzalez",
+                "The Fort Apache Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273174e72f427926eb5310f488e",
+              "name": "Fe Fi Fi Fum"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23322633/Cuba-Canta",
+          "station": "KPOO",
+          "track_count": 42,
+          "url": "https://open.spotify.com/playlist/1BBr1rm8ICvOWt3bb9rISL"
         }
       },
       "needs_reconciliation": false
