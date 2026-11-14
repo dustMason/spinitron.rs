@@ -16688,7 +16688,7 @@
           "start_time": "2026-11-13T12:00:00-0800",
           "end_time": "2026-11-13T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4HHaTomtL2DTdCjJwi2hyr",
         "desired_uris": [
@@ -16728,8 +16728,102 @@
           "spotify:track:64QKWLLj50MPGaucffJxHu"
         ],
         "listing": {
+          "broadcast_end": "2026-11-13T15:00:00-0800",
+          "broadcast_start": "2026-11-13T12:00:00-0800",
+          "imported_at": "2026-11-14T13:11:15.661641439+00:00",
+          "last_updated": "2026-11-14 13:11 UTC",
           "name": "KALX - FREEFORM - 2026-11-13",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Al Karpenter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733f7783efa6d71dc418b30cac",
+              "name": "Stop The Genocide!"
+            },
+            {
+              "artists": [
+                "Bob Dylan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27347a648ccf826589d6204aa74",
+              "name": "A Hard Rain's A-Gonna Fall - Live at Montreal Forum, Montreal, Quebec - December 1975"
+            },
+            {
+              "artists": [
+                "Meshell Ndegeocello",
+                "WILLOW"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736cd4a28c470b59f3d07cba39",
+              "name": "Hunger Strike (with WILLOW)"
+            },
+            {
+              "artists": [
+                "Temple Of The Dog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273483c3d93af76b1f635f9dc7d",
+              "name": "Hunger Strike"
+            },
+            {
+              "artists": [
+                "Leyla McCalla"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d3aba78d5e76d40ca0656113",
+              "name": "As I Grew Older / Dreamer"
+            },
+            {
+              "artists": [
+                "Mary Gauthier"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27352698f2879a8f4cf52b2a138",
+              "name": "Reckoning"
+            },
+            {
+              "artists": [
+                "Margaret Glaspy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db2a6cc2c81bc72198f3bf7c",
+              "name": "Reminder"
+            },
+            {
+              "artists": [
+                "Jake Blount"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ad59739b51811aba0c800290",
+              "name": "Country Blues"
+            },
+            {
+              "artists": [
+                "Billy Strings"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dd3c67be3db87d7945f41c9d",
+              "name": "I Wish I Wanted To"
+            },
+            {
+              "artists": [
+                "Maya De Vitry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d2461a6fa776d8feebc958b6",
+              "name": "No Time to Rush"
+            },
+            {
+              "artists": [
+                "Souled American"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f01c46ce71da6e0894e411f",
+              "name": "We"
+            },
+            {
+              "artists": [
+                "Sean Mason"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a01fbabb3bd6a0f6201ba5d3",
+              "name": "Nightcap"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23336421/FREEFORM",
+          "station": "KALX",
+          "track_count": 34,
+          "url": "https://open.spotify.com/playlist/4HHaTomtL2DTdCjJwi2hyr"
         }
       },
       "needs_reconciliation": false
