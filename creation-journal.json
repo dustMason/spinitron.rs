@@ -16381,6 +16381,54 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23335063": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23335063,
+          "title": "Wide Awake",
+          "url": "https://spinitron.com/KALX/pl/23335063/Wide-Awake",
+          "start_time": "2026-11-13T07:00:00-0800",
+          "end_time": "2026-11-13T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2Zmto3RurZWF5QTudzpvRH",
+          "spotify:track:7qHQOOtnxA0SZ5hGC8aPrj",
+          "spotify:track:3rB5KEsVcK9b1XyIhE73ny",
+          "spotify:track:28vRQKgva8oqOcsCSiHyXD",
+          "spotify:track:28Hbd1Wp7OsFVCGBY7ZjHQ",
+          "spotify:track:30QIN4fNF6kGGyNyIi3vhy",
+          "spotify:track:06dz9bDEaRt1YADeSLf0jZ",
+          "spotify:track:6ldnKaF2UYpOtmpOAOwlQe",
+          "spotify:track:4nVnUzim1d4ChSrwzxydom",
+          "spotify:track:0zK545STj6P7qbFSpCK9pp",
+          "spotify:track:4YMUmA7sWJXj7TJPBKU3pI",
+          "spotify:track:65NPCgLdUS0cb0w6ZiEt8d",
+          "spotify:track:1bXU4U0lUIm9Y9aTN7uRxF",
+          "spotify:track:0Rd0piYmv37lrnLoaXMRdH",
+          "spotify:track:2Zp0NcTzK5iS1mi7dDopAV",
+          "spotify:track:3M1fqUcqHHCfZeCl7uQOak",
+          "spotify:track:0I1p3ARE6c36KKkcscZmev",
+          "spotify:track:0RjfzGllxrRYKwtV7MuqPb",
+          "spotify:track:4llZyQrpHuZJvMKSSQnjwW",
+          "spotify:track:6XdIwm6ygnAslVuaYEfRwW",
+          "spotify:track:0nIfIiTrlOeiFEYpVCJZtY",
+          "spotify:track:79v6wAuM6faSO4PNQ5fD8e",
+          "spotify:track:2lbMOiOxcZXamdabqCtZZl",
+          "spotify:track:0IxCfL1854PdFRQGGrxTgq",
+          "spotify:track:6o61NwJJqVRUpOutfcKBrN",
+          "spotify:track:2U9IpKwt7UbXCdSmJQBYf2",
+          "spotify:track:0clg7Hf8psQEBS8DXTd3X4"
+        ],
+        "listing": {
+          "name": "KALX - Wide Awake - 2026-11-13",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
