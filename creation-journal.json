@@ -18221,7 +18221,7 @@
           "start_time": "2026-11-14T13:00:00-0800",
           "end_time": "2026-11-14T14:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5uKswHeMzgkbFHBzC8TiAI",
         "desired_uris": [
@@ -18242,8 +18242,102 @@
           "spotify:track:51RN0kzWd7xeR4th5HsEtW"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T14:00:00-0800",
+          "broadcast_start": "2026-11-14T13:00:00-0800",
+          "imported_at": "2026-11-15T13:36:37.015545030+00:00",
+          "last_updated": "2026-11-15 13:36 UTC",
           "name": "KALX - Your New Music Hour - 2026-11-14",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Death Valley Girls"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5657edda8c045744c3fc446",
+              "name": "Welcome to Earth"
+            },
+            {
+              "artists": [
+                "Paper Wings"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27359a88c78abb5a798bfa9e8e0",
+              "name": "Fumblin"
+            },
+            {
+              "artists": [
+                "Kiwi jr."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a58944164d57df378fa1fcf7",
+              "name": "Photos Of The Reenactment"
+            },
+            {
+              "artists": [
+                "Boy Harsher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a30ac42529d47e0abeebfc94",
+              "name": "Ronny"
+            },
+            {
+              "artists": [
+                "Open Mike Eagle",
+                "Kenny Segal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ecd7e8489a4a549caa0e2be0",
+              "name": "The Many Hustles of my Lonely Time Traveling Uncle"
+            },
+            {
+              "artists": [
+                "Ibibio Sound Machine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738377ac5fbafebad9549413c8",
+              "name": "Return to Sender"
+            },
+            {
+              "artists": [
+                "Bandwave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273517b01fccce9eb290b8bd220",
+              "name": "Object Permanence"
+            },
+            {
+              "artists": [
+                "Zoh Amba"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ffc837d884b1bb360254aff",
+              "name": "Weed Eating"
+            },
+            {
+              "artists": [
+                "Yea-Ming and The Rumours"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731aa734956a16d0a7230b5e51",
+              "name": "Cheap Thrill"
+            },
+            {
+              "artists": [
+                "Spacemoth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273caaa6dd8839deca760d28f43",
+              "name": "Do We Exist?"
+            },
+            {
+              "artists": [
+                "sachi's mirror"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273833e3c513c27589d493f16c2",
+              "name": "Douse the flame of memory"
+            },
+            {
+              "artists": [
+                "abracadabra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d899a6af0c1b67ab441d2b5",
+              "name": "peel away"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23341764/Your-New-Music-Hour",
+          "station": "KALX",
+          "track_count": 15,
+          "url": "https://open.spotify.com/playlist/5uKswHeMzgkbFHBzC8TiAI"
         }
       },
       "needs_reconciliation": false
