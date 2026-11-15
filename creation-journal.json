@@ -18474,6 +18474,56 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23343076": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23343076,
+          "title": "Shenanigans and Diablerie",
+          "url": "https://spinitron.com/KALX/pl/23343076/Shenanigans-and-Diablerie",
+          "start_time": "2026-11-14T18:30:00-0800",
+          "end_time": "2026-11-14T21:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6z3rWVilUWpI2uWj8yJu66",
+          "spotify:track:4coPiNHqR0LVGipcT57akq",
+          "spotify:track:188h3wwWjS848MEvQe0EZy",
+          "spotify:track:1nAEgQVkEvhgk313kPL6O2",
+          "spotify:track:6OQlq7DpVZQB6rVRZMGKRV",
+          "spotify:track:1Uj03hPerRUBOBYLea2gOe",
+          "spotify:track:5qCDrlTSKCsQ83wrj42p55",
+          "spotify:track:53tyhFWGrwz1siLQIfbxWB",
+          "spotify:track:5Gw6d1Mt428wFoJbSVy94i",
+          "spotify:track:5PClcZsB3xCF2nDycBrsb7",
+          "spotify:track:7BJBFF9A3y2u4ENoZP4vju",
+          "spotify:track:2u5SfDtSs3Iij3C9A3MEAs",
+          "spotify:track:3lzhYwiu6IPviv4pVnPLCN",
+          "spotify:track:5he6JilJE5PMBmFENpNnZE",
+          "spotify:track:19qMt1yCVVP9kverN8iczK",
+          "spotify:track:5PBnsVe8iZWZOViR36NHgj",
+          "spotify:track:1MMSOHPcgXAdsZaJqfh1oy",
+          "spotify:track:0NlaIa4gtvUxSzPqVZCRxL",
+          "spotify:track:7mmkRcsdrgM0u1yiGTNn9H",
+          "spotify:track:7dnOyERdB5Eqr7s8Uq0Drr",
+          "spotify:track:0XNyc3wqdpjAingKcnGPpG",
+          "spotify:track:7AOloXJzylUy7VxBPpCHaF",
+          "spotify:track:25hadd25PQz7Cdx66AyTeB",
+          "spotify:track:5joamWphEr3BELwEZQD5yJ",
+          "spotify:track:6WrcuDreeyxxuchFMv4MTk",
+          "spotify:track:1Ci5IGarYBBpcq3tAF4tTj",
+          "spotify:track:13MwwPjLDUTFM8pb5GTBL3",
+          "spotify:track:7xjOrA5czMOJjBMPjs7ZFG",
+          "spotify:track:5LVR1hTuzIINadI5uy9wae"
+        ],
+        "listing": {
+          "name": "KALX - Shenanigans and Diablerie - 2026-11-14",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
