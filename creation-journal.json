@@ -18629,7 +18629,7 @@
           "start_time": "2026-11-15T00:00:00-0800",
           "end_time": "2026-11-15T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3IOJS6ao8LPNazTvTbDUgE",
         "desired_uris": [
@@ -18665,8 +18665,101 @@
           "spotify:track:3nXrby9rpawMi4TH3rcF8b"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T02:00:00-0800",
+          "broadcast_start": "2026-11-15T00:00:00-0800",
+          "imported_at": "2026-11-15T13:38:36.461021175+00:00",
+          "last_updated": "2026-11-15 13:38 UTC",
           "name": "KALX - FREEFORM - 2026-11-15",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Couch"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c3ef33e9a911afa6bccba6b",
+              "name": "Was Alles Hält"
+            },
+            {
+              "artists": [
+                "The Aggrolites"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320dedbb60b3e54124a0bc99b",
+              "name": "3I Atlas"
+            },
+            {
+              "artists": [
+                "The Cosmopolitians"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27361e7d0153017a5f42bf2f932",
+              "name": "(How To Keep Your) Husband Happy"
+            },
+            {
+              "artists": [
+                "Heart Attack"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730036c77d475d15ae449f0367",
+              "name": "Self Control"
+            },
+            {
+              "artists": [
+                "Cousin Dale"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b7440a298090699178020a50",
+              "name": "Punk Rock Show"
+            },
+            {
+              "artists": [
+                "Cousins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739755ffad8525a35303d567f5",
+              "name": "Phone"
+            },
+            {
+              "artists": [
+                "Havana 3 A.M."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273af5e893e0141dcb1696e426a",
+              "name": "Hole In The Sky"
+            },
+            {
+              "artists": [
+                "Heatmiser"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735287d6042c480fe8048cc646",
+              "name": "Get Lucky"
+            },
+            {
+              "artists": [
+                "Josie Cotton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730d757fab1378111bb9622d92",
+              "name": "Painting in Blood"
+            },
+            {
+              "artists": [
+                "The Heavy Heavy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ab8d3a74bc78df54eaccc01b",
+              "name": "Miles and Miles - Single Version"
+            },
+            {
+              "artists": [
+                "The Specials"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f994274f989e9faa4f26cbcd",
+              "name": "Ghost Town - Extended Version"
+            },
+            {
+              "artists": [
+                "Heavy Mother"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736be39defd402c0c7479cfe10",
+              "name": "Eenie Meenie"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23344141/FREEFORM",
+          "station": "KALX",
+          "track_count": 30,
+          "url": "https://open.spotify.com/playlist/3IOJS6ao8LPNazTvTbDUgE"
         }
       },
       "needs_reconciliation": false
