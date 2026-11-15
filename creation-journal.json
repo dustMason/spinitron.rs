@@ -31356,6 +31356,61 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23343148": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23343148,
+          "title": "THE SOUL OF R&B",
+          "url": "https://spinitron.com/KPOO/pl/23343148/THE-SOUL-OF-R-B",
+          "start_time": "2026-11-14T19:00:00-0800",
+          "end_time": "2026-11-14T22:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2m9oEvjYdhuF3KATDbYgWB",
+          "spotify:track:3h9uGxM4NhujCqfhmZYQBH",
+          "spotify:track:3zkhVuJ6XaWovrToUbSncO",
+          "spotify:track:646dBln8tkfqCPPm6FEJLS",
+          "spotify:track:3eD8zm8wgfKNyWgS4qM3LW",
+          "spotify:track:5Ufxoce7evv4Z9LofZUKpx",
+          "spotify:track:6nxsfXTEqIb9NBpB3YAnyL",
+          "spotify:track:2oRclWSSVDUEo2I0Ya467e",
+          "spotify:track:2Yvhjo0LLZKXpoxx5BH15s",
+          "spotify:track:26Pf1AnjT8j25QsGNVQmuE",
+          "spotify:track:6lw9ot8sp2fTEPTWv8A6MK",
+          "spotify:track:7nWsh14AHpnTzq1Xejz90U",
+          "spotify:track:6KpBkBkQ4HXMwjqkXLJ0ni",
+          "spotify:track:2XZRe31lC2YDj9xhPSSIly",
+          "spotify:track:5eTFQ9ZfwY4JlONgdo78w9",
+          "spotify:track:62lzwpqHvnO2iCmRzTIccO",
+          "spotify:track:7HjJQunSPwkXXVnGeItUEH",
+          "spotify:track:6dZ6qWl1e9GsMndBG7vqB9",
+          "spotify:track:4TxvzjFdknSCL9udR39Q3X",
+          "spotify:track:7t86fVeDAd63ThaR0ZkxXS",
+          "spotify:track:3M8i3d1c4XcQE7m0eSYqN0",
+          "spotify:track:33vzOPcd9FRirYGlCu32x4",
+          "spotify:track:28XgkxIM9yrT6AaDezUjw6",
+          "spotify:track:1bJfGifEtaHMZ9Qk5uX0zZ",
+          "spotify:track:1b5SISCI3nhthZFcVSLgIF",
+          "spotify:track:26Pf1AnjT8j25QsGNVQmuE",
+          "spotify:track:7nWsh14AHpnTzq1Xejz90U",
+          "spotify:track:4IlMZRrYSOfka9lvvgvtrc",
+          "spotify:track:5ojrBtyD7v3qEhZ6ZctgUN",
+          "spotify:track:02ovwXGHhYVvre7iPamDQ8",
+          "spotify:track:2JjSSlQFlG15slGn8FBcYd",
+          "spotify:track:5ryhSwHae3IfrsdjllXsQC",
+          "spotify:track:2epyWISwANZYcD6SZs3YXC",
+          "spotify:track:5AIA8TpGhuilLpHbA6c1bq"
+        ],
+        "listing": {
+          "name": "KPOO - THE SOUL OF R&B - 2026-11-14",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
