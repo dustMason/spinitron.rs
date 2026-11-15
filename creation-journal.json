@@ -31517,7 +31517,7 @@
           "start_time": "2026-11-14T22:00:00-0800",
           "end_time": "2026-11-15T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6CtugpLB7bj1I3MItIrYny",
         "desired_uris": [
@@ -31539,8 +31539,101 @@
           "spotify:track:0WA2iSMdmXP3mfu7pyEk4J"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T00:00:00-0800",
+          "broadcast_start": "2026-11-14T22:00:00-0800",
+          "imported_at": "2026-11-15T13:43:24.106165134+00:00",
+          "last_updated": "2026-11-15 13:43 UTC",
           "name": "KPOO - Cruising Through the 70's - 2026-11-14",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Barry White"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa3252b7843a8a3426cc34bf",
+              "name": "Oh Love, Well We Finally Made It"
+            },
+            {
+              "artists": [
+                "B.T. Express"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731ef257e97c59104fa83788a2",
+              "name": "Give It What You Got"
+            },
+            {
+              "artists": [
+                "Evelyn \"Champagne\" King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c90ed9f02f91c24d7d9cbd20",
+              "name": "Shame (Radio Edit)"
+            },
+            {
+              "artists": [
+                "Tavares"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27310c921c89d9ae62a56d792b1",
+              "name": "Heaven Must Be Missing an Angel"
+            },
+            {
+              "artists": [
+                "The Jackson 5"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b26c68bdff804fc9a9535d8f",
+              "name": "Forever Came Today"
+            },
+            {
+              "artists": [
+                "Rufus Thomas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737754c4276691720b5f536ffa",
+              "name": "Sixty Minute Man"
+            },
+            {
+              "artists": [
+                "The Stylistics"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e1d3ce571c3c8c92e23c5e6e",
+              "name": "Stop, Look, Listen (To Your Heart)"
+            },
+            {
+              "artists": [
+                "The O'Jays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735abd0f3ff2e38c5a73afbab6",
+              "name": "Put Your Hands Together"
+            },
+            {
+              "artists": [
+                "The Temptations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736f179dbefb5442f76e58e9a8",
+              "name": "Shakey Ground"
+            },
+            {
+              "artists": [
+                "First Choice"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730179e31dada5056ec69fde6a",
+              "name": "Doctor Love (Tom Moulton 12\" Mix)"
+            },
+            {
+              "artists": [
+                "Sylvester"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738350b45fb48a3a39da00cad4",
+              "name": "Dance (Disco Heat)"
+            },
+            {
+              "artists": [
+                "Donna Summer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a1331447bd02b5c91c3ae726",
+              "name": "Bad Girls"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23343934/Cruising-Through-the-70-s",
+          "station": "KPOO",
+          "track_count": 16,
+          "url": "https://open.spotify.com/playlist/6CtugpLB7bj1I3MItIrYny"
         }
       },
       "needs_reconciliation": false
