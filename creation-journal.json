@@ -31648,7 +31648,7 @@
           "start_time": "2026-11-15T00:00:00-0800",
           "end_time": "2026-11-15T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5K5vOIyL6Xn33L4CxW0CI6",
         "desired_uris": [
@@ -31673,8 +31673,101 @@
           "spotify:track:0ohnsK6xZZwbq2tDDXyIxg"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T02:00:00-0800",
+          "broadcast_start": "2026-11-15T00:00:00-0800",
+          "imported_at": "2026-11-15T13:44:03.954680917+00:00",
+          "last_updated": "2026-11-15 13:44 UTC",
           "name": "KPOO - JJ's Vintage Soul Sounds The 60's - 2026-11-15",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "100 Proof Aged In Soul"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27340568666001c219761f0721a",
+              "name": "Somebody's Been Sleeping"
+            },
+            {
+              "artists": [
+                "The Supremes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325e9eddcd3fa7e31f55c991c",
+              "name": "Come See About Me - Single Version / Mono"
+            },
+            {
+              "artists": [
+                "Aretha Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf07c491dbf8cb2c314b4dae",
+              "name": "The House That Jack Built"
+            },
+            {
+              "artists": [
+                "Mel & Tim"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c06453cdf0d2abe3c629d27",
+              "name": "Backfield In Motion"
+            },
+            {
+              "artists": [
+                "The Dells"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735eb34a6967c1dee028e76a4d",
+              "name": "Stay In My Corner"
+            },
+            {
+              "artists": [
+                "Sam & Dave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c0be8d81074db0fa085bcd02",
+              "name": "Hold On, I'm Comin'"
+            },
+            {
+              "artists": [
+                "Kim Weston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736654595492e00643f9dba83d",
+              "name": "Take Me In Your Arms (Rock Me A Little While)"
+            },
+            {
+              "artists": [
+                "Doris Troy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bf81d1ef8c9351962b318c47",
+              "name": "Just One Look"
+            },
+            {
+              "artists": [
+                "Bobby \"Blue\" Bland"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738f690b12fd4e8808b11c357d",
+              "name": "Don't Cry No More"
+            },
+            {
+              "artists": [
+                "Gene Chandler"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735acd93efc07861a24d41acad",
+              "name": "Nothing Can Stop Me"
+            },
+            {
+              "artists": [
+                "The Sweet Inspirations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738412a729c35db077e54302a1",
+              "name": "Sweet Inspiration"
+            },
+            {
+              "artists": [
+                "Lee Dorsey"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27394749bf3cf802dba79a518c2",
+              "name": "Everything I Do Gonh Be Funky"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23344164/JJ-s-Vintage-Soul-Sounds-The-60-s",
+          "station": "KPOO",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/5K5vOIyL6Xn33L4CxW0CI6"
         }
       },
       "needs_reconciliation": false
