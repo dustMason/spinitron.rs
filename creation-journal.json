@@ -18054,7 +18054,7 @@
           "start_time": "2026-11-14T10:00:00-0800",
           "end_time": "2026-11-14T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3lWAKZuR8HIwdxBVEbib5W",
         "desired_uris": [
@@ -18071,8 +18071,95 @@
           "spotify:track:77s4sHCPnQlDnGrT33KPUa"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T12:00:00-0800",
+          "broadcast_start": "2026-11-14T10:00:00-0800",
+          "imported_at": "2026-11-15T13:35:17.658419649+00:00",
+          "last_updated": "2026-11-15 13:35 UTC",
           "name": "KALX - FREEFORM - 2026-11-14 10:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sweet Trip"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732aa34d5906e01231eff70f82",
+              "name": "International"
+            },
+            {
+              "artists": [
+                "Blood Orange",
+                "Caroline Polachek"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739d6bd2afa2987a69b7b55f72",
+              "name": "Chosen"
+            },
+            {
+              "artists": [
+                "Boards of Canada"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739effb26eea559ce6f3fed751",
+              "name": "Aquarius"
+            },
+            {
+              "artists": [
+                "Four Tet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731c60d216c55dbf149c6ed5cb",
+              "name": "Plastic People"
+            },
+            {
+              "artists": [
+                "Underworld"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731197be5a8ec09edc3befbe71",
+              "name": "Two Months Off"
+            },
+            {
+              "artists": [
+                "LCD Soundsystem"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee0d0dce888c6c8a70db6e8b",
+              "name": "Home"
+            },
+            {
+              "artists": [
+                "Jeff Sova"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a77f05e0491769cb1b29da57",
+              "name": "All Smiles"
+            },
+            {
+              "artists": [
+                "ML Buch"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27386a8513fec7563a8a6584c84",
+              "name": "Pan over the hill"
+            },
+            {
+              "artists": [
+                "Actress"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733d34cd4a08a60f9be8053c4a",
+              "name": "Withending - Edit"
+            },
+            {
+              "artists": [
+                "Bonobo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b7c5fb838d575e7a730d10bd",
+              "name": "Drift"
+            },
+            {
+              "artists": [
+                "Locust"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735b2f25162bac17eda8c24f37",
+              "name": "No-One in the World"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23341075/FREEFORM",
+          "station": "KALX",
+          "track_count": 11,
+          "url": "https://open.spotify.com/playlist/3lWAKZuR8HIwdxBVEbib5W"
         }
       },
       "needs_reconciliation": false
