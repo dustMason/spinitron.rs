@@ -30559,7 +30559,7 @@
           "start_time": "2026-11-14T02:00:00-0800",
           "end_time": "2026-11-14T08:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7Bb1OiyqdzxCjdzvhPgs7C",
         "desired_uris": [
@@ -30645,8 +30645,105 @@
           "spotify:track:2J2cFDJAC5FvdXZwWoNR0x"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T08:00:00-0800",
+          "broadcast_start": "2026-11-14T02:00:00-0800",
+          "imported_at": "2026-11-15T13:39:25.328970378+00:00",
+          "last_updated": "2026-11-15 13:39 UTC",
           "name": "KPOO - All Night After Hours Show - 2026-11-14",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Bobby Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273380bbbce94f0e915bad8936e",
+              "name": "Don't Be Cruel - Single Version"
+            },
+            {
+              "artists": [
+                "R. Kelly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f06ed757791f7aa92ffa254b",
+              "name": "Feelin' Single"
+            },
+            {
+              "artists": [
+                "Demae"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ad208d0f92ffafb6cb56af1e",
+              "name": "Go Ur Own Way"
+            },
+            {
+              "artists": [
+                "Reneé Rapp"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308688d64d1b26bbee0e87857",
+              "name": "Tummy Hurts"
+            },
+            {
+              "artists": [
+                "Jenevieve"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731b3f9f89b4a4976a8c819ab3",
+              "name": "Love Quotes"
+            },
+            {
+              "artists": [
+                "October London"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273642f308bf131acb290a98b8a",
+              "name": "She Keeps Calling"
+            },
+            {
+              "artists": [
+                "Kenya Vaun"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d1f903a0cb2aa2d79a70da96",
+              "name": "Summer"
+            },
+            {
+              "artists": [
+                "Jenevieve"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735039ba5ca4d71c1965bfb6d1",
+              "name": "Résumé"
+            },
+            {
+              "artists": [
+                "Ledisi",
+                "Kenny Lattimore"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d1bd380a7c2ad1176ec83b2e",
+              "name": "Perfect Stranger (feat. Kenny Lattimore)"
+            },
+            {
+              "artists": [
+                "Raheem DeVaughn",
+                "Kenny Allen",
+                "H.M.P."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273491fe6934680946b35a4b273",
+              "name": "Let's Fall In Love"
+            },
+            {
+              "artists": [
+                "Kevin Ross"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b862f3552660663fac268e19",
+              "name": "Inside Freestyle"
+            },
+            {
+              "artists": [
+                "Justin Bieber",
+                "Don Toliver"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27377f7f8553ace10f4d9347872",
+              "name": "Honest (feat. Don Toliver)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23339584/All-Night-After-Hours-Show",
+          "station": "KPOO",
+          "track_count": 80,
+          "url": "https://open.spotify.com/playlist/7Bb1OiyqdzxCjdzvhPgs7C"
         }
       },
       "needs_reconciliation": false
