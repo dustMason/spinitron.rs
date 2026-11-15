@@ -30747,6 +30747,62 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23340818": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23340818,
+          "title": "Saturday Morning in Real Time",
+          "url": "https://spinitron.com/KPOO/pl/23340818/Saturday-Morning-in-Real-Time",
+          "start_time": "2026-11-14T08:00:00-0800",
+          "end_time": "2026-11-14T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1USJsPhdRbAUNCxy31rsTf",
+          "spotify:track:1QnPfPudVHTsWBx2zr6Ssy",
+          "spotify:track:5IytiuFN0EJrZjYHtntTfQ",
+          "spotify:track:2BQZvZsA9SRafvWEBSQnri",
+          "spotify:track:5HVdyKabHJcjSbJcMKUVCp",
+          "spotify:track:26GYTAkEq471oPD7PDSBhT",
+          "spotify:track:2bnQ4asoIulgiqL72zyP1l",
+          "spotify:track:5KYPQ0lgRX8rB9sApPdwIZ",
+          "spotify:track:0BAU27zReEv9cL4p38x5G8",
+          "spotify:track:5UyLjYd4yXeCp07JVImuXf",
+          "spotify:track:20EafWrKHBK75FXU02qZcB",
+          "spotify:track:5qAJU71AfadQO8VrmZuujG",
+          "spotify:track:5Zdmo29jB3S04ysRnWDvKu",
+          "spotify:track:4y3Cny28krRSxuoBn54MWZ",
+          "spotify:track:5QeO4DIU9UXBt5tnGHjxoM",
+          "spotify:track:6rSUrh8ErKSKfbH0t0IzCM",
+          "spotify:track:7itU7OOVN2bcVPf8yySr2A",
+          "spotify:track:3RJbRh7bLZejDYkHHAEf5x",
+          "spotify:track:1aFrOBwxnr5ovW4wcsloVH",
+          "spotify:track:2roCxVzvWDr4EZULoAEyrB",
+          "spotify:track:0NzNKU2MJ9LCetT2uZMJH2",
+          "spotify:track:7wz9vTdUfn0yF2yQEC1bfp",
+          "spotify:track:6svat6LhQXRAnALB7CkUg5",
+          "spotify:track:4g5jveZCitpFDfzwgN24qD",
+          "spotify:track:2pDPS1bUC7vARDFMFiE4Ll",
+          "spotify:track:4LWa8avBEYTQRz4GGWu2u9",
+          "spotify:track:78FQhBa7oYUXJq6i0NJARJ",
+          "spotify:track:1vy12EKNnGjX3q8RGaGAHB",
+          "spotify:track:7ly8iuqqa37cj7SFmtKaP0",
+          "spotify:track:3mPSHHWFnkjL4T0htIh2vK",
+          "spotify:track:3XhKIHwdcYHWhp5L2wKqz8",
+          "spotify:track:6T3Ebo7EOh8cUOyE4OhFpp",
+          "spotify:track:7DgQvSErF5kXmaXmbxcaba",
+          "spotify:track:1gpEppwXYSCbtNp7uzQmQK",
+          "spotify:track:0UCynwF0ZUwRTFK1DxvkOd"
+        ],
+        "listing": {
+          "name": "KPOO - Saturday Morning in Real Time - 2026-11-14",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
