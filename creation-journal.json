@@ -18342,6 +18342,42 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23342170": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23342170,
+          "title": "Cal Basketball Game",
+          "url": "https://spinitron.com/KALX/pl/23342170/Cal-Basketball-Game",
+          "start_time": "2026-11-14T14:00:00-0800",
+          "end_time": "2026-11-14T17:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5czjjnbTatyFal33a9h1aN",
+          "spotify:track:20I8RduZC2PWMWTDCZuuAN",
+          "spotify:track:6MJPIeN28JQlv59ckCtfKJ",
+          "spotify:track:2E2ZVy2fxslpAUgbb4zu84",
+          "spotify:track:5QTxFnGygVM4jFQiBovmRo",
+          "spotify:track:0yHT5dawENVYo8Dmg5HTIH",
+          "spotify:track:5Ih9gbqyxCzTJ43nuSuKnC",
+          "spotify:track:0d8cGMosMcPJA8UsxQCtZq",
+          "spotify:track:2GH5jo15wbTv1Ll7zXEzSg",
+          "spotify:track:4sFR75reVQWkNKoToFI0Ji",
+          "spotify:track:3VqHuw0wFlIHcIPWkhIbdQ",
+          "spotify:track:05zCw24BdvZKGeC5NXowVe",
+          "spotify:track:4zXBdnChYD8wqnsW4vhYBS",
+          "spotify:track:7k6mhJgYnZ8xfDayioCGfO",
+          "spotify:track:61Q9oJNd9hJQFhSDh6Qlap"
+        ],
+        "listing": {
+          "name": "KALX - Cal Basketball Game - 2026-11-14",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
