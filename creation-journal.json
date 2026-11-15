@@ -18211,6 +18211,42 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23341764": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23341764,
+          "title": "Your New Music Hour",
+          "url": "https://spinitron.com/KALX/pl/23341764/Your-New-Music-Hour",
+          "start_time": "2026-11-14T13:00:00-0800",
+          "end_time": "2026-11-14T14:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:201nawDDD7n2hwhffQrpXo",
+          "spotify:track:2QELTJ94PDMzYkSUgSXqXM",
+          "spotify:track:07PDGEQVBzUjZpmFEsff5G",
+          "spotify:track:26de1cwFCg7LO1gf2nXcTr",
+          "spotify:track:6bfvlbzyvHKxXWUMthfmEG",
+          "spotify:track:3tU9zSfEL0N0aLXAeRaK1M",
+          "spotify:track:6m1FfyODGRV6k62gfe3L9P",
+          "spotify:track:4CD4Zima9lNs11kxbYiC25",
+          "spotify:track:1lk2BliMKIpIwIH6vNqwuT",
+          "spotify:track:13hV9aznOgwgn3gf2xBxRp",
+          "spotify:track:3A0yBAw85MnypPVhORzf45",
+          "spotify:track:3E8wDLAW6u8mqZ5slhMgP6",
+          "spotify:track:779lRXud3UN5LIqt7qfwli",
+          "spotify:track:3gNKdL3CTV9WpW8QaEdswF",
+          "spotify:track:51RN0kzWd7xeR4th5HsEtW"
+        ],
+        "listing": {
+          "name": "KALX - Your New Music Hour - 2026-11-14",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
