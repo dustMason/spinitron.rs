@@ -18352,7 +18352,7 @@
           "start_time": "2026-11-14T14:00:00-0800",
           "end_time": "2026-11-14T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0P1ispr1zt0cRX4MrxtJZ6",
         "desired_uris": [
@@ -18373,8 +18373,103 @@
           "spotify:track:61Q9oJNd9hJQFhSDh6Qlap"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T17:30:00-0800",
+          "broadcast_start": "2026-11-14T14:00:00-0800",
+          "imported_at": "2026-11-15T13:37:17.105385591+00:00",
+          "last_updated": "2026-11-15 13:37 UTC",
           "name": "KALX - Cal Basketball Game - 2026-11-14",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Rakim"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273796e9d830c2237253fd9b084",
+              "name": "Guess Who's Back"
+            },
+            {
+              "artists": [
+                "Franz Ferdinand"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5d1c06a8172d4861367953c",
+              "name": "Take Me Out"
+            },
+            {
+              "artists": [
+                "Black Sabbath",
+                "Auburn University Marching Band",
+                "Dr. Richard D. Good"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273275be9c7308bbefad7651c5e",
+              "name": "Iron Man"
+            },
+            {
+              "artists": [
+                "Steve Miller Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b80d7868e6e0275d12102508",
+              "name": "Abracadabra"
+            },
+            {
+              "artists": [
+                "Blue Öyster Cult"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa802dc9f870e66a8bb6a2a2",
+              "name": "(Don't Fear) The Reaper"
+            },
+            {
+              "artists": [
+                "Barry Manilow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273668d9bd8f9a446d3d9e5e4a1",
+              "name": "Copacabana (En El Copa) [Spanish Radio Mix]"
+            },
+            {
+              "artists": [
+                "Aerosmith"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e0c7891bd7c7ea49d69512e2",
+              "name": "Dream On"
+            },
+            {
+              "artists": [
+                "Dead Or Alive"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a8e82dd40acacaf44c5c1900",
+              "name": "You Spin Me Round (Like a Record)"
+            },
+            {
+              "artists": [
+                "Earth, Wind & Fire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27386f744ce16c45aa005d84fb6",
+              "name": "Fantasy"
+            },
+            {
+              "artists": [
+                "Grace Bible Church"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732368ffbdc3ba79755bee1bad",
+              "name": "Paul hurst 092009"
+            },
+            {
+              "artists": [
+                "Metallica"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731f9edf15e43f4c2f4938b869",
+              "name": "Enter Sandman (Remastered)"
+            },
+            {
+              "artists": [
+                "Electric Light Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273480064c26961b88dee6720c7",
+              "name": "Evil Woman"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23342170/Cal-Basketball-Game",
+          "station": "KALX",
+          "track_count": 15,
+          "url": "https://open.spotify.com/playlist/0P1ispr1zt0cRX4MrxtJZ6"
         }
       },
       "needs_reconciliation": false
