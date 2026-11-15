@@ -31193,6 +31193,73 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23342515": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23342515,
+          "title": "#SaturdayAfternoonReggaeShow",
+          "url": "https://spinitron.com/KPOO/pl/23342515/SaturdayAfternoonReggaeShow",
+          "start_time": "2026-11-14T16:00:00-0800",
+          "end_time": "2026-11-14T19:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5FAHPZ6MOmt6OwWujO72RF",
+          "spotify:track:2ZPjQ35RUV7Z7kZdbbMBwv",
+          "spotify:track:1tpO4W2d7obarb7EI7FWuB",
+          "spotify:track:5QidzcA1Z0gCmq7TPF4IOP",
+          "spotify:track:2XyCh83wH78eHKPrAxKMd3",
+          "spotify:track:2nzAVuVl7DqnUCgyFgMDoO",
+          "spotify:track:61x3OklHzpCgysCVZp1Plr",
+          "spotify:track:4Vhr3ocLMKJxrIrqLYSQeZ",
+          "spotify:track:3VchrwqAvvm4dKPju8XYzm",
+          "spotify:track:1JumY3plQ3GqXi7XUwG4OP",
+          "spotify:track:2y8pG9CF0HC4cttJ50Pufk",
+          "spotify:track:2jw2iaS42dJ8QrtYdArjxn",
+          "spotify:track:7gsRJycbeGFhvS4bR7R5k2",
+          "spotify:track:2zB0nv4Xh29wGrvWSHitrh",
+          "spotify:track:6usphpoSCVuYUVSMq8sHkt",
+          "spotify:track:6RcqkNnsyQqRLdzzG7kUa6",
+          "spotify:track:5M77yXWuKPqaUzdxn4cVnV",
+          "spotify:track:7CXhhrcWLysNuKZpCOmMnk",
+          "spotify:track:6Zx1aP9fb80X9hho26Geha",
+          "spotify:track:27Ao7StVocPejWGBF3TwM0",
+          "spotify:track:3JrykBfMVfLpuWSy0h1oej",
+          "spotify:track:5EBli2pJk6w1kG2245rtHX",
+          "spotify:track:6CE8DXPweE9Cb26Bwexwjd",
+          "spotify:track:74LujaXmzGQi5wRZ2HFh0G",
+          "spotify:track:6IwePNsDYPQHLyzSHAmqrN",
+          "spotify:track:1U1GIOidiZ2SUyLnB4ZIaW",
+          "spotify:track:26M0z9pbLbeBZarHaAy2W4",
+          "spotify:track:3N6MDbgfstEo4DxNRX52M8",
+          "spotify:track:0V5ZfsZKdRYTZdN1L3WNzE",
+          "spotify:track:0INtJm8gCJKtNaAYQNVlpZ",
+          "spotify:track:3QO1m6i0nsrp8aOnapvbkx",
+          "spotify:track:25DU8NMR4kRDszRpccLMBt",
+          "spotify:track:1STjwkpPcqX40txpZaJ99z",
+          "spotify:track:1waOqfmEVkVC8WhaIP6uGI",
+          "spotify:track:4PvVHAkONOaS6v4wgONGYZ",
+          "spotify:track:4WQJd6v3HIDGZnn2kJTEc9",
+          "spotify:track:6PbtTwGUPPbnT7nRTA1gS3",
+          "spotify:track:5dvG16Ma80h9FZ1sQq5Sb1",
+          "spotify:track:5Hm4LfDaI5CmbfBAB7hhyr",
+          "spotify:track:79XrkTOfV1AqySNjVlygpW",
+          "spotify:track:6DM5avm0wR2u3o4JytFHW2",
+          "spotify:track:399T4Cp3gMtfK5L30R6dqw",
+          "spotify:track:1PHK2pkXJmeQn7MdPUZjWM",
+          "spotify:track:3hK6ZKMlvsze3Z4xKZxBkl",
+          "spotify:track:4s7VWCyCpyJ0KPHEG98YT1",
+          "spotify:track:58O99P4JhZGvGO12EtvTgF"
+        ],
+        "listing": {
+          "name": "KPOO - #SaturdayAfternoonReggaeShow - 2026-11-14",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
