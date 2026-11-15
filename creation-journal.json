@@ -30758,7 +30758,7 @@
           "start_time": "2026-11-14T08:00:00-0800",
           "end_time": "2026-11-14T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2OAm4VkXhLxLobRgZJJW9n",
         "desired_uris": [
@@ -30799,8 +30799,103 @@
           "spotify:track:0UCynwF0ZUwRTFK1DxvkOd"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T12:00:00-0800",
+          "broadcast_start": "2026-11-14T08:00:00-0800",
+          "imported_at": "2026-11-15T13:40:05.226229837+00:00",
+          "last_updated": "2026-11-15 13:40 UTC",
           "name": "KPOO - Saturday Morning in Real Time - 2026-11-14",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Dean James"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c1baf2d77dc0a145b82d075c",
+              "name": "Say Yes"
+            },
+            {
+              "artists": [
+                "Ashley Jayy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735a9667bbae81a12071bea018",
+              "name": "The Only One"
+            },
+            {
+              "artists": [
+                "Johnnie Taylor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f4d11aac265f494602675f0d",
+              "name": "What About My Love"
+            },
+            {
+              "artists": [
+                "Dionne Warwick"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eaa0aecce000bb2569ea9864",
+              "name": "Anyone Who Had a Heart"
+            },
+            {
+              "artists": [
+                "Arin Ray"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a94665a6a73efb12d037d3f0",
+              "name": "A Seat"
+            },
+            {
+              "artists": [
+                "Alex Isley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27374f537ffd102d35aa166a30a",
+              "name": "Sweetest Lullabye"
+            },
+            {
+              "artists": [
+                "SZN4"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27321640b136881447b6ed39bb5",
+              "name": "Let's Be Clear"
+            },
+            {
+              "artists": [
+                "Kehlani"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731195944be897770537547f51",
+              "name": "everything"
+            },
+            {
+              "artists": [
+                "Natalie Chludz",
+                "chrme.shwty"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e082eb87d51034728202c88f",
+              "name": "eternal dream (orchestral version) - shwty remix"
+            },
+            {
+              "artists": [
+                "Marcio Montarroyos"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27385cf92723960c1dbee02293f",
+              "name": "Introduction: Quilombo Dos Palmares"
+            },
+            {
+              "artists": [
+                "Veronica",
+                "spaceluvrrr"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c6026715dcb35b98b5e89b1",
+              "name": "curious"
+            },
+            {
+              "artists": [
+                "Veronica"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c2b544a9dde7fd579cd6dd9",
+              "name": "DID YOU MOVE?"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23340818/Saturday-Morning-in-Real-Time",
+          "station": "KPOO",
+          "track_count": 35,
+          "url": "https://open.spotify.com/playlist/2OAm4VkXhLxLobRgZJJW9n"
         }
       },
       "needs_reconciliation": false
