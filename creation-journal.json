@@ -31204,7 +31204,7 @@
           "start_time": "2026-11-14T16:00:00-0800",
           "end_time": "2026-11-14T19:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2ppXv5u9KtsOlXbj3Uac0P",
         "desired_uris": [
@@ -31256,8 +31256,103 @@
           "spotify:track:58O99P4JhZGvGO12EtvTgF"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T19:00:00-0800",
+          "broadcast_start": "2026-11-14T16:00:00-0800",
+          "imported_at": "2026-11-15T13:42:05.016577046+00:00",
+          "last_updated": "2026-11-15 13:42 UTC",
           "name": "KPOO - #SaturdayAfternoonReggaeShow - 2026-11-14",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Henry Simms"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b8cf438c0d090145938a5f7",
+              "name": "Live In Love"
+            },
+            {
+              "artists": [
+                "Bunny Wailer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d4c29e3dd53e9f021bf8691f",
+              "name": "Ballroom Floor"
+            },
+            {
+              "artists": [
+                "Maestro Don",
+                "808 Delavega"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273197fc9f2ffcb1e02818dcd9c",
+              "name": "Balance"
+            },
+            {
+              "artists": [
+                "Sistah Jahia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273283f779329e9a0ffdc1dd790",
+              "name": "Empress on the Rise"
+            },
+            {
+              "artists": [
+                "Blanca"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aea39f6758316e1f951a3af4",
+              "name": "Worthy"
+            },
+            {
+              "artists": [
+                "Nico Vallorani DJ"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbe854c029827495729eea52",
+              "name": "90's Mix"
+            },
+            {
+              "artists": [
+                "Super Cat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e230b2cdf17dc059ecef77d9",
+              "name": "Dem No Worry We"
+            },
+            {
+              "artists": [
+                "Bob Marley & The Wailers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737790f55f26b3ec398f8e589a",
+              "name": "Could You Be Loved - Edit"
+            },
+            {
+              "artists": [
+                "Tarrus Riley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f9147dc2897a6e968e548a71",
+              "name": "Cool Me Down"
+            },
+            {
+              "artists": [
+                "Qshan Deya",
+                "Vaughn Benjamin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d577cbf217b642d34db8b062",
+              "name": "Gate Of Mt. Zion"
+            },
+            {
+              "artists": [
+                "Nas & Damian \"Jr. Gong\" Marley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fcc94ef1f8605f3fbd4a4144",
+              "name": "Patience"
+            },
+            {
+              "artists": [
+                "The Maytals"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27300d200c54029db0a299373a9",
+              "name": "Bla, Bla, Bla"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23342515/SaturdayAfternoonReggaeShow",
+          "station": "KPOO",
+          "track_count": 46,
+          "url": "https://open.spotify.com/playlist/2ppXv5u9KtsOlXbj3Uac0P"
         }
       },
       "needs_reconciliation": false
