@@ -30910,7 +30910,7 @@
           "start_time": "2026-11-14T12:00:00-0800",
           "end_time": "2026-11-14T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "49fYqTsfXrk8f90HYIzoNq",
         "desired_uris": [
@@ -30950,8 +30950,104 @@
           "spotify:track:5kuKhW4HuUlzo0G8ogEQ1w"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T15:00:00-0800",
+          "broadcast_start": "2026-11-14T12:00:00-0800",
+          "imported_at": "2026-11-15T13:40:45.058198732+00:00",
+          "last_updated": "2026-11-15 13:40 UTC",
           "name": "KPOO - En Clave - 2026-11-14",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "La Excelencia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737899b244fce713e6a1d16895",
+              "name": "American Sueño"
+            },
+            {
+              "artists": [
+                "Willie Colón",
+                "Rubén Blades"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f1ecfa430e21d8391a426e9a",
+              "name": "Siembra"
+            },
+            {
+              "artists": [
+                "Tipica 73",
+                "Jose Alberto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd20e04cbbe898d332b35a4d",
+              "name": "Muriendo De Risa"
+            },
+            {
+              "artists": [
+                "Grupo Niche"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273087c720ee856a5f8567f0944",
+              "name": "Cicatrices"
+            },
+            {
+              "artists": [
+                "Pedro Luis Ferrer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736afcd26ab96f29aae7d482e4",
+              "name": "San Sucé"
+            },
+            {
+              "artists": [
+                "Benjamillions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b4a4be22a7baaa66cfd7368",
+              "name": "QUE IRONIA DE LA VIDA"
+            },
+            {
+              "artists": [
+                "Tipica 73"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273446609e139bce21453af2cbd",
+              "name": "Descarga '73"
+            },
+            {
+              "artists": [
+                "Willie Colón"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f37950978573d045e79d886b",
+              "name": "Oh Qué Será?"
+            },
+            {
+              "artists": [
+                "Miguelito García",
+                "Sexteto Occidente"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27324a311539aac3a8e8bf3fe40",
+              "name": "El Globero - Son"
+            },
+            {
+              "artists": [
+                "Sexteto Occidente"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dc045959d3e3a18018df15fe",
+              "name": "Perro Flaco - Son"
+            },
+            {
+              "artists": [
+                "Sexteto Occidente"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732560bb4eeae64e0535f51a68",
+              "name": "Ven a Verme Soledad"
+            },
+            {
+              "artists": [
+                "Septeto Nacional de Ignacio Piñeiro"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273340087c917904bc510c4fb6b",
+              "name": "Se Me Fue La Montuna"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23341586/En-Clave",
+          "station": "KPOO",
+          "track_count": 34,
+          "url": "https://open.spotify.com/playlist/49fYqTsfXrk8f90HYIzoNq"
         }
       },
       "needs_reconciliation": false
