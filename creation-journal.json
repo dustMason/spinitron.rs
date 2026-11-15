@@ -31062,7 +31062,7 @@
           "start_time": "2026-11-14T15:00:00-0800",
           "end_time": "2026-11-14T16:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3Llz5iM4VsBoykvp6SiUgN",
         "desired_uris": [
@@ -31083,8 +31083,113 @@
           "spotify:track:4N4efWfAvTbFb30gCK1BU2"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T16:00:00-0800",
+          "broadcast_start": "2026-11-14T15:00:00-0800",
+          "imported_at": "2026-11-15T13:41:24.236283275+00:00",
+          "last_updated": "2026-11-15 13:41 UTC",
           "name": "KPOO - Andanzas - 2026-11-14",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Kronos Quartet",
+                "Alejandro Flores",
+                "Efrén Vargas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ea1ae3efc15f6e37166a055",
+              "name": "El Llorar (Crying)"
+            },
+            {
+              "artists": [
+                "Soneros del Calamaní"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27395876f044a1741b3eed47085",
+              "name": "La Gallina"
+            },
+            {
+              "artists": [
+                "Lluis Llach"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734e4e87d8235604e1e78e7e10",
+              "name": "L'estaca"
+            },
+            {
+              "artists": [
+                "Soledad",
+                "Cazzu",
+                "Flor Cazzuchelli",
+                "Nati Pastorutti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e077979dd2c6a9b12677f8ef",
+              "name": "Alma de Rezabaile (Casa Sole)"
+            },
+            {
+              "artists": [
+                "Jorge Cafrune"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27385f52166721632eb871c8a7c",
+              "name": "La Telesita"
+            },
+            {
+              "artists": [
+                "León Chávez Teixeiro",
+                "Lxs Prófugxs del Manikomio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273701deaeb52ce1fc0f27a8a66",
+              "name": "El Viernes"
+            },
+            {
+              "artists": [
+                "Houria Aichi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737b8589f5ab97eb4de8723961",
+              "name": "Mabrouk el farh - Chérifa"
+            },
+            {
+              "artists": [
+                "Benjamillions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731ffa5f740369477e2c49003d",
+              "name": "REFLEXIONES"
+            },
+            {
+              "artists": [
+                "Las Migas",
+                "Sílvia Pérez Cruz",
+                "Marta Robles",
+                "Isabelle Laudenbach",
+                "Lisa Bause",
+                "Raúl Rodríguez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c64a35dce115589e41a533e3",
+              "name": "María la Portuguesa"
+            },
+            {
+              "artists": [
+                "Doctor Krápula"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cddb5d3766f1b1c995c94a6f",
+              "name": "Viva el Planeta"
+            },
+            {
+              "artists": [
+                "Doris Duran"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273038fadd4a793a0bf2845415d",
+              "name": "Alumbra Luna \"el Mochilon\""
+            },
+            {
+              "artists": [
+                "Marina Rossell",
+                "Paco Ibanez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27398b225f23d54d0de14c44320",
+              "name": "Bella Ciao"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23342276/Andanzas",
+          "station": "KPOO",
+          "track_count": 15,
+          "url": "https://open.spotify.com/playlist/3Llz5iM4VsBoykvp6SiUgN"
         }
       },
       "needs_reconciliation": false
