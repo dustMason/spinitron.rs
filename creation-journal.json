@@ -17873,6 +17873,28 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23340645": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23340645,
+          "title": "FREEFORM",
+          "url": "https://spinitron.com/KALX/pl/23340645/FREEFORM",
+          "start_time": "2026-11-14T08:00:00-0800",
+          "end_time": "2026-11-14T10:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3SHWZGAvCDcAajSAw3KRU6"
+        ],
+        "listing": {
+          "name": "KALX - FREEFORM - 2026-11-14 8:00am",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
