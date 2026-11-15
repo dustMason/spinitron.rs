@@ -17922,7 +17922,7 @@
           "start_time": "2026-11-14T08:00:00-0800",
           "end_time": "2026-11-14T10:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2jgor6qYbAQgUjwp7GXWwj",
         "desired_uris": [
@@ -17945,8 +17945,101 @@
           "spotify:track:6PgzY16qIQSPsrbckuDoAF"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T10:00:00-0800",
+          "broadcast_start": "2026-11-14T08:00:00-0800",
+          "imported_at": "2026-11-15T13:34:37.890872459+00:00",
+          "last_updated": "2026-11-15 13:34 UTC",
           "name": "KALX - FREEFORM - 2026-11-14 8:00am -0800 [KALX:23340678]",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Freddie Hubbard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27377d2f5109e3c0765d45af6f9",
+              "name": "The Intrepid Fox"
+            },
+            {
+              "artists": [
+                "Babe Rainbow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273727dfede767d13b22241bfd2",
+              "name": "Acid and Honey"
+            },
+            {
+              "artists": [
+                "Lou Reed"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273661ac024c889e335c08d1b46",
+              "name": "Coney Island Baby - Live at the Bottom Line, New York, NY - May 1978"
+            },
+            {
+              "artists": [
+                "Sophia Stel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273de2486b9216e453d51c94ab8",
+              "name": "Now I've Got A Lot You Know"
+            },
+            {
+              "artists": [
+                "New Order"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273408739ba1ad5bccbfeda5ae1",
+              "name": "Thieves like Us - 12\" Extended"
+            },
+            {
+              "artists": [
+                "Allah-Las"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fe822f5868d8a310d28d4e0",
+              "name": "Sirenas"
+            },
+            {
+              "artists": [
+                "Welcome Strawberry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e155480c2229a9c9bb98db0",
+              "name": "desperate flower"
+            },
+            {
+              "artists": [
+                "David Bowie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273edaa573d262bc9eddca6519b",
+              "name": "I Can't Give Everything Away"
+            },
+            {
+              "artists": [
+                "@"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731c5a4e456d268a2f5abd1de6",
+              "name": "Autosmile"
+            },
+            {
+              "artists": [
+                "Julia Jacklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27311cac66f5d62c8eced7a021b",
+              "name": "Walk On Me"
+            },
+            {
+              "artists": [
+                "Mazzy Star"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273696bceaee71bf3637f1f6c9d",
+              "name": "In the Kingdom"
+            },
+            {
+              "artists": [
+                "Bill Callahan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736172648d29acadc71f725e35",
+              "name": "Lonely City"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23340678/FREEFORM",
+          "station": "KALX",
+          "track_count": 17,
+          "url": "https://open.spotify.com/playlist/2jgor6qYbAQgUjwp7GXWwj"
         }
       },
       "needs_reconciliation": false
