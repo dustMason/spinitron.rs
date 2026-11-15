@@ -18484,7 +18484,7 @@
           "start_time": "2026-11-14T18:30:00-0800",
           "end_time": "2026-11-14T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4VHP3gZeQ2P5T78fa4zkSG",
         "desired_uris": [
@@ -18519,8 +18519,102 @@
           "spotify:track:5LVR1hTuzIINadI5uy9wae"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T21:00:00-0800",
+          "broadcast_start": "2026-11-14T18:30:00-0800",
+          "imported_at": "2026-11-15T13:37:57.213636988+00:00",
+          "last_updated": "2026-11-15 13:37 UTC",
           "name": "KALX - Shenanigans and Diablerie - 2026-11-14",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Kelela",
+                "A. K. Paul"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27315c00fa655da7d2b186a470c",
+              "name": "outta time"
+            },
+            {
+              "artists": [
+                "Magi Merlin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273799bbf8137faaef5b8602437",
+              "name": "pixxxie"
+            },
+            {
+              "artists": [
+                "Untold"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fa0b75879b25d7ac9bc5cf38",
+              "name": "Three Finger Test"
+            },
+            {
+              "artists": [
+                "Sylvan Esso"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cb86fe729e5625a8462922e9",
+              "name": "Jessica"
+            },
+            {
+              "artists": [
+                "Vanishing Twin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273787772bfe16950fbfe145193",
+              "name": "Oral Tradition"
+            },
+            {
+              "artists": [
+                "White Dune"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b65c92ea9949bb7d1e17b17a",
+              "name": "HOLMIUM"
+            },
+            {
+              "artists": [
+                "Barnt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738c290662390a6416aced6d34",
+              "name": "Ax^2"
+            },
+            {
+              "artists": [
+                "The Coasters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ccdfe154fe251276f5ed16d7",
+              "name": "That Is Rock and Roll - 2007 Remaster; Remastered"
+            },
+            {
+              "artists": [
+                "Fats Domino"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27374e3823e9643fabc830851dd",
+              "name": "I'm In Love Again"
+            },
+            {
+              "artists": [
+                "Earl King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27363b81008496a294d3e6d81b6",
+              "name": "Street Parade"
+            },
+            {
+              "artists": [
+                "Buckwheat Zydeco"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c305703fc45e88cdb2121a8",
+              "name": "Hot Tamale Baby"
+            },
+            {
+              "artists": [
+                "Mtume"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732447099598a2f71c7f87c722",
+              "name": "Your Love's Too Good (To Spread Around)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23343076/Shenanigans-and-Diablerie",
+          "station": "KALX",
+          "track_count": 29,
+          "url": "https://open.spotify.com/playlist/4VHP3gZeQ2P5T78fa4zkSG"
         }
       },
       "needs_reconciliation": false
