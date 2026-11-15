@@ -17745,7 +17745,7 @@
           "start_time": "2026-11-14T06:00:00-0800",
           "end_time": "2026-11-14T08:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3x884TDgDZIAPesYWALpQO",
         "desired_uris": [
@@ -17772,8 +17772,103 @@
           "spotify:track:2tSzHVPE05bV6mFwm2Tndd"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T08:00:00-0800",
+          "broadcast_start": "2026-11-14T06:00:00-0800",
+          "imported_at": "2026-11-15T13:33:18.672456573+00:00",
+          "last_updated": "2026-11-15 13:33 UTC",
           "name": "KALX - FREEFORM - 2026-11-14 6:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Janelle Monáe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273120a1366324c2ae1728e17e5",
+              "name": "Dance or Die (feat. Saul Williams)"
+            },
+            {
+              "artists": [
+                "Lizzo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27364824fdd18eb99ef46095b82",
+              "name": "Like a Girl"
+            },
+            {
+              "artists": [
+                "Charli xcx"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b20576d1e236e62d276c1a7",
+              "name": "360"
+            },
+            {
+              "artists": [
+                "Ana Tijoux",
+                "Dj Dacel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27357b21cbf7eac805988f0b97a",
+              "name": "APAGON"
+            },
+            {
+              "artists": [
+                "Ninajirachi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733b9b742c5c525af6e6767d87",
+              "name": "Battery Death"
+            },
+            {
+              "artists": [
+                "Bella Hayes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737e24578a39161afdbe253d52",
+              "name": "Sweet & Slow"
+            },
+            {
+              "artists": [
+                "Rhiannon Giddens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273761c1892de7bd7c94b987eac",
+              "name": "Hope Is the Thing with Feathers"
+            },
+            {
+              "artists": [
+                "Rising Appalachia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273376050e44148082bd75a01cb",
+              "name": "Resilient - Full Band"
+            },
+            {
+              "artists": [
+                "Ibibio Sound Machine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738377ac5fbafebad9549413c8",
+              "name": "Kukuru"
+            },
+            {
+              "artists": [
+                "David Bowie",
+                "Junior Vasquez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736b66c0182f8f59c3890e218e",
+              "name": "Little Wonder - Junior's Club Mix, 2022 Remaster"
+            },
+            {
+              "artists": [
+                "False Figure"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734d13ace2e69fe01998737f14",
+              "name": "Julia (Asylum Party)"
+            },
+            {
+              "artists": [
+                "MX LONELY"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27328c095e2848e066aec335837",
+              "name": "Shape Of An Angel"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23340239/FREEFORM",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/3x884TDgDZIAPesYWALpQO"
         }
       },
       "needs_reconciliation": false
