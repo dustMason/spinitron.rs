@@ -17883,15 +17883,31 @@
           "start_time": "2026-11-14T08:00:00-0800",
           "end_time": "2026-11-14T10:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4V1WsyN6ccjcXOQ8KNvLZl",
         "desired_uris": [
           "spotify:track:3SHWZGAvCDcAajSAw3KRU6"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T10:00:00-0800",
+          "broadcast_start": "2026-11-14T08:00:00-0800",
+          "imported_at": "2026-11-15T13:33:57.904288063+00:00",
+          "last_updated": "2026-11-15 13:33 UTC",
           "name": "KALX - FREEFORM - 2026-11-14 8:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Freddie Hubbard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27377d2f5109e3c0765d45af6f9",
+              "name": "The Intrepid Fox"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23340645/FREEFORM",
+          "station": "KALX",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/4V1WsyN6ccjcXOQ8KNvLZl"
         }
       },
       "needs_reconciliation": false
