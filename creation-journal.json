@@ -30899,6 +30899,61 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23341586": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23341586,
+          "title": "En Clave",
+          "url": "https://spinitron.com/KPOO/pl/23341586/En-Clave",
+          "start_time": "2026-11-14T12:00:00-0800",
+          "end_time": "2026-11-14T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1gvLoZegdLCkhiLAWzXBKq",
+          "spotify:track:7buN6Kgl6aUlaEaTIjTzdL",
+          "spotify:track:1PFgSibkLNVDA6UWQsht7i",
+          "spotify:track:46aZMAyUKOTWgrBI76hMQh",
+          "spotify:track:1kD746kcICU01DzND0izoS",
+          "spotify:track:5317GANiLIp0ou4X62HvA3",
+          "spotify:track:4uH5bLakZ5ISpOpC5qnN6x",
+          "spotify:track:2n1MTLCis6qPSDKdr5XSDI",
+          "spotify:track:6vEQupAQooZ26DsHO3wliM",
+          "spotify:track:6wnwu5PYPHm0wwUOul3mWT",
+          "spotify:track:1N3fesD8mXjnPxtEGXb9xP",
+          "spotify:track:6Plh4livsNnCKQ96n5Kp43",
+          "spotify:track:0V6z4IfAHRrXeqjEBmBcbX",
+          "spotify:track:7n56yjVtJEFwUDgQfYJmNp",
+          "spotify:track:6kbxIKO1SBiSNHFCzeBLWK",
+          "spotify:track:02iyhNQBtoDhN3v9psJUfM",
+          "spotify:track:1IPY5O5HHyTiA83bOtAiuv",
+          "spotify:track:650hYNP3ZUZgK9xij7dXUl",
+          "spotify:track:7bfDjjsTEndRYi27Z4ZDuA",
+          "spotify:track:3eQY2FXfF3MvdsbAtQo8c2",
+          "spotify:track:6dH46X7PtZnlul12J0rZF5",
+          "spotify:track:6WxO0phF79rRaJTnwLRMEd",
+          "spotify:track:5uAtp1CVYtMDhF2yjrAKUr",
+          "spotify:track:216LVR7ThxwOMnkZ249N2n",
+          "spotify:track:6RGruwc1C7nMLGSiRlwNIZ",
+          "spotify:track:2tRGJme3gWjP18HjKZxxkX",
+          "spotify:track:64CyNsrWGVhXZPLePYpnYz",
+          "spotify:track:5q6HBQYRgp8i8uo0PDhuIk",
+          "spotify:track:3uM2JstWSZbkdUZ5GMYxud",
+          "spotify:track:6nqfz3RMwggcugEuuKuEOH",
+          "spotify:track:4OdGz2HXDcn7NgtJP7dUOf",
+          "spotify:track:2KVix1dukTX7elMM6fF2TI",
+          "spotify:track:07YFdtC03xvRS21UVG057h",
+          "spotify:track:5kuKhW4HuUlzo0G8ogEQ1w"
+        ],
+        "listing": {
+          "name": "KPOO - En Clave - 2026-11-14",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
