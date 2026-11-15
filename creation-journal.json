@@ -18174,7 +18174,7 @@
           "start_time": "2026-11-14T12:00:00-0800",
           "end_time": "2026-11-14T13:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0qX4ajX2K6Z47PHcaB9jIf",
         "desired_uris": [
@@ -18182,8 +18182,31 @@
           "spotify:track:5eQsCY4AZqlCYNbK3efw9C"
         ],
         "listing": {
+          "broadcast_end": "2026-11-14T13:00:00-0800",
+          "broadcast_start": "2026-11-14T12:00:00-0800",
+          "imported_at": "2026-11-15T13:35:57.330518356+00:00",
+          "last_updated": "2026-11-15 13:35 UTC",
           "name": "KALX - WHUHS - 2026-11-14",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sarah Davachi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273633eec77538dc204a829a0c1",
+              "name": "The Second Tuning"
+            },
+            {
+              "artists": [
+                "Hildur Guðnadóttir"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee475109dd7e7c941a674438",
+              "name": "Leyfðu ljósinu"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23341650/WHUHS",
+          "station": "KALX",
+          "track_count": 2,
+          "url": "https://open.spotify.com/playlist/0qX4ajX2K6Z47PHcaB9jIf"
         }
       },
       "needs_reconciliation": false
