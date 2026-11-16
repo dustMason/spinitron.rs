@@ -19585,6 +19585,60 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23348242": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23348242,
+          "title": "Sunday evening with Carolyn",
+          "url": "https://spinitron.com/KALX/pl/23348242/Sunday-evening-with-Carolyn",
+          "start_time": "2026-11-15T18:00:00-0800",
+          "end_time": "2026-11-15T21:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3gcvOQpi5sJbqwqui5VvSX",
+          "spotify:track:4VVKbH6hR2tq5gxPQgS4Po",
+          "spotify:track:6Ip5urBftd7Rdq8UiwqJs4",
+          "spotify:track:59ovTg46Pxk8BalthQknlb",
+          "spotify:track:201nawDDD7n2hwhffQrpXo",
+          "spotify:track:1b5wOdlba7zS2XlcqtIDWP",
+          "spotify:track:5wGRS3Ckx1TlkbANT7rsde",
+          "spotify:track:1pD1ZbmQxnsuPzP7lNDRYk",
+          "spotify:track:39AKTaWAXTMpn7vNuuDk9n",
+          "spotify:track:3ivUULyDompLCGZWbfgC3r",
+          "spotify:track:5XlkvSTjAL65gr9fJPH7Lb",
+          "spotify:track:4xY4MdlGUHzSDrrMlpQWHV",
+          "spotify:track:4Z4CZ44GVXZtxr1dHzvhlB",
+          "spotify:track:7xScEJba0ezEZIDZnUZg3j",
+          "spotify:track:6UNUGOvsndphTR0gVHEYuy",
+          "spotify:track:3aPjLBWsrqTetCn3QcLSuK",
+          "spotify:track:6JiwGHmyR83t8O0nF4TMEZ",
+          "spotify:track:0xIR7Lq8zPvhP6ZDob3hSR",
+          "spotify:track:2WtfjI0gkEtEjLYp7NCwh8",
+          "spotify:track:4swaK22G8oP6gCuepch3mZ",
+          "spotify:track:2OyfzAx9cnFVhIyD1fLInM",
+          "spotify:track:7JOvKOJdNTPTbrTISRg19A",
+          "spotify:track:6FFLicMj8uQ86r4SN5E6kC",
+          "spotify:track:0rm5ZOsXMSULEYSc97Mb8h",
+          "spotify:track:1vP7Zhid3y6X7Cg3mzYces",
+          "spotify:track:2NckWVqybnIYKVnh5R3Xwc",
+          "spotify:track:4SuT88hICgaQhVKdaW8eLK",
+          "spotify:track:0DJ6Iq2FpHIsC56XfHV8MT",
+          "spotify:track:2tME4aLx5uVKvF4BNaoSjG",
+          "spotify:track:3jhraV3vWBGrMcszjGv2BP",
+          "spotify:track:7vdHQZGeFANkVvofruoO8J",
+          "spotify:track:2uinZi5kCjq9KHmHYZYecG",
+          "spotify:track:776GQNLGv5oJSXeOizM66F"
+        ],
+        "listing": {
+          "name": "KALX - Sunday evening with Carolyn - 2026-11-15",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
