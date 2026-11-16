@@ -33469,7 +33469,7 @@
           "start_time": "2026-11-15T19:00:00-0800",
           "end_time": "2026-11-15T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0wOS9OvtrGMHwZXLjfoipY",
         "desired_uris": [
@@ -33493,8 +33493,103 @@
           "spotify:track:2LqlFFdnXyKky01Y2WKnFH"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T22:00:00-0800",
+          "broadcast_start": "2026-11-15T19:00:00-0800",
+          "imported_at": "2026-11-16T15:07:02.866574909+00:00",
+          "last_updated": "2026-11-16 15:07 UTC",
           "name": "KPOO - Sounds of the City - 2026-11-15",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Charles Mingus"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ed205df0a37cfd8d127c299d",
+              "name": "Pithecanthropus Erectus"
+            },
+            {
+              "artists": [
+                "Freddie Hubbard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731097e733da5e2b3a8a1bf256",
+              "name": "Here's That Rainy Day"
+            },
+            {
+              "artists": [
+                "Leon Thomas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ad467141c072eccb85c00d83",
+              "name": "Let the Rain Fall on Me"
+            },
+            {
+              "artists": [
+                "Leon Thomas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ad467141c072eccb85c00d83",
+              "name": "Damn Nam (Ain't Goin' to Vietnam)"
+            },
+            {
+              "artists": [
+                "Nina Simone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ab9e501ea160ffcee9daa9c",
+              "name": "Mississippi Goddam - Unedited version from original live concert"
+            },
+            {
+              "artists": [
+                "Charlie Haden"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fabd8d7fc7f730a903b14568",
+              "name": "El Quinto Regimento / Los Cuatro Generales / Viva La Quince Brigada"
+            },
+            {
+              "artists": [
+                "Roy Brooks",
+                "Woody Shaw"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f1970eaf42af19f57cd6eb2",
+              "name": "Taurus Woman - Live"
+            },
+            {
+              "artists": [
+                "Roy Brooks",
+                "Woody Shaw"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f1970eaf42af19f57cd6eb2",
+              "name": "Prelude to Understanding - Live"
+            },
+            {
+              "artists": [
+                "Jimi Hendrix"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273522088789d49e216d9818292",
+              "name": "Voodoo Chile"
+            },
+            {
+              "artists": [
+                "John Coltrane Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273051da334fcb7ed4b42b85c4a",
+              "name": "Out Of This World"
+            },
+            {
+              "artists": [
+                "Rachid Taha"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273671f4fb522764279f84987d4",
+              "name": "Ya Rayah"
+            },
+            {
+              "artists": [
+                "Dr. Lonnie Smith"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273904a1db58e1d2002cf539424",
+              "name": "Stand"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23348406/Sounds-of-the-City",
+          "station": "KPOO",
+          "track_count": 18,
+          "url": "https://open.spotify.com/playlist/0wOS9OvtrGMHwZXLjfoipY"
         }
       },
       "needs_reconciliation": false
