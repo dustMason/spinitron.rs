@@ -19595,7 +19595,7 @@
           "start_time": "2026-11-15T18:00:00-0800",
           "end_time": "2026-11-15T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2964LUHaMk9S9YQaBiXhSo",
         "desired_uris": [
@@ -19634,8 +19634,104 @@
           "spotify:track:776GQNLGv5oJSXeOizM66F"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T21:00:00-0800",
+          "broadcast_start": "2026-11-15T18:00:00-0800",
+          "imported_at": "2026-11-16T15:02:53.801460462+00:00",
+          "last_updated": "2026-11-16 15:02 UTC",
           "name": "KALX - Sunday evening with Carolyn - 2026-11-15",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Rings"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c61def09139ed62b07726d6f",
+              "name": "I Wanna Be Free"
+            },
+            {
+              "artists": [
+                "Teengenerate"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf67b10a0788a8aa8221c719",
+              "name": "Dressed in Black"
+            },
+            {
+              "artists": [
+                "The GTO's"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731a91d0379a8cdfbb09a480fc",
+              "name": "Punk Rocker"
+            },
+            {
+              "artists": [
+                "Doe St"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273153c6a22892ffafb034fc6c4",
+              "name": "Gizmo"
+            },
+            {
+              "artists": [
+                "Death Valley Girls"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5657edda8c045744c3fc446",
+              "name": "Welcome to Earth"
+            },
+            {
+              "artists": [
+                "The Catburgers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d381bc7e70b4db753b197f5",
+              "name": "The Frightened Girl"
+            },
+            {
+              "artists": [
+                "CIA Debutante"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ade4151d4f5ea30380daeb4d",
+              "name": "Flesh Microchip Repair"
+            },
+            {
+              "artists": [
+                "Darko the Super"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737295313be5070f01e6c91864",
+              "name": "How To Play Basketball in the Rain and Not Get Wet"
+            },
+            {
+              "artists": [
+                "BBGuns",
+                "Height Keech"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e2a1eb22ab4439e336847457",
+              "name": "Lich"
+            },
+            {
+              "artists": [
+                "Twisted Teens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b70d5388afd345b4a00010af",
+              "name": "Circus Clown"
+            },
+            {
+              "artists": [
+                "Walter Daniels",
+                "Jack Oblivian"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c08dbf1628780eac4a0c2e6",
+              "name": "Two Six Packs Away"
+            },
+            {
+              "artists": [
+                "Charlie Douglas",
+                "Dave Dudley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da3f4ace752f5583759fa92e",
+              "name": "Pinball Machine"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23348242/Sunday-evening-with-Carolyn",
+          "station": "KALX",
+          "track_count": 33,
+          "url": "https://open.spotify.com/playlist/2964LUHaMk9S9YQaBiXhSo"
         }
       },
       "needs_reconciliation": false
