@@ -19464,6 +19464,38 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23347575": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23347575,
+          "title": "I Scream Sundaze",
+          "url": "https://spinitron.com/KALX/pl/23347575/I-Scream-Sundaze",
+          "start_time": "2026-11-15T15:00:00-0800",
+          "end_time": "2026-11-15T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1wHwCSzh8bT8TCAhT6Xtb2",
+          "spotify:track:5n2yi0Zi7NUdDtdrJtjhvV",
+          "spotify:track:6JYfgDXzsvnbTNvcj4z1YB",
+          "spotify:track:7CVhwXEyCQl4CNDxirAtJA",
+          "spotify:track:33TkAjJTD572Eo7jorxv5Q",
+          "spotify:track:4aFjvmvF6CBAghZGuIPu4N",
+          "spotify:track:1abZmVMV9G6CWcw3O0hrWq",
+          "spotify:track:41L35GQRueulDryBdjD5C2",
+          "spotify:track:7cKLGVDC1ddzV2WeyW7LxK",
+          "spotify:track:5GMLd3dQhBc7HZCpyENRZK",
+          "spotify:track:5w8SkYE6OdvlfUVl6FSURj"
+        ],
+        "listing": {
+          "name": "KALX - I Scream Sundaze - 2026-11-15",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
