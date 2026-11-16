@@ -19316,6 +19316,59 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23346672": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23346672,
+          "title": "I'd Prefer Not To",
+          "url": "https://spinitron.com/KALX/pl/23346672/I-d-Prefer-Not-To",
+          "start_time": "2026-11-15T12:00:00-0800",
+          "end_time": "2026-11-15T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2jODBY4vQC5VoZ5XAF1MCr",
+          "spotify:track:4Svd2UEyKUP5hGeOxFow3k",
+          "spotify:track:7If4ZwuM8ihIbQq9xlQtYu",
+          "spotify:track:38jCyYn0FGKaVTzYLoH7EP",
+          "spotify:track:1vP7Zhid3y6X7Cg3mzYces",
+          "spotify:track:73xAt1WIKaoN8SYww3gVlu",
+          "spotify:track:0ldEz91d6WizZyp3K9s9ao",
+          "spotify:track:1YICirKzYnNehzydtcQENp",
+          "spotify:track:3E8wDLAW6u8mqZ5slhMgP6",
+          "spotify:track:5Mg3qkRdZKFAVJFvS1mOsd",
+          "spotify:track:75C4XA1qgWr3BdjKgbH9KY",
+          "spotify:track:5rWgevPVAUUN78FA5RNzPc",
+          "spotify:track:1Ro7L7RPp5P8heOfW4EQKA",
+          "spotify:track:0OeMlMApA0XFXLB1EJZ1BN",
+          "spotify:track:4G4Wnr6Eq0mKDLq1KnGRm3",
+          "spotify:track:6F3HhO5MUqXjVMrS0ma5Py",
+          "spotify:track:2s3koNCSus1PDUVeBCo3bX",
+          "spotify:track:1ZpVS3oSVTmVYuVdAtyuRf",
+          "spotify:track:5VXthNTeEwQdNry7CH9bGC",
+          "spotify:track:7okAU0E2rRx2i441VxZqEv",
+          "spotify:track:37zn0lLRybH67IuWCemVf6",
+          "spotify:track:2C044ihuDdE4WTIo6gJeIT",
+          "spotify:track:2yCe9sNbltQQF5f9hqtcnk",
+          "spotify:track:7Izv79UWDt0Vtn5nisAObO",
+          "spotify:track:2Gve53NtW0okQ6p7gElnY0",
+          "spotify:track:2BHrXmwpw3svjTJl1WaWid",
+          "spotify:track:4Y2eRj5QGLVD5kvWthsI9K",
+          "spotify:track:48eKZiTOuey1XGXHwhd5KA",
+          "spotify:track:1gqHNNom3Sipu5XIj7yAI6",
+          "spotify:track:59zHS0hv1wPZXlSXt066g0",
+          "spotify:track:2JmvZHTL1CcMHW5CR5TI85",
+          "spotify:track:6AC2VDhh56DlkOMYjYs4Tg"
+        ],
+        "listing": {
+          "name": "KALX - I'd Prefer Not To - 2026-11-15",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
