@@ -33786,7 +33786,7 @@
           "start_time": "2026-11-16T02:00:00-0800",
           "end_time": "2026-11-16T05:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0N4eeEOaUZmbJstQXFGnqH",
         "desired_uris": [
@@ -33831,8 +33831,102 @@
           "spotify:track:7poCmfMRbKgPQoA1RBIMGE"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T05:00:00-0800",
+          "broadcast_start": "2026-11-16T02:00:00-0800",
+          "imported_at": "2026-11-16T15:08:24.326448149+00:00",
+          "last_updated": "2026-11-16 15:08 UTC",
           "name": "KPOO - Music Variety - 2026-11-16",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Isley, Jasper, Isley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e78e5115b648f9899d2c0742",
+              "name": "Caravan of Love"
+            },
+            {
+              "artists": [
+                "Aretha Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e915b4b1dbc4ba35e3dc054e",
+              "name": "Freeway of Love - Single Mix"
+            },
+            {
+              "artists": [
+                "DeBarge"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737a5a52177044460e8e5060ae",
+              "name": "Rhythm Of The Night"
+            },
+            {
+              "artists": [
+                "Kool & The Gang"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da9860fd7e6d59b6e237381a",
+              "name": "Cherish - 12\" Version"
+            },
+            {
+              "artists": [
+                "Freddie Jackson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27344146332b82d36aa7e2b0c1c",
+              "name": "Rock Me Tonight For Old Times Sake"
+            },
+            {
+              "artists": [
+                "Commodores"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308c1e6bf49f37031dea3b907",
+              "name": "Nightshift"
+            },
+            {
+              "artists": [
+                "DeBarge"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737a5a52177044460e8e5060ae",
+              "name": "Who's Holding Donna Now?"
+            },
+            {
+              "artists": [
+                "The Temptations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d51cb9a6461fc75eddd3560b",
+              "name": "Treat Her Like A Lady"
+            },
+            {
+              "artists": [
+                "Maze",
+                "Frankie Beverly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2e4ca13a96828e3b0da0c3b",
+              "name": "Back In Stride"
+            },
+            {
+              "artists": [
+                "Heatwave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bb165e8b821025425e9dabef",
+              "name": "Always and Forever"
+            },
+            {
+              "artists": [
+                "Al Green"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735bba82fc0d047f6f23177767",
+              "name": "For the Good Times"
+            },
+            {
+              "artists": [
+                "The Stylistics"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e1d3ce571c3c8c92e23c5e6e",
+              "name": "You Are Everything"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23349835/Music-Variety",
+          "station": "KPOO",
+          "track_count": 39,
+          "url": "https://open.spotify.com/playlist/0N4eeEOaUZmbJstQXFGnqH"
         }
       },
       "needs_reconciliation": false
