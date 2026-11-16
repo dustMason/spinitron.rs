@@ -32990,7 +32990,7 @@
           "start_time": "2026-11-15T02:00:00-0800",
           "end_time": "2026-11-15T05:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3aCtkUxhlUeLKHDY1c4uJ2",
         "desired_uris": [
@@ -33043,8 +33043,102 @@
           "spotify:track:2bIfM0ZOF4gxK1BeqH3Djm"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T05:00:00-0800",
+          "broadcast_start": "2026-11-15T02:00:00-0800",
+          "imported_at": "2026-11-16T15:05:00.583046948+00:00",
+          "last_updated": "2026-11-16 15:05 UTC",
           "name": "KPOO - BLUES TIL SUNRISE - 2026-11-15",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Sly Stone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27361774b61ac796209346464fd",
+              "name": "Buttermilk (Pt. 1)"
+            },
+            {
+              "artists": [
+                "Lowell Fulson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273847d741d48cec51684eb6f49",
+              "name": "Tramp - Live"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "Universal Production Music"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0769d04724d32ee369b0229",
+              "name": "Revival"
+            },
+            {
+              "artists": [
+                "The Smith Tucker Conspiracy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e7fe2f8ae2fb9b89492a1197",
+              "name": "Dobro Moon"
+            },
+            {
+              "artists": [
+                "Universal Production Music"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737772773a974c10e4889f3ce9",
+              "name": "Landscapes"
+            },
+            {
+              "artists": [
+                "Universal Production Music"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739071d2fb25996f30f052baac",
+              "name": "Omen"
+            },
+            {
+              "artists": [
+                "Network Music Ensemble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348347e4d58cc5f4d42e4f2e8",
+              "name": "Denim Blues"
+            },
+            {
+              "artists": [
+                "Shae Star"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739c19bc67520663e86f5efd14",
+              "name": "Black Wall Street"
+            },
+            {
+              "artists": [
+                "Universal Production Music"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b99619820b84c85ab8c042cb",
+              "name": "Vistas"
+            },
+            {
+              "artists": [
+                "Universal Production Music"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0769d04724d32ee369b0229",
+              "name": "Revival"
+            },
+            {
+              "artists": [
+                "The Av8R",
+                "Adambom"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f162fcc92565ecc20478fc3",
+              "name": "Little Boy"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23344548/BLUES-TIL-SUNRISE",
+          "station": "KPOO",
+          "track_count": 47,
+          "url": "https://open.spotify.com/playlist/3aCtkUxhlUeLKHDY1c4uJ2"
         }
       },
       "needs_reconciliation": false
