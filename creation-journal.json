@@ -33316,7 +33316,7 @@
           "start_time": "2026-11-15T15:00:00-0800",
           "end_time": "2026-11-15T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3NyDPNK3zPxmAQasp2Zu4M",
         "desired_uris": [
@@ -33358,8 +33358,103 @@
           "spotify:track:3rpp2A5bFoZETJn3MHigBh"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T18:00:00-0800",
+          "broadcast_start": "2026-11-15T15:00:00-0800",
+          "imported_at": "2026-11-16T15:06:21.655336111+00:00",
+          "last_updated": "2026-11-16 15:06 UTC",
           "name": "KPOO - Weekend Soul sounds - 2026-11-15",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Lighter Shade Of Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27316c64c43d760dd3a21bd0061",
+              "name": "On A Sunday Afternoon"
+            },
+            {
+              "artists": [
+                "The Trammps"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27318afda762b8f42e5016e1155",
+              "name": "Disco Inferno"
+            },
+            {
+              "artists": [
+                "Eddie Money"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273671e9ea05e6bab5aaeda7562",
+              "name": "Two Tickets To Paradise"
+            },
+            {
+              "artists": [
+                "Queen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730cb397024b7a1185c070d65a",
+              "name": "We Will Rock You - Movie Mix"
+            },
+            {
+              "artists": [
+                "John Travolta",
+                "Olivia Newton-John"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b68df485f3304211904548a8",
+              "name": "Summer Nights - From “Grease”"
+            },
+            {
+              "artists": [
+                "Kenny Loggins",
+                "Stevie Nicks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e69beda021bb528341b19b59",
+              "name": "Whenever I Call You \"Friend\" (feat. Stevie Nicks)"
+            },
+            {
+              "artists": [
+                "Heatwave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bb165e8b821025425e9dabef",
+              "name": "Always and Forever"
+            },
+            {
+              "artists": [
+                "The Jackson 5"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320112a0321d2efc7384db456",
+              "name": "I'll Be There"
+            },
+            {
+              "artists": [
+                "Yvonne Elliman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c129b7e46bb0d8b054dae51f",
+              "name": "If I Can't Have You"
+            },
+            {
+              "artists": [
+                "McFadden & Whitehead"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5ce262f4a980777686922e6",
+              "name": "Ain't No Stoppin' Us Now"
+            },
+            {
+              "artists": [
+                "The Delfonics"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f606a66ae319776c0dc86ce8",
+              "name": "Didn't I (Blow Your Mind This Time)"
+            },
+            {
+              "artists": [
+                "Ann Peebles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273943b4cc92b7af0f22190eaef",
+              "name": "I Can't Stand the Rain"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23347484/Weekend-Soul-sounds",
+          "station": "KPOO",
+          "track_count": 36,
+          "url": "https://open.spotify.com/playlist/3NyDPNK3zPxmAQasp2Zu4M"
         }
       },
       "needs_reconciliation": false
