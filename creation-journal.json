@@ -33458,6 +33458,45 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23348406": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23348406,
+          "title": "Sounds of the City",
+          "url": "https://spinitron.com/KPOO/pl/23348406/Sounds-of-the-City",
+          "start_time": "2026-11-15T19:00:00-0800",
+          "end_time": "2026-11-15T22:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5Al4biQxtWuzwFlZWmaqyp",
+          "spotify:track:2C2OlVw546IK1a47pW2nES",
+          "spotify:track:6NndVXZS9ir3oPXO3LnqJN",
+          "spotify:track:2QjXCUOdy9dU7Auwx8i3CE",
+          "spotify:track:3uJDGwpBl0ZFkNWLAWUa5O",
+          "spotify:track:4IUzt5aSsonVMOklbIXwtb",
+          "spotify:track:6Uziq1YYTAZakfHCCjuSI1",
+          "spotify:track:0pwR9gYUYa26Qw7Ae4zVBD",
+          "spotify:track:0auKlivXpm76wR63mMJ3pR",
+          "spotify:track:6eZfLDInqkFsD8I7NYrO9l",
+          "spotify:track:57vLKSsU2gUirCUpUttlX2",
+          "spotify:track:0gW1tDZI0J30naa7U9RzVg",
+          "spotify:track:1iv95e8ehXfeCwt56JCcMb",
+          "spotify:track:5xo4mhjSvE43PC5QapRkWR",
+          "spotify:track:0fLwKttkpqaQDqDy8JH8Ul",
+          "spotify:track:6U0Z0QmBuo2Du2zoEeYzUv",
+          "spotify:track:0LKoE5cIyNMv8QZbpmQRN7",
+          "spotify:track:2LqlFFdnXyKky01Y2WKnFH"
+        ],
+        "listing": {
+          "name": "KPOO - Sounds of the City - 2026-11-15",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
