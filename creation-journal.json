@@ -33153,7 +33153,7 @@
           "start_time": "2026-11-15T12:00:00-0800",
           "end_time": "2026-11-15T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2V1KdT4CtJstCTfTa6fpU6",
         "desired_uris": [
@@ -33201,8 +33201,107 @@
           "spotify:track:7b1T6BrEK0BnRRbPCQXW44"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T15:00:00-0800",
+          "broadcast_start": "2026-11-15T12:00:00-0800",
+          "imported_at": "2026-11-16T15:05:41.305103115+00:00",
+          "last_updated": "2026-11-16 15:05 UTC",
           "name": "KPOO - Hip Hop For The People - 2026-11-15",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Alwa Gordon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ff11190bca9fb6f30b828e3b",
+              "name": "Loving Yourself"
+            },
+            {
+              "artists": [
+                "R Reed"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273615c5cacd6369c012fb8afc8",
+              "name": "Pipers Song"
+            },
+            {
+              "artists": [
+                "Wagon Cookin'",
+                "Melina Jones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273606abb61138cb58b636cccd8",
+              "name": "Nicest Aligned (feat. Melina Jones)"
+            },
+            {
+              "artists": [
+                "Northcliffe Records"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730bfb155668358cfcd249321f",
+              "name": "Limits (Jody4 feat King Styne)"
+            },
+            {
+              "artists": [
+                "Kinter",
+                "Cohlman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731e915548c4a978558740e9db",
+              "name": "Old Dudes"
+            },
+            {
+              "artists": [
+                "Liyah Dalani"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee1060715ed5add69117d35f",
+              "name": "Stargaze"
+            },
+            {
+              "artists": [
+                "Lak",
+                "Capone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c1ddf2265620a4266f2f7af7",
+              "name": "Black Woman"
+            },
+            {
+              "artists": [
+                "The Grynch"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f01fce038dbcf37bf2f24eba",
+              "name": "Wildz"
+            },
+            {
+              "artists": [
+                "Baauer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27352accf4b5878e6b71a7c3356",
+              "name": "Dum Dum"
+            },
+            {
+              "artists": [
+                "Tone Oliver",
+                "Be!"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732ba918d5b31231e923054e96",
+              "name": "Sacred Geometry"
+            },
+            {
+              "artists": [
+                "Doggtown Dro",
+                "Lucho Amor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f05ca48efea607f1615610e2",
+              "name": "ICE BOX"
+            },
+            {
+              "artists": [
+                "Frak",
+                "Nef The Pharaoh"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c4759d404eee3f369ef033a5",
+              "name": "Golf Clap"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23346657/Hip-Hop-For-The-People",
+          "station": "KPOO",
+          "track_count": 42,
+          "url": "https://open.spotify.com/playlist/2V1KdT4CtJstCTfTa6fpU6"
         }
       },
       "needs_reconciliation": false
