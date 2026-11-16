@@ -18928,7 +18928,7 @@
           "start_time": "2026-11-15T06:00:00-0800",
           "end_time": "2026-11-15T08:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1zpaG7bWvd0YB0RXvrNDUe",
         "desired_uris": [
@@ -18950,8 +18950,103 @@
           "spotify:track:3eWB35Wu4zZ0whrBiAkyZm"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T08:00:00-0800",
+          "broadcast_start": "2026-11-15T06:00:00-0800",
+          "imported_at": "2026-11-16T14:59:29.813875542+00:00",
+          "last_updated": "2026-11-16 14:59 UTC",
           "name": "KALX - MOLDY BREAD - 2026-11-15",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Boy Harsher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a30ac42529d47e0abeebfc94",
+              "name": "Ice Pick (Walk Away)"
+            },
+            {
+              "artists": [
+                "abracadabra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e33833d94d88fbfbf50442e8",
+              "name": "face card"
+            },
+            {
+              "artists": [
+                "Beach House"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bb9f22f4b196fa10308d77a7",
+              "name": "Wishes"
+            },
+            {
+              "artists": [
+                "Allah-Las"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fe822f5868d8a310d28d4e0",
+              "name": "Sirenas"
+            },
+            {
+              "artists": [
+                "Shellac"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c0b6f520aac209ccbe8a0608",
+              "name": "How I Wrote How I Wrote Elastic Man (cock & bull)"
+            },
+            {
+              "artists": [
+                "XUXA SANTAMARIA"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733ae5c5095c93000bf70809a9",
+              "name": "Quintana Roo"
+            },
+            {
+              "artists": [
+                "Marinero"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273faacf47df98d9cd46e11c70c",
+              "name": "Dream Suite"
+            },
+            {
+              "artists": [
+                "La Misa Negra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dd3f8441bdace82efcf59bcd",
+              "name": "Sancocho"
+            },
+            {
+              "artists": [
+                "La Doña",
+                "Son Rompe Pera"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739754cd74afc7c3edb5f6b851",
+              "name": "Buscando un Novio"
+            },
+            {
+              "artists": [
+                "Bye Parula",
+                "Elisapie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273825b1134b4819fd0f6cefd87",
+              "name": "Miedo de olvidar"
+            },
+            {
+              "artists": [
+                "Bicicletas Por La Paz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736dae49884cf9c1c0e195ea79",
+              "name": "Qué Está Pasando?"
+            },
+            {
+              "artists": [
+                "Flaco Jimenez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fcbef49ddd5655504a71a823",
+              "name": "El Guero Polkas"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23345419/MOLDY-BREAD",
+          "station": "KALX",
+          "track_count": 16,
+          "url": "https://open.spotify.com/playlist/1zpaG7bWvd0YB0RXvrNDUe"
         }
       },
       "needs_reconciliation": false
