@@ -19061,7 +19061,7 @@
           "start_time": "2026-11-15T08:00:00-0800",
           "end_time": "2026-11-15T10:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0VlXNel5Rul05Rt5i3hPTC",
         "desired_uris": [
@@ -19082,8 +19082,103 @@
           "spotify:track:1n4hN1RuITgNlHQpzuHESz"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T10:00:00-0800",
+          "broadcast_start": "2026-11-15T08:00:00-0800",
+          "imported_at": "2026-11-16T15:00:10.358542395+00:00",
+          "last_updated": "2026-11-16 15:00 UTC",
           "name": "KALX - Blondest of the Dirty - 2026-11-15",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Cornelius"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735b7ba65d73f083ce260f0f49",
+              "name": "Mirrors"
+            },
+            {
+              "artists": [
+                "The Odyssey Cult"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730e8302a2a5aaf343d0deb5a7",
+              "name": "The Yeti's Eyes"
+            },
+            {
+              "artists": [
+                "Station Model Violence"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732f79e3ce2c77c90db574b185",
+              "name": "Heat - Single Version"
+            },
+            {
+              "artists": [
+                "Exploding Zones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f9c8f803df31ec43b9504e7",
+              "name": "Sun Pill"
+            },
+            {
+              "artists": [
+                "Mitch Woods"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a841df08a8ecfce50753901",
+              "name": "Broke - Live"
+            },
+            {
+              "artists": [
+                "Noah Meites",
+                "Brightwork New Music"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a9f3b441979a97a305030787",
+              "name": "Cadere"
+            },
+            {
+              "artists": [
+                "Amanda Lear"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eaa5ddce8183134ee57a4018",
+              "name": "Love Your Body"
+            },
+            {
+              "artists": [
+                "Sean Mason"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a01fbabb3bd6a0f6201ba5d3",
+              "name": "One United - Live at Dizzy's Club"
+            },
+            {
+              "artists": [
+                "Jeff Sova"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a77f05e0491769cb1b29da57",
+              "name": "Drifter"
+            },
+            {
+              "artists": [
+                "Fisher Affair"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273efdd9c78a79e3e25a604abd8",
+              "name": "Suicide & Diamond Rings (Ambient Mix)"
+            },
+            {
+              "artists": [
+                "Haruna Fukazawa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c042a6871df6d3a62e22b0b2",
+              "name": "Mellow Shadow"
+            },
+            {
+              "artists": [
+                "Ardeshir",
+                "Cory Weeds"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27394194eacdc4c5c483524f51c",
+              "name": "Blues Up and Down (feat. Cory Weeds)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23345718/Blondest-of-the-Dirty",
+          "station": "KALX",
+          "track_count": 15,
+          "url": "https://open.spotify.com/playlist/0VlXNel5Rul05Rt5i3hPTC"
         }
       },
       "needs_reconciliation": false
