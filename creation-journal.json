@@ -19888,6 +19888,33 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23349461": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23349461,
+          "title": "Discourse on the 8th & 9th (with Curt Reply)",
+          "url": "https://spinitron.com/KALX/pl/23349461/Discourse-on-the-8th-9th-with-Curt-Reply",
+          "start_time": "2026-11-16T00:00:00-0800",
+          "end_time": "2026-11-16T01:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:64s1hlCl2LgZV0dHkLN4zB",
+          "spotify:track:7J12AZdQ5r3yi8y1hE9yUJ",
+          "spotify:track:0QrwsOaoCpUO2ziLi6lUiM",
+          "spotify:track:38RXYv5jcWulQbzr46sbhE",
+          "spotify:track:2IrB7Xq1VvcatiOvWbbA4H",
+          "spotify:track:52nUT9g0A8k6YXntuz6lcx"
+        ],
+        "listing": {
+          "name": "KALX - Discourse on the 8th & 9th (with Curt Reply) - 2026-11-16",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
