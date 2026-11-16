@@ -18918,6 +18918,43 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23345419": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23345419,
+          "title": "MOLDY BREAD",
+          "url": "https://spinitron.com/KALX/pl/23345419/MOLDY-BREAD",
+          "start_time": "2026-11-15T06:00:00-0800",
+          "end_time": "2026-11-15T08:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0mckaPr96LQTfFpddaiA7G",
+          "spotify:track:3pbmorcywhrvV2dz3oB4vI",
+          "spotify:track:0FYIBXiwSOVfoDNpnIHqCs",
+          "spotify:track:515Cc83pMWAspYZzBH3oDr",
+          "spotify:track:3H0pOe5XhDw5TjalSvEc18",
+          "spotify:track:0my4hgtKlB6q5G1UBjbT9V",
+          "spotify:track:1rqGes0oHiWQRoIhsWqcGo",
+          "spotify:track:6xBEkw71faYlJRo0Kf7Y8j",
+          "spotify:track:5gWfBV98plKdQXoihmYdYS",
+          "spotify:track:38x2fXdSq0hZnHy0BHAAOP",
+          "spotify:track:0hspOFqQ9AQQp0hYlfBbq4",
+          "spotify:track:6LVmBKB1url6TI6GMnsfpr",
+          "spotify:track:5a13G958woUNSUaQAdW3Fb",
+          "spotify:track:5pcLlQ9afSjMSUFFhs0tYV",
+          "spotify:track:5iK2SvTDRyGlb6d88o1K5l",
+          "spotify:track:3eWB35Wu4zZ0whrBiAkyZm"
+        ],
+        "listing": {
+          "name": "KALX - MOLDY BREAD - 2026-11-15",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
