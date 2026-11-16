@@ -19051,6 +19051,42 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23345718": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23345718,
+          "title": "Blondest of the Dirty",
+          "url": "https://spinitron.com/KALX/pl/23345718/Blondest-of-the-Dirty",
+          "start_time": "2026-11-15T08:00:00-0800",
+          "end_time": "2026-11-15T10:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2APyZJAxuQ87Zvogx1Mrsp",
+          "spotify:track:5XrLr5xOpNC25M7Ecuez2R",
+          "spotify:track:7fgYipxDJCUuU5z3WDEmwZ",
+          "spotify:track:2dwJu5YAygyVjzvd90uwIR",
+          "spotify:track:3NX9a2mTvW1zU6gYfBbPfQ",
+          "spotify:track:4j9njwdFBzvZOIvKnYNKA6",
+          "spotify:track:4lLwUbeW5z9kiPc3MDMPsQ",
+          "spotify:track:4Z33N3V23ehKTFQqRKAK9o",
+          "spotify:track:1Cew3ZwAZlHUCRf2ojSb0Z",
+          "spotify:track:05YZzTadNIAzabfsR6MkqP",
+          "spotify:track:3gNKdL3CTV9WpW8QaEdswF",
+          "spotify:track:2kRwHZp43rFrnRo4ZPbWAb",
+          "spotify:track:40CYiWGqAGRaKQSd5kWN8L",
+          "spotify:track:3XZAIi3WcfNTPPFRYyVfam",
+          "spotify:track:1n4hN1RuITgNlHQpzuHESz"
+        ],
+        "listing": {
+          "name": "KALX - Blondest of the Dirty - 2026-11-15",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
