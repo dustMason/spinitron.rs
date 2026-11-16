@@ -19736,6 +19736,63 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23348855": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23348855,
+          "title": "Office Hours",
+          "url": "https://spinitron.com/KALX/pl/23348855/Office-Hours",
+          "start_time": "2026-11-15T21:00:00-0800",
+          "end_time": "2026-11-16T00:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5DnT9a5IM3eMjKgXTWVJvi",
+          "spotify:track:45QEBxnCe3NANZhc2JzkB2",
+          "spotify:track:28pvm0cuZtPWgmfrcrOn8E",
+          "spotify:track:2B8BHU6KqYiDbabtYEqfqD",
+          "spotify:track:7hbSb9bj1sfqXGgxGexZi5",
+          "spotify:track:3uXjd0SPXwbaNVuecZncU2",
+          "spotify:track:04hiGqFeM4myASYrl1Arbr",
+          "spotify:track:4Z5C9LDf5S5pWFAoPWN4ej",
+          "spotify:track:7LZoKNMhsZ7qbP1lYGDva8",
+          "spotify:track:5Va3gOnySDue0AzFOMz7eV",
+          "spotify:track:7o4KXIAPYoq97jEMIyY8tp",
+          "spotify:track:4Sfa7hdVkqlM8UW5LsSY3F",
+          "spotify:track:6wxDu7ISgm5nppPMea4W7D",
+          "spotify:track:59MJGHPkbFOQvyzuFsCArg",
+          "spotify:track:1UHoHmHWdu0EX557Oqoq2P",
+          "spotify:track:4guLK2XzUfHuLkQchafIyk",
+          "spotify:track:4vqp9GaO7RVkinyrYY5W6R",
+          "spotify:track:63G1ByxixJzynsVtQcBqNQ",
+          "spotify:track:4joSIMcsDjlIxrVQe9ARbJ",
+          "spotify:track:5HHgj2maM7xHainvDkEulw",
+          "spotify:track:785Qya5mtMUwBQtuypVqrx",
+          "spotify:track:6IB77qAKHpaUyCkS5BAMAP",
+          "spotify:track:7qWHLT10dDsu8fCJZFkL5y",
+          "spotify:track:5CPTy1vepzxa0zqcs7F4F1",
+          "spotify:track:53vhpi8TTXGJvwVjFMuzu7",
+          "spotify:track:4DyfJFTQb27adTDdhFeSgD",
+          "spotify:track:1A8QcZJKhUmJwdqzoAahvR",
+          "spotify:track:58vMVIW79CYpjUWZsKsww5",
+          "spotify:track:2WevlN0J4xE0sbuL83OznB",
+          "spotify:track:5wfrfdyvHBOn3XYIkAp0jN",
+          "spotify:track:7kDWwFekRc1ZlzNX0VTjfr",
+          "spotify:track:7g0gbrRylRMJjmTodSpgAy",
+          "spotify:track:5yXf2ZVlBdgIGxbSKb6VFW",
+          "spotify:track:0vfPEfQk0ZCHExTZ007Ryr",
+          "spotify:track:2N2yrmodOnVF10mKvItC9P",
+          "spotify:track:3R0wychYSY8oTVZn73JdSA"
+        ],
+        "listing": {
+          "name": "KALX - Office Hours - 2026-11-15",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
