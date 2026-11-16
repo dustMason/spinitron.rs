@@ -19746,7 +19746,7 @@
           "start_time": "2026-11-15T21:00:00-0800",
           "end_time": "2026-11-16T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6VQjOB0lW3rA8Dov3043QE",
         "desired_uris": [
@@ -19788,8 +19788,102 @@
           "spotify:track:3R0wychYSY8oTVZn73JdSA"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T00:00:00-0800",
+          "broadcast_start": "2026-11-15T21:00:00-0800",
+          "imported_at": "2026-11-16T15:03:33.921112289+00:00",
+          "last_updated": "2026-11-16 15:03 UTC",
           "name": "KALX - Office Hours - 2026-11-15",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Creedence Clearwater Revival"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739b7a4a59ac03447db7491f37",
+              "name": "Have You Ever Seen The Rain"
+            },
+            {
+              "artists": [
+                "Michael Hurley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27370cbc18ec32aefa0b00cd22e",
+              "name": "Fat Mama"
+            },
+            {
+              "artists": [
+                "Townes Van Zandt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f7f3bfc6ef870328e1e5093e",
+              "name": "My Proud Mountains"
+            },
+            {
+              "artists": [
+                "Andrew Sa",
+                "H.C. McEntire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ab8704ca438639b830d4c4e0",
+              "name": "Lavender Cowboy"
+            },
+            {
+              "artists": [
+                "The Be Good Tanyas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733f4d69f6be7e58fad5f8331f",
+              "name": "In My Time Of Dying"
+            },
+            {
+              "artists": [
+                "Widowspeak"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273838883dbe74faba74c1fd563",
+              "name": "In the Pines"
+            },
+            {
+              "artists": [
+                "Koma Wetan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273351a0b37d310e27beb044725",
+              "name": "Hasan"
+            },
+            {
+              "artists": [
+                "Bill Withers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f64b9ea8a8a409c6af86134f",
+              "name": "I'm Her Daddy"
+            },
+            {
+              "artists": [
+                "Nina Simone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d443fe6c1b51189c885c8bb8",
+              "name": "To Love Somebody"
+            },
+            {
+              "artists": [
+                "Antony"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273045e7c0fde3dcdd9a3b12733",
+              "name": "Landslide"
+            },
+            {
+              "artists": [
+                "Bye Parula"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273825b1134b4819fd0f6cefd87",
+              "name": "Home"
+            },
+            {
+              "artists": [
+                "Passion Pit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ad4c64d56570e6137b02fa54",
+              "name": "Take a Walk"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23348855/Office-Hours",
+          "station": "KALX",
+          "track_count": 36,
+          "url": "https://open.spotify.com/playlist/6VQjOB0lW3rA8Dov3043QE"
         }
       },
       "needs_reconciliation": false
