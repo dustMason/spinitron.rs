@@ -19193,7 +19193,7 @@
           "start_time": "2026-11-15T10:00:00-0800",
           "end_time": "2026-11-15T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0a22XSLebm8Ad15G4tgJkG",
         "desired_uris": [
@@ -19216,8 +19216,102 @@
           "spotify:track:5kv1IfIGXBAisC6cBRRDxm"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T12:00:00-0800",
+          "broadcast_start": "2026-11-15T10:00:00-0800",
+          "imported_at": "2026-11-16T15:00:53.058194119+00:00",
+          "last_updated": "2026-11-16 15:00 UTC",
           "name": "KALX - FREEFORM - 2026-11-15 10:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "above me"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736de01736c40c2c7c90ee2b86",
+              "name": "trample all the flowers"
+            },
+            {
+              "artists": [
+                "Yaa Naara"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b3272f7e0c805ba73d47b233",
+              "name": "Aguro"
+            },
+            {
+              "artists": [
+                "mary in the junkyard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737642addd573054269cb9a577",
+              "name": "Mouse"
+            },
+            {
+              "artists": [
+                "New Gunk Space Funk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273466329c4e1000f7f302fb0e1",
+              "name": "Dream River"
+            },
+            {
+              "artists": [
+                "The Notwist"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fc6d429da0ec4e3408753bed",
+              "name": "Teeth"
+            },
+            {
+              "artists": [
+                "The Odyssey Cult"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a168d6deb5d29cc9d71c4164",
+              "name": "Sun Damage"
+            },
+            {
+              "artists": [
+                "Shannon Lay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273964fbf1a498f5e688fe5d3b7",
+              "name": "The Calling"
+            },
+            {
+              "artists": [
+                "Fontaines D.C.",
+                "ROSALÍA"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273912db68812b0772fa5c1b4b8",
+              "name": "Where Is Gone?"
+            },
+            {
+              "artists": [
+                "CHALK TEETH"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273333afcbf7372a38659427d41",
+              "name": "Floor It"
+            },
+            {
+              "artists": [
+                "Agnes Obel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c34bf09fe2f2369180efd46",
+              "name": "Laymelli"
+            },
+            {
+              "artists": [
+                "Sophia Stel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d778398be51399568ec7528",
+              "name": "Better Believe It"
+            },
+            {
+              "artists": [
+                "Ethel Cain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273986db9312b771d96b665b51c",
+              "name": "Strangers"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23346375/FREEFORM",
+          "station": "KALX",
+          "track_count": 17,
+          "url": "https://open.spotify.com/playlist/0a22XSLebm8Ad15G4tgJkG"
         }
       },
       "needs_reconciliation": false
