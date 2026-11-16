@@ -19326,7 +19326,7 @@
           "start_time": "2026-11-15T12:00:00-0800",
           "end_time": "2026-11-15T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5oAIoniCsI1GNXUj02XHf9",
         "desired_uris": [
@@ -19364,8 +19364,102 @@
           "spotify:track:6AC2VDhh56DlkOMYjYs4Tg"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T15:00:00-0800",
+          "broadcast_start": "2026-11-15T12:00:00-0800",
+          "imported_at": "2026-11-16T15:01:33.280985857+00:00",
+          "last_updated": "2026-11-16 15:01 UTC",
           "name": "KALX - I'd Prefer Not To - 2026-11-15",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sutros"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27300c3a0abf09fb793383f2c8c",
+              "name": "Marigold"
+            },
+            {
+              "artists": [
+                "Son Rompe Pera"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738ebeb57dae8dee7e6ffb9752",
+              "name": "Nada Que Hacer"
+            },
+            {
+              "artists": [
+                "Warp"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737aa8cc24654c8c05e95cf859",
+              "name": "Cellophane"
+            },
+            {
+              "artists": [
+                "Swell Maps"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273096b1e93388ac33479cbf9e9",
+              "name": "Another Song"
+            },
+            {
+              "artists": [
+                "Mesh"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c0cf5d9858a862bf4b0a376",
+              "name": "Quit My Job"
+            },
+            {
+              "artists": [
+                "Spice Boys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a8d441cd68b43d43620cac64",
+              "name": "Can't Turn Back"
+            },
+            {
+              "artists": [
+                "Silicone Prairie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f40df5d1d468fb514e9f3030",
+              "name": "Cows"
+            },
+            {
+              "artists": [
+                "Unity"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27327aa04c9d5dca5fe150e87ec",
+              "name": "3 Weeks"
+            },
+            {
+              "artists": [
+                "abracadabra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d899a6af0c1b67ab441d2b5",
+              "name": "peel away"
+            },
+            {
+              "artists": [
+                "Lee \"Scratch\" Perry",
+                "Mouse On Mars"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db7bf6b6361bc3940021568f",
+              "name": "Hallo Shiva"
+            },
+            {
+              "artists": [
+                "The Serfs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bee09cb21eb0148618d214e2",
+              "name": "Took It All Along"
+            },
+            {
+              "artists": [
+                "The Drin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e11cd65ed998d277f4a4d45",
+              "name": "The Sky Has Lost the Smile"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23346672/I-d-Prefer-Not-To",
+          "station": "KALX",
+          "track_count": 32,
+          "url": "https://open.spotify.com/playlist/5oAIoniCsI1GNXUj02XHf9"
         }
       },
       "needs_reconciliation": false
