@@ -19474,7 +19474,7 @@
           "start_time": "2026-11-15T15:00:00-0800",
           "end_time": "2026-11-15T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5VyU3fQn5xagDLyUPvn1J7",
         "desired_uris": [
@@ -19491,8 +19491,96 @@
           "spotify:track:5w8SkYE6OdvlfUVl6FSURj"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T18:00:00-0800",
+          "broadcast_start": "2026-11-15T15:00:00-0800",
+          "imported_at": "2026-11-16T15:02:13.370341266+00:00",
+          "last_updated": "2026-11-16 15:02 UTC",
           "name": "KALX - I Scream Sundaze - 2026-11-15",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Eloy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732cb10657aaed7e25d15b3e0e",
+              "name": "Future City"
+            },
+            {
+              "artists": [
+                "Checkpoint Charlie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf2d3eed3eb7e40ae1f1656e",
+              "name": "Haben Rock"
+            },
+            {
+              "artists": [
+                "Wolfgang Dauner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730032edb88607ab79e41ee4c0",
+              "name": "Mellodrama Nr. 2A"
+            },
+            {
+              "artists": [
+                "Cybotron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27322527ee328b1f87789d474ff",
+              "name": "Enter"
+            },
+            {
+              "artists": [
+                "Calvin Harris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27338da6ce6fbf85be51b356176",
+              "name": "Acceptable In the 80's"
+            },
+            {
+              "artists": [
+                "Resavoir",
+                "Gregory Uhlmann"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736cc99ab4f2f715d74848469a",
+              "name": "4th Cloud"
+            },
+            {
+              "artists": [
+                "Bassholes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c286be204a063addfbb17712",
+              "name": "Hail Bop!"
+            },
+            {
+              "artists": [
+                "The Clog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db34562fa365670f7c7fe57d",
+              "name": "Fog Devil"
+            },
+            {
+              "artists": [
+                "Alex Wilson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273628fa4c1176f72d592dc1e4c",
+              "name": "Experiment in Sound and Texture No. 2"
+            },
+            {
+              "artists": [
+                "Lali Puna",
+                "Dntel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27352b29bc47b75b77178a5ada9",
+              "name": "Faking The Books - Dntel Rmx"
+            },
+            {
+              "artists": [
+                "Angelo Badalamenti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6212adb4de364a1c633582a",
+              "name": "Organ (Version 3) / Mysteries Of Love"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23347575/I-Scream-Sundaze",
+          "station": "KALX",
+          "track_count": 11,
+          "url": "https://open.spotify.com/playlist/5VyU3fQn5xagDLyUPvn1J7"
         }
       },
       "needs_reconciliation": false
