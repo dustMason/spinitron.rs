@@ -18774,7 +18774,7 @@
           "start_time": "2026-11-15T02:00:00-0800",
           "end_time": "2026-11-15T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6hYyzerXomimZJ6ANF9NgA",
         "desired_uris": [
@@ -18818,8 +18818,102 @@
           "spotify:track:30l0P278tHXo20Xs5Yh4MQ"
         ],
         "listing": {
+          "broadcast_end": "2026-11-15T06:00:00-0800",
+          "broadcast_start": "2026-11-15T02:00:00-0800",
+          "imported_at": "2026-11-16T14:58:49.219056211+00:00",
+          "last_updated": "2026-11-16 14:58 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-15",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Woodentops"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732c0b90adb191225db16ec12a",
+              "name": "Heaven"
+            },
+            {
+              "artists": [
+                "Heaven 17"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a0c0e63cf84dd9a3fcdf086c",
+              "name": "Penthouse And Pavement"
+            },
+            {
+              "artists": [
+                "@"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27393c812017763535bb202b703",
+              "name": "Love In The Dark"
+            },
+            {
+              "artists": [
+                "The Gonks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27353cda633342953b55dcc2286",
+              "name": "I'm a Lonely Night Driver"
+            },
+            {
+              "artists": [
+                "Slippers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734e62a671684ce8d79adf1ca8",
+              "name": "Sunday Morning"
+            },
+            {
+              "artists": [
+                "Real Numbers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd4c70d9048e499cddec6c59",
+              "name": "Star"
+            },
+            {
+              "artists": [
+                "Railcard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a6122a5c770a0ba52f5116b1",
+              "name": "Flannelette"
+            },
+            {
+              "artists": [
+                "Paper Jam"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a0f3eb6d8b4005c138d8f764",
+              "name": "Ojos de Luneta"
+            },
+            {
+              "artists": [
+                "Bill Orcutt",
+                "Mabe Fratti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27378b9a524f5f90f84c5abffbf",
+              "name": "Todo puede ser error"
+            },
+            {
+              "artists": [
+                "Sweeping Promises"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731202a359bc1c2774bc1eb704",
+              "name": "My Friend's An Entomologist"
+            },
+            {
+              "artists": [
+                "Non Plus Temps"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731231dfe75a101bbc0125649c",
+              "name": "The Limit"
+            },
+            {
+              "artists": [
+                "Station Model Violence"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c35d95e9007ae98dead80464",
+              "name": "Crepe Throne"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23344588/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 38,
+          "url": "https://open.spotify.com/playlist/6hYyzerXomimZJ6ANF9NgA"
         }
       },
       "needs_reconciliation": false
