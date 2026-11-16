@@ -19898,7 +19898,7 @@
           "start_time": "2026-11-16T00:00:00-0800",
           "end_time": "2026-11-16T01:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "44gwIXTXgr3hTXUGBtqW7q",
         "desired_uris": [
@@ -19910,8 +19910,64 @@
           "spotify:track:52nUT9g0A8k6YXntuz6lcx"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T01:00:00-0800",
+          "broadcast_start": "2026-11-16T00:00:00-0800",
+          "imported_at": "2026-11-16T15:04:14.140163174+00:00",
+          "last_updated": "2026-11-16 15:04 UTC",
           "name": "KALX - Discourse on the 8th & 9th (with Curt Reply) - 2026-11-16",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Philip Glass",
+                "Feico Deutekom"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dbd9efc8206348f65c08f0fe",
+              "name": "Etude No.5"
+            },
+            {
+              "artists": [
+                "Neil Rolnick"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec6e86e8138caa48b4e3b194",
+              "name": "Lockdown Fantasies: Fantasy 4"
+            },
+            {
+              "artists": [
+                "Warren Ellis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bedd364714813dc8cf108500",
+              "name": "Lynx"
+            },
+            {
+              "artists": [
+                "William Susman",
+                "Piccola Accademia degli Specchi",
+                "Giuliano Cavaliere",
+                "Rina You",
+                "Assunta Cavallari"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a8ceac7adbc1ce39facaeb00",
+              "name": "Clouds and Flames: I. Riding Towards Oblivion"
+            },
+            {
+              "artists": [
+                "Sarah Davachi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273633eec77538dc204a829a0c1",
+              "name": "Songs of the Smile's Fig: III. Follies"
+            },
+            {
+              "artists": [
+                "Max Richter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273508554df02a901638fc50b04",
+              "name": "Late and Soon"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23349461/Discourse-on-the-8th-9th-with-Curt-Reply",
+          "station": "KALX",
+          "track_count": 6,
+          "url": "https://open.spotify.com/playlist/44gwIXTXgr3hTXUGBtqW7q"
         }
       },
       "needs_reconciliation": false
