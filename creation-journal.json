@@ -34739,6 +34739,59 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23354347": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23354347,
+          "title": "Grinders Grooveyard",
+          "url": "https://spinitron.com/KPOO/pl/23354347/Grinders-Grooveyard",
+          "start_time": "2026-11-16T21:00:00-0800",
+          "end_time": "2026-11-17T00:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:7r3NmzkRY26itwhDIm5tTH",
+          "spotify:track:1un4QfKewcJ31CNv61xXl5",
+          "spotify:track:6gboYttbKhD7Piozym7mnQ",
+          "spotify:track:11VhkR4haUePhjBzfh4UDl",
+          "spotify:track:4cfVW79Co9dN5dtDEXUgRZ",
+          "spotify:track:2H6dgGxdZMYZxMcvvoZQk2",
+          "spotify:track:3DSO6ucBVpKLvXiixRvVCX",
+          "spotify:track:4QRV5ZXwMGNgO3KFryDfCC",
+          "spotify:track:239xjuV9jhlOb9SPtDhR6l",
+          "spotify:track:7woH2GC1j5N4QJs62YzHq9",
+          "spotify:track:4e0uA1M95pZ4iK5MUR45o3",
+          "spotify:track:1itaIQGRFzTfB3m6OWMl4n",
+          "spotify:track:7ebLLWt3GdythXdKhnRVxg",
+          "spotify:track:5hTQlc9ltNBk9V15hBwZsS",
+          "spotify:track:5ZFqqXSp47IG32gqO0OUmU",
+          "spotify:track:1rKVYTAvtkenetE098HGoi",
+          "spotify:track:0GkwfJKhTLzDBnil7j1QK1",
+          "spotify:track:5EnbvI4vWY625qkEi4MUKx",
+          "spotify:track:5CuJVWl4otOvZ7s0KzJfdD",
+          "spotify:track:1F216dQvxUidMkjIJKlckX",
+          "spotify:track:7vCRV6he9PSoQ2URFM5Lgn",
+          "spotify:track:6YNfB7DEz32rOINqZn5U4L",
+          "spotify:track:5mIxAWKqje8a3OJhLskxMb",
+          "spotify:track:09aPuBBu8s96gHEIFzp0rD",
+          "spotify:track:7ly9YUAy7GHbNusO199qiB",
+          "spotify:track:5spAjqC772iC2KzDvEkmSr",
+          "spotify:track:60NNGagbOVOH2uj0QmqqZF",
+          "spotify:track:4Fwtps0MLkFSnR5RwBy3VQ",
+          "spotify:track:4mZ7zpXIXRysNjDNIjua1n",
+          "spotify:track:0rcqXiGp1CrZuxwx1Wec5p",
+          "spotify:track:0gWMMHdx6SjgNRFVZEz1OS",
+          "spotify:track:2mA7yqidQednvjpmimWxIp"
+        ],
+        "listing": {
+          "name": "KPOO - Grinders Grooveyard - 2026-11-16",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
