@@ -20822,7 +20822,7 @@
           "start_time": "2026-11-16T17:00:00-0800",
           "end_time": "2026-11-16T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1I0rRTG9V5IzA86iUx7XXV",
         "desired_uris": [
@@ -20830,8 +20830,31 @@
           "spotify:track:6VzzyjTREW550VWsHC1KvR"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T18:00:00-0800",
+          "broadcast_start": "2026-11-16T17:00:00-0800",
+          "imported_at": "2026-11-17T15:46:11.555950866+00:00",
+          "last_updated": "2026-11-17 15:46 UTC",
           "name": "KALX - Take Five - 2026-11-16",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sylvie Courvoisier"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db9ffc6404a392b63089d876",
+              "name": "At Risk"
+            },
+            {
+              "artists": [
+                "Adam O'Farrill"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27336d136a9ff5c8522b04e0ca6",
+              "name": "Herkimer Diamond"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23353288/Take-Five",
+          "station": "KALX",
+          "track_count": 2,
+          "url": "https://open.spotify.com/playlist/1I0rRTG9V5IzA86iUx7XXV"
         }
       },
       "needs_reconciliation": false
