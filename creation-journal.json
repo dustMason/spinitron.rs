@@ -20306,7 +20306,7 @@
           "start_time": "2026-11-16T09:00:00-0800",
           "end_time": "2026-11-16T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7JjqkRkpiG9RdeQvGNfhOp",
         "desired_uris": [
@@ -20344,8 +20344,108 @@
           "spotify:track:7hCvtH8qR5BRKNv0aUjFuD"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T12:00:00-0800",
+          "broadcast_start": "2026-11-16T09:00:00-0800",
+          "imported_at": "2026-11-17T15:43:29.077101839+00:00",
+          "last_updated": "2026-11-17 15:43 UTC",
           "name": "KALX - Swirls Of Whimsy - 2026-11-16",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sun Ra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27355cbbfcd018bcafcb2f0cd3e",
+              "name": "Enlightenment"
+            },
+            {
+              "artists": [
+                "Nduduzo Makhathini",
+                "Shabaka Hutchings"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733615cd9f10af64503fd9614c",
+              "name": "Liyoze Line Nangakithi"
+            },
+            {
+              "artists": [
+                "Angela Autumn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273606f9b1dad50f51a6e82b7c8",
+              "name": "Mountain Stream"
+            },
+            {
+              "artists": [
+                "Magic Sam",
+                "Mighty Joe Young",
+                "Stockholm Slim",
+                "Mack Thompson",
+                "Odie Payne III"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27335e383b307218bf985f61bf9",
+              "name": "I Feel So Good (I Wanna Boogie)"
+            },
+            {
+              "artists": [
+                "Sidney Bechet",
+                "Muggsy Spanier"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738cbf713406011a71a93d9da5",
+              "name": "That's a Plenty"
+            },
+            {
+              "artists": [
+                "Marco Benevento"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f4a70717c8795494e03b0eb",
+              "name": "Frizzante"
+            },
+            {
+              "artists": [
+                "Thee Sinseers",
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cea5e810a36bf0e912d4bcab",
+              "name": "Did Ya Know?"
+            },
+            {
+              "artists": [
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273980e10b54d5d0143ae565c61",
+              "name": "In My Arms"
+            },
+            {
+              "artists": [
+                "Mexican Institute Of Sound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273943f65b1ff016d267aef7baf",
+              "name": "Guacarrocker"
+            },
+            {
+              "artists": [
+                "Willie Bobo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cdbecf55f4d0b1555ad98a66",
+              "name": "Night Walk"
+            },
+            {
+              "artists": [
+                "Ike Quebec"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27351c5c35f4edee1caa23f96ec",
+              "name": "Loie"
+            },
+            {
+              "artists": [
+                "Rance Allen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f735d5fb7811065baa3a55b3",
+              "name": "Lying On The Truth - Live"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23351281/Swirls-Of-Whimsy",
+          "station": "KALX",
+          "track_count": 32,
+          "url": "https://open.spotify.com/playlist/7JjqkRkpiG9RdeQvGNfhOp"
         }
       },
       "needs_reconciliation": false
