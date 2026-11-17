@@ -20460,7 +20460,7 @@
           "start_time": "2026-11-16T12:00:00-0800",
           "end_time": "2026-11-16T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6r4i6I0RKyAkzVvmJRoHWw",
         "desired_uris": [
@@ -20500,8 +20500,102 @@
           "spotify:track:58S75zTC6BHIhRPidAWrqG"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T15:00:00-0800",
+          "broadcast_start": "2026-11-16T12:00:00-0800",
+          "imported_at": "2026-11-17T15:44:09.944587411+00:00",
+          "last_updated": "2026-11-17 15:44 UTC",
           "name": "KALX - Hot Lasagna - 2026-11-16",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Haruomi Hosono"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733af48613b19da7eb6758d587",
+              "name": "Humming “Dream of Love”"
+            },
+            {
+              "artists": [
+                "Elder Charles Beck"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738aa1cdb498ff296731399367",
+              "name": "I'm Goin' To Walk Right In And Make Myself At Home"
+            },
+            {
+              "artists": [
+                "BLARF"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273308b6e0f29848474bf8a3d1a",
+              "name": "Dead Ballerina"
+            },
+            {
+              "artists": [
+                "Jin Hi Kim"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730b61c63676de814f4c5427d3",
+              "name": "Yellow Seed"
+            },
+            {
+              "artists": [
+                "Allan Bryant"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27327902849a0135d06b671ab0e",
+              "name": "Insect Takeover"
+            },
+            {
+              "artists": [
+                "Baby Rose"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731d1bd14e251142f2f9b06171",
+              "name": "Jasmine's Sonnet"
+            },
+            {
+              "artists": [
+                "Ocote Soul Sounds",
+                "Adrian Quesada"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27382f34f641141b31a46a457f7",
+              "name": "La Lucha Sigue"
+            },
+            {
+              "artists": [
+                "Hermanos Gutiérrez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273336267ef13760f7c7bfd8b21",
+              "name": "Yanantin"
+            },
+            {
+              "artists": [
+                "The Animeros"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320691f284c83eb2510348784",
+              "name": "Al Final del Camino"
+            },
+            {
+              "artists": [
+                "Ween"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e8f75a0075d41b2743acb06a",
+              "name": "Help Me Scrape the Mucus off My Brain"
+            },
+            {
+              "artists": [
+                "The Brass Ring"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d73c7d19434b6cf2a0b5e917",
+              "name": "Monday, Monday"
+            },
+            {
+              "artists": [
+                "O.V. Wright"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737bfd04e8571324c62d7a9a36",
+              "name": "Into Something (Can't Shake Loose)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23352027/Hot-Lasagna",
+          "station": "KALX",
+          "track_count": 34,
+          "url": "https://open.spotify.com/playlist/6r4i6I0RKyAkzVvmJRoHWw"
         }
       },
       "needs_reconciliation": false
