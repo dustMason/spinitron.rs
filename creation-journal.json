@@ -34279,7 +34279,7 @@
           "start_time": "2026-11-16T12:00:00-0800",
           "end_time": "2026-11-16T13:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "08g90kJv8NcfSMbr27dzzx",
         "desired_uris": [
@@ -34288,8 +34288,39 @@
           "spotify:track:0x3NlRUB6UI2W74UV5dyow"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T13:00:00-0800",
+          "broadcast_start": "2026-11-16T12:00:00-0800",
+          "imported_at": "2026-11-17T15:38:05.588913418+00:00",
+          "last_updated": "2026-11-17 15:38 UTC",
           "name": "KPOO - Let Me Touch Your Mind - 2026-11-16",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Kenny Garrett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27339e19a96f82229a1bae69a04",
+              "name": "Books & Toys"
+            },
+            {
+              "artists": [
+                "Nat Adderley",
+                "Nat Adderley Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739178e38b0b290c795f64c57f",
+              "name": "Book's Bossa"
+            },
+            {
+              "artists": [
+                "Don Byron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bcc44db1c21e325f3c29f2d4",
+              "name": "The Quintet Plays Carmen"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23352238/Let-Me-Touch-Your-Mind",
+          "station": "KPOO",
+          "track_count": 3,
+          "url": "https://open.spotify.com/playlist/08g90kJv8NcfSMbr27dzzx"
         }
       },
       "needs_reconciliation": false
