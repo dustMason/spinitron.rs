@@ -34750,7 +34750,7 @@
           "start_time": "2026-11-16T21:00:00-0800",
           "end_time": "2026-11-17T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3exArLlvynHfzjTDTErfRv",
         "desired_uris": [
@@ -34788,8 +34788,103 @@
           "spotify:track:2mA7yqidQednvjpmimWxIp"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T00:00:00-0800",
+          "broadcast_start": "2026-11-16T21:00:00-0800",
+          "imported_at": "2026-11-17T15:40:47.991143042+00:00",
+          "last_updated": "2026-11-17 15:40 UTC",
           "name": "KPOO - Grinders Grooveyard - 2026-11-16",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Merced Blue Notes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27369c75ed120aca16fb267a083",
+              "name": "Mama Rufus"
+            },
+            {
+              "artists": [
+                "Red Garland"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738ea876b7dc837ab77b9e00d6",
+              "name": "St. James Infirmary"
+            },
+            {
+              "artists": [
+                "Red Rodney"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c3ea6f36c11f085227ac4c1",
+              "name": "Blues In The Guts"
+            },
+            {
+              "artists": [
+                "Duke Ellington"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db524a8369a2009c3d442e6e",
+              "name": "Flirtibird"
+            },
+            {
+              "artists": [
+                "Duke Ellington",
+                "Count Basie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c0c882938931ba61956f2a7b",
+              "name": "Segue In C"
+            },
+            {
+              "artists": [
+                "Faye Carol"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eb218812ce6b6301fb3ca925",
+              "name": "I'm Gonna Do What They Do To Me"
+            },
+            {
+              "artists": [
+                "Us3"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b6711d22081087c1068fe3a7",
+              "name": "Different Rhythms, Different People"
+            },
+            {
+              "artists": [
+                "Stanley Turrentine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f11b2d85e5fcb7d13244609a",
+              "name": "Ain't No Way"
+            },
+            {
+              "artists": [
+                "Cal Tjader"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27356a7e681635ce20b33a43d62",
+              "name": "Borneo"
+            },
+            {
+              "artists": [
+                "Eddie Jefferson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273236c272ce43d70061a5abd14",
+              "name": "Filthy McNasty"
+            },
+            {
+              "artists": [
+                "Linda Tillery",
+                "The Cultural Heritage Choir"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e2ef66a9d0737096a6b918e7",
+              "name": "I'm Angry - Live"
+            },
+            {
+              "artists": [
+                "Slim Gaillard Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273929aaee09380f563c0a8fb8b",
+              "name": "Arabian Boogie"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23354347/Grinders-Grooveyard",
+          "station": "KPOO",
+          "track_count": 32,
+          "url": "https://open.spotify.com/playlist/3exArLlvynHfzjTDTErfRv"
         }
       },
       "needs_reconciliation": false
