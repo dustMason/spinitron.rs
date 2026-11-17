@@ -34605,6 +34605,46 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23353653": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23353653,
+          "title": "Wheels",
+          "url": "https://spinitron.com/KPOO/pl/23353653/Wheels",
+          "start_time": "2026-11-16T18:00:00-0800",
+          "end_time": "2026-11-16T21:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:71DfiueMJMIs8D0djEgiyz",
+          "spotify:track:3jDM1XQhReuaQ5urEMeF3v",
+          "spotify:track:6BEDZMFTooALiZ22bBHqCA",
+          "spotify:track:2EreJ88UvwhkP8dICuJe44",
+          "spotify:track:0P6lZEuppJ8O6KNCWaG8yd",
+          "spotify:track:42M6WsiZFchi2f378W0HVf",
+          "spotify:track:25ZEL5uHH13DveNql3qY85",
+          "spotify:track:5DHdTj9lP78elbeQAtjHyb",
+          "spotify:track:40P5fjk0H3Zo7yBW9zQbBR",
+          "spotify:track:3ZIwAIrmt6Cs6z2oPYRtv3",
+          "spotify:track:1BCfh9P3b9ghCYrt3N5Bkp",
+          "spotify:track:40LhzVyYJuvXW17fvrRL33",
+          "spotify:track:6FVhemcg4doTBI9J1Vpf00",
+          "spotify:track:56o2KXhathubMA7nQBa4yH",
+          "spotify:track:6it7ch5umEwAHGUquS4DtX",
+          "spotify:track:74L71afPsqMGt27hrQVYdj",
+          "spotify:track:5VsT3VZ98yY4fyIem0oKTp",
+          "spotify:track:7wlTPJPN7muo07fftjAZfp",
+          "spotify:track:3jDM1XQhReuaQ5urEMeF3v"
+        ],
+        "listing": {
+          "name": "KPOO - Wheels - 2026-11-16",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
