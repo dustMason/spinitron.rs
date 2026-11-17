@@ -34471,7 +34471,7 @@
           "start_time": "2026-11-16T15:00:00-0800",
           "end_time": "2026-11-16T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7Gf4UV0Kh97PZGcFbjoMbl",
         "desired_uris": [
@@ -34504,8 +34504,104 @@
           "spotify:track:3Lz6ubyqTwRva6hRnfQbSC"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T18:00:00-0800",
+          "broadcast_start": "2026-11-16T15:00:00-0800",
+          "imported_at": "2026-11-17T15:39:27.023587514+00:00",
+          "last_updated": "2026-11-17 15:39 UTC",
           "name": "KPOO - Gramophoney Baloney - 2026-11-16",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Kenny Neal",
+                "Greenlee",
+                "Neal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f724a28551af0d1a810b3ee",
+              "name": "I've Been Missing You, Too"
+            },
+            {
+              "artists": [
+                "K. Afes Shok",
+                "Selim Asllani"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fed024797b0d94c7d4c8a267",
+              "name": "Vura Shkallët Mbi Avlli"
+            },
+            {
+              "artists": [
+                "Bill Monroe & His Blue Grass Boys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bdd28656120a0695433673f9",
+              "name": "In The Pines"
+            },
+            {
+              "artists": [
+                "Amalia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732f7bb787f2018cbf438039eb",
+              "name": "Tora Ta Poulia"
+            },
+            {
+              "artists": [
+                "Atahualpa Yupanqui"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27391668bd65c3b3c0666302279",
+              "name": "La Añera"
+            },
+            {
+              "artists": [
+                "Lil Green"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273912e4ff11515545d40af3fa5",
+              "name": "Let's Be Friends"
+            },
+            {
+              "artists": [
+                "ABC Kids"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a96c9fa423c610772ad92522",
+              "name": "Grandfather's Clock"
+            },
+            {
+              "artists": [
+                "Furry Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f13b0d9bdabbd9f4ac77cbc0",
+              "name": "Dry Land Blues"
+            },
+            {
+              "artists": [
+                "James P. Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739c7210301d380954771fa911",
+              "name": "Riffs"
+            },
+            {
+              "artists": [
+                "Billy Mayerl"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c9f59126cd6527c67dd101b1",
+              "name": "Limehouse Blues"
+            },
+            {
+              "artists": [
+                "Various Artists"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b2fa6b4e1ba4fb204825760a",
+              "name": "Saint-Saens Carnival Of The Animals - Aquarium"
+            },
+            {
+              "artists": [
+                "Louis Armstrong & His Hot Five"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d5df97e99066751bc5735ff",
+              "name": "Jazz Lips"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23352932/Gramophoney-Baloney",
+          "station": "KPOO",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/7Gf4UV0Kh97PZGcFbjoMbl"
         }
       },
       "needs_reconciliation": false
