@@ -20859,6 +20859,29 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23353594": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23353594,
+          "title": "NEWS",
+          "url": "https://spinitron.com/KALX/pl/23353594/NEWS",
+          "start_time": "2026-11-16T18:00:00-0800",
+          "end_time": "2026-11-16T18:15:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1QGy4rzK5p8N7OYYn5kWSt",
+          "spotify:track:4LfMd7tiyo7y2nRUq9NTtc"
+        ],
+        "listing": {
+          "name": "KALX - NEWS - 2026-11-16",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
