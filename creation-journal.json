@@ -20158,6 +20158,50 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23350797": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23350797,
+          "title": "Old & New Dreams",
+          "url": "https://spinitron.com/KALX/pl/23350797/Old-New-Dreams",
+          "start_time": "2026-11-16T07:00:00-0800",
+          "end_time": "2026-11-16T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:63K8WQviQMdpUAIijIVmfc",
+          "spotify:track:3N5cS13K5x3MNzkw3DPLnv",
+          "spotify:track:3OLL5y9RQn5SGtMqXs2H8n",
+          "spotify:track:6I90WvISV0J9eZPH9WURBI",
+          "spotify:track:7ABTw0347lzzTUTSSknwvs",
+          "spotify:track:6KQrqC0UFiFHezv1IcLvM7",
+          "spotify:track:6oN12ed0OQggvNID6eg249",
+          "spotify:track:5LXjvMyT0XK0rBfNrQ9wsP",
+          "spotify:track:5JgXQjEeUVRKPmUdNjzTqX",
+          "spotify:track:6Jwddt9NSEujC29SAd6kIA",
+          "spotify:track:73kwA7Yep4gh8HwWA4Hzl6",
+          "spotify:track:5OTrRgFG8gG4rW0mouM4Ck",
+          "spotify:track:2HPPT9kI1kQaPawn0gAdon",
+          "spotify:track:6K5kEKNVY0M8TvWQo0LnGY",
+          "spotify:track:0cJeL0shwGN22F56XKRC4q",
+          "spotify:track:5GsXSzs10H8sc9cMyrsWBn",
+          "spotify:track:7w2LjPWibrtNf7j3ElYsyf",
+          "spotify:track:3jsh2920xnsAQaFnUYDUrM",
+          "spotify:track:6XdIwm6ygnAslVuaYEfRwW",
+          "spotify:track:1ctTHRBFQ0khGlDD5asmNh",
+          "spotify:track:1eYZCA67nhqTvUC2djr5H9",
+          "spotify:track:4TBVy5cFYGmK5BA3rdMGEQ",
+          "spotify:track:3nJ6m1KHrilYrpLVKgJ7Ue"
+        ],
+        "listing": {
+          "name": "KALX - Old & New Dreams - 2026-11-16",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
