@@ -350,7 +350,7 @@
           "start_time": "2026-11-17T00:00:00-0800",
           "end_time": "2026-11-17T01:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7sYTHmgAqkhwyzSoXXFiHv",
         "desired_uris": [
@@ -362,8 +362,61 @@
           "spotify:track:2JmvZHTL1CcMHW5CR5TI85"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T01:00:00-0800",
+          "broadcast_start": "2026-11-17T00:00:00-0800",
+          "imported_at": "2026-11-17T15:45:31.334066419+00:00",
+          "last_updated": "2026-11-17 15:45 UTC",
           "name": "KALX - Information Overload - 2026-11-17",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "mHz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ac39e29bc858c22308f2776b",
+              "name": "Restricted Left-truncatable + Restricted Right-truncatable + Two-Sided"
+            },
+            {
+              "artists": [
+                "Werner Dafeldecker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733ffe8a04fa7801c0acf7cc8d",
+              "name": "Breath"
+            },
+            {
+              "artists": [
+                "Philip Samartzis",
+                "Michael Vorfeld"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732260fd3616c852c4f60c1f3f",
+              "name": "Gravitational Overflow"
+            },
+            {
+              "artists": [
+                "Philip Samartzis",
+                "Michael Vorfeld"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732260fd3616c852c4f60c1f3f",
+              "name": "Gravitational Overflow"
+            },
+            {
+              "artists": [
+                "Carl Stone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b3e68c91f4cf7ecd18de545",
+              "name": "Auburn - Arr. Fischl"
+            },
+            {
+              "artists": [
+                "Carl Stone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b3e68c91f4cf7ecd18de545",
+              "name": "Auburn - Arr. Fischl"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23099033/Information-Overload",
+          "station": "KALX",
+          "track_count": 6,
+          "url": "https://open.spotify.com/playlist/7sYTHmgAqkhwyzSoXXFiHv"
         }
       },
       "needs_reconciliation": false
