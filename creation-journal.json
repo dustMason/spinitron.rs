@@ -34324,6 +34324,48 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23352441": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23352441,
+          "title": "Soul Explosion",
+          "url": "https://spinitron.com/KPOO/pl/23352441/Soul-Explosion",
+          "start_time": "2026-11-16T13:00:00-0800",
+          "end_time": "2026-11-16T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5P41FP15pvfQepG7VKr4nX",
+          "spotify:track:19YghPHjRNp5HRwWoWvQ6j",
+          "spotify:track:6E7zHFyqTkh1PM2qN8h2vG",
+          "spotify:track:3J0VYipa6lrdBkjLM7j4iI",
+          "spotify:track:6n4Xh1WnWlaxSi03cCKYuj",
+          "spotify:track:7nlfmB5pe91xoFk25eNY3y",
+          "spotify:track:1paiImVtldX5zewF051YBA",
+          "spotify:track:37TGFd6sXpKx1cqElYYjxx",
+          "spotify:track:4GFwalnOo7Xj2tYeLtBMYk",
+          "spotify:track:6HwyeFtiIwdETW1ssGyBzH",
+          "spotify:track:6hCd1V6gOVpJ2zT6wJshjs",
+          "spotify:track:19Pj53IPq820yWmc3HTRqF",
+          "spotify:track:1uE7xg6LWH9euY06fcWYBE",
+          "spotify:track:5wIxMTfyrSEx4w1MxaM96c",
+          "spotify:track:4t1EHyQEMdaN91UA6G3PfD",
+          "spotify:track:6GERoXgaUzQUCHJaoQLBmJ",
+          "spotify:track:3eV6F2e39lPskmXhxMNNiO",
+          "spotify:track:4FVmzkk7gAxwE9WOmcO1Ce",
+          "spotify:track:3YdKJzcoMZMacISlpY4QoP",
+          "spotify:track:38lva1IzrAQYqlSxjw1cth",
+          "spotify:track:25aLc8I435Mmo3P1aD1q4C"
+        ],
+        "listing": {
+          "name": "KPOO - Soul Explosion - 2026-11-16",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
