@@ -34616,7 +34616,7 @@
           "start_time": "2026-11-16T18:00:00-0800",
           "end_time": "2026-11-16T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2WPNMjw1Xtpz0QLdiRVZsu",
         "desired_uris": [
@@ -34641,8 +34641,101 @@
           "spotify:track:3jDM1XQhReuaQ5urEMeF3v"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T21:00:00-0800",
+          "broadcast_start": "2026-11-16T18:00:00-0800",
+          "imported_at": "2026-11-17T15:40:07.104985974+00:00",
+          "last_updated": "2026-11-17 15:40 UTC",
           "name": "KPOO - Wheels - 2026-11-16",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Pharoah Sanders"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27330cb5dc5fb8405984e4b50f7",
+              "name": "Hum Allah Hum Allah Hum Allah"
+            },
+            {
+              "artists": [
+                "Brenda Russell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273acd17be7c3e1bef9c49acef3",
+              "name": "In The Thick Of It"
+            },
+            {
+              "artists": [
+                "Bette Midler"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735ca34e45e467be619eb8b093",
+              "name": "Laughing Matters"
+            },
+            {
+              "artists": [
+                "The Incredible String Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c86d7e4f3744a9b937871023",
+              "name": "Bad Sadie Lee"
+            },
+            {
+              "artists": [
+                "Jonathan & Darlene Edwards"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b49dcb955c4495f86752f678",
+              "name": "Stayin' Alive"
+            },
+            {
+              "artists": [
+                "Jonathan & Darlene Edwards"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b49dcb955c4495f86752f678",
+              "name": "I Am Woman"
+            },
+            {
+              "artists": [
+                "Jonathan & Darlene Edwards"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273be4d7dc121bf24ca78bfff65",
+              "name": "Cocktails For Two"
+            },
+            {
+              "artists": [
+                "Jim Backus"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0926526fd4268432f559d78",
+              "name": "Delicious (The Laughing Song)"
+            },
+            {
+              "artists": [
+                "Patti Smith"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b9cf42f267a8c162b9594b1",
+              "name": "Gloria: In Excelsis Deo"
+            },
+            {
+              "artists": [
+                "Living Colour"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737b0489782bd6c24cd0cf5d50",
+              "name": "Open Letter To A Landlord"
+            },
+            {
+              "artists": [
+                "The Rolling Stones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d1570a03b9354518f0b618b",
+              "name": "Gimme Shelter - Mono"
+            },
+            {
+              "artists": [
+                "Sweet Honey In The Rock"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27367aea3558165614d8d758d9c",
+              "name": "Ode To The International Debt - Live At Carnegie Hall, New York, NY / November 7, 1987"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23353653/Wheels",
+          "station": "KPOO",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/2WPNMjw1Xtpz0QLdiRVZsu"
         }
       },
       "needs_reconciliation": false
