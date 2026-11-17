@@ -21189,7 +21189,7 @@
           "start_time": "2026-11-16T22:00:00-0800",
           "end_time": "2026-11-17T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1nQokoI7kmmw8GTEge2735",
         "desired_uris": [
@@ -21211,8 +21211,102 @@
           "spotify:track:1ZBqJilDGBVYktvlCEo9jC"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T00:00:00-0800",
+          "broadcast_start": "2026-11-16T22:00:00-0800",
+          "imported_at": "2026-11-17T15:48:54.956814760+00:00",
+          "last_updated": "2026-11-17 15:48 UTC",
           "name": "KALX - FREEFORM - 2026-11-16 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Otyken"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731508638c0af0665213901168",
+              "name": "Pulse"
+            },
+            {
+              "artists": [
+                "Angine de Poitrine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734821b77fd92093513d7634b5",
+              "name": "Mata Zyklek"
+            },
+            {
+              "artists": [
+                "Discovery Zone",
+                "World Brain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bcdfa1526d4c917047f67521",
+              "name": "Dusk"
+            },
+            {
+              "artists": [
+                "Portraits Of Tracy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ff6d317a03fa16043aa586cf",
+              "name": "My Life Is Loving You"
+            },
+            {
+              "artists": [
+                "@"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731c5a4e456d268a2f5abd1de6",
+              "name": "Autosmile"
+            },
+            {
+              "artists": [
+                "The Reverend Horton Heat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738ff10fdd0999896a8c0c2296",
+              "name": "I'm Mad"
+            },
+            {
+              "artists": [
+                "The Police"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fb1bc65edf4717e75fbc70ab",
+              "name": "Shadows In The Rain"
+            },
+            {
+              "artists": [
+                "Single Gun Theory"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0064a7ee2ffed94ca9a3969",
+              "name": "Motherland"
+            },
+            {
+              "artists": [
+                "El Khat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d17b1d27f70f0b778541fa60",
+              "name": "Djaja"
+            },
+            {
+              "artists": [
+                "Tears For Fears"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27322463d6939fec9e17b2a6235",
+              "name": "Broken / Head Over Heels / Broken - Preacher Mix"
+            },
+            {
+              "artists": [
+                "Primal Scream"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a70136f85f390b276fa817ba",
+              "name": "Burning Wheel"
+            },
+            {
+              "artists": [
+                "Silversun Pickups"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273061f4b0b3db2d0569fa9d81a",
+              "name": "Future Foe Scenarios"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23354520/FREEFORM",
+          "station": "KALX",
+          "track_count": 16,
+          "url": "https://open.spotify.com/playlist/1nQokoI7kmmw8GTEge2735"
         }
       },
       "needs_reconciliation": false
