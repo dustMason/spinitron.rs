@@ -20600,6 +20600,40 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23352797": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23352797,
+          "title": "No Motion Picture",
+          "url": "https://spinitron.com/KALX/pl/23352797/No-Motion-Picture",
+          "start_time": "2026-11-16T15:00:00-0800",
+          "end_time": "2026-11-16T17:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5jGIf72CFarb84sseMzEoY",
+          "spotify:track:041INVOyA3LSLM1kao2oVq",
+          "spotify:track:4cDQEcA1HObx34xScOfoEy",
+          "spotify:track:7wnKAV5jprTwJqXIbSAY5B",
+          "spotify:track:6HJw6fRlxXVrzVCgGIxMbI",
+          "spotify:track:5aPj4JAtKbDl8vRtvQ9fHu",
+          "spotify:track:0oocoADIlPjnJtdYbY1AkS",
+          "spotify:track:3V9uxHtOBLQ6fc2KJLJgkB",
+          "spotify:track:7FhHFW6ghJbgLFYK7YpHaJ",
+          "spotify:track:53LCxaIGdppdYfRfdsdQwn",
+          "spotify:track:2usVTbrypth5xFtHI2vSSN",
+          "spotify:track:7t2ax5GJtN08Lhf4g0OtpK",
+          "spotify:track:4Ta9DS4Sw3owTwcsSRBU3r"
+        ],
+        "listing": {
+          "name": "KALX - No Motion Picture - 2026-11-16",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
