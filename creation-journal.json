@@ -34888,6 +34888,64 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23354971": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23354971,
+          "title": "Over Nite Sounds",
+          "url": "https://spinitron.com/KPOO/pl/23354971/Over-Nite-Sounds",
+          "start_time": "2026-11-16T23:00:00-0800",
+          "end_time": "2026-11-17T06:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1ALBDQxGQ69udqQU3hRGPf",
+          "spotify:track:4TFdMrMhiqlso3cw16xEO5",
+          "spotify:track:7xz3GeFXDkPYb7uhcm7paE",
+          "spotify:track:4ZzIkiUleHdyM614gzwaIP",
+          "spotify:track:02gfhOOS396xwQjTI6FNSB",
+          "spotify:track:52JrOhDyRZHi7P6tVhSn0S",
+          "spotify:track:58k1EjhBYmdGmwx01nGvrE",
+          "spotify:track:0OkXnr18fdL8ihyvVu8WVx",
+          "spotify:track:5FNioToqoQU3rXhbpsLFKH",
+          "spotify:track:7kXrfXAlu0KaEUPmMLFTKh",
+          "spotify:track:1ZOwb99n8MCsSuXHUCB1v0",
+          "spotify:track:3NcJu9876GBJuNU6vJOrbb",
+          "spotify:track:57EUcSzG8IdY70NoeOUycb",
+          "spotify:track:0rxPEdSpEcscchtqnOvF7B",
+          "spotify:track:1z7WfPhK3OuTb72VB4mNZh",
+          "spotify:track:0NkcYTSwOAjZpPzGFmpd57",
+          "spotify:track:7avgQvnywREbCA91bi8nYw",
+          "spotify:track:2KNjQ2hSbUi0VTBb4Sqyjt",
+          "spotify:track:7rt0kEDWRg3pgTZJKuszoE",
+          "spotify:track:512cZe270tp9TfaFnxjvZ0",
+          "spotify:track:7EXLOCF4QW35UJrHeyEgIX",
+          "spotify:track:4IlaNZkiaPOiuF8sYXCrsx",
+          "spotify:track:3UQ8KltORzGZNX5G4F2xCI",
+          "spotify:track:0Z8YDGr8khPQGEYnzYckLH",
+          "spotify:track:2wThESTdY2NgWm8Dbmh27q",
+          "spotify:track:6XSpyBykm5B8NdvsGp27PC",
+          "spotify:track:0sMMI3cKt9nlQ9OpwUELrh",
+          "spotify:track:5uFD7Pj22bkcgoBAXa7fIk",
+          "spotify:track:1To4J8xydYZcrELjqf2rqu",
+          "spotify:track:5NXQlN5mGNGU1py83ySKUv",
+          "spotify:track:3ELBPuI6Vv7AVKyZLDm1HI",
+          "spotify:track:0ZtfxdV47mIIC6FQUBswiv",
+          "spotify:track:0JRZ18H4nubeLe9pWlLdys",
+          "spotify:track:6LkB6M5atftGmG1RROOuof",
+          "spotify:track:5QK7RmLhBWQydnc2qkhRee",
+          "spotify:track:5BJ3sQkZuW3Y1iC2imXqdJ",
+          "spotify:track:3Poqk6LAO81GLR5N9jz2Nf"
+        ],
+        "listing": {
+          "name": "KPOO - Over Nite Sounds - 2026-11-16",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
