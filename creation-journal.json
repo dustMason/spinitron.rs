@@ -19982,7 +19982,7 @@
           "start_time": "2026-11-16T01:00:00-0800",
           "end_time": "2026-11-16T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "54x5b7sjhNtzohCo7Oj4G8",
         "desired_uris": [
@@ -20059,8 +20059,101 @@
           "spotify:track:61oIhWlWLKW2PQUJAJdyLf"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T07:00:00-0800",
+          "broadcast_start": "2026-11-16T01:00:00-0800",
+          "imported_at": "2026-11-17T15:42:08.957870889+00:00",
+          "last_updated": "2026-11-17 15:42 UTC",
           "name": "KALX - FREEFORM - 2026-11-16",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Angelo Badalamenti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d8723510475d373971877247",
+              "name": "Main Title"
+            },
+            {
+              "artists": [
+                "Brigid Dawson and The Mothers Network"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c2d47b99438c1df4b29cd67",
+              "name": "Heartbreak Jazz"
+            },
+            {
+              "artists": [
+                "Waylon Jennings"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e0602f8d0c03e380a1f3e62",
+              "name": "We Had It All"
+            },
+            {
+              "artists": [
+                "The Rolling Stones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732af30c881bb23cfb82a8cf99",
+              "name": "You Can't Always Get What You Want"
+            },
+            {
+              "artists": [
+                "Twisted Teens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5c07e77538b5f44bc649491",
+              "name": "When We First Met"
+            },
+            {
+              "artists": [
+                "This Is Lorelei"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c456875e0df6d8195f4b5545",
+              "name": "Don't You Cry in Lonesomeness"
+            },
+            {
+              "artists": [
+                "Interpol"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f57fbf58b1e92c6fc795db1",
+              "name": "Iron City"
+            },
+            {
+              "artists": [
+                "Atlas Sound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4f18f3f4c82b4192d1562e7",
+              "name": "Octoberland"
+            },
+            {
+              "artists": [
+                "Tennis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27389021e91f38a2ffd00ea2efd",
+              "name": "Wounded Heart"
+            },
+            {
+              "artists": [
+                "Broken Social Scene"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730a7a4b8792e5b2a64cda3594",
+              "name": "All To All"
+            },
+            {
+              "artists": [
+                "Vanishing Twin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273787772bfe16950fbfe145193",
+              "name": "Wherever You Are"
+            },
+            {
+              "artists": [
+                "The Drums"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aac03d0969a585346e49038d",
+              "name": "I Hope Time Doesn't Change Him"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23349732/FREEFORM",
+          "station": "KALX",
+          "track_count": 71,
+          "url": "https://open.spotify.com/playlist/54x5b7sjhNtzohCo7Oj4G8"
         }
       },
       "needs_reconciliation": false
