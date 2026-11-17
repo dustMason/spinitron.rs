@@ -20296,6 +20296,59 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23351281": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23351281,
+          "title": "Swirls Of Whimsy",
+          "url": "https://spinitron.com/KALX/pl/23351281/Swirls-Of-Whimsy",
+          "start_time": "2026-11-16T09:00:00-0800",
+          "end_time": "2026-11-16T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3bBGRgwzGMoCd1LBkcy6WR",
+          "spotify:track:1fADRX9hCabyW5nvLqyzDd",
+          "spotify:track:2L5R8yONcCBNab4ZaKg8ks",
+          "spotify:track:5QAqlUoctz45rVNgAB6U4c",
+          "spotify:track:5d6nxSzXwiwSj5o6vo0jKk",
+          "spotify:track:50uR3GqfYQJjuPDmx4NjzM",
+          "spotify:track:4a97cGetPwHgZog0LJefqI",
+          "spotify:track:3p5PnZcCKvUH2BD0VGosWI",
+          "spotify:track:3V5x7AitNvfbvKvuoc76b9",
+          "spotify:track:3Rz3yEpgod5WtyyXMzPixQ",
+          "spotify:track:4VtvPI3DTAUfuTAk207dhF",
+          "spotify:track:2PL168CjL2zQuBVjkynGVv",
+          "spotify:track:4BDe7lwYpwK6bCqy2ew2ea",
+          "spotify:track:6xQE5wowns5qhB9lioTouU",
+          "spotify:track:5SpJKAaZUyWVqDP1bIdc3W",
+          "spotify:track:58nkU4zb9BhzqIHFXNYX7y",
+          "spotify:track:6YRxki6C42MLt5AEqnJlhk",
+          "spotify:track:6pwz6IDT7Y4yqkiVCJsv2R",
+          "spotify:track:2ZgyzFYYOz21b2AhPPkWKF",
+          "spotify:track:7e7Bf9iaM3FxWP8VhHPZvV",
+          "spotify:track:6OQehMx3ZQuQiWMhV8Ndte",
+          "spotify:track:0ba1R3HDzGp9s3jBdhufCl",
+          "spotify:track:5fjaHwIsvJKxkhODCYY0EB",
+          "spotify:track:6lJkfKZz9np4UVgJzc2jR6",
+          "spotify:track:0BXVKM5SuPVrVLK0T9I1Ub",
+          "spotify:track:6jJTpzMquQLVuUkM2vVEIF",
+          "spotify:track:4jcvkqhSGBvqVgPmvZsLiQ",
+          "spotify:track:2mnnMeaU0m7js38WFnZ0qS",
+          "spotify:track:35fC3Wq3slX4OBfyvBVmHm",
+          "spotify:track:57NJa3GRYYZCJc03t2rP5T",
+          "spotify:track:1bu5L06aXH67gt0K9ADLOq",
+          "spotify:track:7hCvtH8qR5BRKNv0aUjFuD"
+        ],
+        "listing": {
+          "name": "KALX - Swirls Of Whimsy - 2026-11-16",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
