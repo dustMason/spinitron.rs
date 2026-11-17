@@ -20916,7 +20916,7 @@
           "start_time": "2026-11-16T18:15:00-0800",
           "end_time": "2026-11-16T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "48HzEGS2E1ZwPSm6LpM3cc",
         "desired_uris": [
@@ -20937,8 +20937,103 @@
           "spotify:track:2nIa1hlvLL8u9kqZ2GBDXa"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T20:00:00-0800",
+          "broadcast_start": "2026-11-16T18:15:00-0800",
+          "imported_at": "2026-11-17T15:47:32.636988883+00:00",
+          "last_updated": "2026-11-17 15:47 UTC",
           "name": "KALX - FREEFORM - 2026-11-16 6:15pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Portraits Of Tracy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273588603e17ec61c5462a0ca9c",
+              "name": "Caught In A Jam"
+            },
+            {
+              "artists": [
+                "The Almighty Easter Bunny"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a00167c0ef1de77b8f96f6fb",
+              "name": "The Neon Party Is Never As It Seems"
+            },
+            {
+              "artists": [
+                "The Clog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db34562fa365670f7c7fe57d",
+              "name": "Bring Me"
+            },
+            {
+              "artists": [
+                "Casiotone For The Painfully Alone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27338d4f767897137e9cbc89b2c",
+              "name": "Scattered Pearls (2018 Remaster)"
+            },
+            {
+              "artists": [
+                "Kelela"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a511e3cc8b8f2034f891b44a",
+              "name": "idea 1"
+            },
+            {
+              "artists": [
+                "Thy Slaughter",
+                "A. G. Cook",
+                "Finn Keane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273183132f2311aa89e9e8994b5",
+              "name": "Lost Everything"
+            },
+            {
+              "artists": [
+                "Casino Versus Japan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a3c715d639f1b2c97fc237f9",
+              "name": "Aquarium"
+            },
+            {
+              "artists": [
+                "ML Buch"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a06bb8c94b13b69581bbc977",
+              "name": "Can You Hear My Heart Leave"
+            },
+            {
+              "artists": [
+                "@"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731c5a4e456d268a2f5abd1de6",
+              "name": "Autosmile"
+            },
+            {
+              "artists": [
+                "Hatchie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ba8cfa0912d3ce0b674c8f5f",
+              "name": "Only One Laughing"
+            },
+            {
+              "artists": [
+                "Land of the Loops"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736ba011183f2bcfe2a6950b5e",
+              "name": "Growing Concern"
+            },
+            {
+              "artists": [
+                "Julee Cruise"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6212adb4de364a1c633582a",
+              "name": "Mysteries Of Love"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23353747/FREEFORM",
+          "station": "KALX",
+          "track_count": 15,
+          "url": "https://open.spotify.com/playlist/48HzEGS2E1ZwPSm6LpM3cc"
         }
       },
       "needs_reconciliation": false
