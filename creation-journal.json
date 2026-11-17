@@ -21048,7 +21048,7 @@
           "start_time": "2026-11-16T20:00:00-0800",
           "end_time": "2026-11-16T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2V4cjHL0a1pj0wYMC1ELuz",
         "desired_uris": [
@@ -21078,8 +21078,103 @@
           "spotify:track:7FUnFKO3ASHCJ0FkBPc7OB"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T22:00:00-0800",
+          "broadcast_start": "2026-11-16T20:00:00-0800",
+          "imported_at": "2026-11-17T15:48:12.903115319+00:00",
+          "last_updated": "2026-11-17 15:48 UTC",
           "name": "KALX - FREEFORM - 2026-11-16 8:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Louis James Alfred Lefébure-Wély",
+                "David Britton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c8c3b0ac662fed38052928e",
+              "name": "Elevation ou Communion in A Minor"
+            },
+            {
+              "artists": [
+                "Pedro Vargas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273754d8df5801c787712e97b16",
+              "name": "Pecado"
+            },
+            {
+              "artists": [
+                "İbrahim Tatlıses"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273873babd8d08157b225203b60",
+              "name": "Hiç Kimseye Sözüm Yok"
+            },
+            {
+              "artists": [
+                "Gregory Uhlmann",
+                "Alabaster DePlume"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732ac2af923ebef3532188566f",
+              "name": "Lucia"
+            },
+            {
+              "artists": [
+                "The University of California Marching Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b370d4f77e09aef949b913ef",
+              "name": "Fight for California"
+            },
+            {
+              "artists": [
+                "PIPE"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec8655cbfc6e4f792d722f12",
+              "name": "Pie"
+            },
+            {
+              "artists": [
+                "St. Vincent"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273564f954f72271064eec36d31",
+              "name": "Now, Now"
+            },
+            {
+              "artists": [
+                "Stano"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e546d4726e3781faaa3de31",
+              "name": "Emma Wild"
+            },
+            {
+              "artists": [
+                "Mary Lou Williams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739922c2d80a721a92a631d252",
+              "name": "Medley: The Lord Is Heavy (Spiritual II And III) / Fandangle (Ragtime) / Old Fashioned Slow Blues / For The Figs (K.C. Swing) / Baby Bear Boogie / Roll 'Em - Live At Montreux Jazz Festival, Montreux, CH / July 16, 1978"
+            },
+            {
+              "artists": [
+                "Annie Ross"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736bf19ba49cdc5dc9178cec9b",
+              "name": "I've Told Every Little Star"
+            },
+            {
+              "artists": [
+                "PAON"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bb28023e5c7cca694571bf3a",
+              "name": "Métamorphose"
+            },
+            {
+              "artists": [
+                "Os Bongos Botto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27319361c2e7a8f26845ed08e6b",
+              "name": "Pachanga Maria"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23354059/FREEFORM",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/2V4cjHL0a1pj0wYMC1ELuz"
         }
       },
       "needs_reconciliation": false
