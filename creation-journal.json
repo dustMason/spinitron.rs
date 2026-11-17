@@ -34123,7 +34123,7 @@
           "start_time": "2026-11-16T09:00:00-0800",
           "end_time": "2026-11-16T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2HaWZJsX7PCGb1eQVEWbLJ",
         "desired_uris": [
@@ -34167,8 +34167,104 @@
           "spotify:track:2TAb0MYiC6ADy6pYunLZiP"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T12:00:00-0800",
+          "broadcast_start": "2026-11-16T09:00:00-0800",
+          "imported_at": "2026-11-17T15:37:25.251927282+00:00",
+          "last_updated": "2026-11-17 15:37 UTC",
           "name": "KPOO - The Power of Blues Compels You - 2026-11-16",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Marvin Gaye"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d356958020ab128d7f95390",
+              "name": "Hitch Hike"
+            },
+            {
+              "artists": [
+                "Albert King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738bd66aa90226746fe908bd9e",
+              "name": "Born Under A Bad Sign - Live"
+            },
+            {
+              "artists": [
+                "Eugene Hideaway Bridges"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dbc01c6fcb9aa3a9647202f0",
+              "name": "Under My Roof"
+            },
+            {
+              "artists": [
+                "Rufus Wonder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273257052373f3fcdfffb91e27e",
+              "name": "Under the Moon"
+            },
+            {
+              "artists": [
+                "Bessie Smith"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325783449f024353ef93d3fd6",
+              "name": "You Don't Understand"
+            },
+            {
+              "artists": [
+                "Big Maybelle"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b77944c90bf32d28104fc04",
+              "name": "I Understand"
+            },
+            {
+              "artists": [
+                "Buckwheat Zydeco & Ils Sont Partis Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733ec895b9cd855f8bfeefbc44",
+              "name": "Help Me Understand You"
+            },
+            {
+              "artists": [
+                "Amber Gray",
+                "Anaïs Mitchell",
+                "Hadestown Original Broadway Company"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731efe4586c5afd859b3ec91e4",
+              "name": "Our Lady of the Underground"
+            },
+            {
+              "artists": [
+                "Melody Gardot"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fb6068078c8525a7f5a6d16",
+              "name": "Lover Undercover"
+            },
+            {
+              "artists": [
+                "The Drifters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d040b455ce988f95d4f2e02",
+              "name": "Under the Boardwalk"
+            },
+            {
+              "artists": [
+                "Herbie Mann"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ff644e07c89fc3eeeba4d8ae",
+              "name": "Memphis Underground"
+            },
+            {
+              "artists": [
+                "Jerry Butler",
+                "Brenda Lee Eager"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e573dba5b5db43f47c701bbc",
+              "name": "Ain't Understanding Mellow"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23351358/The-Power-of-Blues-Compels-You",
+          "station": "KPOO",
+          "track_count": 38,
+          "url": "https://open.spotify.com/playlist/2HaWZJsX7PCGb1eQVEWbLJ"
         }
       },
       "needs_reconciliation": false
