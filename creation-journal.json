@@ -20610,7 +20610,7 @@
           "start_time": "2026-11-16T15:00:00-0800",
           "end_time": "2026-11-16T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3oZStpEAXLyCap7pxULvT6",
         "desired_uris": [
@@ -20629,8 +20629,104 @@
           "spotify:track:4Ta9DS4Sw3owTwcsSRBU3r"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T17:00:00-0800",
+          "broadcast_start": "2026-11-16T15:00:00-0800",
+          "imported_at": "2026-11-17T15:44:50.362756923+00:00",
+          "last_updated": "2026-11-17 15:44 UTC",
           "name": "KALX - No Motion Picture - 2026-11-16",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Babe Rainbow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273727dfede767d13b22241bfd2",
+              "name": "Acid and Honey"
+            },
+            {
+              "artists": [
+                "Luiz Bonfá"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733e675545232f670a2798b7ad",
+              "name": "Rain"
+            },
+            {
+              "artists": [
+                "Astrud Gilberto",
+                "Walter Wanderley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27318e57f9df873e08b993a4ea8",
+              "name": "Here's That Rainy Day"
+            },
+            {
+              "artists": [
+                "The Beatles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab6742d3000053b7e0e466ee7e405bb4eb14b785",
+              "name": "Rain"
+            },
+            {
+              "artists": [
+                "Floating Points",
+                "San Francisco Ballet Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d29699a86f26f0e1df161d16",
+              "name": "Movement 8 - Falling to Earth"
+            },
+            {
+              "artists": [
+                "Santana"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c894463d06b775f87d57361b",
+              "name": "Jingo"
+            },
+            {
+              "artists": [
+                "A Certain Ratio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec40eebaa766510c7af235c4",
+              "name": "Lucinda (EM)"
+            },
+            {
+              "artists": [
+                "Ezra Collective"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d02e8be17bfe4eb4afb2141",
+              "name": "Someday"
+            },
+            {
+              "artists": [
+                "John Carroll Kirby"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ae75e6db7b0b71214899d27f",
+              "name": "Wind"
+            },
+            {
+              "artists": [
+                "Actress"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6f7b357a1dcf5b14298aa0c",
+              "name": "Cosmo"
+            },
+            {
+              "artists": [
+                "Cotonete",
+                "Di Melo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735c5c613eb6c03dccab6e7788",
+              "name": "Linhas de Alinhar"
+            },
+            {
+              "artists": [
+                "Allah-Las"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fe822f5868d8a310d28d4e0",
+              "name": "Abre Caminos"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23352797/No-Motion-Picture",
+          "station": "KALX",
+          "track_count": 13,
+          "url": "https://open.spotify.com/playlist/3oZStpEAXLyCap7pxULvT6"
         }
       },
       "needs_reconciliation": false
