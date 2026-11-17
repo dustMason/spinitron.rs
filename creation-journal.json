@@ -20869,7 +20869,7 @@
           "start_time": "2026-11-16T18:00:00-0800",
           "end_time": "2026-11-16T18:15:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4C8bHXlFPMWvGANl8xvZlY",
         "desired_uris": [
@@ -20877,8 +20877,31 @@
           "spotify:track:4LfMd7tiyo7y2nRUq9NTtc"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T18:15:00-0800",
+          "broadcast_start": "2026-11-16T18:00:00-0800",
+          "imported_at": "2026-11-17T15:46:51.590342134+00:00",
+          "last_updated": "2026-11-17 15:46 UTC",
           "name": "KALX - NEWS - 2026-11-16",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Nujabes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273878ed741b8e1342d58a332ca",
+              "name": "sanctuary ship"
+            },
+            {
+              "artists": [
+                "Jimi Hendrix"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27398ca421e7e364a6fd177b6ff",
+              "name": "Sunshine Of Your Love"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23353594/NEWS",
+          "station": "KALX",
+          "track_count": 2,
+          "url": "https://open.spotify.com/playlist/4C8bHXlFPMWvGANl8xvZlY"
         }
       },
       "needs_reconciliation": false
