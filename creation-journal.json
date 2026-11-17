@@ -34460,6 +34460,54 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23352932": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23352932,
+          "title": "Gramophoney Baloney",
+          "url": "https://spinitron.com/KPOO/pl/23352932/Gramophoney-Baloney",
+          "start_time": "2026-11-16T15:00:00-0800",
+          "end_time": "2026-11-16T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0lVA4ZER4BJLH5LStLRrY1",
+          "spotify:track:0fb3qguZ2y1NSUv6f4UVPr",
+          "spotify:track:4FFmILR70j5Z0PDphqN3rc",
+          "spotify:track:7owQn5w9Mrzwg6ZlhaE1uJ",
+          "spotify:track:132kq7YBRC1Ftx2c8zK3Ae",
+          "spotify:track:0OC4udSf0qmYrCDra9mvb4",
+          "spotify:track:5vWJVhrFxmTyiYnHiqWQrI",
+          "spotify:track:1yuqdIGKOR1SJC4Fu602Im",
+          "spotify:track:0OKbsYqhwmZ21bnKgw2xln",
+          "spotify:track:1qEoXj0Ba42ETeVLAhLKPz",
+          "spotify:track:2qSHGCt3pjNbwmN8m5ufXf",
+          "spotify:track:1nnvpbeUunyo36KCUQwRCL",
+          "spotify:track:5tCQ4l9btjK1k1kKTbjygR",
+          "spotify:track:4O0umNjSLISjbGYajsQnaX",
+          "spotify:track:3IquphBTanlUAjelEYg1aE",
+          "spotify:track:2Ux7URPXGphrg2hpfha38g",
+          "spotify:track:5Ls6h4yViG9KuCtSl8kbmZ",
+          "spotify:track:5XInqlS0tYtfVGOA4bs5xR",
+          "spotify:track:1iyHSMjQabRL06FeCPokei",
+          "spotify:track:7BEXn69epr9uuYbOseVTAt",
+          "spotify:track:2DpYknSPMvok4j4hKjLPWy",
+          "spotify:track:3nCz1b5DMdju29NC0QPyDV",
+          "spotify:track:5pfoHVHidzOFO3U0nIUK5g",
+          "spotify:track:5ybZkLCuNj43OW7av2AJoI",
+          "spotify:track:0XXdm2K2qGQ5P6em6FQaAz",
+          "spotify:track:4JzzRFlc8A1nelnYByhCUw",
+          "spotify:track:3Lz6ubyqTwRva6hRnfQbSC"
+        ],
+        "listing": {
+          "name": "KPOO - Gramophoney Baloney - 2026-11-16",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
