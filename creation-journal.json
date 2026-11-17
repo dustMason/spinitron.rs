@@ -20450,6 +20450,61 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23352027": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23352027,
+          "title": "Hot Lasagna",
+          "url": "https://spinitron.com/KALX/pl/23352027/Hot-Lasagna",
+          "start_time": "2026-11-16T12:00:00-0800",
+          "end_time": "2026-11-16T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:7ABTw0347lzzTUTSSknwvs",
+          "spotify:track:0CGGvJIBaa2NXA5wKUoAx7",
+          "spotify:track:1EqMggsvn1z8hD4vbuPMzC",
+          "spotify:track:1K2U25lyEFLB58hlavQVZH",
+          "spotify:track:4w2RSYBo7hhMSZNGL0Pq5U",
+          "spotify:track:6JWyKYWqH0LOoyhlBmuNrY",
+          "spotify:track:3iX3O9Zgc9o8fG08VHRyfc",
+          "spotify:track:2DNTyJLzpmpqO4UoKCvYPt",
+          "spotify:track:52mwfXfaDjtBmSJLHKVOm5",
+          "spotify:track:5uBLY1Txqiy8hamP11QcGc",
+          "spotify:track:7sA4xGtGJa7QtJbBkxVlB2",
+          "spotify:track:34QDFvdgNs6XZ8YCB1aY6v",
+          "spotify:track:1wNTVn4fnAd5Iyt1eT2Wy8",
+          "spotify:track:22goo4xnJDYzc01aWdcMPM",
+          "spotify:track:6iYy7KeCplP577WJWyTwN7",
+          "spotify:track:3bDpzscOMb7MXvetzy3JlA",
+          "spotify:track:7br18RxkMIIchVXQuFlxZm",
+          "spotify:track:718xQ9jnYPzjwux2VVDTdQ",
+          "spotify:track:09TbzEX6OR1509ojQVkTpW",
+          "spotify:track:7tomJU8eDKJYF7rpQqDPs7",
+          "spotify:track:3NW1YMA8kfNVTzGJCGBS8m",
+          "spotify:track:0QvHezePXjHcfyyLkxBGBk",
+          "spotify:track:5t317gqhP6f64UpK2NQwjI",
+          "spotify:track:1aaUWZtQjhhR1LcHZbgL9s",
+          "spotify:track:55iVsZNIycQCCJUE4IbI4X",
+          "spotify:track:17FIGmWzJGCLyxlNhe5smM",
+          "spotify:track:7Mzp4JniZQ8XS1ATW2j3lK",
+          "spotify:track:44u8TNTKl3CbrVqmPvRr08",
+          "spotify:track:7DZrjJhr0DuB8emwpA4WKO",
+          "spotify:track:2oiLDyYVLnUUDKcdnLm9va",
+          "spotify:track:3wKJmBPTT63cLIm9YgAp4X",
+          "spotify:track:5UH1mOwz8syojN60SV8KUo",
+          "spotify:track:4DNSNz4gy8EaZxlSGW8M2l",
+          "spotify:track:58S75zTC6BHIhRPidAWrqG"
+        ],
+        "listing": {
+          "name": "KALX - Hot Lasagna - 2026-11-16",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
