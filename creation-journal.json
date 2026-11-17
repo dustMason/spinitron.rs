@@ -33941,7 +33941,7 @@
           "start_time": "2026-11-16T05:00:00-0800",
           "end_time": "2026-11-16T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4xdjLuh2RZUXChKQAImVVQ",
         "desired_uris": [
@@ -34013,8 +34013,102 @@
           "spotify:track:39esfbt3aeCDPIHgnq00j6"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T09:00:00-0800",
+          "broadcast_start": "2026-11-16T05:00:00-0800",
+          "imported_at": "2026-11-17T15:36:45.107505528+00:00",
+          "last_updated": "2026-11-17 15:36 UTC",
           "name": "KPOO - Record Shop Oldies - Variety Oldies - 2026-11-16",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Jimi Hendrix",
+                "The Isley Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273367209bc6f7086c3aa3e527e",
+              "name": "Move Over and Let Me Dance"
+            },
+            {
+              "artists": [
+                "J.J. Jackson and the Jackals"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a38403f0397dc754721e21a7",
+              "name": "Ring Telephone"
+            },
+            {
+              "artists": [
+                "The Du Droppers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b685dc634fa0bbf6eada91b1",
+              "name": "I Wanna Know"
+            },
+            {
+              "artists": [
+                "The Hueys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e70c7a0fc4476c65453babb",
+              "name": "Coo Coo Over You"
+            },
+            {
+              "artists": [
+                "Bobby Darin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273663b8b395f895362074ce956",
+              "name": "Skylark"
+            },
+            {
+              "artists": [
+                "Otis Redding"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730cc9bdacbe3728b30b3228bf",
+              "name": "(Sittin' On) the Dock of the Bay"
+            },
+            {
+              "artists": [
+                "Smokey Robinson & The Miracles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735d9d16159f4b500e9b713c4a",
+              "name": "Save Me"
+            },
+            {
+              "artists": [
+                "The Royal Teens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27362445f0580d32a042e573979",
+              "name": "Short Shorts"
+            },
+            {
+              "artists": [
+                "Smiley Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273220015ef525fda00ced7dbbb",
+              "name": "Shame, Shame, Shame"
+            },
+            {
+              "artists": [
+                "Baby Washington"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273522cd84ad9f6b4a059fa30f6",
+              "name": "The Time"
+            },
+            {
+              "artists": [
+                "Gordon Lightfoot"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738f2b3a1c0559ca6188de574b",
+              "name": "Sundown"
+            },
+            {
+              "artists": [
+                "Eugene Church & The Fellows"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730154f125d56db1ce2f170293",
+              "name": "Pretty Girls Everywhere"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23350497/Record-Shop-Oldies-Variety-Oldies",
+          "station": "KPOO",
+          "track_count": 66,
+          "url": "https://open.spotify.com/playlist/4xdjLuh2RZUXChKQAImVVQ"
         }
       },
       "needs_reconciliation": false
