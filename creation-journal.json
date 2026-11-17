@@ -34899,7 +34899,7 @@
           "start_time": "2026-11-16T23:00:00-0800",
           "end_time": "2026-11-17T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3dUfgLfG0ef9rRp9eyAppK",
         "desired_uris": [
@@ -34942,8 +34942,103 @@
           "spotify:track:3Poqk6LAO81GLR5N9jz2Nf"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T06:00:00-0800",
+          "broadcast_start": "2026-11-16T23:00:00-0800",
+          "imported_at": "2026-11-17T15:41:28.081673820+00:00",
+          "last_updated": "2026-11-17 15:41 UTC",
           "name": "KPOO - Over Nite Sounds - 2026-11-16",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Little Willie John"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27350f93607912e61fb9ad99ded",
+              "name": "Walk Slow"
+            },
+            {
+              "artists": [
+                "The Sugarman 3"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735d7ab4df080bc4e666dea9c0",
+              "name": "Turtle Walk"
+            },
+            {
+              "artists": [
+                "Sharon Jones & The Dap-Kings"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273748ca58fcd2b31fae08cd839",
+              "name": "Casella Walk"
+            },
+            {
+              "artists": [
+                "The Original Pin Strip Brass Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27317b42bc505119d8afc5f4519",
+              "name": "I'm Walkin'"
+            },
+            {
+              "artists": [
+                "Dinah Washington",
+                "Rudy Martin Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738761f923e573d8e460e97d90",
+              "name": "Walkin' And Talkin' And Crying My Blues Away"
+            },
+            {
+              "artists": [
+                "Thelonious Monk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d866291dd41a5aa5ff644167",
+              "name": "In Walked Bud"
+            },
+            {
+              "artists": [
+                "Henry Mancini"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27345ea9c58a203d18bdaf906c6",
+              "name": "Walkin' Bass"
+            },
+            {
+              "artists": [
+                "Ella Fitzgerald and Her Famous Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734d349fc7ae8f48681585e736",
+              "name": "Sugar Blues"
+            },
+            {
+              "artists": [
+                "Louis Armstrong",
+                "Fletcher Henderson & His Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731c0d48f34e919a81c01c8d9a",
+              "name": "Sugarfoot Stomp"
+            },
+            {
+              "artists": [
+                "Don Byron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bcc44db1c21e325f3c29f2d4",
+              "name": "Bounce of the Sugar Plum Fairies"
+            },
+            {
+              "artists": [
+                "The Treniers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733d49dbfaa43535fd28c17097",
+              "name": "Rockin' Is Our Bizness - 78rpm Version"
+            },
+            {
+              "artists": [
+                "Nina Simone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738c1edace3ab711d2963dfdc8",
+              "name": "I Want a Little Sugar In My Bowl"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23354971/Over-Nite-Sounds",
+          "station": "KPOO",
+          "track_count": 37,
+          "url": "https://open.spotify.com/playlist/3dUfgLfG0ef9rRp9eyAppK"
         }
       },
       "needs_reconciliation": false
