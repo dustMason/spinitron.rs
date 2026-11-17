@@ -20168,7 +20168,7 @@
           "start_time": "2026-11-16T07:00:00-0800",
           "end_time": "2026-11-16T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2BDQnyEjaSx3zjHQlcOFbV",
         "desired_uris": [
@@ -20197,8 +20197,101 @@
           "spotify:track:3nJ6m1KHrilYrpLVKgJ7Ue"
         ],
         "listing": {
+          "broadcast_end": "2026-11-16T09:00:00-0800",
+          "broadcast_start": "2026-11-16T07:00:00-0800",
+          "imported_at": "2026-11-17T15:42:48.860241529+00:00",
+          "last_updated": "2026-11-17 15:42 UTC",
           "name": "KALX - Old & New Dreams - 2026-11-16",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Enno Velthuys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e983ec404e58bf4b8eb254e",
+              "name": "In The West"
+            },
+            {
+              "artists": [
+                "Klara Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4c9254994758b20941278f7",
+              "name": "Fortsätt"
+            },
+            {
+              "artists": [
+                "Astrud Gilberto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eb8f296fb95217e6473ac5a1",
+              "name": "The Sea Is My Soil"
+            },
+            {
+              "artists": [
+                "MEMORIALS"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273971f5a59bf2544c3ed3d0372",
+              "name": "Lamplighter"
+            },
+            {
+              "artists": [
+                "Haruomi Hosono"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733af48613b19da7eb6758d587",
+              "name": "Humming “Dream of Love”"
+            },
+            {
+              "artists": [
+                "Al Stewart"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738db9282bbd10330dd1d48c7f",
+              "name": "The Last Day of June 1934"
+            },
+            {
+              "artists": [
+                "Michael Chapman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d48864e3094bdb01b6b20905",
+              "name": "Postcards Of Scarborough - 2011 Remaster"
+            },
+            {
+              "artists": [
+                "Souled American"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f01c46ce71da6e0894e411f",
+              "name": "E.Q."
+            },
+            {
+              "artists": [
+                "Arthur Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eceddc580f0f2a3be2299083",
+              "name": "Is There Nothing Beyond God - 2023 Remaster"
+            },
+            {
+              "artists": [
+                "Earth & Fire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e21d4908cf02176791a1c4c1",
+              "name": "Storm And Thunder"
+            },
+            {
+              "artists": [
+                "Resavoir"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731a1d2d1a415ab86cbdd7fbb0",
+              "name": "Earth from Above"
+            },
+            {
+              "artists": [
+                "The Stranglers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e81b37cb5a55d149118b4e58",
+              "name": "All Roads Lead to Rome"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23350797/Old-New-Dreams",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/2BDQnyEjaSx3zjHQlcOFbV"
         }
       },
       "needs_reconciliation": false
