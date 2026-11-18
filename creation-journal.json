@@ -38206,6 +38206,71 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23356794": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23356794,
+          "title": "Grown Folks Music",
+          "url": "https://spinitron.com/KPOO/pl/23356794/Grown-Folks-Music",
+          "start_time": "2026-11-17T09:00:00-0800",
+          "end_time": "2026-11-17T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1R2zQ3iGcBjuf0tpSQBxNy",
+          "spotify:track:28ByCrJoqJOFz9ncsNPBKU",
+          "spotify:track:5vM8GpI04rVLp7m1gUHDRa",
+          "spotify:track:1OCXqkT9dvkwE9FVCHjTMV",
+          "spotify:track:5CqT9iiQ06UPXj7oeHFMCV",
+          "spotify:track:3FkJ5VtmZdIjGyTjK1pHlX",
+          "spotify:track:5CNFpHL7YQY5HpsAYp2qwy",
+          "spotify:track:3NVVpuchyM7vo9d03PvP60",
+          "spotify:track:142qEUFuzDNMLDJbRltCzB",
+          "spotify:track:0Eir5hEgKUjm8liGGXfghF",
+          "spotify:track:3uJ9hc55XSwWhG2bVY9v2M",
+          "spotify:track:09wS88aLlU22TncCcLTv9m",
+          "spotify:track:4XplAUjUAGkK0fiCTIFntD",
+          "spotify:track:2953slhcJtW0hyZA6L6xfO",
+          "spotify:track:1VAKLbzRWNgVb8eVK0B28z",
+          "spotify:track:678nhPWdgAaYDnuzHGBGny",
+          "spotify:track:0HAlrWQncEfds5BV2knJUm",
+          "spotify:track:6lEEilCMVi2uUNQn8LNbnx",
+          "spotify:track:5CNFpHL7YQY5HpsAYp2qwy",
+          "spotify:track:1e4rE005iFgSBGrQTop9XL",
+          "spotify:track:6EHJcbjjFtukS3aIwnynqM",
+          "spotify:track:1PA3CRIM5CDSRgT7Mm1Mlo",
+          "spotify:track:6i59VHMZRsmV4QpqLgohAZ",
+          "spotify:track:3PU92AYjMRQXpOqIUcFuzw",
+          "spotify:track:1eakE7ab5sXvSF6mcKR5GU",
+          "spotify:track:7LdbDjg6esKNAsnFElpFnB",
+          "spotify:track:2LGyCIiVEF4ao8awkeS4dI",
+          "spotify:track:6JYFt8SZ6e5sZqgcrFXiHM",
+          "spotify:track:2XYIYxuT5kuQEnh7ITUThz",
+          "spotify:track:3ZIlPMr4o9AWdRlkwRD4Wi",
+          "spotify:track:2RDINnj9SYaVkAbg9X1w9a",
+          "spotify:track:6f82MzRmx4TJB59DkzVaBC",
+          "spotify:track:6XZN3bbWNZpckaPNW8FAEm",
+          "spotify:track:1lYCmnucH0yo2XGzd2h57r",
+          "spotify:track:14LcEt6z1cpwAToBlYh7KF",
+          "spotify:track:4RYNJVKgNpwSZguajVfsef",
+          "spotify:track:0HHGQd9Yq6MtL2NBuaxTpu",
+          "spotify:track:17J7NfenJTOPnyaaHbvdBo",
+          "spotify:track:2CUN8ZEey2kr4aQBxvyBeL",
+          "spotify:track:6LUBH3n9jR4nuo35SxZ0zV",
+          "spotify:track:0NA9R5gsSiGinYAXq1ixEV",
+          "spotify:track:6eZfLDInqkFsD8I7NYrO9l",
+          "spotify:track:1shA8IhS5CB4yYzwrn6Fzl",
+          "spotify:track:3DCS67Ea9i4mW4kKo5N0kI"
+        ],
+        "listing": {
+          "name": "KPOO - Grown Folks Music - 2026-11-17",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
