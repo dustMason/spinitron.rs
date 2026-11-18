@@ -21973,6 +21973,50 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23358232": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23358232,
+          "title": "Queasy Listening",
+          "url": "https://spinitron.com/KALX/pl/23358232/Queasy-Listening",
+          "start_time": "2026-11-17T15:00:00-0800",
+          "end_time": "2026-11-17T17:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:56IQzavbkFijLv5dp3grXa",
+          "spotify:track:5tseZ3u9uUKggcuIG2QEsN",
+          "spotify:track:0QE1YMKkkYXkzH8wE5Amt6",
+          "spotify:track:3mnCvIn24jLu28349qEEbt",
+          "spotify:track:4GSB7RQbr0W0NApsclVpIV",
+          "spotify:track:343Bi6nTRkRw2cIXRj41Df",
+          "spotify:track:7ABTw0347lzzTUTSSknwvs",
+          "spotify:track:1lfrEfIqFx5uUrJInBub0n",
+          "spotify:track:0uNa5pypIpPlUIqew6XceS",
+          "spotify:track:4tQ3Xs1dTYrDWTFDbn9ZjS",
+          "spotify:track:6gupyk3APf4XPhX0cAX6Ol",
+          "spotify:track:1XNHWpuSPqQAbAD9t3qfd9",
+          "spotify:track:6Kr8cT7pc2YFYnYd2Zev8h",
+          "spotify:track:3TKWCQMU7xYEEslFXsj51i",
+          "spotify:track:7yBH2DRYZ5zsklX5nseXzK",
+          "spotify:track:6ORHa9jA7SGhtAZXhqrvpk",
+          "spotify:track:1d8BadAgtbQGR1FkLMFnxA",
+          "spotify:track:322IzSUsTbcRjbxBOQ5tGM",
+          "spotify:track:5UM8dyg6I5bmJeO6Q3JZqr",
+          "spotify:track:61WwdXu6nVldpddPhpAQlm",
+          "spotify:track:1MCDmXeXjjocflTFFDlS3t",
+          "spotify:track:2MFCZCllGmc34VoVJPZJ6b",
+          "spotify:track:7Iv3TeL68uvRcKA4eQ1mvX"
+        ],
+        "listing": {
+          "name": "KALX - Queasy Listening - 2026-11-17",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
