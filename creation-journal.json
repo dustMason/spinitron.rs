@@ -37924,7 +37924,7 @@
           "start_time": "2026-11-17T06:00:00-0800",
           "end_time": "2026-11-17T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0IqvtoMjIXcI25nbJgkfG6",
         "desired_uris": [
@@ -37933,8 +37933,39 @@
           "spotify:track:5mFDQH5fGoV7jL1AuoiRsO"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T07:00:00-0800",
+          "broadcast_start": "2026-11-17T06:00:00-0800",
+          "imported_at": "2026-11-18T15:22:58.522829396+00:00",
+          "last_updated": "2026-11-18 15:22 UTC",
           "name": "KPOO - More Overnight - 2026-11-17",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Mingus Big Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ed329c1b42e12a9ecc703b87",
+              "name": "Moods in Mambo"
+            },
+            {
+              "artists": [
+                "Nancy Wilson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ead2047d2c6e8abce3800f88",
+              "name": "Ode To Billie Joe"
+            },
+            {
+              "artists": [
+                "Harold Melvin & The Blue Notes",
+                "Teddy Pendergrass"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365cfa1e7a63acbc7a5ddbe86",
+              "name": "Wake Up Everybody (feat. Teddy Pendergrass)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23356080/More-Overnight",
+          "station": "KPOO",
+          "track_count": 3,
+          "url": "https://open.spotify.com/playlist/0IqvtoMjIXcI25nbJgkfG6"
         }
       },
       "needs_reconciliation": false
