@@ -38008,6 +38008,63 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23356351": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23356351,
+          "title": "70's and 60's Soul for Breakfast",
+          "url": "https://spinitron.com/KPOO/pl/23356351/70-s-and-60-s-Soul-for-Breakfast",
+          "start_time": "2026-11-17T07:00:00-0800",
+          "end_time": "2026-11-17T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1eoBtZ1JBZ4AVsnIiRsnnI",
+          "spotify:track:3bNeiUR1H0qDbLcbdYc5Bt",
+          "spotify:track:0C4CdjZponKJGIaTvLVP53",
+          "spotify:track:5Y6m0icZS8kEJprdM9BpBE",
+          "spotify:track:5KrmHRzG3clUKzMhASBw0t",
+          "spotify:track:0CcL4kSHKIEwF3IW0BGgb6",
+          "spotify:track:2z0iPv01eN6U6fiXlZFKgI",
+          "spotify:track:1BmwmaRot5p3MJzwMJ7AKr",
+          "spotify:track:5feUxmo1qphxusEo1N9GRt",
+          "spotify:track:3pZtEvSC4CU6ruoShJTmTn",
+          "spotify:track:3FWFzU86JBKIcAh7iMUxN5",
+          "spotify:track:0rfuQe8C0jPBtJjGMYe7hk",
+          "spotify:track:2aOkmKduSAD5ukS9IW3HkL",
+          "spotify:track:2JJyDYFXE8I77adzXz7ljs",
+          "spotify:track:6qOarzkJOvkKitR5dD6kLX",
+          "spotify:track:0TFBANCgctg5hAt9ez2V2g",
+          "spotify:track:0C4CdjZponKJGIaTvLVP53",
+          "spotify:track:7G3hL1HvxZ3Iz8J8KkkeAN",
+          "spotify:track:2BQZvZsA9SRafvWEBSQnri",
+          "spotify:track:5uK4J4QfO5zWXmHrYAsSWY",
+          "spotify:track:4Z828ZEqCVOo6JPOnB40qn",
+          "spotify:track:4H0HAL1RsYdb7JQX3nONur",
+          "spotify:track:0mluveOS8uaUOwQZjcovWl",
+          "spotify:track:4pROYHYoJPrJwjR3SStQwK",
+          "spotify:track:4Gym5lgx07XtvLzg5krMyI",
+          "spotify:track:6xAKCAHwaAvw9rlwAv3lkD",
+          "spotify:track:33oIra4uXFWu9V0zvjj5Xk",
+          "spotify:track:67GjAr4MsMZgYuNW0pX1fk",
+          "spotify:track:1OppEieGNdItZbE14gLBEv",
+          "spotify:track:6eo0UWfTGdRej3A1zAiddc",
+          "spotify:track:3UPWHgwMFfpE7dIWubNIXr",
+          "spotify:track:3VupNOs7cZDQrA7XV2Yb5p",
+          "spotify:track:5yM1XZ2kk5A6Eh5u7kMLMk",
+          "spotify:track:6WXtEMPzp68vGspFnpBjK9",
+          "spotify:track:1CmylxKewaz3wVVgYcPzmb",
+          "spotify:track:78T592KXsizVSvYdTldh8r"
+        ],
+        "listing": {
+          "name": "KPOO - 70's and 60's Soul for Breakfast - 2026-11-17",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
