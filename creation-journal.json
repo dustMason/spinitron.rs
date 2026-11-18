@@ -22397,15 +22397,31 @@
           "start_time": "2026-11-17T18:00:00-0800",
           "end_time": "2026-11-17T18:15:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0nRwZIXSg24fvUN5MMbsnf",
         "desired_uris": [
           "spotify:track:1QGy4rzK5p8N7OYYn5kWSt"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T18:15:00-0800",
+          "broadcast_start": "2026-11-17T18:00:00-0800",
+          "imported_at": "2026-11-18T15:20:15.678647335+00:00",
+          "last_updated": "2026-11-18 15:20 UTC",
           "name": "KALX - NEWS - 2026-11-17",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Nujabes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273878ed741b8e1342d58a332ca",
+              "name": "sanctuary ship"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23359118/NEWS",
+          "station": "KALX",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/0nRwZIXSg24fvUN5MMbsnf"
         }
       },
       "needs_reconciliation": false
