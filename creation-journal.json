@@ -38709,7 +38709,7 @@
           "start_time": "2026-11-17T20:00:00-0800",
           "end_time": "2026-11-18T01:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2fZs8QYirytVq7ZiH7hh5i",
         "desired_uris": [
@@ -38755,8 +38755,110 @@
           "spotify:track:69uc5EVcCJn7ZjBm0GwZja"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T01:00:00-0800",
+          "broadcast_start": "2026-11-17T20:00:00-0800",
+          "imported_at": "2026-11-18T15:28:28.430393043+00:00",
+          "last_updated": "2026-11-18 15:28 UTC",
           "name": "KPOO - Fingersnaps Salon...Music & Conversation - 2026-11-17",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Patrick Cowley",
+                "Sylvester"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fa24e701cdc1cc21e44fad8d",
+              "name": "Do You Wanna Funk?"
+            },
+            {
+              "artists": [
+                "Daft Punk",
+                "Masters At Work"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27387aa91b6ba6b4fded7bf3293",
+              "name": "Around the World - Mellow Mix"
+            },
+            {
+              "artists": [
+                "Beyoncé"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27369a3c061676c2020adfe8315",
+              "name": "HEATED"
+            },
+            {
+              "artists": [
+                "Honey Dijon",
+                "Jacob Lusk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e165cd627894b41e6bf30b61",
+              "name": "Satisfied"
+            },
+            {
+              "artists": [
+                "Chris Rockford",
+                "Jennifer Paige",
+                "Groovefore"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733b3987702f498579ce461fc6",
+              "name": "Crush (Club Rework) - Groovefore Remix Radio Edit"
+            },
+            {
+              "artists": [
+                "John Legend"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27398a32c1a2a1f687b3ba914c8",
+              "name": "Pray For Ya"
+            },
+            {
+              "artists": [
+                "Jungle"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273775f28b18db542ae81fafee3",
+              "name": "Come Back to Me"
+            },
+            {
+              "artists": [
+                "Lisa Stansfield"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273809844feab70bbfa812ef615",
+              "name": "Live Together - Edit"
+            },
+            {
+              "artists": [
+                "Anderson .Paak"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b5383880cce585111efbeaad",
+              "name": "Miss Right"
+            },
+            {
+              "artists": [
+                "Black Coffee",
+                "David Guetta",
+                "Delilah Montagu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734dddf08913120fa17bb289f3",
+              "name": "Drive (feat. Delilah Montagu)"
+            },
+            {
+              "artists": [
+                "Logic",
+                "Claude Monnet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e36d5e21e6701c8f5b0b207f",
+              "name": "The Warning (2 Copy Mix)"
+            },
+            {
+              "artists": [
+                "MAW",
+                "Wunmi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273911d2c75eae568383f988d31",
+              "name": "Expensive - MAW Afrobeat Mix"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23359536/Fingersnaps-Salon-Music-Conversation",
+          "station": "KPOO",
+          "track_count": 40,
+          "url": "https://open.spotify.com/playlist/2fZs8QYirytVq7ZiH7hh5i"
         }
       },
       "needs_reconciliation": false
