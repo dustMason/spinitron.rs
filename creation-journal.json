@@ -21775,7 +21775,7 @@
           "start_time": "2026-11-18T00:00:00-0800",
           "end_time": "2026-11-18T03:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4WSaXdujJnD3qx1iUNCGnf",
         "desired_uris": [
@@ -21808,8 +21808,103 @@
           "spotify:track:4esGuNb7bdy63h4l5RkgBw"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T03:00:00-0800",
+          "broadcast_start": "2026-11-18T00:00:00-0800",
+          "imported_at": "2026-11-18T15:19:35.225012432+00:00",
+          "last_updated": "2026-11-18 15:19 UTC",
           "name": "KALX - Voyager 1 — One Light Day Away with Ben Stokes + Mark Pistel - 2026-11-18",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Meat Beat Manifesto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736b6e6f81ae43a82c629fb0ce",
+              "name": "Children Of Planet Earth"
+            },
+            {
+              "artists": [
+                "Long Distance Poison"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730184c67b6cf26bcc35a1bcb2",
+              "name": "Signal I - Drew Mcdowall Remix"
+            },
+            {
+              "artists": [
+                "Holly Herndon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27393602a8a8b9f345b516f265f",
+              "name": "Interference"
+            },
+            {
+              "artists": [
+                "Leonard Nimoy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f264358903fcede231c2ed34",
+              "name": "Music To Watch Space Girls By"
+            },
+            {
+              "artists": [
+                "Jack Dangers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a1afbb209ef34892f7659d47",
+              "name": "Main Titles / Overture"
+            },
+            {
+              "artists": [
+                "D.H.S."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27307f52e62dfc4ec2c9663b375",
+              "name": "Uranus"
+            },
+            {
+              "artists": [
+                "D.H.S."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cffa9adb1fae5139afdce8cb",
+              "name": "Supersonic Holofonic"
+            },
+            {
+              "artists": [
+                "Bézier"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273665628529cfd4d3900fad39d",
+              "name": "Primes"
+            },
+            {
+              "artists": [
+                "Riesgo de Contagio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d8c9b3629c255976482a6c4c",
+              "name": "La Tele Subliminal"
+            },
+            {
+              "artists": [
+                "Mark Pistel",
+                "Mark Stewart"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dbd6d430b5d207707e257cac",
+              "name": "Rage of Angels - Mark Pistel Remix"
+            },
+            {
+              "artists": [
+                "Tino"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736e927760c9260aab8679b3eb",
+              "name": "Hole in the Sky Dub"
+            },
+            {
+              "artists": [
+                "Consolidated",
+                "Adrian Sherwood"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27395f0543676baffda87d11ee3",
+              "name": "Who Controls The Past - Adrian Sherwood Dub Mix"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23356837/Voyager-1-One-Light-Day-Away-with-Ben-Stokes-Mark-Pistel",
+          "station": "KALX",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/4WSaXdujJnD3qx1iUNCGnf"
         }
       },
       "needs_reconciliation": false
