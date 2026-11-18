@@ -38873,7 +38873,7 @@
           "start_time": "2026-11-18T00:00:00-0800",
           "end_time": "2026-11-18T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7bX2mv1rBkhjc70T2IDWMG",
         "desired_uris": [
@@ -38914,8 +38914,105 @@
           "spotify:track:6IuoGXChH84tF9CT9PCN1h"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T06:00:00-0800",
+          "broadcast_start": "2026-11-18T00:00:00-0800",
+          "imported_at": "2026-11-18T15:29:09.954322450+00:00",
+          "last_updated": "2026-11-18 15:29 UTC",
           "name": "KPOO - Over Nite Sounds - 2026-11-18",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Dick Hyman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348cd73746936dbd8f68b430a",
+              "name": "Peacherine Rag"
+            },
+            {
+              "artists": [
+                "nimino",
+                "Manta"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733a6fd09dc4dfdd42134b5046",
+              "name": "Better"
+            },
+            {
+              "artists": [
+                "Big Moses",
+                "Kenny Bobien",
+                "Stephan Mandrax"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733f40fca37a2466c4141c2948",
+              "name": "Brighter Days - Stephan's Liquid Club Mix"
+            },
+            {
+              "artists": [
+                "Darryl D'Bonneau"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27381966901ab7bd1018651b0d9",
+              "name": "Revenge"
+            },
+            {
+              "artists": [
+                "Rocco Rodamaal",
+                "Monique Bingham"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b5d5635433f5841766781425",
+              "name": "Post Truth Youth"
+            },
+            {
+              "artists": [
+                "Dick Hyman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348cd73746936dbd8f68b430a",
+              "name": "Peacherine Rag"
+            },
+            {
+              "artists": [
+                "Michael Jackson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732b74bf21c7e4f56758610949",
+              "name": "I Can't Help It"
+            },
+            {
+              "artists": [
+                "Sampha"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365fa072296480cea19a38cd0",
+              "name": "Suspended"
+            },
+            {
+              "artists": [
+                "SAULT"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273637c02dae3a0f341938aaa58",
+              "name": "Heart"
+            },
+            {
+              "artists": [
+                "Lianne La Havas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27306b528e986175a2aef99b11d",
+              "name": "Elusive"
+            },
+            {
+              "artists": [
+                "Kings Return"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737bc5d744917f1f11c3b4fbff",
+              "name": "Overjoyed"
+            },
+            {
+              "artists": [
+                "Goldchain GG"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273751abb56bf4d63a28bd62b9c",
+              "name": "MamE"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23360632/Over-Nite-Sounds",
+          "station": "KPOO",
+          "track_count": 35,
+          "url": "https://open.spotify.com/playlist/7bX2mv1rBkhjc70T2IDWMG"
         }
       },
       "needs_reconciliation": false
