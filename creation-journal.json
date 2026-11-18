@@ -38566,7 +38566,7 @@
           "start_time": "2026-11-17T18:00:00-0800",
           "end_time": "2026-11-17T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7kWHsgVA6W5we6VlwbWQef",
         "desired_uris": [
@@ -38597,8 +38597,104 @@
           "spotify:track:5IDwiSA5RALU1QQ14Xth2c"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T20:00:00-0800",
+          "broadcast_start": "2026-11-17T18:00:00-0800",
+          "imported_at": "2026-11-18T15:27:46.051489825+00:00",
+          "last_updated": "2026-11-18 15:27 UTC",
           "name": "KPOO - On The Spot - 2026-11-17",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Horace Tapscott"
+              ],
+              "image_url": "https://i.scdn.co/image/35095ff91008b6dfdc6387ae9497986ede48f596",
+              "name": "Sandy & Niles"
+            },
+            {
+              "artists": [
+                "AI 5"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27359072d7666c8c2de32b92e1e",
+              "name": "Harmless"
+            },
+            {
+              "artists": [
+                "Postmodern Jukebox",
+                "Melinda Doolittle"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f160d21f18014b6ffaa692c6",
+              "name": "Toxic"
+            },
+            {
+              "artists": [
+                "Diana Krall"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e7b588e9d98a931180ba0183",
+              "name": "Temptation"
+            },
+            {
+              "artists": [
+                "Melody Gardot"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fb6068078c8525a7f5a6d16",
+              "name": "Your Heart Is As Black As Night"
+            },
+            {
+              "artists": [
+                "Armando Sciascia Orchestra",
+                "Wanda Roti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27377ae1866067b4477dfe5bcb4",
+              "name": "Sexy World - O.S.T. from the Film Sexy"
+            },
+            {
+              "artists": [
+                "Chaka Khan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f465d3dd03205f8720a2b56e",
+              "name": "Hazel's Hips"
+            },
+            {
+              "artists": [
+                "Ella Fitzgerald"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a05dd3e7fb9e91fee693cc05",
+              "name": "Midnight Sun"
+            },
+            {
+              "artists": [
+                "Etta Jones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b3a70d78efb04a33d0ed2785",
+              "name": "My Gentleman Friend"
+            },
+            {
+              "artists": [
+                "Nina Simone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da79dd1fc3e3fdfc4ed772f6",
+              "name": "You Can Have Him"
+            },
+            {
+              "artists": [
+                "Peggy Lee",
+                "Robert Norberg"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b30cdc4b7a1630bde8c919c6",
+              "name": "Is That All There Is? - Remastered 1998"
+            },
+            {
+              "artists": [
+                "Lianne La Havas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273031126e327368d213942b96b",
+              "name": "Is Your Love Big Enough?"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23359102/On-The-Spot",
+          "station": "KPOO",
+          "track_count": 25,
+          "url": "https://open.spotify.com/playlist/7kWHsgVA6W5we6VlwbWQef"
         }
       },
       "needs_reconciliation": false
