@@ -21783,6 +21783,28 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23356927": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23356927,
+          "title": "Berkeley Brainwaves",
+          "url": "https://spinitron.com/KALX/pl/23356927/Berkeley-Brainwaves",
+          "start_time": "2026-11-17T09:00:00-0800",
+          "end_time": "2026-11-17T09:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:54miaxZNdpmwKcJIHBKwOZ"
+        ],
+        "listing": {
+          "name": "KALX - Berkeley Brainwaves - 2026-11-17",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
