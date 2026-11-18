@@ -38555,6 +38555,52 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23359102": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23359102,
+          "title": "On The Spot",
+          "url": "https://spinitron.com/KPOO/pl/23359102/On-The-Spot",
+          "start_time": "2026-11-17T18:00:00-0800",
+          "end_time": "2026-11-17T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4SIM4Y7dyFckE32qMbKX3V",
+          "spotify:track:2jDoMIOWwDtHOdgoivUU1Z",
+          "spotify:track:10PjojnHeipKeQ04nrg9dq",
+          "spotify:track:68FhagAoZr9Ld8oCp9JoYP",
+          "spotify:track:1EUj3EeDYX5yldkBXkNDJP",
+          "spotify:track:0FgSJYvRrnqSV09F6Vblu6",
+          "spotify:track:6OShXXkeZ1z2SxCsmDqfXJ",
+          "spotify:track:0cGfdxEwfJIcpcDgG5EEGM",
+          "spotify:track:488NOLudtctZ7RqVkW07xU",
+          "spotify:track:5S2rOWnQhXrZOHkenCWOn1",
+          "spotify:track:1lfgMTtRomZmt8LKG1uFvg",
+          "spotify:track:23DsBjhH8cvuOYFbYUdoLV",
+          "spotify:track:6UUp3D7wFpmsMTA8LpbiHD",
+          "spotify:track:19ggnt7mpBPFscgz6Matqj",
+          "spotify:track:45SfRtIJEjI3k8wl3Tilnu",
+          "spotify:track:7AThPGt0k7RYMRN9G0xSuA",
+          "spotify:track:1JpaIZi93SOQyruq9GgbNq",
+          "spotify:track:5JwesasXdZNH9JQ0jMPdhd",
+          "spotify:track:3VS1qUm62nDLZJtxd0V2bb",
+          "spotify:track:7tZVUtLZxOC5BUNnPxAsoS",
+          "spotify:track:70CGHXwSWIRMycte16LDLU",
+          "spotify:track:5H9l1hI2sMPgO6rvQbR3Vh",
+          "spotify:track:1hqwCcn2OWOXYu3GBtV6vD",
+          "spotify:track:0blhR7WThaP5dHfXGwYMbj",
+          "spotify:track:5IDwiSA5RALU1QQ14Xth2c"
+        ],
+        "listing": {
+          "name": "KPOO - On The Spot - 2026-11-17",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
