@@ -21822,6 +21822,61 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23357499": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23357499,
+          "title": "Deep Moon",
+          "url": "https://spinitron.com/KALX/pl/23357499/Deep-Moon",
+          "start_time": "2026-11-17T12:00:00-0800",
+          "end_time": "2026-11-17T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:7iBggOLgXiScPJUAKFG3ah",
+          "spotify:track:46MRcStjaWUGmTKUDP8ykO",
+          "spotify:track:4PxzGOH79jcmmldKgoI9sB",
+          "spotify:track:5TLMUJMwT7bGTttlUdPI7G",
+          "spotify:track:3fCI9sBIKDAHL5olHnlYdp",
+          "spotify:track:6kHGOPNGLpcufvMTaT52d5",
+          "spotify:track:2WOifeL4oqMSa6LBvRIrJL",
+          "spotify:track:0pMaAOTIhwluZnmAbKYzMo",
+          "spotify:track:1esNIvrPFKWoIXYnN4zlUk",
+          "spotify:track:1BaAzMva4yf7cWeOGwp7H4",
+          "spotify:track:2qOIGYRyK8956qxBCx6Jeu",
+          "spotify:track:5RsfvV4oSchEPH6t93C1lR",
+          "spotify:track:6XdIwm6ygnAslVuaYEfRwW",
+          "spotify:track:7gRihXCNhwHuqKhW3EopWC",
+          "spotify:track:0mzH6i9q9VnbkwLaVoIbzK",
+          "spotify:track:5Y0GRnauCCbfQlXRGuTvdI",
+          "spotify:track:1H3gGIIkTPtBfasqsi9kme",
+          "spotify:track:3lmKmUMqnPCN0TGmSlm6CW",
+          "spotify:track:77OyijMWERKm1hgPfFiuxC",
+          "spotify:track:1l6k8lyqbSYJMnaWlglAZq",
+          "spotify:track:0OQTIY7qPwyufiVZV3XIYi",
+          "spotify:track:7t57XLKbJUlNJ7qKcwQzLx",
+          "spotify:track:1otyHDPGjkR6bSowChxj6z",
+          "spotify:track:6HaAIKrUdkAjqVESa3eA1J",
+          "spotify:track:39Y94y014xks47VhRenQQl",
+          "spotify:track:2cG4ny5XcDWVEFqEKjpZom",
+          "spotify:track:7IoBwmIY4SjJBC6Tm0IDCh",
+          "spotify:track:1MIvq6tMFGKI4mNjHwUcHg",
+          "spotify:track:0zOx0pm2F95Rz76oB1WH6N",
+          "spotify:track:0TnIJemF8AalCE7bRYqkTv",
+          "spotify:track:2mQxoLQYz9t5OWWGqX38Ph",
+          "spotify:track:7DcBfvu7qAkPG3uctFr6IU",
+          "spotify:track:6v7hCIRoJkuYShT0wls1gD",
+          "spotify:track:71vyz1pfzmj1MQvJYOsPlb"
+        ],
+        "listing": {
+          "name": "KALX - Deep Moon - 2026-11-17",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
