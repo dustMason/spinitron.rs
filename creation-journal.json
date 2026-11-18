@@ -38698,6 +38698,67 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23359536": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23359536,
+          "title": "Fingersnaps Salon...Music & Conversation",
+          "url": "https://spinitron.com/KPOO/pl/23359536/Fingersnaps-Salon-Music-Conversation",
+          "start_time": "2026-11-17T20:00:00-0800",
+          "end_time": "2026-11-18T01:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:708DnJC8l1b4Bf4xg0GiBv",
+          "spotify:track:3MERln0wX0uCa8BRSbSxIz",
+          "spotify:track:1w7cgGZR86yWz1pA2puVJD",
+          "spotify:track:4J40gFNhRlukzy1MgLjeNt",
+          "spotify:track:5A78J79Q1LAobJYdshNNCS",
+          "spotify:track:3fbSJjED8qUAmhEgiySKOv",
+          "spotify:track:0BnugXqRqfNqBSDHFyTVQn",
+          "spotify:track:0axuIAs7MkLNnvP2m8aYDF",
+          "spotify:track:6BdfmGgx2Li36mEb6hyyNx",
+          "spotify:track:33dI106R5aisHtTUVpwGQi",
+          "spotify:track:6zUi8w1eVSwqBl1YbmxDKS",
+          "spotify:track:0vaeWhUoVTacHuHs19wCjx",
+          "spotify:track:1z4Xn56nofk20j8cHSsSMe",
+          "spotify:track:7FS541dJh3iQAEXEZoDhE6",
+          "spotify:track:7MDfN1ldfTMtuXXdVz2Pzc",
+          "spotify:track:1R8dYGVE7cf3aKcKYwoXuI",
+          "spotify:track:2rnCtFGl372lKlIlgirFqh",
+          "spotify:track:1TCumbQN7T7MnCLHAyP1GS",
+          "spotify:track:0A2vnwGaxGyXuODUeQVWWN",
+          "spotify:track:1Hohk6AufHZOrrhMXZppax",
+          "spotify:track:3JPkYHlw6fBxYBXnLkTEf9",
+          "spotify:track:009sWoukyFMX2Su1b9qaPV",
+          "spotify:track:2S90Ktan2fd1qUI5Hy4AGb",
+          "spotify:track:7LxyQ1KflPsILuuke7OZBe",
+          "spotify:track:7uBm859mwM2rtKT6u5VzBB",
+          "spotify:track:20KOIyeSqCrfWnUJhGlfKl",
+          "spotify:track:6AIccJIWHGK26xi34FAkwl",
+          "spotify:track:3cohvAFjwSTbNs2T5Bz0Tg",
+          "spotify:track:0qprlw0jfsW4H9cG0FFE0Z",
+          "spotify:track:1i92FePfxg1FGAuC6fOpvz",
+          "spotify:track:40bgBzGrYBURVjiQ4itEkh",
+          "spotify:track:6XsT5UGfpaFeHQf5LRIy4W",
+          "spotify:track:10dLUJfyfO77Wj6t3ZACzW",
+          "spotify:track:7IqJ8mwYlaM9r4Obtmuj3E",
+          "spotify:track:2GI8W59kcPTn1Nt4eJXpKf",
+          "spotify:track:7ahHcbiPX2jFjMs96Vq5Ti",
+          "spotify:track:6XPkTnUXoFekyxloSd4th1",
+          "spotify:track:6nM7BYtkebO8IGtCEzguFl",
+          "spotify:track:0MEHekGLLUGQjw5ms0ESqJ",
+          "spotify:track:69uc5EVcCJn7ZjBm0GwZja"
+        ],
+        "listing": {
+          "name": "KPOO - Fingersnaps Salon...Music & Conversation - 2026-11-17",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
