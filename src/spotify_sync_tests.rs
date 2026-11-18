@@ -461,6 +461,7 @@ fn seed_show(client: &mut SpotifyClient, uris: &[String], existing: bool) -> Sho
                 artist: "Artist".into(),
                 song: format!("Song {i}"),
                 album: String::new(),
+                isrc: None,
                 label: None,
                 time: None,
             };
@@ -521,6 +522,7 @@ fn search_track() -> Track {
         artist: "Test Artist".into(),
         song: "Test Song".into(),
         album: String::new(),
+        isrc: None,
         label: None,
         time: None,
     }
@@ -1330,4 +1332,107 @@ async fn failed_recovery_inventory_is_cached_as_an_error_until_explicit_refresh(
         .is_none());
     assert!(client.archive_inventory_error.is_none());
     assert_eq!(requests(server).await.len(), 2);
+}
+
+#[tokio::test]
+async fn source_recording_beats_cached_album_match() {
+    let old = search_track();
+    let song = Track {
+        isrc: Some("GBR8R2600203".into()),
+        ..old.clone()
+    };
+    let (mut client, server) = mock_client(|_| {
+        vec![exchange(
+            "GET",
+            "/v1/search?q=isrc%3AGBR8R2600203&type=track&limit=10",
+            serde_json::json!({"tracks":{"items":[
+                {"uri":"spotify:track:wrong","external_ids":{"isrc":"GBR8R2600294"}},
+                {"uri":"spotify:track:right","id":"right","external_ids":{"isrc":"GBR8R2600203"}}
+            ]}}),
+        )]
+    })
+    .await;
+    client.track_cache.entries.insert(
+        track_search_cache_key(&old),
+        CachedTrackEntry {
+            track: None,
+            expires_at: u64::MAX,
+        },
+    );
+    for expected_call in [true, false] {
+        let (matched, called) = client.search_track_with_cache_info(&song).await.unwrap();
+        assert_eq!(matched.unwrap().id, "right");
+        assert_eq!(called, expected_call);
+    }
+    assert_eq!(requests(server).await.len(), 1);
+}
+
+#[tokio::test]
+async fn changed_ids_require_a_link_or_a_matching_recording_code() {
+    const OLD: &str = "spotify:track:1FctCxuCttff0Du3Ewk0w7";
+    const NEW: &str = "spotify:track:6Kr8cT7pc2YFYnYd2Zev8h";
+    let (client, server) = mock_client(|_| {
+        vec![
+            exchange(
+                "GET",
+                "/v1/tracks/1FctCxuCttff0Du3Ewk0w7",
+                serde_json::json!({"uri":OLD,"external_ids":{"isrc":"GBR8R2600294"}}),
+            ),
+            exchange(
+                "GET",
+                "/v1/tracks/1FctCxuCttff0Du3Ewk0w7",
+                serde_json::json!({"uri":OLD,"external_ids":{"isrc":"GBR8R2600294"}}),
+            ),
+        ]
+    })
+    .await;
+    let mut item = PlaylistTrack {
+        uri: NEW.into(),
+        isrc: Some("GBR8R2600203".into()),
+        linked_from: None,
+    };
+    assert!(client
+        .recording_matches(&item, OLD, Some("GBR8R2600203"))
+        .await
+        .unwrap());
+    assert!(!client
+        .recording_matches(&item, OLD, Some("GBR8R2600294"))
+        .await
+        .unwrap());
+    // A historic draft without station metadata must verify the original ID.
+    assert!(!client.recording_matches(&item, OLD, None).await.unwrap());
+    item.isrc = Some("GBR8R2600294".into());
+    assert!(client.recording_matches(&item, OLD, None).await.unwrap());
+    item.isrc = None;
+    item.linked_from = Some(OLD.into());
+    assert!(client.recording_matches(&item, OLD, None).await.unwrap());
+    assert_eq!(requests(server).await.len(), 2);
+}
+
+#[tokio::test]
+async fn archive_checks_recording_codes_at_their_saved_positions() {
+    let expected = "spotify:track:original";
+    let available = "spotify:track:replacement";
+    let entry: Entry = serde_json::from_value(serde_json::json!({
+        "station":"KALX", "state":"filling", "desired_uris":[expected, expected],
+        "source_isrcs":{"1":"GBR8R2600203","2":"GBR8R2600294"}, "listing":{}
+    }))
+    .unwrap();
+    // Duplicates of the same URI can stand for two different source spins.
+    // Only the first substitution has the right recording code.
+    let item =
+        serde_json::json!({"track":{"uri":available,"external_ids":{"isrc":"GBR8R2600203"}}});
+    let (client, server) = mock_client(|_| {
+        vec![exchange(
+            "GET",
+            "/v1/playlists/draft/tracks?limit=100",
+            serde_json::json!({"items":[item,item],"next":null}),
+        )]
+    })
+    .await;
+    assert_eq!(
+        client.comparable_uris("draft", &entry).await.unwrap(),
+        [expected, available]
+    );
+    requests(server).await;
 }

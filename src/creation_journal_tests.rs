@@ -58,6 +58,7 @@ fn entry() -> Entry {
         state: State::Creating,
         owner_id: Some("owner".into()),
         playlist_id: None,
+        source_isrcs: BTreeMap::new(),
         desired_uris: vec!["spotify:track:a".into()],
         listing: json!({"name": "Radio"}),
         release_attempt: None,

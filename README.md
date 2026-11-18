@@ -15,7 +15,9 @@ delays are honored; longer cooldowns stop the lookup. Failed searches remain
 errors and are never cached as missing songs. Playlist creation and other writes
 are never retried automatically after an uncertain response.
 
-Each search requests ten candidates in one API call. Among exact artist/title
+When a spin includes an International Standard Recording Code (ISRC), the scraper
+searches for that code first. If Spotify returns no playable match for the code,
+it falls back to title and artist. Each query requests up to ten candidates. Among exact artist/title
 matches, the listed album wins, followed by the earliest album release date;
 Spotify's order breaks remaining ties. An exact artist/album match can also
 accept a title with an added suffix such as " - 2025 Remaster" when that label
@@ -32,7 +34,7 @@ first ten results. Existing completed broadcast playlists are not rewritten.
 Searches keep both title and artist within Spotify's 250-character query limit
 (using a conservative UTF-8 byte budget). Long metadata uses a shortened query
 and requires the complete original title and artist before accepting a match.
-The search cache includes full artist, title, album, and a matching-policy version,
+The search cache includes full artist, title, album, any source ISRC, and a matching-policy version,
 so older first-result choices and different album editions cannot override this
 ranking. New imports re-resolve old cached choices as needed.
 
@@ -342,7 +344,11 @@ cause the archive to fail rather than silently creating duplicate playlists.
 
 Archive mode also requires the `spinitron-creation-journal` branch on `origin`.
 Its `creation-journal.json` records the Spotify owner, broadcast, matched track
-sequence and creation state. It contains no credentials. This branch is durable
+sequence, available source ISRCs by track position, and creation state.
+On draft readback, a changed track ID can match through Spotify’s explicit
+relink or an exact recording code at the same position. Older records without a
+source code use the saved Spotify track’s ISRC when available. Track count,
+order, and repeated plays are checked before the draft is marked ready. It contains no credentials. This branch is durable
 state: do not delete, reset, merge or replace it with an Actions cache.
 
 The workflow performs these phases in order:

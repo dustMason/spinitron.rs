@@ -183,6 +183,16 @@ pub fn parse_playlist_html(html: &str) -> Result<Vec<Track>> {
                 artist,
                 song,
                 album,
+                isrc: spin_element
+                    .value()
+                    .attr("data-spin")
+                    .and_then(|data| serde_json::from_str::<Value>(data).ok())
+                    .and_then(|spin| {
+                        spin["i"]
+                            .as_str()
+                            .filter(|s| crate::models::valid_isrc(s))
+                            .map(str::to_ascii_uppercase)
+                    }),
                 label,
                 time,
             });
@@ -256,4 +266,22 @@ mod tests {
             "Malformed HTML should result in no tracks"
         );
     }
+}
+
+#[cfg(test)]
+#[test]
+fn reads_optional_recording_code_from_spin() {
+    let row = |code: &str| {
+        format!(
+            r#"<tr class="spin-item" data-spin="{{&quot;i&quot;:&quot;{code}&quot;}}"><td><span class="artist">Erasure</span><span class="song">Wings Of Love</span></td></tr>"#
+        )
+    };
+    let tracks = parse_playlist_html(&format!(
+        "<table>{}{}</table>",
+        row("gbr8r2600203"),
+        row("unknown")
+    ))
+    .unwrap();
+    assert_eq!(tracks[0].isrc.as_deref(), Some("GBR8R2600203"));
+    assert_eq!(tracks[1].isrc, None);
 }
