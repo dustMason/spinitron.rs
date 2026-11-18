@@ -21832,7 +21832,7 @@
           "start_time": "2026-11-17T12:00:00-0800",
           "end_time": "2026-11-17T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6SjpOw9TmtgSmZA6GAYUTU",
         "desired_uris": [
@@ -21872,8 +21872,103 @@
           "spotify:track:71vyz1pfzmj1MQvJYOsPlb"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T15:00:00-0800",
+          "broadcast_start": "2026-11-17T12:00:00-0800",
+          "imported_at": "2026-11-18T15:17:33.941474578+00:00",
+          "last_updated": "2026-11-18 15:17 UTC",
           "name": "KALX - Deep Moon - 2026-11-17",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Lizzy Mercier Descloux"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320ebb31165b3e2e4ec0ae792",
+              "name": "Mission Impossible"
+            },
+            {
+              "artists": [
+                "Dead Kennedys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27352cca74d27e706627d88da20",
+              "name": "Moon Over Marin"
+            },
+            {
+              "artists": [
+                "Neko Case"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27377f86967962514b3feb50587",
+              "name": "I Wish I Was the Moon"
+            },
+            {
+              "artists": [
+                "Natalie Merchant",
+                "Chicago Symphony Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eb8d2d4086838a8445067a74",
+              "name": "Hey Diddle Diddle"
+            },
+            {
+              "artists": [
+                "Billie Holiday",
+                "Teddy Wilson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738091898c12b924f574ea6297",
+              "name": "What a Little Moonlight Can Do (with Teddy Wilson & His Orchestra)"
+            },
+            {
+              "artists": [
+                "Jaana Narsipur"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27360db5db96152d5524e5c45df",
+              "name": "In Your Eyes"
+            },
+            {
+              "artists": [
+                "The Smithereens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2e82558e106f12f2acd7945",
+              "name": "Afternoon Tea"
+            },
+            {
+              "artists": [
+                "Rhiannon Giddens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273761c1892de7bd7c94b987eac",
+              "name": "Carolina Rain"
+            },
+            {
+              "artists": [
+                "Spurs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c94f5ca2757c0ad94c881dc0",
+              "name": "New Scene"
+            },
+            {
+              "artists": [
+                "Nina Simone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c8ef777dbf6677f99f96210d",
+              "name": "Mood Indigo"
+            },
+            {
+              "artists": [
+                "Blondie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe3f12dccf7a927630d33d08",
+              "name": "Youth Nabbed As Sniper - Remastered"
+            },
+            {
+              "artists": [
+                "Jethro Tull"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738bc3269ba09264dcf9a5b924",
+              "name": "Mother Goose"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23357499/Deep-Moon",
+          "station": "KALX",
+          "track_count": 34,
+          "url": "https://open.spotify.com/playlist/6SjpOw9TmtgSmZA6GAYUTU"
         }
       },
       "needs_reconciliation": false
