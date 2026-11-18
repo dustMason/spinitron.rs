@@ -38527,15 +38527,31 @@
           "start_time": "2026-11-17T16:00:00-0800",
           "end_time": "2026-11-17T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0dBEm9k1ti5uzgFU2hTHDv",
         "desired_uris": [
           "spotify:track:2J2cFDJAC5FvdXZwWoNR0x"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T18:00:00-0800",
+          "broadcast_start": "2026-11-17T16:00:00-0800",
+          "imported_at": "2026-11-18T15:27:04.944704496+00:00",
+          "last_updated": "2026-11-18 15:27 UTC",
           "name": "KPOO - Wake Up Everybody - 2026-11-17",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23359034/Wake-Up-Everybody",
+          "station": "KPOO",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/0dBEm9k1ti5uzgFU2hTHDv"
         }
       },
       "needs_reconciliation": false
