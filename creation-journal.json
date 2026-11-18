@@ -37980,15 +37980,31 @@
           "start_time": "2026-11-17T15:00:00-0800",
           "end_time": "2026-11-17T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7kKEIYhKC0mo5AcXDNuzSQ",
         "desired_uris": [
           "spotify:track:3QgSJ9CqgLPk9B4xLdwLrS"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T17:30:00-0800",
+          "broadcast_start": "2026-11-17T15:00:00-0800",
+          "imported_at": "2026-11-18T15:23:39.266135102+00:00",
+          "last_updated": "2026-11-18 15:23 UTC",
           "name": "KPOO - Living For the Weekend - 2026-11-17",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Gladys Knight & The Pips"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27327936b60ce72b901eed401e7",
+              "name": "Neither One Of Us (Wants To Be The First To Say Goodbye)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23356244/Living-For-the-Weekend",
+          "station": "KPOO",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/7kKEIYhKC0mo5AcXDNuzSQ"
         }
       },
       "needs_reconciliation": false
