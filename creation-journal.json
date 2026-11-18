@@ -68,7 +68,7 @@
           "start_time": "2026-11-17T17:00:00-0800",
           "end_time": "2026-11-17T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4H1OuIE7XGhL0NHL48A2GZ",
         "desired_uris": [
@@ -88,8 +88,103 @@
           "spotify:track:5QHhHwbvj0Pw5urArof6TL"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T18:00:00-0800",
+          "broadcast_start": "2026-11-17T17:00:00-0800",
+          "imported_at": "2026-11-18T15:18:54.787958957+00:00",
+          "last_updated": "2026-11-18 15:18 UTC",
           "name": "KALX - Americana, Folk, and Roots - 2026-11-17",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "John R. Miller"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27309d10c692a893616ba27b377",
+              "name": "Don't Bet On Me"
+            },
+            {
+              "artists": [
+                "Taj Mahal",
+                "Phantom Blues Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27302bb04ca61f16a5e82e56b99",
+              "name": "Sweet Lorene"
+            },
+            {
+              "artists": [
+                "Anna Tivel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27333f7193ae6a8c87336a88796",
+              "name": "Meantime"
+            },
+            {
+              "artists": [
+                "Margaret Glaspy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db2a6cc2c81bc72198f3bf7c",
+              "name": "Petty"
+            },
+            {
+              "artists": [
+                "Jess Williamson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27316554b313159ddc71db1bdc1",
+              "name": "High Heels and Blue Jeans"
+            },
+            {
+              "artists": [
+                "Pharis & Jason Romero"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e6c84472593f316fb9690f60",
+              "name": "Big Time World"
+            },
+            {
+              "artists": [
+                "Old Crow Medicine Show"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732ed79cb53e04379e9e4b3097",
+              "name": "Lewis and Clark"
+            },
+            {
+              "artists": [
+                "Joel Timmons"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731d1e85d54193aa3a46e1a3c0",
+              "name": "East Nashville Cowboy"
+            },
+            {
+              "artists": [
+                "Maya De Vitry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d2461a6fa776d8feebc958b6",
+              "name": "Cold Lake, Good Snacks"
+            },
+            {
+              "artists": [
+                "Mary Gauthier"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cbbbba7922d1f04b74e6610a",
+              "name": "Alcohol and Adderall"
+            },
+            {
+              "artists": [
+                "Margo Price",
+                "Billy Swan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b55af9d0c3ac049860a31f9",
+              "name": "Long Haired Country Girl [Feat. Billy Swan]"
+            },
+            {
+              "artists": [
+                "Aaron Lee Tasjan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27314edefc913848f19fd8c6485",
+              "name": "Science Friction"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23002025/Americana-Folk-and-Roots",
+          "station": "KALX",
+          "track_count": 14,
+          "url": "https://open.spotify.com/playlist/4H1OuIE7XGhL0NHL48A2GZ"
         }
       },
       "needs_reconciliation": false
