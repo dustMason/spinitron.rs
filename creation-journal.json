@@ -21983,7 +21983,7 @@
           "start_time": "2026-11-17T15:00:00-0800",
           "end_time": "2026-11-17T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5zZj8wrOHHS6mRhlxASJgL",
         "desired_uris": [
@@ -22012,8 +22012,102 @@
           "spotify:track:7Iv3TeL68uvRcKA4eQ1mvX"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T17:00:00-0800",
+          "broadcast_start": "2026-11-17T15:00:00-0800",
+          "imported_at": "2026-11-18T15:18:14.482987707+00:00",
+          "last_updated": "2026-11-18 15:18 UTC",
           "name": "KALX - Queasy Listening - 2026-11-17",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Julee Cruise"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6212adb4de364a1c633582a",
+              "name": "Mysteries Of Love"
+            },
+            {
+              "artists": [
+                "ali dada"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736fe094f88989aa53a8c87524",
+              "name": "abolish the police"
+            },
+            {
+              "artists": [
+                "Josh Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f20e0c445b6d0e550d11eb35",
+              "name": "It Can Be Everywhere"
+            },
+            {
+              "artists": [
+                "Babils"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d98b3373c3fa59868a2cda2",
+              "name": "Dent de sagesse"
+            },
+            {
+              "artists": [
+                "Strawberry Story"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739d5fdecab82f6619f7d4202e",
+              "name": "I Never Loved You"
+            },
+            {
+              "artists": [
+                "Green/Blue"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b2a9202d5bbb695bc598907e",
+              "name": "Disregard"
+            },
+            {
+              "artists": [
+                "Haruomi Hosono"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733af48613b19da7eb6758d587",
+              "name": "Humming “Dream of Love”"
+            },
+            {
+              "artists": [
+                "DESIREE",
+                "Emmanuel Jal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736cafae5a1cc02356e941b90f",
+              "name": "Macho"
+            },
+            {
+              "artists": [
+                "Miriam Makeba"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e0b1b6e477f7737d4746948a",
+              "name": "Dubula"
+            },
+            {
+              "artists": [
+                "The Chiffons"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d16cc9c104ed64081b96d0e7",
+              "name": "He's So Fine"
+            },
+            {
+              "artists": [
+                "Noreen Corcoran"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273441940f28dedfd771969888e",
+              "name": "Love Kitten"
+            },
+            {
+              "artists": [
+                "Air"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fdcfc0f6a3094f503f3fdd23",
+              "name": "Card Four: Straight White Royal Flush...78"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23358232/Queasy-Listening",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/5zZj8wrOHHS6mRhlxASJgL"
         }
       },
       "needs_reconciliation": false
