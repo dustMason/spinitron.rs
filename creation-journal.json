@@ -22576,7 +22576,7 @@
           "start_time": "2026-11-17T20:00:00-0800",
           "end_time": "2026-11-17T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2ZJOODytoejedQ98d3iZTt",
         "desired_uris": [
@@ -22608,8 +22608,101 @@
           "spotify:track:45Qhg7zl5ZBiEzdSNFRn7D"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T22:00:00-0800",
+          "broadcast_start": "2026-11-17T20:00:00-0800",
+          "imported_at": "2026-11-18T15:21:37.346667651+00:00",
+          "last_updated": "2026-11-18 15:21 UTC",
           "name": "KALX - FREEFORM - 2026-11-17 8:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Blawan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733adb65a355a758c2ccf4b8fc",
+              "name": "Casch"
+            },
+            {
+              "artists": [
+                "Aïsha Devi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273517dae3b5e402c86d6c60646",
+              "name": "Immortelle"
+            },
+            {
+              "artists": [
+                "Evita Manji"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6a566cd11922eef76081d9f",
+              "name": "Body/Prison"
+            },
+            {
+              "artists": [
+                "Fatima Al Qadiri"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27383e3794450347ac4135b876f",
+              "name": "Shaneera"
+            },
+            {
+              "artists": [
+                "Matter Baby"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d28fda3dc204c1ea1060a61",
+              "name": "sans"
+            },
+            {
+              "artists": [
+                "2hollis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db3c4c37735a6bd7fcadbc33",
+              "name": "Spring (Love Me)"
+            },
+            {
+              "artists": [
+                "Shygirl"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273386f243bc8f40a2669ba7aa6",
+              "name": "Real"
+            },
+            {
+              "artists": [
+                "Jónsi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b59beff231caa273a0ae2270",
+              "name": "Exhale"
+            },
+            {
+              "artists": [
+                "Erika de Casier"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dc3c66fa4821d32e834af963",
+              "name": "Lucky"
+            },
+            {
+              "artists": [
+                "Dorian Electra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fb3a84032a94f3ed509d2ecd",
+              "name": "Flamboyant"
+            },
+            {
+              "artists": [
+                "yeule"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fde55edd2cbcb36bff6de974",
+              "name": "Lovepill"
+            },
+            {
+              "artists": [
+                "2charm"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736ec9fc27a552bdbfe4253162",
+              "name": "making out"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23359494/FREEFORM",
+          "station": "KALX",
+          "track_count": 26,
+          "url": "https://open.spotify.com/playlist/2ZJOODytoejedQ98d3iZTt"
         }
       },
       "needs_reconciliation": false
