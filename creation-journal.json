@@ -22426,6 +22426,51 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23359175": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23359175,
+          "title": "BUZZ",
+          "url": "https://spinitron.com/KALX/pl/23359175/BUZZ",
+          "start_time": "2026-11-17T18:15:00-0800",
+          "end_time": "2026-11-17T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3OD1w6EDPu2aDGADLFzSfD",
+          "spotify:track:4tkmQCJUO6X23UiGJG07sm",
+          "spotify:track:11aKOn0biZyLsKvYBgti4u",
+          "spotify:track:7zRCm7ru2bfdpJltnlm6eI",
+          "spotify:track:3SD00XNy6Xu8FnlUKunRaL",
+          "spotify:track:3L97ceUxdErALixBCMvYI6",
+          "spotify:track:0uJ7gqauRNdmZgZ4O7Ezcw",
+          "spotify:track:7ylfrhnfhZVlW7mH8nZINk",
+          "spotify:track:6Y3ykqA3lcC5IgO6UNkGHL",
+          "spotify:track:72PoJMDfdaw9gGECgA9kTZ",
+          "spotify:track:3BFRqZFLSrqtQr6cjHbAxU",
+          "spotify:track:5NoQvINZLBV1wMYPdNmReL",
+          "spotify:track:6OG1S805gIrH5nAQbEOPY3",
+          "spotify:track:5P8zSKB9sMKPKl6M3lTrt3",
+          "spotify:track:1Wuh8Hf5Ve12xLFnW4kOMg",
+          "spotify:track:2CrCSUqCi4m4iDexkklvmN",
+          "spotify:track:3tsW3zAaOi63inpq3wcSwj",
+          "spotify:track:4qpiFQyQXjLewWlHxhdI8g",
+          "spotify:track:3whRKAOlJ0M3banzcChvQv",
+          "spotify:track:1Lcysf9ECzRxMK7zAWb6i2",
+          "spotify:track:65dxn39IzanS0bSAFkGPaR",
+          "spotify:track:1Fa69cfhbljntQrs33zQH6",
+          "spotify:track:3VkouzQwSp4fa7mbhkQgGR",
+          "spotify:track:7n9W6GjGXO8JbqGbUQopyU"
+        ],
+        "listing": {
+          "name": "KALX - BUZZ - 2026-11-17",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
