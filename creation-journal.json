@@ -21507,7 +21507,7 @@
           "start_time": "2026-11-17T07:00:00-0800",
           "end_time": "2026-11-17T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5q7gnTX8d7Q1lhrjRq2cwH",
         "desired_uris": [
@@ -21535,8 +21535,101 @@
           "spotify:track:1gVsiqgAxncJ4sKcuT7HW6"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T09:00:00-0800",
+          "broadcast_start": "2026-11-17T07:00:00-0800",
+          "imported_at": "2026-11-18T15:15:31.978734+00:00",
+          "last_updated": "2026-11-18 15:15 UTC",
           "name": "KALX - Show 8! - 2026-11-17",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Phoebe Bridgers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325a647ace83ba32770ab5d0f",
+              "name": "Bobby"
+            },
+            {
+              "artists": [
+                "Hayley Williams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734d11f107841663d017d90f7c",
+              "name": "Dream Girl In Shibuya"
+            },
+            {
+              "artists": [
+                "Angelo Badalamenti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6212adb4de364a1c633582a",
+              "name": "Blue Velvet / Blue Star - Montage"
+            },
+            {
+              "artists": [
+                "Lana Del Rey"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273879e9318cb9f4e05ee552ac9",
+              "name": "California"
+            },
+            {
+              "artists": [
+                "Six Organs Of Admittance"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dbb6d9eadb482c6e69fee090",
+              "name": "Coming To Get You"
+            },
+            {
+              "artists": [
+                "Këkht Aräkh"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dab4f6c0d51747b4e6b41c62",
+              "name": "Morning star"
+            },
+            {
+              "artists": [
+                "Not For Radio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b031f864e75e48cf3ee1c949",
+              "name": "Back To You"
+            },
+            {
+              "artists": [
+                "Nicole Dollanganger"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738de0ce301b555425678f0716",
+              "name": "You're so Cool"
+            },
+            {
+              "artists": [
+                "Racecourse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c42dd0add3f578b0799e066d",
+              "name": "My Chair"
+            },
+            {
+              "artists": [
+                "Everyone Asked About You"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c7a749aa319cf8e2b9ddc059",
+              "name": "I Will Wait"
+            },
+            {
+              "artists": [
+                "The Cure"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732780880a9583a363c28c60d5",
+              "name": "Pictures of You"
+            },
+            {
+              "artists": [
+                "The 1975"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273707f997692c3367572737a44",
+              "name": "About You - Live from Madison Square Garden, New York, 07.11.22"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23356031/Show-8",
+          "station": "KALX",
+          "track_count": 22,
+          "url": "https://open.spotify.com/playlist/5q7gnTX8d7Q1lhrjRq2cwH"
         }
       },
       "needs_reconciliation": false
