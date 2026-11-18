@@ -22717,7 +22717,7 @@
           "start_time": "2026-11-17T22:00:00-0800",
           "end_time": "2026-11-18T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2QE5kWDG26M4mcBWTqXb1k",
         "desired_uris": [
@@ -22744,8 +22744,101 @@
           "spotify:track:719v0omX3YUQsAL2mDFl7q"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T00:00:00-0800",
+          "broadcast_start": "2026-11-17T22:00:00-0800",
+          "imported_at": "2026-11-18T15:22:17.753529811+00:00",
+          "last_updated": "2026-11-18 15:22 UTC",
           "name": "KALX - Show 0! - 2026-11-17",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Michael Hurley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27370cbc18ec32aefa0b00cd22e",
+              "name": "The Tea Song"
+            },
+            {
+              "artists": [
+                "Joseph Dee Bradshaw"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbee419768871efdecf7420d",
+              "name": "The Lavender Promise"
+            },
+            {
+              "artists": [
+                "Black Sabbath"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5fccf9ce08b6a1e7d12a222",
+              "name": "Planet Caravan - 2012 - Remaster"
+            },
+            {
+              "artists": [
+                "Cocteau Twins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27345a11ab355b6ff9c4dd2a295",
+              "name": "Peppermint Pig - 12\" Version"
+            },
+            {
+              "artists": [
+                "Hugo Largo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f7070207af1dca1b20ed4604",
+              "name": "Grow Wild"
+            },
+            {
+              "artists": [
+                "Candy Claws"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273acccdc527f2076141380a125",
+              "name": "Sunbeam Show"
+            },
+            {
+              "artists": [
+                "Blind Yeo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739b7659dce31bf1a6da8100de",
+              "name": "⁠Colour Pillow / Kologo"
+            },
+            {
+              "artists": [
+                "Paul McCartney"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e4cba2cc3b979e9e4065d3ce",
+              "name": "Really Love You - 04 Summer Tour Remix"
+            },
+            {
+              "artists": [
+                "The Catburgers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d381bc7e70b4db753b197f5",
+              "name": "Nothing to Live For"
+            },
+            {
+              "artists": [
+                "Andy Boay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a744e0f6f35d895c565084a7",
+              "name": "Child"
+            },
+            {
+              "artists": [
+                "Portraits Of Tracy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273588603e17ec61c5462a0ca9c",
+              "name": "Caught In A Jam"
+            },
+            {
+              "artists": [
+                "Air"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732d8727162ca3c2355aecd618",
+              "name": "Tropical Disease"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23360083/Show-0",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/2QE5kWDG26M4mcBWTqXb1k"
         }
       },
       "needs_reconciliation": false
