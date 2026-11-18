@@ -38170,8 +38170,9 @@
           "start_time": "2026-11-17T15:00:00-0800",
           "end_time": "2026-11-17T17:30:00-0800"
         },
-        "state": "creating",
+        "state": "filling",
         "owner_id": "dustmason",
+        "playlist_id": "0N91RlfRXO9fUO9EkI4Nch",
         "desired_uris": [
           "spotify:track:32pQP3XD7rIYraHKMVq9pu",
           "spotify:track:4SIM4Y7dyFckE32qMbKX3V"
