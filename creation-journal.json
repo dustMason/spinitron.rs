@@ -21321,7 +21321,7 @@
           "start_time": "2026-11-17T01:00:00-0800",
           "end_time": "2026-11-17T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0l9iziflPpF6R62BA9QRS8",
         "desired_uris": [
@@ -21393,8 +21393,106 @@
           "spotify:track:194FyNxZMekPzN8ZWiGZsI"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T07:00:00-0800",
+          "broadcast_start": "2026-11-17T01:00:00-0800",
+          "imported_at": "2026-11-18T15:14:51.529865964+00:00",
+          "last_updated": "2026-11-18 15:14 UTC",
           "name": "KALX - FREEFORM - 2026-11-17",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "New Monsoon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337645011fef61a95329d4517",
+              "name": "Song for Marie"
+            },
+            {
+              "artists": [
+                "Josh Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f20e0c445b6d0e550d11eb35",
+              "name": "Upstairs 2021"
+            },
+            {
+              "artists": [
+                "The Headhunters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273309e64d0bfd9cf7ff9827f72",
+              "name": "Rima"
+            },
+            {
+              "artists": [
+                "El Búho",
+                "Ana María Vahos"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a43221f41d64cd03dccb9ae0",
+              "name": "Nuevos Horizontes"
+            },
+            {
+              "artists": [
+                "Orquesta Akokán",
+                "Miriam Elhajli"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273515e239648537ec6810e8a7e",
+              "name": "Nadie Me Toca Igual"
+            },
+            {
+              "artists": [
+                "Debo Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27369e3729387529ad2126470c9",
+              "name": "And Lay"
+            },
+            {
+              "artists": [
+                "Shellac"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c0b6f520aac209ccbe8a0608",
+              "name": "How I Wrote How I Wrote Elastic Man (cock & bull)"
+            },
+            {
+              "artists": [
+                "Nils Petter Molvær",
+                "Chang Jing"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273de3ca594d26baf63f357931d",
+              "name": "Bangkok"
+            },
+            {
+              "artists": [
+                "Allison Russell",
+                "Kyshona",
+                "Sara Watkins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273484006dc742a9b43b1cab3d1",
+              "name": "Chaos Theory (ft. Kyshona & Sara Watkins)"
+            },
+            {
+              "artists": [
+                "Phyllis Dillion"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733b45a17578bf0c3376557e94",
+              "name": "Win or Lose"
+            },
+            {
+              "artists": [
+                "X.Y.R."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734094633ed12b06bce30d7fba",
+              "name": "happy thoughts"
+            },
+            {
+              "artists": [
+                "Rhiannon Giddens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273761c1892de7bd7c94b987eac",
+              "name": "Hope Is the Thing with Feathers"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23355142/FREEFORM",
+          "station": "KALX",
+          "track_count": 66,
+          "url": "https://open.spotify.com/playlist/0l9iziflPpF6R62BA9QRS8"
         }
       },
       "needs_reconciliation": false
