@@ -38159,6 +38159,29 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23356437": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23356437,
+          "title": "Living For the Weekend",
+          "url": "https://spinitron.com/KPOO/pl/23356437/Living-For-the-Weekend",
+          "start_time": "2026-11-17T15:00:00-0800",
+          "end_time": "2026-11-17T17:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:32pQP3XD7rIYraHKMVq9pu",
+          "spotify:track:4SIM4Y7dyFckE32qMbKX3V"
+        ],
+        "listing": {
+          "name": "KPOO - Living For the Weekend - 2026-11-17 3:00pm -0800 [KPOO:23356437]",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
