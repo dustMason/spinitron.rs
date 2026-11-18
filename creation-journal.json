@@ -22566,6 +22566,53 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23359494": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23359494,
+          "title": "FREEFORM",
+          "url": "https://spinitron.com/KALX/pl/23359494/FREEFORM",
+          "start_time": "2026-11-17T20:00:00-0800",
+          "end_time": "2026-11-17T22:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3EZ4vS3UHbzdiKo1QnoDNI",
+          "spotify:track:1KvEnhaLS2UqTDGx6ReTN1",
+          "spotify:track:0W6WDNGHY9x7FWNbcBr7TK",
+          "spotify:track:3coZmvnfEBPs9ynfH48b4w",
+          "spotify:track:0ZpLjMMxkDoQKeB5Qkrr0c",
+          "spotify:track:1Oonp882rxC4JEkLCfhUFL",
+          "spotify:track:6btf1RS3LZjVfDmW8sOD85",
+          "spotify:track:2CuHYLGbHlamZLFMnR3hPP",
+          "spotify:track:4UZI5lPk248pK7T41dOiL9",
+          "spotify:track:6BUJCYAqUjb6vRz3ln8a87",
+          "spotify:track:3g7vij2FqegH0CE1PAJvfo",
+          "spotify:track:5SQWCnd28UO4FrMwUYpQN5",
+          "spotify:track:1eDN8gjnpsQD9Kmh8gZ2Ra",
+          "spotify:track:6aA6XpoPV7AnyVgLMDEFqy",
+          "spotify:track:4JmmZ2kQ3aAXR2a9909MT2",
+          "spotify:track:6xsr0QfoGnKF0l87hIqYPj",
+          "spotify:track:52Zr0sinhWTCRrQhRRY4EP",
+          "spotify:track:1Vrrm1Vh3Q9ai3TIsAYDNj",
+          "spotify:track:4aifE1PLy7McCOQgjphHad",
+          "spotify:track:37HfB1xMMCRbUWZvYEGlRE",
+          "spotify:track:4tqSEmy7TJUZpA45AheJnx",
+          "spotify:track:2A6kF8nb0GuwxrMMrKsvtJ",
+          "spotify:track:4JaLWmdTChliUG88ks6Prm",
+          "spotify:track:74n118P9h9Sz2AwDSc3f8N",
+          "spotify:track:45Qhg7zl5ZBiEzdSNFRn7D",
+          "spotify:track:45Qhg7zl5ZBiEzdSNFRn7D"
+        ],
+        "listing": {
+          "name": "KALX - FREEFORM - 2026-11-17 8:00pm",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
