@@ -38019,7 +38019,7 @@
           "start_time": "2026-11-17T07:00:00-0800",
           "end_time": "2026-11-17T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3zhoiYJayDlgPHKmQUuK5p",
         "desired_uris": [
@@ -38061,8 +38061,101 @@
           "spotify:track:78T592KXsizVSvYdTldh8r"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T09:00:00-0800",
+          "broadcast_start": "2026-11-17T07:00:00-0800",
+          "imported_at": "2026-11-18T15:24:20.137022547+00:00",
+          "last_updated": "2026-11-18 15:24 UTC",
           "name": "KPOO - 70's and 60's Soul for Breakfast - 2026-11-17",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Gladys Knight & The Pips"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273278da14f439317afcac69550",
+              "name": "Neither One Of Us (Wants To Be The First To Say Goodbye)"
+            },
+            {
+              "artists": [
+                "Roberta Flack"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a227652b30034636defd80c9",
+              "name": "The First Time Ever I Saw Your Face (Single Edit) - 2020 Remaster"
+            },
+            {
+              "artists": [
+                "Jr. Walker & The All Stars"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e8f507796f8c7d3b6559cd6c",
+              "name": "Walk In The Night"
+            },
+            {
+              "artists": [
+                "Aretha Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27399bee65d3d06a061b2b872de",
+              "name": "Bridge Over Troubled Water"
+            },
+            {
+              "artists": [
+                "The Dells"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737fdbebcea0af7e3f4ee3021e",
+              "name": "The Love We Had (Stays On My Mind)"
+            },
+            {
+              "artists": [
+                "Ann Peebles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273943b4cc92b7af0f22190eaef",
+              "name": "I Can't Stand the Rain"
+            },
+            {
+              "artists": [
+                "Major Lance"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273650ea8de982c95551da4958a",
+              "name": "Since I Lost My Baby’s Love"
+            },
+            {
+              "artists": [
+                "Donnie Elbert"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bed8ccfc046b23c9af16cea0",
+              "name": "Where Did Our Love Go"
+            },
+            {
+              "artists": [
+                "Four Tops"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27319fd998669b2e94ea39a08b0",
+              "name": "Still Water (Love)"
+            },
+            {
+              "artists": [
+                "Jackie Wilson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a797cab05d27839e3964916",
+              "name": "(I Can Feel Those Vibrations) This Love Is Real"
+            },
+            {
+              "artists": [
+                "Barbara Mason"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273914f3af2e22290a48e4f3561",
+              "name": "Give Me Your Love"
+            },
+            {
+              "artists": [
+                "The Isley Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731fb6561916f64eed7e21f7e8",
+              "name": "What It Comes Down To"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23356351/70-s-and-60-s-Soul-for-Breakfast",
+          "station": "KPOO",
+          "track_count": 36,
+          "url": "https://open.spotify.com/playlist/3zhoiYJayDlgPHKmQUuK5p"
         }
       },
       "needs_reconciliation": false
