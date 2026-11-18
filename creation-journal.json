@@ -21793,15 +21793,31 @@
           "start_time": "2026-11-17T09:00:00-0800",
           "end_time": "2026-11-17T09:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1YLd8ROHnIRDlRE3x5rol5",
         "desired_uris": [
           "spotify:track:54miaxZNdpmwKcJIHBKwOZ"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T09:30:00-0800",
+          "broadcast_start": "2026-11-17T09:00:00-0800",
+          "imported_at": "2026-11-18T15:16:52.695437104+00:00",
+          "last_updated": "2026-11-18 15:16 UTC",
           "name": "KALX - Berkeley Brainwaves - 2026-11-17",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Welcome Strawberry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e155480c2229a9c9bb98db0",
+              "name": "like a tulip"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23356927/Berkeley-Brainwaves",
+          "station": "KALX",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/1YLd8ROHnIRDlRE3x5rol5"
         }
       },
       "needs_reconciliation": false
