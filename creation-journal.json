@@ -21765,6 +21765,54 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23356837": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23356837,
+          "title": "Voyager 1 — One Light Day Away with Ben Stokes + Mark Pistel",
+          "url": "https://spinitron.com/KALX/pl/23356837/Voyager-1-One-Light-Day-Away-with-Ben-Stokes-Mark-Pistel",
+          "start_time": "2026-11-18T00:00:00-0800",
+          "end_time": "2026-11-18T03:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0uygkET7Z0D2kiab5WUFfh",
+          "spotify:track:3biDWMJuRDi9xDOIMNJ1gm",
+          "spotify:track:75CLqzZ0YIwzUqeOk5jIZB",
+          "spotify:track:6vdfQWaSwEJmNc9TDKOWaE",
+          "spotify:track:0G3QdyWuOciXcKTO8UfkzL",
+          "spotify:track:487EvN33zDKmMe0QiR5TbB",
+          "spotify:track:2htCjFFRNhA3eOJSuJA1X2",
+          "spotify:track:32jwIUEqSKTj2viR33uDZ3",
+          "spotify:track:2mvKhWN3LXvOZrF3iya938",
+          "spotify:track:5ARLffulzXMs8aOad483da",
+          "spotify:track:3Tx5S3v9lETEEOqKtrQAjE",
+          "spotify:track:7xuqspwNQQlTLQBWXv8sHv",
+          "spotify:track:7oNY0QrHCB9ij3lBHsbh1U",
+          "spotify:track:5HQVEddChMT0WgbDQB166P",
+          "spotify:track:646xTAennI6nlqvlvh7ggQ",
+          "spotify:track:5U4bb6dk8wP0DO19KKkCAR",
+          "spotify:track:1ls3aVxQcszW0HbUlfhLId",
+          "spotify:track:4M8k3gqmmhXD8bsopmanVX",
+          "spotify:track:5aC0QmgjYGG8QYgAg06nTk",
+          "spotify:track:5xdFOyejzK1TWrOE0UYTmR",
+          "spotify:track:0YwTORbXqxwbAl47dCo8uL",
+          "spotify:track:0g4WsUCfpe2CCDOyDiyzn5",
+          "spotify:track:1OIYGlTCYi4GNLlWUjnD6y",
+          "spotify:track:3HkVP6SiGMRvfFE51NSkeZ",
+          "spotify:track:4DVmwdtAtqjb4dsJXS5Ngf",
+          "spotify:track:3789ouciNHq58VzPziH65F",
+          "spotify:track:4esGuNb7bdy63h4l5RkgBw"
+        ],
+        "listing": {
+          "name": "KALX - Voyager 1 — One Light Day Away with Ben Stokes + Mark Pistel - 2026-11-18",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23356903": {
       "entry": {
         "station": "KALX",
