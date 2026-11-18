@@ -38170,7 +38170,7 @@
           "start_time": "2026-11-17T15:00:00-0800",
           "end_time": "2026-11-17T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0N91RlfRXO9fUO9EkI4Nch",
         "desired_uris": [
@@ -38178,8 +38178,31 @@
           "spotify:track:4SIM4Y7dyFckE32qMbKX3V"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T17:30:00-0800",
+          "broadcast_start": "2026-11-17T15:00:00-0800",
+          "imported_at": "2026-11-18T15:25:01.969742932+00:00",
+          "last_updated": "2026-11-18 15:25 UTC",
           "name": "KPOO - Living For the Weekend - 2026-11-17 3:00pm -0800 [KPOO:23356437]",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Red Garland Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5134acf998be4a0012a2067",
+              "name": "Stormy Weather"
+            },
+            {
+              "artists": [
+                "Horace Tapscott"
+              ],
+              "image_url": "https://i.scdn.co/image/35095ff91008b6dfdc6387ae9497986ede48f596",
+              "name": "Sandy & Niles"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23356437/Living-For-the-Weekend",
+          "station": "KPOO",
+          "track_count": 2,
+          "url": "https://open.spotify.com/playlist/0N91RlfRXO9fUO9EkI4Nch"
         }
       },
       "needs_reconciliation": false
