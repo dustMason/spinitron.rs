@@ -38217,7 +38217,7 @@
           "start_time": "2026-11-17T09:00:00-0800",
           "end_time": "2026-11-17T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "38oymPvhAwJ2Ii65m8ULbq",
         "desired_uris": [
@@ -38267,8 +38267,103 @@
           "spotify:track:3DCS67Ea9i4mW4kKo5N0kI"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T12:00:00-0800",
+          "broadcast_start": "2026-11-17T09:00:00-0800",
+          "imported_at": "2026-11-18T15:25:43.500118566+00:00",
+          "last_updated": "2026-11-18 15:25 UTC",
           "name": "KPOO - Grown Folks Music - 2026-11-17",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Ruby Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6181b7db1269fc206618ac2",
+              "name": "Weak Spot"
+            },
+            {
+              "artists": [
+                "The Temptations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273812aa5daf1640a93b8cd40a2",
+              "name": "Get Ready"
+            },
+            {
+              "artists": [
+                "Bob Baldwin",
+                "Dennis Johnson",
+                "Armando Marçal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bf10e1bfc386e740b270cd44",
+              "name": "I Wanna Be Where You Are"
+            },
+            {
+              "artists": [
+                "Charmers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733f0348ec684670843a3d1b25",
+              "name": "A Little Bit Of Heaven"
+            },
+            {
+              "artists": [
+                "Nancy Wilson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fa38afdf0b32a8dfd39ddca4",
+              "name": "Reach Out For Me - Mono"
+            },
+            {
+              "artists": [
+                "The Enchanters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27317006ffa1b5c768c8910ee6e",
+              "name": "I Wanna Thank You"
+            },
+            {
+              "artists": [
+                "Percy Faith & His Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731aa563a0b9688f3c0a5e8ffa",
+              "name": "Our Day Will Come"
+            },
+            {
+              "artists": [
+                "Dinah Washington"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731417090f36789f611efe1397",
+              "name": "A Stranger on Earth - 1997 Remaster"
+            },
+            {
+              "artists": [
+                "Arthur Prysock"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733db8dd6f59215ae24352e38d",
+              "name": "Everybody's Somebody's Fool"
+            },
+            {
+              "artists": [
+                "Stan Getz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bbf35173afc8f6ae9041b6c3",
+              "name": "The Girl From Ipanema"
+            },
+            {
+              "artists": [
+                "Dionne Warwick"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732df55cf7615380642bb6f19b",
+              "name": "This Girl's In Love With You"
+            },
+            {
+              "artists": [
+                "Sarah Vaughan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734a88ed8e7e070de6a0e57a8d",
+              "name": "So Many Stars"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23356794/Grown-Folks-Music",
+          "station": "KPOO",
+          "track_count": 44,
+          "url": "https://open.spotify.com/playlist/38oymPvhAwJ2Ii65m8ULbq"
         }
       },
       "needs_reconciliation": false
