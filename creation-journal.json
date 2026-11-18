@@ -38378,7 +38378,7 @@
           "start_time": "2026-11-17T12:00:00-0800",
           "end_time": "2026-11-17T16:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0zEXNjQNaCW48eBvMSlAmO",
         "desired_uris": [
@@ -38410,8 +38410,109 @@
           "spotify:track:2QaAqTj1TnRPR4wpq9LDd8"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T16:00:00-0800",
+          "broadcast_start": "2026-11-17T12:00:00-0800",
+          "imported_at": "2026-11-18T15:26:24.193722080+00:00",
+          "last_updated": "2026-11-18 15:26 UTC",
           "name": "KPOO - Uplift Show - 2026-11-17",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "John Coltrane Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732f7617fc50c129c50a61b1c6",
+              "name": "A Love Supreme, Pt. 1: Acknowledgement - Live"
+            },
+            {
+              "artists": [
+                "John Coltrane Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733fe28fd56a929ca289f6534e",
+              "name": "Greensleeves"
+            },
+            {
+              "artists": [
+                "Charles Mingus"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27399ad00434e1ebf34e5885580",
+              "name": "In A Sentimental Mood (Duke Ellington Medley) - Live"
+            },
+            {
+              "artists": [
+                "Miles Davis",
+                "John Coltrane",
+                "Cannonball Adderley",
+                "Bill Evans"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348713eebe44a437d9cb7a452",
+              "name": "On Green Dolphin Street (feat. John Coltrane, Cannonball Adderley & Bill Evans)"
+            },
+            {
+              "artists": [
+                "John Coltrane Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d502a98220bfbd97c4c7e05",
+              "name": "Softly As In A Morning Sunrise - Live At The Village Vanguard, 1961"
+            },
+            {
+              "artists": [
+                "Billie Holiday"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27396d3d124fa658f8e986a88f2",
+              "name": "Speak Low"
+            },
+            {
+              "artists": [
+                "Ben Webster"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739d4721ec63a741fd566061ee",
+              "name": "Someone to Watch Over Me"
+            },
+            {
+              "artists": [
+                "Vince Guaraldi Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d7714f291ebdcd4b4b8d2491",
+              "name": "Autumn Leaves"
+            },
+            {
+              "artists": [
+                "John Coltrane Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a3d4884d3433efed2c4a0563",
+              "name": "Too Young To Go Steady"
+            },
+            {
+              "artists": [
+                "Miles Davis",
+                "John Coltrane",
+                "Bill Evans",
+                "Cannonball Adderley",
+                "Paul Chambers",
+                "Jimmy Cobb"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c4241699012f4aafdaf2e03f",
+              "name": "Bye Bye Blackbird (feat. John Coltrane, Bill Evans, Cannonball Adderley, Paul Chambers & Jimmy Cobb) - Live at the Newport Jazz Festival, Newport, RI - July 1958"
+            },
+            {
+              "artists": [
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ab8536ecc7600e30ae06644",
+              "name": "Harmonique"
+            },
+            {
+              "artists": [
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732102313b78e2c0039cd89733",
+              "name": "Time After Time"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23357666/Uplift-Show",
+          "station": "KPOO",
+          "track_count": 26,
+          "url": "https://open.spotify.com/playlist/0zEXNjQNaCW48eBvMSlAmO"
         }
       },
       "needs_reconciliation": false
