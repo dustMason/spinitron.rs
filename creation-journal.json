@@ -22436,7 +22436,7 @@
           "start_time": "2026-11-17T18:15:00-0800",
           "end_time": "2026-11-17T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1dimvgPjbOvCzbpZ45XEjZ",
         "desired_uris": [
@@ -22466,8 +22466,102 @@
           "spotify:track:7n9W6GjGXO8JbqGbUQopyU"
         ],
         "listing": {
+          "broadcast_end": "2026-11-17T20:00:00-0800",
+          "broadcast_start": "2026-11-17T18:15:00-0800",
+          "imported_at": "2026-11-18T15:20:55.997837038+00:00",
+          "last_updated": "2026-11-18 15:20 UTC",
           "name": "KALX - BUZZ - 2026-11-17",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Maya De Vitry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d2461a6fa776d8feebc958b6",
+              "name": "Bachelorette Lessons"
+            },
+            {
+              "artists": [
+                "Havana Maestros",
+                "CHIC"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273679eaece8693e25ec11af605",
+              "name": "Good Times (feat. Chic)"
+            },
+            {
+              "artists": [
+                "The TV Theme Players"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e99d5514c918453edb7c69d",
+              "name": "The Avengers"
+            },
+            {
+              "artists": [
+                "Etta James"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737649604d1b27be1c78c466e9",
+              "name": "Watch Dog"
+            },
+            {
+              "artists": [
+                "Sunday Mourners"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273667333f3eabedf725b19985b",
+              "name": "Biograph"
+            },
+            {
+              "artists": [
+                "Westside Cowboy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27359b4c22ba76349483371d480",
+              "name": "You Could Have Died There On The Dancefloor"
+            },
+            {
+              "artists": [
+                "The Womack Sisters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273afa44cba895ec03a35a27778",
+              "name": "All Around"
+            },
+            {
+              "artists": [
+                "D/troit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ab91b4efaeb446f2d019c826",
+              "name": "Pick It Up (Lay It Down)"
+            },
+            {
+              "artists": [
+                "Dicamptodon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734cab719efb56cdeae55b37d8",
+              "name": "Caustic"
+            },
+            {
+              "artists": [
+                "Billy Preston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731dd97e315f3a1ebeb420c1dd",
+              "name": "Nothing From Nothing"
+            },
+            {
+              "artists": [
+                "Fats Waller"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733169bf80e62237b5d014900d",
+              "name": "Ain't Misbehavin'"
+            },
+            {
+              "artists": [
+                "Ramones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273072ee11a51e23f861c54cef9",
+              "name": "I Wanna Be Sedated"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23359175/BUZZ",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/1dimvgPjbOvCzbpZ45XEjZ"
         }
       },
       "needs_reconciliation": false
