@@ -24103,7 +24103,7 @@
           "start_time": "2026-11-18T22:00:00-0800",
           "end_time": "2026-11-19T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "27rjmHhQAj1x5Qol4UZo1V",
         "desired_uris": [
@@ -24133,8 +24133,101 @@
           "spotify:track:6aS5Xayl3O58k3JEeihU1m"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T00:00:00-0800",
+          "broadcast_start": "2026-11-18T22:00:00-0800",
+          "imported_at": "2026-11-19T15:29:14.963694775+00:00",
+          "last_updated": "2026-11-19 15:29 UTC",
           "name": "KALX - FREEFORM - 2026-11-18 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Caetano Veloso"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27394078dd1c8c995e16065c1a9",
+              "name": "Incompatibilidade de Gênios (Incompatibility of Temperaments)"
+            },
+            {
+              "artists": [
+                "Jeff Sova"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a77f05e0491769cb1b29da57",
+              "name": "Bright Eyes"
+            },
+            {
+              "artists": [
+                "Ivy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c1deeba85dd350c6507c48e",
+              "name": "Four In The Morning"
+            },
+            {
+              "artists": [
+                "abracadabra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d899a6af0c1b67ab441d2b5",
+              "name": "peel away"
+            },
+            {
+              "artists": [
+                "Water From Your Eyes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733456a000dc303a94002cae6b",
+              "name": "Barley"
+            },
+            {
+              "artists": [
+                "Phantogram"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732757fdbbd7ee9a09d518577a",
+              "name": "Turning Into Stone"
+            },
+            {
+              "artists": [
+                "Stars"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273618d2dc9868c46a711ee76bc",
+              "name": "My Radio (FM Mix)"
+            },
+            {
+              "artists": [
+                "The Postal Service"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27385f0e9a8cd0d663470492ec1",
+              "name": "Clark Gable - Remastered"
+            },
+            {
+              "artists": [
+                "Frisbie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a23e9f76ca5efea5f59e0ce8",
+              "name": "Shame On"
+            },
+            {
+              "artists": [
+                "Railcard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27313187b3b48cba0fc3ddb1fb7",
+              "name": "Snow Blind"
+            },
+            {
+              "artists": [
+                "Spoon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6087e1308518847564b7eb0",
+              "name": "This Book Is A Movie"
+            },
+            {
+              "artists": [
+                "my bloody valentine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736457d6cff6e47273bc588624",
+              "name": "off your face"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23365402/FREEFORM",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/27rjmHhQAj1x5Qol4UZo1V"
         }
       },
       "needs_reconciliation": false
