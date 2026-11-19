@@ -23475,7 +23475,7 @@
           "start_time": "2026-11-18T15:00:00-0800",
           "end_time": "2026-11-18T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5EnIf2jE7ZzEX3TCpzARkn",
         "desired_uris": [
@@ -23500,8 +23500,101 @@
           "spotify:track:1KtwAeCarQx3VA5fcnQU8K"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T17:00:00-0800",
+          "broadcast_start": "2026-11-18T15:00:00-0800",
+          "imported_at": "2026-11-19T15:25:11.357236812+00:00",
+          "last_updated": "2026-11-19 15:25 UTC",
           "name": "KALX - FREEFORM - 2026-11-18 3:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Glenn Branca"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273070c1177a3a12878795ec8d3",
+              "name": "Symphony No. 10 (The Mystery Pt. 2) - II - The Horror"
+            },
+            {
+              "artists": [
+                "The Jesus and Mary Chain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273556aa85358cd423eec95d867",
+              "name": "Happy When it Rains"
+            },
+            {
+              "artists": [
+                "The Clog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db34562fa365670f7c7fe57d",
+              "name": "Fog Devil"
+            },
+            {
+              "artists": [
+                "Danongan Kalanduyan and the Palabuniyan Kulintang Ensemble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738aa78f702f59bc6c3f8dc4ed",
+              "name": "Kapamalong-malong Dance Music I"
+            },
+            {
+              "artists": [
+                "PinioL"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d48b9446a849bc6c839346eb",
+              "name": "Mimolle"
+            },
+            {
+              "artists": [
+                "Cardiacs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735bfbfaae1a5deef223f1964e",
+              "name": "Men In Bed"
+            },
+            {
+              "artists": [
+                "Talking Heads"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738365f74aa622b1b86962c8dd",
+              "name": "Life During Wartime - Alternate Version"
+            },
+            {
+              "artists": [
+                "Killing Joke"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27346ec13c094ded9e1bb1f5879",
+              "name": "The Pandys Are Coming - Live From Larry's Hideaway/ Toronto/ Canada 9th + 10th August, 1982 2005 Digital Remaster"
+            },
+            {
+              "artists": [
+                "The Beatles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d23bdb7c0a6c420f4ffa644",
+              "name": "Rain - Remastered 2009"
+            },
+            {
+              "artists": [
+                "Polyrock"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27311897d5c7d876975a895d672",
+              "name": "Rain"
+            },
+            {
+              "artists": [
+                "The Fall"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e31017079615551dbd2ba970",
+              "name": "I Feel Voxish - Live"
+            },
+            {
+              "artists": [
+                "La Sécurité"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dc0b8258cea307dea3d16aa9",
+              "name": "Detour"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23363661/FREEFORM",
+          "station": "KALX",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/5EnIf2jE7ZzEX3TCpzARkn"
         }
       },
       "needs_reconciliation": false
