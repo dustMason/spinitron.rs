@@ -23009,6 +23009,49 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23361750": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23361750,
+          "title": "Being Cold",
+          "url": "https://spinitron.com/KALX/pl/23361750/Being-Cold",
+          "start_time": "2026-11-18T07:00:00-0800",
+          "end_time": "2026-11-18T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6VXzhMXTGMn4040MHiPovZ",
+          "spotify:track:1m1lZSgi03KRV7xccyl3qj",
+          "spotify:track:1BMQHqqDXtUcx7F0mlniJZ",
+          "spotify:track:2Mnxwybn8GWuzrnDIgsB4Q",
+          "spotify:track:0gdDmcyQON06k86lFaOnvH",
+          "spotify:track:1iwqxLEDHGbhMIgdBpaab5",
+          "spotify:track:3pbmorcywhrvV2dz3oB4vI",
+          "spotify:track:1MgxrUqmSVs4atYN6lWs86",
+          "spotify:track:5TGn7blZsr4NVmp2axsUKv",
+          "spotify:track:5fjaHwIsvJKxkhODCYY0EB",
+          "spotify:track:7jN8DDYPAVXkCql01NNEwI",
+          "spotify:track:2hhiKMWXSpE7O5Vlx3dWUX",
+          "spotify:track:63m8RhdL77lq1sOugz4TGP",
+          "spotify:track:4RzpFlL6kcJljkM4s1fuwU",
+          "spotify:track:7q5a5ikQaxXCIlAiCjzq8V",
+          "spotify:track:20GN4DFQRbVUVnZDZ46lLZ",
+          "spotify:track:2YlVeM9skGGNkv7DQA83un",
+          "spotify:track:1RJkO4wNDYEuniXzg6WzA1",
+          "spotify:track:7a6WzjIQfGmxM3JEuek8WP",
+          "spotify:track:5nCScIjCua6SYp4VKNjugD",
+          "spotify:track:4HaU7ykpjrabvLRS42ridZ",
+          "spotify:track:4lYn0ZkJ81i0iBiVrG4mxc"
+        ],
+        "listing": {
+          "name": "KALX - Being Cold - 2026-11-18",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
