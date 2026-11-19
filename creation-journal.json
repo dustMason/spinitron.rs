@@ -23829,7 +23829,7 @@
           "start_time": "2026-11-18T18:15:00-0800",
           "end_time": "2026-11-18T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0WmsslU2BTEvhOoaPch3cw",
         "desired_uris": [
@@ -23853,8 +23853,102 @@
           "spotify:track:03nIiHv4a20gOslzqBxOah"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T20:00:00-0800",
+          "broadcast_start": "2026-11-18T18:15:00-0800",
+          "imported_at": "2026-11-19T15:27:53.231963631+00:00",
+          "last_updated": "2026-11-19 15:27 UTC",
           "name": "KALX - Sowing Seeds In The Rain with Petra Core and Last Will - 2026-11-18",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Dax Pierson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273037bb0ac94f71bee6baa92b6",
+              "name": "Treading Water (Live)"
+            },
+            {
+              "artists": [
+                "Genesis P-Orridge"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bbaf3d7e9ad57a0e5d5a090b",
+              "name": "Firesong"
+            },
+            {
+              "artists": [
+                "mHz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ac39e29bc858c22308f2776b",
+              "name": "Palindromic"
+            },
+            {
+              "artists": [
+                "The Dramatics"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27346600ad82a300d1eaed2dc2e",
+              "name": "In The Rain - Single Version"
+            },
+            {
+              "artists": [
+                "Nick Cave & The Bad Seeds"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e1ef2347879678035365e129",
+              "name": "Tupelo"
+            },
+            {
+              "artists": [
+                "Gene Chandler"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a88710bbb2474d9b044947e2",
+              "name": "Rainbow"
+            },
+            {
+              "artists": [
+                "Muddy Waters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bdab7747e558ebf52b5ae747",
+              "name": "Forty Days And Forty Nights"
+            },
+            {
+              "artists": [
+                "Lightnin' Hopkins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27315a92a9e4cd647343a2e8265",
+              "name": "Rainy Day Blues"
+            },
+            {
+              "artists": [
+                "Wreck Small Speakers On Expensive Stereos"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730c4f46fc5c83d19a108112f3",
+              "name": "Rain"
+            },
+            {
+              "artists": [
+                "Tones On Tail"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27357330cf2a7a8954e899c7ca8",
+              "name": "Rain"
+            },
+            {
+              "artists": [
+                "Peter Knight",
+                "Jannis Anastasakis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f43320b1f2c8395cf114ed09",
+              "name": "Feather I"
+            },
+            {
+              "artists": [
+                "Lee Ranaldo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731f766c649687f78f23a749eb",
+              "name": "Tajikistan (Nice To Meet You)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23364640/Sowing-Seeds-In-The-Rain-with-Petra-Core-and-Last-Will",
+          "station": "KALX",
+          "track_count": 18,
+          "url": "https://open.spotify.com/playlist/0WmsslU2BTEvhOoaPch3cw"
         }
       },
       "needs_reconciliation": false
