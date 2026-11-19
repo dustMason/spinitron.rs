@@ -23953,6 +23953,50 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23364936": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23364936,
+          "title": "La-la-la, la-la-la, la-la",
+          "url": "https://spinitron.com/KALX/pl/23364936/La-la-la-la-la-la-la-la",
+          "start_time": "2026-11-18T20:00:00-0800",
+          "end_time": "2026-11-18T21:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0ESPyoFRXJRUMLriKJjEpN",
+          "spotify:track:2MlRhwYg7l7hTKxQHC7NlB",
+          "spotify:track:05ZkPpHlU9k0kh1Cwt6F3f",
+          "spotify:track:3rzGFh9V52s6UCWojsbvlj",
+          "spotify:track:0WDzqmXCXnt9vvpbM2orDT",
+          "spotify:track:51IkXj5HbmwxDXVoUnshYK",
+          "spotify:track:0Smxi47vM9rcOiUXsYuxER",
+          "spotify:track:5agYxJCyatIlQgDHT8PafT",
+          "spotify:track:4R8nHxIzOBHIGAGianJjUF",
+          "spotify:track:4a97cGetPwHgZog0LJefqI",
+          "spotify:track:3a2PwrsKNJyVXLHwNNAk7O",
+          "spotify:track:7uKOw6S0H7xWxstvE8ESwB",
+          "spotify:track:30IUpLccbExrowAgPuagWG",
+          "spotify:track:3pCcCrNtIvCPbCOc6acMfu",
+          "spotify:track:080hdKZG4qbtKF4YezWzlZ",
+          "spotify:track:2ViPveuFTv06DjhGRDYFjo",
+          "spotify:track:73X0YNhRuFac62ApTB8gpP",
+          "spotify:track:2sqMRJdwMblIDJD2W8sQ1X",
+          "spotify:track:32vmpgiY0gK96AVWQuP5Zz",
+          "spotify:track:6AC2VDhh56DlkOMYjYs4Tg",
+          "spotify:track:7q5a5ikQaxXCIlAiCjzq8V",
+          "spotify:track:42xJlLwEFNiiNtnLhfBKfg",
+          "spotify:track:4GNBjMLPjb0YaHlRv7dBR2"
+        ],
+        "listing": {
+          "name": "KALX - La-la-la, la-la-la, la-la - 2026-11-18",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
