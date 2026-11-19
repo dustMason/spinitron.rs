@@ -23019,7 +23019,7 @@
           "start_time": "2026-11-18T07:00:00-0800",
           "end_time": "2026-11-18T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5RT5fJqA5tuBTJ4gG9rJ1q",
         "desired_uris": [
@@ -23047,8 +23047,101 @@
           "spotify:track:4lYn0ZkJ81i0iBiVrG4mxc"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T09:00:00-0800",
+          "broadcast_start": "2026-11-18T07:00:00-0800",
+          "imported_at": "2026-11-19T15:23:07.647537115+00:00",
+          "last_updated": "2026-11-19 15:23 UTC",
           "name": "KALX - Being Cold - 2026-11-18",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Strawberry Switchblade"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273172a81da8d2007b01ecc0bb3",
+              "name": "Being Cold"
+            },
+            {
+              "artists": [
+                "above me"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731ddd6f8226a3db06e2ff71a5",
+              "name": "water drops"
+            },
+            {
+              "artists": [
+                "Medicine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee66780744d30ef9c70c140b",
+              "name": "Fried Awake"
+            },
+            {
+              "artists": [
+                "Rocketship"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cbbb814ed7bccf19fe6e0fc1",
+              "name": "You'll Regret It Someday"
+            },
+            {
+              "artists": [
+                "Heavenly Bodies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736e37219fd8144be52a5dd288",
+              "name": "Rains on Me - Mix La Mort"
+            },
+            {
+              "artists": [
+                "Spacemoth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736a8f88b2e3511b240dc0ab0f",
+              "name": "Telepathic Butterflies"
+            },
+            {
+              "artists": [
+                "abracadabra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e33833d94d88fbfbf50442e8",
+              "name": "face card"
+            },
+            {
+              "artists": [
+                "abracadabra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd22ee8e5d1f0ca90bba6ee7",
+              "name": "see-saw"
+            },
+            {
+              "artists": [
+                "ESG"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d036ac6c871f61bfe851cc81",
+              "name": "You Make No Sense"
+            },
+            {
+              "artists": [
+                "Jalen Ngonda"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c12ee81645c25f007de4723e",
+              "name": "Anyone In Love"
+            },
+            {
+              "artists": [
+                "Carroll Thompson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734db043be7a4ec2fb2c7d5f38",
+              "name": "Yesterday (2021 - Remaster)"
+            },
+            {
+              "artists": [
+                "TRÍADA"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e5c311d72ee73e4ca16dc716",
+              "name": "Amarme"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23361750/Being-Cold",
+          "station": "KALX",
+          "track_count": 22,
+          "url": "https://open.spotify.com/playlist/5RT5fJqA5tuBTJ4gG9rJ1q"
         }
       },
       "needs_reconciliation": false
