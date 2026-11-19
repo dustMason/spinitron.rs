@@ -24242,7 +24242,7 @@
           "start_time": "2026-11-19T00:00:00-0800",
           "end_time": "2026-11-19T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1tXIhuZuZ2jqJEs1PQDDql",
         "desired_uris": [
@@ -24267,8 +24267,102 @@
           "spotify:track:7FcnFSwGquIEDhJ18tHWd4"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T02:00:00-0800",
+          "broadcast_start": "2026-11-19T00:00:00-0800",
+          "imported_at": "2026-11-19T15:29:56.035041423+00:00",
+          "last_updated": "2026-11-19 15:29 UTC",
           "name": "KALX - FREEFORM - 2026-11-19",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Foxygen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27340404a50cc12e75859d1dcc0",
+              "name": "On Blue Mountain"
+            },
+            {
+              "artists": [
+                "Vivebeat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c6b05db0de584e8c16c6b313",
+              "name": "I Know Your Room"
+            },
+            {
+              "artists": [
+                "Blonde Redhead"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27316ad1c823b08122acd3bbe13",
+              "name": "Astro Boy"
+            },
+            {
+              "artists": [
+                "Exploding Zones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f9c8f803df31ec43b9504e7",
+              "name": "Sun Pill"
+            },
+            {
+              "artists": [
+                "Her Space Holiday"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273164d1dbd12b4960f9ef59af6",
+              "name": "Explosion Existence"
+            },
+            {
+              "artists": [
+                "Portishead"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732529c50c11cb07f6f9e3ab29",
+              "name": "The Rip"
+            },
+            {
+              "artists": [
+                "King Krule"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273289a4ebbfccf497731589c17",
+              "name": "Flimsier"
+            },
+            {
+              "artists": [
+                "Julee Cruise"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6212adb4de364a1c633582a",
+              "name": "Mysteries Of Love"
+            },
+            {
+              "artists": [
+                "Pearl Sisters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273328bbe781766216db375e1f3",
+              "name": "I Will Leave Even If Is Sad"
+            },
+            {
+              "artists": [
+                "SAULT"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737839922e620494fee4f7fd62",
+              "name": "Love Does Not Equal Pain"
+            },
+            {
+              "artists": [
+                "cootie catcher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e1ad7219e469a49a4ccbcd82",
+              "name": "Rhymes with rest"
+            },
+            {
+              "artists": [
+                "Fontaines D.C.",
+                "ROSALÍA"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273912db68812b0772fa5c1b4b8",
+              "name": "Where Is Gone?"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23365811/FREEFORM",
+          "station": "KALX",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/1tXIhuZuZ2jqJEs1PQDDql"
         }
       },
       "needs_reconciliation": false
