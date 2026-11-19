@@ -23316,7 +23316,7 @@
           "start_time": "2026-11-18T12:00:00-0800",
           "end_time": "2026-11-18T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6J7FEbPgsGqNoMUcnARfVC",
         "desired_uris": [
@@ -23365,8 +23365,102 @@
           "spotify:track:3lwwWIclKQCafsx9hhySmy"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T15:00:00-0800",
+          "broadcast_start": "2026-11-18T12:00:00-0800",
+          "imported_at": "2026-11-19T15:24:30.926786460+00:00",
+          "last_updated": "2026-11-19 15:24 UTC",
           "name": "KALX - FREEFORM - 2026-11-18 12:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Quadeca"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273022501794da0a51a2fcfb81a",
+              "name": "Like you always do"
+            },
+            {
+              "artists": [
+                "Thundercat",
+                "Tame Impala"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273882c536d8dcfb086bcf9733b",
+              "name": "No More Lies"
+            },
+            {
+              "artists": [
+                "Chanel Beads"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738671a62813f58b499c8fccc3",
+              "name": "Embarrassed Dog"
+            },
+            {
+              "artists": [
+                "Jane Remover"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a9fc4fc4a22b0e555907cdb3",
+              "name": "kill your composure"
+            },
+            {
+              "artists": [
+                "American Football"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731e734783a00588087331a0b4",
+              "name": "Stay Home"
+            },
+            {
+              "artists": [
+                "Squirrel Flower"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273550c76724e65d8693ba07f78",
+              "name": "Reelin"
+            },
+            {
+              "artists": [
+                "Slippers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734e62a671684ce8d79adf1ca8",
+              "name": "Sunday Morning"
+            },
+            {
+              "artists": [
+                "Alvvays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27391390d24abb65f6fae0323f0",
+              "name": "Not My Baby"
+            },
+            {
+              "artists": [
+                "Spacemoth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273caaa6dd8839deca760d28f43",
+              "name": "Flower Memory"
+            },
+            {
+              "artists": [
+                "George Clanton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273228d073e982f257aa902262f",
+              "name": "Make You Cry"
+            },
+            {
+              "artists": [
+                "SOPHIE"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e9c0c7255ac40aa40d29bfb3",
+              "name": "It's Okay To Cry"
+            },
+            {
+              "artists": [
+                "Troye Sivan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731121a528557155240feb9273",
+              "name": "could cry just thinkin about you"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23362880/FREEFORM",
+          "station": "KALX",
+          "track_count": 43,
+          "url": "https://open.spotify.com/playlist/6J7FEbPgsGqNoMUcnARfVC"
         }
       },
       "needs_reconciliation": false
