@@ -23963,7 +23963,7 @@
           "start_time": "2026-11-18T20:00:00-0800",
           "end_time": "2026-11-18T21:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6gH5vuUyznY6FeErDdyJqe",
         "desired_uris": [
@@ -23992,8 +23992,103 @@
           "spotify:track:4GNBjMLPjb0YaHlRv7dBR2"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T21:30:00-0800",
+          "broadcast_start": "2026-11-18T20:00:00-0800",
+          "imported_at": "2026-11-19T15:28:33.876602280+00:00",
+          "last_updated": "2026-11-19 15:28 UTC",
           "name": "KALX - La-la-la, la-la-la, la-la - 2026-11-18",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Angelo Outlaw"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733ec40315ed8e84c41ee6849e",
+              "name": "Dreams"
+            },
+            {
+              "artists": [
+                "Michael Kiwanuka"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273477e1c8155bcd3394113fc05",
+              "name": "Just Another Moment"
+            },
+            {
+              "artists": [
+                "Okaidja Afroso"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273edff38727709ae28b978b972",
+              "name": "Jojo"
+            },
+            {
+              "artists": [
+                "Falle Nioke",
+                "sir Was"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa8ff53c230ade14efb752f6",
+              "name": "Wonama yo ema"
+            },
+            {
+              "artists": [
+                "aja monet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e3c87fb12f6627713cab7da",
+              "name": "say it with your chest"
+            },
+            {
+              "artists": [
+                "Madlib"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f134b6b9a9c754f7bbfc2a79",
+              "name": "Hopprock"
+            },
+            {
+              "artists": [
+                "Jazz Liberatorz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731daec30c58d42acbcc24a1c5",
+              "name": "Clin D'oeil"
+            },
+            {
+              "artists": [
+                "Okonski"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c1d8038882141a20bb5de961",
+              "name": "Biblio"
+            },
+            {
+              "artists": [
+                "Surprise Chef"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e6c1a63d562fe2021c3df5f6",
+              "name": "Outside Voice"
+            },
+            {
+              "artists": [
+                "Thee Sinseers",
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cea5e810a36bf0e912d4bcab",
+              "name": "Did Ya Know?"
+            },
+            {
+              "artists": [
+                "Cochemea"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738cc2129edf36f1d9d9c66792",
+              "name": "Dilo"
+            },
+            {
+              "artists": [
+                "Jay Daniel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27399193da1c3a7959bf6d53f47",
+              "name": "Paradise Valley"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23364936/La-la-la-la-la-la-la-la",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/6gH5vuUyznY6FeErDdyJqe"
         }
       },
       "needs_reconciliation": false
