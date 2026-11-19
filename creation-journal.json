@@ -40856,6 +40856,46 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23363094": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23363094,
+          "title": "THE MUSIC FILL SHOW",
+          "url": "https://spinitron.com/KPOO/pl/23363094/THE-MUSIC-FILL-SHOW",
+          "start_time": "2026-11-18T12:00:00-0800",
+          "end_time": "2026-11-18T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5ZTNRO6dmPkK2Lh6asa3Ug",
+          "spotify:track:19bwaOYHpYxlp0HFdsRTA0",
+          "spotify:track:5O7wFDZg84LWHaYab16jzC",
+          "spotify:track:0oo74FgzRjZateSoJT12Zv",
+          "spotify:track:1ueW2CO34wyV0udejEGg0G",
+          "spotify:track:1fSBBFhDheG5MI3ogy79Ek",
+          "spotify:track:5oCAtxlB0Hn6rXUp9lXybu",
+          "spotify:track:4jvCXYZwM8pR1p0vvK7PtW",
+          "spotify:track:3LZVOqev1w5NukZcqbs8Ry",
+          "spotify:track:1kArz1IJ0mK2mWjw2XtkQX",
+          "spotify:track:2mbJy55OBRk1PR8gKLl9XE",
+          "spotify:track:517smb3et31CZDqN91wfz4",
+          "spotify:track:0WNoKOd4L1PxN8E6WN762R",
+          "spotify:track:1quio8fSVGezsIVkKYHpkg",
+          "spotify:track:76zG6fUCRiX3OoxPN16f8Y",
+          "spotify:track:3fCI9sBIKDAHL5olHnlYdp",
+          "spotify:track:6NcQeknrLsctQec3HFWfrY",
+          "spotify:track:6Bf5en3Iuf0WhRHClriZpb",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x"
+        ],
+        "listing": {
+          "name": "KPOO - THE MUSIC FILL SHOW - 2026-11-18",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
