@@ -40551,7 +40551,7 @@
           "start_time": "2026-11-18T06:00:00-0800",
           "end_time": "2026-11-18T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1JX4WLFD9w3jmvTTRwllCw",
         "desired_uris": [
@@ -40597,8 +40597,103 @@
           "spotify:track:5guWlBTInRfey3RWo7O3f1"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T09:00:00-0800",
+          "broadcast_start": "2026-11-18T06:00:00-0800",
+          "imported_at": "2026-11-19T15:30:41.774555979+00:00",
+          "last_updated": "2026-11-19 15:30 UTC",
           "name": "KPOO - Way back Wednesday D.J Marcus 6:00AM PST to 8:00 AM PST West Coast Wednesday Gos - 2026-11-18",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Isley, Jasper, Isley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a66e671df3129fa32b0555e",
+              "name": "Caravan of Love"
+            },
+            {
+              "artists": [
+                "Ray Parker Jr.",
+                "Raydio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273841c8f567b42b8b9a1aa54ec",
+              "name": "A Woman Needs Love (Just Like You Do)"
+            },
+            {
+              "artists": [
+                "Mint Condition"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27388a111f62103161783b7d1b7",
+              "name": "Caught My Eye"
+            },
+            {
+              "artists": [
+                "Commodores"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ab5f70c7976db40f921f5746",
+              "name": "Lady (You Bring Me Up)"
+            },
+            {
+              "artists": [
+                "Smokey Robinson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27391cc54ea635ee716f49b4824",
+              "name": "It's Time To Stop Shoppin' Around"
+            },
+            {
+              "artists": [
+                "Luther Vandross"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273217ffeb63978da112c071845",
+              "name": "There's Nothing Better Than Love"
+            },
+            {
+              "artists": [
+                "Peabo Bryson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e7986011b67e074a456d1a89",
+              "name": "Can You Stop the Rain"
+            },
+            {
+              "artists": [
+                "Sade"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735e25e034e25258b356774c79",
+              "name": "Your Love Is King"
+            },
+            {
+              "artists": [
+                "Rose Royce"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b14506bcfd7402d5ec88ec6c",
+              "name": "Wishing on a Star"
+            },
+            {
+              "artists": [
+                "Teddy Pendergrass"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27396c17d41a5149e3128e051f8",
+              "name": "I Can't Win for Losing"
+            },
+            {
+              "artists": [
+                "Maze",
+                "Frankie Beverly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a3be70b45b84f9f7a232880f",
+              "name": "Love Is The Key"
+            },
+            {
+              "artists": [
+                "The Emotions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c5a010463c2b450902e57599",
+              "name": "Best of My Love"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23361629/Way-back-Wednesday-D-J-Marcus-6-00AM-PST-to-8-00-AM-PST-West-Coast-Wednesday-Gospel-8-00-AM-PST-to-",
+          "station": "KPOO",
+          "track_count": 40,
+          "url": "https://open.spotify.com/playlist/1JX4WLFD9w3jmvTTRwllCw"
         }
       },
       "needs_reconciliation": false
