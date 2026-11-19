@@ -23609,7 +23609,7 @@
           "start_time": "2026-11-18T17:00:00-0800",
           "end_time": "2026-11-18T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2MerQw2zfBemovQMuXdU2L",
         "desired_uris": [
@@ -23628,8 +23628,107 @@
           "spotify:track:7j2z5x2OUWCYcgeQenPMh4"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T18:00:00-0800",
+          "broadcast_start": "2026-11-18T17:00:00-0800",
+          "imported_at": "2026-11-19T15:25:51.936419926+00:00",
+          "last_updated": "2026-11-19 15:25 UTC",
           "name": "KALX - Radio Dunya - 2026-11-18",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Juan Pablo Torres",
+                "Dan Tyler"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365fad726b3d81ed0ed3cb50c",
+              "name": "Cacao - Dan Tyler Nad Bulto Versión"
+            },
+            {
+              "artists": [
+                "Adrian Quesada",
+                "Trish Toledo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27386ef4ac35d17c5696270f303",
+              "name": "Hoy Que Llueve (with Trish Toledo)"
+            },
+            {
+              "artists": [
+                "Natalia Lafourcade"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bd4c237c04735257dd64c510",
+              "name": "Nunca Es Suficiente"
+            },
+            {
+              "artists": [
+                "Titán"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737e129e6a6ca24af628e686eb",
+              "name": "Corazón"
+            },
+            {
+              "artists": [
+                "Héctor Lavoe",
+                "Willie Colón"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f87fa607e589b5ba0b7a1bbb",
+              "name": "Te Conozco"
+            },
+            {
+              "artists": [
+                "Cortijo Y Su Combo",
+                "Ismael Rivera"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a230ea9e500689ce8345e304",
+              "name": "Oriza"
+            },
+            {
+              "artists": [
+                "Lucho Gavilanes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273451f11d7555dc85ba12971fd",
+              "name": "El Tequilazo/Canelazo"
+            },
+            {
+              "artists": [
+                "Meridian Brothers",
+                "El Grupo Renacimiento"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da7f7135cc29e375293b5b9d",
+              "name": "Hermana necesito"
+            },
+            {
+              "artists": [
+                "Tito Puente"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f98d0daacccb94d540c93e6",
+              "name": "Mambo Lenko"
+            },
+            {
+              "artists": [
+                "Gal Costa",
+                "Caetano Veloso"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e1b01b8056afa151b8430f89",
+              "name": "Que Pena (Ele Já Não Gosta Mais De Mim)"
+            },
+            {
+              "artists": [
+                "Celia Cruz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273abe503ae87c5e372329686bf",
+              "name": "Suenan Los Tambores"
+            },
+            {
+              "artists": [
+                "Astrid Hadad"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273772175f149bf0e1f50619b18",
+              "name": "El Calcetin"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23364169/Radio-Dunya",
+          "station": "KALX",
+          "track_count": 13,
+          "url": "https://open.spotify.com/playlist/2MerQw2zfBemovQMuXdU2L"
         }
       },
       "needs_reconciliation": false
