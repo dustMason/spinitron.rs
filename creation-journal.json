@@ -40697,6 +40697,67 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23362236": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23362236,
+          "title": "Tia  Carroll's Awesome Radio Show",
+          "url": "https://spinitron.com/KPOO/pl/23362236/Tia-Carroll-s-Awesome-Radio-Show",
+          "start_time": "2026-11-18T09:00:00-0800",
+          "end_time": "2026-11-18T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:08XnGAqrSwqr08vJ0t4py8",
+          "spotify:track:3YZGpuwdD1LlAR2xqDZfg3",
+          "spotify:track:2BfQU2QWF3gFasnjKfpVFU",
+          "spotify:track:2Fh7z7i5ofkj4ylUBYe1qs",
+          "spotify:track:6l79NdFzweFmaGIPMH8EyO",
+          "spotify:track:5x2ZxTwhEsxC6KIrT1E0N7",
+          "spotify:track:6uk25q6yMSJ4rY0YnSMLtI",
+          "spotify:track:5EWPGh7jbTNO2wakv8LjUI",
+          "spotify:track:1b7tZPt3S2UN6OrPUBqGCp",
+          "spotify:track:0v1Enol2iaIHz0ZFn8pTsJ",
+          "spotify:track:6mjlbRIgMTf2nqY0kq1rOJ",
+          "spotify:track:7K8QsHbmUpSX37oOCL4e2g",
+          "spotify:track:0CMVn8LROVurkZyZuqtNmo",
+          "spotify:track:0Ph6L4l8dYUuXFmb71Ajnd",
+          "spotify:track:77oU2rjC5XbjQfNe3bD6so",
+          "spotify:track:0zEVKqX74dPaAngMi70hgu",
+          "spotify:track:0MBSnRyEUjShPLcfDHqKfx",
+          "spotify:track:1UfBa3nIV6tuGbOGM4vW83",
+          "spotify:track:1fHgO6v34KSSBKrNQE6q21",
+          "spotify:track:3mAiFmSq6tsZGBAZlpps4H",
+          "spotify:track:6dckmQdKN2LeGDKAiAerdj",
+          "spotify:track:5iM5ssNZIHo3InfBIKqXN1",
+          "spotify:track:3FkJ5VtmZdIjGyTjK1pHlX",
+          "spotify:track:1tJAnf6eh1xVGuBhJuuFYx",
+          "spotify:track:0NhrGm7avZ7JkcYfotBZeF",
+          "spotify:track:5wTNX0mLtzrs9adxcrXKYp",
+          "spotify:track:6VKGB8b37Ju8iw9DzugVw3",
+          "spotify:track:7jc5Cr6nJ3GClFX1faeN73",
+          "spotify:track:7l07ak5IWpISBsrUtwj4O4",
+          "spotify:track:6Rqn2GFlmvmV4w9Ala0I1e",
+          "spotify:track:4vNFOzjhbd6b35iGTp04Xu",
+          "spotify:track:38NTPFsooLJgv6CHoBksjm",
+          "spotify:track:0PzuuG4qDCq1jOqyU8vmwp",
+          "spotify:track:5mz9myx79OTZO476qa0KkC",
+          "spotify:track:7DD7eSuYSC5xk2ArU62esN",
+          "spotify:track:2jEZMf4KW368TLFl0ez9dv",
+          "spotify:track:7d1ustAIlXG7ht5Q4IOv7s",
+          "spotify:track:6y8o4V2R2dSt2ijgL8C72W",
+          "spotify:track:6j5Ss1Gi6Zgnhrz0cwnVfa",
+          "spotify:track:2P6Buc8kWRgShx7aHIadqu"
+        ],
+        "listing": {
+          "name": "KPOO - Tia Carroll's Awesome Radio Show - 2026-11-18",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
