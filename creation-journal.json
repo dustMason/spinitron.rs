@@ -22853,7 +22853,7 @@
           "start_time": "2026-11-18T03:00:00-0800",
           "end_time": "2026-11-18T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4XXkrpK07AmUzpvAimaC2f",
         "desired_uris": [
@@ -22909,8 +22909,102 @@
           "spotify:track:4X0RMkxgKiWmGYY1UrXLkS"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T07:00:00-0800",
+          "broadcast_start": "2026-11-18T03:00:00-0800",
+          "imported_at": "2026-11-19T15:22:27.217370206+00:00",
+          "last_updated": "2026-11-19 15:22 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-18",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Spiritualized"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732d64e3072b3c25d531630075",
+              "name": "Take Your Time"
+            },
+            {
+              "artists": [
+                "Spectrum"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27310307cd3f680333443712c39",
+              "name": "Lord I Don't Even Know My Name"
+            },
+            {
+              "artists": [
+                "The Meeting Places"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe88fe02aa53e62c388103ba",
+              "name": "See Through You"
+            },
+            {
+              "artists": [
+                "Nite Fields"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27307e19c39cc680ba7eddf2a40",
+              "name": "Winter's Gone"
+            },
+            {
+              "artists": [
+                "Patrick Cowley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d985e82fdd3e36b5b28edf99",
+              "name": "Nightcrawler"
+            },
+            {
+              "artists": [
+                "Atlas Sound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4f18f3f4c82b4192d1562e7",
+              "name": "Octoberland"
+            },
+            {
+              "artists": [
+                "Vanishing Twin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273787772bfe16950fbfe145193",
+              "name": "Wherever You Are"
+            },
+            {
+              "artists": [
+                "Jose Mauro"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732b5e08704ba9a4d2ff74cb31",
+              "name": "Apocalipse"
+            },
+            {
+              "artists": [
+                "Evariste"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e586fb09aaa2941819a52cee",
+              "name": "Dans la lune"
+            },
+            {
+              "artists": [
+                "Patrick Cowley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b835cb4e70bf3b14a221419b",
+              "name": "Take a Little Trip"
+            },
+            {
+              "artists": [
+                "ODD OKODDO",
+                "Ogoya Nengo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27364932607e2cbcf7ccc718eca",
+              "name": "Demba"
+            },
+            {
+              "artists": [
+                "Debit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273caa01a3a7e5107aad4a9148d",
+              "name": "Pero like"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23360954/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 50,
+          "url": "https://open.spotify.com/playlist/4XXkrpK07AmUzpvAimaC2f"
         }
       },
       "needs_reconciliation": false
