@@ -23743,7 +23743,7 @@
           "start_time": "2026-11-18T18:00:00-0800",
           "end_time": "2026-11-18T18:15:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5UpdA73fFLiP0GYiRor5Gh",
         "desired_uris": [
@@ -23751,8 +23751,31 @@
           "spotify:track:02BjwL3NYE266p90iyPSaV"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T18:15:00-0800",
+          "broadcast_start": "2026-11-18T18:00:00-0800",
+          "imported_at": "2026-11-19T15:26:32.692894025+00:00",
+          "last_updated": "2026-11-19 15:26 UTC",
           "name": "KALX - NEWS - 2026-11-18",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Nujabes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273878ed741b8e1342d58a332ca",
+              "name": "sanctuary ship"
+            },
+            {
+              "artists": [
+                "Alex Puddu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735a8bb8913feb58a4622b328d",
+              "name": "Lusty Nurses"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23364473/NEWS",
+          "station": "KALX",
+          "track_count": 2,
+          "url": "https://open.spotify.com/playlist/5UpdA73fFLiP0GYiRor5Gh"
         }
       },
       "needs_reconciliation": false
