@@ -41113,7 +41113,7 @@
           "start_time": "2026-11-18T18:00:00-0800",
           "end_time": "2026-11-18T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7mpmREKUcM89gfeklEQKmn",
         "desired_uris": [
@@ -41125,8 +41125,60 @@
           "spotify:track:2Ro43MC0LQIUcfWTROaLXH"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T20:00:00-0800",
+          "broadcast_start": "2026-11-18T18:00:00-0800",
+          "imported_at": "2026-11-19T15:34:08.296459224+00:00",
+          "last_updated": "2026-11-19 15:34 UTC",
           "name": "KPOO - Voices of the Native Nations - 2026-11-18",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Robbie Robertson",
+                "Leah Hicks-Manning"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27379d486bb71543e92fe59be16",
+              "name": "The Sound Is Fading"
+            },
+            {
+              "artists": [
+                "Brulé"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730d8ed867eb3a062361281808",
+              "name": "Buffalo Moon"
+            },
+            {
+              "artists": [
+                "Lowell 'Wimpy' Edmonds and Singers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738f371d2347ee47b0ad24d3b3",
+              "name": "Nine Bear Dance Songs"
+            },
+            {
+              "artists": [
+                "Pigeon Lake"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b88a7944c7ec817b13c400b4",
+              "name": "Flag - Victory Song"
+            },
+            {
+              "artists": [
+                "Meskwaki Nation"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738bea2c3e116eaa6048e8bad2",
+              "name": "Go with the Flow"
+            },
+            {
+              "artists": [
+                "Pima Express"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731aa526ceae6e66a54946033e",
+              "name": "Never on a Sunday"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23364509/Voices-of-the-Native-Nations",
+          "station": "KPOO",
+          "track_count": 6,
+          "url": "https://open.spotify.com/playlist/7mpmREKUcM89gfeklEQKmn"
         }
       },
       "needs_reconciliation": false
