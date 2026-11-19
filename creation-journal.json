@@ -40540,6 +40540,67 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23361629": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23361629,
+          "title": "Way back Wednesday  D.J Marcus 6:00AM PST to 8:00 AM PST West Coast Wednesday Gospel 8:00 AM PST to 9:00 AM PST",
+          "url": "https://spinitron.com/KPOO/pl/23361629/Way-back-Wednesday-D-J-Marcus-6-00AM-PST-to-8-00-AM-PST-West-Coast-Wednesday-Gospel-8-00-AM-PST-to-",
+          "start_time": "2026-11-18T06:00:00-0800",
+          "end_time": "2026-11-18T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2rbF6oP85x3MqxY0ny8qXq",
+          "spotify:track:36NBD8USb21ojZSyhMwdwr",
+          "spotify:track:6XRvIux69KwM4qfca9206b",
+          "spotify:track:5CLozJK4pKWoPpFf2Z1Mye",
+          "spotify:track:4TpIUCYD726nsV29rYPiwM",
+          "spotify:track:5ufz4Pc89GU8FBAp1lPatq",
+          "spotify:track:33SzyCoUlWiVdcJvkVyukX",
+          "spotify:track:7erXAfnatmoUow8DnbseOY",
+          "spotify:track:0u2CGItUO2jYEiFaXD7n5S",
+          "spotify:track:1ZHA48yqeZiFZVzoAQ2NuC",
+          "spotify:track:0MH2NmOq6u0wL3HzIr9kUi",
+          "spotify:track:2M2WJ7gBlcKNxdhyfPp9zY",
+          "spotify:track:1krKp0OXeCH6SI5SXl8tu5",
+          "spotify:track:6CFPFnS9EcLs2I0nWqtWci",
+          "spotify:track:2R0zbd80CqwoB0ORDCqDoK",
+          "spotify:track:5KRRQ7uJ3L6xZlZe6j5rRO",
+          "spotify:track:5P0FaLdSqCpFolBHv4M8ig",
+          "spotify:track:4uSpCtFtrK65GoqJpQj6V6",
+          "spotify:track:4IT6vDuKprKl6jyVndlY8V",
+          "spotify:track:2TQAKues8mUovMsp6u8gpn",
+          "spotify:track:2lnQcP5hr4RKR63TFvnI4k",
+          "spotify:track:6DMvpPw0bwcHC0gexL1KdN",
+          "spotify:track:63Ql2zSLiBryLRPihaUToK",
+          "spotify:track:13Mzsb8VzRSZ5w3pM48cn6",
+          "spotify:track:4a5aC5C4MAfqHPGgVZhSrr",
+          "spotify:track:2R75DGyaaHBAAAJodxBlUf",
+          "spotify:track:5yGTQzYbEdY6B9RFZJypgt",
+          "spotify:track:7fAe2PjWPfVdEur3xUCcvt",
+          "spotify:track:5hQyFGkokdPFmpQEN1ONHX",
+          "spotify:track:0BizmKy9myhF7gYHRdu6rG",
+          "spotify:track:60Wt91UhdkEcZrUIh3lQF4",
+          "spotify:track:1H9MgTLCKIZhiXHsioOAwQ",
+          "spotify:track:0dFH3oc8wikiyi5p5gLUlP",
+          "spotify:track:7blYfLO1tTguCIG5oboWii",
+          "spotify:track:5Hy5NqxyGBSNtBLKAcgMEI",
+          "spotify:track:655EJ5jfkyIL6H7jjMAWdX",
+          "spotify:track:37ZWfszBOn9cW0VWEoKvCu",
+          "spotify:track:3EdpkQGfbLy6ZARq0po5qD",
+          "spotify:track:54SNorcth8jVYLxVPXHnd5",
+          "spotify:track:5guWlBTInRfey3RWo7O3f1"
+        ],
+        "listing": {
+          "name": "KPOO - Way back Wednesday D.J Marcus 6:00AM PST to 8:00 AM PST West Coast Wednesday Gos - 2026-11-18",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
