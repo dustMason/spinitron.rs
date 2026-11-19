@@ -23599,6 +23599,40 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23364169": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23364169,
+          "title": "Radio Dunya",
+          "url": "https://spinitron.com/KALX/pl/23364169/Radio-Dunya",
+          "start_time": "2026-11-18T17:00:00-0800",
+          "end_time": "2026-11-18T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4II3hArQwocMiCbjH8Ibk8",
+          "spotify:track:2VnctElrwexQh1kPGlggAI",
+          "spotify:track:2niUiaoJDCzNldW0pV66zb",
+          "spotify:track:16UE8ZYzWC2tTA4EmIM58B",
+          "spotify:track:4QQSXJaG5mh3dGBHqXaft1",
+          "spotify:track:2FEhit3FMXvX9OWfA7XhfT",
+          "spotify:track:6MaXwQICW0T6g90jbUP3Pn",
+          "spotify:track:6XOLGKnbZSOetWx4wG3Beg",
+          "spotify:track:6pIuyZvikH6erhOhMN8rwV",
+          "spotify:track:24i7wlOa2jvmoHqEdwjQ7m",
+          "spotify:track:6ske4HbFhTjCINmrxpgRd9",
+          "spotify:track:1MoSezenq3k31FMhKX8DHH",
+          "spotify:track:7j2z5x2OUWCYcgeQenPMh4"
+        ],
+        "listing": {
+          "name": "KALX - Radio Dunya - 2026-11-18",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
