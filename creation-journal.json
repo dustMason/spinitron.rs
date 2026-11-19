@@ -40708,7 +40708,7 @@
           "start_time": "2026-11-18T09:00:00-0800",
           "end_time": "2026-11-18T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6FdnjLXskpUXgrrQP0LSgI",
         "desired_uris": [
@@ -40754,8 +40754,105 @@
           "spotify:track:2P6Buc8kWRgShx7aHIadqu"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T12:00:00-0800",
+          "broadcast_start": "2026-11-18T09:00:00-0800",
+          "imported_at": "2026-11-19T15:31:24.411326042+00:00",
+          "last_updated": "2026-11-19 15:31 UTC",
           "name": "KPOO - Tia Carroll's Awesome Radio Show - 2026-11-18",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Kirk Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273481be469bc7fd5771ea06217",
+              "name": "Love Theory"
+            },
+            {
+              "artists": [
+                "The Staple Singers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365c140ee7ae83785e29ef253",
+              "name": "I Like The Things About You"
+            },
+            {
+              "artists": [
+                "The Spinners"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732715e2ac1071bb7bb50a91a0",
+              "name": "Working My Way Back to You / Forgive Me, Girl"
+            },
+            {
+              "artists": [
+                "The Whispers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b163b952034a3e126c908f26",
+              "name": "It's a Love Thing"
+            },
+            {
+              "artists": [
+                "Johnny Burgin",
+                "Stephen Dougherty",
+                "Chris Matheos",
+                "Minoru Maruyama"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735065962f9db5eac456f71d76",
+              "name": "Two Telephones"
+            },
+            {
+              "artists": [
+                "Little Eva"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736528e0543b6f6f0c7a487458",
+              "name": "Let's Turkey Trot"
+            },
+            {
+              "artists": [
+                "Ronnie Baker Brooks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27347e92cb192e07a2fe88b1a68",
+              "name": "Robbing Peter To Pay Paul"
+            },
+            {
+              "artists": [
+                "Lynyrd Skynyrd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273128450651c9f0442780d8eb8",
+              "name": "Free Bird"
+            },
+            {
+              "artists": [
+                "The Isley Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273909aebcb90706329a98b5819",
+              "name": "Work to Do"
+            },
+            {
+              "artists": [
+                "Maze",
+                "Frankie Beverly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2e4ca13a96828e3b0da0c3b",
+              "name": "Joy & Pain"
+            },
+            {
+              "artists": [
+                "KC & The Sunshine Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d7749989a3bc4d5b694e8d14",
+              "name": "I'm Your Boogie Man"
+            },
+            {
+              "artists": [
+                "Carl Douglas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273131815c9e03c070a5a953a43",
+              "name": "Kung Fu Fighting"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23362236/Tia-Carroll-s-Awesome-Radio-Show",
+          "station": "KPOO",
+          "track_count": 40,
+          "url": "https://open.spotify.com/playlist/6FdnjLXskpUXgrrQP0LSgI"
         }
       },
       "needs_reconciliation": false
