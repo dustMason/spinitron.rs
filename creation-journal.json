@@ -23819,6 +23819,45 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23364640": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23364640,
+          "title": "Sowing Seeds In The Rain with Petra Core and Last Will",
+          "url": "https://spinitron.com/KALX/pl/23364640/Sowing-Seeds-In-The-Rain-with-Petra-Core-and-Last-Will",
+          "start_time": "2026-11-18T18:15:00-0800",
+          "end_time": "2026-11-18T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0LcbEym2fhgN6dS1FBepFi",
+          "spotify:track:1n3As8MQF4DOr2KzhwX66U",
+          "spotify:track:7t7rjVZNJ9m5zF8Kk5B7mO",
+          "spotify:track:6NDAcBZXsw5pu1r8lHPFsW",
+          "spotify:track:6sv5baxzwawprwNC82PsAH",
+          "spotify:track:2lSuhDQ0ir7tka3Kbmpw6u",
+          "spotify:track:7FQje5Elyeuou3n5lUbgvs",
+          "spotify:track:42Cs7TFOARAW8wygDwDqy1",
+          "spotify:track:03RMdqOBTCUsjaiYakvdU4",
+          "spotify:track:3qHVAPJF4Iu0D7h2XxK7gW",
+          "spotify:track:6CH28l4PEompCBUSMVSew8",
+          "spotify:track:4ispn33wO2FwdixhsMCTpA",
+          "spotify:track:1aXGf5OmMWypKrYYzGDKtb",
+          "spotify:track:26OT7aTUVGCm7PThr9Ud5P",
+          "spotify:track:3NePK8Mji0MloKS09WaKbF",
+          "spotify:track:7fhD78f9uiI6XpoXEvyohk",
+          "spotify:track:03nIiHv4a20gOslzqBxOah",
+          "spotify:track:03nIiHv4a20gOslzqBxOah"
+        ],
+        "listing": {
+          "name": "KALX - Sowing Seeds In The Rain with Petra Core and Last Will - 2026-11-18",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
