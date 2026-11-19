@@ -23156,7 +23156,7 @@
           "start_time": "2026-11-18T09:00:00-0800",
           "end_time": "2026-11-18T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2dzEBPg9jnXbgACj9QWTIn",
         "desired_uris": [
@@ -23202,8 +23202,106 @@
           "spotify:track:6SJAFDZ1e7Uej7CJjspd0h"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T12:00:00-0800",
+          "broadcast_start": "2026-11-18T09:00:00-0800",
+          "imported_at": "2026-11-19T15:23:49.017779097+00:00",
+          "last_updated": "2026-11-19 15:23 UTC",
           "name": "KALX - FREEFORM - 2026-11-18",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Tristan Allen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec79b6fcc00ed6742a89bcdd",
+              "name": "Act I: Loon"
+            },
+            {
+              "artists": [
+                "Philip Glass",
+                "Víkingur Ólafsson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d2c404651e4f654f171778d4",
+              "name": "Études: No. 5"
+            },
+            {
+              "artists": [
+                "Shearwater"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733329aaf3098be832ee7fef71",
+              "name": "More and More"
+            },
+            {
+              "artists": [
+                "Sweeping Promises"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731202a359bc1c2774bc1eb704",
+              "name": "My Friend's An Entomologist"
+            },
+            {
+              "artists": [
+                "Sweeping Promises"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c6acd74bac9263d6c3bed607",
+              "name": "Falling Forward"
+            },
+            {
+              "artists": [
+                "Thee Sinseers",
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cea5e810a36bf0e912d4bcab",
+              "name": "Oh Love"
+            },
+            {
+              "artists": [
+                "Thee Sinseers",
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cea5e810a36bf0e912d4bcab",
+              "name": "How Lonely Is Lonely"
+            },
+            {
+              "artists": [
+                "The Iguanas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b66ace93727c23c56266d12b",
+              "name": "Oye, Isabel"
+            },
+            {
+              "artists": [
+                "Baby Rose"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731d1bd14e251142f2f9b06171",
+              "name": "But, Nvm"
+            },
+            {
+              "artists": [
+                "The Corner Laughers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273927d4726472ef4f36df34ac8",
+              "name": "The Harvestman"
+            },
+            {
+              "artists": [
+                "Agnes Obel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c34bf09fe2f2369180efd46",
+              "name": "Gemini"
+            },
+            {
+              "artists": [
+                "Cécile McLorin Salvant",
+                "Metropole Orkest",
+                "Jules Buckley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273115890614118cf83d546799c",
+              "name": "Sophisticated Lady"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23362335/FREEFORM",
+          "station": "KALX",
+          "track_count": 40,
+          "url": "https://open.spotify.com/playlist/2dzEBPg9jnXbgACj9QWTIn"
         }
       },
       "needs_reconciliation": false
