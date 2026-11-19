@@ -41003,7 +41003,7 @@
           "start_time": "2026-11-18T15:00:00-0800",
           "end_time": "2026-11-18T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "06pIzpynDAE4Tmv6uXmoj8",
         "desired_uris": [
@@ -41013,8 +41013,45 @@
           "spotify:track:7k7syXYFuHNfY06Z2rftoh"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T17:30:00-0800",
+          "broadcast_start": "2026-11-18T15:00:00-0800",
+          "imported_at": "2026-11-19T15:32:45.932909067+00:00",
+          "last_updated": "2026-11-19 15:32 UTC",
           "name": "KPOO - Wake The Town - 2026-11-18",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Errol English"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe8e19de8b30540b20fe5de1",
+              "name": "Sha-La-La-La-Lee"
+            },
+            {
+              "artists": [
+                "Keith & Tex"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733fbc0ca1bbee5012ccff1370",
+              "name": "This Is My Song"
+            },
+            {
+              "artists": [
+                "Johnny & The Attractions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bfad6446578f109610029a42",
+              "name": "Let's Get Together"
+            },
+            {
+              "artists": [
+                "Ernest Ranglin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27391097c0e8accb1443e612b9c",
+              "name": "Surfin'"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23363845/Wake-The-Town",
+          "station": "KPOO",
+          "track_count": 4,
+          "url": "https://open.spotify.com/playlist/06pIzpynDAE4Tmv6uXmoj8"
         }
       },
       "needs_reconciliation": false
