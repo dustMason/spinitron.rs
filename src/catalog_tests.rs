@@ -27,17 +27,20 @@ impl ArchiveSpotify for FakeSpotify {
     fn owner_id(&self) -> &str {
         "owner"
     }
-    async fn resolve(&mut self, tracks: &[Track]) -> Result<Vec<String>> {
+    async fn resolve(&mut self, tracks: &[Track]) -> Result<ResolvedTracks> {
         if self.fail_resolve {
             bail!("Spotify search failed (HTTP 503)");
         }
         if self.no_matches {
-            return Ok(Vec::new());
+            return Ok(ResolvedTracks::default());
         }
-        Ok(tracks
-            .iter()
-            .map(|t| format!("spotify:track:{}", t.song))
-            .collect())
+        Ok(ResolvedTracks {
+            source_isrcs: BTreeMap::new(),
+            uris: tracks
+                .iter()
+                .map(|t| format!("spotify:track:{}", t.song))
+                .collect(),
+        })
     }
     async fn find_archive(
         &mut self,
@@ -137,14 +140,20 @@ impl ArchiveSpotify for FakeSpotify {
         }
         Ok(())
     }
+    async fn comparable_uris(&self, id: &str, _entry: &Entry) -> Result<Vec<String>> {
+        self.track_uris(id).await
+    }
+    async fn preview(&self, _: &str) -> Result<Value> {
+        Ok(serde_json::json!([]))
+    }
+}
+
+impl FakeSpotify {
     async fn track_uris(&self, id: &str) -> Result<Vec<String>> {
         if let Some(uris) = &self.readback_override {
             return Ok(uris.clone());
         }
         Ok(self.playlists.borrow()[id].1.clone())
-    }
-    async fn preview(&self, _: &str) -> Result<Value> {
-        Ok(serde_json::json!([]))
     }
 }
 
@@ -204,6 +213,7 @@ fn tracks() -> Vec<Track> {
             artist: "Artist".into(),
             song: song.into(),
             album: String::new(),
+            isrc: None,
             label: None,
             time: None,
         })
@@ -854,7 +864,7 @@ async fn empty_or_unfinished_broadcast_does_not_create_a_playlist() {
 #[tokio::test]
 async fn legacy_playlists_remain_listed_and_are_never_automatically_removed() {
     let mut f = Fixture::new();
-    f.catalog.entries.insert("legacy:existing".into(),Entry { station:"KALX".into(),broadcast:None,state:State::Legacy,owner_id:None,playlist_id:Some("existing".into()),desired_uris:Vec::new(),listing:serde_json::json!({"name":"Old archive","url":"https://open.spotify.com/playlist/existing","track_count":17}),release_attempt:None });
+    f.catalog.entries.insert("legacy:existing".into(),Entry { station:"KALX".into(),broadcast:None,state:State::Legacy,owner_id:None,playlist_id:Some("existing".into()),desired_uris:Vec::new(),source_isrcs:BTreeMap::new(),listing:serde_json::json!({"name":"Old archive","url":"https://open.spotify.com/playlist/existing","track_count":17}),release_attempt:None });
     assert_eq!(f.catalog.listings().unwrap().len(), 1);
     assert!(f.catalog.archive_names().unwrap().is_empty());
     assert_eq!(

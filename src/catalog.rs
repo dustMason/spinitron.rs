@@ -47,10 +47,21 @@ pub struct Entry {
     pub playlist_id: Option<String>,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub desired_uris: Vec<String>,
+    /// One-based positions among matched Spotify tracks (unmatched spins are skipped).
+    #[serde(default, skip_serializing_if = "BTreeMap::is_empty")]
+    pub source_isrcs: BTreeMap<usize, String>,
     /// Same public metadata consumed by the website; includes a cached preview.
     pub listing: Value,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub release_attempt: Option<String>,
+}
+
+impl Entry {
+    pub fn valid_source_isrcs(&self) -> bool {
+        self.source_isrcs.iter().all(|(position, code)| {
+            (1..=self.desired_uris.len()).contains(position) && crate::models::valid_isrc(code)
+        })
+    }
 }
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -106,16 +117,23 @@ impl std::fmt::Display for CreationRejected {
 
 impl std::error::Error for CreationRejected {}
 
+#[derive(Default)]
+pub struct ResolvedTracks {
+    pub uris: Vec<String>,
+    pub source_isrcs: BTreeMap<usize, String>,
+}
+
 pub trait ArchiveSpotify {
     fn owner_id(&self) -> &str;
-    async fn resolve(&mut self, tracks: &[Track]) -> Result<Vec<String>>;
+    async fn resolve(&mut self, tracks: &[Track]) -> Result<ResolvedTracks>;
     async fn find_archive(&mut self, marker: &str, refresh: bool)
         -> Result<Option<RemotePlaylist>>;
     async fn create_archive(&mut self, name: &str, description: &str) -> Result<RemotePlaylist>;
     async fn replace_draft(&self, id: &str, uris: &[String]) -> Result<()>;
     async fn inspect(&self, id: &str) -> Result<RemotePlaylist>;
     async fn rename_archive(&self, id: &str, name: &str) -> Result<()>;
-    async fn track_uris(&self, id: &str) -> Result<Vec<String>>;
+    /// Return observed URIs, normalizing only positions proven to represent the desired recording.
+    async fn comparable_uris(&self, id: &str, entry: &Entry) -> Result<Vec<String>>;
     async fn preview(&self, id: &str) -> Result<Value>;
 }
 
@@ -158,7 +176,10 @@ impl Catalog {
             bail!("Unsupported catalog version {}", catalog.version);
         }
         let mut ids = std::collections::HashSet::new();
-        for entry in catalog.entries.values() {
+        for (key, entry) in &catalog.entries {
+            if !entry.valid_source_isrcs() {
+                bail!("Invalid recording metadata for {key}");
+            }
             if let Some(id) = &entry.playlist_id {
                 if !ids.insert(id) {
                     bail!("Catalog contains duplicate Spotify ID {id}");
@@ -180,7 +201,8 @@ impl Catalog {
     pub fn attach_journal(&mut self, path: &Path, mut journal: CreationJournal) -> Result<()> {
         let mut entries = self.entries.clone();
         for (key, record) in journal.records() {
-            if let Some(local) = entries.get(key) {
+            let mut restored = record.entry.clone();
+            if let Some(local) = entries.get_mut(key) {
                 if local.owner_id != record.entry.owner_id
                     || local.station != record.entry.station
                     || local.broadcast.as_ref().map(|s| s.id)
@@ -192,6 +214,18 @@ impl Catalog {
                 {
                     bail!("Catalog and creation journal disagree for {key}; reconcile before archiving");
                 }
+                // Old snapshots may lack recording codes. Carry forward evidence
+                // from either copy, including a verified correction to a draft.
+                for (position, code) in &local.source_isrcs {
+                    if restored
+                        .source_isrcs
+                        .insert(*position, code.clone())
+                        .is_some_and(|prior| !prior.eq_ignore_ascii_case(code))
+                    {
+                        bail!("Catalog and creation journal disagree on recording {position} for {key}");
+                    }
+                }
+                local.source_isrcs.clone_from(&restored.source_isrcs);
                 let local_finished = !matches!(
                     local.state,
                     State::Prepared | State::Creating | State::Filling
@@ -204,7 +238,7 @@ impl Catalog {
                     continue;
                 }
             }
-            entries.insert(key.clone(), record.entry.clone());
+            entries.insert(key.clone(), restored);
         }
         let mut ids = std::collections::HashSet::new();
         for entry in entries.values() {
@@ -503,8 +537,8 @@ impl Catalog {
         let marker = format!("Spinitron archive: {key}");
         let recovering = self.entries.contains_key(&key);
         if !recovering {
-            let uris = spotify.resolve(tracks).await?;
-            if uris.is_empty() {
+            let matched = spotify.resolve(tracks).await?;
+            if matched.uris.is_empty() {
                 eprintln!(
                     "Skipping {station} - {} ({}): no Spotify matches for {} listed tracks; no playlist created",
                     show.title, show.id, tracks.len()
@@ -521,7 +555,8 @@ impl Catalog {
                     state: State::Prepared,
                     owner_id: Some(spotify.owner_id().into()),
                     playlist_id: None,
-                    desired_uris: uris,
+                    desired_uris: matched.uris,
+                    source_isrcs: matched.source_isrcs,
                     listing: serde_json::json!({"station":station}),
                     release_attempt: None,
                 },
@@ -604,10 +639,11 @@ impl Catalog {
             bail!("Refusing to populate a playlist with unexpected owner or archive marker");
         }
         // Only unfinished drafts can be replaced. Completed broadcasts are immutable.
-        if spotify.track_uris(id).await? != entry.desired_uris {
+        let mut actual_uris = spotify.comparable_uris(id, entry).await?;
+        if actual_uris != entry.desired_uris {
             spotify.replace_draft(id, &entry.desired_uris).await?;
+            actual_uris = spotify.comparable_uris(id, entry).await?;
         }
-        let actual_uris = spotify.track_uris(id).await?;
         if actual_uris != entry.desired_uris {
             let mismatch = entry
                 .desired_uris

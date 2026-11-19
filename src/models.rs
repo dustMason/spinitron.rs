@@ -15,8 +15,19 @@ pub struct Track {
     pub artist: String,
     pub song: String,
     pub album: String,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub isrc: Option<String>,
     pub label: Option<String>,
     pub time: Option<String>,
+}
+
+/// Standard 12-character ISRC (country, registrant, year and designation).
+pub fn valid_isrc(code: &str) -> bool {
+    let b = code.as_bytes();
+    b.len() == 12
+        && b[..2].iter().all(u8::is_ascii_alphabetic)
+        && b[2..5].iter().all(u8::is_ascii_alphanumeric)
+        && b[5..].iter().all(u8::is_ascii_digit)
 }
 
 impl Track {
