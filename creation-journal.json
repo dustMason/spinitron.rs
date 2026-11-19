@@ -40867,7 +40867,7 @@
           "start_time": "2026-11-18T12:00:00-0800",
           "end_time": "2026-11-18T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6RNBg811sYXf0CXy4Mvssm",
         "desired_uris": [
@@ -40892,8 +40892,103 @@
           "spotify:track:2J2cFDJAC5FvdXZwWoNR0x"
         ],
         "listing": {
+          "broadcast_end": "2026-11-18T15:00:00-0800",
+          "broadcast_start": "2026-11-18T12:00:00-0800",
+          "imported_at": "2026-11-19T15:32:05.088746181+00:00",
+          "last_updated": "2026-11-19 15:32 UTC",
           "name": "KPOO - THE MUSIC FILL SHOW - 2026-11-18",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Harper Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c68abea5c47feb70623c2f9d",
+              "name": "Sonny Boy"
+            },
+            {
+              "artists": [
+                "Jimmy Layton and his International \"Not Your Daddy's Jazz\" band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27399f4efa265a31164e1b94b7d",
+              "name": "Mr.Cool"
+            },
+            {
+              "artists": [
+                "David Sánchez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27370327a0443f8d7c298707f8a",
+              "name": "Wave Under Silk"
+            },
+            {
+              "artists": [
+                "SFJAZZ Collective"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732839f2c376ce073362ae21c1",
+              "name": "Waters of March - Live"
+            },
+            {
+              "artists": [
+                "Art Farmer",
+                "Donald Byrd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a621b01fbe42a3b2bbc1620e",
+              "name": "The Third"
+            },
+            {
+              "artists": [
+                "Art Farmer",
+                "Donald Byrd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a621b01fbe42a3b2bbc1620e",
+              "name": "Contour"
+            },
+            {
+              "artists": [
+                "Carmen Lundy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27377e302500fafc6ca1f673e01",
+              "name": "A Time for Peace"
+            },
+            {
+              "artists": [
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738317a6a4eac7e7c5d9721c03",
+              "name": "Naima"
+            },
+            {
+              "artists": [
+                "Miles Davis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27381ddf6eb1624a9b2a273222a",
+              "name": "Doxy"
+            },
+            {
+              "artists": [
+                "Bud Powell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27341c34c96b0bf085a5d051a41",
+              "name": "Rifftide"
+            },
+            {
+              "artists": [
+                "Rodney Kendrick"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b30a4eabc8f65c58bea754ba",
+              "name": "Rhythm A Ning"
+            },
+            {
+              "artists": [
+                "Dave Holland Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27358dd8af10d79d4f104ee71e1",
+              "name": "Billows Of Rhythm"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23363094/THE-MUSIC-FILL-SHOW",
+          "station": "KPOO",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/6RNBg811sYXf0CXy4Mvssm"
         }
       },
       "needs_reconciliation": false
