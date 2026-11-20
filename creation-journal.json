@@ -25604,7 +25604,7 @@
           "start_time": "2026-11-19T22:00:00-0800",
           "end_time": "2026-11-20T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7jMD9hyDJHqSx1lzXYIQmQ",
         "desired_uris": [
@@ -25637,8 +25637,102 @@
           "spotify:track:6Jv7kjGkhY2fT4yuBF3aTz"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T00:00:00-0800",
+          "broadcast_start": "2026-11-19T22:00:00-0800",
+          "imported_at": "2026-11-20T15:08:14.202248651+00:00",
+          "last_updated": "2026-11-20 15:08 UTC",
           "name": "KALX - FREEFORM - 2026-11-19 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Madonna"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27326f6bb4664640bfa48391cf4",
+              "name": "Crazy for You"
+            },
+            {
+              "artists": [
+                "Pet Shop Boys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c66279746c33b8f9ccac1aa",
+              "name": "West End Girls - 2001 Remaster"
+            },
+            {
+              "artists": [
+                "abracadabra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d899a6af0c1b67ab441d2b5",
+              "name": "peel away"
+            },
+            {
+              "artists": [
+                "New Order"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273530a2c5dd17d2ddf8edc2978",
+              "name": "Bizarre Love Triangle"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "Mimesis"
+            },
+            {
+              "artists": [
+                "Magdalena Bay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ceaecfe1cf7a9c2fd53b7f0",
+              "name": "Image"
+            },
+            {
+              "artists": [
+                "Fictionist"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ce9b317d2fbb7ac23b7a75f",
+              "name": "Free Spirit"
+            },
+            {
+              "artists": [
+                "Girl Saint"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27314f7c8c9821579fd4d638c67",
+              "name": "Car Keys"
+            },
+            {
+              "artists": [
+                "Cocteau Twins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733191b3e67e0211b30e98d1d4",
+              "name": "Iceblink Luck"
+            },
+            {
+              "artists": [
+                "Tricky",
+                "Mitch Sanders"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fd0c0f2e47fbd2d369bff442",
+              "name": "So Cold"
+            },
+            {
+              "artists": [
+                "Debit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273caa01a3a7e5107aad4a9148d",
+              "name": "ke te valga"
+            },
+            {
+              "artists": [
+                "Karen y Los Remedios"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f1bd3c1e7cec5e0feedf0602",
+              "name": "Satanás"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23370798/FREEFORM",
+          "station": "KALX",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/7jMD9hyDJHqSx1lzXYIQmQ"
         }
       },
       "needs_reconciliation": false
