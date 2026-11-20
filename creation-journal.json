@@ -43535,7 +43535,7 @@
           "start_time": "2026-11-19T17:30:00-0800",
           "end_time": "2026-11-19T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3N3AdX9duv6SopqYU0rU95",
         "desired_uris": [
@@ -43543,8 +43543,32 @@
           "spotify:track:6QJ1F9DrlsRSmKDcdVS0Oy"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T18:00:00-0800",
+          "broadcast_start": "2026-11-19T17:30:00-0800",
+          "imported_at": "2026-11-20T15:11:39.274923914+00:00",
+          "last_updated": "2026-11-20 15:11 UTC",
           "name": "KPOO - KPOO Community News - 2026-11-19",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Frankie Ruiz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737268a74133c197834a05d330",
+              "name": "Tú Con Él"
+            },
+            {
+              "artists": [
+                "Oscar D'León",
+                "La Dimensión Latina"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e674cd720ca829ed385d76c",
+              "name": "Lloraras"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23369842/KPOO-Community-News",
+          "station": "KPOO",
+          "track_count": 2,
+          "url": "https://open.spotify.com/playlist/3N3AdX9duv6SopqYU0rU95"
         }
       },
       "needs_reconciliation": false
