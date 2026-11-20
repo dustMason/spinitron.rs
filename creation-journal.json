@@ -24969,15 +24969,32 @@
           "start_time": "2026-11-19T14:30:00-0800",
           "end_time": "2026-11-19T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "45j7xC9by6G7PVPsngCVXv",
         "desired_uris": [
           "spotify:track:4DSPx7moZptii1w9XM5nzS"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T15:00:00-0800",
+          "broadcast_start": "2026-11-19T14:30:00-0800",
+          "imported_at": "2026-11-20T15:03:31.101472279+00:00",
+          "last_updated": "2026-11-20 15:03 UTC",
           "name": "KALX - David Kaplan - Philip Glass Etudes Interview - 2026-11-19",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Philip Glass",
+                "Jenny Lin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d8f44948725f4e68ae59683b",
+              "name": "Études, Book 1: No. 6"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23368576/David-Kaplan-Philip-Glass-Etudes-Interview",
+          "station": "KALX",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/45j7xC9by6G7PVPsngCVXv"
         }
       },
       "needs_reconciliation": false
