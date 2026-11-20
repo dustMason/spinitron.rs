@@ -24817,6 +24817,51 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23368574": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23368574,
+          "title": "Monopoly and the wonders of Capitalism",
+          "url": "https://spinitron.com/KALX/pl/23368574/Monopoly-and-the-wonders-of-Capitalism",
+          "start_time": "2026-11-19T12:30:00-0800",
+          "end_time": "2026-11-19T14:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3n9ux92KAEk105exJiXLCI",
+          "spotify:track:4xfDyZkTjflaY3DVpyfy6G",
+          "spotify:track:40j3Fg84zpRFxPDKFLeUvm",
+          "spotify:track:0LCLSQXQv3rnulDRuFzvli",
+          "spotify:track:0zMKJBBWbmYYUDq9X3fhIr",
+          "spotify:track:2C03kn5yuBbreti2ZcO1og",
+          "spotify:track:3T9Yox6JJ3J0RDvcLVch7s",
+          "spotify:track:5Zm0WajBFttXxbCjpcLzHR",
+          "spotify:track:3elKwYML0N58rI9lCR9wfv",
+          "spotify:track:19nKssBmsSIBXJPZ2HrfXH",
+          "spotify:track:2x6yWnW6bIeLJruyZ3F2Wq",
+          "spotify:track:4YxZQd3I4rj1nqkXgvpCk4",
+          "spotify:track:4pMvf7vL4FVDVonKcKHEGj",
+          "spotify:track:7ubvJ2uA8J03MzGyeRtIpB",
+          "spotify:track:1xK0dhLmMpUlmLE2qRIPpM",
+          "spotify:track:2yVUYzjV8imCg8o4Cvabg8",
+          "spotify:track:2ccMkVMJRFedxedxJgGV5f",
+          "spotify:track:6Sr3ZxCTNVJZrOiFcmQUG1",
+          "spotify:track:0F8K83L8uyrzKenyGDNiKi",
+          "spotify:track:0znL3d7w3EQ0LlmjuN1BR5",
+          "spotify:track:7kDWwFekRc1ZlzNX0VTjfr",
+          "spotify:track:6E48oFQswahQIxswyfUhzG",
+          "spotify:track:0Y70ACDoSyiOTHTy3hwzeb",
+          "spotify:track:4kmsIpuqvqdVd8gHafnQwx"
+        ],
+        "listing": {
+          "name": "KALX - Monopoly and the wonders of Capitalism - 2026-11-19",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
