@@ -43572,6 +43572,37 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23369967": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23369967,
+          "title": "Pajaro Latinoamericano",
+          "url": "https://spinitron.com/KPOO/pl/23369967/Pajaro-Latinoamericano",
+          "start_time": "2026-11-19T18:00:00-0800",
+          "end_time": "2026-11-19T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6kKiwIng125tpfiFGwhvXh",
+          "spotify:track:0bSH3f19baCp4axoG6Gjnx",
+          "spotify:track:7ryvDuBgHdAotZqtMZxUnF",
+          "spotify:track:6kY9qjWpwcAYIN198dfuau",
+          "spotify:track:6ymndyWc9o8HSQcYcu7GPi",
+          "spotify:track:0C3XcPvGfP8V9YchDRJ8YO",
+          "spotify:track:4K2FpVkL03UMK422buccI4",
+          "spotify:track:3rKrypBgAbjWzSN9ajvyXE",
+          "spotify:track:6pViMGLt9ARLyIVRfgaU1Y",
+          "spotify:track:5OmWm4rnwYwHAxWePNqaoK"
+        ],
+        "listing": {
+          "name": "KPOO - Pajaro Latinoamericano - 2026-11-19",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
