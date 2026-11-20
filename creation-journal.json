@@ -24515,7 +24515,7 @@
           "start_time": "2026-11-19T02:00:00-0800",
           "end_time": "2026-11-19T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7Ghv4SoL09fUa52aY5dDOD",
         "desired_uris": [
@@ -24574,8 +24574,106 @@
           "spotify:track:1LpHPFtIWL9krf2L4EhChR"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T07:00:00-0800",
+          "broadcast_start": "2026-11-19T02:00:00-0800",
+          "imported_at": "2026-11-20T15:01:29.776432835+00:00",
+          "last_updated": "2026-11-20 15:01 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-19",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Hawkwind"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c6fa85e501b233488fe3e74a",
+              "name": "Blue Skin"
+            },
+            {
+              "artists": [
+                "Jeff Sova"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a77f05e0491769cb1b29da57",
+              "name": "Blue Zones"
+            },
+            {
+              "artists": [
+                "Dick Dale & His Del-Tones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c5139dc6f84751fa863f4a56",
+              "name": "Tidal Wave"
+            },
+            {
+              "artists": [
+                "Edgar"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730dd35fa735bccd352ec6b205",
+              "name": "Nunca Más"
+            },
+            {
+              "artists": [
+                "Dave Douglas",
+                "Fay Victor",
+                "Camila Meza",
+                "Ryan Keberle",
+                "Jorge Roeder",
+                "Rudy Royston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d415aa68d2cd5fc916b38154",
+              "name": "We Shall Overcome"
+            },
+            {
+              "artists": [
+                "Nat Reeves"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273113b3edc5b1200a1df183838",
+              "name": "The Creator Has a Master Plan"
+            },
+            {
+              "artists": [
+                "John Angaiak"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f6b6b1aad88726fc8f2bbda",
+              "name": "Hey, Hey, Hey, Brother"
+            },
+            {
+              "artists": [
+                "Tate Moore"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27339802f9cfb84d8ef5da67c80",
+              "name": "Mountain In Mississippi"
+            },
+            {
+              "artists": [
+                "Roosevelt Holts"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731933cf2aa5d06b679d50b5a4",
+              "name": "Going Up the Country"
+            },
+            {
+              "artists": [
+                "Emitt Rhodes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f50e7870ba2f1df39dce7386",
+              "name": "Farewell To Paradise"
+            },
+            {
+              "artists": [
+                "Rhiannon Giddens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273761c1892de7bd7c94b987eac",
+              "name": "High on a Mountain"
+            },
+            {
+              "artists": [
+                "Odetta"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fc7f692ef7638224af091336",
+              "name": "Spiritual Trilogy / Oh Freedom / Come and Go with Me / I'm on My Way"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23366251/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 53,
+          "url": "https://open.spotify.com/playlist/7Ghv4SoL09fUa52aY5dDOD"
         }
       },
       "needs_reconciliation": false
