@@ -25150,7 +25150,7 @@
           "start_time": "2026-11-19T00:00:00-0800",
           "end_time": "2026-11-19T05:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7je2Q4Q8tnwUrLKGGpfxMK",
         "desired_uris": [
@@ -25174,8 +25174,103 @@
           "spotify:track:6OUEiSHDzucsxnKa44Cafp"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T05:00:00-0800",
+          "broadcast_start": "2026-11-19T00:00:00-0800",
+          "imported_at": "2026-11-20T15:04:51.763718447+00:00",
+          "last_updated": "2026-11-20 15:04 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-19 12:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Haruomi Hosono"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733af48613b19da7eb6758d587",
+              "name": "Happy Holiday"
+            },
+            {
+              "artists": [
+                "Nabihah Iqbal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f7bc1c9543f011ad82a661b",
+              "name": "Heaven Can Wait"
+            },
+            {
+              "artists": [
+                "Ruutu Poiss"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27342dfa16147b63d048b384a79",
+              "name": "Ihatsin"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "Happy For You"
+            },
+            {
+              "artists": [
+                "Fontaines D.C.",
+                "Orbital"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b091836545878031cee22dbb",
+              "name": "In ár gCroíthe go deo (Orbital Remix)"
+            },
+            {
+              "artists": [
+                "Orbital",
+                "Tilda Swinton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5abc86013ca3296520d7bbd",
+              "name": "Deepest"
+            },
+            {
+              "artists": [
+                "Bullion"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a1e6a4e8682ac791e3c809f8",
+              "name": "101 Damnations"
+            },
+            {
+              "artists": [
+                "Level 42"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ce782a28948bf19b369a5350",
+              "name": "People"
+            },
+            {
+              "artists": [
+                "Yuka Mizuhara"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27383dac67bb60a247648f1b010",
+              "name": "Moon Dust"
+            },
+            {
+              "artists": [
+                "Bala Zaaku"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b3272f7e0c805ba73d47b233",
+              "name": "Da' Yuriba Tuuba"
+            },
+            {
+              "artists": [
+                "Actress"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273911b30e04ce5851ae6d2a89b",
+              "name": "Caves of Paradise"
+            },
+            {
+              "artists": [
+                "Actress"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6f7b357a1dcf5b14298aa0c",
+              "name": "Withending"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23371212/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 18,
+          "url": "https://open.spotify.com/playlist/7je2Q4Q8tnwUrLKGGpfxMK"
         }
       },
       "needs_reconciliation": false
