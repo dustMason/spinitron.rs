@@ -43370,6 +43370,65 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23369276": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23369276,
+          "title": "Blues and Oldies",
+          "url": "https://spinitron.com/KPOO/pl/23369276/Blues-and-Oldies",
+          "start_time": "2026-11-19T15:00:00-0800",
+          "end_time": "2026-11-19T17:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0rNvGM8W8qwDy8fG3o2anc",
+          "spotify:track:41GSL9lAosGHYXxpfDcOGW",
+          "spotify:track:7Ek4sWPS8c7inzw874RPfq",
+          "spotify:track:2eV3zI9y4gKAzh2ZwzRWLX",
+          "spotify:track:1v39okqcvjtPjL3sVQCU1Y",
+          "spotify:track:7qEZYWGM0KAVhf63lPXcXD",
+          "spotify:track:1OMb271j3zn3SheadKOsPK",
+          "spotify:track:7FyDg1bGbOZqCoiqmDzXKa",
+          "spotify:track:3496rr5XSGD6n1Z1OKXovb",
+          "spotify:track:1ReHVdmqinJ9xJPaic3DK4",
+          "spotify:track:3Cd4UrTr2H4pYIBLngY6Ba",
+          "spotify:track:7vhoxMhuHZGVJEhL5avQKl",
+          "spotify:track:3umQGFzFOhkGJSjfdF5JLn",
+          "spotify:track:2akJIE6FLmtnnO0DJcWjOj",
+          "spotify:track:0gHIK47jp0pvQd5EPf1M3N",
+          "spotify:track:3Adc3nnJRiDbLxp0mIf6Vl",
+          "spotify:track:6DqmPvzGa002Qa2NQ14hCV",
+          "spotify:track:5EvouEy2sDQdBxDHAH5rUu",
+          "spotify:track:4mo62uR6qj3LBIvJ2liE4g",
+          "spotify:track:6GdJkY5csmK702KcEaxe63",
+          "spotify:track:56maPASuPLBB5bxgqHqB5R",
+          "spotify:track:0mmJGR9yiFdUUMadlGA3zJ",
+          "spotify:track:19dOSdAt1CiVtwfAANl5Ck",
+          "spotify:track:39lnzOIUCSNaQmgBHoz7rt",
+          "spotify:track:1A1ISyxUM3KCx2lMavM2Rl",
+          "spotify:track:6aMRpkWLIwEjzQFUeUvnJF",
+          "spotify:track:18TM70njJRFH4Fm4ZuwLd8",
+          "spotify:track:719WUtEfzXXsrSllLqfSOn",
+          "spotify:track:7j02rdE5RVtNcNMuLGY5SS",
+          "spotify:track:30YkCbby6ffoiVACp0rkoG",
+          "spotify:track:6VKHBa7szriiaQ699YFHFo",
+          "spotify:track:0mL3QWp8QFWLHKwdE4BgWr",
+          "spotify:track:2mTAYUi0cPPW1bZmc2URHx",
+          "spotify:track:0qrVOVK8CmYh8JnUOoIfik",
+          "spotify:track:0Jl5bIEve3A4axcjY3EgDZ",
+          "spotify:track:5TbD666BVmfB61j19jKqsx",
+          "spotify:track:0DICNd5XQ1og9UeYzxoNFV",
+          "spotify:track:36ccrof5DFicLrejE4hEye"
+        ],
+        "listing": {
+          "name": "KPOO - Blues and Oldies - 2026-11-19",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
