@@ -562,7 +562,7 @@
           "start_time": "2026-11-19T17:00:00-0800",
           "end_time": "2026-11-19T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "52ElHCV8XMAUAcoGb5bP6y",
         "desired_uris": [
@@ -579,8 +579,95 @@
           "spotify:track:5iv3dPZ7GCz2jQbiVMCEgr"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T18:00:00-0800",
+          "broadcast_start": "2026-11-19T17:00:00-0800",
+          "imported_at": "2026-11-20T15:05:32.386759834+00:00",
+          "last_updated": "2026-11-20 15:05 UTC",
           "name": "KALX - Dealer's Choice - 2026-11-19",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Hank Williams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732195d0fe53c63e96b0f31654",
+              "name": "Howlin' At The Moon"
+            },
+            {
+              "artists": [
+                "Bud Powell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2a703e2f8f6af5e55c086dc",
+              "name": "Un Poco Loco"
+            },
+            {
+              "artists": [
+                "Felix Leclerc"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a64a76276c565b00f8314cd3",
+              "name": "Le Petit bonheur"
+            },
+            {
+              "artists": [
+                "Zeb Turner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27347f61abdd146ff7a8425c182",
+              "name": "Chew Tobacco Rag"
+            },
+            {
+              "artists": [
+                "Barney Kessel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735dd47450b72f0bcada9d3e7e",
+              "name": "Vicky's Dream"
+            },
+            {
+              "artists": [
+                "Sojo Tha Dutchess"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d327476a7512ef3c5c0e9509",
+              "name": "Monkey Spanka"
+            },
+            {
+              "artists": [
+                "Bernard Herrmann"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325976aa47a932076b6c140a0",
+              "name": "Klaatu"
+            },
+            {
+              "artists": [
+                "Frédéric Chopin",
+                "Daniel Barenboim"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f8941936e17942573b518f12",
+              "name": "12 Etudes, Op. 25: No. 1 in A-Flat Major \"Aeolian Harp\""
+            },
+            {
+              "artists": [
+                "Geeta Dutt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273977108a60bfa31918f6fd080",
+              "name": "Yeh Kaun Aaya, from \"Baazi\""
+            },
+            {
+              "artists": [
+                "Lata Mangeshkar"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27390ebc6a7806770d16681800d",
+              "name": "Balma Bada Nadaan Re"
+            },
+            {
+              "artists": [
+                "Hank Williams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27378036fc270dd772fbd5bb5b0",
+              "name": "Hey Good Lookin'"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23106272/Dealer-s-Choice",
+          "station": "KALX",
+          "track_count": 11,
+          "url": "https://open.spotify.com/playlist/52ElHCV8XMAUAcoGb5bP6y"
         }
       },
       "needs_reconciliation": false
