@@ -24959,6 +24959,28 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23368576": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23368576,
+          "title": "David Kaplan - Philip Glass Etudes Interview",
+          "url": "https://spinitron.com/KALX/pl/23368576/David-Kaplan-Philip-Glass-Etudes-Interview",
+          "start_time": "2026-11-19T14:30:00-0800",
+          "end_time": "2026-11-19T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4DSPx7moZptii1w9XM5nzS"
+        ],
+        "listing": {
+          "name": "KALX - David Kaplan - Philip Glass Etudes Interview - 2026-11-19",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
