@@ -43583,7 +43583,7 @@
           "start_time": "2026-11-19T18:00:00-0800",
           "end_time": "2026-11-19T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4VQxy0W1peHjs1Y9tHKbzX",
         "desired_uris": [
@@ -43599,8 +43599,93 @@
           "spotify:track:5OmWm4rnwYwHAxWePNqaoK"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T20:00:00-0800",
+          "broadcast_start": "2026-11-19T18:00:00-0800",
+          "imported_at": "2026-11-20T15:12:19.785999438+00:00",
+          "last_updated": "2026-11-20 15:12 UTC",
           "name": "KPOO - Pajaro Latinoamericano - 2026-11-19",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Silvio Rodríguez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a482d72d79c576815f81e3e",
+              "name": "Al Final de Este Viaje en la Vida"
+            },
+            {
+              "artists": [
+                "Pedro Pastor",
+                "Los Locos Descalzos"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735d84e4ce53c5ab2fdd856286",
+              "name": "Sacar la Rabia"
+            },
+            {
+              "artists": [
+                "La Muchacha"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27393cac2f5791a3814f2e208dd",
+              "name": "Canto Páramo"
+            },
+            {
+              "artists": [
+                "La Santa Cecilia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c348984290a681a9a6166b3d",
+              "name": "Ice El Hielo"
+            },
+            {
+              "artists": [
+                "Silvio Rodríguez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a482d72d79c576815f81e3e",
+              "name": "La Era Está Pariendo un Corazón"
+            },
+            {
+              "artists": [
+                "Los Gaiteros de San Jacinto",
+                "Fruko Y Sus Tesos",
+                "Carmelo Torres y Su Cumbia Sabanera",
+                "Madre Cumbia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730d08a162fbc6097d64ee3501",
+              "name": "Magdalena Ruiz"
+            },
+            {
+              "artists": [
+                "Neblinas del Pacífico",
+                "Eryen Korath"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aacffa3ac9077089d16afd8a",
+              "name": "Fandango, Arrullo y Batey"
+            },
+            {
+              "artists": [
+                "Totó La Momposina"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a905a7c4cd311ad9a24b9e6c",
+              "name": "Yo Me Llamo Cumbia"
+            },
+            {
+              "artists": [
+                "Banda del Sur",
+                "Emiliano López Carlton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732abf72762e59d27620b6c569",
+              "name": "Las Jicaritas"
+            },
+            {
+              "artists": [
+                "Willie Colón"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4ef333e3954b18afdc663bf",
+              "name": "Ah-Ah / O-No"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23369967/Pajaro-Latinoamericano",
+          "station": "KPOO",
+          "track_count": 10,
+          "url": "https://open.spotify.com/playlist/4VQxy0W1peHjs1Y9tHKbzX"
         }
       },
       "needs_reconciliation": false
