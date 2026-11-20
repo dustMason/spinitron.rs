@@ -25451,6 +25451,55 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23370347": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23370347,
+          "title": "No Autumn Leaves",
+          "url": "https://spinitron.com/KALX/pl/23370347/No-Autumn-Leaves",
+          "start_time": "2026-11-19T20:00:00-0800",
+          "end_time": "2026-11-19T22:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0NlaIa4gtvUxSzPqVZCRxL",
+          "spotify:track:7tVGURyA1WiysvGEQc9oya",
+          "spotify:track:3IFgRXcn89F2pgfdDlaBgA",
+          "spotify:track:6iFqrbfnFSGzmVJRiivDR3",
+          "spotify:track:51jaPi6lJY192ZphmtVPJe",
+          "spotify:track:1iSjmjc3knyvW6d1eUxya8",
+          "spotify:track:6GptL3qIjoMA1tFhGawblc",
+          "spotify:track:6HYk1JPvcGVhRHlbSACsFQ",
+          "spotify:track:4f2kQCUusGjKrUeowAtUOc",
+          "spotify:track:44i0Y4Ovi9fXMwvYDNE2u2",
+          "spotify:track:4EL4UN9SRkUmrTg3pUYolc",
+          "spotify:track:02vP6os1daA6i1CxdULQ9y",
+          "spotify:track:0dsGLPbpDQr6B8LhTraC79",
+          "spotify:track:55QmEIpR7Nk47raf5UYO8W",
+          "spotify:track:2xIJC8c665FT6FWmmFETQm",
+          "spotify:track:5Cpp88fS1aYg0gPXAc33Ep",
+          "spotify:track:2IfPtIHRfRpVOzzQSQ2gbr",
+          "spotify:track:07Wx0KBN9FXTDmqg3mLDA6",
+          "spotify:track:1LSnYsWemdVn73bGQntqKP",
+          "spotify:track:4Myo6JFZ49ysmob0YnjjpI",
+          "spotify:track:6DJQhP9YVTwBB3Ixlq5aVN",
+          "spotify:track:3KGVOH7M9jJey5TagmqzXs",
+          "spotify:track:03fUh6AsLdMCaqGIaTt17U",
+          "spotify:track:4x7S6nXwdzZbqLCANgxqrm",
+          "spotify:track:4R95HxvsgZX9w4jHvk8Frb",
+          "spotify:track:5Cl0T1nwxwxyMnrAXz9uQB",
+          "spotify:track:4aFjvmvF6CBAghZGuIPu4N",
+          "spotify:track:3Nwm3HnLeNmTusxGg4W0hc"
+        ],
+        "listing": {
+          "name": "KALX - No Autumn Leaves - 2026-11-19",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23371212": {
       "entry": {
         "station": "KALX",
