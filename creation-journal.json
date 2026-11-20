@@ -25009,7 +25009,7 @@
           "start_time": "2026-11-19T15:00:00-0800",
           "end_time": "2026-11-19T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6HcSJ0qojHhDGsHYyyDa4x",
         "desired_uris": [
@@ -25037,8 +25037,105 @@
           "spotify:track:5R5UMzC5qCkpCB6Q8ZMaFK"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T17:00:00-0800",
+          "broadcast_start": "2026-11-19T15:00:00-0800",
+          "imported_at": "2026-11-20T15:04:11.239118583+00:00",
+          "last_updated": "2026-11-20 15:04 UTC",
           "name": "KALX - There ain't no iguana - 2026-11-19",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Mahavishnu Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0e47171cdb1d7a61fa27fb0",
+              "name": "Steppings Tones"
+            },
+            {
+              "artists": [
+                "BASIC",
+                "Chris Forsyth",
+                "Douglas McCombs",
+                "Mikel Patrick Avery"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737dc13f6495f644e3ae9c3046",
+              "name": "Pulse"
+            },
+            {
+              "artists": [
+                "Mark Lanegan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f580ac476598d2144c8e9d8c",
+              "name": "Ode to Sad Disco"
+            },
+            {
+              "artists": [
+                "Boy Harsher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a30ac42529d47e0abeebfc94",
+              "name": "Jeans"
+            },
+            {
+              "artists": [
+                "Chris Spheeris",
+                "Paul Voudouris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ac600a08ca2a1b408b7fff12",
+              "name": "Prism"
+            },
+            {
+              "artists": [
+                "Guided By Voices"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b1cf3e90606f4556d969c93f",
+              "name": "The Hard Way"
+            },
+            {
+              "artists": [
+                "Roxy Music"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731fa9f14172382a8581d0fb41",
+              "name": "Mother Of Pearl"
+            },
+            {
+              "artists": [
+                "Stephen Whynott"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27389f06f7f8117260546c67f3e",
+              "name": "Altitude"
+            },
+            {
+              "artists": [
+                "Strawbs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c1030f055ba6fd250e17dab1",
+              "name": "Starshine / Angel Wine"
+            },
+            {
+              "artists": [
+                "Cardiacs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735bfbfaae1a5deef223f1964e",
+              "name": "The Blue And Buff"
+            },
+            {
+              "artists": [
+                "The World Sinks Except Japan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273047757a7ad6662896790268d",
+              "name": "Bataar Gaeditt"
+            },
+            {
+              "artists": [
+                "Why Bother?"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273afbc3f0084494ceb9a58770b",
+              "name": "Proceed"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23369104/There-ain-t-no-iguana",
+          "station": "KALX",
+          "track_count": 22,
+          "url": "https://open.spotify.com/playlist/6HcSJ0qojHhDGsHYyyDa4x"
         }
       },
       "needs_reconciliation": false
