@@ -24827,7 +24827,7 @@
           "start_time": "2026-11-19T12:30:00-0800",
           "end_time": "2026-11-19T14:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5IdCDOagVz3Wb6r3HaK0Yq",
         "desired_uris": [
@@ -24857,8 +24857,104 @@
           "spotify:track:4kmsIpuqvqdVd8gHafnQwx"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T14:30:00-0800",
+          "broadcast_start": "2026-11-19T12:30:00-0800",
+          "imported_at": "2026-11-20T15:02:50.251669212+00:00",
+          "last_updated": "2026-11-20 15:02 UTC",
           "name": "KALX - Monopoly and the wonders of Capitalism - 2026-11-19",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "DJ FLAVINHO",
+                "DJS DA PIPOS"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27388fbd73c4a9e636ab092043a",
+              "name": "DJ'S DA PIPO'S MULHER COCA-COLA"
+            },
+            {
+              "artists": [
+                "The Halluci Nation",
+                "Keith Secola"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a1bdff1b396363a82c451237",
+              "name": "NDN Kars - Remix"
+            },
+            {
+              "artists": [
+                "Tigarah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e3a21056c33f2e3e6e1fceb5",
+              "name": "Color， Culture， Money， Beauty"
+            },
+            {
+              "artists": [
+                "Jvcki Wai"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee71b1bdb04f389996032eb5",
+              "name": "Capitalism"
+            },
+            {
+              "artists": [
+                "Badiaa Bouhrizi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735cd3ae86304c91aa26bcd6ab",
+              "name": "Capitalist Chant"
+            },
+            {
+              "artists": [
+                "Shygirl"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273386f243bc8f40a2669ba7aa6",
+              "name": "Mantra"
+            },
+            {
+              "artists": [
+                "Chumbawamba"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27392f6110d47cd96e82205eec0",
+              "name": "More Whitewashing"
+            },
+            {
+              "artists": [
+                "Gang Of Four"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273888c50e6d25e71b81099c44a",
+              "name": "To Hell With Poverty!"
+            },
+            {
+              "artists": [
+                "Who Is She?"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e84d7aa1b95240b4dfe671b",
+              "name": "My My Orca Card"
+            },
+            {
+              "artists": [
+                "Phil Ochs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732c530a9f7be87ce82209b8e0",
+              "name": "Outside Of A Small Circle Of Friends"
+            },
+            {
+              "artists": [
+                "Von Wegen Lisbeth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273162ab578a40bc64dfd3fff48",
+              "name": "Elon"
+            },
+            {
+              "artists": [
+                "Peter Fox",
+                "Inéz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737191e00ebecb1b85c31b508e",
+              "name": "Zukunft Pink (feat. Inéz)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23368574/Monopoly-and-the-wonders-of-Capitalism",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/5IdCDOagVz3Wb6r3HaK0Yq"
         }
       },
       "needs_reconciliation": false
