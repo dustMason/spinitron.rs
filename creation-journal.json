@@ -43125,7 +43125,7 @@
           "start_time": "2026-11-19T09:00:00-0800",
           "end_time": "2026-11-19T11:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4KNlNYxUlLZfj1qqdynHMP",
         "desired_uris": [
@@ -43158,8 +43158,101 @@
           "spotify:track:1WkjwrkilljSUQm70854pW"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T11:00:00-0800",
+          "broadcast_start": "2026-11-19T09:00:00-0800",
+          "imported_at": "2026-11-20T15:09:35.229953455+00:00",
+          "last_updated": "2026-11-20 15:09 UTC",
           "name": "KPOO - JIVIN' AROUND - 2026-11-19",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Spinners"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a68fdfa471fae05e5c1242ae",
+              "name": "I'll Be Around"
+            },
+            {
+              "artists": [
+                "The Radiants"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d560ef0c3f2a02606a489a63",
+              "name": "Voice Your Choice"
+            },
+            {
+              "artists": [
+                "Joe Tex"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ead67e243f8080c586ad6be",
+              "name": "Skinny Legs And All"
+            },
+            {
+              "artists": [
+                "Lionel Hampton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27328bf76978d35b885b18b9a60",
+              "name": "Oh Rock"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "The Marvelettes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bc2a6e127def6e2f87edcfc0",
+              "name": "Danger Heartbreak Dead Ahead"
+            },
+            {
+              "artists": [
+                "Freddie Scott"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d6e536f3be3a2fed637bdeb5",
+              "name": "Are You Lonely For Me Baby"
+            },
+            {
+              "artists": [
+                "James Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f0c88f277cfa46214a226d7",
+              "name": "Papa's Got A Brand New Bag - Complete Take / Pts. 1, 2 & 3"
+            },
+            {
+              "artists": [
+                "Erma Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b2a06b176059236d07b2b91",
+              "name": "Piece of My Heart"
+            },
+            {
+              "artists": [
+                "Jimmy Reed"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735198f61d9829c8ea52bace45",
+              "name": "Baby What You Want Me To Do"
+            },
+            {
+              "artists": [
+                "Dionne Warwick"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fdc4e05f5d73e3e566a1a0f8",
+              "name": "You Can Have Him"
+            },
+            {
+              "artists": [
+                "Eddie Floyd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d7005578d5311a2cbcfc508d",
+              "name": "Raise Your Hand"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23367673/JIVIN-AROUND",
+          "station": "KPOO",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/4KNlNYxUlLZfj1qqdynHMP"
         }
       },
       "needs_reconciliation": false
