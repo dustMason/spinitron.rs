@@ -24688,7 +24688,7 @@
           "start_time": "2026-11-19T07:00:00-0800",
           "end_time": "2026-11-19T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3sdDr7vfiBW6nGIp32JyyV",
         "desired_uris": [
@@ -24718,8 +24718,101 @@
           "spotify:track:242CVHcm2cOWEL3QqgVZ17"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T09:00:00-0800",
+          "broadcast_start": "2026-11-19T07:00:00-0800",
+          "imported_at": "2026-11-20T15:02:09.992787078+00:00",
+          "last_updated": "2026-11-20 15:02 UTC",
           "name": "KALX - FREEFORM - 2026-11-19 7:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Racecourse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c42dd0add3f578b0799e066d",
+              "name": "July, December"
+            },
+            {
+              "artists": [
+                "The Polyphonic Spree"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735eb9cb335bcd4b42afdb87e5",
+              "name": "Section 2 (It's The Sun) (KCRW) - KCRW Morning Becomes Eclectic Version"
+            },
+            {
+              "artists": [
+                "Black Marble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c86efc8dcb2d511254b6ff96",
+              "name": "Other Man's Dream"
+            },
+            {
+              "artists": [
+                "ACTORS"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731ec71af8b7e2d32686d9e49c",
+              "name": "Dead Inside"
+            },
+            {
+              "artists": [
+                "Black Swan Lane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27387be3900ea165cfdeb1c8e12",
+              "name": "Crash"
+            },
+            {
+              "artists": [
+                "Chin Up Chin Up"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f5c11b5d2033fee14b8b3e97",
+              "name": "Landlocked Lifeguards"
+            },
+            {
+              "artists": [
+                "All Natural Lemon & Lime Flavors"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a85b006777f01cdf4d22fd96",
+              "name": "Your Imagination"
+            },
+            {
+              "artists": [
+                "Free Kitten"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27385b9944dffd04062723d4d01",
+              "name": "DJ Spooky's Spatialized Chinatown Express Mix"
+            },
+            {
+              "artists": [
+                "The Folk Implosion"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e6f7deeeea6bac67a5c854f8",
+              "name": "Natural One"
+            },
+            {
+              "artists": [
+                "Pinegrove"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b91fccb3df1a12673b42f3e8",
+              "name": "Visiting"
+            },
+            {
+              "artists": [
+                "Guided By Voices"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273de8a1b2ad265e3ba7f4011e6",
+              "name": "Charmless Peters"
+            },
+            {
+              "artists": [
+                "The Gun & Doll Show"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736e62c8cac393a04dc08f2b5b",
+              "name": "Throwaway People"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23367167/FREEFORM",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/3sdDr7vfiBW6nGIp32JyyV"
         }
       },
       "needs_reconciliation": false
