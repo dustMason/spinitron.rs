@@ -43114,6 +43114,54 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23367673": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23367673,
+          "title": "JIVIN' AROUND",
+          "url": "https://spinitron.com/KPOO/pl/23367673/JIVIN-AROUND",
+          "start_time": "2026-11-19T09:00:00-0800",
+          "end_time": "2026-11-19T11:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2vLaES21zwbX1Rnmj56Bbb",
+          "spotify:track:31dHt2zr4E9aBgLqLrkncq",
+          "spotify:track:5P1LPNKldJza3WEXsUntKC",
+          "spotify:track:259tvJaCCWSdwq0IGRzbBy",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x",
+          "spotify:track:4gOI04TYKDBc2LDJ0u9K9h",
+          "spotify:track:3gQxrbpK4V3XmKI1kc487J",
+          "spotify:track:5LnLLr3QHVDJJEgKG0F69A",
+          "spotify:track:6diUDNmdqKxxxXCKKkSUVL",
+          "spotify:track:1Hil3qCF6xnobxUBAs3y6u",
+          "spotify:track:65t8KSM22wBRO6SBLfFZiZ",
+          "spotify:track:46rtoQbjaiQBN35fwXDfjK",
+          "spotify:track:4fQMGlCawbTkH9yPPZ49kP",
+          "spotify:track:41s9iG3fTuu32yBnmDLCcZ",
+          "spotify:track:5OotAcSHbOTYoLb0zTpXN7",
+          "spotify:track:6wccwN37R7tRotVrK8Htni",
+          "spotify:track:7vNq9awmDqVRUhA0HW1OaL",
+          "spotify:track:7ddyuWwm4StwY5PmldrqRX",
+          "spotify:track:6FHQeHAXOXqpetaAYMnR1J",
+          "spotify:track:259tvJaCCWSdwq0IGRzbBy",
+          "spotify:track:5zkcxVKivETNCl7fbe9zIE",
+          "spotify:track:5z2RFCyXNK5jPNYhTIO9dW",
+          "spotify:track:78siU3A3EIZgcNhKV7JGzm",
+          "spotify:track:1mivLvfa4lqHSS94k4gJcu",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x",
+          "spotify:track:40yDIZa7ncHhfeMTFC73nj",
+          "spotify:track:1WkjwrkilljSUQm70854pW"
+        ],
+        "listing": {
+          "name": "KPOO - JIVIN' AROUND - 2026-11-19",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
