@@ -25307,6 +25307,53 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23370026": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23370026,
+          "title": "FREEFORM",
+          "url": "https://spinitron.com/KALX/pl/23370026/FREEFORM",
+          "start_time": "2026-11-19T18:15:00-0800",
+          "end_time": "2026-11-19T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2JxcIEl51HGrSpNWiF9IsY",
+          "spotify:track:1E6hIUfgHQCvy5OUsGssKR",
+          "spotify:track:4DoeKQRZD7qLMhVZojgVb2",
+          "spotify:track:1BAjdZhz4onLeo89oxOcZk",
+          "spotify:track:5owAolGQ0AhJb9tP8y1UcV",
+          "spotify:track:5h5uqSntGsIoNOinbk48iC",
+          "spotify:track:6quP6vqX7b056Z1ZrAxoW5",
+          "spotify:track:6YlbIbjPdE3C7szAODds5z",
+          "spotify:track:5mw7Yu0K0iCAI3pIKxnZ9B",
+          "spotify:track:036mhHLlaQwnNbQEu5yW1S",
+          "spotify:track:2ScC7asqmQUTfuJqhAgPSE",
+          "spotify:track:372xi19fc8snEW5R61A1Xf",
+          "spotify:track:2smJlKggTYNuT8Xq8Y2NPb",
+          "spotify:track:643gyipSU7dkmrFhJ8UAIm",
+          "spotify:track:1JuoHfCDVjOXwJ6S9L7KzK",
+          "spotify:track:6X1tQeI7dyNzD7zUvDIv0r",
+          "spotify:track:1roGoyOYNKyW65Rpj0Ovgd",
+          "spotify:track:6qZMXw0fs9qI8b4Nl9ntEQ",
+          "spotify:track:0aBXUYZnPGercCeyjriEtl",
+          "spotify:track:0zeRgy5g6kZBGHbsQ74niR",
+          "spotify:track:25Djueph6YIET6hOQQTxrI",
+          "spotify:track:0eEXcw3JLVXcRxYrVYMy68",
+          "spotify:track:7MbMDdNvd33dMNvbVWZl6H",
+          "spotify:track:4VC1xzuysIX1xWNA1x5LHC",
+          "spotify:track:2L1Zbbj0MLfT33lJ464YCn",
+          "spotify:track:6k6Az4k1Li8cXHFcmPgL8n"
+        ],
+        "listing": {
+          "name": "KALX - FREEFORM - 2026-11-19 6:15pm",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23371212": {
       "entry": {
         "station": "KALX",
