@@ -43381,7 +43381,7 @@
           "start_time": "2026-11-19T15:00:00-0800",
           "end_time": "2026-11-19T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3FG4eIEOovgoIDaDTGpGqh",
         "desired_uris": [
@@ -43425,8 +43425,102 @@
           "spotify:track:36ccrof5DFicLrejE4hEye"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T17:30:00-0800",
+          "broadcast_start": "2026-11-19T15:00:00-0800",
+          "imported_at": "2026-11-20T15:10:57.856637294+00:00",
+          "last_updated": "2026-11-20 15:10 UTC",
           "name": "KPOO - Blues and Oldies - 2026-11-19",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Platters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cfe2c9d40777987f5141c49f",
+              "name": "Give Thanks"
+            },
+            {
+              "artists": [
+                "Elvis Presley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2a6d54759001ebdfe9a37a1",
+              "name": "I Believe"
+            },
+            {
+              "artists": [
+                "Roger Salloom"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731e31af0b43f789f23e153057",
+              "name": "Cactus Love"
+            },
+            {
+              "artists": [
+                "Bobby Rush",
+                "Vasti Jackson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a7d3e9dacc8204ce2868666",
+              "name": "Porcupine Meat"
+            },
+            {
+              "artists": [
+                "The Coasters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737a5690cabf04309d41c033f1",
+              "name": "Talkin' Bout A Woman"
+            },
+            {
+              "artists": [
+                "Joe Morris Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5e7ab1237cb8ea0d1140799",
+              "name": "The Applejack"
+            },
+            {
+              "artists": [
+                "Pete McKinley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b6fb77984d3338e8e8b969f0",
+              "name": "Black Snake Blues"
+            },
+            {
+              "artists": [
+                "Bryan Jack"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273113d27d1872626cfe3c61808",
+              "name": "Texans on Their Colorado Christmas"
+            },
+            {
+              "artists": [
+                "The Temptations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736506e351b719b6f122e60ea2",
+              "name": "The Way You Do The Things You Do"
+            },
+            {
+              "artists": [
+                "Champion Jack Dupree"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee724de1b948f054f41fc1b6",
+              "name": "Shim Sham Shimmy - Original"
+            },
+            {
+              "artists": [
+                "Lonesome Sundown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a09a5cbad0c9efc524d64a08",
+              "name": "I'm A Mojo Man"
+            },
+            {
+              "artists": [
+                "Jan & Dean"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733eb7b83d54302129af648e57",
+              "name": "Let's Turkey Trot"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23369276/Blues-and-Oldies",
+          "station": "KPOO",
+          "track_count": 38,
+          "url": "https://open.spotify.com/playlist/3FG4eIEOovgoIDaDTGpGqh"
         }
       },
       "needs_reconciliation": false
