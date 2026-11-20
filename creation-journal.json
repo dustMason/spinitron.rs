@@ -25461,7 +25461,7 @@
           "start_time": "2026-11-19T20:00:00-0800",
           "end_time": "2026-11-19T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6dyQRxre9SKRGe0XYzalM9",
         "desired_uris": [
@@ -25495,8 +25495,101 @@
           "spotify:track:3Nwm3HnLeNmTusxGg4W0hc"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T22:00:00-0800",
+          "broadcast_start": "2026-11-19T20:00:00-0800",
+          "imported_at": "2026-11-20T15:07:34.466003234+00:00",
+          "last_updated": "2026-11-20 15:07 UTC",
           "name": "KALX - No Autumn Leaves - 2026-11-19",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Catburgers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d381bc7e70b4db753b197f5",
+              "name": "The First Day of Spring"
+            },
+            {
+              "artists": [
+                "The Aislers Set"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f329538da6f62a3733807e32",
+              "name": "Through The Swells"
+            },
+            {
+              "artists": [
+                "The Gist"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dad436f07e063a02edc10761",
+              "name": "Public Girls - demo"
+            },
+            {
+              "artists": [
+                "Real Numbers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd4c70d9048e499cddec6c59",
+              "name": "Star"
+            },
+            {
+              "artists": [
+                "Spunky Onions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273000b234f55281f36cc2d8d42",
+              "name": "How I Lost My Virginity"
+            },
+            {
+              "artists": [
+                "Atlas Sound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4f18f3f4c82b4192d1562e7",
+              "name": "Octoberland"
+            },
+            {
+              "artists": [
+                "TV Buddha"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733469518b934e0400d7e6853d",
+              "name": "Land Of The Lord"
+            },
+            {
+              "artists": [
+                "Swirlies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ac62e74c9e35301e2389b657",
+              "name": "Pancake Cleaner"
+            },
+            {
+              "artists": [
+                "The Chocolate Watchband"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736e7b842828a28eadc0b50d14",
+              "name": "Baby Blue"
+            },
+            {
+              "artists": [
+                "Brittle Stars"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf7512ba92749ff1023fe809",
+              "name": "May"
+            },
+            {
+              "artists": [
+                "The Drin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e11cd65ed998d277f4a4d45",
+              "name": "Prophets of Doom"
+            },
+            {
+              "artists": [
+                "X-Teens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ce9502342553e6efb2602a02",
+              "name": "Penny"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23370347/No-Autumn-Leaves",
+          "station": "KALX",
+          "track_count": 28,
+          "url": "https://open.spotify.com/playlist/6dyQRxre9SKRGe0XYzalM9"
         }
       },
       "needs_reconciliation": false
