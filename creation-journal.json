@@ -43700,7 +43700,7 @@
           "start_time": "2026-11-19T20:00:00-0800",
           "end_time": "2026-11-19T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4AYzyrveYqwghoKa4OHO2m",
         "desired_uris": [
@@ -43725,8 +43725,109 @@
           "spotify:track:0lYyayygk8xNDUIxBgE1vV"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T22:00:00-0800",
+          "broadcast_start": "2026-11-19T20:00:00-0800",
+          "imported_at": "2026-11-20T15:13:00.617117766+00:00",
+          "last_updated": "2026-11-20 15:13 UTC",
           "name": "KPOO - Da Madd Houze - 2026-11-19",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Coolio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732729a5c5fb3756653da57b0c",
+              "name": "Fantastic Voyage"
+            },
+            {
+              "artists": [
+                "Infinite Density"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27389cb7b397e0ef3b47786edb5",
+              "name": "With You Desires"
+            },
+            {
+              "artists": [
+                "Young Dedicated Proper",
+                "Mikie Tha Plug"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e964c0e2cf05524f8014c395",
+              "name": "Show Me the Money"
+            },
+            {
+              "artists": [
+                "Freeport Jackson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a204374fbf2f5407eaf651c3",
+              "name": "Ease Ya Mind"
+            },
+            {
+              "artists": [
+                "Monk HTS",
+                "Michael Marshall",
+                "Equipto",
+                "Don John Davinci"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27373f006c811ef2b65ac367c9a",
+              "name": "City Lights"
+            },
+            {
+              "artists": [
+                "Tiësto",
+                "Dzeko",
+                "Preme",
+                "Post Malone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738c5e26c45a7703cf16f509f7",
+              "name": "Jackie Chan"
+            },
+            {
+              "artists": [
+                "BXRBXROS"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273204afe8716ba579eca298c6d",
+              "name": "Latino and Proud"
+            },
+            {
+              "artists": [
+                "Tinashe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c77c076843e1f7d3ad715337",
+              "name": "All Hands on Deck"
+            },
+            {
+              "artists": [
+                "Kool Guy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273997d1bb74e1fa9e66ad51865",
+              "name": "Dat Shit (feat. Lover Lover Player Boy)"
+            },
+            {
+              "artists": [
+                "Matthew Vintrell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736ed91f3fb699aaef5d2bf7ec",
+              "name": "New Twerk"
+            },
+            {
+              "artists": [
+                "Anderson .Paak",
+                "Kendrick Lamar"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732fb269576e63c96177b53273",
+              "name": "Tints (feat. Kendrick Lamar)"
+            },
+            {
+              "artists": [
+                "Breezy Briii"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273101d4c8c39ec245bc4ddbb59",
+              "name": "Skyscraper (Get Down!)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23370527/Da-Madd-Houze",
+          "station": "KPOO",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/4AYzyrveYqwghoKa4OHO2m"
         }
       },
       "needs_reconciliation": false
