@@ -25270,7 +25270,7 @@
           "start_time": "2026-11-19T18:00:00-0800",
           "end_time": "2026-11-19T18:15:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6vsx9ZrHmoCR4Hp1Ny3Twx",
         "desired_uris": [
@@ -25278,8 +25278,31 @@
           "spotify:track:6eB35pgMXdfhz5Z0WjwF1O"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T18:15:00-0800",
+          "broadcast_start": "2026-11-19T18:00:00-0800",
+          "imported_at": "2026-11-20T15:06:13.068670146+00:00",
+          "last_updated": "2026-11-20 15:06 UTC",
           "name": "KALX - NEWS - 2026-11-19",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Nujabes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273878ed741b8e1342d58a332ca",
+              "name": "sanctuary ship"
+            },
+            {
+              "artists": [
+                "Zhané"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733eebd4dec0ec43bfcdb03259",
+              "name": "Hey Mr. D.J."
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23369911/NEWS",
+          "station": "KALX",
+          "track_count": 2,
+          "url": "https://open.spotify.com/playlist/6vsx9ZrHmoCR4Hp1Ny3Twx"
         }
       },
       "needs_reconciliation": false
