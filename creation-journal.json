@@ -552,6 +552,38 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23106272": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23106272,
+          "title": "Dealer's Choice",
+          "url": "https://spinitron.com/KALX/pl/23106272/Dealer-s-Choice",
+          "start_time": "2026-11-19T17:00:00-0800",
+          "end_time": "2026-11-19T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:7x1hBAGI8crD2g4KuXKNCo",
+          "spotify:track:2uhe5PssRumOJN6jDz2MYJ",
+          "spotify:track:0Cn1etndosZNklC48vSTma",
+          "spotify:track:4yVfmdZaf2fhki8Q7Ik1QV",
+          "spotify:track:3kvrNwUBos0xN9XozgXhRI",
+          "spotify:track:00ukkYiW8fLP4ma08qWNIc",
+          "spotify:track:3Gnqd9eF08bdCAbEvr5ZaI",
+          "spotify:track:31T7g8p6t3B7eGY8TvCVjx",
+          "spotify:track:4JNrvMzgL3Z9ueA33NbqNI",
+          "spotify:track:1fjSZ3qt7M9c8fWHBlP4sR",
+          "spotify:track:5iv3dPZ7GCz2jQbiVMCEgr"
+        ],
+        "listing": {
+          "name": "KALX - Dealer's Choice - 2026-11-19",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23178298": {
       "entry": {
         "station": "KALX",
