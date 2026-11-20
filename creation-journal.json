@@ -43267,7 +43267,7 @@
           "start_time": "2026-11-19T11:00:00-0800",
           "end_time": "2026-11-19T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1tnVAm9aq4HcSswHd4bOwX",
         "desired_uris": [
@@ -43283,8 +43283,90 @@
           "spotify:track:25ywThp7nfz90rMr7IgcM1"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T15:00:00-0800",
+          "broadcast_start": "2026-11-19T11:00:00-0800",
+          "imported_at": "2026-11-20T15:10:15.874689175+00:00",
+          "last_updated": "2026-11-20 15:10 UTC",
           "name": "KPOO - KPOO Public Affairs Programming - 2026-11-19",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Stephen Marley",
+                "Julian Marley",
+                "Mr. Cheeks",
+                "Spragga Benz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734d8b1dc04e30f99815260ef7",
+              "name": "Iron Bars"
+            },
+            {
+              "artists": [
+                "Tom Morello: the Nightwatchman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273623368f45d47277c6e04f307",
+              "name": "Union Town"
+            },
+            {
+              "artists": [
+                "Bensound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733bbb48f945c289657859407b",
+              "name": "Going Higher"
+            },
+            {
+              "artists": [
+                "Mike Stout"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273353386cf82b50a0e0763cc02",
+              "name": "Stand or Fade"
+            },
+            {
+              "artists": [
+                "Tom Morello: the Nightwatchman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273623368f45d47277c6e04f307",
+              "name": "Union Town"
+            },
+            {
+              "artists": [
+                "Bensound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ea21cd53b7cf22433dd722c1",
+              "name": "Adventure"
+            },
+            {
+              "artists": [
+                "Clarence Carter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273051a83b17bac671ccf411f48",
+              "name": "Do What You Gotta Do"
+            },
+            {
+              "artists": [
+                "The Isley Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dbaa9bf27b9f7db47f5235a8",
+              "name": "It's Your Thing"
+            },
+            {
+              "artists": [
+                "Ray Charles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273251f9ed8769d5c58720a7dd1",
+              "name": "Hallelujah I Love Her So"
+            },
+            {
+              "artists": [
+                "The Magnificents"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ae880624c89599c6ce6ace35",
+              "name": "Don't Leave Me"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23368326/KPOO-Public-Affairs-Programming",
+          "station": "KPOO",
+          "track_count": 10,
+          "url": "https://open.spotify.com/playlist/1tnVAm9aq4HcSswHd4bOwX"
         }
       },
       "needs_reconciliation": false
