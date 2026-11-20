@@ -24999,6 +24999,49 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23369104": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23369104,
+          "title": "There ain't no iguana",
+          "url": "https://spinitron.com/KALX/pl/23369104/There-ain-t-no-iguana",
+          "start_time": "2026-11-19T15:00:00-0800",
+          "end_time": "2026-11-19T17:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6L1sbebAHYypkRdmKnczki",
+          "spotify:track:6WuadFTrB2xGnAUUNvboDU",
+          "spotify:track:0XQQV21AQBskS6BFRL4k5h",
+          "spotify:track:1la2aLFef8ny9Ft0gmsxAw",
+          "spotify:track:5R5UMzC5qCkpCB6Q8ZMaFK",
+          "spotify:track:1N1CUs2Np3jLWgLj4aDwav",
+          "spotify:track:4yDPUrGef0gWT4LSS13lwy",
+          "spotify:track:5pDLx5ChdovHbn2IwQOJ6b",
+          "spotify:track:11y9NQ2XeYhLdZ3OgxhH9Q",
+          "spotify:track:6B9sNvVd4TrAcD6TK6GRkd",
+          "spotify:track:7eVDkRSPB1wWo9V14TQfrF",
+          "spotify:track:0XqClE5sQga2COflY8JilB",
+          "spotify:track:0pT7Vws8MhBLXx7rwqOwMD",
+          "spotify:track:0p8MPyisK5LBSflQswtRAp",
+          "spotify:track:5Hwv7ZHrkqqNUe5FpKJRf8",
+          "spotify:track:3dZxgBQpstfJLd0bSYSUih",
+          "spotify:track:7zHVJwM9wkPHUAZDUbcgCh",
+          "spotify:track:1MSnWwniO4q8a7kDL83SC1",
+          "spotify:track:2SeFX3lF1jMkgt94Nq25Ee",
+          "spotify:track:1Uf5lCYKoIigcA6Spasbch",
+          "spotify:track:6Sui2NkajgAxsZy9MFFSJ4",
+          "spotify:track:5R5UMzC5qCkpCB6Q8ZMaFK"
+        ],
+        "listing": {
+          "name": "KALX - There ain't no iguana - 2026-11-19",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
