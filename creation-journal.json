@@ -25317,7 +25317,7 @@
           "start_time": "2026-11-19T18:15:00-0800",
           "end_time": "2026-11-19T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4B4zxiHuYV4H3a0VsuoWqq",
         "desired_uris": [
@@ -25349,8 +25349,104 @@
           "spotify:track:6k6Az4k1Li8cXHFcmPgL8n"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T20:00:00-0800",
+          "broadcast_start": "2026-11-19T18:15:00-0800",
+          "imported_at": "2026-11-20T15:06:53.603868026+00:00",
+          "last_updated": "2026-11-20 15:06 UTC",
           "name": "KALX - FREEFORM - 2026-11-19 6:15pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Over the Garden Wall",
+                "The Blasting Company",
+                "Justin Rubenstein"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b0730ee8b8ac046e1f5f750d",
+              "name": "Old Black Train (feat. Justin Rubenstein)"
+            },
+            {
+              "artists": [
+                "Andrew Sa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732bfe9f10a13875fac3c5ad1c",
+              "name": "American Rough"
+            },
+            {
+              "artists": [
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273980e10b54d5d0143ae565c61",
+              "name": "Guess That's Just Loving You"
+            },
+            {
+              "artists": [
+                "Astrud Gilberto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730a2d5daaa98e0395fdf36c78",
+              "name": "Tristeza"
+            },
+            {
+              "artists": [
+                "Lorna Dune"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6bf62b044074723a2a957f0",
+              "name": "Synaptic Circuits"
+            },
+            {
+              "artists": [
+                "Bronski Beat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731b94af969c8d41eabea6c8bf",
+              "name": "Ain't Necessarily So"
+            },
+            {
+              "artists": [
+                "Thundercat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27310359c67edccb88bc6329b8f",
+              "name": "Daylight"
+            },
+            {
+              "artists": [
+                "Sérgio Mendes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e378a9b9cc0443c9d6b20c84",
+              "name": "Mozambique"
+            },
+            {
+              "artists": [
+                "Chloé Caillet",
+                "Myd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731190b2589cbe23a4d23e0528",
+              "name": "Lemme Dance"
+            },
+            {
+              "artists": [
+                "Midnight Sister"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734901b0e294ca09a10df08338",
+              "name": "Blue Cigar"
+            },
+            {
+              "artists": [
+                "Sylvan Esso"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735265977746460dcc275d01c8",
+              "name": "Concrete Glen"
+            },
+            {
+              "artists": [
+                "Spacemoth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737f16deafa49a5f076c6001cd",
+              "name": "Do We Exist?"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23370026/FREEFORM",
+          "station": "KALX",
+          "track_count": 26,
+          "url": "https://open.spotify.com/playlist/4B4zxiHuYV4H3a0VsuoWqq"
         }
       },
       "needs_reconciliation": false
