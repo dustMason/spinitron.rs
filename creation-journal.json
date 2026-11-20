@@ -25872,6 +25872,47 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23371281": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23371281,
+          "title": "Blawan Interview",
+          "url": "https://spinitron.com/KALX/pl/23371281/Blawan-Interview",
+          "start_time": "2026-11-20T00:00:00-0800",
+          "end_time": "2026-11-20T02:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1gtFD71lybQfWKHRnDziOR",
+          "spotify:track:6ee7KId6UZeOyliYOCsYYt",
+          "spotify:track:4wH3jNylwBRyBCVcEC1xAV",
+          "spotify:track:0ERpsAgUU0VLdTsQB8EtU5",
+          "spotify:track:5i6Vpl3ok9m1rUUtIUFTuS",
+          "spotify:track:7sII5LhqIqXYfrOFa0ndVF",
+          "spotify:track:6kxp106J5aN9MyrBYPOzu2",
+          "spotify:track:27smmKqiDR6jXlR4Z5OjxA",
+          "spotify:track:6SCvCQLC0lbpE9auj8usmd",
+          "spotify:track:5aFS8KqblFPqWHz3wNIBmM",
+          "spotify:track:1lCtYVPATJ30XW6rk8Cgvz",
+          "spotify:track:5CgREOwpcp6qBW0SSebBrN",
+          "spotify:track:6WrqLxFkIlHcBT8DmnYmRL",
+          "spotify:track:5pqU4XIw0NnOGQRj9R3pwR",
+          "spotify:track:29EqYPuLdMrl6sQwq4nh2X",
+          "spotify:track:4EBDIr95pP7ZwMuxdg3gvk",
+          "spotify:track:48J6vn4lh2TvMJGCOQU775",
+          "spotify:track:0CCVU9gUQVuxyuzJvl3noD",
+          "spotify:track:6OUEiSHDzucsxnKa44Cafp",
+          "spotify:track:61MzMIKSv1bt8lvhkRWI6G"
+        ],
+        "listing": {
+          "name": "KALX - Blawan Interview - 2026-11-20",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
