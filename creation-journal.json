@@ -21765,6 +21765,50 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23356665": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23356665,
+          "title": "The Lysergic Listen",
+          "url": "https://spinitron.com/KALX/pl/23356665/The-Lysergic-Listen",
+          "start_time": "2026-11-19T09:00:00-0800",
+          "end_time": "2026-11-19T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6mt1oRrpxzon2H7h3pSVil",
+          "spotify:track:7FIkePO1NG6z8I3OaZGrIT",
+          "spotify:track:2JtPNkyoElu6mpJU58H0qY",
+          "spotify:track:5FBfgrppSjeWqlLyqRDHV9",
+          "spotify:track:09sbuqGCIGS6WdN6lzRNMg",
+          "spotify:track:2W0vBxDkriGHgVH02ajOXz",
+          "spotify:track:5X3GUwxpcYbSfr2jJJtPT5",
+          "spotify:track:5ABi3UPMnV5HKaxIAP9d1y",
+          "spotify:track:41Dt98EiBGbjiyyNncOUJS",
+          "spotify:track:2M9qUww9xVM4636R2oRxBc",
+          "spotify:track:2zyTP97uGsIc1C4KNNEkyn",
+          "spotify:track:4d6C75m1z47cUlhQD0QA7K",
+          "spotify:track:2i5eajmCJ4fp9b1yQk8Hlg",
+          "spotify:track:5fvP7E1nA8z6jp5Xf0zj5Q",
+          "spotify:track:4CCvTGrig2Ltrxd3EDZ7Hv",
+          "spotify:track:78e1siurZUuFXgq10FHNiS",
+          "spotify:track:6YjjpE5cjSxzA1DJwa9GEY",
+          "spotify:track:5rHgvw34eS45OOyPPNVxbw",
+          "spotify:track:5Zn84aBIi3pzzTIg2dhEF0",
+          "spotify:track:2CvsQML3uOrBeMxD0rQJi6",
+          "spotify:track:40LPu0poUalqxninBy2BRS",
+          "spotify:track:6ao8Ynpa7qiXyaeyRq3MVK",
+          "spotify:track:0ZMdZqirggmCg9KrQXXwBx"
+        ],
+        "listing": {
+          "name": "KALX - The Lysergic Listen - 2026-11-19",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23356837": {
       "entry": {
         "station": "KALX",
