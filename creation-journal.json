@@ -21775,7 +21775,7 @@
           "start_time": "2026-11-19T09:00:00-0800",
           "end_time": "2026-11-19T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3kEkosPjbqs2NFBI2ifper",
         "desired_uris": [
@@ -21804,8 +21804,101 @@
           "spotify:track:0ZMdZqirggmCg9KrQXXwBx"
         ],
         "listing": {
+          "broadcast_end": "2026-11-19T12:00:00-0800",
+          "broadcast_start": "2026-11-19T09:00:00-0800",
+          "imported_at": "2026-11-20T15:00:48.850392563+00:00",
+          "last_updated": "2026-11-20 15:00 UTC",
           "name": "KALX - The Lysergic Listen - 2026-11-19",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Brad Mehldau"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f351953b1d8058dde33a5bb",
+              "name": "And I Love Her - Live"
+            },
+            {
+              "artists": [
+                "Gwenifer Raymond"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ce16e3beef1e2a33b8903ca9",
+              "name": "Bonfire of the Billionaires"
+            },
+            {
+              "artists": [
+                "Leyla McCalla"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d3aba78d5e76d40ca0656113",
+              "name": "Heart of Gold"
+            },
+            {
+              "artists": [
+                "Ane Brun"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a7382796b4ab3a7991d0c0dc",
+              "name": "In These Waters"
+            },
+            {
+              "artists": [
+                "Kate Bush"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d9f8fc1e44a98ac99af471e9",
+              "name": "King Of The Mountain - 2018 Remaster"
+            },
+            {
+              "artists": [
+                "Agnes Obel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c34bf09fe2f2369180efd46",
+              "name": "Don't Look Down"
+            },
+            {
+              "artists": [
+                "Keith Jarrett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa4ddb7e91273006b84b10c0",
+              "name": "Roma, Part IX - Live"
+            },
+            {
+              "artists": [
+                "Tom Petty and the Heartbreakers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f2694c4fbe319e50e2723402",
+              "name": "Luna - 2026 Mix"
+            },
+            {
+              "artists": [
+                "lay / lie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27392bf19c02dfde9ff52f5dead",
+              "name": "Glazed"
+            },
+            {
+              "artists": [
+                "The Womack Sisters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273359d25b180ae95c95cde86b8",
+              "name": "You Went Away Too Long"
+            },
+            {
+              "artists": [
+                "Bobby Womack"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a70b89929f67316f0fa4426b",
+              "name": "Across 110th Street"
+            },
+            {
+              "artists": [
+                "Ryley Walker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273864afd51c37794f187185c79",
+              "name": "Cloud of Beaujolais"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23356665/The-Lysergic-Listen",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/3kEkosPjbqs2NFBI2ifper"
         }
       },
       "needs_reconciliation": false
