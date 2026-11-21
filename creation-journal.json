@@ -26728,7 +26728,7 @@
           "start_time": "2026-11-20T15:00:00-0800",
           "end_time": "2026-11-20T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2FmIDhfThMAiCC5hhgwXs9",
         "desired_uris": [
@@ -26757,8 +26757,104 @@
           "spotify:track:5fla2ejHLTYCdgwNs2DuEU"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T17:00:00-0800",
+          "broadcast_start": "2026-11-20T15:00:00-0800",
+          "imported_at": "2026-11-21T14:28:46.456773701+00:00",
+          "last_updated": "2026-11-21 14:28 UTC",
           "name": "KALX - and they sky opened up - 2026-11-20",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Flying Hats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273172798acb57b380de9fc5614",
+              "name": "Pinball"
+            },
+            {
+              "artists": [
+                "Sharhabil Ahmed"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273222570ac3c9e0a269e736a4c",
+              "name": "Argos Farfish"
+            },
+            {
+              "artists": [
+                "Salah Ragab",
+                "The Cairo Jazz Band",
+                "Zaky Osman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730de43a4df738ca4a9543f94d",
+              "name": "Latino in Cairo"
+            },
+            {
+              "artists": [
+                "Dirty Beaches"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348d5fc98c172c387b1fcc9ff",
+              "name": "Sweet 17"
+            },
+            {
+              "artists": [
+                "Al-Bara'em"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cb88b375474075c28d7a573a",
+              "name": "Tareeq"
+            },
+            {
+              "artists": [
+                "Eje Eje",
+                "Romano"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733691fc2b289a299d3ad26e76",
+              "name": "Pickled Pine Cones"
+            },
+            {
+              "artists": [
+                "Los Gatos"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b0bbe56fb6f5d9dae8bb1d0e",
+              "name": "La Balsa"
+            },
+            {
+              "artists": [
+                "The Animeros"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320691f284c83eb2510348784",
+              "name": "Gózalo"
+            },
+            {
+              "artists": [
+                "Bella Darbinyan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739b06cc85c4321f3babc3ce9a",
+              "name": "Zepuri Nman"
+            },
+            {
+              "artists": [
+                "Gal Costa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b10fe891bf20a55a10c883f",
+              "name": "Não Identificado"
+            },
+            {
+              "artists": [
+                "Haruomi Hosono"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c045d8b34c542b434bab4992",
+              "name": "Note of Mothership"
+            },
+            {
+              "artists": [
+                "Pitcher56"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d4111648f6c913c0b5e6efd1",
+              "name": "Dewy Roses"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23374508/and-they-sky-opened-up",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/2FmIDhfThMAiCC5hhgwXs9"
         }
       },
       "needs_reconciliation": false
