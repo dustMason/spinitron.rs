@@ -26019,7 +26019,7 @@
           "start_time": "2026-11-20T02:00:00-0800",
           "end_time": "2026-11-20T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2xuC0mLe09m4Lyqr7IRDDf",
         "desired_uris": [
@@ -26062,8 +26062,103 @@
           "spotify:track:4cQSzZtlnVyWVT1cnRe2aE"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T07:00:00-0800",
+          "broadcast_start": "2026-11-20T02:00:00-0800",
+          "imported_at": "2026-11-21T14:24:43.866764490+00:00",
+          "last_updated": "2026-11-21 14:24 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-20",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Jeremiah Chiu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3",
+              "name": "A Floral Pattern"
+            },
+            {
+              "artists": [
+                "Charlie Megira",
+                "The Modern Dance Club"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a0f2ac86b5b6797a955bdab9",
+              "name": "Sababa One"
+            },
+            {
+              "artists": [
+                "Billy Fury"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a9433c1850b61a1ab1f63b7",
+              "name": "Wondrous Place"
+            },
+            {
+              "artists": [
+                "Marco Benevento",
+                "Lizzie Steiner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f4a70717c8795494e03b0eb",
+              "name": "Miss Neptune"
+            },
+            {
+              "artists": [
+                "Barbara Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738bdcbedcd36489ffa7c08540",
+              "name": "Baby, I'm Yours"
+            },
+            {
+              "artists": [
+                "Robert Lester Folsom"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e76049d2d016e7d779918630",
+              "name": "My Stove's on Fire - 2026 Remastered Version"
+            },
+            {
+              "artists": [
+                "Badfinger"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273624ca2bff7e08a94ff859ed1",
+              "name": "No Matter What"
+            },
+            {
+              "artists": [
+                "The Flying Hats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273172798acb57b380de9fc5614",
+              "name": "Pinball"
+            },
+            {
+              "artists": [
+                "Golden Hands"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e4b043fe7b28770f452b43a4",
+              "name": "Take Me Back"
+            },
+            {
+              "artists": [
+                "The Son Of P.M."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273698881fa1931838dcf7d20e7",
+              "name": "Boongatanyon"
+            },
+            {
+              "artists": [
+                "Ruth Etting"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bf6218e01bade37c37efe189",
+              "name": "Cigarettes, Cigars"
+            },
+            {
+              "artists": [
+                "The Animeros"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320691f284c83eb2510348784",
+              "name": "Uvas Negras"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23371608/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 37,
+          "url": "https://open.spotify.com/playlist/2xuC0mLe09m4Lyqr7IRDDf"
         }
       },
       "needs_reconciliation": false
