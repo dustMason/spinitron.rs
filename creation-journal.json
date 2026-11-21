@@ -26421,6 +26421,44 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23373167": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23373167,
+          "title": "All Cats Are Beautiful",
+          "url": "https://spinitron.com/KALX/pl/23373167/All-Cats-Are-Beautiful",
+          "start_time": "2026-11-20T09:30:00-0800",
+          "end_time": "2026-11-20T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6u2QQ8i8bjCPmTRhd4uEMr",
+          "spotify:track:3urVyJDqv92Bwn8YQ6hGVR",
+          "spotify:track:4OUJP6XhLTMEyDwMNs3Vex",
+          "spotify:track:3IfmatoAjPtQOqteemdUnp",
+          "spotify:track:6YXyhnVBQoxY5LQW97Vayb",
+          "spotify:track:5cQ4vHjkDxPN9uP7g1ST4D",
+          "spotify:track:67GHaHuOwucSv5vkyGmGDz",
+          "spotify:track:5MWmZyJ39QuJroxm8exf6i",
+          "spotify:track:2gEW57TuSC9F0Xp2etr52x",
+          "spotify:track:5kv1IfIGXBAisC6cBRRDxm",
+          "spotify:track:1bobVTJeKp9Rsutp7iNdHc",
+          "spotify:track:2R2XeCyEdAujZVYAO8ZdHb",
+          "spotify:track:68dD9NBGa6gCYYSByLrxnk",
+          "spotify:track:6Yu4tcSY8DpAZ0SlzMSVyj",
+          "spotify:track:6uCYqP3NK1cRE5eOOx7F3z",
+          "spotify:track:5WMZPvAyAmayd1SUDCtCYl",
+          "spotify:track:6YD2ZK5N3IzJ8gk7HfSDOS"
+        ],
+        "listing": {
+          "name": "KALX - All Cats Are Beautiful - 2026-11-20",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
