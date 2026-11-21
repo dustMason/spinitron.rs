@@ -44524,7 +44524,7 @@
           "start_time": "2026-11-20T18:00:00-0800",
           "end_time": "2026-11-20T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6NOKoukP9RYW59Anai8MiA",
         "desired_uris": [
@@ -44564,8 +44564,102 @@
           "spotify:track:49tGJkFOfjrWndTxaPb0cv"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T21:00:00-0800",
+          "broadcast_start": "2026-11-20T18:00:00-0800",
+          "imported_at": "2026-11-21T14:23:19.876296913+00:00",
+          "last_updated": "2026-11-21 14:23 UTC",
           "name": "KPOO - Beats Me - 2026-11-20",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "DeRobert & The Half-Truths"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cbeada4bbe9841c59bf9108a",
+              "name": "The Joy"
+            },
+            {
+              "artists": [
+                "Donny Hathaway"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737925a087db7aaeff15b3bcd0",
+              "name": "Little Ghetto Boy"
+            },
+            {
+              "artists": [
+                "The Sylvers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c4513f52eb6e5fefbcd37faf",
+              "name": "Only One Can Win"
+            },
+            {
+              "artists": [
+                "Herb Alpert & The Tijuana Brass"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27326fc9777febc6ddb2da4eb0b",
+              "name": "In A Little Spanish Town"
+            },
+            {
+              "artists": [
+                "Chain Reaction"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c061f9386ca2a562d4978402",
+              "name": "Dance Freak"
+            },
+            {
+              "artists": [
+                "Eddie Kendricks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b3481fa1ac2e0dd81ca3884a",
+              "name": "Intimate Friends"
+            },
+            {
+              "artists": [
+                "Idris Muhammad"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eb2c2daeecc366e9ab1912a7",
+              "name": "Piece of Mind"
+            },
+            {
+              "artists": [
+                "James Brown",
+                "Bea Ford"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738f9880cf20ea75676ab96ac3",
+              "name": "You've Got The Power"
+            },
+            {
+              "artists": [
+                "Gene Chandler"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735d07770bc38b64f14bcb252e",
+              "name": "Duke of Earl - Remastered"
+            },
+            {
+              "artists": [
+                "Fred Wesley & The New J.B.'s"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737782ec0a9948bc4d2e2a061f",
+              "name": "Rockin' Funky Watergate"
+            },
+            {
+              "artists": [
+                "One Way"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c31b320ff1d2111ab44716f",
+              "name": "Mr. Groove"
+            },
+            {
+              "artists": [
+                "Ohio Players"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27326ab78f539904f9acb3ee397",
+              "name": "Funky Worm"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23375369/Beats-Me",
+          "station": "KPOO",
+          "track_count": 34,
+          "url": "https://open.spotify.com/playlist/6NOKoukP9RYW59Anai8MiA"
         }
       },
       "needs_reconciliation": false
