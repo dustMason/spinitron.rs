@@ -27424,6 +27424,49 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23376630": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23376630,
+          "title": "Pun Intended",
+          "url": "https://spinitron.com/KALX/pl/23376630/Pun-Intended",
+          "start_time": "2026-11-21T00:00:00-0800",
+          "end_time": "2026-11-21T02:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2aOPPkktSVZFJscu9DiNAA",
+          "spotify:track:2nqChcNFEKA3dz47RuggX3",
+          "spotify:track:54AIjoU0mv5mF3kQQCgtT2",
+          "spotify:track:6uec9G6ydBXbKq9SpKONB3",
+          "spotify:track:5WFgXRWjyJsaG3zImsk4sv",
+          "spotify:track:6ntulLb3JFEb42akqP4yrp",
+          "spotify:track:0axRUr9fb5lBTpukf34XZt",
+          "spotify:track:0p3YVGafB1214KOw5AokGv",
+          "spotify:track:7kHRZyL78cecgXv1NFghYf",
+          "spotify:track:1gfgqrlGzSWP60eivYn702",
+          "spotify:track:2DIgX6kmPgLig76Iai0ZCV",
+          "spotify:track:4ugaegoHdscXR9ShdraKsW",
+          "spotify:track:5pFIcNT0q6diAILh3gzSl4",
+          "spotify:track:43SDO8INIp2exzObYWTZB5",
+          "spotify:track:7IxWqdG1zG0gaAFYq2q0Iy",
+          "spotify:track:4mo3NXVMHWFD5WvdDTPHfu",
+          "spotify:track:1n1Y186aa20xp7h6HB7nuj",
+          "spotify:track:6NV0lncza4gxBYMHuZrcM4",
+          "spotify:track:67847ZJKxxwpFkAqYJ9xAY",
+          "spotify:track:6uFLHtxsZJgU5abbSLybq1",
+          "spotify:track:7DqGl9vfvGRJuQCnM9hNw0",
+          "spotify:track:34ThZCGf7PPEGHymhlMGzQ"
+        ],
+        "listing": {
+          "name": "KALX - Pun Intended - 2026-11-21",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
