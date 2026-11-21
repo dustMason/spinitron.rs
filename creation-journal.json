@@ -44469,7 +44469,7 @@
           "start_time": "2026-11-20T17:30:00-0800",
           "end_time": "2026-11-20T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5of7z5iCuIhiVDAPfka7Y4",
         "desired_uris": [
@@ -44478,8 +44478,38 @@
           "spotify:track:3Um9toULmYFGCpvaIPFw7l"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T18:00:00-0800",
+          "broadcast_start": "2026-11-20T17:30:00-0800",
+          "imported_at": "2026-11-21T14:22:39.033346355+00:00",
+          "last_updated": "2026-11-21 14:22 UTC",
           "name": "KPOO - KPOO Community News - 2026-11-20",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Booker T. & the M.G.'s"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27346007ceff2f1c33c9b9ec19c",
+              "name": "Green Onions"
+            },
+            {
+              "artists": [
+                "Jimmy Ruffin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27384d23874f5563d2771bed987",
+              "name": "What Becomes Of The Brokenhearted"
+            },
+            {
+              "artists": [
+                "Marvin Gaye"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b36949bee43217351961ffbc",
+              "name": "What's Going On"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23375198/KPOO-Community-News",
+          "station": "KPOO",
+          "track_count": 3,
+          "url": "https://open.spotify.com/playlist/5of7z5iCuIhiVDAPfka7Y4"
         }
       },
       "needs_reconciliation": false
