@@ -27299,7 +27299,7 @@
           "start_time": "2026-11-20T22:00:00-0800",
           "end_time": "2026-11-21T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6BgHxVGyG3KGgJY86tAKIt",
         "desired_uris": [
@@ -27324,8 +27324,102 @@
           "spotify:track:6LfLoYQHYaj6E7jlNj0SlN"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T00:00:00-0800",
+          "broadcast_start": "2026-11-20T22:00:00-0800",
+          "imported_at": "2026-11-21T14:32:09.391379366+00:00",
+          "last_updated": "2026-11-21 14:32 UTC",
           "name": "KALX - FREEFORM - 2026-11-20 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Björk",
+                "Underworld"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736150bc266d1c850e1b33a83a",
+              "name": "Human Behaviour - Underworld Mix"
+            },
+            {
+              "artists": [
+                "Vanishing Twin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273787772bfe16950fbfe145193",
+              "name": "Sugar Stone"
+            },
+            {
+              "artists": [
+                "Gift Horse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27363c8a1d16d50cd78d7993974",
+              "name": "Rebar Redux"
+            },
+            {
+              "artists": [
+                "Atlas Sound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4f18f3f4c82b4192d1562e7",
+              "name": "Octoberland"
+            },
+            {
+              "artists": [
+                "Thievery Corporation"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735ccb72ac1b43a1cc8596d13f",
+              "name": "La Femme Parallel"
+            },
+            {
+              "artists": [
+                "Goldfrapp"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee8562b2980e3c5265a2fcb3",
+              "name": "Crystalline Green"
+            },
+            {
+              "artists": [
+                "Nick Drake"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27302209c3c60b4cc83158ec470",
+              "name": "Clothes Of Sand"
+            },
+            {
+              "artists": [
+                "Serge Gainsbourg"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733838e289d1772ed121a2d6d2",
+              "name": "Ces petits riens"
+            },
+            {
+              "artists": [
+                "Hiss Golden Messenger"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d83a3f88cfcb7a84e02f8532",
+              "name": "Depends on the River"
+            },
+            {
+              "artists": [
+                "Jessica Pratt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e37bbdc3e9a69cde9aa0a8db",
+              "name": "I've Got A Feeling"
+            },
+            {
+              "artists": [
+                "Elanor Moss"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736a6f249e10af403bc3b514d6",
+              "name": "Again, My Love"
+            },
+            {
+              "artists": [
+                "Michel Polnareff"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c6fc108cc2562b90d03befc4",
+              "name": "Love Me, Please Love Me"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23376093/FREEFORM",
+          "station": "KALX",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/6BgHxVGyG3KGgJY86tAKIt"
         }
       },
       "needs_reconciliation": false
