@@ -26718,6 +26718,35 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23374407": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23374407,
+          "title": "Shortrave",
+          "url": "https://spinitron.com/KALX/pl/23374407/Shortrave",
+          "start_time": "2026-11-20T17:00:00-0800",
+          "end_time": "2026-11-20T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1lf79yqbr7z8iU604RrR3p",
+          "spotify:track:19neH2VGtbwtP5oqUOg7nj",
+          "spotify:track:0UfPoUEEeZbw9z6S1N4bZL",
+          "spotify:track:3L1bBpBTa1SmGivOhR6DID",
+          "spotify:track:7DL6u1tLEa7NvUkxFSCJTR",
+          "spotify:track:5pz9tX8CZIZUmRslyHr07h",
+          "spotify:track:70bVL8A7laNCj48wn8Q4BL",
+          "spotify:track:26u2CgXp9Qr0MtcEBWi2gv"
+        ],
+        "listing": {
+          "name": "KALX - Shortrave - 2026-11-20",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23374508": {
       "entry": {
         "station": "KALX",
