@@ -42039,7 +42039,7 @@
           "start_time": "2026-11-20T09:00:00-0800",
           "end_time": "2026-11-20T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5y2PLrzI4sWZa5CXPpGFal",
         "desired_uris": [
@@ -42075,8 +42075,101 @@
           "spotify:track:719i4P4h85gh53Xto4O0So"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T12:00:00-0800",
+          "broadcast_start": "2026-11-20T09:00:00-0800",
+          "imported_at": "2026-11-21T14:20:37.444902776+00:00",
+          "last_updated": "2026-11-21 14:20 UTC",
           "name": "KPOO - Cuba Canta - 2026-11-20",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Canario y Su Grupo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a7807a6d233dc425c0b3db2d",
+              "name": "Cuando Las Mujeres Quieren A Los Hombres"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "Tito Puente"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308af7ab6ca7e13bed5795445",
+              "name": "Tito On Timbales"
+            },
+            {
+              "artists": [
+                "Dave Valentin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273393517424d70c911347c30dd",
+              "name": "Subway Six"
+            },
+            {
+              "artists": [
+                "Dave Valentin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273393517424d70c911347c30dd",
+              "name": "Subway Six"
+            },
+            {
+              "artists": [
+                "Luisito Rosario"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273393bdd964e4870ac58fb2699",
+              "name": "Dame La Oportunidad"
+            },
+            {
+              "artists": [
+                "Cabanijazz Project"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d2c6bce2fb8b452c6ae8bd14",
+              "name": "Mi Gran Silencio (Instrumental)"
+            },
+            {
+              "artists": [
+                "Cabanijazz Project"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d2c6bce2fb8b452c6ae8bd14",
+              "name": "Mi Gran Silencio"
+            },
+            {
+              "artists": [
+                "Mario y Su Timbeko"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732143aee6bf3091e6caf8c8a4",
+              "name": "Sola Te Quedaste"
+            },
+            {
+              "artists": [
+                "Mario y Su Timbeko"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732143aee6bf3091e6caf8c8a4",
+              "name": "Sola Te Quedaste"
+            },
+            {
+              "artists": [
+                "MVP"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27382835fa4ba97f692a94e77d4",
+              "name": "En Su Guarara"
+            },
+            {
+              "artists": [
+                "Carlitos Medrano"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2e91c63e44fcc438f937396",
+              "name": "San Francisco En Carnaval"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23359925/Cuba-Canta",
+          "station": "KPOO",
+          "track_count": 30,
+          "url": "https://open.spotify.com/playlist/5y2PLrzI4sWZa5CXPpGFal"
         }
       },
       "needs_reconciliation": false
