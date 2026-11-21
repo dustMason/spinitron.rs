@@ -26718,6 +26718,50 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23374508": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23374508,
+          "title": "and they sky opened up",
+          "url": "https://spinitron.com/KALX/pl/23374508/and-they-sky-opened-up",
+          "start_time": "2026-11-20T15:00:00-0800",
+          "end_time": "2026-11-20T17:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4YMUmA7sWJXj7TJPBKU3pI",
+          "spotify:track:5VHD0OAEcSpThoP02AlYQw",
+          "spotify:track:243Wn17XfZcL3kjUWrbuIX",
+          "spotify:track:1Y6uMG2jt5q9wWj0Vzp8lC",
+          "spotify:track:0JTnnttCaS5UbGNTgpARrd",
+          "spotify:track:0RjfzGllxrRYKwtV7MuqPb",
+          "spotify:track:4J2xMy0kakU9sAin1uppxb",
+          "spotify:track:55Y5Ok3LTWRhltZyDgf9Wd",
+          "spotify:track:2rpF4Jx1QaEls7wXXRyYrG",
+          "spotify:track:1eqUenDSQsy87cpoogbKvi",
+          "spotify:track:6rjtJyH2bjv2sH9OggPTZ3",
+          "spotify:track:1MKV7uNCfhjbMRtCotycn8",
+          "spotify:track:4IDWHP3eh7m8PaXxqh1UxR",
+          "spotify:track:4CVKLZ9lFliRNVjCx3iNZF",
+          "spotify:track:2owItsTQ4Vo3F66Cbff1ZT",
+          "spotify:track:6Q5uDNuuFYa8ToL3CCoHPC",
+          "spotify:track:2N3H6MzbhNDdAsbkVyT5O3",
+          "spotify:track:0obQOnqQP3ThHEaATT6QTw",
+          "spotify:track:3FdcWxv3eYLypWPYWg803Z",
+          "spotify:track:4mr44KpAMc0SJl2tJ1VdGY",
+          "spotify:track:6nPnAYsGwE8HDGxdNvSaex",
+          "spotify:track:2tOI0PXCHjBLbsbJQAEyCl",
+          "spotify:track:5fla2ejHLTYCdgwNs2DuEU"
+        ],
+        "listing": {
+          "name": "KALX - and they sky opened up - 2026-11-20",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
