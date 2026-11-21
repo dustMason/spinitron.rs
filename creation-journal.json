@@ -26242,6 +26242,41 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23372780": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23372780,
+          "title": "GRATITUNEZ - DOG GAMUT",
+          "url": "https://spinitron.com/KALX/pl/23372780/GRATITUNEZ-DOG-GAMUT",
+          "start_time": "2026-11-20T07:00:00-0800",
+          "end_time": "2026-11-20T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3E8wDLAW6u8mqZ5slhMgP6",
+          "spotify:track:6puf7LmDaq4ctcWJTP7WS8",
+          "spotify:track:72ijYUJLBjCBcE5vrODvjW",
+          "spotify:track:5JOR7NPKfvVV6YgEQSZtgB",
+          "spotify:track:5f0YJvREoKjMmXZYSTO0qY",
+          "spotify:track:3BikTMcpKamKbDc4zMazCv",
+          "spotify:track:6ZH1yeWUf3Xp2XO0EZk91i",
+          "spotify:track:50EdWvC5m4oC6cNUG4dIfK",
+          "spotify:track:1p8HNOajwyZeGfxMqb4HCK",
+          "spotify:track:57NJa3GRYYZCJc03t2rP5T",
+          "spotify:track:3gwIn4U3dpSeTxfR8bQEt5",
+          "spotify:track:0fl7XUqCqHz1T9WrP544sJ",
+          "spotify:track:1WrrIDg7I0TAGKVvUtq34z",
+          "spotify:track:2GrMoKqgglqIYAvi5VR6cG"
+        ],
+        "listing": {
+          "name": "KALX - GRATITUNEZ - DOG GAMUT - 2026-11-20",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
