@@ -26431,7 +26431,7 @@
           "start_time": "2026-11-20T09:30:00-0800",
           "end_time": "2026-11-20T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "75BgeN7hF2Jf7LlG2sgBhk",
         "desired_uris": [
@@ -26454,8 +26454,106 @@
           "spotify:track:6YD2ZK5N3IzJ8gk7HfSDOS"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T12:00:00-0800",
+          "broadcast_start": "2026-11-20T09:30:00-0800",
+          "imported_at": "2026-11-21T14:27:25.527677046+00:00",
+          "last_updated": "2026-11-21 14:27 UTC",
           "name": "KALX - All Cats Are Beautiful - 2026-11-20",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "San Kazakgascar"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b25821635c55d0e25938e249",
+              "name": "Passarell Spirit"
+            },
+            {
+              "artists": [
+                "Fishdoll"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b58be3cb2caedbff622c6a9",
+              "name": "女皇"
+            },
+            {
+              "artists": [
+                "Model 500"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736b5ab9cd33baff7ddcefa9f4",
+              "name": "Astralwerks"
+            },
+            {
+              "artists": [
+                "Aphex Twin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732aa755baa705062c8a96a878",
+              "name": "Donkey Rhubarb"
+            },
+            {
+              "artists": [
+                "Aram Hovhannisyan",
+                "Movses Pogossian",
+                "Adrianne Pope",
+                "Andrew McIntosh",
+                "Mia Barcia-Colombo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f15a2b93fae76b13c8e5e70e",
+              "name": "String Quartet"
+            },
+            {
+              "artists": [
+                "mars kumari",
+                "Del The Funky Homosapien"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273159677ae3ab43d84da46dde8",
+              "name": "Seventh Ring"
+            },
+            {
+              "artists": [
+                "Hadley Caliman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273be8b5b93e15f229299aa51d7",
+              "name": "Iapetus"
+            },
+            {
+              "artists": [
+                "Shovel Dance Collective"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730dc9aa89ee62271a4764d33d",
+              "name": "A Hundred Stretches Hence / I Wish There Was No Prisons"
+            },
+            {
+              "artists": [
+                "Lucrecia Dalt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273190ed23d276b5f5f536dcbd0",
+              "name": "stelliformia"
+            },
+            {
+              "artists": [
+                "Ira Mato"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27379efb02fd0c3d5d1bd35084f",
+              "name": "Casey Jones"
+            },
+            {
+              "artists": [
+                "White Dune"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739cb0fa3ae94ef7fe32abd165",
+              "name": "CERIUM"
+            },
+            {
+              "artists": [
+                "The Comet Is Coming"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738ccf59dd549e90aad1bf5290",
+              "name": "ANGEL OF DARKNESS"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23373167/All-Cats-Are-Beautiful",
+          "station": "KALX",
+          "track_count": 17,
+          "url": "https://open.spotify.com/playlist/75BgeN7hF2Jf7LlG2sgBhk"
         }
       },
       "needs_reconciliation": false
