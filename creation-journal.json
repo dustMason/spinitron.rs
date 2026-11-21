@@ -44307,6 +44307,63 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23374518": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23374518,
+          "title": "Living For the Weekend",
+          "url": "https://spinitron.com/KPOO/pl/23374518/Living-For-the-Weekend",
+          "start_time": "2026-11-20T15:00:00-0800",
+          "end_time": "2026-11-20T17:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6FxjvmfQuS4DUuUC0yC4bo",
+          "spotify:track:5i0urffBRKl09GSX2Jhdeh",
+          "spotify:track:2hRf3HKQvAQjj78wYIS1qZ",
+          "spotify:track:5feUxmo1qphxusEo1N9GRt",
+          "spotify:track:3DWIxnI4SU0BaPua68BQvv",
+          "spotify:track:187gUYsK3pDe3yoYNqGjBO",
+          "spotify:track:3iX0BMs9dX9CsgrHhiB173",
+          "spotify:track:7gkboYtvhuXNS4EUwmFPcw",
+          "spotify:track:1mo1tQypPi59Unv8vWuNbL",
+          "spotify:track:27QTVCKEfq41PjPKQVa7vW",
+          "spotify:track:0utNgpcTxGC1xtULeOKKuT",
+          "spotify:track:7opf9yQ2QGsg5PHLTHsd7T",
+          "spotify:track:1bJsIOh2etsznZppvZm16K",
+          "spotify:track:6LSOM5CEZ5yCEpHEFC0K8K",
+          "spotify:track:5M0i3yO3f3OybZbM27QhiK",
+          "spotify:track:1tQykDK2aMwId882Ib9F0M",
+          "spotify:track:78JkN8xN065YM5ZZP9x8he",
+          "spotify:track:0CcL4kSHKIEwF3IW0BGgb6",
+          "spotify:track:3tC0NI3tf3hStiYspdxfNn",
+          "spotify:track:4M7TYUKxKVHD7xPDf6lzaY",
+          "spotify:track:0Akg4heLnMXjtM6q8g0YbW",
+          "spotify:track:1QvWxgZvTU0w8rlPRE5Zrv",
+          "spotify:track:2KMDa5wo0o38iJNw7QAQ6A",
+          "spotify:track:4YHFkUf0KTaBbRxED9nGAg",
+          "spotify:track:5cQxFhiAlbKfiCUiwEeFFg",
+          "spotify:track:1y0FkxajDyQo1TEnbURtaU",
+          "spotify:track:3FLOBRrvtriue9ONvTvEWN",
+          "spotify:track:58r4JuwHhXLAkttkaUZfLw",
+          "spotify:track:4RVYHaPHVnMUqgPA5wSs1f",
+          "spotify:track:3ApIYu95WxjzpQCnsLBbrv",
+          "spotify:track:3VZmChrnVW8JK6ano4gSED",
+          "spotify:track:7MiHouwmDun9HGMxWtJaGl",
+          "spotify:track:1Wj5So53Dn6IVyJc20PUO8",
+          "spotify:track:1nbdPX2kVX8HGWcI06BTgF",
+          "spotify:track:3VyqrWulm4ybHjy2j2sSp4",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x"
+        ],
+        "listing": {
+          "name": "KPOO - Living For the Weekend - 2026-11-20",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
