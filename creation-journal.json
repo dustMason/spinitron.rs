@@ -26568,7 +26568,7 @@
           "start_time": "2026-11-20T12:00:00-0800",
           "end_time": "2026-11-20T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5wjuFQtjLl6O9vLNBXIcXE",
         "desired_uris": [
@@ -26615,8 +26615,105 @@
           "spotify:track:3FFmyvfaI98xEVYhPyinKQ"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T15:00:00-0800",
+          "broadcast_start": "2026-11-20T12:00:00-0800",
+          "imported_at": "2026-11-21T14:28:06.045402019+00:00",
+          "last_updated": "2026-11-21 14:28 UTC",
           "name": "KALX - FREEFORM - 2026-11-20",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Residents"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5c4746a20095913b2511254",
+              "name": "Everyone Comes to the Freak Show"
+            },
+            {
+              "artists": [
+                "Tom Waits"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cdc34d14817a4771010d4afd",
+              "name": "The Fly"
+            },
+            {
+              "artists": [
+                "Meshell Ndegeocello",
+                "Bill Callahan",
+                "Chris Thile"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736cd4a28c470b59f3d07cba39",
+              "name": "With God on Our Side (with Bill Callahan, Chris Thile)"
+            },
+            {
+              "artists": [
+                "Bill Callahan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736172648d29acadc71f725e35",
+              "name": "The Man I'm Supposed To Be"
+            },
+            {
+              "artists": [
+                "The Dead Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db50e508fd8503bec3f8ee55",
+              "name": "Fare Thee Well"
+            },
+            {
+              "artists": [
+                "The Bridge City Sinners"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736f2eb2624de9093a72d4f62c",
+              "name": "Death's Door"
+            },
+            {
+              "artists": [
+                "Squirrel Nut Zippers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d482eb720ab7e61d474c1a8b",
+              "name": "Hell"
+            },
+            {
+              "artists": [
+                "Henry Threadgill",
+                "Vijay Iyer",
+                "Dafnis Prieto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273895ca849663e51b4f2e1d940",
+              "name": "On the Way"
+            },
+            {
+              "artists": [
+                "Mary Gauthier"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cbbbba7922d1f04b74e6610a",
+              "name": "I Thought I Heard a Train"
+            },
+            {
+              "artists": [
+                "Anna Tivel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27333f7193ae6a8c87336a88796",
+              "name": "Paradise"
+            },
+            {
+              "artists": [
+                "Les Cowboys Fringants"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a7279a1c08e13a0077205648",
+              "name": "Pizza galaxie"
+            },
+            {
+              "artists": [
+                "Forgotten Roads"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732996cadebab1838597fe456e",
+              "name": "500"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23373767/FREEFORM",
+          "station": "KALX",
+          "track_count": 41,
+          "url": "https://open.spotify.com/playlist/5wjuFQtjLl6O9vLNBXIcXE"
         }
       },
       "needs_reconciliation": false
