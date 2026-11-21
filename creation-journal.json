@@ -44318,7 +44318,7 @@
           "start_time": "2026-11-20T15:00:00-0800",
           "end_time": "2026-11-20T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2bHqKYAGzJb51rZQJUpWvs",
         "desired_uris": [
@@ -44360,8 +44360,101 @@
           "spotify:track:2J2cFDJAC5FvdXZwWoNR0x"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T17:30:00-0800",
+          "broadcast_start": "2026-11-20T15:00:00-0800",
+          "imported_at": "2026-11-21T14:21:59.310576808+00:00",
+          "last_updated": "2026-11-21 14:21 UTC",
           "name": "KPOO - Living For the Weekend - 2026-11-20",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The O'Jays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e6c680adf202206ff644ee7",
+              "name": "Livin' for the Weekend"
+            },
+            {
+              "artists": [
+                "The Spinners"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a68fdfa471fae05e5c1242ae",
+              "name": "Could It Be I'm Falling in Love"
+            },
+            {
+              "artists": [
+                "Denise LaSalle"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c9f9855673c15c4f8286be8",
+              "name": "Trapped By A Thing Called Love"
+            },
+            {
+              "artists": [
+                "Four Tops"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27319fd998669b2e94ea39a08b0",
+              "name": "Still Water (Love)"
+            },
+            {
+              "artists": [
+                "Detroit Emeralds"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27365ffe92f0c1bb3a4680cd5b0",
+              "name": "Do Me Right"
+            },
+            {
+              "artists": [
+                "The Stylistics"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e1d3ce571c3c8c92e23c5e6e",
+              "name": "Betcha By Golly, Wow"
+            },
+            {
+              "artists": [
+                "Aretha Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d4be2edfac7fdb30b30308e",
+              "name": "Until You Come Back to Me (That's What I'm Gonna Do)"
+            },
+            {
+              "artists": [
+                "Roberta Flack"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736956e56a4b85a1e902d22f43",
+              "name": "Feel Like Makin' Love"
+            },
+            {
+              "artists": [
+                "The Brothers Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273537ebc1940f248ab6f1b42f3",
+              "name": "I'll Be Good To You"
+            },
+            {
+              "artists": [
+                "Johnny \"Guitar\" Watson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bf97a5702294b4dcdf720689",
+              "name": "A Real Mother For Ya"
+            },
+            {
+              "artists": [
+                "The Whispers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ac3ee934474fea6f7462f082",
+              "name": "(Let's Go) All the Way"
+            },
+            {
+              "artists": [
+                "The Dramatics"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b23e1efbb426ba3d678c7026",
+              "name": "That's My Favorite Song"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23374518/Living-For-the-Weekend",
+          "station": "KPOO",
+          "track_count": 36,
+          "url": "https://open.spotify.com/playlist/2bHqKYAGzJb51rZQJUpWvs"
         }
       },
       "needs_reconciliation": false
