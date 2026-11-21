@@ -44674,7 +44674,7 @@
           "start_time": "2026-11-20T22:00:00-0800",
           "end_time": "2026-11-21T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4Qi0w7MJ1rBAeyl9DxG1Jl",
         "desired_uris": [
@@ -44725,8 +44725,120 @@
           "spotify:track:3h9uGxM4NhujCqfhmZYQBH"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T02:00:00-0800",
+          "broadcast_start": "2026-11-20T22:00:00-0800",
+          "imported_at": "2026-11-21T14:24:02.670291511+00:00",
+          "last_updated": "2026-11-21 14:24 UTC",
           "name": "KPOO - GHETTO GUMBO - 2026-11-20",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Black C",
+                "Joe Fresco",
+                "Cadence"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731f36d932631c1b491ce0857f",
+              "name": "Collar Poppin (feat. Cadence)"
+            },
+            {
+              "artists": [
+                "ALLBLACK",
+                "E-40"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730c0cc89e4f356c278ec26567",
+              "name": "Life of the Party"
+            },
+            {
+              "artists": [
+                "Mike Lowry",
+                "Clyde Carson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738ab1f19ff7a46e09f58696d7",
+              "name": "Go Getta - Radio Edit"
+            },
+            {
+              "artists": [
+                "LaRussell",
+                "Richie Rich",
+                "P-Lo",
+                "MALACHI"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c20d5e13e63804c83e8b88c5",
+              "name": "WHAT WE DOIN!?"
+            },
+            {
+              "artists": [
+                "Michael Jackson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eb15b69407230b713423d3cb",
+              "name": "Thriller - 2003 Edit"
+            },
+            {
+              "artists": [
+                "Snoop Dogg",
+                "Dr. Dre",
+                "Jhené Aiko"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d20aaf44351816fad48e4d91",
+              "name": "Gorgeous (feat. Jhené Aiko)"
+            },
+            {
+              "artists": [
+                "Too $hort"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27394850d2db2b454be90cc1129",
+              "name": "Way Too Real"
+            },
+            {
+              "artists": [
+                "DDG",
+                "42 Dugg",
+                "PLUTO",
+                "Bankroll Ni",
+                "SMJ"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27330fd20ba0356ba333fdd8c11",
+              "name": "ROUND & ROUND"
+            },
+            {
+              "artists": [
+                "Makaveli"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c151cbd53f57496d757a0154",
+              "name": "Against All Odds"
+            },
+            {
+              "artists": [
+                "Hieroglyphics",
+                "Casual",
+                "Opio",
+                "Phesto",
+                "Pep Love",
+                "Del The Funky Homosapien"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732ce53a2c51b7df907d68170d",
+              "name": "Hard Numbers"
+            },
+            {
+              "artists": [
+                "Under5ive"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273641e9632a60640a99f7b74a7",
+              "name": "Time"
+            },
+            {
+              "artists": [
+                "Dolly Babe",
+                "Megan Thee Stallion"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27312fc522a9c5375ffe4874872",
+              "name": "Pink Blush (Remix) [feat. Megan Thee Stallion]"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23376186/GHETTO-GUMBO",
+          "station": "KPOO",
+          "track_count": 45,
+          "url": "https://open.spotify.com/playlist/4Qi0w7MJ1rBAeyl9DxG1Jl"
         }
       },
       "needs_reconciliation": false
