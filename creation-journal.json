@@ -26163,6 +26163,33 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23372743": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23372743,
+          "title": "Thanks for Listening",
+          "url": "https://spinitron.com/KALX/pl/23372743/Thanks-for-Listening",
+          "start_time": "2026-11-20T07:00:00-0800",
+          "end_time": "2026-11-20T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3Trz9zkgF1fFWc2xUwZz8C",
+          "spotify:track:68YQAuJ9yKYzzfTT2hG56E",
+          "spotify:track:3l3A6bfjSq5qy270B9Pmhs",
+          "spotify:track:0zLHdNDJTHBxfyhRmXQfXu",
+          "spotify:track:0tFuTobynZI2CKdzXQ6v6V",
+          "spotify:track:1MyxRALnHqj0xTHE2QTyGn"
+        ],
+        "listing": {
+          "name": "KALX - Thanks for Listening - 2026-11-20",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
