@@ -27299,8 +27299,9 @@
           "start_time": "2026-11-20T22:00:00-0800",
           "end_time": "2026-11-21T00:00:00-0800"
         },
-        "state": "creating",
+        "state": "filling",
         "owner_id": "dustmason",
+        "playlist_id": "6BgHxVGyG3KGgJY86tAKIt",
         "desired_uris": [
           "spotify:track:2hKQuf8nQM4x1CB55RXMk4",
           "spotify:track:1gw0vNOJQefM1l0O8fmQzU",
