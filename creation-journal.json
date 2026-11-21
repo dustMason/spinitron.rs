@@ -26392,15 +26392,31 @@
           "start_time": "2026-11-20T09:00:00-0800",
           "end_time": "2026-11-20T09:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0EgfHe11DkEdKisxysBAq8",
         "desired_uris": [
           "spotify:track:4GP8j5Dyi7tJsQaNdMziRY"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T09:30:00-0800",
+          "broadcast_start": "2026-11-20T09:00:00-0800",
+          "imported_at": "2026-11-21T14:26:45.447336818+00:00",
+          "last_updated": "2026-11-21 14:26 UTC",
           "name": "KALX - Earthlines - 2026-11-20",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Lennon Hutton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730838c5ce94da4babe1ea2a18",
+              "name": "Open Road"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23373061/Earthlines",
+          "station": "KALX",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/0EgfHe11DkEdKisxysBAq8"
         }
       },
       "needs_reconciliation": false
