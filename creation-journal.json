@@ -44172,7 +44172,7 @@
           "start_time": "2026-11-20T12:00:00-0800",
           "end_time": "2026-11-20T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6xsiIynmC3xhGKToa2PUP4",
         "desired_uris": [
@@ -44197,8 +44197,113 @@
           "spotify:track:2PAHl9D76CGB2LWVbnROuG"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T15:00:00-0800",
+          "broadcast_start": "2026-11-20T12:00:00-0800",
+          "imported_at": "2026-11-21T14:21:18.012626351+00:00",
+          "last_updated": "2026-11-21 14:21 UTC",
           "name": "KPOO - La Verdad Musical (The Musical Truth) - 2026-11-20",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Richard Bona"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c2e65c19600d8e88ae0635e0",
+              "name": "Kurumalete"
+            },
+            {
+              "artists": [
+                "Riddim Doctors",
+                "Sikiru Adepoju",
+                "Giovanni Hidalgo",
+                "Zakir Hussain",
+                "Ojetunde",
+                "Douglas Val Serrant"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734aab369b6ae9e4ccd7b0c397",
+              "name": "Goin’ Somewhere"
+            },
+            {
+              "artists": [
+                "Fo'shang!"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27321c2f55dac07871fa8b13034",
+              "name": "A Pinch Of Salt"
+            },
+            {
+              "artists": [
+                "Ras Mo Moses"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273adb55a0fa9ef0fb60009bf26",
+              "name": "Pawol Pawabol"
+            },
+            {
+              "artists": [
+                "Chembo Corniel Quintet",
+                "Don Pancho Terry",
+                "Andrea Brachfeld"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735324de7bb3142b435316f810",
+              "name": "Volando Con Don Pancho Terry (feat. Don Pancho Terry & Andrea Brachfeld)"
+            },
+            {
+              "artists": [
+                "Africando",
+                "Pape Seck"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273773b4dbff9984c5198146b93",
+              "name": "Walo"
+            },
+            {
+              "artists": [
+                "Irving Flores",
+                "Giovanni Hidalgo",
+                "Brian Lynch",
+                "Horacio Hernández",
+                "John Benitez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a3f437d4f42c4bb09797583a",
+              "name": "With Amanda in Favignana"
+            },
+            {
+              "artists": [
+                "¡Cubanismo!"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733df9af2cc51ffea962a64990",
+              "name": "Marie Laveaux"
+            },
+            {
+              "artists": [
+                "Electric Squeezebox Orchestra + Voices"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732cb91d4be93b35562931f8ce",
+              "name": "The Wind"
+            },
+            {
+              "artists": [
+                "Astor Piazzolla"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735271e72d070c426c77cc2b4b",
+              "name": "Verano Porteño"
+            },
+            {
+              "artists": [
+                "Donald Vega"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735aa87a78c7ab1aaac3b343d6",
+              "name": "Para Aguabella"
+            },
+            {
+              "artists": [
+                "Bobby Matos"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c7abb2e1d45faebbf6268f8",
+              "name": "Chango's Dance"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23373894/La-Verdad-Musical-The-Musical-Truth",
+          "station": "KPOO",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/6xsiIynmC3xhGKToa2PUP4"
         }
       },
       "needs_reconciliation": false
