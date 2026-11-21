@@ -44161,6 +44161,46 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23373894": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23373894,
+          "title": "La Verdad Musical (The Musical Truth)",
+          "url": "https://spinitron.com/KPOO/pl/23373894/La-Verdad-Musical-The-Musical-Truth",
+          "start_time": "2026-11-20T12:00:00-0800",
+          "end_time": "2026-11-20T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:7fzlEr9vI79jxJwezUmweR",
+          "spotify:track:5fEXbX3PQpqRve2DgSchTT",
+          "spotify:track:175cPjB3vQPBPMEMa9W7dI",
+          "spotify:track:1W0Y1BOjovWnV7kHDltz6v",
+          "spotify:track:04lpb6M2ZhKIM0t0UPQluY",
+          "spotify:track:2nkaR3TaxWOi4cgqXvIXam",
+          "spotify:track:6fG67A6PmqxDDaKolLpXeb",
+          "spotify:track:49W7FuQbHKA9L3gF0kv4CU",
+          "spotify:track:1VYzHh7x4s4RVJSX8671Ll",
+          "spotify:track:3OAPgWu1WRTg5Lq4r1JLXB",
+          "spotify:track:0hZloNrIydOA5MHmhBtcwV",
+          "spotify:track:5iGEIzQzC1rw2EQrwn5O6d",
+          "spotify:track:0x20jMq9v5RUiu2HiFu71b",
+          "spotify:track:69Ej7k9nNLMAQgsr04rqla",
+          "spotify:track:0V4kh7X889lqfHOFOJ8dg7",
+          "spotify:track:0VxO64XCAfEWgJUbebVQR4",
+          "spotify:track:2YpOEaTyAzRDCijaNNHWun",
+          "spotify:track:1p79KPb8AXAXbPraBxFUtP",
+          "spotify:track:2PAHl9D76CGB2LWVbnROuG"
+        ],
+        "listing": {
+          "name": "KPOO - La Verdad Musical (The Musical Truth) - 2026-11-20",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
