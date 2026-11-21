@@ -26965,7 +26965,7 @@
           "start_time": "2026-11-20T18:15:00-0800",
           "end_time": "2026-11-20T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2sMijuHSZUCejwq6ke3Prr",
         "desired_uris": [
@@ -26986,8 +26986,102 @@
           "spotify:track:2YeWPMT0sbfyHuhyN49PrN"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T20:00:00-0800",
+          "broadcast_start": "2026-11-20T18:15:00-0800",
+          "imported_at": "2026-11-21T14:30:08.254530110+00:00",
+          "last_updated": "2026-11-21 14:30 UTC",
           "name": "KALX - FREEFORM - 2026-11-20 6:15pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "mHz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ac39e29bc858c22308f2776b",
+              "name": "Proth + Quartan"
+            },
+            {
+              "artists": [
+                "Divination"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27309ef8ea86d5293ab3f8c353f",
+              "name": "Silent Fields"
+            },
+            {
+              "artists": [
+                "Dead Can Dance"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27395154b699fd06bf1e42c0600",
+              "name": "Indus - Remastered"
+            },
+            {
+              "artists": [
+                "Skullflower"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a5e58128c65dc30fb12170e",
+              "name": "What Did You Expect?"
+            },
+            {
+              "artists": [
+                "Lee Ranaldo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731f766c649687f78f23a749eb",
+              "name": "Bergelmir"
+            },
+            {
+              "artists": [
+                "Mars"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c686bc92ceebb3a730fa13d5",
+              "name": "3E - Live at the Village Gate 1977"
+            },
+            {
+              "artists": [
+                "Flipper"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738064364342d30c895f5af1e6",
+              "name": "Love Canal - 7\""
+            },
+            {
+              "artists": [
+                "Foetus",
+                "Scraping Foetus off the Wheel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27369d7db972b475df74a11ef2c",
+              "name": "Halo Flamin Lead"
+            },
+            {
+              "artists": [
+                "Meat Beat Manifesto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a610a29935621be2648c09f",
+              "name": "Asbestos Lead Asbestos"
+            },
+            {
+              "artists": [
+                "Esplendor Geométrico"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273871633532fd15cae8215c2f8",
+              "name": "Signos de Energia"
+            },
+            {
+              "artists": [
+                "Aphex Twin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738155dc4dae262f31d39d8296",
+              "name": "#15"
+            },
+            {
+              "artists": [
+                "White Dune"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b65c92ea9949bb7d1e17b17a",
+              "name": "RITUAL IS THE HUSK OF TRUE FAITH"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23375205/FREEFORM",
+          "station": "KALX",
+          "track_count": 15,
+          "url": "https://open.spotify.com/playlist/2sMijuHSZUCejwq6ke3Prr"
         }
       },
       "needs_reconciliation": false
