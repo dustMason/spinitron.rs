@@ -44663,6 +44663,72 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23376186": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23376186,
+          "title": "GHETTO GUMBO",
+          "url": "https://spinitron.com/KPOO/pl/23376186/GHETTO-GUMBO",
+          "start_time": "2026-11-20T22:00:00-0800",
+          "end_time": "2026-11-21T02:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1R0iA0vfMAJVA3z1beKgEE",
+          "spotify:track:1cub6yoVokdIB7MAF8Brza",
+          "spotify:track:6FH64usUYATRmSoeseffKM",
+          "spotify:track:7581x5zZnkhgt2q7IoE4eq",
+          "spotify:track:0wQy2OO7jKjm0OOmA7gv3f",
+          "spotify:track:2utX1feK1ODyzvZcGgka7k",
+          "spotify:track:2fZBAkUi0RSmNuav5z8yth",
+          "spotify:track:4B1ZcRdy5o38mNBEwZjQwA",
+          "spotify:track:29YwR5PSDnjzBU9mkmlZag",
+          "spotify:track:79mhBLmFpoqQIpM9v7fDhL",
+          "spotify:track:4tabtSP3t2e7uDOmebJotd",
+          "spotify:track:5bgIVUxGO5XnFZs4PcT9j2",
+          "spotify:track:0wSDolVzx3AdDTEthP0LJw",
+          "spotify:track:0ImWK7kAbdnVNEEP3LjxqH",
+          "spotify:track:6AXf9n3qazR1bE1dngnqxi",
+          "spotify:track:1b3F1Hhynnq9CgenUDyZjY",
+          "spotify:track:6AwyXLzD18HptZPpbhrssp",
+          "spotify:track:2pe4DMAYeuWvha4HS3RbjA",
+          "spotify:track:2vPNudNPvPXQIRIcPa0fMq",
+          "spotify:track:6Gwu4FQMcy8JGwkD4kUvLw",
+          "spotify:track:6O4VELr4e0Uy4ti1ZTSrkH",
+          "spotify:track:3Id73R5zx8KFEee1iw2OAQ",
+          "spotify:track:7rofRRaFwjPUdcPUnrtFAu",
+          "spotify:track:6snWcC0NsPnTC0OlP5V6MO",
+          "spotify:track:2Cy8awXmK3RJvwZrDHIqOj",
+          "spotify:track:6Hdv9CyGl0emiivINQ23es",
+          "spotify:track:5CDG6PmpbnHK77nx4m6YA2",
+          "spotify:track:4kGlAkGC58crFvxfegBhNs",
+          "spotify:track:2nLJNmE3vxU59LCryoqTkh",
+          "spotify:track:0kXTp6QJeFfVsiSAVfPYFm",
+          "spotify:track:5LKK8DRaQ37CS2vOC8Tle9",
+          "spotify:track:7LKwNx0jLh8zcEpYI47PvU",
+          "spotify:track:1RWEQyKHuzi04a3HCWFajX",
+          "spotify:track:1WKSkdkkmMM4IKOadmCDqb",
+          "spotify:track:3OysVOOhcKjIQvnxCKfLxe",
+          "spotify:track:0AnH1w8kRK4on5uT9JLPLx",
+          "spotify:track:2oMg1kLO2wDO2r0QHCvk9d",
+          "spotify:track:4fcBQc28Jkmi1P2tDjZrix",
+          "spotify:track:4f5rBgdoka8ffiFAX9GNuO",
+          "spotify:track:6WYo4HDHHvMJZU1lNebB3V",
+          "spotify:track:2k2ygnRjt8MLu22HWsqym2",
+          "spotify:track:1vkpe29DP5EvAxYnWVq5C1",
+          "spotify:track:6IIBaynDVNvn0yf9NWrizh",
+          "spotify:track:5PJNC9Sl029qqkxPATailx",
+          "spotify:track:3h9uGxM4NhujCqfhmZYQBH"
+        ],
+        "listing": {
+          "name": "KPOO - GHETTO GUMBO - 2026-11-20",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
