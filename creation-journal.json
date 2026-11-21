@@ -27096,7 +27096,7 @@
           "start_time": "2026-11-20T18:00:00-0800",
           "end_time": "2026-11-20T18:15:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "77GlQcUQbeV1Wxs561Wunk",
         "desired_uris": [
@@ -27105,8 +27105,38 @@
           "spotify:track:7FO7BolIZsl1o8DDSjeOph"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T18:15:00-0800",
+          "broadcast_start": "2026-11-20T18:00:00-0800",
+          "imported_at": "2026-11-21T14:30:48.669259159+00:00",
+          "last_updated": "2026-11-21 14:30 UTC",
           "name": "KALX - NEWS - 2026-11-20",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Nujabes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273878ed741b8e1342d58a332ca",
+              "name": "sanctuary ship"
+            },
+            {
+              "artists": [
+                "Jimi Hendrix"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27398ca421e7e364a6fd177b6ff",
+              "name": "Sunshine Of Your Love"
+            },
+            {
+              "artists": [
+                "Angelo Badalamenti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730fe62e9afb4ae8f52a241d33",
+              "name": "Twin Peaks Theme - Instrumental"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23375237/NEWS",
+          "station": "KALX",
+          "track_count": 3,
+          "url": "https://open.spotify.com/playlist/77GlQcUQbeV1Wxs561Wunk"
         }
       },
       "needs_reconciliation": false
