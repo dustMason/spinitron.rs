@@ -27151,7 +27151,7 @@
           "start_time": "2026-11-20T20:00:00-0800",
           "end_time": "2026-11-20T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "53TkqU9QhcNQgjQPdGmZiM",
         "desired_uris": [
@@ -27188,8 +27188,103 @@
           "spotify:track:7Aq21eOscjwHoU2a0wgtyv"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T22:00:00-0800",
+          "broadcast_start": "2026-11-20T20:00:00-0800",
+          "imported_at": "2026-11-21T14:31:29.351757873+00:00",
+          "last_updated": "2026-11-21 14:31 UTC",
           "name": "KALX - FREEFORM - 2026-11-20 8:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Mirah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dc867e448e01b780c9a4cd30",
+              "name": "Untitled"
+            },
+            {
+              "artists": [
+                "Brainiac"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bf31a655886bdb95a1269393",
+              "name": "1 AM A CRACK3D MACHIN3"
+            },
+            {
+              "artists": [
+                "The Tammys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734273b09385688e08863a0ea5",
+              "name": "Part of Growing Up - Remastered"
+            },
+            {
+              "artists": [
+                "Son Rompe Pera"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730e8ecc157e39ead65c7ec292",
+              "name": "Muérete"
+            },
+            {
+              "artists": [
+                "Ed Schrader's Music Beat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b59c1b0778a1b85816555f41",
+              "name": "Rust"
+            },
+            {
+              "artists": [
+                "Coughs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273753bef9a460491cccf084def",
+              "name": "Bunny Slope"
+            },
+            {
+              "artists": [
+                "Kristin Hersh"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739393ff5495048605ce1daee6",
+              "name": "Snow White Lies"
+            },
+            {
+              "artists": [
+                "هيبة",
+                "Zeid Hamdan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec26e9ac3da116942b9a193c",
+              "name": "Fog el Nakhl"
+            },
+            {
+              "artists": [
+                "Ed Axel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fc5dacd0c0390ae6daef6ecf",
+              "name": "Intro"
+            },
+            {
+              "artists": [
+                "Goreshit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273deb36f257bcf9ac3e312bdee",
+              "name": "Toromi Hearts 2"
+            },
+            {
+              "artists": [
+                "Frank Lloyd Wleft",
+                "Nina Winder-Lind"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738fedd2dea414d4781779cc1f",
+              "name": "How Did I Let Myself Fall So In Love With You?"
+            },
+            {
+              "artists": [
+                "Ween"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273500cad0cb8eab562600c1fac",
+              "name": "I'm Holding You - Demo"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23375824/FREEFORM",
+          "station": "KALX",
+          "track_count": 31,
+          "url": "https://open.spotify.com/playlist/53TkqU9QhcNQgjQPdGmZiM"
         }
       },
       "needs_reconciliation": false
