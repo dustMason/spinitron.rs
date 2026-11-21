@@ -26173,7 +26173,7 @@
           "start_time": "2026-11-20T07:00:00-0800",
           "end_time": "2026-11-20T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5avCIASuxk9NLfJLQRgqqd",
         "desired_uris": [
@@ -26185,8 +26185,59 @@
           "spotify:track:1MyxRALnHqj0xTHE2QTyGn"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T09:00:00-0800",
+          "broadcast_start": "2026-11-20T07:00:00-0800",
+          "imported_at": "2026-11-21T14:25:24.124033207+00:00",
+          "last_updated": "2026-11-21 14:25 UTC",
           "name": "KALX - Thanks for Listening - 2026-11-20",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Circus Devils"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d2af7ec716592ef2f5ea8553",
+              "name": "Here We Are"
+            },
+            {
+              "artists": [
+                "In The Pines"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273daf65d7e1d522761e9c20fea",
+              "name": "Speaking In Tongues"
+            },
+            {
+              "artists": [
+                "Creature Party"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f8c193fced6918b9e4a502f9",
+              "name": "Worried"
+            },
+            {
+              "artists": [
+                "Malefics"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a6ff7e06ddabdd5c6fbbb8de",
+              "name": "Mitosis"
+            },
+            {
+              "artists": [
+                "Los Amigos Invisibles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27340994b043e3212f311097ae3",
+              "name": "La Vecina"
+            },
+            {
+              "artists": [
+                "Konk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e995ad8534bbc3840c60be45",
+              "name": "Your Life - 12\" Version"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23372743/Thanks-for-Listening",
+          "station": "KALX",
+          "track_count": 6,
+          "url": "https://open.spotify.com/playlist/5avCIASuxk9NLfJLQRgqqd"
         }
       },
       "needs_reconciliation": false
