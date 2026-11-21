@@ -26728,7 +26728,7 @@
           "start_time": "2026-11-20T17:00:00-0800",
           "end_time": "2026-11-20T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5TFcGLlu2aZcYOmOcz0YQa",
         "desired_uris": [
@@ -26742,8 +26742,74 @@
           "spotify:track:26u2CgXp9Qr0MtcEBWi2gv"
         ],
         "listing": {
+          "broadcast_end": "2026-11-20T18:00:00-0800",
+          "broadcast_start": "2026-11-20T17:00:00-0800",
+          "imported_at": "2026-11-21T14:29:27.292476138+00:00",
+          "last_updated": "2026-11-21 14:29 UTC",
           "name": "KALX - Shortrave - 2026-11-20",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Key Tronics Ensemble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733bcdc3051dbdfee929697e34",
+              "name": "Calypso of House - Paradise Mix"
+            },
+            {
+              "artists": [
+                "Fox N' Wolf",
+                "Todd Terje Remix"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732afd9c7fceb371b606e5db75",
+              "name": "Claws Against Knives - Todd Terje Remix"
+            },
+            {
+              "artists": [
+                "Ilija Rudman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273820059e486f66221b14b792e",
+              "name": "Danceteria"
+            },
+            {
+              "artists": [
+                "My Mine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e7eed660e1fcf62c3f8f969",
+              "name": "Hypnotic Tango - Original 12\" Version"
+            },
+            {
+              "artists": [
+                "Lipelis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273607580ce3998c914ada0709f",
+              "name": "Greatest Time"
+            },
+            {
+              "artists": [
+                "Brothers and Systems"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730fd530c0c2c8125ca1baacd1",
+              "name": "One Voice - Dub Mania And Philth Version 1"
+            },
+            {
+              "artists": [
+                "Charlie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273657afc9546b04b01787ea398",
+              "name": "Spacer Woman - Original Version"
+            },
+            {
+              "artists": [
+                "The Chaplin Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cfcdc084dc13839e1949c430",
+              "name": "Il Veliero - Single Version"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23374407/Shortrave",
+          "station": "KALX",
+          "track_count": 8,
+          "url": "https://open.spotify.com/playlist/5TFcGLlu2aZcYOmOcz0YQa"
         }
       },
       "needs_reconciliation": false
