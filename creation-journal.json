@@ -48780,7 +48780,7 @@
           "start_time": "2026-11-21T22:00:00-0800",
           "end_time": "2026-11-22T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7CuxDPUdxk7Pbk2iIkAdup",
         "desired_uris": [
@@ -48799,8 +48799,104 @@
           "spotify:track:2izwYuMc1s3fHbTiyu8pje"
         ],
         "listing": {
+          "broadcast_end": "2026-11-22T00:00:00-0800",
+          "broadcast_start": "2026-11-21T22:00:00-0800",
+          "imported_at": "2026-11-22T14:23:34.285402555+00:00",
+          "last_updated": "2026-11-22 14:23 UTC",
           "name": "KPOO - Cruising Through the 70's - 2026-11-21",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Jacob Boss",
+                "Assata Olugbala Shakur"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f3e859f93f4bbdf997362a1b",
+              "name": "Olugbala (Love for the People)"
+            },
+            {
+              "artists": [
+                "ACG"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d09c85501d50a697159d3d4",
+              "name": "Cointelpro"
+            },
+            {
+              "artists": [
+                "Vertego"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ef708b62ed9f15a2a3940dfb",
+              "name": "Assata Shakur Letter to The Pope (Intro)"
+            },
+            {
+              "artists": [
+                "B.a Badd",
+                "Reallyhiiim"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734d6df60f857280dfadc9ce23",
+              "name": "RH mix 5"
+            },
+            {
+              "artists": [
+                "Sonny Troupé",
+                "Quartet Add 4"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273efdbcc379f7336a419b365a9",
+              "name": "Ka Sanka"
+            },
+            {
+              "artists": [
+                "Bobby \"Blue\" Bland"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c7f46ab4f8aac0bd83fc6262",
+              "name": "Soon As The Weather Breaks"
+            },
+            {
+              "artists": [
+                "Jesi Terrell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27315920c85e310285974cb7c67",
+              "name": "My Man Is a Full Grown Dawg"
+            },
+            {
+              "artists": [
+                "Jaye Hammer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a1567346cabc6e00f4b10b52",
+              "name": "I'll Drink Your Bathwater, Baby"
+            },
+            {
+              "artists": [
+                "Curtis Griffin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b679d32ae2763c70a8f885c9",
+              "name": "Ain't Never Coming Back"
+            },
+            {
+              "artists": [
+                "Jim Gamble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b679d32ae2763c70a8f885c9",
+              "name": "Going Down the Road"
+            },
+            {
+              "artists": [
+                "Ms. Jody"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730b96b27c85f4e82ec3b2ec48",
+              "name": "Still Strokin'"
+            },
+            {
+              "artists": [
+                "Johnnie Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273abba8ea96635868d228df158",
+              "name": "Johnnie's Boogie"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23381467/Cruising-Through-the-70-s",
+          "station": "KPOO",
+          "track_count": 13,
+          "url": "https://open.spotify.com/playlist/7CuxDPUdxk7Pbk2iIkAdup"
         }
       },
       "needs_reconciliation": false
