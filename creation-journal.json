@@ -27879,7 +27879,7 @@
           "start_time": "2026-11-21T08:00:00-0800",
           "end_time": "2026-11-21T10:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "69sXYHDNDJAMUp0rYy0WKm",
         "desired_uris": [
@@ -27903,8 +27903,109 @@
           "spotify:track:0AxZUYeQ9bZwSdt1LmZuok"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T10:00:00-0800",
+          "broadcast_start": "2026-11-21T08:00:00-0800",
+          "imported_at": "2026-11-22T14:13:04.300694769+00:00",
+          "last_updated": "2026-11-22 14:13 UTC",
           "name": "KALX - FREEFORM - 2026-11-21 8:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Cocteau Twins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308036980eb9381f0ec3d28e9",
+              "name": "Pandora (for Cindy)"
+            },
+            {
+              "artists": [
+                "Sophia Stel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273de2486b9216e453d51c94ab8",
+              "name": "Now I've Got A Lot You Know"
+            },
+            {
+              "artists": [
+                "Baths"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27386cfac0a11f30b115b1ab7bf",
+              "name": "The Fawn"
+            },
+            {
+              "artists": [
+                "Ben Webster",
+                "Harry \"Sweets\" Edison"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b26216d5231998e6f65c2708",
+              "name": "How Long Has This Been Going On"
+            },
+            {
+              "artists": [
+                "Baby Rose"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731d1bd14e251142f2f9b06171",
+              "name": "Sunday"
+            },
+            {
+              "artists": [
+                "Stevie Wonder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732fee61bfec596bb6f5447c50",
+              "name": "Love's In Need Of Love Today"
+            },
+            {
+              "artists": [
+                "Miguel Atwood-Ferguson",
+                "Immanuel Wilkins",
+                "Morgan Guerin",
+                "Brandee Younger",
+                "David Virelles",
+                "Ryoma Takenaga",
+                "Marcus Gilmore",
+                "Andres Renteria"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735d8d546ecd0987364cb15bfc",
+              "name": "Central Park West (feat. Immanuel Wilkins, Morgan Guerin, Brandee Younger, David Virelles, Ryoma Takenaga, Marcus Gilmore, Andres Renteria)"
+            },
+            {
+              "artists": [
+                "Julia Jacklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27311cac66f5d62c8eced7a021b",
+              "name": "Walk On Me"
+            },
+            {
+              "artists": [
+                "Fleet Foxes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733818b4c636e2a7fdea3bf965",
+              "name": "Ragged Wood"
+            },
+            {
+              "artists": [
+                "Phosphorescent"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27303b520975d802b89091c24a0",
+              "name": "There From Here"
+            },
+            {
+              "artists": [
+                "Joni Mitchell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739569f3e5cca8dce07cc7e5a7",
+              "name": "Down to You"
+            },
+            {
+              "artists": [
+                "Bill Callahan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736172648d29acadc71f725e35",
+              "name": "Pathol O.G."
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23378021/FREEFORM",
+          "station": "KALX",
+          "track_count": 18,
+          "url": "https://open.spotify.com/playlist/69sXYHDNDJAMUp0rYy0WKm"
         }
       },
       "needs_reconciliation": false
