@@ -28686,7 +28686,7 @@
           "start_time": "2026-11-21T21:00:00-0800",
           "end_time": "2026-11-22T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "77aupFg8qdwQ4ZVRebWxLU",
         "desired_uris": [
@@ -28700,8 +28700,73 @@
           "spotify:track:1hhxthnRdKztY4HsOTiDNM"
         ],
         "listing": {
+          "broadcast_end": "2026-11-22T00:00:00-0800",
+          "broadcast_start": "2026-11-21T21:00:00-0800",
+          "imported_at": "2026-11-22T14:17:05.246807105+00:00",
+          "last_updated": "2026-11-22 14:17 UTC",
           "name": "KALX - KALX LIVE! with ulyssescfm - 2026-11-21",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "ulyssescfm"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27390d012038dd3767fd4b044b0",
+              "name": "Someday"
+            },
+            {
+              "artists": [
+                "ulyssescfm"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732ef641cdcdcd815bf51c6b9c",
+              "name": "it's what you know"
+            },
+            {
+              "artists": [
+                "ulyssescfm"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739389aca84140aee9efdf7483",
+              "name": "Sand"
+            },
+            {
+              "artists": [
+                "ulyssescfm"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eeffbc170f630c062680d60e",
+              "name": "Face Down"
+            },
+            {
+              "artists": [
+                "ulyssescfm"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731361602935699534229e27ee",
+              "name": "butterfly"
+            },
+            {
+              "artists": [
+                "ulyssescfm"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273704862cb659c783f248f007d",
+              "name": "wires in the sky"
+            },
+            {
+              "artists": [
+                "ulyssescfm"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739389aca84140aee9efdf7483",
+              "name": "Yeah"
+            },
+            {
+              "artists": [
+                "ulyssescfm"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731361602935699534229e27ee",
+              "name": "california"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23381046/KALX-LIVE-with-ulyssescfm",
+          "station": "KALX",
+          "track_count": 8,
+          "url": "https://open.spotify.com/playlist/77aupFg8qdwQ4ZVRebWxLU"
         }
       },
       "needs_reconciliation": false
