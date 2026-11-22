@@ -28304,7 +28304,7 @@
           "start_time": "2026-11-21T15:00:00-0800",
           "end_time": "2026-11-21T16:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7bycJn8wNmfxmmv1l31gKF",
         "desired_uris": [
@@ -28339,8 +28339,104 @@
           "spotify:track:733gHaYR1w0B46dUEENvGx"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T16:30:00-0800",
+          "broadcast_start": "2026-11-21T15:00:00-0800",
+          "imported_at": "2026-11-22T14:15:04.610339988+00:00",
+          "last_updated": "2026-11-22 14:15 UTC",
           "name": "KALX - 11/21/26 - 2026-11-21",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Cacophony",
+                "Jason Becker",
+                "Marty Friedman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27354edb14eeee3b7998b8feec7",
+              "name": "Speed Metal Symphony"
+            },
+            {
+              "artists": [
+                "Vivabeat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273df57b5d549d40acc270e397e",
+              "name": "The House Is Burning (But There's No One Home)"
+            },
+            {
+              "artists": [
+                "Fever Ray"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273723be7cfdfacd29f4f0f8223",
+              "name": "Carbon Dioxide"
+            },
+            {
+              "artists": [
+                "The Freebies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b24daa28789d2e0f4bb2dfb",
+              "name": "Josephine, I love you"
+            },
+            {
+              "artists": [
+                "Saâda Bonaire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27369dfcaf69c32a52e30b77f85",
+              "name": "More Women"
+            },
+            {
+              "artists": [
+                "abracadabra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd22ee8e5d1f0ca90bba6ee7",
+              "name": "go fix yourself"
+            },
+            {
+              "artists": [
+                "The Kooks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736e8b31b2e7cec192c603eece",
+              "name": "Sofa Song"
+            },
+            {
+              "artists": [
+                "Arcade Fire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e0e42aa866e5fa167b19608",
+              "name": "My Body Is a Cage"
+            },
+            {
+              "artists": [
+                "Ebbb"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739562809da970796d5abc6778",
+              "name": "Now You Know"
+            },
+            {
+              "artists": [
+                "Âme Strong",
+                "Francois Kevorkian"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733eabf69dd097873c3ed7a801",
+              "name": "Tout Est Bleu - Francois Kevorkian Mix"
+            },
+            {
+              "artists": [
+                "iNi Kamoze"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d92ddb273a90d36be68b0e09",
+              "name": "Here Comes The Hotstepper - Booyaka Remix"
+            },
+            {
+              "artists": [
+                "KIRK"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273668f1e98a78a3565d4b5e2ec",
+              "name": "The Clock"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23379610/11-21-26",
+          "station": "KALX",
+          "track_count": 29,
+          "url": "https://open.spotify.com/playlist/7bycJn8wNmfxmmv1l31gKF"
         }
       },
       "needs_reconciliation": false
