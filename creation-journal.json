@@ -48176,7 +48176,7 @@
           "start_time": "2026-11-21T12:00:00-0800",
           "end_time": "2026-11-21T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1V87gb7RqQnyfC8eztALLT",
         "desired_uris": [
@@ -48213,8 +48213,105 @@
           "spotify:track:2KVix1dukTX7elMM6fF2TI"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T15:00:00-0800",
+          "broadcast_start": "2026-11-21T12:00:00-0800",
+          "imported_at": "2026-11-22T14:20:49.273038875+00:00",
+          "last_updated": "2026-11-22 14:20 UTC",
           "name": "KPOO - En Clave - 2026-11-21",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "El Niño y la Verdad",
+                "Elito Revé y su Charangón"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27342541ad4091ef02ee8e11c3b",
+              "name": "AGUA PA' YEMAYA"
+            },
+            {
+              "artists": [
+                "TIMBALIVE"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734d3db3e37daef3f2aca5c998",
+              "name": "Tremendo Palo"
+            },
+            {
+              "artists": [
+                "Gilberto Santa Rosa",
+                "Willie Rosario"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbe634b30773b99d58d404ed",
+              "name": "Agua que Cae del Cielo (Lluvia) (feat. Willie Rosario) - En Vivo desde Puerto Rico"
+            },
+            {
+              "artists": [
+                "Sexteto Hatuey"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27302cb8ae58576a78616f84b25",
+              "name": "El Ciclón"
+            },
+            {
+              "artists": [
+                "Viento De Agua"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27363b256389aac5dff059e52e8",
+              "name": "Viento de Agua Llegó (Viento de Agua Arrived) - plena"
+            },
+            {
+              "artists": [
+                "Willie Colón",
+                "Héctor Lavoe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4ef333e3954b18afdc663bf",
+              "name": "Aguanile"
+            },
+            {
+              "artists": [
+                "El Gran Combo De Puerto Rico"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27389f8ecfee9b45ec613e123cd",
+              "name": "Aguacero"
+            },
+            {
+              "artists": [
+                "Ibrahim Ferrer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e5685fad57fe67bfed3fc4f",
+              "name": "Bruca Maniguá"
+            },
+            {
+              "artists": [
+                "Chan Junior"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734ea524cdc3b6e1acab7cc93a",
+              "name": "Asi es la humanidad"
+            },
+            {
+              "artists": [
+                "Pablito y su Charanga"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738034a3a14f478f340b538b16",
+              "name": "La Gente se Pregunta"
+            },
+            {
+              "artists": [
+                "Mayito Rivera",
+                "The Sons Of Cuba"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273311e2941411de5df50645255",
+              "name": "Se Matan"
+            },
+            {
+              "artists": [
+                "El Micha"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fd376eb4fe5e6c0d25f129fc",
+              "name": "Salsa"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23378954/En-Clave",
+          "station": "KPOO",
+          "track_count": 31,
+          "url": "https://open.spotify.com/playlist/1V87gb7RqQnyfC8eztALLT"
         }
       },
       "needs_reconciliation": false
