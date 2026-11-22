@@ -48615,7 +48615,7 @@
           "start_time": "2026-11-21T19:00:00-0800",
           "end_time": "2026-11-21T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2OGMgA0cCU1RIRv71LkQSC",
         "desired_uris": [
@@ -48667,8 +48667,105 @@
           "spotify:track:0fLwKttkpqaQDqDy8JH8Ul"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T22:00:00-0800",
+          "broadcast_start": "2026-11-21T19:00:00-0800",
+          "imported_at": "2026-11-22T14:22:54.459907439+00:00",
+          "last_updated": "2026-11-22 14:22 UTC",
           "name": "KPOO - THE SOUL OF R&B - 2026-11-21",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "R. Kelly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f06ed757791f7aa92ffa254b",
+              "name": "Feelin' Single"
+            },
+            {
+              "artists": [
+                "P!nk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27357b84aeb215c8fa5412fcc3e",
+              "name": "Hiccup"
+            },
+            {
+              "artists": [
+                "New Edition"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27310e2952d6c3b2da8da442b6d",
+              "name": "You're Not My Kind Of Girl - Extended Version"
+            },
+            {
+              "artists": [
+                "Keith Sweat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fb7e68b38274030242641429",
+              "name": "The Right Stuff"
+            },
+            {
+              "artists": [
+                "Beyoncé",
+                "Diddy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273433cfb0b3c093f965f554da4",
+              "name": "Summertime (feat. P. Diddy)"
+            },
+            {
+              "artists": [
+                "JS"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f51cfc16042693d5db92957c",
+              "name": "Half"
+            },
+            {
+              "artists": [
+                "Mary J. Blige"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273096a7fc9668305db9d3175fc",
+              "name": "No More Drama"
+            },
+            {
+              "artists": [
+                "Luther Vandross",
+                "Bob James",
+                "Cassandra Wilson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ed7f9abe569280436c300c1b",
+              "name": "I'm Only Human"
+            },
+            {
+              "artists": [
+                "Gladys Knight",
+                "Michael Stokes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273494451a961e25f772a2fa676",
+              "name": "Men"
+            },
+            {
+              "artists": [
+                "Chaka Khan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e49bc287c98f76ff4982935b",
+              "name": "Ladies' Man"
+            },
+            {
+              "artists": [
+                "Brass Construction"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730a3c7ba5ad661d224cd9e6e6",
+              "name": "Get Up To Get Down"
+            },
+            {
+              "artists": [
+                "One Way"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308c1e6bf49f37031dea3b907",
+              "name": "Cutie Pie"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23380518/THE-SOUL-OF-R-B",
+          "station": "KPOO",
+          "track_count": 46,
+          "url": "https://open.spotify.com/playlist/2OGMgA0cCU1RIRv71LkQSC"
         }
       },
       "needs_reconciliation": false
