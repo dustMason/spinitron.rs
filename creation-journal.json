@@ -48023,7 +48023,7 @@
           "start_time": "2026-11-21T08:00:00-0800",
           "end_time": "2026-11-21T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0qyOj7M8pDNKN39ZFHXjyb",
         "desired_uris": [
@@ -48067,8 +48067,101 @@
           "spotify:track:5y0yvFr9dAsT1ycNUYSRPl"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T12:00:00-0800",
+          "broadcast_start": "2026-11-21T08:00:00-0800",
+          "imported_at": "2026-11-22T14:20:09.114287552+00:00",
+          "last_updated": "2026-11-22 14:20 UTC",
           "name": "KPOO - Saturday Morning in Real Time - 2026-11-21",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Aretha Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27399bee65d3d06a061b2b872de",
+              "name": "Bridge Over Troubled Water"
+            },
+            {
+              "artists": [
+                "The Whispers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273978b0ace2dff9f328c3c391e",
+              "name": "Seems Like I Gotta Do Wrong"
+            },
+            {
+              "artists": [
+                "Diana Ross"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf133ccbeb44c7af729056e4",
+              "name": "Touch Me In The Morning"
+            },
+            {
+              "artists": [
+                "The Natural Four"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a6dfdb2184938b9bc5e1eb97",
+              "name": "Can This Be Real?"
+            },
+            {
+              "artists": [
+                "Earth, Wind & Fire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733e716266190c38e929f209cf",
+              "name": "Reasons"
+            },
+            {
+              "artists": [
+                "The Temptations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736f179dbefb5442f76e58e9a8",
+              "name": "Memories"
+            },
+            {
+              "artists": [
+                "Enchantment"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27386cfad429de4eb611f9ef3b7",
+              "name": "It's You That I Need"
+            },
+            {
+              "artists": [
+                "Natalie Cole"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733a33d4d1d5b2baf77d06fc76",
+              "name": "Our Love"
+            },
+            {
+              "artists": [
+                "The O'Jays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f47ddc9a784c4502e446f36",
+              "name": "Stairway to Heaven"
+            },
+            {
+              "artists": [
+                "James Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739835bdfdec4671ca853aae32",
+              "name": "The Payback - Part 1"
+            },
+            {
+              "artists": [
+                "B.T. Express"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ba26eb049d2d04f971ec0104",
+              "name": "Express"
+            },
+            {
+              "artists": [
+                "Bootsy Collins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737eb310880bbdde90c0411632",
+              "name": "Ahh...The Name Is Bootsy, Baby"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23378179/Saturday-Morning-in-Real-Time",
+          "station": "KPOO",
+          "track_count": 38,
+          "url": "https://open.spotify.com/playlist/0qyOj7M8pDNKN39ZFHXjyb"
         }
       },
       "needs_reconciliation": false
