@@ -49069,7 +49069,7 @@
           "start_time": "2026-11-22T02:00:00-0800",
           "end_time": "2026-11-22T05:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2gubG4WBpxy6eTwZ2COi2v",
         "desired_uris": [
@@ -49107,8 +49107,102 @@
           "spotify:track:154uJXAUVoqvV5on0w03a0"
         ],
         "listing": {
+          "broadcast_end": "2026-11-22T05:00:00-0800",
+          "broadcast_start": "2026-11-22T02:00:00-0800",
+          "imported_at": "2026-11-22T14:24:54.865609297+00:00",
+          "last_updated": "2026-11-22 14:24 UTC",
           "name": "KPOO - BLUES TIL SUNRISE - 2026-11-22",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Elizabeth Cotten"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734d634f9dd6c94c2d4324c4a7",
+              "name": "Vastopol"
+            },
+            {
+              "artists": [
+                "Lonnie Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273189b229d47e7923cc8cb04b7",
+              "name": "Drifting Along Blues"
+            },
+            {
+              "artists": [
+                "The Chambers Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273189b229d47e7923cc8cb04b7",
+              "name": "Oh Baby, You Don't Have to Go"
+            },
+            {
+              "artists": [
+                "Josh White",
+                "Lead Belly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273189b229d47e7923cc8cb04b7",
+              "name": "Don't Lie Buddy"
+            },
+            {
+              "artists": [
+                "Lightnin' Hopkins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ad4c46073d6eef21fe252494",
+              "name": "Mister Charlie - Remastered"
+            },
+            {
+              "artists": [
+                "Barry White"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa3252b7843a8a3426cc34bf",
+              "name": "Oh Love, Well We Finally Made It"
+            },
+            {
+              "artists": [
+                "B.T. Express"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731ef257e97c59104fa83788a2",
+              "name": "Give It What You Got"
+            },
+            {
+              "artists": [
+                "Evelyn \"Champagne\" King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c90ed9f02f91c24d7d9cbd20",
+              "name": "Shame (Radio Edit)"
+            },
+            {
+              "artists": [
+                "The Isley Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733d6fb7290910a30fd8e34275",
+              "name": "Beauty In The Dark (Groove With You)"
+            },
+            {
+              "artists": [
+                "Tavares"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f8940623e0d005853279da68",
+              "name": "Heaven Must Be Missing An Angel"
+            },
+            {
+              "artists": [
+                "The Jackson 5"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b26c68bdff804fc9a9535d8f",
+              "name": "Forever Came Today"
+            },
+            {
+              "artists": [
+                "The Chi-Lites"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27354e863427f6d665cf3713d6e",
+              "name": "We Are Neighbors"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23381915/BLUES-TIL-SUNRISE",
+          "station": "KPOO",
+          "track_count": 32,
+          "url": "https://open.spotify.com/playlist/2gubG4WBpxy6eTwZ2COi2v"
         }
       },
       "needs_reconciliation": false
