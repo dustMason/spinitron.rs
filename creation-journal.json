@@ -48462,7 +48462,7 @@
           "start_time": "2026-11-21T16:00:00-0800",
           "end_time": "2026-11-21T19:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7JiHgc6VjYV1xAkFvhm61c",
         "desired_uris": [
@@ -48502,8 +48502,105 @@
           "spotify:track:0c9kTekqlovCtGQ62UJXKw"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T19:00:00-0800",
+          "broadcast_start": "2026-11-21T16:00:00-0800",
+          "imported_at": "2026-11-22T14:22:10.992781779+00:00",
+          "last_updated": "2026-11-22 14:22 UTC",
           "name": "KPOO - #SaturdayAfternoonReggaeShow - 2026-11-21",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Green Lion Crew",
+                "Akae Beka"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e5a780eba53f70740d5318aa",
+              "name": "Be Still"
+            },
+            {
+              "artists": [
+                "Original Koffee",
+                "Gunna"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27381459ae332fe629e46a4f182",
+              "name": "W (feat. Gunna)"
+            },
+            {
+              "artists": [
+                "Jo Mersa Marley",
+                "Black Am I"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730d2a85e6c27608300ff31835",
+              "name": "No Way Out"
+            },
+            {
+              "artists": [
+                "Kristine Alicia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f54e3db21acc6e062d531e4",
+              "name": "I & I"
+            },
+            {
+              "artists": [
+                "Masicka",
+                "Damian Marley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273288d7c2a57134f2eaf4c049c",
+              "name": "1 Psalm (feat. Damian \"Jr. Gong\" Marley)"
+            },
+            {
+              "artists": [
+                "Stylz Milleon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f01bf9b53a7aebcce15c4ee",
+              "name": "Black Roots"
+            },
+            {
+              "artists": [
+                "Popcaan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db8fb3aff6a7fc64d53b9c1b",
+              "name": "Immortal Life"
+            },
+            {
+              "artists": [
+                "Black Uhuru"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ea4f61044b489587db47dd4c",
+              "name": "Sponji Reggae"
+            },
+            {
+              "artists": [
+                "Third World"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738edf7ea3fe3553f1d4e71d20",
+              "name": "Now That We've Found Love"
+            },
+            {
+              "artists": [
+                "Burning Spear"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735b5487779fb1e2dbe99033ee",
+              "name": "The Sun"
+            },
+            {
+              "artists": [
+                "Rain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737a84ff3a4b87e56ee9da2505",
+              "name": "Psalms"
+            },
+            {
+              "artists": [
+                "Bob Marley & The Wailers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273413a6c2c7b296d98171e5e21",
+              "name": "Redemption Song"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23379945/SaturdayAfternoonReggaeShow",
+          "station": "KPOO",
+          "track_count": 34,
+          "url": "https://open.spotify.com/playlist/7JiHgc6VjYV1xAkFvhm61c"
         }
       },
       "needs_reconciliation": false
