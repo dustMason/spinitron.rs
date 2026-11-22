@@ -28810,6 +28810,65 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23381600": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23381600,
+          "title": ".",
+          "url": "https://spinitron.com/KALX/pl/23381600/-",
+          "start_time": "2026-11-22T00:00:00-0800",
+          "end_time": "2026-11-22T03:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5wjBk37khHwU1wt2uOee45",
+          "spotify:track:5LJk3XxNJuYSZh83jsYFmW",
+          "spotify:track:4XJhR31yvvrJl99caa0Xpj",
+          "spotify:track:3hbxb5KPSHXIHXnqwNqmAC",
+          "spotify:track:7KIkR9MjBQlOlMdKvdx4rz",
+          "spotify:track:4XxpSz07S46XLzxBUALiPK",
+          "spotify:track:4ZK6Vo5lRD0IkT9Fm8b93L",
+          "spotify:track:4PHqcblGlGRtGgEFcHhDax",
+          "spotify:track:4pj45cDxMG4zyNWzj3RMai",
+          "spotify:track:65v6CVd3qMPijfVOYkKPD6",
+          "spotify:track:7n5aG0M4Mw1XRpmNnJ38WK",
+          "spotify:track:2HEBXM4w6GRS0Au1KsZmT4",
+          "spotify:track:3w5Azq90Kur3qbMLqITLIZ",
+          "spotify:track:0kZpg64mTDk3V6jhGGEd7M",
+          "spotify:track:28ER2DqoXEhJJoMnP4TRSV",
+          "spotify:track:3BikTMcpKamKbDc4zMazCv",
+          "spotify:track:4QOY0JYUjspkOlkADIeWtP",
+          "spotify:track:4S4uolDJTisE2SXHHEfINT",
+          "spotify:track:2xClSsA9SylWu8aPN0RBM3",
+          "spotify:track:2iR4oHXi5qsb17b0KHVpon",
+          "spotify:track:6OAXs4Jix85hcXxBSZTZDA",
+          "spotify:track:7uSJ28DgIPYaF0qcZlEWyJ",
+          "spotify:track:3Ni70hnuoQCinTrE79aEWV",
+          "spotify:track:3S2zhOfuiGe8xs93ODU2Jz",
+          "spotify:track:2BQMsjteXwXhW0lqmrBeer",
+          "spotify:track:5SER3uskfnMhqrH4sXfUMX",
+          "spotify:track:7MPbuFh6ggWS5Ns3DOxA2X",
+          "spotify:track:1sGYDYE8dg47jnGFfM089j",
+          "spotify:track:0KPD9cuykAhWHZmWWY8aaa",
+          "spotify:track:606DCepfmXktXbIMiT4stV",
+          "spotify:track:1kD6Dk1spQjluAM1INAz1l",
+          "spotify:track:6kTvUEhB5XDqeXTirv1Hox",
+          "spotify:track:6BTXq5SMMPj0e1GPMJOnxb",
+          "spotify:track:21wICbvP47bbiQ93r7J6op",
+          "spotify:track:76MmbCJxEEj5H4Dg0WVE3E",
+          "spotify:track:3M2bnIrNIAkfdGq7fic1EG",
+          "spotify:track:3gTyUEsqkiY7a7AgB5wWlZ",
+          "spotify:track:3gTyUEsqkiY7a7AgB5wWlZ"
+        ],
+        "listing": {
+          "name": "KALX - . - 2026-11-22 12:00am -0800 [KALX:23381600]",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
