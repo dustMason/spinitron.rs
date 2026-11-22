@@ -28294,6 +28294,56 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23379610": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23379610,
+          "title": "11/21/26",
+          "url": "https://spinitron.com/KALX/pl/23379610/11-21-26",
+          "start_time": "2026-11-21T15:00:00-0800",
+          "end_time": "2026-11-21T16:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6YW4Li4VWR4gc8gwKOd7t7",
+          "spotify:track:08iP5Z2j2SyvX7V2pzef1U",
+          "spotify:track:5JTDPZDDetda3wazmZA3D0",
+          "spotify:track:2Qx82ApOzP0yiWCBP4V5qx",
+          "spotify:track:73R5rWJMt6zzgiwLzOYfWR",
+          "spotify:track:4E6TTAQGkgX4pRx3jgSuTw",
+          "spotify:track:0Vfgpl5VpDBQexEPYUqaQK",
+          "spotify:track:1rOlTL4pKQ9Y1fURua4AJR",
+          "spotify:track:0woAgE3FoyKeMSEOtes5ea",
+          "spotify:track:290WkJ0Xy9nmrYAuRmOEjl",
+          "spotify:track:0RafpiJ6M24lfAf0lRXCAP",
+          "spotify:track:0dzUHHAq5OotCEmIbm4l7a",
+          "spotify:track:61XtDmlNXjb2b0F2PGmwkO",
+          "spotify:track:4BbAQd9yHbOPF4PzDQRksr",
+          "spotify:track:3mDdkv8881MzLmSB7z8Ogy",
+          "spotify:track:3RYNXa8YKn0JxglQkv3GeY",
+          "spotify:track:2KFJYXqd3fVEHfWSNhlTEp",
+          "spotify:track:1SyOjtLqqqk2AVLZnRI3bk",
+          "spotify:track:4gmivt1Q8UbnQZMVHLH43v",
+          "spotify:track:5DDbbpxGZFqe2C5LztCun5",
+          "spotify:track:5fla2ejHLTYCdgwNs2DuEU",
+          "spotify:track:4jLzG9tZZGTbc3p2VWjF7r",
+          "spotify:track:1saVrxxmmwCAi1EjyjAIcR",
+          "spotify:track:0Jx0KXK5K8C4Ys5JAPE3eL",
+          "spotify:track:0zCrrbQOoN5JVksoatAj2k",
+          "spotify:track:0jEJLs9noqYPdiKysNpLhs",
+          "spotify:track:0Bp2cPJkH17XzwYOBLqq1j",
+          "spotify:track:1OqQM6ik8t0nSCEnyifb2o",
+          "spotify:track:733gHaYR1w0B46dUEENvGx"
+        ],
+        "listing": {
+          "name": "KALX - 11/21/26 - 2026-11-21",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
