@@ -28820,7 +28820,7 @@
           "start_time": "2026-11-22T00:00:00-0800",
           "end_time": "2026-11-22T03:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0DlfV9n0p76FHuBOpwbM06",
         "desired_uris": [
@@ -28864,8 +28864,103 @@
           "spotify:track:3gTyUEsqkiY7a7AgB5wWlZ"
         ],
         "listing": {
+          "broadcast_end": "2026-11-22T03:00:00-0800",
+          "broadcast_start": "2026-11-22T00:00:00-0800",
+          "imported_at": "2026-11-22T14:18:26.073924700+00:00",
+          "last_updated": "2026-11-22 14:18 UTC",
           "name": "KALX - . - 2026-11-22 12:00am -0800 [KALX:23381600]",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Revillos"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27349387138d6235d4a1f089b3b",
+              "name": "Midnight (7\" Version)"
+            },
+            {
+              "artists": [
+                "Emitt Rhodes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f50e7870ba2f1df39dce7386",
+              "name": "Nights Are Lonely"
+            },
+            {
+              "artists": [
+                "England Dan & John Ford Coley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b28344e9f8f359a95aa9cfe6",
+              "name": "Nights Are Forever Without You"
+            },
+            {
+              "artists": [
+                "Klara Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4c9254994758b20941278f7",
+              "name": "Opening"
+            },
+            {
+              "artists": [
+                "Adrian Belew"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736695092ef6d75b09fef15d6c",
+              "name": "The Rail Song"
+            },
+            {
+              "artists": [
+                "Roosevelt Holts"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731933cf2aa5d06b679d50b5a4",
+              "name": "I Don’t See No Train"
+            },
+            {
+              "artists": [
+                "The Mamas & The Papas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736a7ffb7ecffe490b3abd82af",
+              "name": "Twelve Thirty - Single Version"
+            },
+            {
+              "artists": [
+                "The Beau Brummels"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731f0e61cb27458b428183a6eb",
+              "name": "Don't Talk To Strangers"
+            },
+            {
+              "artists": [
+                "Jim James"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b49f96c12083fd2ed8a5ad22",
+              "name": "Hands On"
+            },
+            {
+              "artists": [
+                "The World Sinks Except Japan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273047757a7ad6662896790268d",
+              "name": "A Wind Of Pillows"
+            },
+            {
+              "artists": [
+                "Helen Sung Big Band",
+                "Helen Sung"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f018db7487946a2b7c53a3c2",
+              "name": "Convergence"
+            },
+            {
+              "artists": [
+                "Michiya Mihashi",
+                "東京キューバン・ボーイズ"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27371ce4512f7194e66cc73184b",
+              "name": "佐渡おけさ(新潟県民謡)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23381600/-",
+          "station": "KALX",
+          "track_count": 38,
+          "url": "https://open.spotify.com/playlist/0DlfV9n0p76FHuBOpwbM06"
         }
       },
       "needs_reconciliation": false
