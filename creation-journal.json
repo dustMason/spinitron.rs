@@ -27734,7 +27734,7 @@
           "start_time": "2026-11-21T06:00:00-0800",
           "end_time": "2026-11-21T08:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0NgHNDVUia8Jcg03RT05eW",
         "desired_uris": [
@@ -27766,8 +27766,105 @@
           "spotify:track:2Oq4NU6oRDopdgFO0iRmdZ"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T08:00:00-0800",
+          "broadcast_start": "2026-11-21T06:00:00-0800",
+          "imported_at": "2026-11-22T14:12:23.690520324+00:00",
+          "last_updated": "2026-11-22 14:12 UTC",
           "name": "KALX - FREEFORM - 2026-11-21",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Dummy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27380734c9726b817b1a30d538e",
+              "name": "Nine Clean Nails"
+            },
+            {
+              "artists": [
+                "The Lions",
+                "James King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730372748cf87f6675633d7e4a",
+              "name": "New Girl"
+            },
+            {
+              "artists": [
+                "The Smithereens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736cae5ff552331e907bd14839",
+              "name": "Strangers When We Meet"
+            },
+            {
+              "artists": [
+                "Nick Lowe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27327ee4dd31496f5a5a3187111",
+              "name": "Tokyo Bay"
+            },
+            {
+              "artists": [
+                "Delivery"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273298e0c7e9fc7dda5eb08f67c",
+              "name": "Put Your Back Into It"
+            },
+            {
+              "artists": [
+                "The Lions",
+                "James King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730372748cf87f6675633d7e4a",
+              "name": "New Girl"
+            },
+            {
+              "artists": [
+                "Pinch Points"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e215909eea841bc0de1e7dd3",
+              "name": "Capital"
+            },
+            {
+              "artists": [
+                "Die Doraus & Die Marinas",
+                "Andreas Dorau"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27387d7c82eb821096959895421",
+              "name": "Fred vom Jupiter"
+            },
+            {
+              "artists": [
+                "Nu Genea"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c1525d75c3db0cd719cdf063",
+              "name": "Praja Magia"
+            },
+            {
+              "artists": [
+                "Silver Pozzoli"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735df979a86c78bf1be944d0eb",
+              "name": "Around My Dream - Rmx Version"
+            },
+            {
+              "artists": [
+                "The Lions",
+                "James King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730372748cf87f6675633d7e4a",
+              "name": "New Girl"
+            },
+            {
+              "artists": [
+                "Yshwa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eedf29cd8ae2bdf802e157b1",
+              "name": "Sunshine - Instrumental"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23377674/FREEFORM",
+          "station": "KALX",
+          "track_count": 26,
+          "url": "https://open.spotify.com/playlist/0NgHNDVUia8Jcg03RT05eW"
         }
       },
       "needs_reconciliation": false
