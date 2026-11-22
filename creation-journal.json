@@ -28156,7 +28156,7 @@
           "start_time": "2026-11-21T12:00:00-0800",
           "end_time": "2026-11-21T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "37YMFYL1dVVWCMhs36Iz34",
         "desired_uris": [
@@ -28195,8 +28195,101 @@
           "spotify:track:3jfy9TqpAWm7AsEYmUq5iP"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T15:00:00-0800",
+          "broadcast_start": "2026-11-21T12:00:00-0800",
+          "imported_at": "2026-11-22T14:14:24.805279897+00:00",
+          "last_updated": "2026-11-22 14:14 UTC",
           "name": "KALX - FREEFORM - 2026-11-21 12:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Sugarcubes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c406b6ff703fc07c16296633",
+              "name": "Motorcrash"
+            },
+            {
+              "artists": [
+                "Savage Republic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27367c5086177a30fdfdb879426",
+              "name": "Snakedance - Live"
+            },
+            {
+              "artists": [
+                "Wire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739d4fa4d408fbab67d5a0c9b3",
+              "name": "Practice Makes Perfect"
+            },
+            {
+              "artists": [
+                "Siouxsie and the Banshees"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27398a9b4da7c5cdf6210c36258",
+              "name": "Belladonna"
+            },
+            {
+              "artists": [
+                "The Glove"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e2c63ba42540e5a0246a784",
+              "name": "Like An Animal - Remastered"
+            },
+            {
+              "artists": [
+                "Suitor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273971a27966cccc12eac0efc7c",
+              "name": "Still Life"
+            },
+            {
+              "artists": [
+                "Red Temple Spirits"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27331ce1a6a04aa916c6e8d482a",
+              "name": "Exorcism / Waiting for the Sun"
+            },
+            {
+              "artists": [
+                "The Cramps"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d2c32a4c277f8cd46f89f700",
+              "name": "Garbageman"
+            },
+            {
+              "artists": [
+                "Motörhead"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734cfe8e31bdd7186fe41f84db",
+              "name": "Train Kept A-Rollin'"
+            },
+            {
+              "artists": [
+                "The Holy Kiss"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737f1cbde964aa63f6ddfcec48",
+              "name": "Go Head N Count Em"
+            },
+            {
+              "artists": [
+                "Mars"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c686bc92ceebb3a730fa13d5",
+              "name": "3E - Live at the Village Gate 1977"
+            },
+            {
+              "artists": [
+                "Minutemen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c36eff8db15e77fb0e7a6bcf",
+              "name": "Black Sheep"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23378914/FREEFORM",
+          "station": "KALX",
+          "track_count": 33,
+          "url": "https://open.spotify.com/playlist/37YMFYL1dVVWCMhs36Iz34"
         }
       },
       "needs_reconciliation": false
