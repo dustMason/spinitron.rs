@@ -28771,6 +28771,28 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23381528": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23381528,
+          "title": ".",
+          "url": "https://spinitron.com/KALX/pl/23381528/-",
+          "start_time": "2026-11-22T00:00:00-0800",
+          "end_time": "2026-11-22T03:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4vGNHftfmUFSjEGle0nPIf"
+        ],
+        "listing": {
+          "name": "KALX - . - 2026-11-22",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
