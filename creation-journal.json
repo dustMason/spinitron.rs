@@ -47809,7 +47809,7 @@
           "start_time": "2026-11-21T02:00:00-0800",
           "end_time": "2026-11-21T08:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5B0Y7TSRnqHSqyVLd20LOb",
         "desired_uris": [
@@ -47908,8 +47908,107 @@
           "spotify:track:4igvmzcV4LvEC6myjZ9RSE"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T08:00:00-0800",
+          "broadcast_start": "2026-11-21T02:00:00-0800",
+          "imported_at": "2026-11-22T14:19:29.374163972+00:00",
+          "last_updated": "2026-11-22 14:19 UTC",
           "name": "KPOO - All Night After Hours Show - 2026-11-21",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Babyface",
+                "Tink"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348a614ef25cd9dbea9f99d22",
+              "name": "Whatever (with Tink)"
+            },
+            {
+              "artists": [
+                "Ledisi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b33b963aa4577f2b03c3a551",
+              "name": "Good Year"
+            },
+            {
+              "artists": [
+                "Victoria Monét"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f78d52ba1650ad1142c6cd6c",
+              "name": "On My Mama"
+            },
+            {
+              "artists": [
+                "Victoria Monét",
+                "Buju Banton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732ac37350732d17d8f995a021",
+              "name": "Party Girls (feat. Buju Banton)"
+            },
+            {
+              "artists": [
+                "Omarion",
+                "Nah Nah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27359b3ffaae23713b8a6a24225",
+              "name": "Candy"
+            },
+            {
+              "artists": [
+                "Jelly Roll"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273026adcf853fad0af470a9fbb",
+              "name": "Need A Favor"
+            },
+            {
+              "artists": [
+                "ZaRio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27301c3d3ec5c25952fc2cb714f",
+              "name": "She Don't Know Love"
+            },
+            {
+              "artists": [
+                "Trey Songz",
+                "Feather",
+                "Nia Dorsey",
+                "Ray J"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273af4aa486aac7a7880d6b7d0b",
+              "name": "Lit Again (feat. Nia Dorsey & Ray J)"
+            },
+            {
+              "artists": [
+                "Synu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733f98d8684623d6d149a26935",
+              "name": "plan b"
+            },
+            {
+              "artists": [
+                "WanMor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273875130754be807cc4732434b",
+              "name": "Alone With You"
+            },
+            {
+              "artists": [
+                "The Enchanters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27317006ffa1b5c768c8910ee6e",
+              "name": "I Wanna Thank You"
+            },
+            {
+              "artists": [
+                "Lizzen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273357094155da9f0da40578465",
+              "name": "Tell Me"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23376947/All-Night-After-Hours-Show",
+          "station": "KPOO",
+          "track_count": 93,
+          "url": "https://open.spotify.com/playlist/5B0Y7TSRnqHSqyVLd20LOb"
         }
       },
       "needs_reconciliation": false
