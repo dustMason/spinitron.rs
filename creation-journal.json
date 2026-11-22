@@ -28451,7 +28451,7 @@
           "start_time": "2026-11-21T16:30:00-0800",
           "end_time": "2026-11-21T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2K1PEJVYAkZdv7UViOmtCT",
         "desired_uris": [
@@ -28473,8 +28473,102 @@
           "spotify:track:0oSbSiUnmSbUIDexxH7OPd"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T21:00:00-0800",
+          "broadcast_start": "2026-11-21T16:30:00-0800",
+          "imported_at": "2026-11-22T14:15:44.589491502+00:00",
+          "last_updated": "2026-11-22 14:15 UTC",
           "name": "KALX - Cal Football Game - 2026-11-21",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Shellac"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c0b6f520aac209ccbe8a0608",
+              "name": "How I Wrote How I Wrote Elastic Man (cock & bull)"
+            },
+            {
+              "artists": [
+                "Hookworms"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731a78dc6c4e59c22052a65c93",
+              "name": "Negative Space"
+            },
+            {
+              "artists": [
+                "Al Doyle"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27345ab43af4855ce8631a05e23",
+              "name": "Pharaohs"
+            },
+            {
+              "artists": [
+                "Animal Collective"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c1c29984e6fcb1d86b4395f",
+              "name": "Street Flash"
+            },
+            {
+              "artists": [
+                "Liquid Liquid"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e3a18f68c2280e321f447097",
+              "name": "Bellhead"
+            },
+            {
+              "artists": [
+                "LCD Soundsystem"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e3a18f68c2280e321f447097",
+              "name": "Yeah - Pretentious Mix"
+            },
+            {
+              "artists": [
+                "Goldfrapp"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee8562b2980e3c5265a2fcb3",
+              "name": "Strict Machine"
+            },
+            {
+              "artists": [
+                "Yeasayer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27378642d9c73a5bee71c68e039",
+              "name": "Ambling Alp"
+            },
+            {
+              "artists": [
+                "Hot Chip",
+                "Soulwax"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273762d1bfc43e39c0204010e30",
+              "name": "Ready For The Floor - Soulwax Dub"
+            },
+            {
+              "artists": [
+                "Jeremiah Chiu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3",
+              "name": "Night Fog"
+            },
+            {
+              "artists": [
+                "Rhiannon Giddens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273761c1892de7bd7c94b987eac",
+              "name": "Hope Is the Thing with Feathers"
+            },
+            {
+              "artists": [
+                "Black Dice"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e3a18f68c2280e321f447097",
+              "name": "Endless Happiness - Eye Remix"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23379999/Cal-Football-Game",
+          "station": "KALX",
+          "track_count": 16,
+          "url": "https://open.spotify.com/playlist/2K1PEJVYAkZdv7UViOmtCT"
         }
       },
       "needs_reconciliation": false
