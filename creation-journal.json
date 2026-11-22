@@ -48326,7 +48326,7 @@
           "start_time": "2026-11-21T15:00:00-0800",
           "end_time": "2026-11-21T16:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3M7OY5XP5JwbkcyAg669TV",
         "desired_uris": [
@@ -48346,8 +48346,108 @@
           "spotify:track:2uHx9DP8G1Io5ddlDSItOp"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T16:00:00-0800",
+          "broadcast_start": "2026-11-21T15:00:00-0800",
+          "imported_at": "2026-11-22T14:21:29.607039275+00:00",
+          "last_updated": "2026-11-22 14:21 UTC",
           "name": "KPOO - Andanzas - 2026-11-21",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Kronos Quartet",
+                "Alejandro Flores",
+                "Efrén Vargas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ea1ae3efc15f6e37166a055",
+              "name": "El Llorar (Crying)"
+            },
+            {
+              "artists": [
+                "Juan Carlos Caceres"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ccb78b09d7cdd958de5eb4be",
+              "name": "Tango Negro"
+            },
+            {
+              "artists": [
+                "Óscar Chávez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730b9086cd7c29bb02a4d9de1a",
+              "name": "Gallo Rojo, Gallo Negro"
+            },
+            {
+              "artists": [
+                "Cantodiscanto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f01906b92fe078687af22224",
+              "name": "Bandera"
+            },
+            {
+              "artists": [
+                "Lluis Llach"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734e4e87d8235604e1e78e7e10",
+              "name": "La Meva Terra"
+            },
+            {
+              "artists": [
+                "Sílvia Pérez Cruz",
+                "Seyki"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27319e98717aaaee466b2f6e1fc",
+              "name": "Chundwa (Chacarera) (feat. Seyki)"
+            },
+            {
+              "artists": [
+                "Virgínia Rodrigues",
+                "Susana Baca"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fed73fdd34ae5ba9c810ae1",
+              "name": "Cântico Tradicional Afrocubano / Belén Cochambre (feat. Susana Baca)"
+            },
+            {
+              "artists": [
+                "Mixanteña de Santa Cecilia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d90e69641658addd98bce4b7",
+              "name": "Toro Chato"
+            },
+            {
+              "artists": [
+                "Tamara Castro"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27351ab09d7b697622226fed9d5",
+              "name": "Zamba de Amor en Vuelo"
+            },
+            {
+              "artists": [
+                "Los Cumbia Stars",
+                "Orquesta Sinfónica Eafit",
+                "Delight Gospel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c874ae31ac18a1f33c5f56e9",
+              "name": "San Marcos - Porro Bonito - Sinfónico En Vivo"
+            },
+            {
+              "artists": [
+                "Terrero"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735507cf2265ecab7e6a5f23d3",
+              "name": "Casamento"
+            },
+            {
+              "artists": [
+                "Milton Nascimento",
+                "Chico Buarque"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bfbfbf3201ecd4d56ac3c155",
+              "name": "Cancion Por La Unidad Latinoamericana"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23379677/Andanzas",
+          "station": "KPOO",
+          "track_count": 14,
+          "url": "https://open.spotify.com/playlist/3M7OY5XP5JwbkcyAg669TV"
         }
       },
       "needs_reconciliation": false
