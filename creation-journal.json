@@ -28676,6 +28676,35 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23381046": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23381046,
+          "title": "KALX LIVE! with ulyssescfm",
+          "url": "https://spinitron.com/KALX/pl/23381046/KALX-LIVE-with-ulyssescfm",
+          "start_time": "2026-11-21T21:00:00-0800",
+          "end_time": "2026-11-22T00:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3eaMGapDaDD79PjGU0uKlg",
+          "spotify:track:3mfcSL8AwMNwatMeFIBxUH",
+          "spotify:track:7607qLhsYjm3gVtHlBQSbd",
+          "spotify:track:6ZFPoPNJkrXn06ZOiPFUJ1",
+          "spotify:track:18P5Yqx2oRwqrPJE8lLVpo",
+          "spotify:track:6L1YPnnZE9ZnZbXsUfVAoY",
+          "spotify:track:6l2Q3Pff0FlY6VXSWNzaNy",
+          "spotify:track:1hhxthnRdKztY4HsOTiDNM"
+        ],
+        "listing": {
+          "name": "KALX - KALX LIVE! with ulyssescfm - 2026-11-21",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
