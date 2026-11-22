@@ -28583,7 +28583,7 @@
           "start_time": "2026-11-21T16:30:00-0800",
           "end_time": "2026-11-21T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0p509eoKpnKtqr4nvVX6p3",
         "desired_uris": [
@@ -28598,8 +28598,80 @@
           "spotify:track:5tsHYSRkGbDKLwE6MZWTbr"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T21:00:00-0800",
+          "broadcast_start": "2026-11-21T16:30:00-0800",
+          "imported_at": "2026-11-22T14:16:24.775755459+00:00",
+          "last_updated": "2026-11-22 14:16 UTC",
           "name": "KALX - KALX Live PRE-PARTY!!! - 2026-11-21",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "ribbon fix"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f3222f0e42d7b2fb3b7eead9",
+              "name": "some Saturday"
+            },
+            {
+              "artists": [
+                "ulyssescfm"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731361602935699534229e27ee",
+              "name": "butterfly"
+            },
+            {
+              "artists": [
+                "colonel macabre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273246017529a392806d2f8889c",
+              "name": "sarah winchester"
+            },
+            {
+              "artists": [
+                "Viola Swamp"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ef430d2226df443f9e49701f",
+              "name": "you give you give"
+            },
+            {
+              "artists": [
+                "Hollyfrancis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dde3c32e42c513acc2635f40",
+              "name": "Should I Have Another Beer"
+            },
+            {
+              "artists": [
+                "Paramore"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735cab62839794c2cc3d6a135b",
+              "name": "Conspiracy"
+            },
+            {
+              "artists": [
+                "Sparklehorse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273060fb9578297e72d624904a7",
+              "name": "Saturday"
+            },
+            {
+              "artists": [
+                "Andrew McMahon in the Wilderness"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736354cef4a72ed7eac6e5820c",
+              "name": "Rainy Girl"
+            },
+            {
+              "artists": [
+                "Clique"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731dc3c9a99a09060c673ce9f5",
+              "name": "Get By"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23380849/KALX-Live-PRE-PARTY",
+          "station": "KALX",
+          "track_count": 9,
+          "url": "https://open.spotify.com/playlist/0p509eoKpnKtqr4nvVX6p3"
         }
       },
       "needs_reconciliation": false
