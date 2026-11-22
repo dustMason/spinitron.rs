@@ -28010,6 +28010,47 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23378574": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23378574,
+          "title": "FREEFORM with DJ Slates",
+          "url": "https://spinitron.com/KALX/pl/23378574/FREEFORM-with-DJ-Slates",
+          "start_time": "2026-11-21T10:00:00-0800",
+          "end_time": "2026-11-21T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2Dj59k8Rar55hTbzwCt2bK",
+          "spotify:track:3GOOBbC0uedCdUQZfSrwOp",
+          "spotify:track:10TXq8bMtRb3fjk8ZmxH0H",
+          "spotify:track:3sKTvZ2Xfr1dsnWhgTfIf8",
+          "spotify:track:3Q6VfeIZ1bTjWiNe2Or4LQ",
+          "spotify:track:2pbzMBcXzKn2AVVujSJtr6",
+          "spotify:track:792kje520t5JZlA81M8tPd",
+          "spotify:track:31HzzNQFrr5hT0Hq5LK4IU",
+          "spotify:track:2mv6GY70UsHiTCGQZ4JfgC",
+          "spotify:track:53XFu5ZXPyldc3MtfxEkDq",
+          "spotify:track:6CWiTCxRgjCFGTnbi7UAi0",
+          "spotify:track:4Y8A0fZ8VKmiHFXJLXCdTi",
+          "spotify:track:3dsBL7qlQJOF51HUw31pVh",
+          "spotify:track:1obCBMmNFmHKxY8dUrRAkD",
+          "spotify:track:76MmbCJxEEj5H4Dg0WVE3E",
+          "spotify:track:2RQkcg3BPdm8wJDVbrFRzr",
+          "spotify:track:16YZGKtzjrlOCeD3SMqGuL",
+          "spotify:track:46JgAJaAdtcdR8CDeNzlEE",
+          "spotify:track:67Hna13dNDkZvBpTXRIaOJ",
+          "spotify:track:6wNbhsTOihivQjZh5vLcsJ"
+        ],
+        "listing": {
+          "name": "KALX - FREEFORM with DJ Slates - 2026-11-21",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
