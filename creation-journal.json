@@ -27572,7 +27572,7 @@
           "start_time": "2026-11-21T02:00:00-0800",
           "end_time": "2026-11-21T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3aizRkxltyJixvMKEb4YKT",
         "desired_uris": [
@@ -27622,8 +27622,104 @@
           "spotify:track:0KyYrq0cy5Tqy0u56aDU7h"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T06:00:00-0800",
+          "broadcast_start": "2026-11-21T02:00:00-0800",
+          "imported_at": "2026-11-22T14:11:43.410961250+00:00",
+          "last_updated": "2026-11-22 14:11 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-21",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Shiho Yabuki"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27324e6d5104eda96b80d35f028",
+              "name": "Forestland"
+            },
+            {
+              "artists": [
+                "Nailah Hunter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27372bc24d4b5652c17e4cc57d0",
+              "name": "Nacre Meadow"
+            },
+            {
+              "artists": [
+                "Coil"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c26561a630bc2e0ea7add99",
+              "name": "London's Lost Rivers"
+            },
+            {
+              "artists": [
+                "Daniel Carter",
+                "William Parker",
+                "Gerald Cleaver",
+                "Matthew Shipp"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ecd707049f189392490f7a84",
+              "name": "Majestic Travel Agency"
+            },
+            {
+              "artists": [
+                "Mal Waldron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736593e7ac7108dcb94077dae9",
+              "name": "Right On"
+            },
+            {
+              "artists": [
+                "Matchess"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d854a2bbf33e0ebd19c561c1",
+              "name": "Ossify Them"
+            },
+            {
+              "artists": [
+                "ZZ Top"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273244249873dc5b07420a8bc61",
+              "name": "Asleep in the Desert (Instrumental)"
+            },
+            {
+              "artists": [
+                "Screaming Trees"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a627e136eb4d8d3c8a6fa24",
+              "name": "Alice Said"
+            },
+            {
+              "artists": [
+                "The Sleeves"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a708c4e2d3c28353d4315125",
+              "name": "Shadows of the Trees"
+            },
+            {
+              "artists": [
+                "Witchfinder General"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aeade503bd6fb71700574462",
+              "name": "Friends Of Hell"
+            },
+            {
+              "artists": [
+                "Peter Criss"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273365862994e45cba29f27e328",
+              "name": "Hooked On Rock 'N' Roll"
+            },
+            {
+              "artists": [
+                "ZZ Top"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273244249873dc5b07420a8bc61",
+              "name": "Asleep in the Desert (Instrumental)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23376880/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 44,
+          "url": "https://open.spotify.com/playlist/3aizRkxltyJixvMKEb4YKT"
         }
       },
       "needs_reconciliation": false
