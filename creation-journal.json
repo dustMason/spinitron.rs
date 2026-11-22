@@ -28781,15 +28781,31 @@
           "start_time": "2026-11-22T00:00:00-0800",
           "end_time": "2026-11-22T03:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5dfGX9A0TDzKkN3yFOSSMx",
         "desired_uris": [
           "spotify:track:4vGNHftfmUFSjEGle0nPIf"
         ],
         "listing": {
+          "broadcast_end": "2026-11-22T03:00:00-0800",
+          "broadcast_start": "2026-11-22T00:00:00-0800",
+          "imported_at": "2026-11-22T14:17:45.564567281+00:00",
+          "last_updated": "2026-11-22 14:17 UTC",
           "name": "KALX - . - 2026-11-22",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Edward White"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ce70abf01c8bb81c98f53ac5",
+              "name": "Puffin' Billy"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23381528/-",
+          "station": "KALX",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/5dfGX9A0TDzKkN3yFOSSMx"
         }
       },
       "needs_reconciliation": false
