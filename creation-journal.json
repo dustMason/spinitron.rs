@@ -49058,6 +49058,59 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23381915": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23381915,
+          "title": "BLUES TIL SUNRISE",
+          "url": "https://spinitron.com/KPOO/pl/23381915/BLUES-TIL-SUNRISE",
+          "start_time": "2026-11-22T02:00:00-0800",
+          "end_time": "2026-11-22T05:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3NDQdoP2pjszk21d0MuaEp",
+          "spotify:track:0MBbMcZozrMhf2MWuNR6ik",
+          "spotify:track:0ILjTa0KSbZQLfd8SlVk8c",
+          "spotify:track:4lla0qZwRVKpyN9FcCt90G",
+          "spotify:track:6tVaGwOKvVmg5eVM5OOnFm",
+          "spotify:track:4ylPgukQzmpX7TZ1NcxAbm",
+          "spotify:track:1PG2Ct94osfTSiBXTFZa3B",
+          "spotify:track:5bMWjJh8i7CXGR0BWoZEgD",
+          "spotify:track:1QUjS6p2MRmnuRg623aymi",
+          "spotify:track:0tmAFTJpNxB7m4znO6Egpg",
+          "spotify:track:5tfKAGpQZpTd4afl0ZjUsF",
+          "spotify:track:6sQcSYrHpqv3mvlxzQXIqK",
+          "spotify:track:5lxw9o6P1cYDoSXPygM0q3",
+          "spotify:track:1fcavOLUW8Tn65TaXOQI5t",
+          "spotify:track:1ELKkbWqtKRwvdCBGvETBp",
+          "spotify:track:1xifiLRb2Uo6kBzZruN6rw",
+          "spotify:track:42TWEGEZXfsPHpjSLWATsH",
+          "spotify:track:3byeGz8DooZDJmh2MIFbft",
+          "spotify:track:1VcOygNTlsZflSZxOoOq36",
+          "spotify:track:1YGXnyQoFNGfnGrzUlMkbZ",
+          "spotify:track:1nJUvlF4nwEKVHF1UNEOua",
+          "spotify:track:0WA2iSMdmXP3mfu7pyEk4J",
+          "spotify:track:6Ev16Gokiwk5ANPYSVIbzM",
+          "spotify:track:6MlZSVUEGxtcvuRmLKsa92",
+          "spotify:track:00pGV4EInVd77cnOIwPTCv",
+          "spotify:track:3KXfAKAUyyJgNjIOsvnjfB",
+          "spotify:track:0WEO3zfMa5b8kgPzhmysXJ",
+          "spotify:track:4mZ0LUFiAseCkU56YT9zoB",
+          "spotify:track:6oavqtFYgu0Zdpgesza6f4",
+          "spotify:track:6PgVDY8GTkxF3GmhVGPzoB",
+          "spotify:track:5TCa0U4qBYJd2QbL8UOCcQ",
+          "spotify:track:154uJXAUVoqvV5on0w03a0"
+        ],
+        "listing": {
+          "name": "KPOO - BLUES TIL SUNRISE - 2026-11-22",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
