@@ -48769,6 +48769,40 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23381467": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23381467,
+          "title": "Cruising Through the 70's ",
+          "url": "https://spinitron.com/KPOO/pl/23381467/Cruising-Through-the-70-s",
+          "start_time": "2026-11-21T22:00:00-0800",
+          "end_time": "2026-11-22T00:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2WS9VYzRnAgXUJNnrlEpPw",
+          "spotify:track:7jCFVrKOfcmoXeMX9NLowo",
+          "spotify:track:3e8hFx2TAIZYDlLoPIFSRT",
+          "spotify:track:5R4zxusoVdad6xEAK5uJuE",
+          "spotify:track:0iHaj0dwFrtn9BnC4ZgoHy",
+          "spotify:track:2mzQAqz9hU7Gn7FUL5X2g8",
+          "spotify:track:0wbspZLVbv26LbHWNy4kAa",
+          "spotify:track:5xanZM1oVhNja7w0PpPavG",
+          "spotify:track:1jTkyJr2oEy7Xth9An2Qww",
+          "spotify:track:20HYmVaZo1G5KVfPmh707j",
+          "spotify:track:7Jp8plj7cKXHwrdLngwazi",
+          "spotify:track:7lWsF1AbQscktKrM7QaKX4",
+          "spotify:track:2izwYuMc1s3fHbTiyu8pje"
+        ],
+        "listing": {
+          "name": "KPOO - Cruising Through the 70's - 2026-11-21",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
