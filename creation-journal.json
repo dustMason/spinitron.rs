@@ -28441,6 +28441,43 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23379999": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23379999,
+          "title": "Cal Football Game",
+          "url": "https://spinitron.com/KALX/pl/23379999/Cal-Football-Game",
+          "start_time": "2026-11-21T16:30:00-0800",
+          "end_time": "2026-11-21T21:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3H0pOe5XhDw5TjalSvEc18",
+          "spotify:track:4kJv4XhNZirlrzXlWj0bex",
+          "spotify:track:3AnUksADMJY3oBcf19rt6j",
+          "spotify:track:070nDmn2Dd38ylll53URLX",
+          "spotify:track:2IddWOxsubrtnRf2ZwFBAR",
+          "spotify:track:1lQV6tQMmgGjr5Q6EPaUE9",
+          "spotify:track:1SyOjtLqqqk2AVLZnRI3bk",
+          "spotify:track:4gmivt1Q8UbnQZMVHLH43v",
+          "spotify:track:5DDbbpxGZFqe2C5LztCun5",
+          "spotify:track:5fla2ejHLTYCdgwNs2DuEU",
+          "spotify:track:4jLzG9tZZGTbc3p2VWjF7r",
+          "spotify:track:1saVrxxmmwCAi1EjyjAIcR",
+          "spotify:track:1bKffBd9glU944RMrWjjky",
+          "spotify:track:0Bp2cPJkH17XzwYOBLqq1j",
+          "spotify:track:26qM5RQgoLupd3Pg7yC6be",
+          "spotify:track:0oSbSiUnmSbUIDexxH7OPd"
+        ],
+        "listing": {
+          "name": "KALX - Cal Football Game - 2026-11-21",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
