@@ -28573,6 +28573,36 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23380849": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23380849,
+          "title": "KALX Live PRE-PARTY!!!",
+          "url": "https://spinitron.com/KALX/pl/23380849/KALX-Live-PRE-PARTY",
+          "start_time": "2026-11-21T16:30:00-0800",
+          "end_time": "2026-11-21T21:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6SrsyE4gczIdplogXheRLU",
+          "spotify:track:18P5Yqx2oRwqrPJE8lLVpo",
+          "spotify:track:5FQ0QtKAYkUAvAuXoCh2UP",
+          "spotify:track:7fSgMvRxUhgve06Q71BEkT",
+          "spotify:track:0eOibY7iwfIHlqO4YLPCmt",
+          "spotify:track:21aVkXDch0A1nXo9he3j8L",
+          "spotify:track:1Dx3VdEllKOXDshSN19AxV",
+          "spotify:track:42tEPGKhxm0te2QJ8B5lOT",
+          "spotify:track:5tsHYSRkGbDKLwE6MZWTbr"
+        ],
+        "listing": {
+          "name": "KALX - KALX Live PRE-PARTY!!! - 2026-11-21",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
