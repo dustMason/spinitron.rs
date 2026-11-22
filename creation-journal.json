@@ -48900,6 +48900,57 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23381595": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23381595,
+          "title": "JJ's Vintage Soul Sounds The 60's",
+          "url": "https://spinitron.com/KPOO/pl/23381595/JJ-s-Vintage-Soul-Sounds-The-60-s",
+          "start_time": "2026-11-22T00:00:00-0800",
+          "end_time": "2026-11-22T02:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3Nc6fVfrORav6B7Ol9zbia",
+          "spotify:track:3pQHlMx7y4tn3o9aWW1cJn",
+          "spotify:track:0tFcLqJMik9ZhWne94mSYg",
+          "spotify:track:07bBelacrGl6v9UaectpNq",
+          "spotify:track:3LXaPmSJnX2KScaV2rfth2",
+          "spotify:track:2I5Ol3x9G2p6xZ7LKCwgC2",
+          "spotify:track:0qaJtX2AMT7SZ33bwi5vDZ",
+          "spotify:track:6orpSjwf5CehhLqbq5mOfm",
+          "spotify:track:1v2gNspuP1ZCCDxl9sndXg",
+          "spotify:track:3e9SEmz7saZxYCj5qL74Z5",
+          "spotify:track:6ePzDYyzigaLDa7HvPLbv5",
+          "spotify:track:0M2vtsUONPw7bLnlTJ9D7U",
+          "spotify:track:1DCy6B3Qh4P57JRmHdsLuJ",
+          "spotify:track:2ghHHcT9QbAfbyo1EWEJ3O",
+          "spotify:track:3PX2hfTvjRC0n8K6JCWtDM",
+          "spotify:track:52Gj8YMcK0SeUodBoSVmZL",
+          "spotify:track:48mnXmOaMs5yUcRRsbj9vi",
+          "spotify:track:2pi7jHHGeGJDijLKgeElxN",
+          "spotify:track:0vVaO5I34kq93auiHS7k2O",
+          "spotify:track:2R5YEWPaRyxA8QiZYNzDIx",
+          "spotify:track:74fWDu4R3bcz3EvDM4KlIg",
+          "spotify:track:3LiDSGUN5XKppTfEIHf3k1",
+          "spotify:track:2dFzg0b9AQDsw79XPNs6eu",
+          "spotify:track:5Ng5Mv5HResf2QFv1drpAd",
+          "spotify:track:4VLMTbHZEy8eqrxa9D4HNB",
+          "spotify:track:7LooTX9aJohwggAetMv3xN",
+          "spotify:track:7zd8y097BTLDLC9zVDdgS2",
+          "spotify:track:2pziBGjvtizHRe6G5UEwuU",
+          "spotify:track:25tefEyzm3oyuV2nUKsKjM",
+          "spotify:track:4EsQOJs7PRS8zVrHPr4Lzb"
+        ],
+        "listing": {
+          "name": "KPOO - JJ's Vintage Soul Sounds The 60's - 2026-11-22",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
