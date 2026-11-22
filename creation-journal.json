@@ -48315,6 +48315,41 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23379677": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23379677,
+          "title": "Andanzas ",
+          "url": "https://spinitron.com/KPOO/pl/23379677/Andanzas",
+          "start_time": "2026-11-21T15:00:00-0800",
+          "end_time": "2026-11-21T16:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4AMROHcf3FCIuJPyCsWpN1",
+          "spotify:track:0JHt5z2n6coKCv0OMrOWtB",
+          "spotify:track:7he82YqK1AVxgy8mgerNrz",
+          "spotify:track:0Nt89asqgv4rgdiK4UWIgV",
+          "spotify:track:2LYI5UDADHSBmK1zxcjS8j",
+          "spotify:track:6sOmzRCdlw4P15iKPNtKz4",
+          "spotify:track:0i8aEQ8LtJR1zUWravSa3x",
+          "spotify:track:13NCZrsRK0k7UmbtPJBqwM",
+          "spotify:track:5Z7aOqQlvp4bYnyjTs2YQu",
+          "spotify:track:3FuxnufmSxdcUl7ocmDUXy",
+          "spotify:track:7i4k0nde4nCCQFMFH0HMc5",
+          "spotify:track:6kH1AprbEC9G5FjDJy1XAa",
+          "spotify:track:5czHXYctLN5J5ARoZOzC7b",
+          "spotify:track:2uHx9DP8G1Io5ddlDSItOp"
+        ],
+        "listing": {
+          "name": "KPOO - Andanzas - 2026-11-21",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
