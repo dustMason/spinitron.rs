@@ -28020,7 +28020,7 @@
           "start_time": "2026-11-21T10:00:00-0800",
           "end_time": "2026-11-21T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "70EYlbuF0JnAJciTLW0uYS",
         "desired_uris": [
@@ -28046,8 +28046,102 @@
           "spotify:track:6wNbhsTOihivQjZh5vLcsJ"
         ],
         "listing": {
+          "broadcast_end": "2026-11-21T12:00:00-0800",
+          "broadcast_start": "2026-11-21T10:00:00-0800",
+          "imported_at": "2026-11-22T14:13:44.458380679+00:00",
+          "last_updated": "2026-11-22 14:13 UTC",
           "name": "KALX - FREEFORM with DJ Slates - 2026-11-21",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Wipers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a99d8fd95b87b4275cecc3e3",
+              "name": "Youth of America"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "Six Shot Morning"
+            },
+            {
+              "artists": [
+                "Spacemen 3"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27338674617c9b966926416082e",
+              "name": "Revolution"
+            },
+            {
+              "artists": [
+                "Pere Ubu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320af14e1e413e4d3b4dbd332",
+              "name": "30 Seconds over Tokyo"
+            },
+            {
+              "artists": [
+                "Big Thief"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273608c444310857c06bdc65361",
+              "name": "Spud Infinity"
+            },
+            {
+              "artists": [
+                "Black Mountain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738dd3136318fe5488f2f9f123",
+              "name": "(Over and Over) The Chain"
+            },
+            {
+              "artists": [
+                "The Feelies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734de964b9e028a2d181611595",
+              "name": "Loveless Love"
+            },
+            {
+              "artists": [
+                "Sylvan Esso"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730e1041ec90174655aa886509",
+              "name": "On & On"
+            },
+            {
+              "artists": [
+                "The Stone Roses"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf1f6466a493eb73d6d9d280",
+              "name": "Fools Gold - Remastered 2009"
+            },
+            {
+              "artists": [
+                "The Womack Sisters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737cd19920a892d7d918302316",
+              "name": "Chauffeur"
+            },
+            {
+              "artists": [
+                "The Cure",
+                "Mark Saunders"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730447ba639949dd26478decf6",
+              "name": "A Forest"
+            },
+            {
+              "artists": [
+                "Faust"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734d048c17fea8ef26530306ec",
+              "name": "Mamie Is Blue"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23378574/FREEFORM-with-DJ-Slates",
+          "station": "KALX",
+          "track_count": 20,
+          "url": "https://open.spotify.com/playlist/70EYlbuF0JnAJciTLW0uYS"
         }
       },
       "needs_reconciliation": false
