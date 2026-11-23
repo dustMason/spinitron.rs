@@ -24448,6 +24448,31 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23365401": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23365401,
+          "title": "Bear Talk",
+          "url": "https://spinitron.com/KALX/pl/23365401/Bear-Talk",
+          "start_time": "2026-11-18T21:30:00-0800",
+          "end_time": "2026-11-18T22:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3GqPbFQIpp3df2Ug8B3qSr"
+        ],
+        "source_isrcs": {
+          "1": "USWB10000518"
+        },
+        "listing": {
+          "name": "KALX - Bear Talk - 2026-11-18",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23365402": {
       "entry": {
         "station": "KALX",
