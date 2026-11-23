@@ -29460,7 +29460,7 @@
           "start_time": "2026-11-22T08:00:00-0800",
           "end_time": "2026-11-22T10:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0siMe3olnLsng93noOrytj",
         "desired_uris": [
@@ -29508,8 +29508,102 @@
           "20": "USMO17100047"
         },
         "listing": {
+          "broadcast_end": "2026-11-22T10:00:00-0800",
+          "broadcast_start": "2026-11-22T08:00:00-0800",
+          "imported_at": "2026-11-23T00:46:12.043955870+00:00",
+          "last_updated": "2026-11-23 00:46 UTC",
           "name": "KALX - FREEFORM - 2026-11-22 8:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sunday Mourners"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273667333f3eabedf725b19985b",
+              "name": "Darling"
+            },
+            {
+              "artists": [
+                "Exploding Zones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f9c8f803df31ec43b9504e7",
+              "name": "Sun Pill"
+            },
+            {
+              "artists": [
+                "The Purrs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ca00d14fe3fd4959825b4a11",
+              "name": "A Sound That Moves Our Soul"
+            },
+            {
+              "artists": [
+                "Marbled Eye"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733e2b0ed09aeef6fd55f7edcc",
+              "name": "Fade Away"
+            },
+            {
+              "artists": [
+                "Django Reinhardt",
+                "Stéphane Grappelli"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273585fa991d18c3b3ffd65f2bf",
+              "name": "Djangology"
+            },
+            {
+              "artists": [
+                "Built To Spill"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273394d5461e090a1ade16b12ed",
+              "name": "Randy Described Eternity"
+            },
+            {
+              "artists": [
+                "Phoebe Bridgers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325a647ace83ba32770ab5d0f",
+              "name": "Kill Me"
+            },
+            {
+              "artists": [
+                "Kamasi Washington"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e5bd8e6421836818cddeb2d6",
+              "name": "Lesanu"
+            },
+            {
+              "artists": [
+                "Bill Callahan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736172648d29acadc71f725e35",
+              "name": "Why Do Men Sing"
+            },
+            {
+              "artists": [
+                "Water From Your Eyes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c002b9faf6370e2fa1d15d67",
+              "name": "14"
+            },
+            {
+              "artists": [
+                "John Cale"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736203ecb2863d44223da36613",
+              "name": "Paris 1919 - Remastered 2024"
+            },
+            {
+              "artists": [
+                "Jeff Buckley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273488ec830a779ebab921a705c",
+              "name": "The Sky Is a Landfill"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23383076/FREEFORM",
+          "station": "KALX",
+          "track_count": 20,
+          "url": "https://open.spotify.com/playlist/0siMe3olnLsng93noOrytj"
         }
       },
       "needs_reconciliation": false
