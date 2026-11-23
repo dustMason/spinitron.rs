@@ -7,7 +7,7 @@ use std::collections::{HashMap, HashSet};
 use std::fs;
 use std::path::Path;
 
-use crate::catalog::{ArchiveSpotify, CreationRejected, RemotePlaylist};
+use crate::catalog::{ArchiveSpotify, CreationRejected, Entry, RemotePlaylist, ResolvedTracks};
 use crate::models::{ShowGroup, Track};
 
 const CACHE_DIR: &str = "spotify_cache";
@@ -76,6 +76,12 @@ fn matches_full_metadata(candidate: &Value, track: &Track) -> bool {
 fn track_search_cache_key(track: &Track) -> String {
     // Version the policy so old first-result matches cannot bypass ranking.
     // Album is significant: the same song can explicitly request another edition.
+    if let Some(code) = &track.isrc {
+        return format!(
+            "recording-v1:{}",
+            serde_json::json!([code, track.artist, track.song, track.album])
+        );
+    }
     format!(
         "metadata-v1:{}",
         serde_json::json!([track.artist, track.song, track.album])
@@ -144,8 +150,14 @@ fn best_search_match<'a>(
                         .filter_map(|delimiter| suffix.strip_prefix(delimiter))
                         .any(|annotation| album_names_annotation(&album, annotation))
                 });
-            if !matches_artist(candidate, &artist)
-                || !(exact_title || (exact_album && annotated_title))
+            let same_recording = track.isrc.as_deref().is_some_and(|code| {
+                candidate["external_ids"]["isrc"]
+                    .as_str()
+                    .is_some_and(|id| id.eq_ignore_ascii_case(code))
+            });
+            if !same_recording
+                && (!matches_artist(candidate, &artist)
+                    || !(exact_title || (exact_album && annotated_title)))
             {
                 return None;
             }
@@ -153,6 +165,7 @@ fn best_search_match<'a>(
             // plausible versions, never promote an older unrelated search hit.
             Some((
                 (
+                    !same_recording,
                     !exact_album,
                     !exact_title,
                     candidate_release_date(candidate),
@@ -231,6 +244,12 @@ struct ArchiveInventory {
     // changed membership behind deduplication. Only these fields are compared.
     entries: Vec<Value>,
     repeated_ids: usize,
+}
+
+struct PlaylistTrack {
+    uri: String,
+    linked_from: Option<String>,
+    isrc: Option<String>,
 }
 
 pub struct SpotifyClient {
@@ -418,6 +437,43 @@ impl SpotifyClient {
             .as_secs()
     }
 
+    async fn search_items(&mut self, query: &str) -> Result<Vec<Value>> {
+        let encoded = urlencoding::encode(query);
+        let mut response = self
+            .archive_request(
+                reqwest::Method::GET,
+                &format!("search?q={encoded}&type=track&limit=10"),
+                None,
+            )
+            .await?;
+        self.total_api_calls += 1;
+        response
+            .get_mut("tracks")
+            .and_then(|tracks| tracks.get_mut("items"))
+            .and_then(Value::as_array_mut)
+            .map(std::mem::take)
+            .ok_or_else(|| anyhow!("Spotify search response is missing tracks.items"))
+    }
+
+    async fn find_track(&mut self, track: &Track) -> Result<Option<Value>> {
+        if let Some(code) = &track.isrc {
+            let mut hits = self.search_items(&format!("isrc:{code}")).await?;
+            hits.retain(|hit| {
+                hit["external_ids"]["isrc"]
+                    .as_str()
+                    .is_some_and(|id| id.eq_ignore_ascii_case(code))
+                    && hit["uri"]
+                        .as_str()
+                        .is_some_and(|uri| uri.starts_with("spotify:track:"))
+            });
+            if let Some(hit) = best_search_match(&hits, track, false) {
+                return Ok(Some(hit.clone()));
+            }
+        }
+        let (query, shortened) = search_query(track);
+        Ok(best_search_match(&self.search_items(&query).await?, track, shortened).cloned())
+    }
+
     async fn search_track_with_cache_info(
         &mut self,
         track: &Track,
@@ -435,25 +491,8 @@ impl SpotifyClient {
             return Ok((cached_entry.track.clone(), false)); // false = no API call made
         }
 
-        // Search Spotify
-        let (query, shortened) = search_query(track);
-        let encoded_query = urlencoding::encode(&query);
-
-        // Searches are reads: use the same bounded retry/timeout handling as
-        // archive reads. An upstream 502 must not become a cached "no match".
-        let json = self
-            .archive_request(
-                reqwest::Method::GET,
-                &format!("search?q={encoded_query}&type=track&limit=10"),
-                None,
-            )
-            .await?;
-        let tracks = json["tracks"]["items"]
-            .as_array()
-            .ok_or_else(|| anyhow!("Spotify search response is missing tracks.items"))?;
-
         let spotify_track = {
-            if let Some(track_data) = best_search_match(tracks, track, shortened) {
+            if let Some(track_data) = self.find_track(track).await? {
                 Some(SpotifyTrack {
                     id: track_data["id"].as_str().unwrap_or("").to_string(),
                     name: track_data["name"].as_str().unwrap_or("").to_string(),
@@ -481,7 +520,6 @@ impl SpotifyClient {
         };
         self.track_cache.entries.insert(search_key, cache_entry);
 
-        self.total_api_calls += 1;
         Ok((spotify_track, true)) // true = API call was made
     }
 
@@ -510,13 +548,18 @@ impl SpotifyClient {
 
         let playlist = if let Some(existing) = existing_playlist {
             // Finish fallible track searches before removing existing music.
-            let track_uris = self.resolve_track_uris(&all_tracks).await?;
+            let track_uris = self.resolve_tracks(&all_tracks).await?.uris;
             if track_uris.is_empty() {
                 return Err(anyhow!(
                     "No Spotify tracks matched; preserving existing playlist"
                 ));
             }
-            let current_uris = self.get_playlist_tracks(&existing.id).await?;
+            let current_uris: Vec<_> = self
+                .get_playlist_tracks(&existing.id)
+                .await?
+                .into_iter()
+                .map(|track| track.uri)
+                .collect();
             // Compare the complete ordered sequence, including repeated tracks.
             // A new scrape/date alone must not change Spotify's activity or our
             // website's Last updated date, which comes from the description.
@@ -561,7 +604,7 @@ impl SpotifyClient {
             }
 
             // Do not create an empty playlist if track lookup fails.
-            let track_uris = self.resolve_track_uris(&all_tracks).await?;
+            let track_uris = self.resolve_tracks(&all_tracks).await?.uris;
             if track_uris.is_empty() {
                 return Err(anyhow!("No Spotify tracks matched; no playlist created"));
             }
@@ -631,8 +674,8 @@ impl SpotifyClient {
         Ok(())
     }
 
-    async fn resolve_track_uris(&mut self, tracks: &[Track]) -> Result<Vec<String>> {
-        let mut track_uris = Vec::new();
+    async fn resolve_tracks(&mut self, tracks: &[Track]) -> Result<ResolvedTracks> {
+        let mut matched = ResolvedTracks::default();
         let mut found_tracks = 0;
         let mut not_found_tracks = 0;
         let mut api_calls_made = 0;
@@ -650,7 +693,12 @@ impl SpotifyClient {
 
             match result {
                 Some(spotify_track) => {
-                    track_uris.push(spotify_track.uri);
+                    matched.uris.push(spotify_track.uri);
+                    if let Some(code) = &track.isrc {
+                        matched
+                            .source_isrcs
+                            .insert(matched.uris.len(), code.clone());
+                    }
                     found_tracks += 1;
                 }
                 None => {
@@ -678,7 +726,7 @@ impl SpotifyClient {
             found_tracks, not_found_tracks, cache_hits, api_calls_made
         );
 
-        Ok(track_uris)
+        Ok(matched)
     }
 
     async fn add_track_uris_to_playlist(
@@ -718,8 +766,8 @@ impl SpotifyClient {
         Ok(())
     }
 
-    async fn get_playlist_tracks(&self, playlist_id: &str) -> Result<Vec<String>> {
-        let mut all_track_uris = Vec::new();
+    async fn get_playlist_tracks(&self, playlist_id: &str) -> Result<Vec<PlaylistTrack>> {
+        let mut tracks = Vec::new();
         let mut url = Some(format!(
             "{}/playlists/{}/tracks?limit=100",
             self.api_base_url, playlist_id
@@ -750,7 +798,16 @@ impl SpotifyClient {
                     .ok_or_else(|| {
                         anyhow!("Cannot compare playlist contents: track URI unavailable")
                     })?;
-                all_track_uris.push(uri.to_string());
+                tracks.push(PlaylistTrack {
+                    uri: uri.to_owned(),
+                    linked_from: item["track"]["linked_from"]["uri"]
+                        .as_str()
+                        .map(str::to_owned),
+                    isrc: item["track"]["external_ids"]["isrc"]
+                        .as_str()
+                        .filter(|s| crate::models::valid_isrc(s))
+                        .map(str::to_ascii_uppercase),
+                });
             }
 
             url = match json.get("next") {
@@ -764,7 +821,7 @@ impl SpotifyClient {
             };
         }
 
-        Ok(all_track_uris)
+        Ok(tracks)
     }
 
     /// Fetch up to `limit` tracks for a preview (track name, artists, and largest album image URL).
@@ -774,8 +831,8 @@ impl SpotifyClient {
         limit: usize,
     ) -> Result<Vec<(String, Vec<String>, String)>> {
         let url = format!(
-            "https://api.spotify.com/v1/playlists/{}/tracks?limit={}&fields=items(track(name,artists(name),album(images)))",
-            playlist_id, limit
+            "{}/playlists/{}/tracks?limit={}&fields=items(track(name,artists(name),album(images)))",
+            self.api_base_url, playlist_id, limit
         );
         let response = self
             .client
@@ -986,6 +1043,49 @@ impl SpotifyClient {
 }
 
 impl SpotifyClient {
+    async fn track_isrc(&self, uri: &str) -> Result<Option<String>> {
+        let Some(id) = uri
+            .strip_prefix("spotify:track:")
+            .filter(|id| id.len() == 22 && id.bytes().all(|b| b.is_ascii_alphanumeric()))
+        else {
+            return Ok(None);
+        };
+        let track = self
+            .archive_request(reqwest::Method::GET, &format!("tracks/{id}"), None)
+            .await?;
+        if track["uri"].as_str() != Some(uri) && track["linked_from"]["uri"].as_str() != Some(uri) {
+            return Ok(None);
+        }
+        Ok(track["external_ids"]["isrc"]
+            .as_str()
+            .filter(|s| crate::models::valid_isrc(s))
+            .map(str::to_ascii_uppercase))
+    }
+
+    async fn recording_matches(
+        &self,
+        track: &PlaylistTrack,
+        expected: &str,
+        source: Option<&str>,
+    ) -> Result<bool> {
+        if track.uri == expected || track.linked_from.as_deref() == Some(expected) {
+            return Ok(true);
+        }
+        // Only mismatches require recording evidence. Some playlist responses
+        // omit the ISRC, and older archive records have only a Spotify URI.
+        let actual = match &track.isrc {
+            Some(code) => code.clone(),
+            None => match self.track_isrc(&track.uri).await? {
+                Some(code) => code,
+                None => return Ok(false),
+            },
+        };
+        if let Some(code) = source {
+            return Ok(actual.eq_ignore_ascii_case(code));
+        }
+        Ok(self.track_isrc(expected).await?.as_ref() == Some(&actual))
+    }
+
     async fn archive_request(
         &self,
         method: reqwest::Method,
@@ -1199,13 +1299,13 @@ impl ArchiveSpotify for SpotifyClient {
         &self.user_id
     }
 
-    async fn resolve(&mut self, tracks: &[Track]) -> Result<Vec<String>> {
+    async fn resolve(&mut self, tracks: &[Track]) -> Result<ResolvedTracks> {
         if tracks.len() > 5000 {
             return Err(anyhow!(
                 "Broadcast exceeds 5000 tracks; refusing to truncate the archive"
             ));
         }
-        self.resolve_track_uris(tracks).await
+        self.resolve_tracks(tracks).await
     }
 
     async fn find_archive(
@@ -1308,8 +1408,21 @@ impl ArchiveSpotify for SpotifyClient {
         )
     }
 
-    async fn track_uris(&self, id: &str) -> Result<Vec<String>> {
-        self.get_playlist_tracks(id).await
+    async fn comparable_uris(&self, id: &str, entry: &Entry) -> Result<Vec<String>> {
+        let tracks = self.get_playlist_tracks(id).await?;
+        if tracks.len() != entry.desired_uris.len() {
+            return Ok(tracks.into_iter().map(|track| track.uri).collect());
+        }
+        let mut uris = Vec::with_capacity(tracks.len());
+        for (i, (track, expected)) in tracks.into_iter().zip(&entry.desired_uris).enumerate() {
+            let source = entry.source_isrcs.get(&(i + 1)).map(String::as_str);
+            uris.push(if self.recording_matches(&track, expected, source).await? {
+                expected.clone()
+            } else {
+                track.uri
+            });
+        }
+        Ok(uris)
     }
 
     async fn rename_archive(&self, id: &str, name: &str) -> Result<()> {
@@ -1414,6 +1527,7 @@ mod tests {
                     artist: "Test Artist".into(),
                     song: "Test Song".into(),
                     album: String::new(),
+                    isrc: None,
                     label: None,
                     time: None,
                 }],

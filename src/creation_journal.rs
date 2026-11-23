@@ -347,6 +347,7 @@ fn validate(data: &Data, owner: &str) -> Result<()> {
         if Catalog::key(&entry.station, show) != *key
             || entry.owner_id.as_deref() != Some(owner)
             || entry.desired_uris.is_empty()
+            || !entry.valid_source_isrcs()
             || !matches!(
                 entry.state,
                 State::Prepared
