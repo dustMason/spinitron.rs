@@ -51895,6 +51895,91 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23387189": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23387189,
+          "title": "Music Variety",
+          "url": "https://spinitron.com/KPOO/pl/23387189/Music-Variety",
+          "start_time": "2026-11-23T02:00:00-0800",
+          "end_time": "2026-11-23T05:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:19ZD2l7CQBTN7gO9U8Yu1i",
+          "spotify:track:12n47FuVsiUGug0xkiGkSc",
+          "spotify:track:0WtidEjHz0D9cruaeWM3ki",
+          "spotify:track:5CVDGSdBKzw1MQzhgnSzGD",
+          "spotify:track:1ZPykNpsW4UQ22vHKox2sR",
+          "spotify:track:2eJZVOiBK2webUMJnakSf1",
+          "spotify:track:36SJ7ZFx8J1f1RsewmUwMX",
+          "spotify:track:0j7GkuzrnCBdU1XnuKl8ve",
+          "spotify:track:6z8u2hCiZefgOtCjxFu4M3",
+          "spotify:track:1aI7g5gU3ALgRd9OOYfCma",
+          "spotify:track:1qA8TmG73w9Hqqg4qQhujb",
+          "spotify:track:4NDhPOqz16QNSJKWfdWvXO",
+          "spotify:track:6lOUqLXIN3RHiI1dF248gq",
+          "spotify:track:4XQPy6Guw71YokpKuQelch",
+          "spotify:track:31qb2AYm2jeJqQ23GRCbE5",
+          "spotify:track:7Jxy2wI4rm5QWkeX9WiJpa",
+          "spotify:track:4Sh3TS6dN27azdIix4Wecl",
+          "spotify:track:2QWwzvBfYb6UNBMagkSXjj",
+          "spotify:track:6DZfoO5tVl2hlpKm5VIX5D",
+          "spotify:track:7bCnlOahIf6Cvh0ECvzWIt",
+          "spotify:track:2MOCxXOCRM6M7aBfCAn410",
+          "spotify:track:4oXw1Y0Qd1IqfPhHlMHfQI",
+          "spotify:track:742OPHAP7h02PaiTZ7r2mI",
+          "spotify:track:3nKXq2ZeJ5dx3OB66InEeM",
+          "spotify:track:0lvYHUvKXt9SrCsu9ELmKz",
+          "spotify:track:05m5JkviLvStirTq1Lsg2r",
+          "spotify:track:3HlqxhNhUrpSP2TvXuzFZb",
+          "spotify:track:5z6SXy2zCa7xoNBmZS91lX",
+          "spotify:track:185K4pzpeWg2Gg3DZL2sxN",
+          "spotify:track:4vvnjd7gmhfepLqp6p093g",
+          "spotify:track:4nA8PEfbzRj5vlcbiDRQPX"
+        ],
+        "source_isrcs": {
+          "1": "CAU118200478",
+          "2": "US2HK0916705",
+          "3": "US2HK1430807",
+          "4": "USSM11003453",
+          "5": "USSM11003452",
+          "6": "USSM11003451",
+          "7": "USEE10182941",
+          "8": "CAU118107185",
+          "9": "USAT20612732",
+          "10": "USSM17901010",
+          "11": "QMRSZ1701583",
+          "12": "CAU118200554",
+          "13": "USWB10600140",
+          "14": "CAU118113805",
+          "15": "QMRSZ1701585",
+          "16": "CAU118000201",
+          "17": "CAU118200466",
+          "18": "QMRSZ1601516",
+          "19": "CAU118107504",
+          "20": "CAU118100426",
+          "21": "ITC899000211",
+          "22": "USC4R1800671",
+          "23": "FR22F8200360",
+          "24": "USCA28100071",
+          "25": "CAU118100430",
+          "26": "QMSGD1320065",
+          "27": "FR10S1410935",
+          "28": "USA561421245",
+          "29": "GBEEJ0203087",
+          "30": "GBQRF1117439",
+          "31": "GBDAG1890191"
+        },
+        "listing": {
+          "name": "KPOO - Music Variety - 2026-11-23",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
