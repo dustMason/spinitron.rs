@@ -51515,6 +51515,51 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23385883": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23385883,
+          "title": "Sounds of the City",
+          "url": "https://spinitron.com/KPOO/pl/23385883/Sounds-of-the-City",
+          "start_time": "2026-11-22T19:00:00-0800",
+          "end_time": "2026-11-22T22:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6eZfLDInqkFsD8I7NYrO9l",
+          "spotify:track:056efyG5lLtPN736jDi3NU",
+          "spotify:track:3FQMXIMdugNymu6w6zb6bf",
+          "spotify:track:0HfW7zmRUpsrwg3nVWn7GC",
+          "spotify:track:3yb6VvQtkNXrk0yctAbOj4",
+          "spotify:track:2jykzW0aaU0BMRB0CnEQLQ",
+          "spotify:track:2IPAsM3R2WOP5JVsYnX9Zw",
+          "spotify:track:1MVrkYaKnQIEWfT3IqJI8B",
+          "spotify:track:15bZZV0zABwiMq2mutmPGf",
+          "spotify:track:1msPPPJzZgtqLI71y8aYv3",
+          "spotify:track:7poCmfMRbKgPQoA1RBIMGE"
+        ],
+        "source_isrcs": {
+          "1": "USMC16251920",
+          "2": "USFI86700186",
+          "3": "USFI86700187",
+          "4": "USFI87400590",
+          "5": "USUM71501785",
+          "6": "USUM71501791",
+          "7": "USBN28600458",
+          "8": "USBN20701143",
+          "9": "USFI85900699",
+          "10": "USUM70951035",
+          "11": "GB6PA0800541"
+        },
+        "listing": {
+          "name": "KPOO - Sounds of the City - 2026-11-22",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
