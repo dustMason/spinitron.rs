@@ -51906,7 +51906,7 @@
           "start_time": "2026-11-23T02:00:00-0800",
           "end_time": "2026-11-23T05:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2T5oLlivT4xazCa9FLPw1n",
         "desired_uris": [
@@ -51976,8 +51976,103 @@
           "31": "GBDAG1890191"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T05:00:00-0800",
+          "broadcast_start": "2026-11-23T02:00:00-0800",
+          "imported_at": "2026-11-23T17:39:44.668861023+00:00",
+          "last_updated": "2026-11-23 17:39 UTC",
           "name": "KPOO - Music Variety - 2026-11-23",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Next Movement"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27376501fc621b22bbc743455f8",
+              "name": "Let's Work It Out"
+            },
+            {
+              "artists": [
+                "O.V. Wright"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273430508514505f0e6b27c5512",
+              "name": "Let's Straighten It Out"
+            },
+            {
+              "artists": [
+                "O.V. Wright"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737bfd04e8571324c62d7a9a36",
+              "name": "Medley - God Blessed Our Love / When a Man Loves a Woman / That's How Strong My Love Is"
+            },
+            {
+              "artists": [
+                "Silk",
+                "Joseph B. Jefferson",
+                "Charles B. Simmons"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f706974ce479fc59ee9704a",
+              "name": "Keep Dancin' - 12\" Version"
+            },
+            {
+              "artists": [
+                "Silk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f706974ce479fc59ee9704a",
+              "name": "Get On Up"
+            },
+            {
+              "artists": [
+                "Silk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f706974ce479fc59ee9704a",
+              "name": "Debbie's Disco Theme"
+            },
+            {
+              "artists": [
+                "Sérgio Mendes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b415fc6505fe00219d017df4",
+              "name": "Magalenha"
+            },
+            {
+              "artists": [
+                "Northend & Michelle Wallace"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735e43ba43055d37d5b3832d8a",
+              "name": "Happy Days"
+            },
+            {
+              "artists": [
+                "Kleeer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee43f5cb6656df4532ba840f",
+              "name": "Tonight's the Night (Good Time)"
+            },
+            {
+              "artists": [
+                "Cheryl Lynn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bcc7739e30e4e05f55b33599",
+              "name": "Love Bomb"
+            },
+            {
+              "artists": [
+                "Funk Deluxe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27334333a4d242d3d47dca23f08",
+              "name": "This Time (12\" Version) ( 2017 - Remaster)"
+            },
+            {
+              "artists": [
+                "Empress"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27349077c374ad604aa5f4a3fff",
+              "name": "Take a Risk - Remix"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23387189/Music-Variety",
+          "station": "KPOO",
+          "track_count": 31,
+          "url": "https://open.spotify.com/playlist/2T5oLlivT4xazCa9FLPw1n"
         }
       },
       "needs_reconciliation": false
