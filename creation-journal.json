@@ -51658,7 +51658,7 @@
           "start_time": "2026-11-22T22:00:00-0800",
           "end_time": "2026-11-23T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7pzRViywLKhVPWm8cKPES8",
         "desired_uris": [
@@ -51797,8 +51797,101 @@
           "66": "CAU118200486"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T02:00:00-0800",
+          "broadcast_start": "2026-11-22T22:00:00-0800",
+          "imported_at": "2026-11-23T17:39:03.764556741+00:00",
+          "last_updated": "2026-11-23 17:39 UTC",
           "name": "KPOO - From The Vaults Record Shop Oldies - 2026-11-22",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Isley Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b5328c079f9d9611f07a5fb4",
+              "name": "Move Over and Let Me Dance, Pt. 1"
+            },
+            {
+              "artists": [
+                "The Hueys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e70c7a0fc4476c65453babb",
+              "name": "Coo Coo Over You"
+            },
+            {
+              "artists": [
+                "Bobby Darin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273663b8b395f895362074ce956",
+              "name": "Skylark"
+            },
+            {
+              "artists": [
+                "Otis Redding"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db10f9f950a3e5b136745d6a",
+              "name": "(Sittin' On) The Dock of the Bay"
+            },
+            {
+              "artists": [
+                "Smokey Robinson & The Miracles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735d9d16159f4b500e9b713c4a",
+              "name": "Save Me"
+            },
+            {
+              "artists": [
+                "The Royal Teens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27362445f0580d32a042e573979",
+              "name": "Short Shorts"
+            },
+            {
+              "artists": [
+                "Smiley Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273220015ef525fda00ced7dbbb",
+              "name": "Shame, Shame, Shame"
+            },
+            {
+              "artists": [
+                "Baby Washington"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273522cd84ad9f6b4a059fa30f6",
+              "name": "The Time"
+            },
+            {
+              "artists": [
+                "Gordon Lightfoot"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27316659de824475701b97f6ae9",
+              "name": "Sundown"
+            },
+            {
+              "artists": [
+                "Eugene Church & The Fellows"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730154f125d56db1ce2f170293",
+              "name": "Pretty Girls Everywhere"
+            },
+            {
+              "artists": [
+                "Kay Starr"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cbdaaa30dbe2d714f65bf788",
+              "name": "Lazy River"
+            },
+            {
+              "artists": [
+                "Frankie Valli & The Four Seasons"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cfaea6dfa9398c7f8adea199",
+              "name": "December, 1963 (Oh What a Night!)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23386438/From-The-Vaults-Record-Shop-Oldies",
+          "station": "KPOO",
+          "track_count": 66,
+          "url": "https://open.spotify.com/playlist/7pzRViywLKhVPWm8cKPES8"
         }
       },
       "needs_reconciliation": false
