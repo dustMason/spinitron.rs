@@ -29114,7 +29114,7 @@
           "start_time": "2026-11-22T03:00:00-0800",
           "end_time": "2026-11-22T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3ZsNxSaX4uR7wrv5XlCBWt",
         "desired_uris": [
@@ -29193,8 +29193,102 @@
           "36": "USCGH0556400"
         },
         "listing": {
+          "broadcast_end": "2026-11-22T06:00:00-0800",
+          "broadcast_start": "2026-11-22T03:00:00-0800",
+          "imported_at": "2026-11-23T00:44:11.049380998+00:00",
+          "last_updated": "2026-11-23 00:44 UTC",
           "name": "KALX - FREEFORM - 2026-11-22",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sutros"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27300c3a0abf09fb793383f2c8c",
+              "name": "Marigold"
+            },
+            {
+              "artists": [
+                "Son Rompe Pera"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f3a62fa65d9d39a6de2a021c",
+              "name": "Nada Que Hacer"
+            },
+            {
+              "artists": [
+                "Swell Maps"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273096b1e93388ac33479cbf9e9",
+              "name": "Another Song"
+            },
+            {
+              "artists": [
+                "Los Royals De Pucallpa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273194db2bc61c1738ea9e4d271",
+              "name": "Descarga Royal"
+            },
+            {
+              "artists": [
+                "Spice Boys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a8d441cd68b43d43620cac64",
+              "name": "Can't Turn Back"
+            },
+            {
+              "artists": [
+                "Silicone Prairie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f40df5d1d468fb514e9f3030",
+              "name": "Willkommen"
+            },
+            {
+              "artists": [
+                "Silicone Prairie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f40df5d1d468fb514e9f3030",
+              "name": "Cows"
+            },
+            {
+              "artists": [
+                "Unity"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27327aa04c9d5dca5fe150e87ec",
+              "name": "3 Weeks"
+            },
+            {
+              "artists": [
+                "abracadabra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d899a6af0c1b67ab441d2b5",
+              "name": "peel away"
+            },
+            {
+              "artists": [
+                "Lee \"Scratch\" Perry",
+                "Mouse On Mars"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db7bf6b6361bc3940021568f",
+              "name": "Hallo Shiva"
+            },
+            {
+              "artists": [
+                "The Serfs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bee09cb21eb0148618d214e2",
+              "name": "Took It All Along"
+            },
+            {
+              "artists": [
+                "Cherushii"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27333fb5db961f7e9e4a6bb919d",
+              "name": "Still Dreaming"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23382111/FREEFORM",
+          "station": "KALX",
+          "track_count": 36,
+          "url": "https://open.spotify.com/playlist/3ZsNxSaX4uR7wrv5XlCBWt"
         }
       },
       "needs_reconciliation": false
