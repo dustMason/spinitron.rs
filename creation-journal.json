@@ -30455,7 +30455,7 @@
           "start_time": "2026-11-22T21:00:00-0800",
           "end_time": "2026-11-23T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6LeeETLno2K1VO5fxg9doV",
         "desired_uris": [
@@ -30520,8 +30520,102 @@
           "29": "US37K0400696"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T00:00:00-0800",
+          "broadcast_start": "2026-11-22T21:00:00-0800",
+          "imported_at": "2026-11-23T17:35:46.522786888+00:00",
+          "last_updated": "2026-11-23 17:35 UTC",
           "name": "KALX - Sunday Scaries - 2026-11-22",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Billy Idol"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a20464e6697dc1149d3a5cdc",
+              "name": "White Wedding - Pt. 1"
+            },
+            {
+              "artists": [
+                "The White Stripes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273033dbfae219de887bd94952a",
+              "name": "Hotel Yorba"
+            },
+            {
+              "artists": [
+                "Slaughter Beach, Dog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27331f1b75908a49ad904783799",
+              "name": "Acolyte"
+            },
+            {
+              "artists": [
+                "The Dixie Cups"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337b2c14c4b4a94d43dbfe279",
+              "name": "Chapel Of Love"
+            },
+            {
+              "artists": [
+                "The B-52's"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27393bf4c5e67f6a72149d94c94",
+              "name": "Love Shack"
+            },
+            {
+              "artists": [
+                "Portraits Of Tracy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273588603e17ec61c5462a0ca9c",
+              "name": "Caught In A Jam"
+            },
+            {
+              "artists": [
+                "Pure Hex"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b7a6786feb8408378a0e3489",
+              "name": "Silence"
+            },
+            {
+              "artists": [
+                "El Búho",
+                "Pita Amor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5cd59314bcef42f02e8dc25",
+              "name": "Cumbia De Polvo"
+            },
+            {
+              "artists": [
+                "Primal Scream"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734bd22ff5ca55d5fdab3345eb",
+              "name": "Loaded"
+            },
+            {
+              "artists": [
+                "Dr. Dog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bfd3c1cebe28d211092caa30",
+              "name": "Vampire"
+            },
+            {
+              "artists": [
+                "Biita Houdei"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da0deccabc0a88b333f50a70",
+              "name": "Time Go Time Gone"
+            },
+            {
+              "artists": [
+                "Shannon Lay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273964fbf1a498f5e688fe5d3b7",
+              "name": "Sky Song"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23386064/Sunday-Scaries",
+          "station": "KALX",
+          "track_count": 29,
+          "url": "https://open.spotify.com/playlist/6LeeETLno2K1VO5fxg9doV"
         }
       },
       "needs_reconciliation": false
