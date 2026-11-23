@@ -30279,7 +30279,7 @@
           "start_time": "2026-11-22T18:00:00-0800",
           "end_time": "2026-11-22T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5Agnvw8zyDyUloHTPE4U8e",
         "desired_uris": [
@@ -30346,8 +30346,101 @@
           "30": "GBAAP2400102"
         },
         "listing": {
+          "broadcast_end": "2026-11-22T21:00:00-0800",
+          "broadcast_start": "2026-11-22T18:00:00-0800",
+          "imported_at": "2026-11-23T17:35:04.177647881+00:00",
+          "last_updated": "2026-11-23 17:35 UTC",
           "name": "KALX - dog and pony show - 2026-11-22",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Ethel Cain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737da9ae8f4a4d633772c9513b",
+              "name": "Nettles"
+            },
+            {
+              "artists": [
+                "Patti Smith"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b9cf42f267a8c162b9594b1",
+              "name": "Land: Horses / Land of a Thousand Dances / La Mer(de)"
+            },
+            {
+              "artists": [
+                "@"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27393c812017763535bb202b703",
+              "name": "Amity"
+            },
+            {
+              "artists": [
+                "Sufjan Stevens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273712c76b4152918fb8d37c53d",
+              "name": "They Are Night Zombies!! They Are Neighbors!! They Have Come Back From the Dead!! Ahhhh!"
+            },
+            {
+              "artists": [
+                "Dressy Bessy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27379e4492032ac6d6bb664567c",
+              "name": "If You Should Try To Kiss Her"
+            },
+            {
+              "artists": [
+                "cootie catcher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e1ad7219e469a49a4ccbcd82",
+              "name": "Puzzle pop"
+            },
+            {
+              "artists": [
+                "Belle and Sebastian"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734fb624c5275ee099aea7f8a6",
+              "name": "Sleep the Clock Around"
+            },
+            {
+              "artists": [
+                "The Replacements"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27363ae4058142e6ca2cf4d9bd1",
+              "name": "I'll Buy"
+            },
+            {
+              "artists": [
+                "The Replacements"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27321803d9905eb663fbd6acbfe",
+              "name": "Swingin Party"
+            },
+            {
+              "artists": [
+                "Jejune"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bfdd46079010fbb915b40eb4",
+              "name": "No One Like You"
+            },
+            {
+              "artists": [
+                "Pale Saints"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27349f6b7749e557eda913f17ec",
+              "name": "Under Your Nose"
+            },
+            {
+              "artists": [
+                "Blur"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273de114203356c1f7b136960b6",
+              "name": "Song 2 - 2012 Remaster"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23385399/dog-and-pony-show",
+          "station": "KALX",
+          "track_count": 30,
+          "url": "https://open.spotify.com/playlist/5Agnvw8zyDyUloHTPE4U8e"
         }
       },
       "needs_reconciliation": false
