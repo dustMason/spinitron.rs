@@ -51526,7 +51526,7 @@
           "start_time": "2026-11-22T19:00:00-0800",
           "end_time": "2026-11-22T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2KBwiwud4mqQTGbf8LxFLz",
         "desired_uris": [
@@ -51556,8 +51556,94 @@
           "11": "GB6PA0800541"
         },
         "listing": {
+          "broadcast_end": "2026-11-22T22:00:00-0800",
+          "broadcast_start": "2026-11-22T19:00:00-0800",
+          "imported_at": "2026-11-23T17:38:04.932011338+00:00",
+          "last_updated": "2026-11-23 17:38 UTC",
           "name": "KPOO - Sounds of the City - 2026-11-22",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "John Coltrane Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273051da334fcb7ed4b42b85c4a",
+              "name": "Out Of This World"
+            },
+            {
+              "artists": [
+                "Booker Ervin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a38f894ee521131e5fa2f16",
+              "name": "The Trance"
+            },
+            {
+              "artists": [
+                "Booker Ervin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c5291432d7c5b7c2535d2b1f",
+              "name": "Speak Low"
+            },
+            {
+              "artists": [
+                "Stanley Turrentine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f27dc359770c63c0abfb3247",
+              "name": "Pieces Of Dreams"
+            },
+            {
+              "artists": [
+                "Donald Byrd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bcd8d925273e918ba065c512",
+              "name": "Intro/My Girl Shirl - Live At The Half Note Cafe, 1960/Remastered 2015"
+            },
+            {
+              "artists": [
+                "Donald Byrd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bcd8d925273e918ba065c512",
+              "name": "A Portrait Of Jennie - Live At The Half Note Cafe, 1960/Remastered 2015"
+            },
+            {
+              "artists": [
+                "Donald Byrd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bcd8d925273e918ba065c512",
+              "name": "Cecile - Live At The Half Note Cafe, 1960/Remastered 2015"
+            },
+            {
+              "artists": [
+                "Bobby Hutcherson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325dc2655a2176ef5774ad144",
+              "name": "Hey Harold - Remastered"
+            },
+            {
+              "artists": [
+                "George Wallington Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733b85b64301f3eec9b7ab5d26",
+              "name": "Sol's Ollie"
+            },
+            {
+              "artists": [
+                "Bobby Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27374b2cbd097790fc24e2af982",
+              "name": "Don't Be Cruel/Cruel Reprise"
+            },
+            {
+              "artists": [
+                "The Rays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ca215d1ad8631f84ba0e5fc",
+              "name": "Silhouettes"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23385883/Sounds-of-the-City",
+          "station": "KPOO",
+          "track_count": 11,
+          "url": "https://open.spotify.com/playlist/2KBwiwud4mqQTGbf8LxFLz"
         }
       },
       "needs_reconciliation": false
