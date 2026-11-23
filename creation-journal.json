@@ -24458,7 +24458,7 @@
           "start_time": "2026-11-18T21:30:00-0800",
           "end_time": "2026-11-18T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7D3lFW39FYiupt3aNc4l04",
         "desired_uris": [
@@ -24468,8 +24468,24 @@
           "1": "USWB10000518"
         },
         "listing": {
+          "broadcast_end": "2026-11-18T22:00:00-0800",
+          "broadcast_start": "2026-11-18T21:30:00-0800",
+          "imported_at": "2026-11-23T00:43:27.909550285+00:00",
+          "last_updated": "2026-11-23 00:43 UTC",
           "name": "KALX - Bear Talk - 2026-11-18",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Black Sabbath"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273946f81a917baf2a2cf5e66aa",
+              "name": "Paranoid - Live; 2000 Remaster"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23365401/Bear-Talk",
+          "station": "KALX",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/7D3lFW39FYiupt3aNc4l04"
         }
       },
       "needs_reconciliation": false
