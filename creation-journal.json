@@ -29303,7 +29303,7 @@
           "start_time": "2026-11-22T06:00:00-0800",
           "end_time": "2026-11-22T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5OGnQ8BHYglMP6flL1Q5XU",
         "desired_uris": [
@@ -29323,8 +29323,59 @@
           "6": "GBARL0602178"
         },
         "listing": {
+          "broadcast_end": "2026-11-22T07:00:00-0800",
+          "broadcast_start": "2026-11-22T06:00:00-0800",
+          "imported_at": "2026-11-23T00:44:51.403588804+00:00",
+          "last_updated": "2026-11-23 00:44 UTC",
           "name": "KALX - KALX 11/22/26, 6:10 AM - 2026-11-22",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Eloy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27362929dd943cfaaa0a6f0879c",
+              "name": "Future City - 2000 Digital Remaster"
+            },
+            {
+              "artists": [
+                "Checkpoint Charlie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf2d3eed3eb7e40ae1f1656e",
+              "name": "Haben Rock"
+            },
+            {
+              "artists": [
+                "Vincent"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e2e35afcd17e4c446b3257f",
+              "name": "The Plan"
+            },
+            {
+              "artists": [
+                "Et Cetera"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731c1892f5748cc7fb37c5a647",
+              "name": "Mellodrama 2a"
+            },
+            {
+              "artists": [
+                "Cybotron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27322527ee328b1f87789d474ff",
+              "name": "Enter"
+            },
+            {
+              "artists": [
+                "Calvin Harris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27338da6ce6fbf85be51b356176",
+              "name": "Acceptable In the 80's"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23382830/KALX-11-22-26-6-10-AM",
+          "station": "KALX",
+          "track_count": 6,
+          "url": "https://open.spotify.com/playlist/5OGnQ8BHYglMP6flL1Q5XU"
         }
       },
       "needs_reconciliation": false
