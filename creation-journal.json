@@ -29390,7 +29390,7 @@
           "start_time": "2026-11-22T07:00:00-0800",
           "end_time": "2026-11-22T08:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6FoxbNA1KrGkdS34HtMMzw",
         "desired_uris": [
@@ -29406,8 +29406,46 @@
           "4": "USHM82697104"
         },
         "listing": {
+          "broadcast_end": "2026-11-22T08:00:00-0800",
+          "broadcast_start": "2026-11-22T07:00:00-0800",
+          "imported_at": "2026-11-23T00:45:31.588329422+00:00",
+          "last_updated": "2026-11-23 00:45 UTC",
           "name": "KALX - KALX 11/22/26, 7:00 AM - 2026-11-22",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Resavoir",
+                "Gregory Uhlmann"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736cc99ab4f2f715d74848469a",
+              "name": "4th Cloud"
+            },
+            {
+              "artists": [
+                "The Village Stompers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273810666f15e51bdde8b301fa5",
+              "name": "If I Had a Hammer"
+            },
+            {
+              "artists": [
+                "Bassholes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c286be204a063addfbb17712",
+              "name": "Hail Bop!"
+            },
+            {
+              "artists": [
+                "The Clog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db34562fa365670f7c7fe57d",
+              "name": "Fog Devil"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23382908/KALX-11-22-26-7-00-AM",
+          "station": "KALX",
+          "track_count": 4,
+          "url": "https://open.spotify.com/playlist/6FoxbNA1KrGkdS34HtMMzw"
         }
       },
       "needs_reconciliation": false
