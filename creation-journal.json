@@ -50191,7 +50191,7 @@
           "start_time": "2026-11-22T12:00:00-0800",
           "end_time": "2026-11-22T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7htf5EpCJRYgS3srpHESbI",
         "desired_uris": [
@@ -50277,8 +50277,119 @@
           "39": "USUYG1060604"
         },
         "listing": {
+          "broadcast_end": "2026-11-22T15:00:00-0800",
+          "broadcast_start": "2026-11-22T12:00:00-0800",
+          "imported_at": "2026-11-23T00:48:17.723061767+00:00",
+          "last_updated": "2026-11-23 00:48 UTC",
           "name": "KPOO - Hip Hop For The People - 2026-11-22",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Tone Oliver",
+                "Spacedtime",
+                "Joy Post"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730c8039f53fc48bfde426675a",
+              "name": "What Am I To Do"
+            },
+            {
+              "artists": [
+                "Rocky Rivera"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730720c7a5abdc8053ffd66b97",
+              "name": "Brown Babies"
+            },
+            {
+              "artists": [
+                "Pep Love"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27369ac6b6ca88a4ff47dfe4ae6",
+              "name": "Inner Conflict"
+            },
+            {
+              "artists": [
+                "Dom Jones",
+                "Precision Productions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c970a7a7b09d5dab9e6b6d0f",
+              "name": "The Blacker Berry"
+            },
+            {
+              "artists": [
+                "DLabrie",
+                "M1",
+                "The Jacka",
+                "Adisa Banjoko",
+                "Shamako Noble",
+                "SaikoDelic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a0724e845d71238104ec9b82",
+              "name": "Stay Black & Die"
+            },
+            {
+              "artists": [
+                "D.Bledsoe",
+                "Maitre D",
+                "Sunday",
+                "Blvck Achilles",
+                "Champ Green"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d5ffee8b9ba7a1f119dad8d3",
+              "name": "KHL (feat. SundaY, Blvck Achilles & Champ Green)"
+            },
+            {
+              "artists": [
+                "D.Bledsoe",
+                "Blvck Achilles",
+                "Teeko"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273161f7c165b8e3a1e350d4a7b",
+              "name": "Make It Happen"
+            },
+            {
+              "artists": [
+                "D.B. Moments"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f162781c54e412ce99ff4bcd",
+              "name": "This My City"
+            },
+            {
+              "artists": [
+                "Creep Crow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273077f8b6809b81a7d2dc96fa6",
+              "name": "Get Gigy with It"
+            },
+            {
+              "artists": [
+                "Paranorml",
+                "Del The Funky Homosapien",
+                "Bukue One",
+                "Kamau"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736dff8ff7349a7f379559792b",
+              "name": "Class-Sick 1610"
+            },
+            {
+              "artists": [
+                "Bukue One"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273412713034ea9f28a70805c97",
+              "name": "Clas-Sik"
+            },
+            {
+              "artists": [
+                "Blvck Achilles",
+                "JANE HANDCOCK"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730a532b1d88e830c3227b1f1c",
+              "name": "Pearls Of Wisdom (feat. Jane Handcock)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23384013/Hip-Hop-For-The-People",
+          "station": "KPOO",
+          "track_count": 39,
+          "url": "https://open.spotify.com/playlist/7htf5EpCJRYgS3srpHESbI"
         }
       },
       "needs_reconciliation": false
