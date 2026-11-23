@@ -806,6 +806,61 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23178302": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23178302,
+          "title": "Yo! KALX Raps",
+          "url": "https://spinitron.com/KALX/pl/23178302/Yo-KALX-Raps",
+          "start_time": "2026-11-23T00:00:00-0800",
+          "end_time": "2026-11-23T01:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0k557keYEwus33NlHuCFEp",
+          "spotify:track:5AxVVMvQ2SIcZS5g3YPSMx",
+          "spotify:track:1uMoysUkgNW5kBexQUcEK5",
+          "spotify:track:1a9maLxqpx3cxjY1lTj62B",
+          "spotify:track:5v62yYE9oyTpnjgHpECtN2",
+          "spotify:track:2dNniibNWW5Dnf6so5j7WW",
+          "spotify:track:5VIJaV3Mje1jZt6nNisCy3",
+          "spotify:track:1HQLA9mty4Hvnu5CRJmsKx",
+          "spotify:track:5nU7CGFgeh1ZDoGRvsOLbI",
+          "spotify:track:4Yh8J4CyHIa1n9tCHsd5rT",
+          "spotify:track:2KkCPpCjb9tM4mFdlstP7K",
+          "spotify:track:44ZWfYPt3AQJAfg4Ned0ue",
+          "spotify:track:0kR06O5iLJSSS6XT7Zv6dA",
+          "spotify:track:4FbE6naBQZdn0nhvneroGA",
+          "spotify:track:3nJ6m1KHrilYrpLVKgJ7Ue",
+          "spotify:track:4lvXatG0x97KSC53mgX9Yx"
+        ],
+        "source_isrcs": {
+          "1": "TCAAW1170632",
+          "2": "USSM19603749",
+          "3": "USEQ50610403",
+          "4": "GBAQH9600061",
+          "5": "TCACR1618922",
+          "6": "USUM71602053",
+          "7": "USUYG1012577",
+          "8": "GBUM70601645",
+          "9": "USAT20620104",
+          "10": "USEP40603101",
+          "11": "GBAHK9600109",
+          "12": "USUM71605646",
+          "13": "USRL19600387",
+          "14": "TCACM1606613",
+          "15": "QM84B2611804",
+          "16": "USJI10400031"
+        },
+        "listing": {
+          "name": "KALX - Yo! KALX Raps - 2026-11-23",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23242322": {
       "entry": {
         "station": "KALX",
