@@ -816,7 +816,7 @@
           "start_time": "2026-11-23T00:00:00-0800",
           "end_time": "2026-11-23T01:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4qtQJm465oVCCVTJlYXqeQ",
         "desired_uris": [
@@ -856,8 +856,105 @@
           "16": "USJI10400031"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T01:00:00-0800",
+          "broadcast_start": "2026-11-23T00:00:00-0800",
+          "imported_at": "2026-11-23T17:34:23.404565108+00:00",
+          "last_updated": "2026-11-23 17:34 UTC",
           "name": "KALX - Yo! KALX Raps - 2026-11-23",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "People Under The Stairs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731af1e3c61a40ca25ce14070d",
+              "name": "Intro"
+            },
+            {
+              "artists": [
+                "Da Brat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730d5e8c992945e87977ece23f",
+              "name": "Sittin' On Top Of The World - Part II"
+            },
+            {
+              "artists": [
+                "CunninLynguists"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273867ea60b0c68404708356fee",
+              "name": "Nothing To Give"
+            },
+            {
+              "artists": [
+                "DJ Shadow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c02294cf9b5ec88cd939a8a6",
+              "name": "Midnight In A Perfect World"
+            },
+            {
+              "artists": [
+                "Noname"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273707401fcb2dcf1571dc2daee",
+              "name": "Yesterday"
+            },
+            {
+              "artists": [
+                "Heather B"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a203253f5a4747739cd7f36f",
+              "name": "If Headz Only Knew..."
+            },
+            {
+              "artists": [
+                "Zion I & the Grouch"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273957413e1aef5884f1d9aa64a",
+              "name": "Trains and Planes"
+            },
+            {
+              "artists": [
+                "DJ Shadow",
+                "Mistah F.A.B.",
+                "Turf Talk",
+                "Keak Da Sneak"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273030dcb33b7ddfbe6e94498c8",
+              "name": "3 Freaks"
+            },
+            {
+              "artists": [
+                "Lupe Fiasco"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e25d0a9a132b89040dded9ae",
+              "name": "Hurt Me Soul"
+            },
+            {
+              "artists": [
+                "The Coup"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739699c5e996bbcd996e142f2d",
+              "name": "Bullets And Love (Introduction)"
+            },
+            {
+              "artists": [
+                "A Tribe Called Quest"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e3b93c08d98f92dc3ab0146a",
+              "name": "The Pressure"
+            },
+            {
+              "artists": [
+                "ScHoolboy Q",
+                "Candice Pillay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325475181eb4622ed295f9485",
+              "name": "WHateva U Want"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23178302/Yo-KALX-Raps",
+          "station": "KALX",
+          "track_count": 16,
+          "url": "https://open.spotify.com/playlist/4qtQJm465oVCCVTJlYXqeQ"
         }
       },
       "needs_reconciliation": false
