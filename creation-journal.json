@@ -29949,7 +29949,7 @@
           "start_time": "2026-11-22T15:00:00-0800",
           "end_time": "2026-11-22T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0TkIzGdKp69sF9P7tux9r6",
         "desired_uris": [
@@ -30015,8 +30015,103 @@
           "30": "USA2P2641289"
         },
         "listing": {
+          "broadcast_end": "2026-11-22T18:00:00-0800",
+          "broadcast_start": "2026-11-22T15:00:00-0800",
+          "imported_at": "2026-11-23T17:33:42.417174352+00:00",
+          "last_updated": "2026-11-23 17:33 UTC",
           "name": "KALX - FREEFORM - 2026-11-22 3:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sun Ra",
+                "Sun Ra Arkestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736179ddeee237a4b38eccda7f",
+              "name": "Strange Dreams / Strange Worlds / Black Myth / It's After the End of the World - Live"
+            },
+            {
+              "artists": [
+                "Diamanda Galás"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c098d0a28e6e9b365b4ac2b8",
+              "name": "I - I Am - Dreams - Live"
+            },
+            {
+              "artists": [
+                "Sun Kil Moon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c944ce2b054539f5d272a21",
+              "name": "That Bird Has a Broken Wing"
+            },
+            {
+              "artists": [
+                "Throbbing Gristle"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732152852e6c27a038a4239558",
+              "name": "20 Jazz Funk Greats - Remastered"
+            },
+            {
+              "artists": [
+                "Bill Baird"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a58410c37387aa079bf964f4",
+              "name": "Diamond Studded Caskets"
+            },
+            {
+              "artists": [
+                "Tamikrest"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c17ebd3df72f4d2456b77a49",
+              "name": "Iman Derhan Nasn"
+            },
+            {
+              "artists": [
+                "The Giver Of Illness",
+                "Ak'chamel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b92c0995515fa681c9bf98b",
+              "name": "Clean Coal is a Porous Condom"
+            },
+            {
+              "artists": [
+                "San Kazakgascar"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b25821635c55d0e25938e249",
+              "name": "Fangs of Commerce"
+            },
+            {
+              "artists": [
+                "Water Damage"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737ff9ef175df3b785cdf9d925",
+              "name": "Reel 2"
+            },
+            {
+              "artists": [
+                "Sun City Girls"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e13e234f461a0594a9c14cf2",
+              "name": "Space Prophet Dogon"
+            },
+            {
+              "artists": [
+                "Kamuran Akkor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739da0d2131f9103aae80d4209",
+              "name": "Falcı"
+            },
+            {
+              "artists": [
+                "Sosyete '25"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739d20e59a7ebff5d0ebecfae8",
+              "name": "İnat"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23384694/FREEFORM",
+          "station": "KALX",
+          "track_count": 30,
+          "url": "https://open.spotify.com/playlist/0TkIzGdKp69sF9P7tux9r6"
         }
       },
       "needs_reconciliation": false
