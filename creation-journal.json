@@ -51329,7 +51329,7 @@
           "start_time": "2026-11-22T15:00:00-0800",
           "end_time": "2026-11-22T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5caOZL1LwJF8I5y2QfQY31",
         "desired_uris": [
@@ -51417,8 +51417,101 @@
           "40": "GBAHK9700109"
         },
         "listing": {
+          "broadcast_end": "2026-11-22T18:00:00-0800",
+          "broadcast_start": "2026-11-22T15:00:00-0800",
+          "imported_at": "2026-11-23T17:37:24.113163802+00:00",
+          "last_updated": "2026-11-23 17:37 UTC",
           "name": "KPOO - Weekend Soul sounds - 2026-11-22",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Lighter Shade Of Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27316c64c43d760dd3a21bd0061",
+              "name": "On A Sunday Afternoon"
+            },
+            {
+              "artists": [
+                "Mary Jane Girls"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732285ebddaf6561fe2800c333",
+              "name": "In My House"
+            },
+            {
+              "artists": [
+                "Freda Payne"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27353bd93a72a58fb5cd98a510f",
+              "name": "Band Of Gold (Single Mix)"
+            },
+            {
+              "artists": [
+                "Chairmen Of The Board"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734eaa981a85dff216062b6a90",
+              "name": "Give Me Just a Little More Time"
+            },
+            {
+              "artists": [
+                "Rare Earth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27372a4d30dbe34ea6afe32e4a4",
+              "name": "Get Ready"
+            },
+            {
+              "artists": [
+                "Sugarloaf"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735935b470e0686c7774eeefef",
+              "name": "Green-Eyed Lady"
+            },
+            {
+              "artists": [
+                "Brook Benton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c338c29dd2852ff00739eb8",
+              "name": "Rainy Night in Georgia"
+            },
+            {
+              "artists": [
+                "George Harrison"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c6610322fc60bfb41481273",
+              "name": "My Sweet Lord - 2014 Remaster"
+            },
+            {
+              "artists": [
+                "The Five Stairsteps"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b4b2642b767f641a15c9fef1",
+              "name": "O-o-h Child"
+            },
+            {
+              "artists": [
+                "Bread"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325c199583f60a0ce11f83e84",
+              "name": "Make It with You"
+            },
+            {
+              "artists": [
+                "The Beatles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27384243a01af3c77b56fe01ab1",
+              "name": "Let It Be - Remastered 2009"
+            },
+            {
+              "artists": [
+                "Carpenters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27370fbd8c98650b7d308e1ee77",
+              "name": "We’ve Only Just Begun / (They Long To Be) Close To You"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23384806/Weekend-Soul-sounds",
+          "station": "KPOO",
+          "track_count": 40,
+          "url": "https://open.spotify.com/playlist/5caOZL1LwJF8I5y2QfQY31"
         }
       },
       "needs_reconciliation": false
