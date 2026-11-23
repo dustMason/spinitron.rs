@@ -29767,7 +29767,7 @@
           "start_time": "2026-11-22T12:00:00-0800",
           "end_time": "2026-11-22T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "18elHeK8mD6hlhrXMsXQwD",
         "desired_uris": [
@@ -29837,8 +29837,104 @@
           "31": "US58L2699402"
         },
         "listing": {
+          "broadcast_end": "2026-11-22T15:00:00-0800",
+          "broadcast_start": "2026-11-22T12:00:00-0800",
+          "imported_at": "2026-11-23T00:47:33.130923595+00:00",
+          "last_updated": "2026-11-23 00:47 UTC",
           "name": "KALX - Maltodextrin's Fantastic Contraption - 2026-11-22",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sandy Denny"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273be8edf75784436e3aad24a07",
+              "name": "Late November"
+            },
+            {
+              "artists": [
+                "Nick Drake"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bd158c797b1026005c2917bc",
+              "name": "River Man"
+            },
+            {
+              "artists": [
+                "John Cale"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736203ecb2863d44223da36613",
+              "name": "Graham Greene - Remastered 2024"
+            },
+            {
+              "artists": [
+                "Shearwater"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733329aaf3098be832ee7fef71",
+              "name": "The Only Sound I'm Afraid Of"
+            },
+            {
+              "artists": [
+                "Kristin Hersh"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735cd42e7395056e612441df3d",
+              "name": "Dark Eyed Junco"
+            },
+            {
+              "artists": [
+                "Television"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d7ead923cb1e483604a1ac1b",
+              "name": "Little Johnny Jewel - Parts 1 & 2"
+            },
+            {
+              "artists": [
+                "Sonny & The Sunsets"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273df11dc39e1ccdbd3f2522939",
+              "name": "Lovin' on an Older Gal"
+            },
+            {
+              "artists": [
+                "Gordan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273418cee85efd8df615b4029d1",
+              "name": "Mara"
+            },
+            {
+              "artists": [
+                "Tercet Imperial"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d6750a0c052fdf0405f74108",
+              "name": "Siwcowej"
+            },
+            {
+              "artists": [
+                "Mali Obomsawin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731def830a10f5628fc087f89f",
+              "name": "Automatic"
+            },
+            {
+              "artists": [
+                "The Avalanches",
+                "Nikki Nair",
+                "Jessy Lanza",
+                "Prentiss"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734d100df0be7285a2f1176c7a",
+              "name": "Together (feat. Nikki Nair, Jessy Lanza & Prentiss)"
+            },
+            {
+              "artists": [
+                "Karate Boogaloo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b0e0e9e7d8eabdc14eccd6f7",
+              "name": "We've Lost Something We Can't Replace"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23384030/Maltodextrin-s-Fantastic-Contraption",
+          "station": "KALX",
+          "track_count": 31,
+          "url": "https://open.spotify.com/playlist/18elHeK8mD6hlhrXMsXQwD"
         }
       },
       "needs_reconciliation": false
