@@ -30630,7 +30630,7 @@
           "start_time": "2026-11-23T01:00:00-0800",
           "end_time": "2026-11-23T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5tDpQpW0WmGikaIAzjcZSH",
         "desired_uris": [
@@ -30760,8 +30760,106 @@
           "61": "USA2Z2600113"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T07:00:00-0800",
+          "broadcast_start": "2026-11-23T01:00:00-0800",
+          "imported_at": "2026-11-23T17:36:36.128879614+00:00",
+          "last_updated": "2026-11-23 17:36 UTC",
           "name": "KALX - FREEFORM - 2026-11-23",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sun Ra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27355cbbfcd018bcafcb2f0cd3e",
+              "name": "Enlightenment"
+            },
+            {
+              "artists": [
+                "Nduduzo Makhathini",
+                "Shabaka Hutchings"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733615cd9f10af64503fd9614c",
+              "name": "Liyoze Line Nangakithi"
+            },
+            {
+              "artists": [
+                "Angela Autumn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273606f9b1dad50f51a6e82b7c8",
+              "name": "Mountain Stream"
+            },
+            {
+              "artists": [
+                "Magic Sam"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27305fc8ecd097468fa6ac5a78b",
+              "name": "I Feel so Good - I Wanna Boogie"
+            },
+            {
+              "artists": [
+                "Will Bernard",
+                "Freelance Subversives",
+                "Eric Finland"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27300a596feae238b844bd8198c",
+              "name": "Astro Flux"
+            },
+            {
+              "artists": [
+                "Sidney Bechet",
+                "Muggsy Spanier"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738cbf713406011a71a93d9da5",
+              "name": "That's a Plenty"
+            },
+            {
+              "artists": [
+                "Marco Benevento"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734f4a70717c8795494e03b0eb",
+              "name": "Frizzante"
+            },
+            {
+              "artists": [
+                "Thee Sinseers",
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cea5e810a36bf0e912d4bcab",
+              "name": "Did Ya Know?"
+            },
+            {
+              "artists": [
+                "Joey Quiñones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273980e10b54d5d0143ae565c61",
+              "name": "In My Arms"
+            },
+            {
+              "artists": [
+                "Mexican Institute Of Sound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273943f65b1ff016d267aef7baf",
+              "name": "Guacarrocker"
+            },
+            {
+              "artists": [
+                "Willie Bobo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27309301438949b7510495446c2",
+              "name": "Night Walk"
+            },
+            {
+              "artists": [
+                "Ike Quebec"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27351c5c35f4edee1caa23f96ec",
+              "name": "Loie"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23386988/FREEFORM",
+          "station": "KALX",
+          "track_count": 61,
+          "url": "https://open.spotify.com/playlist/5tDpQpW0WmGikaIAzjcZSH"
         }
       },
       "needs_reconciliation": false
