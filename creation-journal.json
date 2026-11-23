@@ -18026,7 +18026,7 @@
           "start_time": "2026-11-14T02:00:00-0800",
           "end_time": "2026-11-14T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3Aw1hDPGDVIn0cVo3i6nFQ",
         "desired_uris": [
@@ -18064,8 +18064,102 @@
           "13": "GBR8R2600203"
         },
         "listing": {
+          "broadcast_end": "2026-11-14T06:00:00-0800",
+          "broadcast_start": "2026-11-14T02:00:00-0800",
+          "imported_at": "2026-11-23T00:42:47.859998663+00:00",
+          "last_updated": "2026-11-23 00:42 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-14",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Almighty Easter Bunny"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a00167c0ef1de77b8f96f6fb",
+              "name": "We Are Energy, Sentient And Cycling"
+            },
+            {
+              "artists": [
+                "Various Artists"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f07fddcfe090621422a5fd4",
+              "name": "Protocol"
+            },
+            {
+              "artists": [
+                "Donna Lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e962eb03beb3507c3c2b68f3",
+              "name": "I Love You Always Forever - Philly Remix"
+            },
+            {
+              "artists": [
+                "Railcard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cbf451c52952a3efeea490e8",
+              "name": "Unstable Neighbour"
+            },
+            {
+              "artists": [
+                "Ceremony"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735800c8fb5dce70d020d01258",
+              "name": "Into The Wayside Part I/Sick"
+            },
+            {
+              "artists": [
+                "Fontaines D.C."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fbecc7ddcbffd09181ce01ba",
+              "name": "Six Shot Morning"
+            },
+            {
+              "artists": [
+                "The Clog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273db34562fa365670f7c7fe57d",
+              "name": "Bring Me (Lounge Version)"
+            },
+            {
+              "artists": [
+                "@"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27393c812017763535bb202b703",
+              "name": "I'm Not In Pain"
+            },
+            {
+              "artists": [
+                "Kelela",
+                "PinkPantheress"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27315c00fa655da7d2b186a470c",
+              "name": "the bridge"
+            },
+            {
+              "artists": [
+                "XG"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273446b3f62b36c753960907b23",
+              "name": "DEPENDS"
+            },
+            {
+              "artists": [
+                "Marshall Jefferson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735359b2fa652fc4e6fa6cf3df",
+              "name": "Floating"
+            },
+            {
+              "artists": [
+                "Tears For Fears"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aef4d048f23af4e7857c9d96",
+              "name": "Sowing The Seeds Of Love - US Radio Edit"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23339489/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 29,
+          "url": "https://open.spotify.com/playlist/3Aw1hDPGDVIn0cVo3i6nFQ"
         }
       },
       "needs_reconciliation": false
