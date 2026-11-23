@@ -29608,6 +29608,59 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23383545": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23383545,
+          "title": "FREEFORM",
+          "url": "https://spinitron.com/KALX/pl/23383545/FREEFORM",
+          "start_time": "2026-11-22T10:00:00-0800",
+          "end_time": "2026-11-22T12:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:7bp7uEKlqddUznnCvuOF8j",
+          "spotify:track:1Io4A2QfdpvHN7j2ksbSN0",
+          "spotify:track:4SmFhvpuVNKMAhP1mhFJBx",
+          "spotify:track:4wGvRcSLTxrqRPxhtxtVHk",
+          "spotify:track:1Ui25NTBUuESLWWbnaY8w8",
+          "spotify:track:38gISRV6lcZce1Mx1xZt5c",
+          "spotify:track:5vAwtTz0syQ1Q86R1B3faz",
+          "spotify:track:7FwYAOgjz2ZEoVt6vestTk",
+          "spotify:track:0KilL8N82TsAKTP65fGATg",
+          "spotify:track:1u0LQwTtYAi7LZbknFNhZ1",
+          "spotify:track:09HGJT3QCbpKmsowp9el5Q",
+          "spotify:track:0dWQWhirSq8Ew64GD2DjQU",
+          "spotify:track:2Vqi1Si1dQjMtAZ79UreqL",
+          "spotify:track:5eklxHoyYQ2WRqJjNe8euW",
+          "spotify:track:6JEzSv2Yn6wzeTNaZCDOc0"
+        ],
+        "source_isrcs": {
+          "1": "GBAYE1800843",
+          "2": "GBBTF2600017",
+          "3": "QZWFG2523198",
+          "4": "QT6FG2524522",
+          "5": "GBENL0800076",
+          "6": "GBAFL2000418",
+          "7": "CAWK82600201",
+          "8": "USELN2620702",
+          "9": "QT4K52688632",
+          "10": "GBBBM8802002",
+          "11": "GBBBM8802024",
+          "12": "USY1R2410508",
+          "13": "USNPD0714741",
+          "14": "GBBPW1200050",
+          "15": "QT6632600015"
+        },
+        "listing": {
+          "name": "KALX - FREEFORM - 2026-11-22 10:00am",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
