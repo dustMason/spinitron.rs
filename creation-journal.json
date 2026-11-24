@@ -53599,7 +53599,7 @@
           "start_time": "2026-11-24T06:00:00-0800",
           "end_time": "2026-11-24T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1lEKd2Z7XW7wEIyJx3o4Bu",
         "desired_uris": [
@@ -53623,8 +53623,76 @@
           "8": "USSM10025950"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T07:00:00-0800",
+          "broadcast_start": "2026-11-24T06:00:00-0800",
+          "imported_at": "2026-11-24T17:10:15.363356118+00:00",
+          "last_updated": "2026-11-24 17:10 UTC",
           "name": "KPOO - More Overnight - 2026-11-24",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Stanley Turrentine & The Three Sounds"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27333364bbe61a7d38f423d7610",
+              "name": "Blues In The Closet - Remastered/2000"
+            },
+            {
+              "artists": [
+                "Phil Woods"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c5ba2b7e52d3ea3819355607",
+              "name": "Stolen Moments"
+            },
+            {
+              "artists": [
+                "Elvin Jones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733f1460cd7659acaae6b26ffe",
+              "name": "Love Bird"
+            },
+            {
+              "artists": [
+                "Charlie Parker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b42f9f1eb5e9d6b50cea6f10",
+              "name": "Scrapple From The Apple"
+            },
+            {
+              "artists": [
+                "Art Blakey",
+                "The Jazz Messengers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eb945592e5ccd9b996d3c07c",
+              "name": "Along Came Betty"
+            },
+            {
+              "artists": [
+                "Clifford Brown",
+                "Max Roach"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739d4feaff1ea07f461780c4dc",
+              "name": "The Blues Walk"
+            },
+            {
+              "artists": [
+                "Phil Woods"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c5ba2b7e52d3ea3819355607",
+              "name": "Alive and Well"
+            },
+            {
+              "artists": [
+                "Harold Melvin & The Blue Notes",
+                "Teddy Pendergrass"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733deff5d6bfa4a307bc8eb36d",
+              "name": "Wake Up Everybody (feat. Teddy Pendergrass)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23393238/More-Overnight",
+          "station": "KPOO",
+          "track_count": 8,
+          "url": "https://open.spotify.com/playlist/1lEKd2Z7XW7wEIyJx3o4Bu"
         }
       },
       "needs_reconciliation": false
