@@ -32104,7 +32104,7 @@
           "start_time": "2026-11-24T00:00:00-0800",
           "end_time": "2026-11-24T01:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6lxvSNLdaCGSu37l3S7GSN",
         "desired_uris": [
@@ -32114,8 +32114,24 @@
           "1": "QT5R22600118"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T01:00:00-0800",
+          "broadcast_start": "2026-11-24T00:00:00-0800",
+          "imported_at": "2026-11-24T17:16:26.929531607+00:00",
+          "last_updated": "2026-11-24 17:16 UTC",
           "name": "KALX - Information Overload - 2026-11-24",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Rizan Said"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dbdeb69f80628dda54142ebb",
+              "name": "Naba Kurdi"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23392130/Information-Overload",
+          "station": "KALX",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/6lxvSNLdaCGSu37l3S7GSN"
         }
       },
       "needs_reconciliation": false
