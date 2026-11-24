@@ -31215,7 +31215,7 @@
           "start_time": "2026-11-23T12:00:00-0800",
           "end_time": "2026-11-23T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5yxoIHbCE9a8117vvgT0WX",
         "desired_uris": [
@@ -31279,8 +31279,102 @@
           "31": "USFMA2400016"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T15:00:00-0800",
+          "broadcast_start": "2026-11-23T12:00:00-0800",
+          "imported_at": "2026-11-24T17:12:19.284940528+00:00",
+          "last_updated": "2026-11-24 17:12 UTC",
           "name": "KALX - Hot Lasagna - 2026-11-23",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Traditional",
+                "John Alexander's Sterling Jubilee Singers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27363f83732eafdd2f45b99e50b",
+              "name": "Testimony"
+            },
+            {
+              "artists": [
+                "Lou Rawls"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739acf666271ea439d7934de33",
+              "name": "Pure Imagination - Live at the Mark Hellinger Theatre, New York, NY - November 1977"
+            },
+            {
+              "artists": [
+                "Semiratruth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273266e3ff47090ffec38f2781d",
+              "name": "bootingup. . ."
+            },
+            {
+              "artists": [
+                "Kerem Gerdenzeri"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c3c61058b548cc3f89f07d60",
+              "name": "Heseno Lawo"
+            },
+            {
+              "artists": [
+                "The Limiñanas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273694b7a64fa5d2be5d7d56b18",
+              "name": "Paradise Now"
+            },
+            {
+              "artists": [
+                "Henry Mancini"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e97407bb9fdb339614c3c7c1",
+              "name": "Champagne And Quail"
+            },
+            {
+              "artists": [
+                "Ken Wannberg"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273043cf433237e5aec8236f995",
+              "name": "David's Father (From \"The Philadelphia Experiment\")"
+            },
+            {
+              "artists": [
+                "The Mam'selles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732665ca69679075e1b80b971f",
+              "name": "Keep the Customer Satisfied"
+            },
+            {
+              "artists": [
+                "David Axelrod"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fcfee8cd06487799b94e3490",
+              "name": "Holy Thursday"
+            },
+            {
+              "artists": [
+                "Heavy Arts Ensemble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737949ec606740bcddb0ccac5f",
+              "name": "You take our hand, We take your heart"
+            },
+            {
+              "artists": [
+                "Linn County"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273420067b3d1704ecac1c81f24",
+              "name": "Moon Food"
+            },
+            {
+              "artists": [
+                "PIPE"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736e7912b825442cf91e50d158",
+              "name": "Big House"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23389269/Hot-Lasagna",
+          "station": "KALX",
+          "track_count": 31,
+          "url": "https://open.spotify.com/playlist/5yxoIHbCE9a8117vvgT0WX"
         }
       },
       "needs_reconciliation": false
