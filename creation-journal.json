@@ -52520,8 +52520,9 @@
           "start_time": "2026-11-23T12:00:00-0800",
           "end_time": "2026-11-23T13:00:00-0800"
         },
-        "state": "creating",
+        "state": "filling",
         "owner_id": "dustmason",
+        "playlist_id": "1tk5yuiTftpe3BUTq6I5Sg",
         "desired_uris": [
           "spotify:track:2TAb0MYiC6ADy6pYunLZiP",
           "spotify:track:1hn1anDgmYRxS9M3raq88c",
