@@ -53588,6 +53588,45 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23393238": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23393238,
+          "title": "More Overnight",
+          "url": "https://spinitron.com/KPOO/pl/23393238/More-Overnight",
+          "start_time": "2026-11-24T06:00:00-0800",
+          "end_time": "2026-11-24T07:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:66rpbHFPi9JhbjdcLS8My5",
+          "spotify:track:6bScGjsYx8WrWVsaI6XDCl",
+          "spotify:track:1pIvCPswzivDXnC1y5hl4w",
+          "spotify:track:7flQESHoCoDzirWF4IkKGq",
+          "spotify:track:541oWN6KqLAPSVKlsk8wHP",
+          "spotify:track:6bWMnxKEpgOZ1KoLZ7SVGO",
+          "spotify:track:7otju2sVrUAiTOeNg1uTEd",
+          "spotify:track:3tRW6b0mZdgs1LcNefRiqd"
+        ],
+        "source_isrcs": {
+          "1": "USBN29901017",
+          "2": "FRZ116806624",
+          "3": "USMC16555199",
+          "4": "GBAYE5900147",
+          "5": "USBN21300013",
+          "6": "USPR35402429",
+          "7": "FRZ116806626",
+          "8": "USSM10025950"
+        },
+        "listing": {
+          "name": "KPOO - More Overnight - 2026-11-24",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
