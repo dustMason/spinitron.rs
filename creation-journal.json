@@ -31938,7 +31938,7 @@
           "start_time": "2026-11-23T22:00:00-0800",
           "end_time": "2026-11-24T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3q3HYPBSyapazC99449qCC",
         "desired_uris": [
@@ -31995,8 +31995,101 @@
           "25": "GBBKS2400084"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T00:00:00-0800",
+          "broadcast_start": "2026-11-23T22:00:00-0800",
+          "imported_at": "2026-11-24T17:15:46.157126757+00:00",
+          "last_updated": "2026-11-24 17:15 UTC",
           "name": "KALX - FREEFORM - 2026-11-23 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "mark william lewis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bc26a5b8a15eb60ecb681232",
+              "name": "Tomorrow is Perfect"
+            },
+            {
+              "artists": [
+                "The Radio Dept."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738aa5931895f3c66d1b3479c3",
+              "name": "Pet Grief"
+            },
+            {
+              "artists": [
+                "King Krule"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273289a4ebbfccf497731589c17",
+              "name": "Flimsier"
+            },
+            {
+              "artists": [
+                "Racecourse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c42dd0add3f578b0799e066d",
+              "name": "Caledonia"
+            },
+            {
+              "artists": [
+                "mary in the junkyard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a0401ecd949b17a02e8b9ac",
+              "name": "Crash Landing"
+            },
+            {
+              "artists": [
+                "Astrid Sonne"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738c16c4c88eca4899d91be1b3",
+              "name": "Give my all"
+            },
+            {
+              "artists": [
+                "Stina Nordenstam"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bd6efc551013e8b46c05259d",
+              "name": "Dynamite"
+            },
+            {
+              "artists": [
+                "Sophia Stel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d778398be51399568ec7528",
+              "name": "I'll Walk"
+            },
+            {
+              "artists": [
+                "Vegyn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c1923f2ae5105f5297e606a4",
+              "name": "The Path Less Travelled"
+            },
+            {
+              "artists": [
+                "Chanel Beads"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738671a62813f58b499c8fccc3",
+              "name": "Dedicated To The World"
+            },
+            {
+              "artists": [
+                "Ethel Cain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737da9ae8f4a4d633772c9513b",
+              "name": "Nettles"
+            },
+            {
+              "artists": [
+                "Bill Callahan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736172648d29acadc71f725e35",
+              "name": "West Texas"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23391635/FREEFORM",
+          "station": "KALX",
+          "track_count": 25,
+          "url": "https://open.spotify.com/playlist/3q3HYPBSyapazC99449qCC"
         }
       },
       "needs_reconciliation": false
