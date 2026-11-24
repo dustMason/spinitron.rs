@@ -31389,7 +31389,7 @@
           "start_time": "2026-11-23T15:00:00-0800",
           "end_time": "2026-11-23T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "254T5Bnlk0Bp8nerKhZMt2",
         "desired_uris": [
@@ -31429,8 +31429,105 @@
           "16": "QMV8L2639402"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T17:00:00-0800",
+          "broadcast_start": "2026-11-23T15:00:00-0800",
+          "imported_at": "2026-11-24T17:13:00.660334133+00:00",
+          "last_updated": "2026-11-24 17:13 UTC",
           "name": "KALX - No Motion Picture - 2026-11-23",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Blind Yeo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee644b0ff70758b48bade741",
+              "name": "Today / Tomorrow"
+            },
+            {
+              "artists": [
+                "Eddie Henderson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d51f4b5c5781366ee3a96af2",
+              "name": "Cook's Bay"
+            },
+            {
+              "artists": [
+                "Horace Silver"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c56d0007fdbe6e3ff3b5ec41",
+              "name": "Gregory Is Here - Remastered"
+            },
+            {
+              "artists": [
+                "sachi's mirror"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273833e3c513c27589d493f16c2",
+              "name": "Promise"
+            },
+            {
+              "artists": [
+                "Lorna Dune"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6bf62b044074723a2a957f0",
+              "name": "Synaptic Circuits"
+            },
+            {
+              "artists": [
+                "Ancient Future",
+                "Paul McCandless",
+                "Matthew Montfort",
+                "Mariah Parker",
+                "Benjy Wertheimer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f34ae14b39b94676d7f74c73",
+              "name": "East of the Sun"
+            },
+            {
+              "artists": [
+                "Fernwood"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa8e737f4e59db33734f3cd7",
+              "name": "Makena"
+            },
+            {
+              "artists": [
+                "Aberdeen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27397cffc627b2bafe4f2ba094f",
+              "name": "Toward the Sky"
+            },
+            {
+              "artists": [
+                "Angelo Badalamenti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d8723510475d373971877247",
+              "name": "Main Title"
+            },
+            {
+              "artists": [
+                "Khruangbin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ca7bead7475b08329e7820e",
+              "name": "Cómo Te Quiero"
+            },
+            {
+              "artists": [
+                "Fuzz Kitchen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731c90db514308e741fdd50272",
+              "name": "Rundown"
+            },
+            {
+              "artists": [
+                "Chip Wickham"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b9f5879e3f9a65b15831a519",
+              "name": "Soho Strut"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23389957/No-Motion-Picture",
+          "station": "KALX",
+          "track_count": 16,
+          "url": "https://open.spotify.com/playlist/254T5Bnlk0Bp8nerKhZMt2"
         }
       },
       "needs_reconciliation": false
