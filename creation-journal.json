@@ -52624,6 +52624,60 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23389564": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23389564,
+          "title": "Soul Explosion",
+          "url": "https://spinitron.com/KPOO/pl/23389564/Soul-Explosion",
+          "start_time": "2026-11-23T13:00:00-0800",
+          "end_time": "2026-11-23T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5hs7hVyqYYi32uTnE7hvJu",
+          "spotify:track:4QgwAu6f0kmF3ST3ixpkIy",
+          "spotify:track:3JNd8K8SiSCgo0XpPOG8ml",
+          "spotify:track:5d18aUKgk4LYx5CW2MM2c7",
+          "spotify:track:7yc8aXv9Gznjv5PbgYs5u9",
+          "spotify:track:1VVKSbVsmp1VEKKKCp0U5p",
+          "spotify:track:42hzmhmHTuHCG0uk4gk9An",
+          "spotify:track:7wyI1ZxMVHiRAvOZH1C71C",
+          "spotify:track:04lLEn9cwiIBIjq1xkjsU2",
+          "spotify:track:187R5ntnfLsotgMrWDzKgo",
+          "spotify:track:6tu44Lw0HAOeEZlaoogDNz",
+          "spotify:track:0P4rYCd3WoolMwDFxP8s8L",
+          "spotify:track:7ugAWYnI4ZHXUfepTpOvLf",
+          "spotify:track:5243SkRClZGjQrB0mhFJ9T",
+          "spotify:track:3WgutPPpDfVHYgwPGXKFY1",
+          "spotify:track:0I4NtUAd4xsQBOdeByOkAj"
+        ],
+        "source_isrcs": {
+          "1": "GBGWM2315029",
+          "2": "USSM10017721",
+          "3": "USMO16584718",
+          "4": "USARL8775410",
+          "5": "DEC161700567",
+          "6": "GBHFE0631609",
+          "7": "USSPI5800399",
+          "8": "DEZ651713930",
+          "9": "USCW60000647",
+          "10": "FRX282039569",
+          "11": "US38Y2501984",
+          "13": "USAT20102235",
+          "14": "USESK1705335",
+          "15": "USUR19902261",
+          "16": "USSM10203611"
+        },
+        "listing": {
+          "name": "KPOO - Soul Explosion - 2026-11-23",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
