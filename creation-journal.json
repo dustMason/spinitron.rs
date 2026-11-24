@@ -32146,7 +32146,7 @@
           "start_time": "2026-11-24T01:00:00-0800",
           "end_time": "2026-11-24T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6uMPovyZ1EYWeMGhmG5DEZ",
         "desired_uris": [
@@ -32304,8 +32304,106 @@
           "75": "QZWFM2490983"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T07:00:00-0800",
+          "broadcast_start": "2026-11-24T01:00:00-0800",
+          "imported_at": "2026-11-24T17:17:19.606150920+00:00",
+          "last_updated": "2026-11-24 17:17 UTC",
           "name": "KALX - FREEFORM - 2026-11-24",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Welcome Strawberry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e155480c2229a9c9bb98db0",
+              "name": "like a tulip"
+            },
+            {
+              "artists": [
+                "Racecourse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c42dd0add3f578b0799e066d",
+              "name": "Pennybox"
+            },
+            {
+              "artists": [
+                "Exploding Zones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f9c8f803df31ec43b9504e7",
+              "name": "Four Ghosts"
+            },
+            {
+              "artists": [
+                "Larrison"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273558b9b38aafd9e4c33acd82f",
+              "name": "Song From a Bedroom in Podunk Indiana"
+            },
+            {
+              "artists": [
+                "abracadabra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd22ee8e5d1f0ca90bba6ee7",
+              "name": "go fix yourself"
+            },
+            {
+              "artists": [
+                "Chairlift"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da3f10c40835d3ac258006f2",
+              "name": "Amanaemonesia"
+            },
+            {
+              "artists": [
+                "Dirty Projectors",
+                "Amber Coffman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bd8aa0e969803c31f91ff79c",
+              "name": "Stillness Is The Move"
+            },
+            {
+              "artists": [
+                "Panda Bear"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c500560412835b729ced7fef",
+              "name": "Alsatian Darn"
+            },
+            {
+              "artists": [
+                "George Albert Carpenter",
+                "Clara Jean Louise Davis",
+                "The Clog"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd4a69636847a875d9836275",
+              "name": "Come Ye & Follow Me"
+            },
+            {
+              "artists": [
+                "Leyla McCalla"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d3aba78d5e76d40ca0656113",
+              "name": "Search"
+            },
+            {
+              "artists": [
+                "Mark McCausland",
+                "McKowski",
+                "Steve Wickham"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730a3da6914330ca84f56e3e8b",
+              "name": "The Blackbird"
+            },
+            {
+              "artists": [
+                "Massage"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730d78dfe6e65ce1e1aec87a43",
+              "name": "Daffy Duck"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23392364/FREEFORM",
+          "station": "KALX",
+          "track_count": 75,
+          "url": "https://open.spotify.com/playlist/6uMPovyZ1EYWeMGhmG5DEZ"
         }
       },
       "needs_reconciliation": false
