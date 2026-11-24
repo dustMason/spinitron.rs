@@ -52520,7 +52520,7 @@
           "start_time": "2026-11-23T12:00:00-0800",
           "end_time": "2026-11-23T13:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1tk5yuiTftpe3BUTq6I5Sg",
         "desired_uris": [
@@ -52546,8 +52546,81 @@
           "9": "SE5Q51818012"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T13:00:00-0800",
+          "broadcast_start": "2026-11-23T12:00:00-0800",
+          "imported_at": "2026-11-24T17:05:49.671973876+00:00",
+          "last_updated": "2026-11-24 17:05 UTC",
           "name": "KPOO - Let Me Touch Your Mind - 2026-11-23",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Ike & Tina Turner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739415ef0c87009c80f09053e6",
+              "name": "Let Me Touch Your Mind"
+            },
+            {
+              "artists": [
+                "Louis Armstrong & His Hot Seven"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c6040d85df968c25cf775b4b",
+              "name": "Potato Head Blues"
+            },
+            {
+              "artists": [
+                "The 5th Dimension"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731f82b31f25a417cd3c10fc55",
+              "name": "Puppet Man - Neil Sedaka Cover"
+            },
+            {
+              "artists": [
+                "James & Bobby Purify"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b5f9738e98b49492ae081a9c",
+              "name": "I'm Your Puppet"
+            },
+            {
+              "artists": [
+                "André DeShields",
+                "Ain't Misbehavin' Ensemble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d6b74732f747c411df9e7d95",
+              "name": "The Viper's Drag"
+            },
+            {
+              "artists": [
+                "Mad Mac"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b738a78778b288c2ecd9b76",
+              "name": "Dancing on the Moon"
+            },
+            {
+              "artists": [
+                "SEATBELTS"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e90a54d6e31d9ff3f1d566fa",
+              "name": "Space Lion"
+            },
+            {
+              "artists": [
+                "\"Weird Al\" Yankovic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d3248051277532dc782ab0ff",
+              "name": "Eat It"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23389292/Let-Me-Touch-Your-Mind",
+          "station": "KPOO",
+          "track_count": 9,
+          "url": "https://open.spotify.com/playlist/1tk5yuiTftpe3BUTq6I5Sg"
         }
       },
       "needs_reconciliation": false
