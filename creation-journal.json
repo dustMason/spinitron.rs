@@ -53350,7 +53350,7 @@
           "start_time": "2026-11-23T23:00:00-0800",
           "end_time": "2026-11-24T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "46N4IvnvqfG9g4C5tSDMzD",
         "desired_uris": [
@@ -53488,8 +53488,103 @@
           "65": "ITK600800917"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T06:00:00-0800",
+          "broadcast_start": "2026-11-23T23:00:00-0800",
+          "imported_at": "2026-11-24T17:09:34.836156546+00:00",
+          "last_updated": "2026-11-24 17:09 UTC",
           "name": "KPOO - Over Nite Sounds - 2026-11-23",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "AI 5"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27359072d7666c8c2de32b92e1e",
+              "name": "Harmless"
+            },
+            {
+              "artists": [
+                "Postmodern Jukebox",
+                "Melinda Doolittle"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27306851a751c422828b47e4fa0",
+              "name": "Toxic"
+            },
+            {
+              "artists": [
+                "Dee Dee Bridgewater"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f31d70e9a5c1ca5385a1a5c",
+              "name": "Night In Tunisia"
+            },
+            {
+              "artists": [
+                "Diana Krall"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dd347162e8c70240f7970d34",
+              "name": "Temptation"
+            },
+            {
+              "artists": [
+                "Melody Gardot"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fb6068078c8525a7f5a6d16",
+              "name": "Your Heart Is As Black As Night"
+            },
+            {
+              "artists": [
+                "Armando Sciascia Orchestra",
+                "Wanda Roti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27377ae1866067b4477dfe5bcb4",
+              "name": "Sexy World - O.S.T. from the Film Sexy"
+            },
+            {
+              "artists": [
+                "Alfred Newman (conductor), The Hollywood Symphony Orchestra & Chorus"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736808904f8a3e57f3deda8f06",
+              "name": "At The Tomb Of Amenhotep (The Great Pharaoh)"
+            },
+            {
+              "artists": [
+                "Ella Fitzgerald"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27366ff64c55e3f6c7feab50677",
+              "name": "Midnight Sun"
+            },
+            {
+              "artists": [
+                "Nancy Wilson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f4b1d3252ca2211a2d62d9bb",
+              "name": "Don't Talk, Just Sing - 2007 Digital Remaster"
+            },
+            {
+              "artists": [
+                "Etta Jones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b3a70d78efb04a33d0ed2785",
+              "name": "My Gentleman Friend"
+            },
+            {
+              "artists": [
+                "Nancy Wilson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f4b1d3252ca2211a2d62d9bb",
+              "name": "Guess Who I Saw Today - 2007 Digital Remaster"
+            },
+            {
+              "artists": [
+                "Nina Simone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da79dd1fc3e3fdfc4ed772f6",
+              "name": "You Can Have Him"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23392143/Over-Nite-Sounds",
+          "station": "KPOO",
+          "track_count": 65,
+          "url": "https://open.spotify.com/playlist/46N4IvnvqfG9g4C5tSDMzD"
         }
       },
       "needs_reconciliation": false
