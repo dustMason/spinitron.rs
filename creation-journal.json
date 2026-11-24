@@ -20177,7 +20177,7 @@
           "start_time": "2026-11-23T17:00:00-0800",
           "end_time": "2026-11-23T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "63zH0AXRq588ScIUYjvlTT",
         "desired_uris": [
@@ -20195,8 +20195,52 @@
           "5": "USSM10204814"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T18:00:00-0800",
+          "broadcast_start": "2026-11-23T17:00:00-0800",
+          "imported_at": "2026-11-24T17:13:41.948190991+00:00",
+          "last_updated": "2026-11-24 17:13 UTC",
           "name": "KALX - Take Five - 2026-11-23",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Freddie Hubbard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732f3b2637c924313342bf6559",
+              "name": "Straight Life"
+            },
+            {
+              "artists": [
+                "Weather Report"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5a842b24130973b446ca97a",
+              "name": "Nubian Sundance - Live"
+            },
+            {
+              "artists": [
+                "Charles Mingus"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731684be1d5e32ab8021be5da9",
+              "name": "Pithecanthropus Erectus"
+            },
+            {
+              "artists": [
+                "Terje Rypdal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d136d6b3469f25e2c034f326",
+              "name": "Bend It"
+            },
+            {
+              "artists": [
+                "Stan Getz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b9e0422c096a66c9e0cc145d",
+              "name": "Five Hundred Miles High"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23347588/Take-Five",
+          "station": "KALX",
+          "track_count": 5,
+          "url": "https://open.spotify.com/playlist/63zH0AXRq588ScIUYjvlTT"
         }
       },
       "needs_reconciliation": false
