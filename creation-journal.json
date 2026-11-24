@@ -31620,7 +31620,7 @@
           "start_time": "2026-11-23T18:00:00-0800",
           "end_time": "2026-11-23T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6v3X78iDHTJWMW3pna4ZbU",
         "desired_uris": [
@@ -31659,8 +31659,101 @@
           "16": "USUM70700290"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T20:00:00-0800",
+          "broadcast_start": "2026-11-23T18:00:00-0800",
+          "imported_at": "2026-11-24T17:14:23.564456062+00:00",
+          "last_updated": "2026-11-24 17:14 UTC",
           "name": "KALX - SOUND-IMAGE #22 - 2026-11-23",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Rev. Johnny L. 'Hurricane' Jones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f2c05d782f9422aa0b5aece",
+              "name": "The Day Is Past And Gone"
+            },
+            {
+              "artists": [
+                "Lolina"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27374ec39c2eb247822c199984f",
+              "name": "Border Beach"
+            },
+            {
+              "artists": [
+                "Fugazi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337c996d93a2ffc93e70e58d5",
+              "name": "Great Cop"
+            },
+            {
+              "artists": [
+                "The Specials"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f994274f989e9faa4f26cbcd",
+              "name": "Ghost Town - Extended Version"
+            },
+            {
+              "artists": [
+                "Earthling"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738df045cf3142f8b1698d9a7c",
+              "name": "Nothingness"
+            },
+            {
+              "artists": [
+                "Mike Ladd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d99374500daceb6b5a6f123d",
+              "name": "Planet 10"
+            },
+            {
+              "artists": [
+                "Jean Binta Breeze"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273709cef1da2cceaed63e76ce2",
+              "name": "Mad Woman"
+            },
+            {
+              "artists": [
+                "Abacus"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c5d00019ecd7eed797382566",
+              "name": "Relics One"
+            },
+            {
+              "artists": [
+                "Slauson Malone 1"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738331f67248612fc0b133934d",
+              "name": "Porcelain"
+            },
+            {
+              "artists": [
+                "Kraze"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27336ee1f8d5f32ba89ef03c45b",
+              "name": "The Party - Club Mix"
+            },
+            {
+              "artists": [
+                "Julian Jonah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273072b765b31451989ea81b98f",
+              "name": "Jealousy and Lies"
+            },
+            {
+              "artists": [
+                "Semiratruth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731c688f2103c52ba77ea70947",
+              "name": "Tudo Bem!"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23390672/SOUND-IMAGE-22",
+          "station": "KALX",
+          "track_count": 16,
+          "url": "https://open.spotify.com/playlist/6v3X78iDHTJWMW3pna4ZbU"
         }
       },
       "needs_reconciliation": false
