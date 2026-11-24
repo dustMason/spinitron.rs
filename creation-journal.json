@@ -20167,6 +20167,39 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23347588": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23347588,
+          "title": "Take Five",
+          "url": "https://spinitron.com/KALX/pl/23347588/Take-Five",
+          "start_time": "2026-11-23T17:00:00-0800",
+          "end_time": "2026-11-23T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3qBvdZg6NqrB1xgslYFoue",
+          "spotify:track:4EDEh1zQ7oYo0I9GFzYpuP",
+          "spotify:track:5lDqsu4gUAfFo8rPEEhHKw",
+          "spotify:track:6VMlRwY5voVMfQ4JFnJ0tS",
+          "spotify:track:7GjRkD1AxQF2TQen7GFmmv"
+        ],
+        "source_isrcs": {
+          "1": "USSM17000191",
+          "2": "USSM17400673",
+          "3": "USAT20004066",
+          "4": "DEB337303101",
+          "5": "USSM10204814"
+        },
+        "listing": {
+          "name": "KALX - Take Five - 2026-11-23",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23348242": {
       "entry": {
         "station": "KALX",
