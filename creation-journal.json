@@ -31024,7 +31024,7 @@
           "start_time": "2026-11-23T09:00:00-0800",
           "end_time": "2026-11-23T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3AYTmjqHrRBoCYBJr32AXq",
         "desired_uris": [
@@ -31106,8 +31106,101 @@
           "37": "GBCPA0400844"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T12:00:00-0800",
+          "broadcast_start": "2026-11-23T09:00:00-0800",
+          "imported_at": "2026-11-24T17:11:37.838796644+00:00",
+          "last_updated": "2026-11-24 17:11 UTC",
           "name": "KALX - FREEFORM - 2026-11-23 9:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Barnt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738c290662390a6416aced6d34",
+              "name": "Trig graphs don't match??"
+            },
+            {
+              "artists": [
+                "trentemøller"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27323678170d562b9396b28c289",
+              "name": "Shades of Marble"
+            },
+            {
+              "artists": [
+                "Matthew Dear"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273771cef5f4d21f9b176a2be39",
+              "name": "Her Fantasy"
+            },
+            {
+              "artists": [
+                "Cold Cave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732cfe831d2608a8e39bc0a401",
+              "name": "Love Comes Close"
+            },
+            {
+              "artists": [
+                "Erasure"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f8b6d776a6a6b66371cfefe9",
+              "name": "Wings Of Love"
+            },
+            {
+              "artists": [
+                "Cold Beat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27377ef4ac983e6bec50752b452",
+              "name": "Tinted Glass"
+            },
+            {
+              "artists": [
+                "Duran Duran"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730d4d701d65e429d396ceb1d5",
+              "name": "New Moon on Monday"
+            },
+            {
+              "artists": [
+                "Ancient Astronauts"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735e2ccfbb0f104318139c5aeb",
+              "name": "Still a Soldier"
+            },
+            {
+              "artists": [
+                "Bullion"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a1e6a4e8682ac791e3c809f8",
+              "name": "Young Shiver"
+            },
+            {
+              "artists": [
+                "Don Caballero"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f9b4e9505b68872ac7f70d38",
+              "name": "Ones All Over the Place"
+            },
+            {
+              "artists": [
+                "The M-Tet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737fab16097f45c2ee8d765121",
+              "name": "The Tease"
+            },
+            {
+              "artists": [
+                "Death Valley Girls"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f2365f6ea513f85a6ab440a0",
+              "name": "Fire and Brimstone"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23388540/FREEFORM",
+          "station": "KALX",
+          "track_count": 37,
+          "url": "https://open.spotify.com/playlist/3AYTmjqHrRBoCYBJr32AXq"
         }
       },
       "needs_reconciliation": false
