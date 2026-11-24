@@ -52784,7 +52784,7 @@
           "start_time": "2026-11-23T15:00:00-0800",
           "end_time": "2026-11-23T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5YOyFAi3kuq9rHHM8VhB3y",
         "desired_uris": [
@@ -52858,8 +52858,102 @@
           "33": "USVPR1900051"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T18:00:00-0800",
+          "broadcast_start": "2026-11-23T15:00:00-0800",
+          "imported_at": "2026-11-24T17:07:14.074358705+00:00",
+          "last_updated": "2026-11-24 17:07 UTC",
           "name": "KPOO - Gramophoney Baloney - 2026-11-23",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Upsetters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730d28e6d9c9c30f04755cc981",
+              "name": "Waap You Waa"
+            },
+            {
+              "artists": [
+                "David Gómez"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27390ca61362e890acfd2af3dd2",
+              "name": "La Nuit de Déborah"
+            },
+            {
+              "artists": [
+                "Beans Hambone & El Morrow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b8334e587c427e7c0dfb9f5",
+              "name": "Beans"
+            },
+            {
+              "artists": [
+                "Duke Ellington"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c7e16bc025b15a5e5ea8ada9",
+              "name": "Crescendo in Blue"
+            },
+            {
+              "artists": [
+                "Arizona Dranes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273edea797448e11631fe334643",
+              "name": "John Said He Saw A Number"
+            },
+            {
+              "artists": [
+                "Tampa Red",
+                "Georgia Tom"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273067844eab740bd90626f6a1e",
+              "name": "Dead Cats On the Line"
+            },
+            {
+              "artists": [
+                "Stelios Keromitis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ea03d1637b0e1c1b869d9fa",
+              "name": "O lagos (1948) - Ο λαγός"
+            },
+            {
+              "artists": [
+                "Billie Holiday"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bba59aa6818285d8604f182a",
+              "name": "Yesterdays"
+            },
+            {
+              "artists": [
+                "George Olsen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733cad006e077ef8a9b7c5559d",
+              "name": "Night Owl"
+            },
+            {
+              "artists": [
+                "Crossover Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a57c801e85bc31434a31dc48",
+              "name": "Ruff"
+            },
+            {
+              "artists": [
+                "B.F. Shelton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f177952a6240b675a9059fa9",
+              "name": "Oh Molly Dear"
+            },
+            {
+              "artists": [
+                "Marika Papagika"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273673ebbc530bdaef811429392",
+              "name": "Manaki mou - 1926"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23390063/Gramophoney-Baloney",
+          "station": "KPOO",
+          "track_count": 33,
+          "url": "https://open.spotify.com/playlist/5YOyFAi3kuq9rHHM8VhB3y"
         }
       },
       "needs_reconciliation": false
