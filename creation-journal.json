@@ -52087,7 +52087,7 @@
           "start_time": "2026-11-23T05:00:00-0800",
           "end_time": "2026-11-23T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1V6YJorR70fejp3T2esGVc",
         "desired_uris": [
@@ -52193,8 +52193,101 @@
           "49": "USA371484930"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T09:00:00-0800",
+          "broadcast_start": "2026-11-23T05:00:00-0800",
+          "imported_at": "2026-11-24T17:04:20.605445272+00:00",
+          "last_updated": "2026-11-24 17:04 UTC",
           "name": "KPOO - Record Shop Oldies - Variety Oldies - 2026-11-23",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Aretha Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273325929aee133d293325469e4",
+              "name": "Climbing Higher Mountains - Live at New Temple Missionary Baptist Church, Los Angeles, January 13, 1972"
+            },
+            {
+              "artists": [
+                "J.J. Jackson and the Jackals"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a38403f0397dc754721e21a7",
+              "name": "Ring Telephone"
+            },
+            {
+              "artists": [
+                "Ike & Tina Turner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27384b17e572f7e0ab861e9b608",
+              "name": "River Deep - Mountain High"
+            },
+            {
+              "artists": [
+                "Jerry Butler"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c646bd3e3fa6c23682fd28c8",
+              "name": "Let It Be Me"
+            },
+            {
+              "artists": [
+                "Frankie Lymon & The Teenagers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732a66cfb38454b315e1dabde2",
+              "name": "Why Do Fools Fall In Love"
+            },
+            {
+              "artists": [
+                "Percy Sledge"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730c8a01bf197adb9859044775",
+              "name": "When a Man Loves a Woman"
+            },
+            {
+              "artists": [
+                "The Fiestas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734ab04374aca49b76ed1a4218",
+              "name": "So Fine"
+            },
+            {
+              "artists": [
+                "The Impressions"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e0a111bd5261394868af897b",
+              "name": "I'm So Proud"
+            },
+            {
+              "artists": [
+                "Inez & Charlie Foxx"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c8b498e03b93f35821df83f8",
+              "name": "Mockingbird"
+            },
+            {
+              "artists": [
+                "Betty Everett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e54973d07a9ab53e13959263",
+              "name": "The Shoop Shoop Song (It's In His Kiss)"
+            },
+            {
+              "artists": [
+                "The Paragons"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736f9607156a0734105125def3",
+              "name": "Twilight"
+            },
+            {
+              "artists": [
+                "The Johnny Otis Rhythm & Blues Caravan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27315263deb2665db74b92fb1d5",
+              "name": "The Turkey Hop - Part 1"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23387661/Record-Shop-Oldies-Variety-Oldies",
+          "station": "KPOO",
+          "track_count": 49,
+          "url": "https://open.spotify.com/playlist/1V6YJorR70fejp3T2esGVc"
         }
       },
       "needs_reconciliation": false
