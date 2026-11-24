@@ -31768,7 +31768,7 @@
           "start_time": "2026-11-23T20:00:00-0800",
           "end_time": "2026-11-23T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "65dgpQrGVD6NNBNzh6fIMA",
         "desired_uris": [
@@ -31826,8 +31826,104 @@
           "26": "USUM71924924"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T22:00:00-0800",
+          "broadcast_start": "2026-11-23T20:00:00-0800",
+          "imported_at": "2026-11-24T17:15:04.693780426+00:00",
+          "last_updated": "2026-11-24 17:15 UTC",
           "name": "KALX - FREEFORM - 2026-11-23 8:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Howlin' Wolf"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f607cf4e41f024326739846a",
+              "name": "Spoonful"
+            },
+            {
+              "artists": [
+                "Russian Circles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737540118e6b0cc263a01f3c17",
+              "name": "Empath"
+            },
+            {
+              "artists": [
+                "Spiritual Exit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337fbfced52563ac327441d33",
+              "name": "September"
+            },
+            {
+              "artists": [
+                "Tamikrest"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c17ebd3df72f4d2456b77a49",
+              "name": "Imanin"
+            },
+            {
+              "artists": [
+                "Celtic Frost"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27376029e0c6b09c23bad89c6c3",
+              "name": "Fainted Eyes"
+            },
+            {
+              "artists": [
+                "Squarepusher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734ff723ad006430dd4fa5956a",
+              "name": "Baltang Ort"
+            },
+            {
+              "artists": [
+                "Terry Gross"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273015e7e8942851fc9c6af87bf",
+              "name": "Sheepskin City"
+            },
+            {
+              "artists": [
+                "Floating Points",
+                "San Francisco Ballet Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d29699a86f26f0e1df161d16",
+              "name": "Movement 4 - Zeus’ Command"
+            },
+            {
+              "artists": [
+                "Stinking Lizaveta"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a498c5b00662b252f689b6d",
+              "name": "Beyond the Shadows"
+            },
+            {
+              "artists": [
+                "Leonard Cohen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738fc857633a3804cd2786f923",
+              "name": "Everybody Knows"
+            },
+            {
+              "artists": [
+                "Visible Cloaks",
+                "Yoshio Ojima",
+                "Satsuki Shibano"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c2d419750ae6691b9a6b7301",
+              "name": "Shapes"
+            },
+            {
+              "artists": [
+                "The War On Drugs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f34338e9270f9c0561cf4c7e",
+              "name": "Under The Pressure"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23391158/FREEFORM",
+          "station": "KALX",
+          "track_count": 26,
+          "url": "https://open.spotify.com/playlist/65dgpQrGVD6NNBNzh6fIMA"
         }
       },
       "needs_reconciliation": false
