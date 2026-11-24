@@ -52968,7 +52968,7 @@
           "start_time": "2026-11-23T18:00:00-0800",
           "end_time": "2026-11-23T21:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "326nLuyItzPUoRraiQiIkP",
         "desired_uris": [
@@ -53020,8 +53020,101 @@
           "22": "USPR19104488"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T21:00:00-0800",
+          "broadcast_start": "2026-11-23T18:00:00-0800",
+          "imported_at": "2026-11-24T17:07:55.738703434+00:00",
+          "last_updated": "2026-11-24 17:07 UTC",
           "name": "KPOO - Wheels - 2026-11-23",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Pharoah Sanders"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27330cb5dc5fb8405984e4b50f7",
+              "name": "Hum Allah Hum Allah Hum Allah"
+            },
+            {
+              "artists": [
+                "Brenda Russell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273acd17be7c3e1bef9c49acef3",
+              "name": "In The Thick Of It"
+            },
+            {
+              "artists": [
+                "The Jones Girls"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27342b60af393781ecdec90519a",
+              "name": "Nights Over Egypt"
+            },
+            {
+              "artists": [
+                "The Jones Girls"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27380c75d45e6d9d04daeb024ff",
+              "name": "Nights Over Egypt"
+            },
+            {
+              "artists": [
+                "The Bangles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27385deca38cf1f83e7bff2b6c9",
+              "name": "Walk Like An Egyptian"
+            },
+            {
+              "artists": [
+                "Neal Roberson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27376160c8d770933fb3e5653eb",
+              "name": "Don't Let the Devil Ride"
+            },
+            {
+              "artists": [
+                "Sam & Dave"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27362919a7583ee69f9348d194f",
+              "name": "I Thank You"
+            },
+            {
+              "artists": [
+                "Andrew Gold"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf453e9c6f5dcfdca507cf5f",
+              "name": "Thank You for Being a Friend"
+            },
+            {
+              "artists": [
+                "Traffic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a214be7ea684b2cc2b33de22",
+              "name": "The Low Spark Of High-Heeled Boys"
+            },
+            {
+              "artists": [
+                "Weather Report"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5a842b24130973b446ca97a",
+              "name": "Cucumber Slumber"
+            },
+            {
+              "artists": [
+                "Grace Jones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27332623a6eabc0421cd7589102",
+              "name": "Slave To The Rhythm"
+            },
+            {
+              "artists": [
+                "Yarbrough & Peoples"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733e879906cd2c54af59deccc9",
+              "name": "Don't Stop The Music"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23390742/Wheels",
+          "station": "KPOO",
+          "track_count": 22,
+          "url": "https://open.spotify.com/playlist/326nLuyItzPUoRraiQiIkP"
         }
       },
       "needs_reconciliation": false
