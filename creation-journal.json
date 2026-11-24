@@ -52302,7 +52302,7 @@
           "start_time": "2026-11-23T09:00:00-0800",
           "end_time": "2026-11-23T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0ZhJeXh9NaLGJKmmuH2bAD",
         "desired_uris": [
@@ -52409,8 +52409,103 @@
           "50": "USCA25300089"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T12:00:00-0800",
+          "broadcast_start": "2026-11-23T09:00:00-0800",
+          "imported_at": "2026-11-24T17:05:08.452036405+00:00",
+          "last_updated": "2026-11-24 17:05 UTC",
           "name": "KPOO - The Power of Blues Compels You - 2026-11-23",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Cab Calloway & His Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a001daf606b4abc87ea090b6",
+              "name": "Everybody Eats When They Come to My House"
+            },
+            {
+              "artists": [
+                "Raphael Wressnig",
+                "Igor Prado"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737430da1df46d4deceefe0b7d",
+              "name": "Turnip Greens"
+            },
+            {
+              "artists": [
+                "Blind Boy Fuller"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733241a7ef8eb73d229980b933",
+              "name": "I Want Some of Your Pie"
+            },
+            {
+              "artists": [
+                "Cab Calloway"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a001daf606b4abc87ea090b6",
+              "name": "A Chicken Ain't Nothin' but a Bird"
+            },
+            {
+              "artists": [
+                "Oscar Brown, Jr."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27327addb0bfe70b653e23b58f4",
+              "name": "Chicken Heads"
+            },
+            {
+              "artists": [
+                "James Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273940050377c3d71ce35d5b118",
+              "name": "The Chicken - Instrumental"
+            },
+            {
+              "artists": [
+                "Antone's 50th Allstars",
+                "Pinetop Perkins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27367c3fe8d8edb21e153ec2b3f",
+              "name": "Chicken Shack / Sugar Bear Intro - Live"
+            },
+            {
+              "artists": [
+                "Jimmy Smith"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dd9ea70ec621b1e522809b66",
+              "name": "Back At The Chicken Shack"
+            },
+            {
+              "artists": [
+                "Minnie Wallace"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736e8cee7a89b7fe0549bd9306",
+              "name": "Dirty Butter"
+            },
+            {
+              "artists": [
+                "James \"Stump\" Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738ee00a3d8b79fe5c671e7266",
+              "name": "Don't Give My Lard Away"
+            },
+            {
+              "artists": [
+                "Margaret Carter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a11f698758731a3aa2615a6",
+              "name": "I Want Plenty Grease In My Frying Pan"
+            },
+            {
+              "artists": [
+                "Sista Monica"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734dbfc9c038013b6c0ee795b0",
+              "name": "Cookin' With Grease"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23388498/The-Power-of-Blues-Compels-You",
+          "station": "KPOO",
+          "track_count": 50,
+          "url": "https://open.spotify.com/playlist/0ZhJeXh9NaLGJKmmuH2bAD"
         }
       },
       "needs_reconciliation": false
