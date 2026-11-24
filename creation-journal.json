@@ -53129,7 +53129,7 @@
           "start_time": "2026-11-23T21:00:00-0800",
           "end_time": "2026-11-24T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0PY2dDn1ZZVJkoMc5p4dIA",
         "desired_uris": [
@@ -53238,8 +53238,104 @@
           "51": "USAT20103697"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T00:00:00-0800",
+          "broadcast_start": "2026-11-23T21:00:00-0800",
+          "imported_at": "2026-11-24T17:08:42.344032647+00:00",
+          "last_updated": "2026-11-24 17:08 UTC",
           "name": "KPOO - Grinders Grooveyard - 2026-11-23",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Ella Fitzgerald"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27327be1c908d41f00d3e53a308",
+              "name": "Blue Skies"
+            },
+            {
+              "artists": [
+                "Louis Armstrong"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734e691c37282c264891b598e5",
+              "name": "Shine"
+            },
+            {
+              "artists": [
+                "Postmodern Jukebox",
+                "Maiya Sykes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ca7312535243d57bf72d9c7",
+              "name": "Don't Stop"
+            },
+            {
+              "artists": [
+                "Bette Midler"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a2bba4377a4dc9d5fc89b5b",
+              "name": "Boogie Woogie Bugle Boy - Single Version; 2016 Remaster"
+            },
+            {
+              "artists": [
+                "Don Byron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bcc44db1c21e325f3c29f2d4",
+              "name": "Bounce of the Sugar Plum Fairies"
+            },
+            {
+              "artists": [
+                "Cher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273687d8ed8a2ac95bfe2d7d314",
+              "name": "Welcome to Burlesque - 2024 Remaster"
+            },
+            {
+              "artists": [
+                "Sarah Vaughan",
+                "Gotan Project"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27310d63d9350864498fb3da8ef",
+              "name": "Whatever Lola Wants - Gotan Project Remix"
+            },
+            {
+              "artists": [
+                "Grace Jones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27375a8b4d86fb3a88401b38282",
+              "name": "I've Seen That Face Before (Libertango)"
+            },
+            {
+              "artists": [
+                "Édith Piaf"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733d69a1082b9d676263912178",
+              "name": "Non, je ne regrette rien"
+            },
+            {
+              "artists": [
+                "Nat King Cole"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739a79b3c34293a7474e31ef1d",
+              "name": "When I Grow Too Old To Dream"
+            },
+            {
+              "artists": [
+                "Nancy Wilson",
+                "Malcolm Addey"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fac2bf2b15f254110a91022c",
+              "name": "The Best Is Yet To Come"
+            },
+            {
+              "artists": [
+                "Sarah Vaughan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738784c5715d403295be3acc1c",
+              "name": "Lullaby Of Birdland"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23391501/Grinders-Grooveyard",
+          "station": "KPOO",
+          "track_count": 51,
+          "url": "https://open.spotify.com/playlist/0PY2dDn1ZZVJkoMc5p4dIA"
         }
       },
       "needs_reconciliation": false
