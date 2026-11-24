@@ -30874,7 +30874,7 @@
           "start_time": "2026-11-23T07:00:00-0800",
           "end_time": "2026-11-23T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5QoX0IPoEx5a1Xm6Euyr46",
         "desired_uris": [
@@ -30910,8 +30910,106 @@
           "14": "NLCK42406792"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T09:00:00-0800",
+          "broadcast_start": "2026-11-23T07:00:00-0800",
+          "imported_at": "2026-11-24T17:10:57.107078106+00:00",
+          "last_updated": "2026-11-24 17:10 UTC",
           "name": "KALX - FREEFORM - 2026-11-23 7:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Blawan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733adb65a355a758c2ccf4b8fc",
+              "name": "Creature Brigade"
+            },
+            {
+              "artists": [
+                "Joy Orbison"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c85c83949bb3fa115e8455d",
+              "name": "Ellipsis"
+            },
+            {
+              "artists": [
+                "Skrillex",
+                "Randomer",
+                "Blawan",
+                "MC Dricka"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f4d40a252848a83d49e0ff1b",
+              "name": "Thistle"
+            },
+            {
+              "artists": [
+                "Maoupa Mazzocchetti",
+                "Pariah",
+                "Clara!"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d4f49f0fe6fb2867444a7da1",
+              "name": "Mantequilla - Pariah Remix"
+            },
+            {
+              "artists": [
+                "Karenn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735cee645db2c39159ce40b797",
+              "name": "Strawbs"
+            },
+            {
+              "artists": [
+                "Coil"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27382eb57d3f0ed5671b0d8715e",
+              "name": "The Snow"
+            },
+            {
+              "artists": [
+                "Kilner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27390632593409367f54ddfdb2b",
+              "name": "Auto Wave"
+            },
+            {
+              "artists": [
+                "Blawan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf67e0290b64838ec0e25ed1",
+              "name": "Fourth Dimensional"
+            },
+            {
+              "artists": [
+                "Persher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cc92375d101d952db7261553",
+              "name": "Celtic Froth"
+            },
+            {
+              "artists": [
+                "Squarepusher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec3fb627f768991662b2870e",
+              "name": "Tundra"
+            },
+            {
+              "artists": [
+                "Meshuggah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27314940d2941f68b107da9eee4",
+              "name": "Rational Gaze"
+            },
+            {
+              "artists": [
+                "Ben Klock"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b5a3c474abc76166a4c27b16",
+              "name": "Wolf"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23388032/FREEFORM",
+          "station": "KALX",
+          "track_count": 14,
+          "url": "https://open.spotify.com/playlist/5QoX0IPoEx5a1Xm6Euyr46"
         }
       },
       "needs_reconciliation": false
