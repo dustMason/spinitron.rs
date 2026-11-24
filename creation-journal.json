@@ -31379,6 +31379,61 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23389957": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23389957,
+          "title": "No Motion Picture",
+          "url": "https://spinitron.com/KALX/pl/23389957/No-Motion-Picture",
+          "start_time": "2026-11-23T15:00:00-0800",
+          "end_time": "2026-11-23T17:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:7lRsrT9rpJO0oOsriiVfHv",
+          "spotify:track:52ekbEj3WDIsnAGrVQf5y9",
+          "spotify:track:2raRC4GUDeBRclwEfbUn7Y",
+          "spotify:track:5ZMaau4DWX4owhuR8uSEPh",
+          "spotify:track:5owAolGQ0AhJb9tP8y1UcV",
+          "spotify:track:0n0GXW1fRL3v7jjzTWlmWw",
+          "spotify:track:4OslqwWF1JIQotBHX7zlbP",
+          "spotify:track:5OxmLAABiYEhQG9DntkbKp",
+          "spotify:track:3Dwmggfw8VvvlnjYgvJQgb",
+          "spotify:track:6y9t7mXJVzBGQG4XhHy8Li",
+          "spotify:track:5uF0RJF0z26eJ3fJILJi0X",
+          "spotify:track:0fSdZXmVIZe5FrsWFKuvUO",
+          "spotify:track:1nWz1h8biFU2rUfshEpZvo",
+          "spotify:track:6shMhGGU41mq0Ym9RfhsHk",
+          "spotify:track:1NZoty3rq9gNBnoDW0sIzY",
+          "spotify:track:52gSOu3SLm8KcvKzbK9q5C"
+        ],
+        "source_isrcs": {
+          "1": "CHA830003001",
+          "2": "QMCAL2000040",
+          "3": "USBN20100718",
+          "4": "USA2P2641472",
+          "5": "USANG2527246",
+          "6": "USN9P2520301",
+          "7": "USY280795413",
+          "8": "QZ8641800002",
+          "9": "US3M58629201",
+          "10": "GB5EM1701749",
+          "11": "UKPK42600004",
+          "12": "ES7381700042",
+          "13": "USATO2600160",
+          "14": "USA220610287",
+          "15": "USHM82607313",
+          "16": "QMV8L2639402"
+        },
+        "listing": {
+          "name": "KALX - No Motion Picture - 2026-11-23",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
