@@ -52509,6 +52509,47 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23389292": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23389292,
+          "title": "Let Me Touch Your Mind",
+          "url": "https://spinitron.com/KPOO/pl/23389292/Let-Me-Touch-Your-Mind",
+          "start_time": "2026-11-23T12:00:00-0800",
+          "end_time": "2026-11-23T13:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:2TAb0MYiC6ADy6pYunLZiP",
+          "spotify:track:1hn1anDgmYRxS9M3raq88c",
+          "spotify:track:7In1OOL1MqyLwMS8Xd97TK",
+          "spotify:track:5z71EfouOWMI4HHZHEjnkr",
+          "spotify:track:5G5dUkLOEnFka6FtK3XSbY",
+          "spotify:track:0aSwah6q25mFRh5mR3MGah",
+          "spotify:track:5cXgboyjy6wmjQ8zHvZdEq",
+          "spotify:track:0WuYuWhLws8VahMy2zLLRJ",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x"
+        ],
+        "source_isrcs": {
+          "1": "USUM71810602",
+          "2": "FRX762097523",
+          "3": "USAR10000350",
+          "4": "USAR17200015",
+          "5": "USBC10300406",
+          "6": "QZWFK2311893",
+          "7": "JPVI09809280",
+          "8": "USVR10200028",
+          "9": "SE5Q51818012"
+        },
+        "listing": {
+          "name": "KPOO - Let Me Touch Your Mind - 2026-11-23",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
