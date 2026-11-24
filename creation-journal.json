@@ -52635,7 +52635,7 @@
           "start_time": "2026-11-23T13:00:00-0800",
           "end_time": "2026-11-23T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0hCxgwjMoJbNrArPEf8ySl",
         "desired_uris": [
@@ -52674,8 +52674,102 @@
           "16": "USSM10203611"
         },
         "listing": {
+          "broadcast_end": "2026-11-23T15:00:00-0800",
+          "broadcast_start": "2026-11-23T13:00:00-0800",
+          "imported_at": "2026-11-24T17:06:30.779928333+00:00",
+          "last_updated": "2026-11-24 17:06 UTC",
           "name": "KPOO - Soul Explosion - 2026-11-23",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Windjammers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c99b3c6f4815a5f201efb4f",
+              "name": "Poor Sad Child Part 1"
+            },
+            {
+              "artists": [
+                "The Staple Singers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27359d554b530e90d0fb88583d1",
+              "name": "Hammer and Nails"
+            },
+            {
+              "artists": [
+                "Brenda Holloway"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f3d39085402981a3861fd2bf",
+              "name": "I've Been Good To You"
+            },
+            {
+              "artists": [
+                "Koko Taylor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27370cd8cebf3f982db0179a3a4",
+              "name": "Wang Dang Doodle"
+            },
+            {
+              "artists": [
+                "Williams Walker",
+                "The Ray-O-Vacs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da1339b7d7535dd5df394bcf",
+              "name": "Party Time"
+            },
+            {
+              "artists": [
+                "Little Milton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273302d9617d359bfe2fa0550aa",
+              "name": "If You Love Me"
+            },
+            {
+              "artists": [
+                "Larry Williams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27347100bb820c4c70dccf664b0",
+              "name": "Bad Boy"
+            },
+            {
+              "artists": [
+                "The \"5\" Royales"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739d74dc825449b425984cda4b",
+              "name": "Take Me with You Baby"
+            },
+            {
+              "artists": [
+                "Tint of Darkness"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273144e03fcf8c0a9ea2a4e7f5a",
+              "name": "Answer Me"
+            },
+            {
+              "artists": [
+                "Joe Houston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e5f1e3a23577d3505f3fe2ac",
+              "name": "All Night Long"
+            },
+            {
+              "artists": [
+                "Ruth Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738f5281f66452016858aef137",
+              "name": "Daddy Daddy"
+            },
+            {
+              "artists": [
+                "Billy Boy Arnold"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dceb083a769ef5893e2be930",
+              "name": "Sugar Mama"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23389564/Soul-Explosion",
+          "station": "KPOO",
+          "track_count": 16,
+          "url": "https://open.spotify.com/playlist/0hCxgwjMoJbNrArPEf8ySl"
         }
       },
       "needs_reconciliation": false
