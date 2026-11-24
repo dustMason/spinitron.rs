@@ -30864,6 +30864,57 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23388032": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23388032,
+          "title": "FREEFORM",
+          "url": "https://spinitron.com/KALX/pl/23388032/FREEFORM",
+          "start_time": "2026-11-23T07:00:00-0800",
+          "end_time": "2026-11-23T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:58YtFMSn17VhHaM58R0jRC",
+          "spotify:track:58eWUMFPVu4aCl1sEoNa8a",
+          "spotify:track:7ipmIWVARgxxwcXZxzRYUX",
+          "spotify:track:2J8cKWzvrXN1ZcrBoS1IvA",
+          "spotify:track:0LdICMRuWCveJIIDMZ8nwQ",
+          "spotify:track:3KYMLByHhyGYnwNO8fpP80",
+          "spotify:track:2kIK7JmEb9D9tNJsiatSpW",
+          "spotify:track:6TBbopxL5ZMiLSu7tQgfDl",
+          "spotify:track:0IysuGsznI91n07rqYKKik",
+          "spotify:track:7rGb9KKijyr1v2XfscUxK7",
+          "spotify:track:16HajHv5P2p53fbUyti4e1",
+          "spotify:track:6wiExjKM0VF6rM1t4EfYKF",
+          "spotify:track:6TkEhs8usxsgXLfeU5ei2m",
+          "spotify:track:5isQMCPE43NR5xIzUMEGbM"
+        ],
+        "source_isrcs": {
+          "1": "GBBKS2500097",
+          "2": "QM24S1924329",
+          "3": "USAT22603626",
+          "4": "COAB11900253",
+          "5": "GBQLP1901377",
+          "6": "US27M4321004",
+          "7": "GBQT21500114",
+          "8": "GBQLP2101229",
+          "9": "USTJ22460210",
+          "10": "GBBPW2100085",
+          "11": "DED830264302",
+          "12": "DELG71000275",
+          "13": "QZTB82297551",
+          "14": "NLCK42406792"
+        },
+        "listing": {
+          "name": "KALX - FREEFORM - 2026-11-23 7:00am",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
