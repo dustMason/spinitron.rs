@@ -32418,7 +32418,7 @@
           "start_time": "2026-11-24T07:00:00-0800",
           "end_time": "2026-11-24T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0bGuXjgne23TdpQJM9YBda",
         "desired_uris": [
@@ -32470,8 +32470,101 @@
           "23": "DEN962631009"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T09:00:00-0800",
+          "broadcast_start": "2026-11-24T07:00:00-0800",
+          "imported_at": "2026-11-25T16:55:14.424968281+00:00",
+          "last_updated": "2026-11-25 16:55 UTC",
           "name": "KALX - i got worry - 2026-11-24",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Shadows"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27329adae1844bdb965708199f0",
+              "name": "Man of Mystery"
+            },
+            {
+              "artists": [
+                "T-Fire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bc80c4961a10c5eb6a8ec2bd",
+              "name": "Will Of The People"
+            },
+            {
+              "artists": [
+                "Bala Zaaku"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b3272f7e0c805ba73d47b233",
+              "name": "Dagora Ka Yengno"
+            },
+            {
+              "artists": [
+                "abracadabra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd22ee8e5d1f0ca90bba6ee7",
+              "name": "see-saw"
+            },
+            {
+              "artists": [
+                "Supersystem"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273af1ecfd49e7cb4538aefb2b7",
+              "name": "Born Into the World"
+            },
+            {
+              "artists": [
+                "Nas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733590461a66006255c7bb0046",
+              "name": "I Can"
+            },
+            {
+              "artists": [
+                "Mikal Cronin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738fbb52b564d91bdd5bce445a",
+              "name": "Weight"
+            },
+            {
+              "artists": [
+                "The Housemartins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c9820b7d604f18defbed989a",
+              "name": "Sheep"
+            },
+            {
+              "artists": [
+                "Real Numbers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd4c70d9048e499cddec6c59",
+              "name": "Darling"
+            },
+            {
+              "artists": [
+                "Otoliths"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27343a25eab2a392943f5e5ef66",
+              "name": "Bi-Weekly Lady"
+            },
+            {
+              "artists": [
+                "Joel Cusumano"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734d1a547a0e0c01477ae0ee79",
+              "name": "Buying Time"
+            },
+            {
+              "artists": [
+                "Paper Jam"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a0f3eb6d8b4005c138d8f764",
+              "name": "This and That"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23393343/i-got-worry",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/0bGuXjgne23TdpQJM9YBda"
         }
       },
       "needs_reconciliation": false
