@@ -32973,6 +32973,80 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23395321": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23395321,
+          "title": "queen of the cowbell.",
+          "url": "https://spinitron.com/KALX/pl/23395321/queen-of-the-cowbell",
+          "start_time": "2026-11-24T15:00:00-0800",
+          "end_time": "2026-11-24T17:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3nVuglijxmqA2eb4iFrprH",
+          "spotify:track:1kSMqCHHCrNwsJJXJRLEoT",
+          "spotify:track:7dLMXmaRAEpXhuWLTv0iqL",
+          "spotify:track:2b8BZIE6VefboEkZMrNhRX",
+          "spotify:track:0HC9JldurINshOMzr1QBtJ",
+          "spotify:track:1nDlFgDg3b4kYGWr8wEaUV",
+          "spotify:track:0mzH6i9q9VnbkwLaVoIbzK",
+          "spotify:track:22j6li51S0uQtwILwNDsyX",
+          "spotify:track:2Q9rWqk2etobjqHiD1k7eO",
+          "spotify:track:2YR8ESiG2UnBN8l1KCpCCm",
+          "spotify:track:3oz4OtFNU3jOFu1ZjhzRmp",
+          "spotify:track:2YeWPMT0sbfyHuhyN49PrN",
+          "spotify:track:2XRSQKYp0yy4UaBcQCKZrt",
+          "spotify:track:0oSm6BSzFrPq9gLPqi0zJe",
+          "spotify:track:7wTIywtPIs1m9IMWZOqll2",
+          "spotify:track:00Dfku0uAqsx21N8yxv9yk",
+          "spotify:track:3R6jEFK72qh9xU1fGSav5U",
+          "spotify:track:7soMbvOhIDYumDnEAmTCYC",
+          "spotify:track:4SItiFzOh6oOvO4uqflUYY",
+          "spotify:track:4p6JGhUkU7ExogHr9WTMv3",
+          "spotify:track:47gRTOMNTdikG8Wer8iL5F",
+          "spotify:track:7g0gbrRylRMJjmTodSpgAy",
+          "spotify:track:16m2ftaw2s2xacc5dHsZCr",
+          "spotify:track:3IzhvQNN8Y8K4NUdCT4Eoo",
+          "spotify:track:1OBHKLkJDFSzMTwDlVECOQ",
+          "spotify:track:1WVh8i4T3KOGtPAZT5Fi2E"
+        ],
+        "source_isrcs": {
+          "1": "GBPVV2400512",
+          "2": "US3R42246511",
+          "3": "US38W2550308",
+          "4": "USA2P2636548",
+          "6": "QZK6N2627920",
+          "7": "GBNQA2600007",
+          "8": "GB9TP1900119",
+          "9": "FRY391816273",
+          "10": "CAVP11500016",
+          "11": "USTB10300084",
+          "12": "QT4K52688633",
+          "13": "QM24S2603206",
+          "14": "RUAGT2591900",
+          "15": "QT6F42626652",
+          "16": "USSM10204733",
+          "17": "USTG39311801",
+          "18": "GBUM71029947",
+          "19": "QM6YT2607401",
+          "20": "PEIF21101002",
+          "21": "USC4R2666496",
+          "22": "QZR422600019",
+          "23": "QZES62428736",
+          "24": "GX3Q92107876",
+          "25": "RUA491473100",
+          "26": "QM7282600139"
+        },
+        "listing": {
+          "name": "KALX - queen of the cowbell. - 2026-11-24",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
