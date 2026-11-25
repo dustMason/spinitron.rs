@@ -57167,7 +57167,7 @@
           "start_time": "2026-11-24T09:00:00-0800",
           "end_time": "2026-11-24T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2TBeyCHejBSIdZ9QrkRbiD",
         "desired_uris": [
@@ -57259,8 +57259,101 @@
           "42": "USUM71302053"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T12:00:00-0800",
+          "broadcast_start": "2026-11-24T09:00:00-0800",
+          "imported_at": "2026-11-25T17:03:25.383472625+00:00",
+          "last_updated": "2026-11-25 17:03 UTC",
           "name": "KPOO - Grown Folks Music - 2026-11-24",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Warren Wolf"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735c14e820ce7f7c26aac138bc",
+              "name": "Knocks Me Off My Feet"
+            },
+            {
+              "artists": [
+                "Lou Rawls"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ab2d6d54a24b44f3c89ea1be",
+              "name": "Autumn Leaves"
+            },
+            {
+              "artists": [
+                "Steve Lawrence"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ab1218e267d12bafd9f88ad2",
+              "name": "Now That We're In Love (From Whiffs)"
+            },
+            {
+              "artists": [
+                "Arthur Prysock"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b9719ed468a8b3b1c2643180",
+              "name": "Then You Can Tell Me Goodbye"
+            },
+            {
+              "artists": [
+                "Brook Benton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27362c93ff7e8b9297f1b2e88f7",
+              "name": "Thank You Pretty Baby"
+            },
+            {
+              "artists": [
+                "Aretha Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27340004c5e4bfa0f8d00419da4",
+              "name": "Groovin'"
+            },
+            {
+              "artists": [
+                "Joe Hinton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27378b91f091a397f7b40f205b9",
+              "name": "Funny How Time Slips Away"
+            },
+            {
+              "artists": [
+                "Jamie Davis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27361e159dd3a8b0047297364e3",
+              "name": "Senor Blues"
+            },
+            {
+              "artists": [
+                "Ray Conniff"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e6e3fd1a883c9456ec6912c3",
+              "name": "Never Can Say Goodbye"
+            },
+            {
+              "artists": [
+                "Gloria Lynne"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ab9342357a16c7c4316704a0",
+              "name": "I'm Glad There Is You"
+            },
+            {
+              "artists": [
+                "Gene McDaniels"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a60f46fb87370066ac8fdd45",
+              "name": "A Hundred Pounds Of Clay"
+            },
+            {
+              "artists": [
+                "Nat King Cole Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e506994296858bcf91413b8e",
+              "name": "'Tis Autumn"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23393962/Grown-Folks-Music",
+          "station": "KPOO",
+          "track_count": 42,
+          "url": "https://open.spotify.com/playlist/2TBeyCHejBSIdZ9QrkRbiD"
         }
       },
       "needs_reconciliation": false
