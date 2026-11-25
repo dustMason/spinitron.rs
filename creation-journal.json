@@ -33472,7 +33472,7 @@
           "start_time": "2026-11-24T20:00:00-0800",
           "end_time": "2026-11-24T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6jZr0ljfD7VfmXJRUhLZzJ",
         "desired_uris": [
@@ -33510,8 +33510,102 @@
           "15": "GBAYE0600723"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T22:00:00-0800",
+          "broadcast_start": "2026-11-24T20:00:00-0800",
+          "imported_at": "2026-11-25T16:59:58.575923435+00:00",
+          "last_updated": "2026-11-25 16:59 UTC",
           "name": "KALX - FREEFORM - 2026-11-24 8:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Debit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273caa01a3a7e5107aad4a9148d",
+              "name": "Environmentofattention"
+            },
+            {
+              "artists": [
+                "Octo Octa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a892386fa87f254140422bf8",
+              "name": "Find Your Way Home"
+            },
+            {
+              "artists": [
+                "Daphni"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738e9207484b4e41926b613103",
+              "name": "Long"
+            },
+            {
+              "artists": [
+                "L'Rain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ea5a26ce4370090fc6698f4",
+              "name": "borderline"
+            },
+            {
+              "artists": [
+                "Janet Jackson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a693c84dd069b7770a986388",
+              "name": "That's The Way Love Goes"
+            },
+            {
+              "artists": [
+                "Tinashe",
+                "Devonté Hynes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c77c076843e1f7d3ad715337",
+              "name": "Bet (feat. Devonté Hynes)"
+            },
+            {
+              "artists": [
+                "Kelela"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27315c00fa655da7d2b186a470c",
+              "name": "idea 1"
+            },
+            {
+              "artists": [
+                "FKA twigs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa0c234c29ef9379c149f692",
+              "name": "Eusexua"
+            },
+            {
+              "artists": [
+                "Jon Hopkins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736e2053350b4f7fd2242bea53",
+              "name": "Luminous Beings"
+            },
+            {
+              "artists": [
+                "KÁRYYN"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27373809950043ec880d738cd12",
+              "name": "FWD"
+            },
+            {
+              "artists": [
+                "James Blake"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e402a7ce32a5b7d9aad3f6a9",
+              "name": "Trying Times"
+            },
+            {
+              "artists": [
+                "Tirzah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736e48c1759dc94269e00a9419",
+              "name": "Send Me"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23396455/FREEFORM",
+          "station": "KALX",
+          "track_count": 15,
+          "url": "https://open.spotify.com/playlist/6jZr0ljfD7VfmXJRUhLZzJ"
         }
       },
       "needs_reconciliation": false
