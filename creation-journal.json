@@ -56983,6 +56983,85 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23393416": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23393416,
+          "title": "70's and 60's Soul for Breakfast",
+          "url": "https://spinitron.com/KPOO/pl/23393416/70-s-and-60-s-Soul-for-Breakfast",
+          "start_time": "2026-11-24T07:00:00-0800",
+          "end_time": "2026-11-24T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0XPQW7Z1ULWtI4gAa4zilY",
+          "spotify:track:1mCHsjpE8Zwviifi8ejfKe",
+          "spotify:track:6Axz5VSkc4Bs8eXWQxnynE",
+          "spotify:track:262qk9k0LTyMXmjH9YT2xU",
+          "spotify:track:0eM63gaOxByUdgFxeKeqSC",
+          "spotify:track:0zFX0IAJTSnIldcCDMGK2y",
+          "spotify:track:2PKViR5ohRGzGAfRjOTEcj",
+          "spotify:track:1ep9LM8cEUlI5RzuLQre2K",
+          "spotify:track:72PoJMDfdaw9gGECgA9kTZ",
+          "spotify:track:6CAYBuPXB3KGGix0pYzO3V",
+          "spotify:track:7bxtK2LmG3llzEUihe5Xaz",
+          "spotify:track:2heGi7hzH0cuUJYftVM9JN",
+          "spotify:track:04RdLzjMmwUFt2kLF4i8nJ",
+          "spotify:track:7ymCowt4X0IY6RYnlUhJNQ",
+          "spotify:track:2z0iPv01eN6U6fiXlZFKgI",
+          "spotify:track:3APk2BngsDT5y1ZlfhtWx3",
+          "spotify:track:5FrCb3dn8zBDQidICpI4Q5",
+          "spotify:track:5C1YpmbYRqc7EYCkEiibHS",
+          "spotify:track:0AsLUbhdZkGn5ZIN3X81n2",
+          "spotify:track:0V0taT8CDOCW5sbjdiDc6r",
+          "spotify:track:5KxPo53b86NcnYQ6aO9MBb",
+          "spotify:track:0gKhmpLiJ2awP0WlvPGPSm",
+          "spotify:track:3rbWkPzqSP7Lnjs4cazBCX",
+          "spotify:track:2sCf9tz6LHByczuVT7rqIx",
+          "spotify:track:4jhlq5BFysI6V3edzSYtLf",
+          "spotify:track:0ZzQTQb1o0110UXLSKP1Fl",
+          "spotify:track:0VpHIkmXGSIJ8phPcRfQBU",
+          "spotify:track:6VEbSEsD0Cc2sqg4k42uuw"
+        ],
+        "source_isrcs": {
+          "1": "USAT20611145",
+          "2": "GBBLG7000149",
+          "3": "USMO17184670",
+          "4": "USSM10207819",
+          "5": "USRC17407615",
+          "6": "USFI87500118",
+          "7": "USPH37600001",
+          "8": "USPR37682002",
+          "9": "USUMG0000158",
+          "10": "GBBLG7300045",
+          "11": "USSM19803508",
+          "12": "USAT29902239",
+          "13": "USFI87000279",
+          "14": "QZFZ72265824",
+          "15": "USC4R1700463",
+          "16": "USSM11601656",
+          "17": "USDBL0900050",
+          "18": "USMO16890001",
+          "19": "USMO16482875",
+          "20": "USCA26300300",
+          "21": "USMO16200268",
+          "22": "DEPZ67641507",
+          "23": "FR6V81586616",
+          "24": "USAT20001004",
+          "25": "FR2X41810021",
+          "26": "USMO16472021",
+          "27": "USWB10106840",
+          "28": "QZES61967533"
+        },
+        "listing": {
+          "name": "KPOO - 70's and 60's Soul for Breakfast - 2026-11-24",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
