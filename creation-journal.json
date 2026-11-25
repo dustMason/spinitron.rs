@@ -33298,6 +33298,75 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23396036": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23396036,
+          "title": "Fungal Zoning Permit - Fungal Fall Figure Skatin' Edition",
+          "url": "https://spinitron.com/KALX/pl/23396036/Fungal-Zoning-Permit-Fungal-Fall-Figure-Skatin-Edition",
+          "start_time": "2026-11-24T18:00:00-0800",
+          "end_time": "2026-11-24T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0zSfU0syn0Qi96jplDmIOr",
+          "spotify:track:6zzmIy5BN87uHeIvC6yr99",
+          "spotify:track:41VmwA5Fz743FkXLrndUwJ",
+          "spotify:track:3Q3yBgsXpjhisMZp1HfHAV",
+          "spotify:track:4tZ1KpG0N10ZDSX1Vzhid0",
+          "spotify:track:0T3j1KHC2U00Gw4gaLQBh9",
+          "spotify:track:6uVQOctKp600h964WehzRq",
+          "spotify:track:3jAevcMRD6NQtQz7usf0R0",
+          "spotify:track:52pWggDlN5mVeX111i06PP",
+          "spotify:track:1HCaCLD1IvyqtcVOzMXbfM",
+          "spotify:track:3fU0407Cls1hLW1ap5w2Lr",
+          "spotify:track:4yK3xXuNrkSq0OVjKUaCkY",
+          "spotify:track:0E0DRHf5PfMeor0ZCwB3oT",
+          "spotify:track:096O00DejW1YlyM5stWgA8",
+          "spotify:track:593IuFenJH4EFHNpHOShSX",
+          "spotify:track:4dpYPoluzkZe0FzUA79ngN",
+          "spotify:track:53yTfRNAwCC7aLGaKlbysJ",
+          "spotify:track:09CATVd0zz4nkVCX3UFY5T",
+          "spotify:track:14fuDAApgN7UGxoOOzqilL",
+          "spotify:track:5P2hEcHjoNMh33EsFPPOJE",
+          "spotify:track:5CBe28J8qHaBclf9YeBhHU",
+          "spotify:track:2nShDSdmlkEyds9i4Jk9gD",
+          "spotify:track:1g2AbdCDCKyRZkafuRgOom"
+        ],
+        "source_isrcs": {
+          "1": "USFM90900161",
+          "2": "QMFME1399723",
+          "3": "QMFME1399724",
+          "4": "USPR39507318",
+          "5": "GBQLP2200751",
+          "6": "USMTD9829606",
+          "7": "GBZG92400071",
+          "8": "USACX0701186",
+          "9": "USSM11707041",
+          "10": "US38Y2648714",
+          "11": "US4GE1000024",
+          "12": "GBAHS0800152",
+          "13": "QM6MZ2214891",
+          "14": "USSF12159909",
+          "15": "US4QP0665003",
+          "16": "US2J72609905",
+          "17": "USRE10100039",
+          "18": "QTA2R2647352",
+          "19": "QMV8L1725007",
+          "20": "SEWCE0400201",
+          "21": "USDBY1000545",
+          "22": "USK110617810",
+          "23": "USRE19900760"
+        },
+        "listing": {
+          "name": "KALX - Fungal Zoning Permit - Fungal Fall Figure Skatin' Edition - 2026-11-24",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
