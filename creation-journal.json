@@ -57756,7 +57756,7 @@
           "start_time": "2026-11-24T20:00:00-0800",
           "end_time": "2026-11-25T01:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1dHZJn0HF4RCjsKYXacVD4",
         "desired_uris": [
@@ -57766,8 +57766,24 @@
           "1": "USWB10403355"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T01:00:00-0800",
+          "broadcast_start": "2026-11-24T20:00:00-0800",
+          "imported_at": "2026-11-25T17:06:07.752504254+00:00",
+          "last_updated": "2026-11-25 17:06 UTC",
           "name": "KPOO - Fingersnaps Salon...Music & Conversation - 2026-11-24",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Seal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738814f05bfdc9e7d534d516e3",
+              "name": "Killer - Acoustic"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23396495/Fingersnaps-Salon-Music-Conversation",
+          "station": "KPOO",
+          "track_count": 1,
+          "url": "https://open.spotify.com/playlist/1dHZJn0HF4RCjsKYXacVD4"
         }
       },
       "needs_reconciliation": false
