@@ -32621,7 +32621,7 @@
           "start_time": "2026-11-24T09:30:00-0800",
           "end_time": "2026-11-24T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "24dmRFgC7wiCQwzGEx0HeS",
         "desired_uris": [
@@ -32677,8 +32677,110 @@
           "24": "GBVEV2595401"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T12:00:00-0800",
+          "broadcast_start": "2026-11-24T09:30:00-0800",
+          "imported_at": "2026-11-25T16:56:35.747216336+00:00",
+          "last_updated": "2026-11-25 16:56 UTC",
           "name": "KALX - FREEFORM - 2026-11-24 9:30am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Phillip Golub",
+                "Yuma Uesaka",
+                "Jon Starks",
+                "Amir ElSaffar"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731b0e33375966a3e8d2cec626",
+              "name": "loyalty oath"
+            },
+            {
+              "artists": [
+                "Ezra Collective"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d02e8be17bfe4eb4afb2141",
+              "name": "Blow Your Trumpet"
+            },
+            {
+              "artists": [
+                "Lau Ro"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27303257114b4009621243355ad",
+              "name": "Feel"
+            },
+            {
+              "artists": [
+                "Gilberto Gil"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733762d8dd07be1fd1cb3cc752",
+              "name": "Here And Now"
+            },
+            {
+              "artists": [
+                "Tin Hat",
+                "Ben Goldberg",
+                "Mark Orton",
+                "Ara Anderson",
+                "Carla Kihlstedt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273096c87db78ffac9168caf37c",
+              "name": "Foreign Legion"
+            },
+            {
+              "artists": [
+                "Wendy Eisenberg"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273272a63020eaf0549aaec739f",
+              "name": "Old Myth Dying"
+            },
+            {
+              "artists": [
+                "Bill Callahan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736172648d29acadc71f725e35",
+              "name": "Lonely City"
+            },
+            {
+              "artists": [
+                "T Bone Burnett",
+                "Jay Bellerose",
+                "Keefus Ciancia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737447d339a51aed213e442f35",
+              "name": "You May Leave But This Will Bring You Back"
+            },
+            {
+              "artists": [
+                "Kristin Hersh"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739393ff5495048605ce1daee6",
+              "name": "Dom In Orange"
+            },
+            {
+              "artists": [
+                "ADULT."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27304f2cad81d71f2657af6ce45",
+              "name": "Undoing / Undone"
+            },
+            {
+              "artists": [
+                "Pussy Riot"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c2d605a42565e8f7542b10c",
+              "name": "MURKA"
+            },
+            {
+              "artists": [
+                "Forgotten Roads"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732996cadebab1838597fe456e",
+              "name": "The Bitter Cup"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23394014/FREEFORM",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/24dmRFgC7wiCQwzGEx0HeS"
         }
       },
       "needs_reconciliation": false
