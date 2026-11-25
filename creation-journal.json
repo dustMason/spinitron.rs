@@ -57798,7 +57798,7 @@
           "start_time": "2026-11-24T20:00:00-0800",
           "end_time": "2026-11-25T01:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5mmARSposvCPqguEzZvhB0",
         "desired_uris": [
@@ -57884,8 +57884,116 @@
           "39": "FRZ041800473"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T01:00:00-0800",
+          "broadcast_start": "2026-11-24T20:00:00-0800",
+          "imported_at": "2026-11-25T17:06:48.659454776+00:00",
+          "last_updated": "2026-11-25 17:06 UTC",
           "name": "KPOO - Fingersnaps Salon...Music & Conversation - 2026-11-24 8:00pm -0800 [KPOO:23396613]",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Seal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738814f05bfdc9e7d534d516e3",
+              "name": "Killer - Acoustic"
+            },
+            {
+              "artists": [
+                "Prince Kaybee",
+                "Msaki"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273565353f7c9ff8b3313ca5c95",
+              "name": "Fetch Your Life - Edit"
+            },
+            {
+              "artists": [
+                "Brainstorm"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732ed080760ed4d40ab2b30a79",
+              "name": "Lovin' Is Really My Game"
+            },
+            {
+              "artists": [
+                "Evelyn \"Champagne\" King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c7f9b0734d2b66884fdf1305",
+              "name": "Shame - 12\" Version"
+            },
+            {
+              "artists": [
+                "Jamiroquai"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273909ebb0c355f14d0ee7f9974",
+              "name": "Little L"
+            },
+            {
+              "artists": [
+                "B.T. (Brenda Taylor)"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736f38f38f30b73bdcd37b4ec4",
+              "name": "You Can't Have Your Cake and Eat It Too - 2012 - Remaster"
+            },
+            {
+              "artists": [
+                "Warm Days",
+                "Andile Yenana",
+                "Thandi Ntuli",
+                "Q.B. Smith"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734ca22f7392ff7fc0e045d855",
+              "name": "Coffee and Honey - QB's Hotstrumental"
+            },
+            {
+              "artists": [
+                "First Choice",
+                "Late Nite Tuff Guy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aaf006a3d225f38ffb233fe2",
+              "name": "Doctor Love (Late Nite Tuff Guy Hypnotizin’ Groove)"
+            },
+            {
+              "artists": [
+                "Martin Luther McCoy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735dcf64840ce8e02c0e48ab7f",
+              "name": "Peace Of Mind"
+            },
+            {
+              "artists": [
+                "Kev Choice",
+                "Howard Wiley",
+                "Jennifer John's"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c4e55633500411fe7109a001",
+              "name": "Shed Light (feat. Howard Wiley & Jennifer Johns)"
+            },
+            {
+              "artists": [
+                "Arthur Honegger",
+                "Marthe Keller",
+                "David Wilson-Johnson",
+                "John Aler",
+                "Nathaniel Watson",
+                "Michel Moinot",
+                "Eric Legrand",
+                "Kurt Masur",
+                "New York Philharmonic"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c61e646bd8e520d743607c7d",
+              "name": "Jeanne d'Arc au bûcher, H.99 Scene 8: The King who is Going to Rheims - Live"
+            },
+            {
+              "artists": [
+                "Scytale"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273be4895058415769f4d03b6a3",
+              "name": "Blood Moon"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23396613/Fingersnaps-Salon-Music-Conversation",
+          "station": "KPOO",
+          "track_count": 39,
+          "url": "https://open.spotify.com/playlist/5mmARSposvCPqguEzZvhB0"
         }
       },
       "needs_reconciliation": false
