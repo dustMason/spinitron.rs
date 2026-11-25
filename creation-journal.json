@@ -32569,6 +32569,31 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23394006": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23394006,
+          "title": "Fiat Lux Redux",
+          "url": "https://spinitron.com/KALX/pl/23394006/Fiat-Lux-Redux",
+          "start_time": "2026-11-24T09:00:00-0800",
+          "end_time": "2026-11-24T09:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1oSYnYRnn0my8btfvgBd9o"
+        ],
+        "source_isrcs": {
+          "1": "USCGJ1301525"
+        },
+        "listing": {
+          "name": "KALX - Fiat Lux Redux - 2026-11-24",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
