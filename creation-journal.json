@@ -199,7 +199,7 @@
           "start_time": "2026-11-24T17:00:00-0800",
           "end_time": "2026-11-24T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "03s9NiedWrslmHbZckxeLQ",
         "desired_uris": [
@@ -231,8 +231,111 @@
           "13": "USFVZ2691685"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T18:00:00-0800",
+          "broadcast_start": "2026-11-24T17:00:00-0800",
+          "imported_at": "2026-11-25T16:58:36.885728302+00:00",
+          "last_updated": "2026-11-25 16:58 UTC",
           "name": "KALX - Americana, Folk, and Roots - 2026-11-24",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Brit Taylor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737af68af45fcbe90b14de45d7",
+              "name": "Broke No More"
+            },
+            {
+              "artists": [
+                "Kaitlin Butts"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273541b92d8486bca17495ff351",
+              "name": "The Bartender"
+            },
+            {
+              "artists": [
+                "Melissa Carper",
+                "Theo Lawrence"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739bdd030be96d6fa5232e187b",
+              "name": "Good Luck To Ya"
+            },
+            {
+              "artists": [
+                "Jenny Kerr"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e0109bb97ea00c6179462353",
+              "name": "The Girl Who Swallowed the Moon"
+            },
+            {
+              "artists": [
+                "Sam Grisman Project",
+                "Logan Ledger"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730836529eaf9b2adcef8d0e12",
+              "name": "I Ain't Never"
+            },
+            {
+              "artists": [
+                "Andy Falco",
+                "Travis Book"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27374896dacfcde57bb74cfd1bb",
+              "name": "New Speedway Boogie (Live)"
+            },
+            {
+              "artists": [
+                "Mountain Grass Unit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733d1492b83ca2bda8c5c54a91",
+              "name": "One Last Time"
+            },
+            {
+              "artists": [
+                "The Crooked Jades"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738ec1c384da4afb0fe827c4c9",
+              "name": "Fascist Groove Thang"
+            },
+            {
+              "artists": [
+                "Carsie Blanton",
+                "The Burning Hell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736a88d26dad379cdc33739df3",
+              "name": "Fascists Are Good"
+            },
+            {
+              "artists": [
+                "Todd Snider"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27370890eb8e8ead3ea4f7a9816",
+              "name": "One Nation Under Fire"
+            },
+            {
+              "artists": [
+                "Elizabeth Cook"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee502f321d61d2f324f5d504",
+              "name": "19th Nervous Breakdown"
+            },
+            {
+              "artists": [
+                "Twilight Sparkle",
+                "Apple Jack",
+                "Rainbow Dash",
+                "Pinkie Pie",
+                "Rarity",
+                "Fluttershy",
+                "Spike"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731f29eeebb3e905a62af47ea1",
+              "name": "Ballad of the Crystal Ponies - Italian"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23002027/Americana-Folk-and-Roots",
+          "station": "KALX",
+          "track_count": 13,
+          "url": "https://open.spotify.com/playlist/03s9NiedWrslmHbZckxeLQ"
         }
       },
       "needs_reconciliation": false
