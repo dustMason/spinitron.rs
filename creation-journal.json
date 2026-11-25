@@ -57614,7 +57614,7 @@
           "start_time": "2026-11-24T18:00:00-0800",
           "end_time": "2026-11-24T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0kag3PCyKR9jnbRzNBVSBT",
         "desired_uris": [
@@ -57641,8 +57641,107 @@
           "10": "USBC17500117"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T20:00:00-0800",
+          "broadcast_start": "2026-11-24T18:00:00-0800",
+          "imported_at": "2026-11-25T17:05:27.957949103+00:00",
+          "last_updated": "2026-11-25 17:05 UTC",
           "name": "KPOO - On The Spot - 2026-11-24",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Chris Potter Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325925fbe3f109601521704a4",
+              "name": "7.5 - Live at The Village Vanguard, New York / 2002"
+            },
+            {
+              "artists": [
+                "Anthony Wonsey Trio",
+                "Richie Goods",
+                "Tony Reedus"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273814ef0b23b64a51347570d1a",
+              "name": "Black Fairy Tales"
+            },
+            {
+              "artists": [
+                "Tim Warfield",
+                "Nicholas Payton",
+                "Terell Stafford",
+                "Cyrus Chestnut",
+                "Tarus Mateen",
+                "Clarence Penn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c62523b93809af4c86e35824",
+              "name": "The Grim Reaper's Rapture"
+            },
+            {
+              "artists": [
+                "David Binney",
+                "Wayne Krantz",
+                "Jacob Sacks",
+                "Eivind Opsvik",
+                "Dan Weiss",
+                "John Escreet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dc694d5d8a3dbc3fb08f851e",
+              "name": "Africa"
+            },
+            {
+              "artists": [
+                "Alex Sipiagin",
+                "Adam Rogers",
+                "Boris Kozlov",
+                "David Kikoski",
+                "Donny McCaslin",
+                "Jonathan Blake",
+                "Josh Roseman",
+                "Seamus Blake"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5ee3057638caa7d4cf18428",
+              "name": "Travel"
+            },
+            {
+              "artists": [
+                "Kirk Lightsey Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ed2a840e54c6ce59e8ae5853",
+              "name": "Little Daphne"
+            },
+            {
+              "artists": [
+                "Billy Drummond Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27362fef16194ad8c1abab4e956",
+              "name": "Dear Old Chicago"
+            },
+            {
+              "artists": [
+                "Seamus Blake Sextet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273265be17f65a06181417660a3",
+              "name": "Face The Question"
+            },
+            {
+              "artists": [
+                "AC Soul Symphony",
+                "Dave 'Love' Lee"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d189605b93a056463c82bc8",
+              "name": "Windy City Theme"
+            },
+            {
+              "artists": [
+                "Dick Hyman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348cd73746936dbd8f68b430a",
+              "name": "Peacherine Rag"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23396180/On-The-Spot",
+          "station": "KPOO",
+          "track_count": 10,
+          "url": "https://open.spotify.com/playlist/0kag3PCyKR9jnbRzNBVSBT"
         }
       },
       "needs_reconciliation": false
