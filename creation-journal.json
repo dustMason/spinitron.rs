@@ -57357,6 +57357,75 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23394693": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23394693,
+          "title": "Uplift Show",
+          "url": "https://spinitron.com/KPOO/pl/23394693/Uplift-Show",
+          "start_time": "2026-11-24T12:00:00-0800",
+          "end_time": "2026-11-24T16:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5xPvMKKMCAadLhfCV6h1wH",
+          "spotify:track:5cCmf7KIcClmNpmB2ADFMk",
+          "spotify:track:2MxI6B5CHmq4AYqH2bi2nN",
+          "spotify:track:5oEUptjKIrQ4eVMdwTiYcM",
+          "spotify:track:4ELTxTKYP1yF7rdbn8GXiI",
+          "spotify:track:48YwPkKqfopL8T1myLTYuu",
+          "spotify:track:6OEuowbMhMXmEE4M65OUtu",
+          "spotify:track:5Zz8ZBf7LL1FKxNjTZvJOI",
+          "spotify:track:3cinu1fuiEoGRJH6YD8uRE",
+          "spotify:track:1cKykrGzCiYoodGhXjat2n",
+          "spotify:track:54BHYP3GUczHnjFQ7bKL9B",
+          "spotify:track:2UiauCPqzgCp4AEj15ep4H",
+          "spotify:track:1gKTf31EAVW8F57Z36uu0A",
+          "spotify:track:6BqMdpzEmFgtQViePnaK1h",
+          "spotify:track:1KabiIRs6ScabcNU8C9xQ4",
+          "spotify:track:6eZfLDInqkFsD8I7NYrO9l",
+          "spotify:track:03EuqiMOaCKK0kM7b1SWHM",
+          "spotify:track:5T2Cft0v1qKSmH0GUDzB2b",
+          "spotify:track:1IC7IjjPdvtQORKAlFm6tb",
+          "spotify:track:4m16y4HrVSk9N60oHNZBqI",
+          "spotify:track:4e1vaxdpkoMpVfrrHZivuP",
+          "spotify:track:63erWkB6tWxJVWhFtglZ53",
+          "spotify:track:5QblyNjAyOs0AJBQHJQkrn"
+        ],
+        "source_isrcs": {
+          "1": "USMC16490243",
+          "2": "USFI85700127",
+          "3": "FR4HR2215668",
+          "4": "DGA072122586",
+          "5": "USFI86100652",
+          "6": "USPR35500052",
+          "7": "USC4R2500843",
+          "8": "USFI86000546",
+          "9": "USSM10404528",
+          "10": "FRX201760588",
+          "11": "GBN8H1001905",
+          "12": "HKC371827754",
+          "13": "USFI86300342",
+          "14": "USFI85800345",
+          "15": "USFI86100582",
+          "16": "USMC16251920",
+          "17": "USGR10401241",
+          "18": "FR0W69966933",
+          "19": "FRX282173161",
+          "20": "USMC16449714",
+          "21": "USMC16449712",
+          "22": "USAT20002141",
+          "23": "USMC16453799"
+        },
+        "listing": {
+          "name": "KPOO - Uplift Show - 2026-11-24",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
