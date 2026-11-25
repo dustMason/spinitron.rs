@@ -57368,7 +57368,7 @@
           "start_time": "2026-11-24T12:00:00-0800",
           "end_time": "2026-11-24T16:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7sP6CidYu8Ru4xoSVZe3lu",
         "desired_uris": [
@@ -57422,8 +57422,106 @@
           "23": "USMC16453799"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T16:00:00-0800",
+          "broadcast_start": "2026-11-24T12:00:00-0800",
+          "imported_at": "2026-11-25T17:04:07.059750764+00:00",
+          "last_updated": "2026-11-25 17:04 UTC",
           "name": "KPOO - Uplift Show - 2026-11-24",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c43e81166cfa4c9be997efd3",
+              "name": "A Love Supreme, Pt. I – Acknowledgement"
+            },
+            {
+              "artists": [
+                "Thelonious Monk",
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e95af957e661f22cff3f28ac",
+              "name": "Monk's Mood"
+            },
+            {
+              "artists": [
+                "Art Blakey & The Jazz Messengers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273797d97827ae7ef9f23284681",
+              "name": "Sportin' Crowd (Live) - Live At Cafe Bohemia, NY, 1955 / Remastered 2001"
+            },
+            {
+              "artists": [
+                "Art Blakey & The Jazz Messengers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735ff8192e985d1a4ee348e576",
+              "name": "Like Someone In Love - Remastered 2004 / Rudy Van Gelder Edition"
+            },
+            {
+              "artists": [
+                "Red Garland Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b7cb710e8b311b128d176754",
+              "name": "Soft Winds"
+            },
+            {
+              "artists": [
+                "Bud Powell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c94944ad6be38cb3f23d6d2c",
+              "name": "Lady Bird"
+            },
+            {
+              "artists": [
+                "Red Garland Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe9f776acb707f871be28303",
+              "name": "Soul Junction - Remastered 2026"
+            },
+            {
+              "artists": [
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fea9e38142921e4db8a551c2",
+              "name": "Filidia"
+            },
+            {
+              "artists": [
+                "Miles Davis",
+                "John Coltrane",
+                "Cannonball Adderley",
+                "Bill Evans"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348713eebe44a437d9cb7a452",
+              "name": "On Green Dolphin Street (feat. John Coltrane, Cannonball Adderley & Bill Evans)"
+            },
+            {
+              "artists": [
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273631d0a1865e3e1d48b5deed5",
+              "name": "Invitation"
+            },
+            {
+              "artists": [
+                "John Coltrane",
+                "Paul Quinichette"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d32671533fa64136138c125",
+              "name": "Cattin'"
+            },
+            {
+              "artists": [
+                "John Coltrane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273903783d1ad4326b0ee904167",
+              "name": "Bakai"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23394693/Uplift-Show",
+          "station": "KPOO",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/7sP6CidYu8Ru4xoSVZe3lu"
         }
       },
       "needs_reconciliation": false
