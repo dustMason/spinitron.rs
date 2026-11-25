@@ -32408,6 +32408,73 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23393343": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23393343,
+          "title": "i got worry",
+          "url": "https://spinitron.com/KALX/pl/23393343/i-got-worry",
+          "start_time": "2026-11-24T07:00:00-0800",
+          "end_time": "2026-11-24T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4KUJgJOPtM7atpprFJJuet",
+          "spotify:track:52zlkdhegRhULSbxfCM1JB",
+          "spotify:track:27mkat38MgwYO7XgmA9IVE",
+          "spotify:track:1MgxrUqmSVs4atYN6lWs86",
+          "spotify:track:2n83ykJALnBiSLViLkd0I4",
+          "spotify:track:2ldgYsIsYoKUeqnG3LC9Zb",
+          "spotify:track:2MbTvCv9t5DrallEfknUHS",
+          "spotify:track:6KwjoorBAHiqxHp3W2uk2p",
+          "spotify:track:085bGsFI5p0Hzw9W53xvHL",
+          "spotify:track:5fgYR3Gjhaj2T1Zt9eOl1i",
+          "spotify:track:7E5QNDAiqMONWKODo7XeYC",
+          "spotify:track:4swaK22G8oP6gCuepch3mZ",
+          "spotify:track:21D5nMzNWb5jEx7eiPZHpY",
+          "spotify:track:1ZNpnIPhZTYpLX8Q6cVJv5",
+          "spotify:track:0ut1UTeccM48xyYxGG63dg",
+          "spotify:track:70v3n6S430xW60xIXOf2o3",
+          "spotify:track:601aVHXWQ2nmNcp6duY05m",
+          "spotify:track:5pYEF8zKj12Jxcarm0qq84",
+          "spotify:track:57vx6yGeEFXVmPMveXXlRn",
+          "spotify:track:6XynPQkRzq2Lvyb1Pkwl91",
+          "spotify:track:62gjJsrXSI4GRN3Fayu3qg",
+          "spotify:track:793yTrSdXA80SqVzNj9cEP",
+          "spotify:track:3RFzh8Qhmv14ggKb7LJzaF"
+        ],
+        "source_isrcs": {
+          "1": "GBAYE6000078",
+          "2": "GBUQH0800028",
+          "3": "QT7UR2600102",
+          "4": "GBJGV2600402",
+          "5": "USTG30528201",
+          "6": "USSM10212678",
+          "7": "USMRG1347501",
+          "8": "USEE10182995",
+          "9": "US4TA2600060",
+          "10": "QT6ZF2500003",
+          "11": "USA2Z2600775",
+          "12": "QZTAU2575642",
+          "13": "GBAKW8001031",
+          "14": "USA2Z2601109",
+          "15": "USK110401711",
+          "16": "GBGVZ1114118",
+          "18": "AEA040800086",
+          "19": "US2HK1334312",
+          "20": "QZDMQ2550348",
+          "21": "USSUB2647706",
+          "23": "DEN962631009"
+        },
+        "listing": {
+          "name": "KALX - i got worry - 2026-11-24",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
