@@ -57536,7 +57536,7 @@
           "start_time": "2026-11-24T16:00:00-0800",
           "end_time": "2026-11-24T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6VetJOUZrVtCfthuc0Dnzl",
         "desired_uris": [
@@ -57554,8 +57554,52 @@
           "5": "NLGZ20900049"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T18:00:00-0800",
+          "broadcast_start": "2026-11-24T16:00:00-0800",
+          "imported_at": "2026-11-25T17:04:46.516044516+00:00",
+          "last_updated": "2026-11-25 17:04 UTC",
           "name": "KPOO - Wake Up Everybody - 2026-11-24",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "SBTRKT"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732db7e04e3e5e89a0cfcf6226",
+              "name": "Heatwave"
+            },
+            {
+              "artists": [
+                "Horace Tapscott"
+              ],
+              "image_url": "https://i.scdn.co/image/35095ff91008b6dfdc6387ae9497986ede48f596",
+              "name": "Bibi Mkuu: The Great Black Lady"
+            },
+            {
+              "artists": [
+                "Horace Tapscott"
+              ],
+              "image_url": "https://i.scdn.co/image/35095ff91008b6dfdc6387ae9497986ede48f596",
+              "name": "As A Child"
+            },
+            {
+              "artists": [
+                "Gato Barbieri"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fde2848d6f848512db22d4e7",
+              "name": "Last Kiss"
+            },
+            {
+              "artists": [
+                "Kenny Barron Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c4472d0d723174603fa7fff",
+              "name": "There Is No Greater Love"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23395653/Wake-Up-Everybody",
+          "station": "KPOO",
+          "track_count": 5,
+          "url": "https://open.spotify.com/playlist/6VetJOUZrVtCfthuc0Dnzl"
         }
       },
       "needs_reconciliation": false
