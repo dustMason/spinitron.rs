@@ -58008,7 +58008,7 @@
           "start_time": "2026-11-25T00:00:00-0800",
           "end_time": "2026-11-25T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3sRFqbUxiWilAvzDEw8r7o",
         "desired_uris": [
@@ -58078,8 +58078,110 @@
           "32": "USWB10000484"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T06:00:00-0800",
+          "broadcast_start": "2026-11-25T00:00:00-0800",
+          "imported_at": "2026-11-25T17:07:28.790853119+00:00",
+          "last_updated": "2026-11-25 17:07 UTC",
           "name": "KPOO - Over Nite Sounds - 2026-11-25",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Warm Days",
+                "Andile Yenana",
+                "Thandi Ntuli",
+                "Q.B. Smith"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734ca22f7392ff7fc0e045d855",
+              "name": "Coffee and Honey - QB's Hotstrumental"
+            },
+            {
+              "artists": [
+                "Blaze",
+                "Alexander Hope",
+                "Danny Krivit"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d41ef38b6a616da8f1b74834",
+              "name": "How Deep Is Your Love - Danny Krivit Re-Edit"
+            },
+            {
+              "artists": [
+                "Hosanna Littlebird"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273caece698d73aed4eb94dbee3",
+              "name": "Times Of Change - Temple Movement Club Mix"
+            },
+            {
+              "artists": [
+                "Shota",
+                "Timmy Regisford",
+                "Adam Rios"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273427b5c7407e0c3577070361f",
+              "name": "Say Something - Adam Rios Shelter Instrumental"
+            },
+            {
+              "artists": [
+                "Burna Boy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735edf362ac1de3e5718382296",
+              "name": "Omo"
+            },
+            {
+              "artists": [
+                "Cleo Sol"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738128b3a01e0246795dfab1a2",
+              "name": "In Your Own Home"
+            },
+            {
+              "artists": [
+                "Hibru"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27306320ecc74696fdcf5b907e2",
+              "name": "Mirages"
+            },
+            {
+              "artists": [
+                "Charley Crockett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732404618eaa5c1e23bdb14e14",
+              "name": "I Am Not Afraid"
+            },
+            {
+              "artists": [
+                "Rufus",
+                "Chaka Khan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731ab2a1683ee8b7fcbc997510",
+              "name": "Ain't Nobody"
+            },
+            {
+              "artists": [
+                "Shimza",
+                "Aloe Blacc"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a1f24d9dfd3635bc58d7bc8b",
+              "name": "Darling (with Aloe Blacc)"
+            },
+            {
+              "artists": [
+                "Nitin Sawhney"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27335a300f58fa9316d656cc9f9",
+              "name": "Breathing Light"
+            },
+            {
+              "artists": [
+                "Bobby Hebb"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273104dd939c10a2ef4fde1f1df",
+              "name": "Sunny"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23397636/Over-Nite-Sounds",
+          "station": "KPOO",
+          "track_count": 32,
+          "url": "https://open.spotify.com/playlist/3sRFqbUxiWilAvzDEw8r7o"
         }
       },
       "needs_reconciliation": false
