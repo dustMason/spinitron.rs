@@ -32795,7 +32795,7 @@
           "start_time": "2026-11-24T12:00:00-0800",
           "end_time": "2026-11-24T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "61hhuQobvKX6rlKPFjbqHT",
         "desired_uris": [
@@ -32872,8 +32872,103 @@
           "36": "USAP39745822"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T15:00:00-0800",
+          "broadcast_start": "2026-11-24T12:00:00-0800",
+          "imported_at": "2026-11-25T16:57:15.917020596+00:00",
+          "last_updated": "2026-11-25 16:57 UTC",
           "name": "KALX - Deep Eats - 2026-11-24",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Lizzy Mercier Descloux"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320ebb31165b3e2e4ec0ae792",
+              "name": "Mission Impossible"
+            },
+            {
+              "artists": [
+                "Treme Brass Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c82269115ec192f88338828",
+              "name": "Food Stamp Blues"
+            },
+            {
+              "artists": [
+                "Dan Hicks & His Hot Licks",
+                "Brian Setzer"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a2a73016573c06cd6f3199e",
+              "name": "I Don't Want Love (feat. Brian Setzer)"
+            },
+            {
+              "artists": [
+                "Haruna Fukazawa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bc3384df95bea085c91a5eb9",
+              "name": "Fungii Mama"
+            },
+            {
+              "artists": [
+                "Guy Clark"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27340c40d4122063b10b09f391d",
+              "name": "Homegrown Tomatoes"
+            },
+            {
+              "artists": [
+                "HowellDevine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b9856ef8a3803d64c89e758f",
+              "name": "Come on in My Kitchen"
+            },
+            {
+              "artists": [
+                "Jake Blount"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ad59739b51811aba0c800290",
+              "name": "Pork Fat Makes My Chicken Tan"
+            },
+            {
+              "artists": [
+                "The De-Fenders"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ae4eba61c995a09133565200",
+              "name": "Taco Wagon"
+            },
+            {
+              "artists": [
+                "A Strange Kind of Blue"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27316dcc7e184d10e9dde5a5f75",
+              "name": "Flesh And Bone"
+            },
+            {
+              "artists": [
+                "Steve Goodman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a220fbb23bb9c311a73a3cd9",
+              "name": "Chicken Cordon Bleus"
+            },
+            {
+              "artists": [
+                "Fats Domino"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734d5174b8cdc40da82e58ba91",
+              "name": "Jambalaya (On The Bayou)"
+            },
+            {
+              "artists": [
+                "Gerry Mulligan",
+                "Johnny Hodges"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734dd7bf16a5d068f5b1716867",
+              "name": "18 Carrots For Rabbit"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23394519/Deep-Eats",
+          "station": "KALX",
+          "track_count": 36,
+          "url": "https://open.spotify.com/playlist/61hhuQobvKX6rlKPFjbqHT"
         }
       },
       "needs_reconciliation": false
