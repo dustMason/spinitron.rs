@@ -33620,7 +33620,7 @@
           "start_time": "2026-11-24T22:00:00-0800",
           "end_time": "2026-11-25T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "23sR8iBxhM0UQlyALsOQgZ",
         "desired_uris": [
@@ -33672,8 +33672,102 @@
           "23": "USWB10105521"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T00:00:00-0800",
+          "broadcast_start": "2026-11-24T22:00:00-0800",
+          "imported_at": "2026-11-25T17:00:38.933629239+00:00",
+          "last_updated": "2026-11-25 17:00 UTC",
           "name": "KALX - FREEFORM - 2026-11-24 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Gift Horse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739189b8fd9d0ef8187f65178a",
+              "name": "Rebar Redux"
+            },
+            {
+              "artists": [
+                "Quadeca",
+                "Olēka"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e09daa190c938f3fffbfe88a",
+              "name": "WAGING WAR"
+            },
+            {
+              "artists": [
+                "Jane's Addiction"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736253200d8b0f566f252fc3c4",
+              "name": "Jane Says"
+            },
+            {
+              "artists": [
+                "Dire Straits"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735b5e5240a4c483b5fb9f2cb0",
+              "name": "Skateaway"
+            },
+            {
+              "artists": [
+                "Joyce Manor"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27335eeb532f1349455528c0a06",
+              "name": "After All You Put Me Through"
+            },
+            {
+              "artists": [
+                "Black Swan Lane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27387be3900ea165cfdeb1c8e12",
+              "name": "Flower Girl"
+            },
+            {
+              "artists": [
+                "mary in the junkyard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737642addd573054269cb9a577",
+              "name": "Thou Shalt Sprout"
+            },
+            {
+              "artists": [
+                "Tom Petty and the Heartbreakers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2bc5fd7e51b61a904e7c20c",
+              "name": "American Girl"
+            },
+            {
+              "artists": [
+                "Ethel Cain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737da9ae8f4a4d633772c9513b",
+              "name": "Janie"
+            },
+            {
+              "artists": [
+                "Blue Öyster Cult"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e1a88dd91237e4aed79ae076",
+              "name": "Mistress of the Salmon Salt (Quicklime Girl)"
+            },
+            {
+              "artists": [
+                "beabadoobee"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d9a2e7835a178df7b0153aa",
+              "name": "Take A Bite"
+            },
+            {
+              "artists": [
+                "American Football"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f9c6c2c9e047a2963aae3565",
+              "name": "Honestly?"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23396881/FREEFORM",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/23sR8iBxhM0UQlyALsOQgZ"
         }
       },
       "needs_reconciliation": false
