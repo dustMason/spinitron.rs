@@ -189,6 +189,53 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23002027": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23002027,
+          "title": "Americana, Folk, and Roots",
+          "url": "https://spinitron.com/KALX/pl/23002027/Americana-Folk-and-Roots",
+          "start_time": "2026-11-24T17:00:00-0800",
+          "end_time": "2026-11-24T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1KvSWnkk1015hqACIIUbQT",
+          "spotify:track:3mEK8ZwihFlrxlYY7aWjex",
+          "spotify:track:04PHIVX4Zt36nG0XQYmLQc",
+          "spotify:track:3LM5juO1GaaR09gthoEfKV",
+          "spotify:track:2ykRtjl6a8Zhn7zluWg8Aa",
+          "spotify:track:3ZgQfKg1DVOId5t23bSBhA",
+          "spotify:track:7DHkMfQ2BcNhYnkEuYAiz6",
+          "spotify:track:7oOru3ZXSe8ABY0DOZnK8i",
+          "spotify:track:5PCl3iRQWawwfQl02ZZ2HP",
+          "spotify:track:5SC3W7eFFsxiTIGCnQbSBJ",
+          "spotify:track:03QiZOUmQWZxB8CVmzuwi2",
+          "spotify:track:67pU4HuHVqJieuWFenjqLk",
+          "spotify:track:58nkU4zb9BhzqIHFXNYX7y"
+        ],
+        "source_isrcs": {
+          "1": "QZVMS2500027",
+          "2": "USUG12608347",
+          "3": "USWB12502470",
+          "4": "QM7MJ1400111",
+          "5": "QT6FL2576526",
+          "6": "USA2P2310733",
+          "7": "USDMG2608509",
+          "9": "QZSYP2694217",
+          "11": "QM6P42619581",
+          "12": "USQX91601820",
+          "13": "USFVZ2691685"
+        },
+        "listing": {
+          "name": "KALX - Americana, Folk, and Roots - 2026-11-24",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23005728": {
       "entry": {
         "station": "KALX",
