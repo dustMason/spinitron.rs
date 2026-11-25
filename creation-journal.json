@@ -33462,6 +33462,59 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23396455": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23396455,
+          "title": "FREEFORM",
+          "url": "https://spinitron.com/KALX/pl/23396455/FREEFORM",
+          "start_time": "2026-11-24T20:00:00-0800",
+          "end_time": "2026-11-24T22:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5mM4R9py0oIgmyI7cQw7Ss",
+          "spotify:track:1yYoSZ9e1zE2zZlYEytggU",
+          "spotify:track:7ATbUgC3DJtsBQIYB9TMY9",
+          "spotify:track:4z3ta7NIjD4GHBipQZhbsN",
+          "spotify:track:3tlE8IMwVMHASeQdZCK3uH",
+          "spotify:track:4teaV0vz7oCWYyPHLMKLfQ",
+          "spotify:track:0p7MiR9kVY9pX8z3v4vys3",
+          "spotify:track:7FdDBpqrdpWtdAromLpv4V",
+          "spotify:track:3Ha9TeaqCdcS6cqKmFGCO3",
+          "spotify:track:4jgLPK09YaRxMlDb68IYG8",
+          "spotify:track:52T8TTMESX21406wvTdQDY",
+          "spotify:track:3C577pIvUmFN02Dgshfg3S",
+          "spotify:track:3JvTWWbauZ4hyVrT2OsePb",
+          "spotify:track:7m21WB6QoOusWw9zTPfDHq",
+          "spotify:track:1VrgL6NXjw28Gsv9eITv7k"
+        ],
+        "source_isrcs": {
+          "1": "USYBL2600673",
+          "2": "US3282000017",
+          "3": "GBAL71202009",
+          "4": "QMV8L2639206",
+          "5": "GBAAA9300170",
+          "6": "USRC11401893",
+          "7": "GBBPW2602563",
+          "8": "USAT22404699",
+          "9": "GBCEL1700698",
+          "10": "GBR8R2400323",
+          "11": "USA2P2565566",
+          "12": "GBCEL2100186",
+          "13": "GBFFS0900121",
+          "14": "GBUM70706073",
+          "15": "GBAYE0600723"
+        },
+        "listing": {
+          "name": "KALX - FREEFORM - 2026-11-24 8:00pm",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
