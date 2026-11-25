@@ -57603,6 +57603,48 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23396180": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23396180,
+          "title": "On The Spot",
+          "url": "https://spinitron.com/KPOO/pl/23396180/On-The-Spot",
+          "start_time": "2026-11-24T18:00:00-0800",
+          "end_time": "2026-11-24T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1eaedYGCM55A0aBlioKoVD",
+          "spotify:track:27gWiSkfYdxmsrzjuvbENI",
+          "spotify:track:7HPgvngMf0WX39PwiQxMwz",
+          "spotify:track:2eUFychKa9EcwsAMSfh9g4",
+          "spotify:track:0fbUW1ebNME71IiA16ztUw",
+          "spotify:track:7eJMeblIfH0psinc4aYo87",
+          "spotify:track:4KeWFjr3yafLAzpEsiqn8I",
+          "spotify:track:4l8sRGoF2IQU0TG0tSUiJz",
+          "spotify:track:0XT2sJXre7aaaOg2fzfzC1",
+          "spotify:track:5IDwiSA5RALU1QQ14Xth2c"
+        ],
+        "source_isrcs": {
+          "1": "FRZ020282590",
+          "2": "USDFN0503007",
+          "3": "NLGZ20902284",
+          "5": "NLGZ20901290",
+          "6": "NLGZ20900028",
+          "7": "NLGZ20900505",
+          "8": "NLGZ20900799",
+          "9": "GBPKF2300086",
+          "10": "USBC17500117"
+        },
+        "listing": {
+          "name": "KPOO - On The Spot - 2026-11-24",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
