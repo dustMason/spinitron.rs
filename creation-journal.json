@@ -33308,7 +33308,7 @@
           "start_time": "2026-11-24T18:00:00-0800",
           "end_time": "2026-11-24T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5N3dVBFVt1dOV2XvtYQ87M",
         "desired_uris": [
@@ -33362,8 +33362,102 @@
           "23": "USRE19900760"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T20:00:00-0800",
+          "broadcast_start": "2026-11-24T18:00:00-0800",
+          "imported_at": "2026-11-25T16:59:18.162603127+00:00",
+          "last_updated": "2026-11-25 16:59 UTC",
           "name": "KALX - Fungal Zoning Permit - Fungal Fall Figure Skatin' Edition - 2026-11-24",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Jarvis Cocker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b5c2ad0a84a7be36195e1d70",
+              "name": "Fantastic Mr. Fox AKA Petey's Song"
+            },
+            {
+              "artists": [
+                "The University of California Marching Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b370d4f77e09aef949b913ef",
+              "name": "Big C"
+            },
+            {
+              "artists": [
+                "The University of California Marching Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b370d4f77e09aef949b913ef",
+              "name": "Stanford Jonah"
+            },
+            {
+              "artists": [
+                "Rusted Root"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27333f9f301fa72d63e65e0845e",
+              "name": "Evil Ways"
+            },
+            {
+              "artists": [
+                "The Catburgers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dbd9b0f75c012c64e6821305",
+              "name": "Holiday House"
+            },
+            {
+              "artists": [
+                "Belle and Sebastian"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dde0e9527845b973786166a7",
+              "name": "Get Me Away from Here, I'm Dying"
+            },
+            {
+              "artists": [
+                "Mulatu Astatke",
+                "Hoodna Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731e52125d845a3783784656bf",
+              "name": "Major"
+            },
+            {
+              "artists": [
+                "Ass Ponys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c942ce417958cd871d0f9983",
+              "name": "Azalea"
+            },
+            {
+              "artists": [
+                "MGMT"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273872a896e7c3776d6949df476",
+              "name": "One Thing Left to Try"
+            },
+            {
+              "artists": [
+                "Chanel Beads"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736692913a50453073957e1bfa",
+              "name": "Beaten With Sticks"
+            },
+            {
+              "artists": [
+                "LCD Soundsystem"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee0d0dce888c6c8a70db6e8b",
+              "name": "You Wanted a Hit"
+            },
+            {
+              "artists": [
+                "Santigold"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27383272a60f67c2ef65f5c2c5b",
+              "name": "Lights Out"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23396036/Fungal-Zoning-Permit-Fungal-Fall-Figure-Skatin-Edition",
+          "station": "KALX",
+          "track_count": 23,
+          "url": "https://open.spotify.com/playlist/5N3dVBFVt1dOV2XvtYQ87M"
         }
       },
       "needs_reconciliation": false
