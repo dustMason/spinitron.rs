@@ -56994,7 +56994,7 @@
           "start_time": "2026-11-24T07:00:00-0800",
           "end_time": "2026-11-24T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3JyNiQtxjGtZul561n5Egy",
         "desired_uris": [
@@ -57058,8 +57058,101 @@
           "28": "QZES61967533"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T09:00:00-0800",
+          "broadcast_start": "2026-11-24T07:00:00-0800",
+          "imported_at": "2026-11-25T17:02:41.561714911+00:00",
+          "last_updated": "2026-11-25 17:02 UTC",
           "name": "KPOO - 70's and 60's Soul for Breakfast - 2026-11-24",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Wilson Pickett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d625f8136cd2f6b9e9543f4",
+              "name": "Sugar Sugar - 2006 Remaster; Single Version"
+            },
+            {
+              "artists": [
+                "Freda Payne"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273377fb4d3fdfa7e1a9ec17f27",
+              "name": "Deeper And Deeper (US Single Mix)"
+            },
+            {
+              "artists": [
+                "Stevie Wonder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737ae95ae02ff3e5fd725fd044",
+              "name": "If You Really Love Me"
+            },
+            {
+              "artists": [
+                "Bill Withers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27372641ed682401fc46c18ac12",
+              "name": "Kissing My Love"
+            },
+            {
+              "artists": [
+                "Hues Corporation"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731600cd20d50f504cfbcac55b",
+              "name": "Rockin' Soul"
+            },
+            {
+              "artists": [
+                "The Blackbyrds"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27394293f63833ce092c246a2e9",
+              "name": "Flying High"
+            },
+            {
+              "artists": [
+                "The O'Jays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f47ddc9a784c4502e446f36",
+              "name": "Message In Our Music"
+            },
+            {
+              "artists": [
+                "James Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739b11a313b58c52f32945e7de",
+              "name": "Bodyheat - 1977 Album Version"
+            },
+            {
+              "artists": [
+                "Billy Preston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731dd97e315f3a1ebeb420c1dd",
+              "name": "Nothing From Nothing"
+            },
+            {
+              "artists": [
+                "Chairmen Of The Board"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec63fd6ee2d3684a1d46c7df",
+              "name": "Finder's Keepers"
+            },
+            {
+              "artists": [
+                "The Isley Brothers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273509a7a314735c4272429f73d",
+              "name": "Work To Do"
+            },
+            {
+              "artists": [
+                "Aretha Franklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e0a471352a168c1d44fdabd7",
+              "name": "Rock Steady"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23393416/70-s-and-60-s-Soul-for-Breakfast",
+          "station": "KPOO",
+          "track_count": 28,
+          "url": "https://open.spotify.com/playlist/3JyNiQtxjGtZul561n5Egy"
         }
       },
       "needs_reconciliation": false
