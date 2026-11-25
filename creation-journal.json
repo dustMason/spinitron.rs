@@ -57745,6 +57745,31 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23396495": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23396495,
+          "title": "Fingersnaps Salon...Music & Conversation",
+          "url": "https://spinitron.com/KPOO/pl/23396495/Fingersnaps-Salon-Music-Conversation",
+          "start_time": "2026-11-24T20:00:00-0800",
+          "end_time": "2026-11-25T01:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4aOt3VOaBb3TvmN8DKrbCK"
+        ],
+        "source_isrcs": {
+          "1": "USWB10403355"
+        },
+        "listing": {
+          "name": "KPOO - Fingersnaps Salon...Music & Conversation - 2026-11-24",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
