@@ -33782,7 +33782,7 @@
           "start_time": "2026-11-25T00:00:00-0800",
           "end_time": "2026-11-25T03:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1wB0D4Bzrzi2YLDvbk00xf",
         "desired_uris": [
@@ -33855,8 +33855,101 @@
           "33": "GBARL0300593"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T03:00:00-0800",
+          "broadcast_start": "2026-11-25T00:00:00-0800",
+          "imported_at": "2026-11-25T17:01:19.385346812+00:00",
+          "last_updated": "2026-11-25 17:01 UTC",
           "name": "KALX - round and round - 2026-11-25",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Alice Cooper"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737158d3ceec7cdeaa3d3e2f97",
+              "name": "Welcome to My Nightmare"
+            },
+            {
+              "artists": [
+                "NJOI"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27339b307b27dd89c261b303bdc",
+              "name": "Never Let U Go"
+            },
+            {
+              "artists": [
+                "L'Rain"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ea5a26ce4370090fc6698f4",
+              "name": "soulless cycle"
+            },
+            {
+              "artists": [
+                "Moby Grape"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27376eb7edba1cd8dd0b7db1a6b",
+              "name": "Indifference"
+            },
+            {
+              "artists": [
+                "Psychic Pigs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cd59fe7a4cffcc09d45a4def",
+              "name": "Hello Oblivion"
+            },
+            {
+              "artists": [
+                "Alewya"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731ee28f525d2cbe7813e242d2",
+              "name": "Cairo FM"
+            },
+            {
+              "artists": [
+                "Gwenno"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273609e22708a5d4f5f4bea6089",
+              "name": "Herdhya"
+            },
+            {
+              "artists": [
+                "Front Country"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733b3d36cf8a938e0a470f1deb",
+              "name": "I Don't Wanna Die Angry"
+            },
+            {
+              "artists": [
+                "Jason Isbell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cadba04ee5fa8612182151c6",
+              "name": "Super 8"
+            },
+            {
+              "artists": [
+                "Doug Gillard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f869b331c678a94473c4525d",
+              "name": "Cannons"
+            },
+            {
+              "artists": [
+                "Gigi Masin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eadb1bd63da2dcf9c681b043",
+              "name": "Deception Dance"
+            },
+            {
+              "artists": [
+                "sundayclub"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27338a269146d2e7def5248e2de",
+              "name": "Blue Wave"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23397414/round-and-round",
+          "station": "KALX",
+          "track_count": 33,
+          "url": "https://open.spotify.com/playlist/1wB0D4Bzrzi2YLDvbk00xf"
         }
       },
       "needs_reconciliation": false
