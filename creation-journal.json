@@ -32983,7 +32983,7 @@
           "start_time": "2026-11-24T15:00:00-0800",
           "end_time": "2026-11-24T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0fHftNzme2xhP5hcRMVVPS",
         "desired_uris": [
@@ -33042,8 +33042,107 @@
           "26": "QM7282600139"
         },
         "listing": {
+          "broadcast_end": "2026-11-24T17:00:00-0800",
+          "broadcast_start": "2026-11-24T15:00:00-0800",
+          "imported_at": "2026-11-25T16:57:56.671139907+00:00",
+          "last_updated": "2026-11-25 16:57 UTC",
           "name": "KALX - queen of the cowbell. - 2026-11-24",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Circa Waves"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732ffbd1f4aacfb0bb510c01d4",
+              "name": "We Made It"
+            },
+            {
+              "artists": [
+                "Alvvays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738f1ebf73130fc32aa3bf2b06",
+              "name": "Belinda Says"
+            },
+            {
+              "artists": [
+                "Hatchie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ba8cfa0912d3ce0b674c8f5f",
+              "name": "Lose It Again"
+            },
+            {
+              "artists": [
+                "CHVRCHES"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734fb447649e5fd65d84e1d9e4",
+              "name": "Overthinker"
+            },
+            {
+              "artists": [
+                "Gift Horse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739189b8fd9d0ef8187f65178a",
+              "name": "Pillar Quality"
+            },
+            {
+              "artists": [
+                "Station Model Violence"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c35d95e9007ae98dead80464",
+              "name": "Heat"
+            },
+            {
+              "artists": [
+                "King Ayisoba"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27384b42a846ca1b7f3f8f7b9de",
+              "name": "Nkaase"
+            },
+            {
+              "artists": [
+                "K.O.G",
+                "The Zongo Brigade"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dcdef323759161514d0ac09e",
+              "name": "Turn Up The Music"
+            },
+            {
+              "artists": [
+                "BCUC",
+                "Saul Williams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f8479803150815bcbe7d21d",
+              "name": "Isivunguvungu"
+            },
+            {
+              "artists": [
+                "The Halluci Nation",
+                "Saul Williams",
+                "Chippewa Travellers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dc66620d57d603ecadfdd75d",
+              "name": "The Virus"
+            },
+            {
+              "artists": [
+                "Afrika Bambaataa",
+                "The Soulsonic Force"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273733277b1236fac00a38ed48c",
+              "name": "Looking for the Perfect Beat - Original 12\" Version"
+            },
+            {
+              "artists": [
+                "Xiaolin",
+                "Eli"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b58be3cb2caedbff622c6a9",
+              "name": "Pressure - feat. Eli"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23395321/queen-of-the-cowbell",
+          "station": "KALX",
+          "track_count": 26,
+          "url": "https://open.spotify.com/playlist/0fHftNzme2xhP5hcRMVVPS"
         }
       },
       "needs_reconciliation": false
