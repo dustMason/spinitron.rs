@@ -58597,7 +58597,7 @@
           "start_time": "2026-11-25T12:00:00-0800",
           "end_time": "2026-11-25T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6gXFsp7zjRE5Isaak8Aq2p",
         "desired_uris": [
@@ -58669,8 +58669,103 @@
           "32": "QT6642602853"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T15:00:00-0800",
+          "broadcast_start": "2026-11-25T12:00:00-0800",
+          "imported_at": "2026-11-26T16:34:14.137535016+00:00",
+          "last_updated": "2026-11-26 16:34 UTC",
           "name": "KPOO - THE MUSIC FILL SHOW - 2026-11-25",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Bob Marley & The Wailers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c5b065922d8b4de6e052f15",
+              "name": "War / No More Trouble - Medley / Live At The Pavillon De Paris, 1977"
+            },
+            {
+              "artists": [
+                "Bob Marley & The Wailers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27387ef6dae7545173089c68f34",
+              "name": "Slave Driver"
+            },
+            {
+              "artists": [
+                "Rankin Scroo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731852236ba7b98357a4bea642",
+              "name": "My People"
+            },
+            {
+              "artists": [
+                "George Palmer",
+                "Bass Culture Players"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a4572f15a49178a5807fc256",
+              "name": "Militancy"
+            },
+            {
+              "artists": [
+                "Luv Fyah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c4d5e3229ba25a16b178e09f",
+              "name": "Jah Jah Know"
+            },
+            {
+              "artists": [
+                "Ras Brando"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27335677b21e4d8364a1b79a0e0",
+              "name": "Mankind"
+            },
+            {
+              "artists": [
+                "Jah Bouks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27335677b21e4d8364a1b79a0e0",
+              "name": "Sit up a Mi Yaad"
+            },
+            {
+              "artists": [
+                "Black Roots"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273acbe3fa387ec4de6253e2faf",
+              "name": "Life in the System Dub"
+            },
+            {
+              "artists": [
+                "Akae Beka"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b737876b9974dbc538d533fd",
+              "name": "All Around Man Yard"
+            },
+            {
+              "artists": [
+                "Kenya Eugene"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27325c8b5d3ec500162a50977af",
+              "name": "Bun It"
+            },
+            {
+              "artists": [
+                "Ashanti Selah",
+                "Junior Roy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273103db28b7f8e20fa202bcb03",
+              "name": "Deep Call"
+            },
+            {
+              "artists": [
+                "Rik Jam"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273643d44a5dfd835fd53961be7",
+              "name": "Journey"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23399908/THE-MUSIC-FILL-SHOW",
+          "station": "KPOO",
+          "track_count": 32,
+          "url": "https://open.spotify.com/playlist/6gXFsp7zjRE5Isaak8Aq2p"
         }
       },
       "needs_reconciliation": false
