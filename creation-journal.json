@@ -58919,7 +58919,7 @@
           "start_time": "2026-11-25T18:00:00-0800",
           "end_time": "2026-11-25T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3xrQcZrTfWUlMhsVy4Asno",
         "desired_uris": [
@@ -58965,8 +58965,113 @@
           "19": "USX9P1015693"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T20:00:00-0800",
+          "broadcast_start": "2026-11-25T18:00:00-0800",
+          "imported_at": "2026-11-26T16:36:16.183054770+00:00",
+          "last_updated": "2026-11-26 16:36 UTC",
           "name": "KPOO - Voices of the Native Nations - 2026-11-25",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Best Songs Of American Indians"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c7b8d7da026dc90a4db3322c",
+              "name": "Yana Hana"
+            },
+            {
+              "artists": [
+                "Ed Lee Natay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bf599189b0814a2eae139f6c",
+              "name": "Hopi Harvest Dance"
+            },
+            {
+              "artists": [
+                "Fawn Wood",
+                "Dallas Waskahat"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273826de46791c3c5345b178d5d",
+              "name": "Blessings"
+            },
+            {
+              "artists": [
+                "Louie Gonnie",
+                "Dewey Gonnie",
+                "Logan Yazzie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f123b78dde003133f9515e6",
+              "name": "A New Dawn"
+            },
+            {
+              "artists": [
+                "Judy Trejo",
+                "Delgadina Gonzales",
+                "Christina Esquivel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273290358b2591ed023d049b6c2",
+              "name": "Tuhvan Dau Ya"
+            },
+            {
+              "artists": [
+                "Judy Trejo",
+                "Christina Esquivel",
+                "Delgadina Gonzales"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273290358b2591ed023d049b6c2",
+              "name": "Arizona Pinenut"
+            },
+            {
+              "artists": [
+                "Judy Trejo",
+                "Delgadina Gonzales",
+                "Christina Esquivel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273290358b2591ed023d049b6c2",
+              "name": "Tuhva Tzi Buina"
+            },
+            {
+              "artists": [
+                "Louie Gonnie",
+                "Dewey Gonnie",
+                "Logan Yazzie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f123b78dde003133f9515e6",
+              "name": "From the Mountain Tops"
+            },
+            {
+              "artists": [
+                "Jim Pepper"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739a86ecc2b10cf15db8732e80",
+              "name": "Bamasso"
+            },
+            {
+              "artists": [
+                "Kanatan Aski",
+                "Pura Fé"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c1a08d281a9b706085ddd397",
+              "name": "The Condor Meets the Eagle"
+            },
+            {
+              "artists": [
+                "Blackfire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273889830717fbb4bcc43062feb",
+              "name": "American Indian Movement Song"
+            },
+            {
+              "artists": [
+                "Ox Boyz"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731f40b2569520196b2ec0262b",
+              "name": "Song of Freedom"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23401326/Voices-of-the-Native-Nations",
+          "station": "KPOO",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/3xrQcZrTfWUlMhsVy4Asno"
         }
       },
       "needs_reconciliation": false
