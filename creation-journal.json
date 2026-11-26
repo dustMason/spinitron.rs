@@ -59283,7 +59283,7 @@
           "start_time": "2026-11-25T23:00:00-0800",
           "end_time": "2026-11-26T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1TButDWVngD4Krz2eQZjda",
         "desired_uris": [
@@ -59329,8 +59329,104 @@
           "19": "USMR50470400"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T02:00:00-0800",
+          "broadcast_start": "2026-11-25T23:00:00-0800",
+          "imported_at": "2026-11-26T16:37:37.656773347+00:00",
+          "last_updated": "2026-11-26 16:37 UTC",
           "name": "KPOO - Lover's Lounge - 2026-11-25",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Furacão 2000",
+                "The Intruders"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273850b155db8d88f363c132499",
+              "name": "I Wanna Know Your Name"
+            },
+            {
+              "artists": [
+                "The Delfonics"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f606a66ae319776c0dc86ce8",
+              "name": "Over and Over"
+            },
+            {
+              "artists": [
+                "Rufus Thomas"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738cf0b27efc1217896299eda9",
+              "name": "Sixty Minute Man (Part 2)"
+            },
+            {
+              "artists": [
+                "Telefunk'n"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27329bd8138dd3d3f514d39366a",
+              "name": "Jingle bells - Cover Version"
+            },
+            {
+              "artists": [
+                "The San Francisco TKOs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733eba0f604f02bb480e85c04f",
+              "name": "Herm"
+            },
+            {
+              "artists": [
+                "Dyke & The Blazers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c88438b9798357bb093ae122",
+              "name": "Uhh Parts 1 & 2"
+            },
+            {
+              "artists": [
+                "B.B. King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e012d57357b306e4f50b7697",
+              "name": "Sweet Sixteen Parts 1 & 2 - Remastered"
+            },
+            {
+              "artists": [
+                "The Otis Rush Blues Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c97055808997bebfd2e92095",
+              "name": "It's A Mean Old World"
+            },
+            {
+              "artists": [
+                "Arthur \"Big Boy\" Crudup"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273eab12d3c32863f0d5084e709",
+              "name": "That's All Right"
+            },
+            {
+              "artists": [
+                "Sonny Rhodes",
+                "Sonny Rhodes & The Texas Twisters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731c449c7d23b82e0afd39d045",
+              "name": "Cigarette Blues"
+            },
+            {
+              "artists": [
+                "Clarence Carter"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27332a2d4beb2fd15779088c9f3",
+              "name": "Strokin' (Long And Dirty)"
+            },
+            {
+              "artists": [
+                "Jeannie Cheatham",
+                "Jimmy Cheatham"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf19d458c409dce2ceae73c3",
+              "name": "Meet Me With Your Black Drawers On"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23402580/Lover-s-Lounge",
+          "station": "KPOO",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/1TButDWVngD4Krz2eQZjda"
         }
       },
       "needs_reconciliation": false
