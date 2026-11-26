@@ -35077,7 +35077,7 @@
           "start_time": "2026-11-25T18:00:00-0800",
           "end_time": "2026-11-25T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3S7Gf1m1UZ9EWnSMjaQdAN",
         "desired_uris": [
@@ -35126,8 +35126,103 @@
           "21": "QZDMQ2550188"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T20:00:00-0800",
+          "broadcast_start": "2026-11-25T18:00:00-0800",
+          "imported_at": "2026-11-26T16:42:25.309711703+00:00",
+          "last_updated": "2026-11-26 16:42 UTC",
           "name": "KALX - Suppertime Serenade - 2026-11-25",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Sweet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273611f39dde2ea357ba92935af",
+              "name": "Wig Wam Bam - Remastered"
+            },
+            {
+              "artists": [
+                "Losses"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d824c27f8a6fcc5b9ef6f979",
+              "name": "World Is Down In The Dumps"
+            },
+            {
+              "artists": [
+                "Luke Sweeney"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27370684c31c69d409eb9d0ee77",
+              "name": "Season of Weeds"
+            },
+            {
+              "artists": [
+                "Richard Lloyd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730785ccf4f5168f66b663ba67",
+              "name": "Blue and Grey"
+            },
+            {
+              "artists": [
+                "Very Paranoia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734521681bb2dc230397b5d436",
+              "name": "Seconds to Live"
+            },
+            {
+              "artists": [
+                "Sheer Mag"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273955f3b3e995d2d479336b28a",
+              "name": "SIT & CRY"
+            },
+            {
+              "artists": [
+                "Johnny Otis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bdd5e2dca1b356acb6b18249",
+              "name": "Willie Did The Cha Cha"
+            },
+            {
+              "artists": [
+                "Soft Machine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27396f403cfa6a94e9ae21e80ba",
+              "name": "We Did It Again"
+            },
+            {
+              "artists": [
+                "Your Old Droog",
+                "Flying Lotus",
+                "Georgia Anne Muldrow"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fb663db38b157f6658b2dba",
+              "name": "I Don't Care"
+            },
+            {
+              "artists": [
+                "Evelyn \"Champagne\" King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c7f9b0734d2b66884fdf1305",
+              "name": "Betcha She Don't Love You - 12\" Version"
+            },
+            {
+              "artists": [
+                "Indeep"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27374ff7584f39381e1e9e1639d",
+              "name": "The Rapper"
+            },
+            {
+              "artists": [
+                "DeGarmo & Key"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27324cae357124531dcf8063914",
+              "name": "Six, Six, Six"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23401239/Suppertime-Serenade",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/3S7Gf1m1UZ9EWnSMjaQdAN"
         }
       },
       "needs_reconciliation": false
