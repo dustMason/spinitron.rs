@@ -59272,6 +59272,67 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23402580": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23402580,
+          "title": "Lover's Lounge",
+          "url": "https://spinitron.com/KPOO/pl/23402580/Lover-s-Lounge",
+          "start_time": "2026-11-25T23:00:00-0800",
+          "end_time": "2026-11-26T02:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:01gbAccZKx4HrTu5FIgC6b",
+          "spotify:track:5AXQomuNhUW0iLVkzvyVJ5",
+          "spotify:track:3kVNbQxmxYrFS61GuXmaCm",
+          "spotify:track:1k4jZ7ExX2q6wDf3l1guWL",
+          "spotify:track:6JiiU5DAn1IPPvM7ojeeRW",
+          "spotify:track:416aqb7C2LzjBCkwxvFlp9",
+          "spotify:track:0uzkI8HZYlpfjv0KJFNmnP",
+          "spotify:track:1P5eIMak59g6gv3rNWvKz0",
+          "spotify:track:4C6KfxHdNt7x4LaqVa5pkD",
+          "spotify:track:7fNIPFUeUdeSNK09ZsS4it",
+          "spotify:track:6s5LxaNwBzVxpALGd1lcz4",
+          "spotify:track:2va8itdYMiLmHkZ80IiAGQ",
+          "spotify:track:0odnXEVpQhbdNwLiZsmJIW",
+          "spotify:track:4TrIZFWEQiug61RhhcXiJb",
+          "spotify:track:4PR5j5MHSNFHuw62LbTE7F",
+          "spotify:track:0lMrcqu6cQj8HvHxYqbrCw",
+          "spotify:track:1ad70G1YFyYXkJH4aLqZlo",
+          "spotify:track:5vafH68gZnicjkrNlIWONm",
+          "spotify:track:6quVV8aWhUT9tAByGpvAdv"
+        ],
+        "source_isrcs": {
+          "1": "BXYZ92100431",
+          "2": "GBACC2054308",
+          "3": "USFI87000457",
+          "4": "ITDD81918894",
+          "5": "GBBHN0700099",
+          "6": "QMFMK1324002",
+          "7": "US2Y30611424",
+          "8": "USVG20084162",
+          "9": "USBB10300677",
+          "10": "USZG69500120",
+          "11": "USKO10101119",
+          "12": "USC4R0303936",
+          "13": "USCGH1250903",
+          "14": "US4B90475012",
+          "15": "USMR50871122",
+          "16": "USJZZ0500129",
+          "17": "QZHN91948802",
+          "18": "USARL8574004",
+          "19": "USMR50470400"
+        },
+        "listing": {
+          "name": "KPOO - Lover's Lounge - 2026-11-25",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
