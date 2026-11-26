@@ -34151,6 +34151,82 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23398592": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23398592,
+          "title": "Wide Awake",
+          "url": "https://spinitron.com/KALX/pl/23398592/Wide-Awake",
+          "start_time": "2026-11-25T07:00:00-0800",
+          "end_time": "2026-11-25T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5Lb3jb0Y2M9A6Iw1qLWAJW",
+          "spotify:track:6PSO71x9dElDEwquZdfB65",
+          "spotify:track:1qCe9qukzqAwCs08AGfzJG",
+          "spotify:track:2yU3fXnMl3pghaWaHwDwWz",
+          "spotify:track:29gyBz5obsE70ojZiVoFrm",
+          "spotify:track:63xdwScd1Ai1GigAwQxE8y",
+          "spotify:track:1OkVAIB2NaO5ZpERwwyQ3H",
+          "spotify:track:5ayybTSXNwcarDtxQKqvWX",
+          "spotify:track:2U2BYoQqDVMBJyOLpWvbCa",
+          "spotify:track:7KtY2o02tna8TmaiIELLrv",
+          "spotify:track:36Us7iQfslxRe1sOqUDmyt",
+          "spotify:track:1dsDGET85alIVRuh4Gk435",
+          "spotify:track:77FZ1PmS2mNjascU6dTeEw",
+          "spotify:track:30GGIrrJdSNtecPiFcVP5O",
+          "spotify:track:0kVQozLQGhKL6FGzCcnCPF",
+          "spotify:track:5U2lwz5xAYRm6ot1JKpxco",
+          "spotify:track:7gESs7QRYGjjums55OCWbc",
+          "spotify:track:6Pv48Rm8SZlk2SPbO90sd3",
+          "spotify:track:5iZFAKYDQGoJmhz86uLndx",
+          "spotify:track:7huqsHcUto3D3TDHPWtuYQ",
+          "spotify:track:6Rqad6iLpRw7dQ6YbLadye",
+          "spotify:track:4a97cGetPwHgZog0LJefqI",
+          "spotify:track:095nh3pKnpBCoA5GV1gASs",
+          "spotify:track:2U2PU70RZCDo37wPtiCAcJ",
+          "spotify:track:3DisbMb7MgyB39L8JzkCyC",
+          "spotify:track:1CmiW1KhXUivXpVfm0FQCC",
+          "spotify:track:4JPanpIUzbAg6KPrEi088A"
+        ],
+        "source_isrcs": {
+          "1": "USNCB2625101",
+          "2": "USSF18211801",
+          "3": "USRE19901395",
+          "4": "GBAYE1000842",
+          "5": "QZDMQ2550185",
+          "6": "GBAFR7110008",
+          "7": "DEG930990072",
+          "8": "USEM30100494",
+          "9": "USMRG2688302",
+          "10": "USUM72306858",
+          "11": "USG590610052",
+          "12": "USA2B1605363",
+          "13": "GBAYE1000805",
+          "14": "USBQU1400001",
+          "15": "JPG921000713",
+          "16": "QM84B2510707",
+          "17": "GBBLY8500011",
+          "18": "GBCKK2683203",
+          "19": "USNO12600080",
+          "20": "USSM10024014",
+          "21": "USUM71701419",
+          "22": "QZDMQ2550302",
+          "23": "USUM72605731",
+          "24": "FR26V2004757",
+          "26": "QZZ7V2555756",
+          "27": "GBLAZ1500719"
+        },
+        "listing": {
+          "name": "KALX - Wide Awake - 2026-11-25",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
