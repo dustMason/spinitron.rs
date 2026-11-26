@@ -58395,7 +58395,7 @@
           "start_time": "2026-11-25T09:00:00-0800",
           "end_time": "2026-11-25T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1RzU335KfsutxUahcSKnVl",
         "desired_uris": [
@@ -58487,8 +58487,102 @@
           "42": "QZES61967533"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T12:00:00-0800",
+          "broadcast_start": "2026-11-25T09:00:00-0800",
+          "imported_at": "2026-11-26T16:33:33.796829823+00:00",
+          "last_updated": "2026-11-26 16:33 UTC",
           "name": "KPOO - Tia Carroll's Awesome Radio Show - 2026-11-25",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Lynwood Slim and The Igor Prado Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733526c4255f197147bac980dc",
+              "name": "Shake It Baby"
+            },
+            {
+              "artists": [
+                "Nellie Tiger Travis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27336b84ef214a718ac642e4640",
+              "name": "Slap Yo' Weave Off"
+            },
+            {
+              "artists": [
+                "The Beatles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273582d56ce20fe0146ffa0e5cf",
+              "name": "Help! - Remastered 2015"
+            },
+            {
+              "artists": [
+                "Four Tops"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c0fa62ae53b2aeae3766f13d",
+              "name": "It's The Same Old Song"
+            },
+            {
+              "artists": [
+                "Chicago"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730ac413b28547dbc45412a3ce",
+              "name": "25 or 6 to 4"
+            },
+            {
+              "artists": [
+                "Bobby Hebb"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273104dd939c10a2ef4fde1f1df",
+              "name": "Sunny"
+            },
+            {
+              "artists": [
+                "The Temptations"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ef89e6f2987054cf116d1fcd",
+              "name": "(I Know) I'm Losing You"
+            },
+            {
+              "artists": [
+                "Tia Carroll"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730868b1cfd72a0a6df5f78e5e",
+              "name": "Never Let Me Go"
+            },
+            {
+              "artists": [
+                "Jonny Lang",
+                "Fisk Jubilee Singers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27321f0c23496281cf782ec77d7",
+              "name": "I Believe"
+            },
+            {
+              "artists": [
+                "Luther Vandross"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273102bebc4807fc0952a754d0f",
+              "name": "Never Too Much"
+            },
+            {
+              "artists": [
+                "George Benson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733a3c381f6910a4fe51c2640b",
+              "name": "Turn Your Love Around"
+            },
+            {
+              "artists": [
+                "Led Zeppelin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab6742d3000053b7fa87b45ff7079f11b5eca094",
+              "name": "Whole Lotta Love"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23399170/Tia-Carroll-s-Awesome-Radio-Show",
+          "station": "KPOO",
+          "track_count": 42,
+          "url": "https://open.spotify.com/playlist/1RzU335KfsutxUahcSKnVl"
         }
       },
       "needs_reconciliation": false
