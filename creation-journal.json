@@ -34331,7 +34331,7 @@
           "start_time": "2026-11-25T09:00:00-0800",
           "end_time": "2026-11-25T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6v7Vb7wfBNvLdNPVM3KKvI",
         "desired_uris": [
@@ -34418,8 +34418,104 @@
           "41": "USC4R2218741"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T12:00:00-0800",
+          "broadcast_start": "2026-11-25T09:00:00-0800",
+          "imported_at": "2026-11-26T16:39:02.278583875+00:00",
+          "last_updated": "2026-11-26 16:39 UTC",
           "name": "KALX - FREEFORM - 2026-11-25",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Jóhann Jóhannsson",
+                "Alice Sara Ott"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c014b086c27054afc5482a01",
+              "name": "Englabörn (Performed on Piano)"
+            },
+            {
+              "artists": [
+                "Agnes Obel"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c34bf09fe2f2369180efd46",
+              "name": "No Such Thing as Silence"
+            },
+            {
+              "artists": [
+                "Ibibio Sound Machine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738377ac5fbafebad9549413c8",
+              "name": "Concept of Love"
+            },
+            {
+              "artists": [
+                "Angelique Kidjo",
+                "Shungudzo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739edbe553e9fd161453391db4",
+              "name": "Meant For Me"
+            },
+            {
+              "artists": [
+                "Dobet Gnahoré"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27396bdbbfb70adfbc790e78304",
+              "name": "Afrika"
+            },
+            {
+              "artists": [
+                "Aldous Harding"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27373870381d130b608e2deb080",
+              "name": "Train on the Island"
+            },
+            {
+              "artists": [
+                "John Field",
+                "Alice Sara Ott"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273650af287df1a7741171932b0",
+              "name": "Nocturne No. 1 in E-Flat Major, H. 24"
+            },
+            {
+              "artists": [
+                "anaiis"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c8e9263d987b8f054176303",
+              "name": "Deus Deus"
+            },
+            {
+              "artists": [
+                "Colleen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273519a385e0139be0398575d0c",
+              "name": "Mis armas se habían caído al suelo"
+            },
+            {
+              "artists": [
+                "Pete Townshend"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733e7111cc866efb341a2988f2",
+              "name": "And I Moved"
+            },
+            {
+              "artists": [
+                "Actress"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f6f7b357a1dcf5b14298aa0c",
+              "name": "Withending"
+            },
+            {
+              "artists": [
+                "Nick Drake"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bd158c797b1026005c2917bc",
+              "name": "Saturday Sun"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23399040/FREEFORM",
+          "station": "KALX",
+          "track_count": 41,
+          "url": "https://open.spotify.com/playlist/6v7Vb7wfBNvLdNPVM3KKvI"
         }
       },
       "needs_reconciliation": false
