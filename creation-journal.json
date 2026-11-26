@@ -35560,7 +35560,7 @@
           "start_time": "2026-11-26T00:00:00-0800",
           "end_time": "2026-11-26T03:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6WCEptxhbmYvoJo3pt2aUQ",
         "desired_uris": [
@@ -35628,8 +35628,101 @@
           "32": "BE2NC2600002"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T03:00:00-0800",
+          "broadcast_start": "2026-11-26T00:00:00-0800",
+          "imported_at": "2026-11-26T16:44:27.036763062+00:00",
+          "last_updated": "2026-11-26 16:44 UTC",
           "name": "KALX - Nom de plume - 2026-11-26",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Hang-Ups"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aacb824a6a934e93089eed29",
+              "name": "Top of Morning"
+            },
+            {
+              "artists": [
+                "Michèle Torr"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273922eea065129ce75f1745cfa",
+              "name": "Ce soir je t'attendais"
+            },
+            {
+              "artists": [
+                "Marie Laforêt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27336f918decadc0848baeb48ae",
+              "name": "Les vendanges de l'amour"
+            },
+            {
+              "artists": [
+                "The Freebies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b24daa28789d2e0f4bb2dfb",
+              "name": "Josephine, I love you"
+            },
+            {
+              "artists": [
+                "Alvvays"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27391390d24abb65f6fae0323f0",
+              "name": "In Undertow"
+            },
+            {
+              "artists": [
+                "The High Violets"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732e0484e2fd4edb1bfd0a1982",
+              "name": "Love Is Blinding"
+            },
+            {
+              "artists": [
+                "The Railway Children"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a02a0272d0afe66a3ae7b709",
+              "name": "A Pleasure"
+            },
+            {
+              "artists": [
+                "Tanukichan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273049989572af382d6494840de",
+              "name": "Lazy Love"
+            },
+            {
+              "artists": [
+                "Blameless"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273828112120229b8beec5b1800",
+              "name": "More Than I"
+            },
+            {
+              "artists": [
+                "Paper Wings"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27359a88c78abb5a798bfa9e8e0",
+              "name": "White Roses"
+            },
+            {
+              "artists": [
+                "Magic Sam"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f53884b22e89a55dcf45e879",
+              "name": "I Feel So Good"
+            },
+            {
+              "artists": [
+                "Electrelane"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf7d519ff8e087da34b400e3",
+              "name": "Le Song"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23402427/Nom-de-plume",
+          "station": "KALX",
+          "track_count": 33,
+          "url": "https://open.spotify.com/playlist/6WCEptxhbmYvoJo3pt2aUQ"
         }
       },
       "needs_reconciliation": false
