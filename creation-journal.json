@@ -34833,7 +34833,7 @@
           "start_time": "2026-11-25T15:00:00-0800",
           "end_time": "2026-11-25T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0Dn923O6GgBL7BigQDamzv",
         "desired_uris": [
@@ -34881,8 +34881,101 @@
           "20": "JPB620901694"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T17:00:00-0800",
+          "broadcast_start": "2026-11-25T15:00:00-0800",
+          "imported_at": "2026-11-26T16:41:04.097605614+00:00",
+          "last_updated": "2026-11-26 16:41 UTC",
           "name": "KALX - FREEFORM - 2026-11-25 3:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The June Brides"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0bb51d8720ec6056f60d5cd",
+              "name": "Sick, Tired and Drunk"
+            },
+            {
+              "artists": [
+                "Wire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738fedda5f7384633d94966ed5",
+              "name": "Ex Lion Tamer"
+            },
+            {
+              "artists": [
+                "The Damned"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735cc4fc0fc7265c9e851162cd",
+              "name": "There Ain't No Sanity Clause"
+            },
+            {
+              "artists": [
+                "Eno • Hyde"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736737339eeb2d41cea0a134fb",
+              "name": "A Man Wakes Up"
+            },
+            {
+              "artists": [
+                "Matter Baby"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737d28fda3dc204c1ea1060a61",
+              "name": "gardentongue"
+            },
+            {
+              "artists": [
+                "Grandma Love"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c2c8c45c86137fbed4131c58",
+              "name": "Blue Skies"
+            },
+            {
+              "artists": [
+                "Coil"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730975f84700ba86c5f99de461",
+              "name": "Red Slur (2026 Remaster)"
+            },
+            {
+              "artists": [
+                "Non Plus Temps"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731231dfe75a101bbc0125649c",
+              "name": "I Am Not Wise"
+            },
+            {
+              "artists": [
+                "Paul Simon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e5855edffddef46b7feff49b",
+              "name": "The Boy In the Bubble"
+            },
+            {
+              "artists": [
+                "The Blue Aeroplanes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27380929320be753240faa96a43",
+              "name": "The Boy In The Bubble"
+            },
+            {
+              "artists": [
+                "Dog Faced Hermans"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730a32521f6720a6a8493f300c",
+              "name": "Beautiful"
+            },
+            {
+              "artists": [
+                "The Fall"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27311bd2617bfb429ccc38c9c96",
+              "name": "Pay Your Rates"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23400426/FREEFORM",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/0Dn923O6GgBL7BigQDamzv"
         }
       },
       "needs_reconciliation": false
