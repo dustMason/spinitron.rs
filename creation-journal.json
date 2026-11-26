@@ -34823,6 +34823,69 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23400426": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23400426,
+          "title": "FREEFORM",
+          "url": "https://spinitron.com/KALX/pl/23400426/FREEFORM",
+          "start_time": "2026-11-25T15:00:00-0800",
+          "end_time": "2026-11-25T17:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:25TaTbOjrgc4nf7bslsTAA",
+          "spotify:track:6JK4rRp3HbsfgjKdVvMF2c",
+          "spotify:track:7E4mAsi1BReqdb9mo6TGHH",
+          "spotify:track:4NsnEO95i7Zgqp0eBiVlWz",
+          "spotify:track:1JLFJdwhyBkFGd3LpI8UvA",
+          "spotify:track:7ICUu3eE8wBvLxnfQ4rN6p",
+          "spotify:track:0IXjOXji64ay7xEW1g9m18",
+          "spotify:track:4Mcwq6MhMPV2K1fZ0uaKOl",
+          "spotify:track:00IrSynHsun7DpDrLkRIjM",
+          "spotify:track:5yATNOKvy1iN2bIWnC9VNR",
+          "spotify:track:1JKMMfCMzuNPkhvFwLeGpo",
+          "spotify:track:4WX0pRkYVGjYeBDH5hRoa1",
+          "spotify:track:124nj3QzqpccVdLbiFHPeB",
+          "spotify:track:2nIa1hlvLL8u9kqZ2GBDXa",
+          "spotify:track:1DmZDQMgGU6x8sJlyazs1A",
+          "spotify:track:75wtrabFOVsYLsUgZLCLtp",
+          "spotify:track:7e5rbALmTvl60n0b91a7Oh",
+          "spotify:track:6KJACw37TGAWewBACHsLn2",
+          "spotify:track:3POw38I4qNWMLVwTNE2QH2",
+          "spotify:track:5WKIbqFh8rn4IcPwbzfswy",
+          "spotify:track:7ANEZ2FwnTPdeZ1Lbs17gX"
+        ],
+        "source_isrcs": {
+          "1": "GBBLY0903429",
+          "2": "GBAYE7700335",
+          "3": "GBBHN8100016",
+          "4": "GBBPW1400048",
+          "6": "USA2P2641489",
+          "7": "GBEEL0600059",
+          "8": "USELN2620405",
+          "9": "USSM11002254",
+          "10": "GBAYK0700155",
+          "11": "QZDA72220996",
+          "12": "GBAJE8000215",
+          "13": "QM4TW2427305",
+          "14": "QM84B2611502",
+          "15": "GBCKK2683208",
+          "16": "USSM10408631",
+          "17": "QZK6N2627917",
+          "18": "GB3749100014",
+          "19": "GBF068325150",
+          "20": "JPB620901694"
+        },
+        "listing": {
+          "name": "KALX - FREEFORM - 2026-11-25 3:00pm",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
