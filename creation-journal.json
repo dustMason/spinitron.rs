@@ -34530,7 +34530,7 @@
           "start_time": "2026-11-25T12:00:00-0800",
           "end_time": "2026-11-25T13:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6HliAilK6hXqXu4ma1QfsZ",
         "desired_uris": [
@@ -34571,8 +34571,101 @@
           "17": "US4QP2584803"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T13:30:00-0800",
+          "broadcast_start": "2026-11-25T12:00:00-0800",
+          "imported_at": "2026-11-26T16:39:42.501195575+00:00",
+          "last_updated": "2026-11-26 16:39 UTC",
           "name": "KALX - I'd Prefer Not To - 2026-11-25",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Crass"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732c907dede907e3029120b90d",
+              "name": "They've Got a Bomb"
+            },
+            {
+              "artists": [
+                "Roxy Gordon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733a12857dfbea7dd63109b2fe",
+              "name": "Living Life as a Living Target"
+            },
+            {
+              "artists": [
+                "The Dickies"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735a6c00ddef2e5c80c4da4559",
+              "name": "Eve Of Destruction"
+            },
+            {
+              "artists": [
+                "Willie Dunn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f6b6b1aad88726fc8f2bbda",
+              "name": "I Pity the Country"
+            },
+            {
+              "artists": [
+                "Lard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f7397444cb7cb17bc4859d8",
+              "name": "Faith Hope and Treachery"
+            },
+            {
+              "artists": [
+                "Flux of Pink Indians"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27347802de8c5163ea053e33528",
+              "name": "Nothing Is Not Done"
+            },
+            {
+              "artists": [
+                "Portraits Of Tracy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27374338cc5b4a3908e95b7e440",
+              "name": "This Song May Or May Not Be About An Alt-Right Influencer"
+            },
+            {
+              "artists": [
+                "Black Belt Eagle Scout"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732fe61fe5e48cc46721fd68d4",
+              "name": "My Blood Runs Through This Land"
+            },
+            {
+              "artists": [
+                "Welcome Strawberry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e155480c2229a9c9bb98db0",
+              "name": "doings of a wraith"
+            },
+            {
+              "artists": [
+                "Penelope Houston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273af7b1e3bda4cf477c620c7eb",
+              "name": "Wild Mountain Thyme"
+            },
+            {
+              "artists": [
+                "Sade"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d6c05fb48d5834d425128bf",
+              "name": "Paradise"
+            },
+            {
+              "artists": [
+                "Marbled Eye"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f4371f54a9911b42264088d4",
+              "name": "Something's Different"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23399739/I-d-Prefer-Not-To",
+          "station": "KALX",
+          "track_count": 17,
+          "url": "https://open.spotify.com/playlist/6HliAilK6hXqXu4ma1QfsZ"
         }
       },
       "needs_reconciliation": false
