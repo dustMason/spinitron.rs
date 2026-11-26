@@ -35737,7 +35737,7 @@
           "start_time": "2026-11-26T03:00:00-0800",
           "end_time": "2026-11-26T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "11PW3cKMv1jPFX0dZst6fC",
         "desired_uris": [
@@ -35851,8 +35851,109 @@
           "53": "QZTRX2673142"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T07:00:00-0800",
+          "broadcast_start": "2026-11-26T03:00:00-0800",
+          "imported_at": "2026-11-26T16:45:10.661417735+00:00",
+          "last_updated": "2026-11-26 16:45 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-26",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Mahavishnu Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0e47171cdb1d7a61fa27fb0",
+              "name": "Steppings Tones"
+            },
+            {
+              "artists": [
+                "BASIC",
+                "Chris Forsyth",
+                "Douglas McCombs",
+                "Mikel Patrick Avery"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737dc13f6495f644e3ae9c3046",
+              "name": "Pulse"
+            },
+            {
+              "artists": [
+                "Mark Lanegan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f580ac476598d2144c8e9d8c",
+              "name": "Ode to Sad Disco"
+            },
+            {
+              "artists": [
+                "Boy Harsher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732f198ef06e5d3539c1a4a7a2",
+              "name": "Jeans"
+            },
+            {
+              "artists": [
+                "Chris Spheeris",
+                "Paul Voudouris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ac600a08ca2a1b408b7fff12",
+              "name": "Prism"
+            },
+            {
+              "artists": [
+                "Guided By Voices"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b1cf3e90606f4556d969c93f",
+              "name": "The Hard Way"
+            },
+            {
+              "artists": [
+                "Chris Spheeris",
+                "Paul Voudouris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ac600a08ca2a1b408b7fff12",
+              "name": "Prism"
+            },
+            {
+              "artists": [
+                "Cardiacs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735bfbfaae1a5deef223f1964e",
+              "name": "The Blue And Buff"
+            },
+            {
+              "artists": [
+                "Chris Spheeris",
+                "Paul Voudouris"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ac600a08ca2a1b408b7fff12",
+              "name": "Prism"
+            },
+            {
+              "artists": [
+                "The Who"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273692c12f604e384578a70272f",
+              "name": "Magic Bus - Live"
+            },
+            {
+              "artists": [
+                "TOTO",
+                "Brian Eno",
+                "Daniel Lanois"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734aaada73cc5582628c63d12d",
+              "name": "Prophecy Theme"
+            },
+            {
+              "artists": [
+                "The World Sinks Except Japan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273047757a7ad6662896790268d",
+              "name": "Bataar Gaeditt"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23403019/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 53,
+          "url": "https://open.spotify.com/playlist/11PW3cKMv1jPFX0dZst6fC"
         }
       },
       "needs_reconciliation": false
