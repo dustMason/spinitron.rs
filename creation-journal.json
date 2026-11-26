@@ -35067,6 +35067,70 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23401239": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23401239,
+          "title": "Suppertime Serenade",
+          "url": "https://spinitron.com/KALX/pl/23401239/Suppertime-Serenade",
+          "start_time": "2026-11-25T18:00:00-0800",
+          "end_time": "2026-11-25T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5c9G6Rx8uKxZplgBnqjnFX",
+          "spotify:track:6GRhp3XYdmvB48MGTIH339",
+          "spotify:track:4JL4MSNffibYHgx99tVq7A",
+          "spotify:track:1929hr0Q3InNglQCJ76RPj",
+          "spotify:track:2wlukOklKxunz3UYn8nRyU",
+          "spotify:track:0rBtLN1Ub6zh90VsJuGiSX",
+          "spotify:track:6DZh9QtAE857a0qZLikSJb",
+          "spotify:track:5JOuLW3afU0CJKsjFqRtQ3",
+          "spotify:track:3jq169T6RQ4PPgSysnPpMv",
+          "spotify:track:3w3rHbZFjB2jImPZ7AshYt",
+          "spotify:track:41BHUZKxBQSujSv5gMOTXJ",
+          "spotify:track:29EzY4XCh0wsfj7kcltl5I",
+          "spotify:track:6J34YqqzuSpq1rnTRf7oZH",
+          "spotify:track:6O6g0jSdMlIc74eXQS3M3b",
+          "spotify:track:0VFjfeGD6mvyL70Vm9Iey7",
+          "spotify:track:5Cj0j2u033IPzZpo4MPDNj",
+          "spotify:track:4AeG3AsM8Nnrqid4Y9gBz7",
+          "spotify:track:3cFyurDLoAMAEdM2PBmbRa",
+          "spotify:track:5ABUiaUr5yPOhbOi3ArI2W",
+          "spotify:track:1Cz5LPdprN0elIcXfliALK",
+          "spotify:track:1iVidwKIA4l2QcEMUxeVYo"
+        ],
+        "source_isrcs": {
+          "1": "GBARL7200004",
+          "2": "QZNWQ2574674",
+          "3": "QZAKB2521234",
+          "4": "USEE10251088",
+          "5": "QT3FE2636382",
+          "6": "TCACW1735235",
+          "7": "USCA28901314",
+          "8": "USMC16853769",
+          "9": "USHKR0927110",
+          "10": "USRC10000992",
+          "12": "USFF18618591",
+          "13": "USBAE1203092",
+          "14": "USSM19200281",
+          "15": "USCA28300150",
+          "16": "USMBR0401084",
+          "17": "USMTD2600015",
+          "18": "USHM82494902",
+          "19": "TR0790600031",
+          "20": "CAE601100409",
+          "21": "QZDMQ2550188"
+        },
+        "listing": {
+          "name": "KALX - Suppertime Serenade - 2026-11-25",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
