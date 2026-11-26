@@ -35389,7 +35389,7 @@
           "start_time": "2026-11-25T22:00:00-0800",
           "end_time": "2026-11-26T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0M36HeAvvcVYwTmCTWPDEe",
         "desired_uris": [
@@ -35451,8 +35451,101 @@
           "27": "GBCFB1000003"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T00:00:00-0800",
+          "broadcast_start": "2026-11-25T22:00:00-0800",
+          "imported_at": "2026-11-26T16:43:46.641680805+00:00",
+          "last_updated": "2026-11-26 16:43 UTC",
           "name": "KALX - to turkey or not turkey? - 2026-11-25",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Le Tigre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731e16e780519597fb9a93a6a0",
+              "name": "Friendship Station"
+            },
+            {
+              "artists": [
+                "Liz Phair"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27361463562d02947c062695887",
+              "name": "May Queen"
+            },
+            {
+              "artists": [
+                "Blonde Redhead"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d82468f1a702e0516e8c420a",
+              "name": "23"
+            },
+            {
+              "artists": [
+                "cootie catcher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e1ad7219e469a49a4ccbcd82",
+              "name": "Puzzle pop"
+            },
+            {
+              "artists": [
+                "Dummy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ed5430ddcbc8307dee52bf03",
+              "name": "Soonish..."
+            },
+            {
+              "artists": [
+                "ML Buch"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27386a8513fec7563a8a6584c84",
+              "name": "Big sun"
+            },
+            {
+              "artists": [
+                "Should"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27339d1a7e849d9f02abd5f75b2",
+              "name": "Ocean Warm"
+            },
+            {
+              "artists": [
+                "Chicano Batman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dfe1b08822734b5eb8c82e8f",
+              "name": "Friendship (Is A Small Boat In A Storm)"
+            },
+            {
+              "artists": [
+                "Racecourse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c42dd0add3f578b0799e066d",
+              "name": "Caledonia"
+            },
+            {
+              "artists": [
+                "Subsonic Eye"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27375a0a27b221ac19310323c3b",
+              "name": "Cabin Fever"
+            },
+            {
+              "artists": [
+                "INXS"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273769ab3305c3b774542024c8a",
+              "name": "Need You Tonight - 2017 Remaster"
+            },
+            {
+              "artists": [
+                "Cornelia Murr"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e54caeb0ef1eaff16a3bed00",
+              "name": "Who Am I To Tell You"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23402044/to-turkey-or-not-turkey",
+          "station": "KALX",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/0M36HeAvvcVYwTmCTWPDEe"
         }
       },
       "needs_reconciliation": false
