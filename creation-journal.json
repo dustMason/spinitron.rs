@@ -58196,7 +58196,7 @@
           "start_time": "2026-11-25T06:00:00-0800",
           "end_time": "2026-11-25T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6H7EcB8wR75436Xdc6Kov1",
         "desired_uris": [
@@ -58284,8 +58284,103 @@
           "40": "QT65Z2613119"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T09:00:00-0800",
+          "broadcast_start": "2026-11-25T06:00:00-0800",
+          "imported_at": "2026-11-26T16:32:51.669946378+00:00",
+          "last_updated": "2026-11-26 16:32 UTC",
           "name": "KPOO - Wayback Wednesday/w D.J.MARCUS WEST GOSPEL WEDNESDAY 8:00 AM PST TO 9:00 AM PST - 2026-11-25",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "One Way"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731e120db73e68a878d86ea493",
+              "name": "Pull Fancy Dancer / Pull, Part 1"
+            },
+            {
+              "artists": [
+                "The 5 Heartbeats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739e36150327fb357df5eaedf2",
+              "name": "Nights Like This"
+            },
+            {
+              "artists": [
+                "Peabo Bryson",
+                "Roberta Flack"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27313616956edb080463ab20d38",
+              "name": "Born To Love"
+            },
+            {
+              "artists": [
+                "Christopher Williams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c759e7ba89a40d98e50e24c6",
+              "name": "Dreamin'"
+            },
+            {
+              "artists": [
+                "Rick James"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c4f6a58e8069698952cd7fa0",
+              "name": "Cold Blooded"
+            },
+            {
+              "artists": [
+                "Maze",
+                "Frankie Beverly"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dbcaa4999d99e7d52a6f2587",
+              "name": "What Goes Up"
+            },
+            {
+              "artists": [
+                "Jon B."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273821064e3862d3a2d26e607f8",
+              "name": "Don't Talk"
+            },
+            {
+              "artists": [
+                "Mary Jane Girls"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d0fcaaf97f590228fc2ab446",
+              "name": "Candy Man"
+            },
+            {
+              "artists": [
+                "Anita Ward"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27309a568a18d1a4b77418c83ed",
+              "name": "Ring My Bell"
+            },
+            {
+              "artists": [
+                "Loose Ends"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736a493ebce09f7440b90587e1",
+              "name": "Slow Down"
+            },
+            {
+              "artists": [
+                "Patrice Rushen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273dd51f0bf670da32e46f18af8",
+              "name": "Never Gonna Give You Up (Won't Let You Be) - Remastered"
+            },
+            {
+              "artists": [
+                "Cheryl Lynn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27333e84ea7c15e94f98d132f4c",
+              "name": "Got to Be Real - Single Version"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23398547/Wayback-Wednesday-w-D-J-MARCUS-WEST-GOSPEL-WEDNESDAY-8-00-AM-PST-TO-9-00-AM-PST",
+          "station": "KPOO",
+          "track_count": 40,
+          "url": "https://open.spotify.com/playlist/6H7EcB8wR75436Xdc6Kov1"
         }
       },
       "needs_reconciliation": false
