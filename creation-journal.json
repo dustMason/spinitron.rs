@@ -34990,7 +34990,7 @@
           "start_time": "2026-11-25T17:00:00-0800",
           "end_time": "2026-11-25T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4rzbnwbEx3tUmKk3sSA9GO",
         "desired_uris": [
@@ -35010,8 +35010,59 @@
           "6": "PTVC16900069"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T18:00:00-0800",
+          "broadcast_start": "2026-11-25T17:00:00-0800",
+          "imported_at": "2026-11-26T16:41:45.110667446+00:00",
+          "last_updated": "2026-11-26 16:41 UTC",
           "name": "KALX - Radio Dunya - 2026-11-25",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Savanna"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736360676672fbf59e2f935d91",
+              "name": "Hot Winds"
+            },
+            {
+              "artists": [
+                "Torga Ostera"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273109e02a7ea8788a2ab08b56b",
+              "name": "Quase Nós"
+            },
+            {
+              "artists": [
+                "Tantra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273338a1a3dc34b2f92335fd039",
+              "name": "Holocausto"
+            },
+            {
+              "artists": [
+                "El Rupe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a9deabfb743eaad80aab5d8",
+              "name": "Greenhouse"
+            },
+            {
+              "artists": [
+                "Loosense"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d4d665b510fb17ad4b7632fb",
+              "name": "West Ghost"
+            },
+            {
+              "artists": [
+                "Quarteto 1111"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bc57b8e1d6822dfdd2844117",
+              "name": "Bissaide"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23401032/Radio-Dunya",
+          "station": "KALX",
+          "track_count": 6,
+          "url": "https://open.spotify.com/playlist/4rzbnwbEx3tUmKk3sSA9GO"
         }
       },
       "needs_reconciliation": false
