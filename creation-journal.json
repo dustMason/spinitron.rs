@@ -34670,6 +34670,63 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23399949": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23399949,
+          "title": "Pick Up All That Sh*t",
+          "url": "https://spinitron.com/KALX/pl/23399949/Pick-Up-All-That-Sh-t",
+          "start_time": "2026-11-25T13:30:00-0800",
+          "end_time": "2026-11-25T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1R2YPz0XOgJyIkYK8NB91F",
+          "spotify:track:4oSKpF8rOPAnU9RfEvi9yf",
+          "spotify:track:1Ulh5rWbhhV3PltDadTBZC",
+          "spotify:track:0iz1etJQbmAoKXKpQUPTGQ",
+          "spotify:track:4qpsnvJ7s213WBSLcq9x60",
+          "spotify:track:4GZ0mDOTfdYEFqhddeguic",
+          "spotify:track:22m6BocmDlBBScE4xsFhFp",
+          "spotify:track:5c434NcYl2SfhW0lfBgp1t",
+          "spotify:track:5gRQB6EoKdx5VYxXDl5ct8",
+          "spotify:track:4ifLKjSU3nEwlVujMtjfBw",
+          "spotify:track:1Tm8rlyoEtHvQVF1is14nc",
+          "spotify:track:6ao8Ynpa7qiXyaeyRq3MVK",
+          "spotify:track:0Ls53zJP41g6lGsoEVXRn1",
+          "spotify:track:4SBTz3Mdv7OTIY46Zkvb5d",
+          "spotify:track:3GRDUdnE0iGVRtuvNvKqZ3",
+          "spotify:track:5c434NcYl2SfhW0lfBgp1t",
+          "spotify:track:3LKfHbhF3HAyWA2IcoE1lP"
+        ],
+        "source_isrcs": {
+          "1": "US4TA0400302",
+          "2": "DEG932601777",
+          "3": "USSM18200426",
+          "4": "USWB10107618",
+          "5": "USA2Z2600387",
+          "6": "BEE521100015",
+          "7": "USAT22605001",
+          "8": "USWB19904043",
+          "9": "USA2P2031241",
+          "10": "US57M2647802",
+          "11": "SEWCE0900203",
+          "12": "ATR672600776",
+          "13": "USAT29200005",
+          "14": "USSUB0310488",
+          "15": "USMRG0325021",
+          "16": "USWB19904043",
+          "17": "GBAAA0001019"
+        },
+        "listing": {
+          "name": "KALX - Pick Up All That Sh*t - 2026-11-25",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
