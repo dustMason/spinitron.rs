@@ -58586,6 +58586,93 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23399908": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23399908,
+          "title": "THE MUSIC FILL SHOW",
+          "url": "https://spinitron.com/KPOO/pl/23399908/THE-MUSIC-FILL-SHOW",
+          "start_time": "2026-11-25T12:00:00-0800",
+          "end_time": "2026-11-25T15:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0cFybPbSePMaKtQgLmMDEJ",
+          "spotify:track:1nC5nmylWPNKwaGCsP8ZwS",
+          "spotify:track:6cSzImQxSekV4MQ7nKEDmB",
+          "spotify:track:2L4NDhjZd8IOkFyeSBnl19",
+          "spotify:track:0ibfU6JezNfpjE6mM8NAVJ",
+          "spotify:track:4AOLbKETFY9LKFVsIzMUGc",
+          "spotify:track:7haHmy6TQq75TegB3z5MTG",
+          "spotify:track:5Ty0O1fxLgsNgTWHSIQ6QX",
+          "spotify:track:6fEifoWn8tfNv7Vw0rpo25",
+          "spotify:track:6Y9NEx16n4Qrs959MhZFbx",
+          "spotify:track:1sKuZeoqdDRMoLXZSrdyTh",
+          "spotify:track:5hV3Wf9Ub5bZ7JxbwACutL",
+          "spotify:track:0N17SMJkRwprhPVvpAmvmo",
+          "spotify:track:33k42bU08dZtlc0MTxDjFv",
+          "spotify:track:0bNYzAAwA1Knu8DroSQs2G",
+          "spotify:track:7EoIO6svkIM3kXs7HsKEE9",
+          "spotify:track:4QAyPoTxK87pPWrKAiEugY",
+          "spotify:track:31BqrH3h8sc97ZT9JT8gAD",
+          "spotify:track:12kMXzWk3lGD4JReXZq1FE",
+          "spotify:track:3PcGd1DUCuSwCdUtp3GGB8",
+          "spotify:track:4Hm2a1J2C53KeuGygYwT93",
+          "spotify:track:11A1iHIARNrdWuD1wstml2",
+          "spotify:track:7wWBR9E97EYWpO65gVzuOL",
+          "spotify:track:4COtYx4gsxkMxSMhZv3rxo",
+          "spotify:track:4GMvkzEq9vlotQO49cfzHJ",
+          "spotify:track:41vRXeZHHZXUTrwx0kChIS",
+          "spotify:track:73cnrvJJUbtu4dc1vdOtT2",
+          "spotify:track:205zg9SS7WnsTpYOcWfzqu",
+          "spotify:track:1FnCrUz7Bze5Cl9qmtHrIL",
+          "spotify:track:0GtCYMQ0zRdREedzTR28gP",
+          "spotify:track:5dpR6KWzcKhNgHzABvnZ9x",
+          "spotify:track:6dER5uWEeFe2NgTjTBqHXk"
+        ],
+        "source_isrcs": {
+          "1": "USIR27800048",
+          "2": "GBAAN7390004",
+          "3": "USA2P0834089",
+          "4": "ES20S1700008",
+          "5": "USHM91412143",
+          "6": "TCAER2085447",
+          "7": "TCAER2085471",
+          "8": "GBXR21700002",
+          "9": "QZPYN2460448",
+          "10": "QZK6L2188954",
+          "11": "TCADX1890838",
+          "12": "QZZ8A2416674",
+          "13": "JMA271700410",
+          "14": "JMA271701691",
+          "15": "FRX282672787",
+          "16": "QM6P41556752",
+          "17": "USQY51719528",
+          "18": "GBBZV0551841",
+          "19": "QZPYN2204254",
+          "20": "GX3Q92471976",
+          "21": "GBWZN1800098",
+          "22": "FRIDO2113443",
+          "23": "FR59R2621593",
+          "24": "FR59R2621594",
+          "25": "DGA092396529",
+          "26": "USHM81659927",
+          "27": "GB5P51100008",
+          "28": "GBBZV8301362",
+          "29": "GBBZV8452668",
+          "30": "QZPYN2628343",
+          "31": "QMFME2520199",
+          "32": "QT6642602853"
+        },
+        "listing": {
+          "name": "KPOO - THE MUSIC FILL SHOW - 2026-11-25",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
