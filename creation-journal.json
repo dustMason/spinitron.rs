@@ -35379,6 +35379,83 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23402044": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23402044,
+          "title": "to turkey or not turkey?",
+          "url": "https://spinitron.com/KALX/pl/23402044/to-turkey-or-not-turkey",
+          "start_time": "2026-11-25T22:00:00-0800",
+          "end_time": "2026-11-26T00:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1WVTZtmM1xBKP6jWyPkYQz",
+          "spotify:track:03xFP3nuLyw2HbfRx1xGZx",
+          "spotify:track:4SH9EciRI74oSIG9J2Ec2O",
+          "spotify:track:04VXcSVm5HfRmETSoCCT5v",
+          "spotify:track:6MmhdrCkQt8hL78DiY2Q6m",
+          "spotify:track:4c1zEBlaGDOqpCMmhcKxBu",
+          "spotify:track:1a8BvmLMkiHCarDZukOnNi",
+          "spotify:track:4OSHaqeLldc5zqncKQep8M",
+          "spotify:track:5nPibwjtH8pUzss8Hhbe67",
+          "spotify:track:6fVqs3i2eH3SIT5gv4Ad0i",
+          "spotify:track:4YLQ8lBdbyCjBwn6eMGszP",
+          "spotify:track:3lIVZi6Kk9hIrIeS7fcz5u",
+          "spotify:track:0t9u1ozkml7Zb41gxl4T5w",
+          "spotify:track:1zLP6doW59YcKrcjyP94uq",
+          "spotify:track:1NN4CSSlfjscQSMh2dkhs2",
+          "spotify:track:1FNS17AcgHo7Uol0Li9Xfx",
+          "spotify:track:5QuQFz3QK3ILCpBgGHGss8",
+          "spotify:track:4ZQ2Zm1EfNNj1WkITsPmq0",
+          "spotify:track:6qI0QoZ0X8o0vhXIfllNE2",
+          "spotify:track:1ZUj6t3goYbtWrCKFnwzIf",
+          "spotify:track:66RqjMCW3ewFoYinu7nfPE",
+          "spotify:track:3sVVB8TlYvfB3eR1dKKefv",
+          "spotify:track:6iDKiCR13L8Ba6bkK6cqqt",
+          "spotify:track:52HGBwKDqVSVb6UelHQrcM",
+          "spotify:track:2B91eWX1wvWUejTVuaXbIL",
+          "spotify:track:2y3USdSrIBFxSHkPw3WmAG",
+          "spotify:track:7Cg3F9ZsZ2TYUnlza49NYh"
+        ],
+        "source_isrcs": {
+          "1": "GBBKT9900061",
+          "2": "USCA29400617",
+          "3": "GBAFL0600097",
+          "4": "US22N2518611",
+          "5": "QMXQJ2419202",
+          "6": "USYBL2301918",
+          "7": "USCW62525204",
+          "8": "USATO1600671",
+          "9": "QT3TB2569937",
+          "10": "QZFYX2125257",
+          "11": "GBAMX8700008",
+          "12": "USEP41815013",
+          "13": "QZWFN2656843",
+          "14": "USUM72204603",
+          "15": "GBCSG2300001",
+          "16": "GBAJE0400886",
+          "17": "USEE10170494",
+          "18": "UK5EV2300007",
+          "19": "GBAFL2600058",
+          "20": "USCJ80600134",
+          "21": "QZK6Q2696328",
+          "22": "GBAHS2000211",
+          "23": "CAWK82600203",
+          "24": "USRH12600303",
+          "25": "US4TA2600037",
+          "26": "QZ8SH2608007",
+          "27": "GBCFB1000003"
+        },
+        "listing": {
+          "name": "KALX - to turkey or not turkey? - 2026-11-25",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
