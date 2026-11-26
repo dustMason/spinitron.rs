@@ -35237,7 +35237,7 @@
           "start_time": "2026-11-25T20:00:00-0800",
           "end_time": "2026-11-25T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "6LWzHKA8bQSo6sYAK6Saxo",
         "desired_uris": [
@@ -35277,8 +35277,104 @@
           "17": "QM6N22230212"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T22:00:00-0800",
+          "broadcast_start": "2026-11-25T20:00:00-0800",
+          "imported_at": "2026-11-26T16:43:06.196872527+00:00",
+          "last_updated": "2026-11-26 16:43 UTC",
           "name": "KALX - Dwindling Party - 2026-11-25",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Neil Young"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27349b5b0e43ad82f8b6d0379e4",
+              "name": "Harvest Moon"
+            },
+            {
+              "artists": [
+                "Bill Orcutt",
+                "Mabe Fratti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27378b9a524f5f90f84c5abffbf",
+              "name": "Almost Waking"
+            },
+            {
+              "artists": [
+                "Whettman Chelmets"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27347676cbf3670a24e46e77d01",
+              "name": "I Still Miss You When Thanksgiving Comes"
+            },
+            {
+              "artists": [
+                "Russell Gunn",
+                "Blackhawk"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27371b16f615b1a3f64fb348b3a",
+              "name": "Cahokia Pyramids"
+            },
+            {
+              "artists": [
+                "Killah Priest",
+                "Rasul Allah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273522bd9ff050e44a2a9129c0e",
+              "name": "Grandmother's Land"
+            },
+            {
+              "artists": [
+                "Mount Eerie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732f0f28c0de051dfa95eb6093",
+              "name": "November 22nd 2003, 4: 45 PM"
+            },
+            {
+              "artists": [
+                "Tanya Tagaq"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738dc5d92e36191205cbb46168",
+              "name": "Colonizer"
+            },
+            {
+              "artists": [
+                "Quintron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27377168b70521cc37c856335e2",
+              "name": "Walk To The Harvest"
+            },
+            {
+              "artists": [
+                "Shovel Dance Collective"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730dc9aa89ee62271a4764d33d",
+              "name": "Who Killed Cock Robin? / Gilbert's Jig"
+            },
+            {
+              "artists": [
+                "Elisapie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d6266387493813d50d77caaa",
+              "name": "Isumagijunnaitaungituq (The Unforgiven)"
+            },
+            {
+              "artists": [
+                "Tom Waits"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e06e346c1c99e600eded13f1",
+              "name": "November"
+            },
+            {
+              "artists": [
+                "Mali Obomsawin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27363584094ba1ac9b4204ad15d",
+              "name": "Triage"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23401769/Dwindling-Party",
+          "station": "KALX",
+          "track_count": 17,
+          "url": "https://open.spotify.com/playlist/6LWzHKA8bQSo6sYAK6Saxo"
         }
       },
       "needs_reconciliation": false
