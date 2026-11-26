@@ -58908,6 +58908,67 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23401326": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23401326,
+          "title": "Voices of the Native Nations",
+          "url": "https://spinitron.com/KPOO/pl/23401326/Voices-of-the-Native-Nations",
+          "start_time": "2026-11-25T18:00:00-0800",
+          "end_time": "2026-11-25T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:6glXA3Dwx0VkpePdp0XP82",
+          "spotify:track:5XXDSOfT94BwBIX2SqllWv",
+          "spotify:track:0qe54xrCWlwTGFFKiShwgc",
+          "spotify:track:48c00Rc4Krzv9Hoa8LSvvy",
+          "spotify:track:2nxqEwIIvB8ec0deZ7uUkS",
+          "spotify:track:7hfGnFFLXWanz7TAmsuhIC",
+          "spotify:track:2u4WGKclvcUWNTFdMQSDb4",
+          "spotify:track:017bAcnlbifPv9Sq7dYW2I",
+          "spotify:track:7y18wRXdDVixh3YPPh3M7o",
+          "spotify:track:4yay7yT8ufkCzv2xfe88oM",
+          "spotify:track:0AKAJ1VExdiMwN4yvUXphh",
+          "spotify:track:3UyLcaaaUQvWaE9ChHxe8m",
+          "spotify:track:4Mt4ZKWk8SAK1JfN6PR3tL",
+          "spotify:track:6HypQ8xlga7rsVc10nPjum",
+          "spotify:track:3wVkFCzqliAmd4Z6ndSMfK",
+          "spotify:track:2VHIA1OmaaJCR4AtIhudxC",
+          "spotify:track:08D8eTPndrU0qBe8AOFrGY",
+          "spotify:track:2bYPH9v6Qw3coYZzpymzHo",
+          "spotify:track:79E9oSQIUCrGDz3VavZd5V"
+        ],
+        "source_isrcs": {
+          "1": "ESA012121650",
+          "2": "US8640516004",
+          "3": "US8641250613",
+          "4": "US8641652906",
+          "5": "US8640528306",
+          "6": "US8640528307",
+          "7": "US8640528308",
+          "8": "US8641652909",
+          "9": "DEAM88800022",
+          "10": "GBDTM1228819",
+          "11": "USHM20729068",
+          "12": "USCGH1165358",
+          "13": "USAKS0800008",
+          "14": "US8640553408",
+          "15": "USHM82136863",
+          "16": "USCGH1734476",
+          "17": "US4QP0433703",
+          "18": "US4QP0433706",
+          "19": "USX9P1015693"
+        },
+        "listing": {
+          "name": "KPOO - Voices of the Native Nations - 2026-11-25",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
