@@ -34161,7 +34161,7 @@
           "start_time": "2026-11-25T07:00:00-0800",
           "end_time": "2026-11-25T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1tyez8q5klLOfkgr04bPk8",
         "desired_uris": [
@@ -34222,8 +34222,101 @@
           "27": "GBLAZ1500719"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T09:00:00-0800",
+          "broadcast_start": "2026-11-25T07:00:00-0800",
+          "imported_at": "2026-11-26T16:38:18.697420542+00:00",
+          "last_updated": "2026-11-26 16:38 UTC",
           "name": "KALX - Wide Awake - 2026-11-25",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Pan-American"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273acbc40696ad4eb8b04172aa8",
+              "name": "Silver Plane, Now Boarding"
+            },
+            {
+              "artists": [
+                "Jim Nollman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e160d42bfff42841228f91d9",
+              "name": "Froggy-Went-a-Courting (300 Turkeys)"
+            },
+            {
+              "artists": [
+                "Neil Young"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fdc42bd269c4ea66f644b119",
+              "name": "Four Strong Winds - 2016 Remaster"
+            },
+            {
+              "artists": [
+                "Morrissey"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738609a2ac949cf0bf0f183def",
+              "name": "Ouija Board, Ouija Board - 2010 Remaster"
+            },
+            {
+              "artists": [
+                "Karate Boogaloo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b0e0e9e7d8eabdc14eccd6f7",
+              "name": "Butterfly"
+            },
+            {
+              "artists": [
+                "Al Green"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a1fc113a6858d0824d9aaf38",
+              "name": "Let's Stay Together"
+            },
+            {
+              "artists": [
+                "The Lijadu Sisters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27338535bfd0b125be236a99e03",
+              "name": "Orere Elejigbo"
+            },
+            {
+              "artists": [
+                "Ricky Nelson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ddea09d25600995a84a26e78",
+              "name": "Poor Little Fool"
+            },
+            {
+              "artists": [
+                "Elanor Moss"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d76339289f137c23fd7bb2c8",
+              "name": "Again, My Love"
+            },
+            {
+              "artists": [
+                "Pat Boone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731f8d358bd49d697370f7c4f1",
+              "name": "With My Eyes Wide Open I’m Dreaming"
+            },
+            {
+              "artists": [
+                "The Olivia Tremor Control"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733e046d6de331a47175ee2fbb",
+              "name": "Jumping Fences"
+            },
+            {
+              "artists": [
+                "Yea-Ming and The Rumours"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736ed0fdf63845bf4e445df02c",
+              "name": "I Will Make You Mine"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23398592/Wide-Awake",
+          "station": "KALX",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/1tyez8q5klLOfkgr04bPk8"
         }
       },
       "needs_reconciliation": false
