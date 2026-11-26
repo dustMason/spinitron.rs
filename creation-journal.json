@@ -58780,7 +58780,7 @@
           "start_time": "2026-11-25T15:00:00-0800",
           "end_time": "2026-11-25T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "06DtS6XxQTgZLACwnQRw15",
         "desired_uris": [
@@ -58802,8 +58802,67 @@
           "7": "GBHWT0500072"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T17:30:00-0800",
+          "broadcast_start": "2026-11-25T15:00:00-0800",
+          "imported_at": "2026-11-26T16:34:55.243968520+00:00",
+          "last_updated": "2026-11-26 16:34 UTC",
           "name": "KPOO - Wake The Town - 2026-11-25",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "The Duke Of Iron"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27392fcc242a51945f1cc58863d",
+              "name": "Calypsonian Invasion"
+            },
+            {
+              "artists": [
+                "Cyril Diaz & His Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737dfda8713f910ff21a0729b4",
+              "name": "Serenal"
+            },
+            {
+              "artists": [
+                "Lancelot Layne"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c9f43b8bcb674ed5a897f41",
+              "name": "Blow 'Way"
+            },
+            {
+              "artists": [
+                "Andre Tanker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733d74f9f63bb9ca5c45908db4",
+              "name": "Back Home"
+            },
+            {
+              "artists": [
+                "Leroy Smart"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732579a237c5e9617abc26efe6",
+              "name": "Jah Helps the Man"
+            },
+            {
+              "artists": [
+                "Junior Peterkin",
+                "The Idrins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273511dafad6ac81c5c217f5913",
+              "name": "Babylon Take I Down"
+            },
+            {
+              "artists": [
+                "Ernest Ranglin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27391097c0e8accb1443e612b9c",
+              "name": "Surfin'"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23400478/Wake-The-Town",
+          "station": "KPOO",
+          "track_count": 7,
+          "url": "https://open.spotify.com/playlist/06DtS6XxQTgZLACwnQRw15"
         }
       },
       "needs_reconciliation": false
