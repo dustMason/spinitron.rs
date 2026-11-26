@@ -35227,6 +35227,61 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23401769": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23401769,
+          "title": "Dwindling Party",
+          "url": "https://spinitron.com/KALX/pl/23401769/Dwindling-Party",
+          "start_time": "2026-11-25T20:00:00-0800",
+          "end_time": "2026-11-25T22:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5l9c6bJmzvftumhz4TMPgk",
+          "spotify:track:5VOzCvglVFxEpbSgQGQiw2",
+          "spotify:track:44Bm6NGCzKMl5ZlzqnDOMn",
+          "spotify:track:4oSmA4hE4Thr3PPFavAfMG",
+          "spotify:track:0xkwt4ons5SZfWVD5w7vtV",
+          "spotify:track:1mYstHvlx2Pd0ZHrpVckiM",
+          "spotify:track:5f4EAqwXpQ7kJGgZ7oVN60",
+          "spotify:track:7giJ9AongA3MX4ASn4iF1O",
+          "spotify:track:5fvP7E1nA8z6jp5Xf0zj5Q",
+          "spotify:track:0yHzzOBWitjnOUOzLB5gnv",
+          "spotify:track:4sn5F6iK3uOxxkygK5cfKt",
+          "spotify:track:2UGwp5k4LgfXnoOgtER6nU",
+          "spotify:track:6ceBgSsrFG2Fz3pkbNiY0U",
+          "spotify:track:7x7SPwNIhgYOh9mD7m6uaw",
+          "spotify:track:0XULU1j8jxJIcL3GX9P3Qs",
+          "spotify:track:6GeB5NIBP9Tpbfeac2xvnH",
+          "spotify:track:1EOlXeqKqQ4EFmS63aSdRi"
+        ],
+        "source_isrcs": {
+          "1": "USRE19900694",
+          "2": "GBVNV2600046",
+          "3": "QZHN51925000",
+          "5": "TCAEX2054187",
+          "6": "USI4R1130543",
+          "7": "CASB12113603",
+          "8": "US4LA0820203",
+          "10": "CAZ842300014",
+          "11": "USIR19390103",
+          "12": "QZDST2600135",
+          "13": "GBUM70703397",
+          "14": "QMFD42600003",
+          "15": "US8640538207",
+          "16": "QT6FH2645183",
+          "17": "QM6N22230212"
+        },
+        "listing": {
+          "name": "KALX - Dwindling Party - 2026-11-25",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
