@@ -34520,6 +34520,62 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23399739": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23399739,
+          "title": "I'd Prefer Not To",
+          "url": "https://spinitron.com/KALX/pl/23399739/I-d-Prefer-Not-To",
+          "start_time": "2026-11-25T12:00:00-0800",
+          "end_time": "2026-11-25T13:30:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1Qhi6yHqi3g3XaUdKXYDgc",
+          "spotify:track:5e7vz4geHyFrqvfCuhGZpt",
+          "spotify:track:5Olbjr4yoTUD3Rj3tMtnKc",
+          "spotify:track:1GyAagsfqUSPf5DdO3bBBe",
+          "spotify:track:1lzyxe3vmec4BaBoWD3aDd",
+          "spotify:track:1Rj2k7nR1zFR2wabIH52wz",
+          "spotify:track:5qxkkQtRam7a6ktD1gl4ZZ",
+          "spotify:track:3MJXQcSEcmFbVurRUkFjpT",
+          "spotify:track:0rbafhEHOKZOmK5Ba5PztA",
+          "spotify:track:5BCys7FmPBLRLvkLLhoHl2",
+          "spotify:track:2KpjKWyj0TI0FmGgENEKr6",
+          "spotify:track:3yXLnMwKAxaXYzvJJ84VJs",
+          "spotify:track:2i5eajmCJ4fp9b1yQk8Hlg",
+          "spotify:track:2nDnHRUeNIahoaMxLgJQRA",
+          "spotify:track:44pjmU15swdwfGISMJL3e9",
+          "spotify:track:6HJswdfM1PB4TQxEvRpcz2",
+          "spotify:track:6WOyAvMbhT1NSoBY56lxch"
+        ],
+        "source_isrcs": {
+          "2": "QM5L82100035",
+          "3": "USX5G9105603",
+          "4": "USDEA1410301",
+          "5": "US2B20419905",
+          "6": "GBBTF0400146",
+          "7": "QM24S2603525",
+          "8": "US2U62233901",
+          "9": "QZWFG2571476",
+          "10": "USCGJ0679348",
+          "11": "GBBBN0009195",
+          "12": "QT6632642244",
+          "13": "QZK6N2627916",
+          "14": "QZDA82612216",
+          "15": "USSF18125405",
+          "16": "USSF19240302",
+          "17": "US4QP2584803"
+        },
+        "listing": {
+          "name": "KALX - I'd Prefer Not To - 2026-11-25",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
