@@ -34680,7 +34680,7 @@
           "start_time": "2026-11-25T13:30:00-0800",
           "end_time": "2026-11-25T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3q4FSSGfyVUQxfVX1LhSBM",
         "desired_uris": [
@@ -34722,8 +34722,103 @@
           "17": "GBAAA0001019"
         },
         "listing": {
+          "broadcast_end": "2026-11-25T15:00:00-0800",
+          "broadcast_start": "2026-11-25T13:30:00-0800",
+          "imported_at": "2026-11-26T16:40:23.516635394+00:00",
+          "last_updated": "2026-11-26 16:40 UTC",
           "name": "KALX - Pick Up All That Sh*t - 2026-11-25",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Lorelei"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f0e660e732ec8b076310e7ff",
+              "name": "Windmill"
+            },
+            {
+              "artists": [
+                "Tricky",
+                "Mitch Sanders"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fd0c0f2e47fbd2d369bff442",
+              "name": "I'm Yours"
+            },
+            {
+              "artists": [
+                "Bruce Springsteen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731e7af3a709aeac0c796ab542",
+              "name": "State Trooper"
+            },
+            {
+              "artists": [
+                "Randy Newman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730b9c2cdd6cbc2afa8d2271b8",
+              "name": "Pretty Boy"
+            },
+            {
+              "artists": [
+                "Chat Pile"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ab1229a45362b56b4d06a405",
+              "name": "October All the Time"
+            },
+            {
+              "artists": [
+                "U.S. Girls"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cae51cd5a1b23bce2e64e246",
+              "name": "Island Song"
+            },
+            {
+              "artists": [
+                "Boy Harsher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a30ac42529d47e0abeebfc94",
+              "name": "Break Me"
+            },
+            {
+              "artists": [
+                "Angelo Badalamenti"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c3deb4ba912e7b0a7c160f74",
+              "name": "The Pink Room"
+            },
+            {
+              "artists": [
+                "Lingua Ignota"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348072c09ea2bdf28c41d775a",
+              "name": "Wicked Game"
+            },
+            {
+              "artists": [
+                "Delerium",
+                "Diamanda Galás"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b78f6c7aef1aa1f00cd6769d",
+              "name": "Into The Light"
+            },
+            {
+              "artists": [
+                "Fever Ray"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273707831d5303efb3caa6c723e",
+              "name": "Dry and Dusty"
+            },
+            {
+              "artists": [
+                "Jana Irmert"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27399a29c5645179e26449019a3",
+              "name": "Sleeping, Listening To The Stars In Darkness"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23399949/Pick-Up-All-That-Sh-t",
+          "station": "KALX",
+          "track_count": 17,
+          "url": "https://open.spotify.com/playlist/3q4FSSGfyVUQxfVX1LhSBM"
         }
       },
       "needs_reconciliation": false
