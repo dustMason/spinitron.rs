@@ -36789,6 +36789,49 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23406234": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23406234,
+          "title": "Native",
+          "url": "https://spinitron.com/KALX/pl/23406234/Native",
+          "start_time": "2026-11-26T18:00:00-0800",
+          "end_time": "2026-11-26T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1EcdIAC0LEY0FFTsv9WFGh",
+          "spotify:track:014gZSAmKaOTO3K1QfsDeY",
+          "spotify:track:6wjJbiRWfITLA8ewLER7pr",
+          "spotify:track:6rYKG8xeiixNve80caBWMA",
+          "spotify:track:0lFdulBpRmDpDFqqmC13ih",
+          "spotify:track:1Vj3t4BARVeM2iV35i9Oij",
+          "spotify:track:4wc16UC6qrYtt4kRvjNB3u",
+          "spotify:track:3p2FqCsOzSKBN30MNKV7J3",
+          "spotify:track:0S764K2m4RuvOwMPAD13Dn",
+          "spotify:track:5kzzyvphn9OG6S6HRtJTdo"
+        ],
+        "source_isrcs": {
+          "1": "US8SX0904002",
+          "2": "CAZ841700063",
+          "3": "US2S72514004",
+          "4": "USDEA1410315",
+          "5": "US8640570107",
+          "6": "USDEA1410313",
+          "7": "USHM80748373",
+          "8": "USL4R2076106",
+          "9": "US8640574906",
+          "10": "USL4Q2099319"
+        },
+        "listing": {
+          "name": "KALX - Native - 2026-11-26",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
