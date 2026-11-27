@@ -37235,6 +37235,70 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23407142": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23407142,
+          "title": "Midnight Rambler",
+          "url": "https://spinitron.com/KALX/pl/23407142/Midnight-Rambler",
+          "start_time": "2026-11-27T00:00:00-0800",
+          "end_time": "2026-11-27T02:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1tRnE46L2K093S1PD8aodx",
+          "spotify:track:1ScBZROkALrHEBtDvbFKSx",
+          "spotify:track:5sJLbijy1CKYJ94cVLMG5k",
+          "spotify:track:1kwK9uQQei0vWuLCTLJRCG",
+          "spotify:track:44kg9xfZjeGg2fSYHBSzdt",
+          "spotify:track:0lWLMR456FAFjlLIEBLzWf",
+          "spotify:track:5lyLBXZXjHNX0wi5zy2Wrt",
+          "spotify:track:6pLlzFUxxR1tLvpMwcAtP0",
+          "spotify:track:1iVidwKIA4l2QcEMUxeVYo",
+          "spotify:track:7DLuMk0PrnTQt8BE3GK3WY",
+          "spotify:track:68A5pJVydyEjMXMMxzGsyU",
+          "spotify:track:5s2qlmLKRIymjggsMeQI7H",
+          "spotify:track:3BNADRTPKVuvzXqY6Jonhz",
+          "spotify:track:58zwcdxSsOxjC3R4tukR5W",
+          "spotify:track:7lsLnUPvI5gr2hDaNTpH67",
+          "spotify:track:1pN610M033I1xRQLrIVVpP",
+          "spotify:track:5cujGRyR276fZf0IXc3FI8",
+          "spotify:track:57jMka3MGAQLDH2aT4tdse",
+          "spotify:track:4Oz5zpwKbNWjHKBymDIOmE",
+          "spotify:track:5wNo8LEPPEs9HSYh0A63CB",
+          "spotify:track:3Ffs5oH5Fh9L9EmpuI3LYj"
+        ],
+        "source_isrcs": {
+          "1": "CAT242300006",
+          "2": "USRC11100744",
+          "3": "USBT21630398",
+          "5": "US58L2696404",
+          "6": "USC4R1802517",
+          "7": "US4GZ2608604",
+          "8": "GBUM72602724",
+          "9": "QZDMQ2550188",
+          "10": "USNO12600147",
+          "11": "GBBKS2400315",
+          "12": "GBRKQ2639443",
+          "13": "USUG12505893",
+          "14": "USJT11600094",
+          "15": "BEZ351800228",
+          "16": "US5761102303",
+          "17": "USNO12500232",
+          "18": "US5NR2537405",
+          "19": "USRE10100658",
+          "20": "USAT29500149",
+          "21": "US3Q52511808"
+        },
+        "listing": {
+          "name": "KALX - Midnight Rambler - 2026-11-27",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
