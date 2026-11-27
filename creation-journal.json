@@ -61929,7 +61929,7 @@
           "start_time": "2026-11-26T18:00:00-0800",
           "end_time": "2026-11-26T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "7Lb4vACKFa8NVs8zZkhIOc",
         "desired_uris": [
@@ -61988,8 +61988,101 @@
           "26": "USPR34700053"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T20:00:00-0800",
+          "broadcast_start": "2026-11-26T18:00:00-0800",
+          "imported_at": "2026-11-27T16:20:50.351930943+00:00",
+          "last_updated": "2026-11-27 16:20 UTC",
           "name": "KPOO - Pajaro Latinoamericano - 2026-11-26",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Bob Margolin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273675c2c781f9b0714232d041b",
+              "name": "All You Left Behind"
+            },
+            {
+              "artists": [
+                "Muddy Waters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ef12085d5f3cb7e3247143bd",
+              "name": "Honey Bee - Live"
+            },
+            {
+              "artists": [
+                "John Lee Hooker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c48aaf888a245dcdb2291358",
+              "name": "Boogie Chillen'"
+            },
+            {
+              "artists": [
+                "Hadda Brooks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d4e8deaa5a02adbf40532dac",
+              "name": "I Feel So Good"
+            },
+            {
+              "artists": [
+                "B.B. King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bf373fb956297a3c0aa3a9a0",
+              "name": "You Upset Me Baby"
+            },
+            {
+              "artists": [
+                "Elmore James & His Broomdusters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cbae323173914f9f50700dde",
+              "name": "Can't Stop Lovin'"
+            },
+            {
+              "artists": [
+                "Lowell Fulson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273847d741d48cec51684eb6f49",
+              "name": "Tramp - Live"
+            },
+            {
+              "artists": [
+                "Etta James"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733cfe3e1779b41f72f3dd55f0",
+              "name": "W.O.M.A.N."
+            },
+            {
+              "artists": [
+                "Johnny \"Guitar\" Watson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735af185a2a2d9471bf39af5aa",
+              "name": "I Love To Love You"
+            },
+            {
+              "artists": [
+                "Taj Mahal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f901aa09f2f702b8321c652f",
+              "name": "Honey Bee"
+            },
+            {
+              "artists": [
+                "Son Seals"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e47b30acde848f1133fba920",
+              "name": "Jelly, Jelly"
+            },
+            {
+              "artists": [
+                "Calvin Jackson and Mississippi Bound"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a600002fa1726c1b566eb4f5",
+              "name": "Goin' Down South"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23406214/Pajaro-Latinoamericano",
+          "station": "KPOO",
+          "track_count": 26,
+          "url": "https://open.spotify.com/playlist/7Lb4vACKFa8NVs8zZkhIOc"
         }
       },
       "needs_reconciliation": false
