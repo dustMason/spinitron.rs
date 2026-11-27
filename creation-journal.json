@@ -61248,7 +61248,7 @@
           "start_time": "2026-11-26T09:00:00-0800",
           "end_time": "2026-11-26T11:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "1x7zPpMP89YxofHqIMm7uO",
         "desired_uris": [
@@ -61286,8 +61286,101 @@
           "15": "USFI85500152"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T11:00:00-0800",
+          "broadcast_start": "2026-11-26T09:00:00-0800",
+          "imported_at": "2026-11-27T16:17:52.246600169+00:00",
+          "last_updated": "2026-11-27 16:17 UTC",
           "name": "KPOO - JIVIN' AROUND - 2026-11-26",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Otis Redding"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e82fe7c388e026b1d6c64740",
+              "name": "These Arms of Mine"
+            },
+            {
+              "artists": [
+                "The Vells"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273715c215ab6f65edae1613592",
+              "name": "You'll Never Cherish A Love So True ('Till You Lose It)"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "Little Willie John"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735e03c34075f4b90294cd364f",
+              "name": "Need Your Love So Bad"
+            },
+            {
+              "artists": [
+                "Larry Williams"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273de52d0d35d7ff1896a682a3b",
+              "name": "Bony Moronie"
+            },
+            {
+              "artists": [
+                "The Shirelles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ca8fc7381eb9640c00dccdb9",
+              "name": "Big John"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "The Marvelettes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273485b76dba4941277f285f755",
+              "name": "Please Mr. Postman - Single Version / Mono"
+            },
+            {
+              "artists": [
+                "Esther Phillips"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273106889446dedfe75c9cbeb1b",
+              "name": "Release Me"
+            },
+            {
+              "artists": [
+                "Gary Combs"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d354ef03c7396d999813b2cf",
+              "name": "Slinky Steppin'"
+            },
+            {
+              "artists": [
+                "Duke Ellington"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27379defbf4bb018388f11acf80",
+              "name": "Satin Doll - Remastered"
+            },
+            {
+              "artists": [
+                "Garnet Mimms & The Enchanters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f6d8d7ad64a419468941dac",
+              "name": "Baby Don't You Weep"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23404206/JIVIN-AROUND",
+          "station": "KPOO",
+          "track_count": 15,
+          "url": "https://open.spotify.com/playlist/1x7zPpMP89YxofHqIMm7uO"
         }
       },
       "needs_reconciliation": false
