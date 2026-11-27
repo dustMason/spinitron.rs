@@ -62086,6 +62086,85 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23406535": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23406535,
+          "title": "Da Madd Houze",
+          "url": "https://spinitron.com/KPOO/pl/23406535/Da-Madd-Houze",
+          "start_time": "2026-11-26T20:00:00-0800",
+          "end_time": "2026-11-26T22:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:5Lv5L45PQmp5CTjs5PlQ6e",
+          "spotify:track:41pJ3DGXt4X2pyg3AK7ZDa",
+          "spotify:track:3jKZpT49sTk74M5gYzDFnt",
+          "spotify:track:240rEXhGEQmn20Dcl1dfuR",
+          "spotify:track:7BZMvAxfLVnhM2W2Hy7LfM",
+          "spotify:track:5GcpbWMHfc8c3amVdX6wwf",
+          "spotify:track:6MRFgfJfvSlgGdsfgB4unc",
+          "spotify:track:2eS66yDNKGShXvTgKtX1tG",
+          "spotify:track:5Fmt9wgB8u1Um3wKyqWsyr",
+          "spotify:track:3YeU0893N0rOkEhR3lcW5h",
+          "spotify:track:3rT0YIyiE1n8JAUpBCUudE",
+          "spotify:track:5TbYIeYkGgGtYL7sms7m9N",
+          "spotify:track:2UotPWOLe1mq6E97e7G3wJ",
+          "spotify:track:5lr241goXIpPXU4m9Kbk0t",
+          "spotify:track:0Jwuo5mG8mAgUPlDZEkK3s",
+          "spotify:track:6gH1UKDAhWS6qXzKXB4wuY",
+          "spotify:track:2Ty5j5KwQ2AehkUA2Qa5FZ",
+          "spotify:track:4QcMd8FskVxyvLXr6AQCWH",
+          "spotify:track:6hShkyAuPPII6eNDlwuhPo",
+          "spotify:track:1gnwGVoG7V08vMX3hyr90x",
+          "spotify:track:7tUrK7kq13w6qzQWg8FnWg",
+          "spotify:track:6mWKjqWkuO8tLvDw2p4dah",
+          "spotify:track:2qgdvBJyPbgomP63Ix8TgI",
+          "spotify:track:314goVxWh3iPwNJ06wskqq",
+          "spotify:track:1nH2PkJL1XoUq8oE6tBZoU",
+          "spotify:track:5LNjuiJeGuZgaX7QPVSvm5",
+          "spotify:track:1gRajwEnMGfgpNtFdP0j9u",
+          "spotify:track:62sfbIvgYC5ijb2xrf3Ipq"
+        ],
+        "source_isrcs": {
+          "1": "USUM72308558",
+          "2": "QZNWT2375315",
+          "3": "QZNWV2543435",
+          "4": "QT3F22409524",
+          "5": "USUM72301676",
+          "6": "QM5RB1700036",
+          "7": "QZL382402795",
+          "8": "US5ED2202350",
+          "9": "USLD90810952",
+          "10": "QZLBC2200294",
+          "11": "USQX91902534",
+          "12": "USUM72410402",
+          "13": "USHM82319131",
+          "14": "QZES62473726",
+          "15": "QZMWW2487009",
+          "16": "USAT22406895",
+          "17": "USCGH2518589",
+          "18": "QZMEN2073880",
+          "19": "QZ4JJ1993366",
+          "20": "ZZOPM1800659",
+          "21": "USUYG1594334",
+          "22": "USCGH1815681",
+          "23": "QZTB72430606",
+          "24": "QZTAT2419954",
+          "25": "USUG12106685",
+          "26": "AUBEC2435886",
+          "27": "USUYG1561588",
+          "28": "QZK6J2360869"
+        },
+        "listing": {
+          "name": "KPOO - Da Madd Houze - 2026-11-26",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
