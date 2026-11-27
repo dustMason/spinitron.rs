@@ -37091,7 +37091,7 @@
           "start_time": "2026-11-26T22:00:00-0800",
           "end_time": "2026-11-27T00:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3LkxPpnmcuURJMWahHCQs7",
         "desired_uris": [
@@ -37135,8 +37135,102 @@
           "19": "QM84B2611802"
         },
         "listing": {
+          "broadcast_end": "2026-11-27T00:00:00-0800",
+          "broadcast_start": "2026-11-26T22:00:00-0800",
+          "imported_at": "2026-11-27T16:27:48.006864723+00:00",
+          "last_updated": "2026-11-27 16:27 UTC",
           "name": "KALX - FREEFORM - 2026-11-26 10:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Dry Cleaning"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c6dd1a016f0caa47e0d044f9",
+              "name": "I Have The Key"
+            },
+            {
+              "artists": [
+                "Wir"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734891e8114eb8ea4b795a3afb",
+              "name": "A Big Glue Canal"
+            },
+            {
+              "artists": [
+                "Autechre"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27333411ff5d74ae290a12fdc44",
+              "name": "Montreal"
+            },
+            {
+              "artists": [
+                "Squarepusher"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cf951ed477e75f9305f2eb4a",
+              "name": "50 Cycles - Remastered"
+            },
+            {
+              "artists": [
+                "Bella Hayes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f1a8f21cc94c11f256395d82",
+              "name": "No Camera"
+            },
+            {
+              "artists": [
+                "lay / lie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27392bf19c02dfde9ff52f5dead",
+              "name": "We Were Here"
+            },
+            {
+              "artists": [
+                "Fishdoll"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738b58be3cb2caedbff622c6a9",
+              "name": "女皇"
+            },
+            {
+              "artists": [
+                "Quadeca",
+                "Danny Brown"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e09daa190c938f3fffbfe88a",
+              "name": "THE GREAT BAKUNAWA (with Danny Brown)"
+            },
+            {
+              "artists": [
+                "Ryuichi Sakamoto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738a647562b89426cd1043a87b",
+              "name": "fullmoon"
+            },
+            {
+              "artists": [
+                "ADULT."
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27304f2cad81d71f2657af6ce45",
+              "name": "Normative Sludge"
+            },
+            {
+              "artists": [
+                "A Produce"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ddcf94e5c257723b9653b959",
+              "name": "It Comes In Waves (extended version)"
+            },
+            {
+              "artists": [
+                "Cornelius"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735b7ba65d73f083ce260f0f49",
+              "name": "Mirrors"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23406954/FREEFORM",
+          "station": "KALX",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/3LkxPpnmcuURJMWahHCQs7"
         }
       },
       "needs_reconciliation": false
