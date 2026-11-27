@@ -833,7 +833,7 @@
           "start_time": "2026-11-26T17:00:00-0800",
           "end_time": "2026-11-26T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3w8tTlbXBu4InUtCl8H9kq",
         "desired_uris": [
@@ -860,8 +860,87 @@
           "10": "USWB11302770"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T18:00:00-0800",
+          "broadcast_start": "2026-11-26T17:00:00-0800",
+          "imported_at": "2026-11-27T16:25:46.495643643+00:00",
+          "last_updated": "2026-11-27 16:25 UTC",
           "name": "KALX - Dealer's Choice - 2026-11-26",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Hawkwind"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27329b3c6e12c9536e69137eb98",
+              "name": "Reefer Madness"
+            },
+            {
+              "artists": [
+                "CAN"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273737402015c7b9268fe8680f2",
+              "name": "Smoke (E.F.S. No. 59)"
+            },
+            {
+              "artists": [
+                "I-Roy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273369f37c5863658d2d54fa8b1",
+              "name": "African Herbsman"
+            },
+            {
+              "artists": [
+                "Magma"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e3209436702e5719b8915784",
+              "name": "Zombies (Ghost Dance) - Original"
+            },
+            {
+              "artists": [
+                "Cluster"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273753c3f9c59bbc1cac95fc60b",
+              "name": "Zum Wohl"
+            },
+            {
+              "artists": [
+                "Harmonia & Eno '76"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738d8d4e2a9cf645843692989a",
+              "name": "Vamos Companeros"
+            },
+            {
+              "artists": [
+                "Bohannon"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27391c58e7dbf64123dfce5c6b4",
+              "name": "Gittin' Off"
+            },
+            {
+              "artists": [
+                "Todd Rundgren"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c1b0db3418ea9210cf6b52c",
+              "name": "Black and White"
+            },
+            {
+              "artists": [
+                "Eddie & The Hot Rods"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273681287b667f68da19dc360ff",
+              "name": "Teenage Depression"
+            },
+            {
+              "artists": [
+                "Ramones"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273bf486777e9d5a3b72a83a8dc",
+              "name": "I Don't Wanna Walk Around with You"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23106273/Dealer-s-Choice",
+          "station": "KALX",
+          "track_count": 10,
+          "url": "https://open.spotify.com/playlist/3w8tTlbXBu4InUtCl8H9kq"
         }
       },
       "needs_reconciliation": false
