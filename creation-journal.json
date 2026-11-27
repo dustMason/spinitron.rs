@@ -62097,7 +62097,7 @@
           "start_time": "2026-11-26T20:00:00-0800",
           "end_time": "2026-11-26T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3g0ZKSSY84akzqd7TJFrFx",
         "desired_uris": [
@@ -62161,8 +62161,113 @@
           "28": "QZK6J2360869"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T22:00:00-0800",
+          "broadcast_start": "2026-11-26T20:00:00-0800",
+          "imported_at": "2026-11-27T16:21:30.771028355+00:00",
+          "last_updated": "2026-11-27 16:21 UTC",
           "name": "KPOO - Da Madd Houze - 2026-11-26",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "EI8HT",
+                "Offset"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736ed9aef791159496b286179f",
+              "name": "Silk & Cologne (EI8HT & Offset) - Spider-Verse Remix"
+            },
+            {
+              "artists": [
+                "Alessandra Rose",
+                "DEZZ"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739885193342b1d1efaf918661",
+              "name": "Andale"
+            },
+            {
+              "artists": [
+                "Cal Eternal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739ab5eb59461cfd137d91ba65",
+              "name": "Eternal One"
+            },
+            {
+              "artists": [
+                "Cal Eternal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27367a37345de9ba20e97c34d84",
+              "name": "Paper On Me"
+            },
+            {
+              "artists": [
+                "Masego"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273799cf48c9e6300054dac9467",
+              "name": "Who Cares Anyway"
+            },
+            {
+              "artists": [
+                "J.Lately"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736932982c2f039967d9937538",
+              "name": "Papayas & Blunt Smoke"
+            },
+            {
+              "artists": [
+                "GoodShip",
+                "Seven Da Pantha"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739f515fec431290d067e27e00",
+              "name": "Pardon Me (Da Intro)"
+            },
+            {
+              "artists": [
+                "MOUNT WESTMORE",
+                "Snoop Dogg",
+                "Ice Cube",
+                "E-40",
+                "Too $hort"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b697cca0c75b3f2d9dd10c7d",
+              "name": "Free Game"
+            },
+            {
+              "artists": [
+                "Locksmith",
+                "Futuristic",
+                "Jarren Benton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ee5318ae993275b4ee20e430",
+              "name": "Blinded (feat. Jarren Benton & Futuristic)"
+            },
+            {
+              "artists": [
+                "thủy",
+                "Destiny Rogers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273469eb4a55fe752a9ecd1108b",
+              "name": "in my bag (feat. Destiny Rogers) - remix"
+            },
+            {
+              "artists": [
+                "MAX",
+                "Chromeo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732ca4c8a4020a39f64ba41f64",
+              "name": "Checklist (feat. Chromeo)"
+            },
+            {
+              "artists": [
+                "Toosii",
+                "Muni Long"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a3b40621e5d191fbe2189f35",
+              "name": "I Do (feat. Muni Long)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23406535/Da-Madd-Houze",
+          "station": "KPOO",
+          "track_count": 28,
+          "url": "https://open.spotify.com/playlist/3g0ZKSSY84akzqd7TJFrFx"
         }
       },
       "needs_reconciliation": false
