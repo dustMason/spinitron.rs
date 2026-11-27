@@ -61395,7 +61395,7 @@
           "start_time": "2026-11-26T11:00:00-0800",
           "end_time": "2026-11-26T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4kx5nw4jOQ0uxlUv2ID839",
         "desired_uris": [
@@ -61549,8 +61549,110 @@
           "73": "USRH10551561"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T15:00:00-0800",
+          "broadcast_start": "2026-11-26T11:00:00-0800",
+          "imported_at": "2026-11-27T16:18:47.494482561+00:00",
+          "last_updated": "2026-11-27 16:18 UTC",
           "name": "KPOO - KPOO Public Affairs Programming - 2026-11-26",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Dick Hyman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348cd73746936dbd8f68b430a",
+              "name": "Peacherine Rag"
+            },
+            {
+              "artists": [
+                "Bud Powell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a2a703e2f8f6af5e55c086dc",
+              "name": "Bouncin' With Bud"
+            },
+            {
+              "artists": [
+                "Dizzy Gillespie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27398b0f88738dbe24e9eef4525",
+              "name": "Groovin' High"
+            },
+            {
+              "artists": [
+                "Nat King Cole"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732748ec0c554e2c40fd2116ac",
+              "name": "Because You're Mine"
+            },
+            {
+              "artists": [
+                "Charlie Parker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273efeacf1513a1afa979a1a730",
+              "name": "Milestones"
+            },
+            {
+              "artists": [
+                "Hoagy Carmichael",
+                "Hoagy Carmichael Piano Trio",
+                "Lou Bring Orchestra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27358af21c058d6ac24108c0500",
+              "name": "Ole Buttermilk Sky"
+            },
+            {
+              "artists": [
+                "Lionel Hampton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2738250a4a0026c9510e9079a7c",
+              "name": "It Don't Mean a Thing (If It Ain't Got That Swing) - 1991 Remastered"
+            },
+            {
+              "artists": [
+                "Benny Goodman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273383438a0cba654a22a208a78",
+              "name": "Bugle Call Rag"
+            },
+            {
+              "artists": [
+                "Earl Hines",
+                "The Earl Hines Trio",
+                "Roy Eldridge",
+                "Coleman Hawkins"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273422c0918d919f3994d3e8d44",
+              "name": "Sweet Georgia Brown - Live At The Village Vanguard/1965"
+            },
+            {
+              "artists": [
+                "Ella Fitzgerald",
+                "Chick Webb"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27335982bb05d7b3b9cdc2ebb18",
+              "name": "A-Tisket, A-Tasket"
+            },
+            {
+              "artists": [
+                "Sam Coslow",
+                "Arthur Johnston",
+                "Art Tatum"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27374faf787f5b5a30d4a442b17",
+              "name": "Cocktails for 2: Cocktails for Two"
+            },
+            {
+              "artists": [
+                "Tommy Dorsey",
+                "Jack Leonard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c9f6a2525e2a2917cea7e0c",
+              "name": "Sweet Sue Just You"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23404583/KPOO-Public-Affairs-Programming",
+          "station": "KPOO",
+          "track_count": 73,
+          "url": "https://open.spotify.com/playlist/4kx5nw4jOQ0uxlUv2ID839"
         }
       },
       "needs_reconciliation": false
