@@ -823,6 +823,48 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23106273": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23106273,
+          "title": "Dealer's Choice",
+          "url": "https://spinitron.com/KALX/pl/23106273/Dealer-s-Choice",
+          "start_time": "2026-11-26T17:00:00-0800",
+          "end_time": "2026-11-26T18:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3zSrNWC6NLSg4jK2uRPBNW",
+          "spotify:track:6qZ3ZjpOcXC2PVV5cq2Ult",
+          "spotify:track:2G5ORrZ9HtC3EkvRzwqTqH",
+          "spotify:track:2fMme9Fng4uRJXO6B9flMx",
+          "spotify:track:1vPMsoNLAd7hwHZQDYuZSM",
+          "spotify:track:1eCkuXP0LSPbDBtuJqmxgL",
+          "spotify:track:037rziTcpCl3cfsVQcTAkh",
+          "spotify:track:2NlDLaTogggnLizEgLPvMN",
+          "spotify:track:0VV498qECyqHWwb23RDuhz",
+          "spotify:track:3d9seb4w5StQNHy8Yia1sg"
+        ],
+        "source_isrcs": {
+          "1": "GBBLY0803082",
+          "2": "DEX170522606",
+          "3": "GBAWA0369932",
+          "4": "USFB20601741",
+          "5": "DELI50900174",
+          "6": "GBLAZ0500220",
+          "7": "USBWC2010046",
+          "8": "USRH10553140",
+          "10": "USWB11302770"
+        },
+        "listing": {
+          "name": "KALX - Dealer's Choice - 2026-11-26",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KALX:23178298": {
       "entry": {
         "station": "KALX",
