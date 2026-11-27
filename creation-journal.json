@@ -61918,6 +61918,80 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23406214": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23406214,
+          "title": "Pajaro Latinoamericano",
+          "url": "https://spinitron.com/KPOO/pl/23406214/Pajaro-Latinoamericano",
+          "start_time": "2026-11-26T18:00:00-0800",
+          "end_time": "2026-11-26T20:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:3GfvvInYj4QtbAVRXrW4iV",
+          "spotify:track:3FxdWwQx2tUJPxAipMZL9N",
+          "spotify:track:4Ra0IrmzAPudI6QMvNF8cg",
+          "spotify:track:5H7JZTWncqau0RN5zXgmc9",
+          "spotify:track:5ec4BUBmkv1lgTOaO5QGvR",
+          "spotify:track:529wIAZLI6huxOuLR827um",
+          "spotify:track:3566Hq03kwDoZipjf1ROoy",
+          "spotify:track:1lt59QJbmjoFvKD0mrGAs4",
+          "spotify:track:4sdxYXZFJzGog33iV1vRtt",
+          "spotify:track:4YHpg7NEJF24cDEMVeojJo",
+          "spotify:track:7FGgOgFM2DHk1cBmLWDTaD",
+          "spotify:track:6DOebO4lj31S8Vf458Ki2L",
+          "spotify:track:0DPpqd1qla7EmNeWLcbLbm",
+          "spotify:track:2NNOcVDjVeKLzUvi5sLUHa",
+          "spotify:track:7r3NmzkRY26itwhDIm5tTH",
+          "spotify:track:1un4QfKewcJ31CNv61xXl5",
+          "spotify:track:0UojX9qpxAYYlec565neKC",
+          "spotify:track:11VhkR4haUePhjBzfh4UDl",
+          "spotify:track:4cfVW79Co9dN5dtDEXUgRZ",
+          "spotify:track:2H6dgGxdZMYZxMcvvoZQk2",
+          "spotify:track:3DSO6ucBVpKLvXiixRvVCX",
+          "spotify:track:4QRV5ZXwMGNgO3KFryDfCC",
+          "spotify:track:239xjuV9jhlOb9SPtDhR6l",
+          "spotify:track:7woH2GC1j5N4QJs62YzHq9",
+          "spotify:track:4e0uA1M95pZ4iK5MUR45o3",
+          "spotify:track:1itaIQGRFzTfB3m6OWMl4n"
+        ],
+        "source_isrcs": {
+          "1": "USBP10305601",
+          "2": "GBQRF1244134",
+          "3": "GBBHN9300127",
+          "4": "USVI25100001",
+          "5": "AUXN22086396",
+          "6": "USVI29401003",
+          "7": "USBT21388735",
+          "8": "USVI28700013",
+          "9": "USVI25500002",
+          "10": "USA561208240",
+          "11": "USTE10450106",
+          "12": "NLH140420603",
+          "13": "USARL0087511",
+          "14": "USARL0087207",
+          "15": "USFI86600385",
+          "16": "DEPZ67748605",
+          "17": "USSJ10905093",
+          "18": "FR8X01600269",
+          "19": "USSM16101258",
+          "20": "QT6F22566865",
+          "21": "USBN29300072",
+          "22": "USBN26800057",
+          "23": "USPR36301917",
+          "25": "USB450476205",
+          "26": "USPR34700053"
+        },
+        "listing": {
+          "name": "KPOO - Pajaro Latinoamericano - 2026-11-26",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
