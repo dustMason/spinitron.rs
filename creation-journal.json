@@ -37555,7 +37555,7 @@
           "start_time": "2026-11-27T03:00:00-0800",
           "end_time": "2026-11-27T07:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "67KAgN7ALuiRSLX6APuiYL",
         "desired_uris": [
@@ -37656,8 +37656,101 @@
           "47": "QZN4Z2000323"
         },
         "listing": {
+          "broadcast_end": "2026-11-27T07:00:00-0800",
+          "broadcast_start": "2026-11-27T03:00:00-0800",
+          "imported_at": "2026-11-27T16:29:50.454107525+00:00",
+          "last_updated": "2026-11-27 16:29 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-27 3:00am",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Leonard Cohen"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732c40449eb2aec3ba919e13d7",
+              "name": "True Love Leaves No Traces"
+            },
+            {
+              "artists": [
+                "Roy Orbison"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c8e397651625a503f15f26b3",
+              "name": "In Dreams"
+            },
+            {
+              "artists": [
+                "Asobi Seksu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d8863ff57a0012a299611bb7",
+              "name": "Sooner"
+            },
+            {
+              "artists": [
+                "Grouper"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a243710aee39180ca475ed39",
+              "name": "Poison Tree"
+            },
+            {
+              "artists": [
+                "Vanishing Twin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273787772bfe16950fbfe145193",
+              "name": "Hazama"
+            },
+            {
+              "artists": [
+                "April Magazine"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27314c2abd85809f1bd0acaf501",
+              "name": "Undone"
+            },
+            {
+              "artists": [
+                "Seta Hagopian"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273da026cf727537aebbe402f4c",
+              "name": "Mandal Dallouni"
+            },
+            {
+              "artists": [
+                "Jeanette"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27317e66b7b6e525e8d4de19ff5",
+              "name": "El Muchacho de los Ojos Tristes"
+            },
+            {
+              "artists": [
+                "Nu Genea"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cc9c8da874cc0aa82d67f7b2",
+              "name": "Parev' Ajere"
+            },
+            {
+              "artists": [
+                "Dur-Dur Band"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273562c68104ac73ba42b4344c1",
+              "name": "Is yeel Yeel (Pretending)"
+            },
+            {
+              "artists": [
+                "Jeremiah Chiu"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3",
+              "name": "Night Fog"
+            },
+            {
+              "artists": [
+                "Key Tronics Ensemble"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec89e0e22d73ce6c58d7d9b7",
+              "name": "Calypso of House - Sicania Soul Introspective Mix"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23407875/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 47,
+          "url": "https://open.spotify.com/playlist/67KAgN7ALuiRSLX6APuiYL"
         }
       },
       "needs_reconciliation": false
