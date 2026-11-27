@@ -36923,7 +36923,7 @@
           "start_time": "2026-11-26T20:00:00-0800",
           "end_time": "2026-11-26T22:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "3lFJxhUEBI2kugB0i0vXI7",
         "desired_uris": [
@@ -36977,8 +36977,106 @@
           "24": "GBCEQ1210496"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T22:00:00-0800",
+          "broadcast_start": "2026-11-26T20:00:00-0800",
+          "imported_at": "2026-11-27T16:27:07.481692049+00:00",
+          "last_updated": "2026-11-27 16:27 UTC",
           "name": "KALX - FREEFORM - 2026-11-26 8:00pm",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "B. Fleischmann"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c32e908854e7807f5024e814",
+              "name": "Phones And Machines"
+            },
+            {
+              "artists": [
+                "J Dilla",
+                "N'Dea Davenport"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737b0e03b5a31818ad105e5c46",
+              "name": "Whatever You Want - Remix"
+            },
+            {
+              "artists": [
+                "Moss"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734130febe79ffefe1745ac314",
+              "name": "Retread Lightly"
+            },
+            {
+              "artists": [
+                "Cheb i Sabbah"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ec34d0be621135439e6e6242",
+              "name": "Radhe Krishna - The Babu Chandidasa Mix"
+            },
+            {
+              "artists": [
+                "Mental Overdrive"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348ebdd2793d0a28baf94d742",
+              "name": "Gravity Sucks, Maan"
+            },
+            {
+              "artists": [
+                "Jurassic 5"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735c416d21ee400e2438cc2c17",
+              "name": "Freedom"
+            },
+            {
+              "artists": [
+                "Goapele"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27351731b7f50158e64be6027a2",
+              "name": "Closer"
+            },
+            {
+              "artists": [
+                "Rahzel",
+                "Q-Tip",
+                "?uestlove"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f693841f1faf31a2f8e9f4dc",
+              "name": "To The Beat"
+            },
+            {
+              "artists": [
+                "Grover Washington, Jr.",
+                "Bill Withers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d8e0e065037b496212e554b7",
+              "name": "Just the Two of Us"
+            },
+            {
+              "artists": [
+                "Mark Morrison"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273139fc909b6472568a24f59f3",
+              "name": "Return of the Mack - C&J Street Mix"
+            },
+            {
+              "artists": [
+                "Herbert",
+                "Matthew Herbert"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27356dac87a83fa8a0d887c025a",
+              "name": "Those Feelings"
+            },
+            {
+              "artists": [
+                "Robyn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732dbf3c8a92b1af1942918ad0",
+              "name": "Do You Know (What It Takes)"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23406683/FREEFORM",
+          "station": "KALX",
+          "track_count": 24,
+          "url": "https://open.spotify.com/playlist/3lFJxhUEBI2kugB0i0vXI7"
         }
       },
       "needs_reconciliation": false
