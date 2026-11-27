@@ -36799,7 +36799,7 @@
           "start_time": "2026-11-26T18:00:00-0800",
           "end_time": "2026-11-26T20:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0PsCcdl8gWqG130rM0zpYI",
         "desired_uris": [
@@ -36827,8 +36827,88 @@
           "10": "USL4Q2099319"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T20:00:00-0800",
+          "broadcast_start": "2026-11-26T18:00:00-0800",
+          "imported_at": "2026-11-27T16:26:26.967194365+00:00",
+          "last_updated": "2026-11-27 16:26 UTC",
           "name": "KALX - Native - 2026-11-26",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Casper Loma Da-Wa"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27397574b4d013a565a9a09c960",
+              "name": "Last Train"
+            },
+            {
+              "artists": [
+                "Elisapie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c667ad6be8f36bf1f019276",
+              "name": "Call of the Moose"
+            },
+            {
+              "artists": [
+                "BLARF"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273308b6e0f29848474bf8a3d1a",
+              "name": "Piano Concerto No. 0"
+            },
+            {
+              "artists": [
+                "Willie Dunn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f6b6b1aad88726fc8f2bbda",
+              "name": "Son of the Sun"
+            },
+            {
+              "artists": [
+                "Jackalope",
+                "R. Carlos Nakai"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27303b02b7633ad08b36e641c60",
+              "name": "Lady Toda Awada"
+            },
+            {
+              "artists": [
+                "Éric Landry"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735f6b6b1aad88726fc8f2bbda",
+              "name": "Out of the Blue"
+            },
+            {
+              "artists": [
+                "Robert Windpony"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27384feaaf699cea4225a8ecb9f",
+              "name": "Cornwood"
+            },
+            {
+              "artists": [
+                "Natay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e7a6b2f7f8d22e708807db92",
+              "name": "Time Warriorz"
+            },
+            {
+              "artists": [
+                "Blackfire"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273574df7ea3b3f804995b3766d",
+              "name": "Is This Justice"
+            },
+            {
+              "artists": [
+                "Natay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731947aa2f00f89bff9a8f5a2e",
+              "name": "Lemmewish"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23406234/Native",
+          "station": "KALX",
+          "track_count": 10,
+          "url": "https://open.spotify.com/playlist/0PsCcdl8gWqG130rM0zpYI"
         }
       },
       "needs_reconciliation": false
