@@ -37405,7 +37405,7 @@
           "start_time": "2026-11-27T02:00:00-0800",
           "end_time": "2026-11-27T03:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5b8ozfQq4a4xij9UrOOABg",
         "desired_uris": [
@@ -37443,8 +37443,104 @@
           "15": "USCGH0926125"
         },
         "listing": {
+          "broadcast_end": "2026-11-27T03:00:00-0800",
+          "broadcast_start": "2026-11-27T02:00:00-0800",
+          "imported_at": "2026-11-27T16:29:08.587602095+00:00",
+          "last_updated": "2026-11-27 16:29 UTC",
           "name": "KALX - OVERNIGHTS - 2026-11-27",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "The Flying Hats"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273172798acb57b380de9fc5614",
+              "name": "Pinball"
+            },
+            {
+              "artists": [
+                "Sharhabil Ahmed"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273891c3519e99dd748fd988e0a",
+              "name": "Argos Farfish"
+            },
+            {
+              "artists": [
+                "Salah Ragab",
+                "The Cairo Jazz Band",
+                "Zaky Osman"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730de43a4df738ca4a9543f94d",
+              "name": "Latino in Cairo"
+            },
+            {
+              "artists": [
+                "Dirty Beaches"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27348d5fc98c172c387b1fcc9ff",
+              "name": "Sweet 17"
+            },
+            {
+              "artists": [
+                "MF DOOM"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273810322d575e5a2ea235671f9",
+              "name": "White Willow Bark"
+            },
+            {
+              "artists": [
+                "The Rooftop Singers"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736d4c29627143435154cb86d3",
+              "name": "Walk Right In"
+            },
+            {
+              "artists": [
+                "Al-Bara'em"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cb88b375474075c28d7a573a",
+              "name": "Tareeq"
+            },
+            {
+              "artists": [
+                "Eje Eje",
+                "Romano"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733691fc2b289a299d3ad26e76",
+              "name": "Pickled Pine Cones"
+            },
+            {
+              "artists": [
+                "Los Gatos"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27337ac17346a604d27a9bf9c44",
+              "name": "La Balsa"
+            },
+            {
+              "artists": [
+                "Fanfare Ciocarlia"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e36917b1e3e9acb6daeefcc7",
+              "name": "Born to Be Wild"
+            },
+            {
+              "artists": [
+                "The Animeros"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27320691f284c83eb2510348784",
+              "name": "Gózalo"
+            },
+            {
+              "artists": [
+                "Bella Darbinyan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739b06cc85c4321f3babc3ce9a",
+              "name": "Zepuri Nman"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23407693/OVERNIGHTS",
+          "station": "KALX",
+          "track_count": 15,
+          "url": "https://open.spotify.com/playlist/5b8ozfQq4a4xij9UrOOABg"
         }
       },
       "needs_reconciliation": false
