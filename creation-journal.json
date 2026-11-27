@@ -37395,6 +37395,59 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23407693": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23407693,
+          "title": "OVERNIGHTS",
+          "url": "https://spinitron.com/KALX/pl/23407693/OVERNIGHTS",
+          "start_time": "2026-11-27T02:00:00-0800",
+          "end_time": "2026-11-27T03:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:4YMUmA7sWJXj7TJPBKU3pI",
+          "spotify:track:30rzEBlu0UTTv1qekK7HUC",
+          "spotify:track:243Wn17XfZcL3kjUWrbuIX",
+          "spotify:track:1Y6uMG2jt5q9wWj0Vzp8lC",
+          "spotify:track:5EjG9InZcxcvm24mvHMI9n",
+          "spotify:track:5TcgFF2A6lxgbyDhlUph7p",
+          "spotify:track:0JTnnttCaS5UbGNTgpARrd",
+          "spotify:track:0RjfzGllxrRYKwtV7MuqPb",
+          "spotify:track:0t00QHSNvht5cfJY1ClKT5",
+          "spotify:track:2EfHD2nSUP6gNbLhhFEEPF",
+          "spotify:track:55Y5Ok3LTWRhltZyDgf9Wd",
+          "spotify:track:2rpF4Jx1QaEls7wXXRyYrG",
+          "spotify:track:1eqUenDSQsy87cpoogbKvi",
+          "spotify:track:7ibY5Yov1KhuEtmRprS421",
+          "spotify:track:1MKV7uNCfhjbMRtCotycn8"
+        ],
+        "source_isrcs": {
+          "1": "GB56N2500057",
+          "2": "DESY21400655",
+          "3": "GBTFX0700017",
+          "4": "USQY51057430",
+          "5": "USHKR0910603",
+          "6": "DGA072372198",
+          "7": "QZFYW2071574",
+          "8": "GBZG92600073",
+          "9": "ARF036700025",
+          "10": "DEU330700142",
+          "11": "USC4R2666495",
+          "12": "QMRPV1406446",
+          "13": "BRMCA6900118",
+          "14": "US2J72609901",
+          "15": "USCGH0926125"
+        },
+        "listing": {
+          "name": "KALX - OVERNIGHTS - 2026-11-27",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
