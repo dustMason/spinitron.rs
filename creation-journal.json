@@ -35958,6 +35958,83 @@
       },
       "needs_reconciliation": false
     },
+    "KALX:23403684": {
+      "entry": {
+        "station": "KALX",
+        "broadcast": {
+          "id": 23403684,
+          "title": "Thanksgiving Morning Sips",
+          "url": "https://spinitron.com/KALX/pl/23403684/Thanksgiving-Morning-Sips",
+          "start_time": "2026-11-26T07:00:00-0800",
+          "end_time": "2026-11-26T09:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:0wXKAdE929CGL95D6fY23w",
+          "spotify:track:5tXD1PoCs9dGZ4P8iLcXpz",
+          "spotify:track:2phDB7afzvNV6KOJRJ74PZ",
+          "spotify:track:5JRgighfuygY4QGRmYV5ns",
+          "spotify:track:4yGBgs0vo1aEvSAQQcdK0f",
+          "spotify:track:4RhH5KyZ12k6EnLhXQNkpR",
+          "spotify:track:7eIvfPJYnwYXfvrX2239f3",
+          "spotify:track:1PBw4B3wmBGgMCXGYP1x5N",
+          "spotify:track:2Cwixoi6zZ9zWQXRiV1KQg",
+          "spotify:track:3N58QjJmDpmxLCOLXcgmEN",
+          "spotify:track:7JuV2V7hEkDXNzAXaCUDG6",
+          "spotify:track:052nnv8OTjBqLZngBray2d",
+          "spotify:track:0tTpKdf4IoZnpICvUDm2sY",
+          "spotify:track:1Bo847JVLzvsor2TgPj8oz",
+          "spotify:track:5XOkpFFoPYvmFDL0l5OmiT",
+          "spotify:track:1wgfIP52SiU4V4Mn79LI1N",
+          "spotify:track:1c9IRB8ZShLRHocDN9aMWO",
+          "spotify:track:16Y0Ubjxap4dcD5elBeFVJ",
+          "spotify:track:5qoQXJCPRb69MFJ0VtlCFO",
+          "spotify:track:6vLuQe03lDTYAn0EG4vyY6",
+          "spotify:track:1nAEgQVkEvhgk313kPL6O2",
+          "spotify:track:6f4EijEzakCPFDVTCWrwrC",
+          "spotify:track:5GfIWJyTCRA2phhgVY4HG9",
+          "spotify:track:5qIOUorQ9AInP9UliORgCC",
+          "spotify:track:4S76aYPrVLVC9VSwOqaINv",
+          "spotify:track:14rCGU8stPd8a8oAKkgnft",
+          "spotify:track:5ZYIgkSIozuxJn1du5db85"
+        ],
+        "source_isrcs": {
+          "1": "US58L2698404",
+          "2": "USC4R1016833",
+          "3": "FRZ042500523",
+          "4": "USSF12024102",
+          "5": "QZTRX2337870",
+          "6": "QMB622607604",
+          "7": "CHA832296813",
+          "8": "DKP872600101",
+          "9": "QZNMW2686944",
+          "10": "FRX281597710",
+          "11": "USRH12406280",
+          "12": "QTA862633451",
+          "13": "USX9P2564741",
+          "14": "BE2NC2600008",
+          "15": "QZDA81825679",
+          "16": "USX6D0800001",
+          "17": "USEE11000498",
+          "18": "GBAAN7100044",
+          "19": "GBCEL1900127",
+          "20": "GBARL0800951",
+          "21": "QZPKV2606910",
+          "22": "USMTD0461203",
+          "23": "USMRG2687904",
+          "24": "TCAES2041229",
+          "25": "GBUQC2100731",
+          "26": "USFVZ2691687",
+          "27": "GBARK9200085"
+        },
+        "listing": {
+          "name": "KALX - Thanksgiving Morning Sips - 2026-11-26",
+          "station": "KALX"
+        }
+      },
+      "needs_reconciliation": false
+    },
     "KPOO:23276672": {
       "entry": {
         "station": "KPOO",
