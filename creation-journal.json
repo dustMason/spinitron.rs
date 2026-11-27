@@ -35968,7 +35968,7 @@
           "start_time": "2026-11-26T07:00:00-0800",
           "end_time": "2026-11-26T09:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "08xn0TOe4URGoir6SaNV6N",
         "desired_uris": [
@@ -36030,8 +36030,101 @@
           "27": "GBARK9200085"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T09:00:00-0800",
+          "broadcast_start": "2026-11-26T07:00:00-0800",
+          "imported_at": "2026-11-27T16:23:05.155715812+00:00",
+          "last_updated": "2026-11-27 16:23 UTC",
           "name": "KALX - Thanksgiving Morning Sips - 2026-11-26",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Cole Berliner"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5bb6f9d28196159457df225",
+              "name": "Bongo Syndicate"
+            },
+            {
+              "artists": [
+                "Vince Guaraldi Trio"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737261e535a0b2e92a9b19c4f1",
+              "name": "Cast Your Fate to the Wind (take 3) - Alternate Take"
+            },
+            {
+              "artists": [
+                "Angelique Kidjo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273faf5a814dab856027e848d9c",
+              "name": "You Can"
+            },
+            {
+              "artists": [
+                "Leyla McCalla"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d3aba78d5e76d40ca0656113",
+              "name": "When I Can See the Valley"
+            },
+            {
+              "artists": [
+                "Large Brush Collection"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739bfefe148d5d356ce6664658",
+              "name": "Tell Me Again"
+            },
+            {
+              "artists": [
+                "Sen Morimoto"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d33adedb1d56d8da6d526c84",
+              "name": "Chewing Gum"
+            },
+            {
+              "artists": [
+                "África Negra"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731a5bc7fdf9829e2290e41231",
+              "name": "Lourença"
+            },
+            {
+              "artists": [
+                "The Mukherjee Development"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730b5d6bfe63d90fa8ef938706",
+              "name": "Tatters"
+            },
+            {
+              "artists": [
+                "Andy Boay"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27379ef7acda9f7dc02447e5ee6",
+              "name": "Runnin' Off"
+            },
+            {
+              "artists": [
+                "Richard Lloyd"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273053442fa5adfe55391412654",
+              "name": "Black To White"
+            },
+            {
+              "artists": [
+                "Joni Mitchell"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732b7f020006c35e0aa76df7d5",
+              "name": "Cold Blue Steel And Sweet Fire - 2025 Remaster"
+            },
+            {
+              "artists": [
+                "Kuusi"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ba5b8ac8059e2591632e1ab8",
+              "name": "Skaftafell"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23403684/Thanksgiving-Morning-Sips",
+          "station": "KALX",
+          "track_count": 27,
+          "url": "https://open.spotify.com/playlist/08xn0TOe4URGoir6SaNV6N"
         }
       },
       "needs_reconciliation": false
