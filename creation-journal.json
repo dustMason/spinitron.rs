@@ -61667,7 +61667,7 @@
           "start_time": "2026-11-26T15:00:00-0800",
           "end_time": "2026-11-26T17:30:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2toBrfWthbmhAweir5ungs",
         "desired_uris": [
@@ -61751,8 +61751,101 @@
           "38": "QMAAK1788549"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T17:30:00-0800",
+          "broadcast_start": "2026-11-26T15:00:00-0800",
+          "imported_at": "2026-11-27T16:19:29.687015987+00:00",
+          "last_updated": "2026-11-27 16:19 UTC",
           "name": "KPOO - Blues and Oldies - 2026-11-26",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "B.B. King"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273086a81b01876c65cd9207972",
+              "name": "Three O'clock Blues"
+            },
+            {
+              "artists": [
+                "Washboard Sam"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273aa0476ec8efc2acea0c78fdc",
+              "name": "Good Old Cabbage Greens"
+            },
+            {
+              "artists": [
+                "Little Richard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cc4c510d6d19a2d03e2fc757",
+              "name": "The Girl Can't Help It"
+            },
+            {
+              "artists": [
+                "The Ink Spots"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b2c82af175ff71d6139da73d",
+              "name": "Do-Nuts"
+            },
+            {
+              "artists": [
+                "Etta James"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b2229a8fdf377abaf3652624",
+              "name": "At Last"
+            },
+            {
+              "artists": [
+                "The Velvelettes"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736654595492e00643f9dba83d",
+              "name": "He Was Really Sayin' Somethin' - Single Version"
+            },
+            {
+              "artists": [
+                "The Originals"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d12c40e9c2140939ac4ba130",
+              "name": "Baby, I'm For Real"
+            },
+            {
+              "artists": [
+                "Stevie Wonder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730f1fe539dd4b582349e39e4c",
+              "name": "Pastime Paradise"
+            },
+            {
+              "artists": [
+                "Peggy Lee"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737c1a73a20e5dbcc984f69cb4",
+              "name": "Fever"
+            },
+            {
+              "artists": [
+                "Barbara Acklin"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27361ea7774a12beccfd528fc21",
+              "name": "Love Makes A Woman"
+            },
+            {
+              "artists": [
+                "Elvis Presley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fff6b0a441b0d673ee820528",
+              "name": "Love Me - New Sound Remastered"
+            },
+            {
+              "artists": [
+                "Elvis Presley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e93d2246d92c8dd3e3edef7f",
+              "name": "One-Sided Love Affair"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23405498/Blues-and-Oldies",
+          "station": "KPOO",
+          "track_count": 38,
+          "url": "https://open.spotify.com/playlist/2toBrfWthbmhAweir5ungs"
         }
       },
       "needs_reconciliation": false
