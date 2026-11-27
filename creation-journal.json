@@ -36139,7 +36139,7 @@
           "start_time": "2026-11-26T09:00:00-0800",
           "end_time": "2026-11-26T12:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "0QZeZON9DOl92R2L8CijLq",
         "desired_uris": [
@@ -36216,8 +36216,103 @@
           "35": "GBBLK0500354"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T12:00:00-0800",
+          "broadcast_start": "2026-11-26T09:00:00-0800",
+          "imported_at": "2026-11-27T16:23:45.357451157+00:00",
+          "last_updated": "2026-11-27 16:23 UTC",
           "name": "KALX - Sonic Sounds - 2026-11-26",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Hawkwind"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734a71f1b85a8facddd5feedcd",
+              "name": "Star Cannibal"
+            },
+            {
+              "artists": [
+                "Spacemoth"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273caaa6dd8839deca760d28f43",
+              "name": "Cloud of Echoes"
+            },
+            {
+              "artists": [
+                "King Crimson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e0d2d12a833288b2ecc09c9d",
+              "name": "21st Century Schizoid Man"
+            },
+            {
+              "artists": [
+                "Lightning Bolt"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737b6f8f86e9ff52aaca3cc82e",
+              "name": "Over The River And Through The Woods"
+            },
+            {
+              "artists": [
+                "George Winston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b8ebd75890f92d15f6bf420b",
+              "name": "Thanksgiving"
+            },
+            {
+              "artists": [
+                "Natalie Merchant"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27351cacfc80f084c565097574a",
+              "name": "Kind & Generous"
+            },
+            {
+              "artists": [
+                "Allison Russell",
+                "Kashus Culpepper"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273484006dc742a9b43b1cab3d1",
+              "name": "Searchlight (ft. Kashus Culpepper)"
+            },
+            {
+              "artists": [
+                "Ian McDonald",
+                "Michael Giles"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c945baa442de97585c09a8df",
+              "name": "TOMORROW'S PEOPLE - THE CHILDREN OF TODAY"
+            },
+            {
+              "artists": [
+                "Sophia Yau-Weeks"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732ece48db06e672bcc584aa9b",
+              "name": "Love is a Garden"
+            },
+            {
+              "artists": [
+                "Death Valley Girls"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f2365f6ea513f85a6ab440a0",
+              "name": "Fire and Brimstone"
+            },
+            {
+              "artists": [
+                "Otis Redding"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2735b76382492fe487d46de4c51",
+              "name": "I Want to Thank You"
+            },
+            {
+              "artists": [
+                "Mötley Crüe"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c9dcca18dd8a9e562490baa8",
+              "name": "Home Sweet Home"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23404197/Sonic-Sounds",
+          "station": "KALX",
+          "track_count": 35,
+          "url": "https://open.spotify.com/playlist/0QZeZON9DOl92R2L8CijLq"
         }
       },
       "needs_reconciliation": false
