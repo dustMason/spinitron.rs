@@ -61860,7 +61860,7 @@
           "start_time": "2026-11-26T17:30:00-0800",
           "end_time": "2026-11-26T18:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5GFHUmbk4yVlrceMnXmmVi",
         "desired_uris": [
@@ -61876,8 +61876,45 @@
           "4": "USBP10380110"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T18:00:00-0800",
+          "broadcast_start": "2026-11-26T17:30:00-0800",
+          "imported_at": "2026-11-27T16:20:10.105915811+00:00",
+          "last_updated": "2026-11-27 16:20 UTC",
           "name": "KPOO - KPOO Community News - 2026-11-26",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Arthur Weston"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733294520044b1f34c7d744e9f",
+              "name": "Uncle Sam Called Me (I Got To Go) - Alternate Version"
+            },
+            {
+              "artists": [
+                "Magic Slim & The Teardrops"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273480327c7e68f2c2dd0731f75",
+              "name": "Wake Me Up Early"
+            },
+            {
+              "artists": [
+                "E.C. Scott"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734c41d8b4a333d8870879e60c",
+              "name": "What A Good Feeling"
+            },
+            {
+              "artists": [
+                "James Cotton"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733c0648d1a038109c2673bfa9",
+              "name": "My Babe"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23406067/KPOO-Community-News",
+          "station": "KPOO",
+          "track_count": 4,
+          "url": "https://open.spotify.com/playlist/5GFHUmbk4yVlrceMnXmmVi"
         }
       },
       "needs_reconciliation": false
