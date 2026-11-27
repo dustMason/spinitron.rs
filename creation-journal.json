@@ -61237,6 +61237,59 @@
         }
       },
       "needs_reconciliation": false
+    },
+    "KPOO:23404206": {
+      "entry": {
+        "station": "KPOO",
+        "broadcast": {
+          "id": 23404206,
+          "title": "JIVIN' AROUND",
+          "url": "https://spinitron.com/KPOO/pl/23404206/JIVIN-AROUND",
+          "start_time": "2026-11-26T09:00:00-0800",
+          "end_time": "2026-11-26T11:00:00-0800"
+        },
+        "state": "creating",
+        "owner_id": "dustmason",
+        "desired_uris": [
+          "spotify:track:1PXMeiIRNZnj4jj77DPwKz",
+          "spotify:track:7pcGYRhJVt079gWiBnp7ct",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x",
+          "spotify:track:0AJhhznysKPNJvhsYhOlRa",
+          "spotify:track:17VtxFjHpsSBGG2m0KRCC4",
+          "spotify:track:3PRVxKNlFuCrVaYixGqBaf",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x",
+          "spotify:track:4A124XvQG7wrhbOLB0kkqL",
+          "spotify:track:0x4ijFipSxDfNEge0bpkk1",
+          "spotify:track:2J2cFDJAC5FvdXZwWoNR0x",
+          "spotify:track:5Mzbg6ZabsludTDqxQ9x6M",
+          "spotify:track:5HvpTcuCZ1oC1cClE83owm",
+          "spotify:track:19Pj53IPq820yWmc3HTRqF",
+          "spotify:track:4H9wMFlsy94KVTu61Cq8QO",
+          "spotify:track:7GFucpYHASFkr13Rz9w27Q"
+        ],
+        "source_isrcs": {
+          "1": "USAT26700003",
+          "2": "USMO10500562",
+          "3": "SE5Q51818012",
+          "4": "FR8V60700139",
+          "5": "USSPI5700341",
+          "6": "US3M59902910",
+          "7": "SE5Q51818012",
+          "8": "USMO16100266",
+          "9": "USAT20001015",
+          "10": "SE5Q51818012",
+          "11": "USCA20000200",
+          "12": "USEM39100464",
+          "13": "USMO16300276",
+          "14": "USMO16282890",
+          "15": "USFI85500152"
+        },
+        "listing": {
+          "name": "KPOO - JIVIN' AROUND - 2026-11-26",
+          "station": "KPOO"
+        }
+      },
+      "needs_reconciliation": false
     }
   }
 }
