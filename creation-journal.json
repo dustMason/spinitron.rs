@@ -36516,7 +36516,7 @@
           "start_time": "2026-11-26T15:00:00-0800",
           "end_time": "2026-11-26T17:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2BTMI5YjMArKrpuJnWvWXG",
         "desired_uris": [
@@ -36562,8 +36562,107 @@
           "19": "USC4R1201097"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T17:00:00-0800",
+          "broadcast_start": "2026-11-26T15:00:00-0800",
+          "imported_at": "2026-11-27T16:25:06.081361216+00:00",
+          "last_updated": "2026-11-27 16:25 UTC",
           "name": "KALX - FREEFORM - 2026-11-26",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Mary Gauthier"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ce0d83846e4ffc30e1132821",
+              "name": "Thanksgiving"
+            },
+            {
+              "artists": [
+                "Mary Gauthier"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27352698f2879a8f4cf52b2a138",
+              "name": "Reckoning"
+            },
+            {
+              "artists": [
+                "Margo Price"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b55af9d0c3ac049860a31f9",
+              "name": "Oval Room"
+            },
+            {
+              "artists": [
+                "Chong Wizard",
+                "Estee Nack",
+                "Open Mike Eagle",
+                "Lungs",
+                "Phiik"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27312d0d248554ba8936545908c",
+              "name": "Snake In The Eagle's Shadow - Radio Edit"
+            },
+            {
+              "artists": [
+                "Open Mike Eagle",
+                "Kenny Segal"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ecd7e8489a4a549caa0e2be0",
+              "name": "Watching a Movie Called Freedom By Myself"
+            },
+            {
+              "artists": [
+                "Arctic Monkeys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27307823ee6237208c835802663",
+              "name": "Body Paint"
+            },
+            {
+              "artists": [
+                "Belle and Sebastian"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d59a82906bf6e03df83082f7",
+              "name": "Come On Home"
+            },
+            {
+              "artists": [
+                "Darlene Love"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ddeb5bd676fbc5c2631ac3fe",
+              "name": "All Alone on Christmas"
+            },
+            {
+              "artists": [
+                "Jenny Hval"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273218bffe4a218706bd9aa7e0b",
+              "name": "Cemetery of Splendour"
+            },
+            {
+              "artists": [
+                "Jessica Moss"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27357a4c4f555bfa036bd292fd4",
+              "name": "Galaxy Heart"
+            },
+            {
+              "artists": [
+                "Fly Anakin",
+                "Nogum Hundo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733a4c128f4a528e214ba77d8f",
+              "name": "Sayless"
+            },
+            {
+              "artists": [
+                "Bixiga 70"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273797efcee29e58da8c16f0d57",
+              "name": "Na Quarta-Feira"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23405438/FREEFORM",
+          "station": "KALX",
+          "track_count": 19,
+          "url": "https://open.spotify.com/playlist/2BTMI5YjMArKrpuJnWvWXG"
         }
       },
       "needs_reconciliation": false
