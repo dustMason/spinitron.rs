@@ -36327,7 +36327,7 @@
           "start_time": "2026-11-26T12:00:00-0800",
           "end_time": "2026-11-26T15:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "2KF8nVKZmtv2DKJPRTi7Jn",
         "desired_uris": [
@@ -36406,8 +36406,102 @@
           "38": "BEN581400124"
         },
         "listing": {
+          "broadcast_end": "2026-11-26T15:00:00-0800",
+          "broadcast_start": "2026-11-26T12:00:00-0800",
+          "imported_at": "2026-11-27T16:24:25.756389298+00:00",
+          "last_updated": "2026-11-27 16:24 UTC",
           "name": "KALX - Hellaciousness - 2026-11-26",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Jeff Parker"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27330fccd8c132a1bbf5359e3ee",
+              "name": "Go Away"
+            },
+            {
+              "artists": [
+                "Josh Johnson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734bc2206c320a2449df629cc5",
+              "name": "It Can Be Everywhere"
+            },
+            {
+              "artists": [
+                "lay / lie"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27392bf19c02dfde9ff52f5dead",
+              "name": "The Placater"
+            },
+            {
+              "artists": [
+                "Pooja Goswami Pavan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fe5b8cabc68ca77bbe588ef8",
+              "name": "The Wedding Sari Has Come"
+            },
+            {
+              "artists": [
+                "Khan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a9e25ef04ff7f1717f06b87f",
+              "name": "Sweet Pink Lemonade"
+            },
+            {
+              "artists": [
+                "The Beach Boys"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273fb9dac3244b8486758058a81",
+              "name": "Vegetables - Remastered 2001"
+            },
+            {
+              "artists": [
+                "Tommy James & The Shondells"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27315f7668c660856ed755712e4",
+              "name": "I'm a Tangerine"
+            },
+            {
+              "artists": [
+                "San Kazakgascar"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b25821635c55d0e25938e249",
+              "name": "Driver Ate"
+            },
+            {
+              "artists": [
+                "Lee \"Scratch\" Perry",
+                "Mouse On Mars"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f67b506617317c266fc279ce",
+              "name": "Rockcurry"
+            },
+            {
+              "artists": [
+                "Dr. Alimantado"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2733ae38bd8ebb999ba10b440c8",
+              "name": "Best Dressed Chicken in Town"
+            },
+            {
+              "artists": [
+                "Sister Carol"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c1eca26eb8f86bf29d54c791",
+              "name": "Herbal Dub"
+            },
+            {
+              "artists": [
+                "Sister Carol"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b11462a62d8d2897c411c8c5",
+              "name": "Herbal Is Natural"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23404842/Hellaciousness",
+          "station": "KALX",
+          "track_count": 38,
+          "url": "https://open.spotify.com/playlist/2KF8nVKZmtv2DKJPRTi7Jn"
         }
       },
       "needs_reconciliation": false
