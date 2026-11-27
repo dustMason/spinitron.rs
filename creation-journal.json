@@ -62282,7 +62282,7 @@
           "start_time": "2026-11-26T22:00:00-0800",
           "end_time": "2026-11-27T06:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "4S4xZ0cTbRRXbMFNTRiE7r",
         "desired_uris": [
@@ -62467,8 +62467,102 @@
           "89": "USHM21425768"
         },
         "listing": {
+          "broadcast_end": "2026-11-27T06:00:00-0800",
+          "broadcast_start": "2026-11-26T22:00:00-0800",
+          "imported_at": "2026-11-27T16:22:24.735707200+00:00",
+          "last_updated": "2026-11-27 16:22 UTC",
           "name": "KPOO - Thursday-Friday Night Sounds - 2026-11-26",
-          "station": "KPOO"
+          "preview": [
+            {
+              "artists": [
+                "Roy Hargrove Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273e0b22fccd0551cd62d3dd544",
+              "name": "Caryisms"
+            },
+            {
+              "artists": [
+                "Terence Blanchard"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2731b6ef592311ffc58c34d7759",
+              "name": "Harvesting Dance"
+            },
+            {
+              "artists": [
+                "Kenny Garrett"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2736c4ad936b75487019546b6d2",
+              "name": "Ja-Hed"
+            },
+            {
+              "artists": [
+                "Joe Henderson"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f7feeeae79c13fc505227559",
+              "name": "Lush Life"
+            },
+            {
+              "artists": [
+                "Abbey Lincoln"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734b30724114e4db62c8cd68a1",
+              "name": "Bird Alone - 1991 You Gotta Pay The Band Version"
+            },
+            {
+              "artists": [
+                "Dale Fielder Quartet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273ae01492cc4a5c9c37e4d3cef",
+              "name": "A Pretty Girl Is Like a Melody"
+            },
+            {
+              "artists": [
+                "Dale Fielder"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27329c260d1638135e0a627f87e",
+              "name": "Now In Our Lives"
+            },
+            {
+              "artists": [
+                "Cannonball Adderley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2730d997ddea9595eca5a4081a6",
+              "name": "The Song My Lady Sings - Live"
+            },
+            {
+              "artists": [
+                "Kim Nalley"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2737de434401ed7b85cd7f62d7b",
+              "name": "In the Evening by the Moonlight"
+            },
+            {
+              "artists": [
+                "Miles Davis Quintet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273918d4376b1b56318fcc728ca",
+              "name": "Surrey With The Fringe On Top"
+            },
+            {
+              "artists": [
+                "Eric Dolphy"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27308a9398a2404e1fe2afe99f8",
+              "name": "Body And Soul - Take 2"
+            },
+            {
+              "artists": [
+                "Larry Douglas",
+                "Jorge Pineda Alltet"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273490d7e0cc6e755086617d5ab",
+              "name": "Butterfly"
+            }
+          ],
+          "source_url": "https://spinitron.com/KPOO/pl/23407026/Thursday-Friday-Night-Sounds",
+          "station": "KPOO",
+          "track_count": 89,
+          "url": "https://open.spotify.com/playlist/4S4xZ0cTbRRXbMFNTRiE7r"
         }
       },
       "needs_reconciliation": false
