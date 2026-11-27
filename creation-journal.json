@@ -37245,7 +37245,7 @@
           "start_time": "2026-11-27T00:00:00-0800",
           "end_time": "2026-11-27T02:00:00-0800"
         },
-        "state": "filling",
+        "state": "ready",
         "owner_id": "dustmason",
         "playlist_id": "5XhGkX4u4L2uTK9Lgb5uuj",
         "desired_uris": [
@@ -37294,8 +37294,103 @@
           "21": "US3Q52511808"
         },
         "listing": {
+          "broadcast_end": "2026-11-27T02:00:00-0800",
+          "broadcast_start": "2026-11-27T00:00:00-0800",
+          "imported_at": "2026-11-27T16:28:28.010310141+00:00",
+          "last_updated": "2026-11-27 16:28 UTC",
           "name": "KALX - Midnight Rambler - 2026-11-27",
-          "station": "KALX"
+          "preview": [
+            {
+              "artists": [
+                "Bruce Cockburn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273c7fc8237594e354b922380f2",
+              "name": "Us All"
+            },
+            {
+              "artists": [
+                "Nina Simone"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273d92fb501e7d8c7088ec8a176",
+              "name": "Isn't It a Pity"
+            },
+            {
+              "artists": [
+                "Bruce Cockburn"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273a5b195a96d3b650d815bce3b",
+              "name": "Yellow Dog Blues"
+            },
+            {
+              "artists": [
+                "Tom Waits"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273cdc34d14817a4771010d4afd",
+              "name": "The Fly"
+            },
+            {
+              "artists": [
+                "Bill Callahan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2734010d7ffe67fb4642200b666",
+              "name": "Stepping Out For Air"
+            },
+            {
+              "artists": [
+                "Andrew Bird"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27374ffdd29cc4898e8ed01d747",
+              "name": "Bloodless"
+            },
+            {
+              "artists": [
+                "The Womack Sisters"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2732d29fdf0b99c9fd16e6ab7e8",
+              "name": "If I Let You"
+            },
+            {
+              "artists": [
+                "Amy Winehouse"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b2739fb01094cec77087399c721f",
+              "name": "I'm No Good - You Know I'm No Good / Original Demo"
+            },
+            {
+              "artists": [
+                "Karate Boogaloo"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273b0e0e9e7d8eabdc14eccd6f7",
+              "name": "Wet Day Timetable"
+            },
+            {
+              "artists": [
+                "Rhiannon Giddens"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b27397b09d3480340fb242a1013b",
+              "name": "Carolina Rain"
+            },
+            {
+              "artists": [
+                "Everything Is Recorded",
+                "Noah Cyrus",
+                "Bill Callahan"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f5fab49efb1eb70f2944bfea",
+              "name": "Porcupine Tattoo"
+            },
+            {
+              "artists": [
+                "The California Honeydrops"
+              ],
+              "image_url": "https://i.scdn.co/image/ab67616d0000b273f26d7c0eebde24d95796ed53",
+              "name": "Song Of You"
+            }
+          ],
+          "source_url": "https://spinitron.com/KALX/pl/23407142/Midnight-Rambler",
+          "station": "KALX",
+          "track_count": 21,
+          "url": "https://open.spotify.com/playlist/5XhGkX4u4L2uTK9Lgb5uuj"
         }
       },
       "needs_reconciliation": false
